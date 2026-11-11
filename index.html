@@ -1,4 +1,6 @@
-<!doctype html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2f6b3a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<!doctype html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2f6b3a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}
+#instalar{position:fixed;left:0;right:0;bottom:0;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:var(--leaf);color:var(--surface);display:flex;align-items:center;gap:12px;z-index:20;font-family:var(--body)}
+#instalar span{flex:1;font-size:15px}#instalar button{border:0;border-radius:999px;padding:10px 18px;font:inherit;font-weight:700;background:var(--surface);color:var(--leaf);cursor:pointer}#instalar .x{background:none;color:var(--surface);padding:6px 10px;font-size:20px}</style>
 <title>Agenda do Campo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
@@ -300,4 +302,12 @@ $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
 render();
 </script>
-<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js")</script></body></html>
+<div id="instalar" hidden><span>Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar">Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>
+<script>
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");
+let pedido=null;const bar=document.getElementById("instalar");
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();pedido=e;bar.hidden=false;document.body.style.paddingBottom="80px"});
+document.getElementById("btnInstalar").onclick=async()=>{if(!pedido)return;pedido.prompt();await pedido.userChoice;pedido=null;bar.hidden=true;document.body.style.paddingBottom=""};
+document.getElementById("fecharInstalar").onclick=()=>{bar.hidden=true;document.body.style.paddingBottom=""};
+addEventListener("appinstalled",()=>{bar.hidden=true});
+</script></body></html>
