@@ -1,0 +1,268 @@
+<!doctype html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2f6b3a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Agenda do Campo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: uma coluna de telemóvel — cabeçalho com o dia e a lua, grelha 2×2 de botões grandes, lista do dia por baixo */
+:root{
+  --bg:#eef2ea; --surface:#ffffff; --ink:#1d2a1f; --muted:#5b6b5d; --line:#d3dccf;
+  --leaf:#2f6b3a; --leaf-soft:#dcebd9; --sun:#c98a14; --sun-soft:#f6e9c8; --moon:#f4efd9; --shadow:#c9d3c4;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121a14; --surface:#1b261d; --ink:#e6eee3; --muted:#9db0a0; --line:#2d3c30;
+  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --moon:#efe8c9; --shadow:#0b100c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121a14; --surface:#1b261d; --ink:#e6eee3; --muted:#9db0a0; --line:#2d3c30;
+  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --moon:#efe8c9; --shadow:#0b100c; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 40px}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+button{font:inherit;color:inherit}
+button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--leaf)}
+.today-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:14px;cursor:pointer}
+
+.day{display:flex;align-items:center;gap:16px}
+.day-nav{display:flex;align-items:center;gap:6px;flex:1;min-width:0}
+.arrow{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:22px;cursor:pointer;display:grid;place-items:center}
+.date-box{flex:1;min-width:0;text-align:center;position:relative}
+.date-box .wd{font-size:14px;color:var(--muted);text-transform:capitalize}
+.date-box h1{font-size:clamp(24px,7vw,32px);font-weight:800;line-height:1.1}
+.date-box input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}
+.moon{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.moon svg{flex:none}
+.moon b{display:block;font-size:15px}
+.moon span{font-size:13px;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cat{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:16px;border-radius:18px;border:2px solid var(--line);
+  background:var(--surface);cursor:pointer;text-align:left;min-height:118px;transition:transform .12s,border-color .12s}
+.cat:active{transform:scale(.98)}
+.cat svg{width:38px;height:38px;color:var(--leaf)}
+.cat .lbl{font-family:var(--display);font-weight:800;font-size:20px;line-height:1.1}
+.cat .cnt{font-size:13px;color:var(--muted)}
+.cat[aria-pressed="true"]{border-color:var(--leaf);background:var(--leaf-soft)}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.panel-head{padding:18px 18px 14px;display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--line)}
+.panel-head h2{font-size:24px;font-weight:800}
+.panel-head p{margin:0;color:var(--muted);font-size:15px}
+.verdict{display:flex;gap:10px;align-items:flex-start;padding:12px 18px;font-size:15px;border-bottom:1px solid var(--line)}
+.verdict.good{background:var(--leaf-soft)}
+.verdict.meh{background:var(--sun-soft)}
+.verdict .dot{flex:none;width:12px;height:12px;border-radius:50%;margin-top:6px;background:var(--sun)}
+.verdict.good .dot{background:var(--leaf)}
+ul.items{list-style:none;margin:0;padding:0}
+ul.items li{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+ul.items li:last-child{border-bottom:0}
+.it-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.it-name{font-weight:700;font-size:17px}
+.it-note{color:var(--muted);font-size:15px}
+.chip{font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.chip.hot{background:var(--leaf);border-color:var(--leaf);color:var(--surface)}
+.tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+.tips b{color:var(--ink)}
+.foot{font-size:13px;color:var(--muted);text-align:center;line-height:1.5}
+@media (prefers-reduced-motion:reduce){.cat{transition:none}}
+</style>
+</head><body>
+
+<div class="wrap">
+  <div class="top">
+    <div class="brand">Agenda do Campo</div>
+    <button class="today-btn" id="btnHoje" type="button">Hoje</button>
+  </div>
+
+  <div class="day">
+    <div class="day-nav">
+      <button class="arrow" id="prev" type="button" aria-label="Dia anterior">‹</button>
+      <label class="date-box">
+        <div class="wd" id="wd"></div>
+        <h1 id="dt"></h1>
+        <input type="date" id="pick" aria-label="Escolher outro dia">
+      </label>
+      <button class="arrow" id="next" type="button" aria-label="Dia seguinte">›</button>
+    </div>
+  </div>
+
+  <div class="moon" id="moon"></div>
+
+  <div class="grid" role="group" aria-label="O que fazer">
+    <button class="cat" type="button" data-k="podas" id="c-podas">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="10" cy="29" r="5"/><circle cx="22" cy="33" r="5"/><path d="M13.5 25.5 34 6M18.5 29.5 31 12"/></svg>
+      <span class="lbl">Podas</span><span class="cnt"></span>
+    </button>
+    <button class="cat" type="button" data-k="trat" id="c-trat">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="16" width="16" height="20" rx="4"/><path d="M14 16v-5h6v5M20 11h7l3-3M31 14l3 1M31 19l3 3M31 9l4-2"/></svg>
+      <span class="lbl">Tratamentos</span><span class="cnt"></span>
+    </button>
+    <button class="cat" type="button" data-k="plantar" id="c-plantar">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 35V18M20 22c0-7-5-11-12-11 0 7 5 11 12 11ZM20 18c0-6 4-10 11-10 0 6-4 10-11 10ZM8 35h24"/></svg>
+      <span class="lbl">Plantar</span><span class="cnt"></span>
+    </button>
+    <button class="cat" type="button" data-k="estacas" id="c-estacas">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6v22M20 12l6-4M20 18l-6-4M6 28h28M14 28l-2 6M20 28v6M26 28l2 6"/></svg>
+      <span class="lbl">Estaquia</span><span class="cnt"></span>
+    </button>
+  </div>
+
+  <section class="panel" id="panel" aria-live="polite"></section>
+
+  <p class="foot">Calendário para Portugal continental, com base no mês e na fase da lua (tradição popular).<br>Nas zonas frias e de altitude atrase 2 a 3 semanas; no litoral sul e Algarve pode adiantar.</p>
+</div>
+
+<script>
+/* ---------- Dados por mês ----------
+   plantar: tipo  r = raiz/bolbo/tubérculo, f = folha/fruto/grão, a = árvore/arbusto */
+const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+const D=[
+/* JAN */{
+podas:[["Videira","Poda de inverno a partir de meados do mês, em dias sem geada. Aproveite os sarmentos para estacas."],["Macieira e pereira","Poda de formação e de frutificação; tire ramos cruzados e doentes."],["Kiwi","Poda de inverno: encurte os ramos que já deram fruto."],["Groselheira e framboeseira","Retire as varas velhas junto ao solo."],["Árvores ornamentais de folha caduca","Poda de limpeza e de forma."]],
+trat:[["Pessegueiro, ameixeira, nectarina","Calda bordalesa (cobre) contra a lepra, antes de os gomos incharem."],["Macieira, pereira e citrinos","Óleo de inverno contra cochonilhas e ovos de afídeos, em dia sem geada."],["Oliveira","Cobre contra olho-de-pavão, se não tratou no outono."],["Videira","Retire e queime sarmentos e cachos secos com doença."]],
+plantar:[["Árvores de fruto em raiz nua","Macieira, pereira, ameixeira, cerejeira, marmeleiro.","a"],["Alho","Plantar os dentes em terra bem drenada.","r"],["Cebola (cebolinho)","Transplante para o terreno definitivo.","r"],["Favas e ervilhas","Sementeira direta.","f"],["Couves","Transplante de couve-galega e penca.","f"],["Morangueiro","Plantar em camalhão.","f"],["Tomate e pimento em alfobre","Só em local abrigado e quente, no fim do mês.","f"]],
+estacas:[["Videira","Estacas lenhosas de sarmentos da poda, com 3 a 4 gomos."],["Figueira","Estacas lenhosas de ramos do ano, com 20–30 cm."],["Roseira","Estacas lenhosas de 20 cm, enterradas 2/3."],["Marmeleiro","Estacas lenhosas, enraízam bem."],["Salgueiro e choupo","Estacas lenhosas grossas, diretamente no solo húmido."]]},
+/* FEV */{
+podas:[["Videira","Terminar a poda de inverno."],["Macieira, pereira e marmeleiro","Terminar a poda antes do abrolhamento."],["Pessegueiro e ameixeira","Poda perto da floração, quando já se distinguem gomos de flor."],["Roseiras","Poda principal: deixe 3 a 5 ramos com 2–3 gomos."],["Hortênsias","Corte as flores secas até ao primeiro par de gomos fortes."],["Oliveira","Pode começar no fim do mês, nas zonas sem geada."]],
+trat:[["Pessegueiro e ameixeira","2.º tratamento com cobre contra a lepra, quando os gomos incham."],["Videira","No abrolhamento, tratamento contra a escoriose."],["Macieira e pereira","Cobre no abrolhamento contra o pedrado."],["Citrinos","Óleo contra cochonilhas, se houver ataque."],["Couves","Vigiar afídeos; sabão potássico se necessário."]],
+plantar:[["Batata temporã","Nas zonas amenas, em terra que não encharque.","r"],["Cenoura, rabanete, beterraba","Sementeira direta ao ar livre.","r"],["Alho-francês e cebola","Transplante.","r"],["Ervilhas e favas","Últimas sementeiras do inverno.","f"],["Espinafre e alface","Sementeira ou transplante.","f"],["Alfobre: tomate, pimento, beringela","Em local protegido e quente.","f"],["Árvores de fruto em raiz nua","Último mês bom para plantar.","a"],["Espargos","Plantar as garras.","a"]],
+estacas:[["Videira","Estacas lenhosas da poda."],["Figueira","Estacas lenhosas."],["Romãzeira","Estacas lenhosas de 20–25 cm."],["Roseira","Aproveite os ramos da poda."],["Hortênsia","Estacas lenhosas com 2 pares de gomos."],["Marmeleiro","Estacas lenhosas."]]},
+/* MAR */{
+podas:[["Oliveira","Início da época de poda (até maio)."],["Citrinos","Poda ligeira depois da colheita, no fim do mês."],["Arbustos de flor de verão","Budleia, hibisco, lantana, lúcia-lima."],["Alecrim e lavanda","Poda ligeira, sem cortar madeira velha."],["Pessegueiro","Últimas podas até à floração."]],
+trat:[["Videira","Míldio: tratar com cobre quando os rebentos têm 10 cm, a temperatura passa os 10 °C e chove."],["Pessegueiro e ameixeira","Afídeos nos rebentos: sabão potássico."],["Roseiras","Afídeos e oídio (enxofre)."],["Morangueiro e hortícolas","Lesmas e caracóis: iscas ou fosfato férrico."]],
+plantar:[["Batata","Época principal de plantação.","r"],["Cenoura, beterraba, rabanete","Sementeira direta.","r"],["Cebola","Transplante.","r"],["Alface, acelga, espinafre","Sementeira ou transplante.","f"],["Salsa e coentros","Sementeira direta.","f"],["Alfobre: tomate, pimento, pepino, abóbora, melão","Protegido do frio.","f"],["Morangueiro","Plantar.","f"],["Citrinos","Plantar em torrão.","a"]],
+estacas:[["Oliveira","Estacas semi-lenhosas, em areia húmida e à sombra."],["Alecrim e lavanda","Estacas de 10 cm, tirando as folhas de baixo."],["Sardinheiras (gerânios)","Estacas de pontas, enraízam em vaso."],["Buxo","Estacas de 10–15 cm."],["Loendro","Estacas em água ou em terra."],["Crisântemo","Rebentos da base."]]},
+/* ABR */{
+podas:[["Oliveira","Continuar a poda."],["Citrinos","Poda ligeira de limpeza."],["Arbustos de floração precoce","Forsítia, camélia, jasmim: podar depois da flor."],["Videira","Desladroamento: tirar rebentos ladrões do tronco."],["Sebes","Primeiro corte do ano."]],
+trat:[["Videira","Míldio (cobre) e oídio (enxofre) a partir dos cachos visíveis."],["Macieira e pereira","Pedrado; colocar armadilhas para o bichado."],["Batateira","Escaravelho: apanha manual de adultos e posturas."],["Citrinos e pessegueiro","Afídeos: sabão potássico."],["Hortícolas","Lesmas e caracóis."]],
+plantar:[["Tomate, pimento, beringela","Transplante quando já não há risco de geada.","f"],["Feijão","Sementeira direta.","f"],["Milho","Sementeira direta.","f"],["Abóbora, curgete, pepino","Sementeira ou transplante.","f"],["Melão e melancia","Sementeira ou transplante.","f"],["Manjericão","Transplante.","f"],["Cenoura e beterraba","Sementeira direta.","r"],["Batata-doce","Plantar no fim do mês.","r"]],
+estacas:[["Alecrim, lavanda, salva","Estacas de pontas."],["Hortênsia","Estacas herbáceas de rebentos sem flor."],["Buganvília","Estacas semi-lenhosas."],["Fúcsia","Estacas herbáceas."],["Sardinheiras","Estacas de pontas."],["Suculentas","Folhas ou pedaços de caule, deixar secar 2 dias."]]},
+/* MAI */{
+podas:[["Oliveira","Terminar a poda."],["Tomateiro","Tirar os ladrões (rebentos nas axilas)."],["Videira","Desponta e desladroamento."],["Glicínia e lilás","Poda depois da floração."],["Árvores de fruto","Monda dos frutos (pessegueiro, macieira) para frutos maiores."],["Sebes","Corte de forma."]],
+trat:[["Videira","Míldio e oídio: época de maior risco."],["Tomateiro","Míldio: cobre preventivo com tempo húmido."],["Batateira","Míldio e escaravelho."],["Couves","Lagartas: Bacillus thuringiensis."],["Feijão","Afídeos: sabão potássico."],["Oliveira","Traça da oliveira na floração (Bacillus thuringiensis)."]],
+plantar:[["Feijão","Todas as variedades.","f"],["Milho","Sementeira direta.","f"],["Tomate, pimento, beringela","Transplante.","f"],["Abóbora, curgete, pepino","Sementeira ou transplante.","f"],["Melão e melancia","Transplante.","f"],["Alface de verão","Variedades resistentes ao calor.","f"],["Alfobre de couves de outono","Para transplantar em julho.","f"],["Batata-doce","Plantar as ramas.","r"]],
+estacas:[["Hortênsia","Estacas herbáceas."],["Roseira","Estacas semi-lenhosas depois da floração."],["Alecrim, lavanda, tomilho","Estacas de pontas."],["Buganvília","Estacas semi-lenhosas."],["Sardinheiras","Estacas de pontas."],["Loendro","Estacas semi-lenhosas."]]},
+/* JUN */{
+podas:[["Tomateiro","Continuar a tirar ladrões."],["Videira","Desponta e desfolha ligeira junto aos cachos."],["Árvores de fruto","Poda em verde: tirar ramos ladrões (chupões)."],["Cerejeira","Poda logo depois da colheita."],["Sebes","Corte de manutenção."]],
+trat:[["Videira","Oídio: enxofre (nunca acima de 30 °C); míldio se chover."],["Tomateiro","Míldio e traça (Tuta absoluta): armadilhas."],["Árvores de fruto","Mosca-da-fruta: armadilhas."],["Oliveira","Mosca-da-azeitona: armadilhas cromotrópicas."],["Citrinos","Mosca-branca e afídeos."]],
+plantar:[["Feijão","Últimas sementeiras até meados do mês.","f"],["Alface de verão","Em meia-sombra.","f"],["Curgete e pepino","Segunda sementeira.","f"],["Alfobre: couves e brócolos","Para outono e inverno.","f"],["Cenoura e beterraba","Sementeira direta, com rega.","r"],["Alho-francês","Transplante.","r"]],
+estacas:[["Hortênsia","Estacas herbáceas."],["Roseira","Estacas semi-lenhosas."],["Buxo","Estacas semi-lenhosas."],["Oliveira","Estacas semi-lenhosas, com humidade constante."],["Jasmim","Estacas semi-lenhosas."],["Hera","Estacas com nós, enraízam em água."]]},
+/* JUL */{
+podas:[["Videira","Desponta dos rebentos."],["Árvores de caroço","Cerejeira, damasqueiro, ameixeira: poda em verde depois da colheita."],["Lavanda","Corte das flores depois da floração."],["Glicínia","Poda de verão: encurtar rebentos longos."],["Tomateiro","Ladrões e folhas de baixo."]],
+trat:[["Videira","Oídio: enxofre de manhã cedo; míldio se chover."],["Oliveira","Mosca-da-azeitona: armadilhas, caulino."],["Tomateiro","Míldio e traça."],["Fruteiras","Mosca-do-mediterrâneo: armadilhas."],["Abóbora e pepino","Oídio: enxofre ou bicarbonato."],["Citrinos","Ácaros e cochonilhas."]],
+plantar:[["Couves","Galega, lombarda, coração: transplante.","f"],["Brócolos e couve-flor","Transplante.","f"],["Alface","Sementeira e transplante.","f"],["Feijão-verde","Só no início do mês.","f"],["Cenoura","Sementeira direta.","r"],["Nabos","No fim do mês.","r"],["Rabanete","Sementeira direta.","r"]],
+estacas:[["Hortênsia","Até ao fim do mês."],["Roseira","Estacas semi-lenhosas."],["Alecrim e lavanda","Estacas de pontas."],["Buganvília","Estacas semi-lenhosas."],["Citrinos","Estacas semi-lenhosas com hormona de enraizamento."],["Azálea","Estacas semi-lenhosas."]]},
+/* AGO */{
+podas:[["Árvores de caroço","Poda em verde depois da colheita."],["Tomateiro","Despontar o topo para amadurecer os frutos."],["Framboeseira","Cortar as varas que já deram fruto."],["Glicínia","Poda de verão."],["Sebes","Último corte forte do ano."]],
+trat:[["Videira","Parar cobre e enxofre antes da vindima (respeitar intervalo de segurança). Vigiar podridão."],["Oliveira","Mosca-da-azeitona: período crítico."],["Macieira","Bichado (2.ª geração)."],["Tomateiro","Míldio com orvalhos."],["Couves","Lagartas: Bacillus thuringiensis."]],
+plantar:[["Couves, brócolos, couve-flor","Transplante.","f"],["Alface, chicória, endívia","Sementeira ou transplante.","f"],["Espinafre","No fim do mês.","f"],["Nabos e nabiças","Sementeira direta.","r"],["Cenoura e rabanete","Sementeira direta.","r"],["Alfobre: cebola","Para transplantar no inverno.","r"],["Morangueiro","Enraizar os estolhos.","f"]],
+estacas:[["Roseira","Estacas semi-lenhosas."],["Hortênsia","Últimas estacas."],["Buxo","Estacas semi-lenhosas."],["Citrinos","Estacas semi-lenhosas."],["Pitósporo","Estacas semi-lenhosas."],["Lavanda","Estacas de pontas."]]},
+/* SET */{
+podas:[["Framboeseira","Cortar as varas velhas."],["Pessegueiro","Poda em verde depois da colheita."],["Sebes","Último corte ligeiro."],["Ervas aromáticas","Poda ligeira de forma."]],
+trat:[["Videira","Depois da vindima não precisa de tratamentos."],["Oliveira","Mosca; cobre contra a gafa com as primeiras chuvas."],["Citrinos","Cobre preventivo antes das chuvas."],["Fruteiras","Apanhar e destruir frutos caídos."],["Couves","Lagartas e afídeos."],["Hortícolas","Lesmas, que voltam com as chuvas."]],
+plantar:[["Couves, brócolos, couve-flor","Transplante.","f"],["Alface, espinafre, acelga","Sementeira ou transplante.","f"],["Favas","No fim do mês, nas zonas quentes.","f"],["Morangueiro","Plantar.","f"],["Nabos, rabanetes, cenouras","Sementeira direta.","r"],["Cebola","Sementeira em alfobre.","r"]],
+estacas:[["Roseira","Estacas semi-lenhosas."],["Hortênsia","Estacas lenhosas."],["Buxo","Estacas semi-lenhosas."],["Sardinheiras","Estacas para guardar no inverno."],["Loureiro","Estacas semi-lenhosas."],["Oliveira","Estacas semi-lenhosas."]]},
+/* OUT */{
+podas:[["Framboeseira","Limpeza das varas."],["Fruteiras","Retirar ramos secos e doentes (sem poda forte)."],["Roseiras","Só tirar flores secas."],["Sebes","Corte ligeiro de acabamento."]],
+trat:[["Pessegueiro e ameixeira","Cobre na queda da folha contra lepra e cancro."],["Oliveira","Cobre contra olho-de-pavão e gafa."],["Citrinos","Cobre contra o aguado."],["Hortícolas","Lesmas e caracóis."],["Couves","Lagartas."]],
+plantar:[["Favas e ervilhas","Sementeira direta.","f"],["Couves, alface, espinafre","Transplante.","f"],["Salsa e coentros","Sementeira direta.","f"],["Morangueiro","Plantar.","f"],["Alho","Plantar os dentes.","r"],["Cebola","Transplante.","r"],["Nabos","Sementeira.","r"],["Bolbos de primavera","Tulipas, narcisos, jacintos.","r"],["Árvores e arbustos em vaso","Plantar.","a"]],
+estacas:[["Roseira","Estacas lenhosas."],["Figueira","Primeiras estacas lenhosas."],["Hortênsia","Estacas lenhosas."],["Buxo","Estacas."],["Loureiro","Estacas."],["Tamargueira","Estacas lenhosas."]]},
+/* NOV */{
+podas:[["Macieira e pereira","Pode começar depois da queda da folha."],["Roseiras","Poda ligeira de limpeza."],["Groselheira e framboeseira","Retirar varas velhas."],["Ornamentais de folha caduca","Poda de forma."],["Videira","Só depois de cair toda a folha; a tradição prefere janeiro–fevereiro."]],
+trat:[["Pessegueiro e ameixeira","Cobre na queda da folha (lepra)."],["Oliveira","Cobre depois da colheita (gafa, olho-de-pavão)."],["Fruteiras","Retirar e queimar frutos mumificados."],["Citrinos","Cobre depois das chuvas."],["Couves","Afídeos e lesmas."]],
+plantar:[["Árvores de fruto e ornamentais","Começa a melhor época de plantação.","a"],["Sebes","Plantar.","a"],["Alho","Plantar.","r"],["Cebola","Transplante.","r"],["Bolbos","Plantar.","r"],["Favas e ervilhas","Sementeira.","f"],["Couves e alface de inverno","Transplante.","f"],["Espinafre","Sementeira.","f"],["Morangueiro","Plantar.","f"]],
+estacas:[["Figueira","Estacas lenhosas."],["Videira","Com sarmentos, se já podou."],["Roseira","Estacas lenhosas."],["Marmeleiro","Estacas lenhosas."],["Romãzeira","Estacas lenhosas."],["Groselheira","Estacas lenhosas."],["Salgueiro e choupo","Estacas lenhosas."]]},
+/* DEZ */{
+podas:[["Macieira e pereira","Poda de inverno em dias sem geada."],["Kiwi","Poda de inverno."],["Videira","Nas zonas amenas; a tradição prefere janeiro–fevereiro."],["Groselheira","Poda de limpeza."],["Ornamentais de folha caduca","Poda de forma."]],
+trat:[["Fruteiras","Óleo de inverno contra cochonilhas e ovos de afídeos e ácaros, sem geada."],["Pessegueiro","Cobre contra a lepra."],["Oliveira e citrinos","Cobre, se ainda não tratou."],["Ferramentas","Limpar e desinfetar tesouras e serrotes."]],
+plantar:[["Árvores de fruto em raiz nua","Época ideal.","a"],["Sebes e arbustos de folha caduca","Plantar.","a"],["Alho","Plantar.","r"],["Cebola","Transplante.","r"],["Favas e ervilhas","Sementeira.","f"],["Couves e alface","Transplante.","f"],["Morangueiro","Plantar.","f"]],
+estacas:[["Videira","Estacas lenhosas."],["Figueira","Estacas lenhosas."],["Roseira","Estacas lenhosas."],["Marmeleiro","Estacas lenhosas."],["Romãzeira","Estacas lenhosas."],["Kiwi","Estacas lenhosas."],["Amoreira","Estacas lenhosas."]]}
+];
+
+/* ---------- Lua ---------- */
+const SYN=29.530588853, REF=Date.UTC(2000,0,6,18,14);
+function moonAge(d){const t=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate(),12);let a=((t-REF)/864e5)%SYN;return a<0?a+SYN:a}
+function phase(a){
+  if(a<1.85||a>=27.68) return {k:"nova",n:"Lua nova"};
+  if(a<13.77) return {k:"cresc",n:a<5.5?"Lua crescente":a<9.2?"Quarto crescente":"Crescente gibosa"};
+  if(a<15.77) return {k:"cheia",n:"Lua cheia"};
+  return {k:"ming",n:a<20.3?"Minguante gibosa":a<24?"Quarto minguante":"Lua minguante"};
+}
+function moonSVG(a){
+  const r=18,c=20,th=2*Math.PI*a/SYN,rx=Math.abs(Math.cos(th))*r,wax=th<Math.PI;
+  const s1=wax?1:0;const gib=Math.cos(th)<0;const s2=wax?(gib?1:0):(gib?0:1);
+  const p=`M${c} ${c-r}A${r} ${r} 0 0 ${s1} ${c} ${c+r}A${rx} ${r} 0 0 ${s2} ${c} ${c-r}Z`;
+  return `<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="var(--line)"/><path d="${p}" fill="var(--moon)" stroke="var(--muted)" stroke-width=".6"/><circle cx="20" cy="20" r="18" fill="none" stroke="var(--muted)" stroke-width="1"/></svg>`;
+}
+const MOON_TXT={
+  nova:"Dia de transição: a tradição aconselha descansar das sementeiras.",
+  cresc:"A seiva sobe: bom para semear o que dá folha e fruto, e para estacas.",
+  cheia:"Seiva no máximo: bom para folha e fruto; evitar podas.",
+  ming:"A seiva desce: bom para podar e para plantar raízes, bolbos e árvores."
+};
+
+/* ---------- Conselho do dia por categoria ---------- */
+const CAT={
+  podas:{t:"Podas",sub:"O que podar este mês",
+    v:p=>p.k==="ming"?["good","Lua minguante: dia favorável para podar. A planta perde menos seiva e rebenta com mais equilíbrio."]
+       :p.k==="nova"?["good","Lua nova: dia aceitável para podar."]
+       :["meh","Lua "+(p.k==="cheia"?"cheia":"crescente")+": a tradição prefere podar em lua minguante. Se puder, espere uns dias."],
+    tips:"<b>Antes de podar:</b> evite dias de chuva e de geada; desinfete a tesoura entre plantas doentes; faça cortes limpos e inclinados acima de um gomo."},
+  trat:{t:"Tratamentos",sub:"Plantas a vigiar e tratar este mês",
+    v:()=>["good","O mais importante é o tempo: trate só sem chuva prevista para as próximas horas e sem vento."],
+    tips:"<b>Regras:</b> trate de manhã cedo ou ao fim da tarde; enxofre só abaixo de 30 °C; respeite o intervalo de segurança antes de colher; use luvas, máscara e óculos; leia sempre o rótulo do produto."},
+  plantar:{t:"Plantar e semear",sub:"Hortícolas e plantas para este mês",
+    v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]
+       :p.k==="ming"?["good","Lua minguante: dia indicado para raízes, bolbos, tubérculos e árvores."]
+       :["good","Lua "+(p.k==="cheia"?"cheia":"crescente")+": dia indicado para plantas de folha, fruto e grão."],
+    tips:"<b>Dica:</b> as plantas marcadas com «Hoje» são as que a tradição lunar favorece neste dia. Regue logo depois de plantar."},
+  estacas:{t:"Estaquia",sub:"Plantas para multiplicar por estacas este mês",
+    v:p=>p.k==="cresc"||p.k==="cheia"?["good","Lua "+(p.k==="cheia"?"cheia":"crescente")+": a tradição diz que as estacas pegam melhor com a seiva a subir."]
+       :["meh","Lua "+(p.k==="nova"?"nova":"minguante")+": pode fazer estacas, mas a tradição prefere lua crescente."],
+    tips:"<b>Como fazer:</b> corte abaixo de um nó, tire as folhas de baixo, enterre 2/3 em terra leve ou areia húmida, mantenha à sombra e sem secar. Hormona de enraizamento ajuda."}
+};
+const TIPO={r:["raiz","ming"],f:["folha/fruto","cresc"],a:["árvore","ming"]};
+
+/* ---------- Estado ---------- */
+let day=new Date(); day.setHours(12,0,0,0);
+let cur="podas";
+try{const s=localStorage.getItem("agenda-cat"); if(s&&CAT[s]) cur=s}catch(e){}
+const $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+
+function render(){
+  const m=D[day.getMonth()], a=moonAge(day), p=phase(a);
+  const isToday=iso(day)===iso(new Date());
+  $("wd").textContent=(isToday?"Hoje · ":"")+day.toLocaleDateString("pt-PT",{weekday:"long"});
+  $("dt").textContent=day.getDate()+" de "+MESES[day.getMonth()]+" "+(day.getFullYear()!==new Date().getFullYear()?day.getFullYear():"");
+  $("pick").value=iso(day);
+  $("moon").innerHTML=moonSVG(a)+`<div><b>${p.n}</b><span>${MOON_TXT[p.k]}</span></div>`;
+  document.querySelectorAll(".cat").forEach(b=>{
+    const k=b.dataset.k; b.setAttribute("aria-pressed",k===cur);
+    const n=m[k].length; b.querySelector(".cnt").textContent=n+(k==="trat"?" a vigiar":k==="plantar"?" culturas":" plantas");
+  });
+  const c=CAT[cur], [vk,vt]=c.v(p);
+  const items=m[cur].map(([n,note,t])=>{
+    let chip="";
+    if(cur==="plantar"&&t){const [lbl,ph]=TIPO[t];const fav=p.k!=="nova"&&(ph===p.k||(ph==="cresc"&&p.k==="cheia"));chip=`<span class="chip${fav?" hot":""}">${fav?"Hoje · ":""}${lbl}</span>`}
+    return `<li><div class="it-top"><span class="it-name">${esc(n)}</span>${chip}</div><span class="it-note">${esc(note)}</span></li>`;
+  }).join("");
+  $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${c.sub.replace("este mês","em "+MESES[day.getMonth()])}</p></div>
+    <div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>
+    <ul class="items">${items}</ul><div class="tips">${c.tips}</div>`;
+}
+document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
+$("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
+$("next").onclick=()=>{day.setDate(day.getDate()+1);render()};
+$("btnHoje").onclick=()=>{day=new Date();day.setHours(12,0,0,0);render()};
+$("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]=e.target.value.split("-").map(Number);day=new Date(y,mo-1,d,12);render()});
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
+render();
+</script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js")</script></body></html>
