@@ -302,12 +302,17 @@ $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
 render();
 </script>
-<div id="instalar" hidden><span>Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar">Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>
+<div id="instalar" hidden><span id="instTxt">Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar" hidden>Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>
 <script>
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");
-let pedido=null;const bar=document.getElementById("instalar");
-addEventListener("beforeinstallprompt",e=>{e.preventDefault();pedido=e;bar.hidden=false;document.body.style.paddingBottom="80px"});
-document.getElementById("btnInstalar").onclick=async()=>{if(!pedido)return;pedido.prompt();await pedido.userChoice;pedido=null;bar.hidden=true;document.body.style.paddingBottom=""};
-document.getElementById("fecharInstalar").onclick=()=>{bar.hidden=true;document.body.style.paddingBottom=""};
-addEventListener("appinstalled",()=>{bar.hidden=true});
+const bar=document.getElementById("instalar"),txt=document.getElementById("instTxt"),btn=document.getElementById("btnInstalar");
+const instalada=matchMedia("(display-mode: standalone)").matches||navigator.standalone;
+let pedido=null;
+function mostrar(){bar.hidden=false;document.body.style.paddingBottom="96px"}
+function esconder(){bar.hidden=true;document.body.style.paddingBottom=""}
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();pedido=e;txt.textContent="Instale a Agenda do Campo no telemóvel";btn.hidden=false;mostrar()});
+setTimeout(()=>{if(!instalada&&!pedido){txt.innerHTML="Para instalar: toque em <b>⋮</b> (canto superior direito do Chrome) e depois em <b>Adicionar ao ecrã principal</b> ou <b>Instalar app</b>.";mostrar()}},2500);
+btn.onclick=async()=>{if(!pedido)return;pedido.prompt();await pedido.userChoice;pedido=null;esconder()};
+document.getElementById("fecharInstalar").onclick=esconder;
+addEventListener("appinstalled",esconder);
 </script></body></html>
