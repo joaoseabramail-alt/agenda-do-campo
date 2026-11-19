@@ -191,12 +191,12 @@ const CAT={
   podas:{t:"Podas",sub:"O que podar",u:"plantas",
     v:p=>p.k==="ming"?["good","Lua minguante: dia favorável para podar. A planta perde menos seiva e rebenta com mais equilíbrio."]:p.k==="nova"?["good","Lua nova: dia aceitável para podar."]:["meh","Lua "+L(p)+": a tradição prefere podar em lua minguante. Se puder, espere uns dias."],
     tips:"<b>Antes de podar:</b> evite dias de chuva e de geada; desinfete a tesoura entre plantas doentes; faça cortes limpos e inclinados acima de um gomo."},
-  trat:{t:"Tratamentos",sub:"O que tratar e vigiar",u:"a tratar",
+  trat:{t:"Tratamentos",sub:"O que tratar e vigiar",u:"a intervir",
     v:()=>["good","O mais importante é o tempo: trate só sem chuva prevista para as próximas horas e sem vento."],
-    tips:"<b>Regras:</b> trate de manhã cedo ou ao fim da tarde; com nevoeiro do rio, espere que levante e as folhas sequem; enxofre só abaixo de 30 °C; respeite o intervalo de segurança antes de colher; use luvas, máscara e óculos; leia sempre o rótulo do produto.<br><a href='#avisos'>Ver os Avisos Agrícolas oficiais ↓</a>"},
+    tips:"<b>Primeiro vigiar:</b> trate só quando há sintomas, risco pelo tempo (chuva, humidade, calor) ou aviso agrícola da região. <b>Regras:</b> trate de manhã cedo ou ao fim da tarde; com nevoeiro do rio, espere que levante e as folhas sequem; enxofre só abaixo de 30 °C; respeite o intervalo de segurança antes de colher; use luvas, máscara e óculos; leia sempre o rótulo do produto.<br><a href='#avisos'>Ver os Avisos Agrícolas oficiais ↓</a>"},
   plantar:{t:"Plantar e semear na horta",sub:"Horta, árvores e arbustos a plantar",u:"culturas",
     v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]:p.k==="ming"?["good","Lua minguante: dia indicado para raízes, bolbos, tubérculos e árvores."]:["good","Lua "+L(p)+": dia indicado para plantas de folha, fruto e grão."],
-    tips:"<b>Dica:</b> as culturas marcadas com «Hoje» são as que a tradição lunar favorece neste dia. Regue logo depois de plantar."},
+    tips:"<b>Dica:</b> as culturas marcadas com «Hoje» são as que a tradição lunar favorece neste dia. Não plante com o solo encharcado nem em dias de geada. Regue logo depois de plantar."},
   sem:{t:"Sementeira de viveiro",sub:"Árvores, arbustos e aromáticas a semear",u:"plantas",
     v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]:["good","Lua "+L(p)+": bom dia para semear."],
     tips:"<b>Estratificar:</b> guarde as sementes em areia húmida, num saco no frigorífico, durante o tempo indicado. <b>Estratificação quente e fria:</b> primeiro 2–3 meses à temperatura ambiente, depois o frio. Semeie em alvéolos com terra leve e mantenha húmido."},
@@ -214,7 +214,7 @@ const CAT={
     tips:"<b>Como fazer:</b> use uma faca ou pá limpa; cada parte deve ter raízes e rebentos. Replante logo e regue. Na mergulhia, enterre um ramo ainda preso à planta-mãe e separe-o quando tiver raízes."},
   col:{t:"Colheita",sub:"O que está pronto a colher",u:"culturas",
     v:p=>p.k==="ming"?["good","Lua minguante: a tradição diz que é a melhor altura para colher o que é para guardar (batata, cebola, castanha, maçã)."]:["good","Lua "+L(p)+": bom para colher para comer fresco; o que é para guardar, a tradição prefere colher em minguante."],
-    tips:"<b>Dica:</b> colha de manhã e com tempo seco. Fruta e tubérculos para guardar não devem ter pancadas nem terra húmida."}
+    tips:"<b>Atenção:</b> os meses são um intervalo geral; a época certa depende da variedade (precoce, média ou tardia). <b>Dica:</b> colha de manhã e com tempo seco. Fruta e tubérculos para guardar não devem ter pancadas nem terra húmida."}
 };
 const TIPO={r:["raiz","ming"],f:["folha/fruto","cresc"],a:["árvore","ming"]};
 const DIFN=["","Fácil","Moderado","Difícil","Inviável"];
@@ -223,16 +223,18 @@ const CATN={"fruteira":"Fruteiras","pequeno fruto":"Pequenos frutos","vinha":"Vi
 /* ---------- Gerar a lista do mês ---------- */
 const tem=(o,m)=>o&&o.meses&&o.meses.includes(m);
 const avisos=p=>[p.legal,p.toxicidade].filter(Boolean);
+const nm=(p,k,m)=>p.notas&&p.notas[k]&&p.notas[k][String(m)];
+const junta=(...t)=>[...new Set(t.filter(Boolean).map(x=>x.trim()))].join(" ");
 function lista(k,m){
   const P=DB.plantas, out=[];
   const it=(nome,nota,extra)=>out.push({nome,nota,...extra});
   const geadaNota=(p)=>p.geada&&(m===3||m===4)?" Em Sardoura, só depois de meados de abril e em leira abrigada.":"";
   if(k==="podas"){
-    for(const p of P) for(const e of p.poda||[]) if(e.meses.includes(m)) it(p.nome,e.tipo+".",{p});
+    for(const p of P){if(p.poda&&p.poda.some(e=>e.meses.includes(m))) it(p.nome,nm(p,"podas",m)||p.poda.filter(e=>e.meses.includes(m)).map(e=>e.tipo+".").join(" "),{p})}
   }else if(k==="trat"){
     for(const t of DB.tratamentos){
       const iv=t.intervencoes.filter(i=>i.meses.includes(m));
-      if(iv.length) it(t.grupo,iv.map(i=>i.texto).join(" "),{tag:"Tratar",hot:true,ordem:0});
+      if(iv.length) it(t.grupo,"Se houver sintomas ou risco: "+iv.map(i=>i.texto).join(" "),{tag:"Intervir",hot:true,ordem:0});
       else if(t.vigiar.includes(m)) it(t.grupo,"Vigiar: "+t.problemas.toLowerCase()+".",{tag:"Vigiar",ordem:1});
     }
   }else if(k==="plantar"){
@@ -244,9 +246,10 @@ function lista(k,m){
         const acc=[];
         if(tem(sem,m)) acc.push(sem.modo==="direta"?"Semear diretamente":sem.modo==="alfobre"?"Semear em alfobre":"Semear");
         if(tem(p.plantacao,m)) acc.push(p.plantacao.o_que?"Plantar "+p.plantacao.o_que:(sem&&sem.modo==="alfobre"?"Transplantar":"Plantar"));
-        if(acc.length) it(p.nome,acc.join(" e ")+"."+geadaNota(p)+(m===2&&p.id==="batata"?" Em fevereiro, só em terreno abrigado e virado a sul.":""),{p,lua:p.tipo_lua});
+        if(acc.length) it(p.nome,junta(acc.map((x,i)=>i?x[0].toLowerCase()+x.slice(1):x).join(" e ")+".",nm(p,"plantar",m))+geadaNota(p)+(m===2&&p.id==="batata"?" Em fevereiro, só em terreno abrigado e virado a sul.":""),{p,lua:p.tipo_lua});
       }else if(tem(p.plantacao,m)){
-        if(p.nota_sardoura||p.legal||p.categoria==="bolbo") it(p.nome,"Plantar "+p.plantacao.o_que+"."+(p.nota_sardoura?" "+p.nota_sardoura:"")+geadaNota(p),{p,lua:p.tipo_lua});
+        if(p.invasora) continue;
+        if(p.nota_sardoura||p.legal||p.categoria==="bolbo"||nm(p,"plantar",m)) it(p.nome,junta("Plantar "+p.plantacao.o_que+".",nm(p,"plantar",m))+(p.nota_sardoura?" "+p.nota_sardoura:"")+geadaNota(p),{p,lua:p.tipo_lua});
         else {const g=(CATN[p.categoria]||"Outras")+" ("+p.plantacao.o_que+")";(arv[g]=arv[g]||[]).push(p.nome)}
       }
     }
@@ -256,14 +259,15 @@ function lista(k,m){
     const grupos={};
     for(const p of P){
       if(k==="sem"&&(p.categoria==="hortícola"||(p.categoria==="aromática"&&p.folha==="anual"))) continue;
-      const e=p.propagacao&&p.propagacao[key]; if(!tem(e,m)||e.dificuldade===4) continue;
-      if(e.nota||avisos(p).length) it(p.nome,e.nota||"",{p,dif:e.dificuldade});
+      const e=p.propagacao&&p.propagacao[key]; if(!tem(e,m)||e.dificuldade===4||p.invasora) continue;
+      const nt=junta(nm(p,k,m),e.nota);
+      if(nt||avisos(p).length) it(p.nome,nt,{p,dif:e.dificuldade});
       else (grupos[e.dificuldade||0]=grupos[e.dificuldade||0]||[]).push(p.nome);
     }
     for(const d of Object.keys(grupos).sort()) it((DIFN[d]||"Outras")+":",grupos[d].sort((x,y)=>x.localeCompare(y,"pt")).join(", ")+".",{dif:+d,grupo:true});
-    if(k==="sem"){const r=P.filter(p=>tem({meses:p.recolha_sementes||[]},m)).map(p=>p.nome);if(r.length)it("Recolher sementes",r.join(", ")+".",{dif:0})}
+    if(k==="sem"){const r=P.filter(p=>tem({meses:p.recolha_sementes||[]},m)).map(p=>p.nome).sort((x,y)=>x.localeCompare(y,"pt"));if(r.length)it("Recolher sementes",r.join(", ")+".",{dif:0})}
   }else if(k==="div"){
-    for(const p of P) for(const d of p.divisao||[]) if(d.meses.includes(m)) it(p.nome,d.metodo+".",{p});
+    for(const p of P) if(!p.invasora) for(const d of p.divisao||[]) if(d.meses.includes(m)) it(p.nome,d.metodo+".",{p});
   }else if(k==="col"){
     const g={};
     for(const p of P) if(tem({meses:p.colheita||[]},m)) (g[CATN[p.categoria]||"Outras"]=g[CATN[p.categoria]||"Outras"]||[]).push(p.nome);

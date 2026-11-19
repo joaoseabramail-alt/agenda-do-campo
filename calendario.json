@@ -1,5 +1,5 @@
 {
- "versao": 1,
+ "versao": 2,
  "tarefas": [
   {
    "categoria": "enx",
@@ -110,6 +110,32 @@
    ],
    "nome": "Recolher sementes para o viveiro",
    "texto": "Guarde-as em local fresco ou ponha-as logo a estratificar."
+  },
+  {
+   "categoria": "enx",
+   "meses": [
+    12,
+    1,
+    2
+   ],
+   "nome": "Videira: enxertia de mesa",
+   "texto": "Enxerto à inglesa ou ómega em bacelo, para forçar em estufa e plantar em abril–maio."
+  },
+  {
+   "categoria": "enx",
+   "meses": [
+    10
+   ],
+   "nome": "Escolher árvores-mãe",
+   "texto": "Marque as árvores saudáveis e produtivas de onde vai tirar garfos no inverno."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    2
+   ],
+   "nome": "Separar alporques do ano passado",
+   "texto": "Os de folha caduca que já têm raízes: corte abaixo do musgo e plante em vaso."
   }
  ]
 }

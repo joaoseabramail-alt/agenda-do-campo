@@ -1,5 +1,5 @@
 {
- "versao": 1,
+ "versao": 2,
  "regiao": "Santa Maria de Sardoura, Castelo de Paiva",
  "meses": "1 = janeiro … 12 = dezembro",
  "dificuldade": "1 fácil · 2 moderado · 3 difícil · 4 praticamente inviável",
@@ -81,7 +81,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "2": "Poda perto da floração, quando já se distinguem gomos de flor."
+    },
+    "enx": {
+     "2": "Enxertia de fenda ou à inglesa. Cerejeira japonesa: em cavalo de cerejeira-brava.",
+     "3": "Enxertia de fenda, até ao início da floração.",
+     "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês).",
+     "8": "Borbulha em T ou de lasca. Cerejeira japonesa: borbulha em cerejeira-brava."
+    }
+   }
   },
   {
    "id": "amendoeira",
@@ -157,7 +168,22 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda leve de frutificação; retire ramos secos e cruzados.",
+     "12": "Poda leve de inverno, em dias sem geada."
+    },
+    "plantar": {
+     "1": "Raiz nua, a meia-encosta e ao sol; evite os fundos de vale, onde a geada assenta.",
+     "12": "Raiz nua, em local soalheiro e abrigado das geadas de fevereiro. Em Sardoura, a meia-encosta, nunca no fundo do vale."
+    },
+    "enx": {
+     "2": "Enxertia de fenda ou à inglesa. Cerejeira japonesa: em cavalo de cerejeira-brava.",
+     "7": "Borbulha de olho dormente.",
+     "8": "Borbulha de olho dormente."
+    }
+   }
   },
   {
    "id": "amoreira",
@@ -211,6 +237,12 @@
       2
      ],
      "tipo": "Poda de inverno de forma e limpeza"
+    },
+    {
+     "meses": [
+      11
+     ],
+     "tipo": "Pode começar depois da queda da folha"
     }
    ],
    "colheita": [
@@ -233,7 +265,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "12": "Estacas lenhosas."
+    }
+   }
   },
   {
    "id": "aveleira",
@@ -321,7 +358,23 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Retire rebentos da base e ramos com mais de 6–8 anos.",
+     "2": "Retire rebentos da base e ramos com mais de 6–8 anos.",
+     "5": "Corte os rebentos novos que saem da base (chupões).",
+     "12": "Retire rebentos da base e ramos com mais de 6–8 anos."
+    },
+    "plantar": {
+     "1": "Raiz nua; plante pelo menos duas variedades para polinizar.",
+     "2": "Raiz nua; plante pelo menos duas variedades para polinizar.",
+     "11": "Raiz nua; plante pelo menos duas variedades para polinizar."
+    },
+    "estacas": {
+     "2": "Pega mal de estaca: separe rebentos da base com raiz ou faça mergulhia."
+    }
+   }
   },
   {
    "id": "castanheiro",
@@ -398,7 +451,18 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "notas": {
+    "podas": {
+     "1": "Limpeza de ramos secos e com cancro; desinfete os cortes."
+    },
+    "enx": {
+     "1": "Colha agora os garfos dormentes e guarde-os no frio para a primavera.",
+     "4": "Enxertia de coroa com garfos dormentes guardados no frio.",
+     "5": "Enxertia de flauta (canutilho), com borbulhas do ano.",
+     "6": "Enxertia de flauta, até meados do mês."
+    }
+   }
   },
   {
    "id": "cerejeira",
@@ -476,7 +540,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "enx": {
+     "2": "Enxertia de fenda ou à inglesa. Cerejeira japonesa: em cavalo de cerejeira-brava.",
+     "3": "Enxertia de fenda, até ao início da floração.",
+     "6": "Borbulha de olho vivo (rebenta este ano).",
+     "8": "Borbulha em T ou de lasca. Cerejeira japonesa: borbulha em cerejeira-brava."
+    },
+    "podas": {
+     "6": "Poda logo depois da colheita."
+    }
+   }
   },
   {
    "id": "laranjeira",
@@ -560,7 +635,29 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Poda ligeira depois da colheita, no fim do mês.",
+     "4": "Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."
+    },
+    "enx": {
+     "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
+     "5": "Borbulha em T.",
+     "8": "Borbulha em T.",
+     "9": "Últimas borbulhas em T."
+    },
+    "alp": {
+     "4": "Época principal: limoeiro, laranjeira, tangerineira. Enraízam em 8 a 12 semanas.",
+     "5": "Ainda em boa altura.",
+     "6": "Últimos alporques de plantas lentas.",
+     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas com hormona de enraizamento.",
+     "8": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "limoeiro",
@@ -651,7 +748,29 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Poda ligeira depois da colheita, no fim do mês.",
+     "4": "Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."
+    },
+    "enx": {
+     "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
+     "5": "Borbulha em T.",
+     "8": "Borbulha em T.",
+     "9": "Últimas borbulhas em T."
+    },
+    "alp": {
+     "4": "Época principal: limoeiro, laranjeira, tangerineira. Enraízam em 8 a 12 semanas.",
+     "5": "Ainda em boa altura.",
+     "6": "Últimos alporques de plantas lentas.",
+     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas com hormona de enraizamento.",
+     "8": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "tangerineira",
@@ -734,7 +853,29 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Poda ligeira depois da colheita, no fim do mês.",
+     "4": "Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."
+    },
+    "enx": {
+     "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
+     "5": "Borbulha em T.",
+     "8": "Borbulha em T.",
+     "9": "Últimas borbulhas em T."
+    },
+    "alp": {
+     "4": "Época principal: limoeiro, laranjeira, tangerineira. Enraízam em 8 a 12 semanas.",
+     "5": "Ainda em boa altura.",
+     "6": "Últimos alporques de plantas lentas.",
+     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas com hormona de enraizamento.",
+     "8": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "damasqueiro",
@@ -812,7 +953,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "enx": {
+     "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês)."
+    }
+   }
   },
   {
    "id": "diospireiro",
@@ -883,7 +1029,24 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de inverno leve; frutifica nos rebentos do ano.",
+     "2": "Terminar a poda antes do abrolhamento."
+    },
+    "enx": {
+     "1": "Colha agora os garfos dormentes e guarde-os no frio para a primavera.",
+     "3": "Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."
+    },
+    "plantar": {
+     "2": "Em torrão, antes do abrolhamento.",
+     "12": "De preferência em torrão: as raízes ressentem-se do transplante."
+    },
+    "alp": {
+     "5": "Pode tentar com hormona; é difícil."
+    }
+   }
   },
   {
    "id": "feijoa",
@@ -945,12 +1108,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -959,7 +1121,28 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Poda leve depois da colheita; areje o centro."
+    },
+    "plantar": {
+     "3": "Em torrão; dá-se bem no clima de Paiva.",
+     "4": "Em torrão, em local soalheiro.",
+     "10": "Em torrão, antes das chuvas fortes."
+    },
+    "enx": {
+     "4": "Enxertia de fenda."
+    },
+    "alp": {
+     "4": "Alporque com hormona; enraízam devagar.",
+     "6": "Últimos alporques de plantas lentas."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas com hormona de enraizamento; enraízam devagar.",
+     "8": "Estacas semi-lenhosas com hormona, em abrigo húmido."
+    }
+   }
   },
   {
    "id": "figueira",
@@ -1027,7 +1210,21 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "1": "Estacas lenhosas de ramos do ano, com 20–30 cm.",
+     "2": "Estacas lenhosas.",
+     "10": "Primeiras estacas lenhosas.",
+     "11": "Estacas lenhosas.",
+     "12": "Estacas lenhosas."
+    },
+    "alp": {
+     "3": "Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.",
+     "7": "Últimos alporques do ano.",
+     "9": "Separe e plante."
+    }
+   }
   },
   {
    "id": "macieira",
@@ -1080,6 +1277,12 @@
       2
      ],
      "tipo": "Poda de inverno de forma e limpeza"
+    },
+    {
+     "meses": [
+      11
+     ],
+     "tipo": "Pode começar depois da queda total da folha, em dias sem geada"
     }
    ],
    "colheita": [
@@ -1103,7 +1306,21 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de formação e de frutificação; tire ramos cruzados e doentes.",
+     "2": "Terminar a poda antes do abrolhamento.",
+     "11": "Pode começar depois da queda da folha.",
+     "12": "Poda de inverno em dias sem geada."
+    },
+    "enx": {
+     "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
+     "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
+     "8": "Borbulha em T de olho dormente: rebenta na próxima primavera.",
+     "9": "Últimas borbulhas de olho dormente, no início do mês."
+    }
+   }
   },
   {
    "id": "marmeleiro",
@@ -1158,6 +1375,12 @@
       2
      ],
      "tipo": "Poda de inverno de forma e limpeza"
+    },
+    {
+     "meses": [
+      11
+     ],
+     "tipo": "Pode começar depois da queda total da folha"
     }
    ],
    "colheita": [
@@ -1180,7 +1403,23 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "1": "Estacas lenhosas, enraízam bem.",
+     "2": "Estacas lenhosas.",
+     "11": "Estacas lenhosas.",
+     "12": "Estacas lenhosas."
+    },
+    "podas": {
+     "2": "Terminar a poda antes do abrolhamento."
+    },
+    "enx": {
+     "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
+     "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
+     "8": "Borbulha em T de olho dormente: rebenta na próxima primavera."
+    }
+   }
   },
   {
    "id": "medronheiro",
@@ -1246,12 +1485,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -1259,7 +1497,18 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.",
+     "3": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.",
+     "10": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.",
+     "11": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva."
+    },
+    "podas": {
+     "3": "Poda leve de forma; não precisa de poda forte."
+    }
+   }
   },
   {
    "id": "nectarina",
@@ -1398,12 +1647,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -1412,7 +1660,24 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Em torrão, em local abrigado do frio (floresce no inverno): junto a um muro virado a sul.",
+     "4": "Em torrão, em local abrigado.",
+     "9": "Em torrão, antes do frio."
+    },
+    "enx": {
+     "4": "Enxertia de fenda."
+    },
+    "alp": {
+     "4": "Alporque com hormona; enraízam devagar."
+    },
+    "podas": {
+     "6": "Poda logo depois da colheita.",
+     "7": "Terminar a poda; tire ramos que enchem o centro."
+    }
+   }
   },
   {
    "id": "nogueira",
@@ -1481,7 +1746,23 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Raiz nua, em terra funda e fresca.",
+     "11": "Raiz nua, em terra funda e fresca; precisa de 10–12 m de espaço."
+    },
+    "enx": {
+     "1": "Colha agora os garfos dormentes e guarde-os no frio para a primavera.",
+     "4": "Enxertia de fenda ou coroa no fim do mês, com tempo quente (acima de 15 °C).",
+     "5": "Enxertia de placa (borbulha em escudo retangular).",
+     "6": "Enxertia de placa."
+    },
+    "podas": {
+     "8": "Podar no fim do verão: no inverno a nogueira «chora» muita seiva.",
+     "9": "Última altura boa para podar, antes da queda da folha."
+    }
+   }
   },
   {
    "id": "oliveira",
@@ -1548,12 +1829,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -1562,7 +1842,30 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Início da época de poda (até maio).",
+     "4": "Continuar a poda.",
+     "5": "Terminar a poda."
+    },
+    "estacas": {
+     "3": "Estacas semi-lenhosas, em areia húmida e à sombra.",
+     "6": "Estacas semi-lenhosas, com humidade constante.",
+     "9": "Estacas semi-lenhosas."
+    },
+    "alp": {
+     "3": "No fim do mês, com tempo mais quente.",
+     "4": "Época principal; pode demorar 3 a 4 meses a enraizar.",
+     "5": "Ainda em boa altura.",
+     "6": "Últimos alporques de plantas lentas.",
+     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+    },
+    "enx": {
+     "4": "Enxertia de coroa (casca) quando a casca descola bem.",
+     "5": "Enxertia de coroa ou de borbulha."
+    }
+   }
   },
   {
    "id": "pereira",
@@ -1615,6 +1918,12 @@
       2
      ],
      "tipo": "Poda de inverno de forma e limpeza"
+    },
+    {
+     "meses": [
+      11
+     ],
+     "tipo": "Pode começar depois da queda total da folha, em dias sem geada"
     }
    ],
    "colheita": [
@@ -1639,7 +1948,21 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de formação e de frutificação; tire ramos cruzados e doentes.",
+     "2": "Terminar a poda antes do abrolhamento.",
+     "11": "Pode começar depois da queda da folha.",
+     "12": "Poda de inverno em dias sem geada."
+    },
+    "enx": {
+     "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
+     "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
+     "8": "Borbulha em T de olho dormente: rebenta na próxima primavera.",
+     "9": "Últimas borbulhas de olho dormente, no início do mês."
+    }
+   }
   },
   {
    "id": "pessegueiro",
@@ -1718,7 +2041,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "2": "Poda perto da floração, quando já se distinguem gomos de flor.",
+     "3": "Últimas podas até à floração.",
+     "9": "Poda em verde depois da colheita."
+    },
+    "enx": {
+     "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês).",
+     "8": "Borbulha em T ou de lasca. Cerejeira japonesa: borbulha em cerejeira-brava."
+    }
+   }
   },
   {
    "id": "pistacheiro",
@@ -1786,7 +2120,21 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de formação no inverno.",
+     "2": "Poda de formação no inverno."
+    },
+    "plantar": {
+     "2": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio.",
+     "3": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio."
+    },
+    "enx": {
+     "5": "Enxertia de placa ou de borbulha em T.",
+     "6": "Enxertia de placa."
+    }
+   }
   },
   {
    "id": "romazeira",
@@ -1864,7 +2212,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "2": "Estacas lenhosas de 20–25 cm.",
+     "11": "Estacas lenhosas.",
+     "12": "Estacas lenhosas."
+    },
+    "alp": {
+     "3": "Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.",
+     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+    }
+   }
   },
   {
    "id": "framboeseira",
@@ -1945,7 +2304,16 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Retire as varas velhas junto ao solo.",
+     "8": "Cortar as varas que já deram fruto.",
+     "9": "Cortar as varas velhas.",
+     "10": "Limpeza das varas.",
+     "11": "Retirar varas velhas."
+    }
+   }
   },
   {
    "id": "groselheira",
@@ -1992,6 +2360,12 @@
       2
      ],
      "tipo": "Poda de inverno de forma e limpeza"
+    },
+    {
+     "meses": [
+      11
+     ],
+     "tipo": "Retire as varas velhas depois da queda da folha"
     }
    ],
    "colheita": [
@@ -2014,7 +2388,17 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Retire as varas velhas junto ao solo.",
+     "11": "Retirar varas velhas.",
+     "12": "Poda de limpeza."
+    },
+    "estacas": {
+     "11": "Estacas lenhosas."
+    }
+   }
   },
   {
    "id": "kiwi",
@@ -2096,7 +2480,23 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de inverno: encurte os ramos que já deram fruto.",
+     "2": "Terminar a poda antes do choro da seiva.",
+     "12": "Poda de inverno."
+    },
+    "plantar": {
+     "1": "Plantar em terra ácida e fresca."
+    },
+    "alp": {
+     "4": "Alporque em ramos do ano anterior."
+    },
+    "estacas": {
+     "12": "Estacas lenhosas."
+    }
+   }
   },
   {
    "id": "mirtilo",
@@ -2163,7 +2563,20 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Retire ramos com mais de 4–5 anos e os fracos do centro.",
+     "2": "Terminar a poda antes de os gomos incharem."
+    },
+    "plantar": {
+     "1": "Plantar em terra ácida e fresca."
+    },
+    "estacas": {
+     "6": "Estacas semi-lenhosas de 10–15 cm, em turfa e areia.",
+     "7": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "morangueiro",
@@ -2225,7 +2638,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Plantar em camalhão.",
+     "8": "Enraizar os estolhos."
+    }
+   }
   },
   {
    "id": "uva_mesa",
@@ -2301,7 +2720,23 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda mais longa do que a vinha de vinho, deixando varas para a ramada ou latada.",
+     "2": "Poda mais longa do que a vinha de vinho, deixando varas para a ramada ou latada.",
+     "5": "Monda de cachos: deixe 1 a 2 cachos por vara para uvas maiores.",
+     "6": "Desbaste de bagos com tesoura pontiaguda nas variedades de cacho apertado."
+    },
+    "plantar": {
+     "1": "Bacelo enxertado, junto a ramada ou parede soalheira.",
+     "2": "Bacelo enxertado, junto a ramada ou parede soalheira."
+    },
+    "estacas": {
+     "1": "Estacas lenhosas como a videira; para pomar, use porta-enxerto.",
+     "2": "Estacas lenhosas como a videira; para pomar, use porta-enxerto."
+    }
+   }
   },
   {
    "id": "videira",
@@ -2378,7 +2813,32 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de inverno a partir de meados do mês, em dias sem geada. Aproveite os sarmentos para estacas.",
+     "2": "Continuar a poda de inverno (as castas do Vinho Verde podem ir até março).",
+     "3": "Terminar a poda até ao abrolhamento, nas vinhas mais tardias.",
+     "4": "Desladroamento: tirar rebentos ladrões do tronco.",
+     "5": "Desponta e desladroamento.",
+     "6": "Desponta e desfolha ligeira junto aos cachos.",
+     "7": "Desponta dos rebentos.",
+     "11": "Só depois de cair toda a folha; a tradição prefere janeiro–fevereiro.",
+     "12": "Pode começar depois da queda da folha, mas aqui as geadas tardias aconselham podar em janeiro–março."
+    },
+    "estacas": {
+     "1": "Estacas lenhosas de sarmentos da poda, com 3 a 4 gomos.",
+     "2": "Estacas lenhosas da poda.",
+     "11": "Com sarmentos, se já podou.",
+     "12": "Estacas lenhosas."
+    },
+    "enx": {
+     "3": "Enxertia de fenda no campo, quando a cepa «chora»; corte a cepa uns dias antes.",
+     "4": "Ainda a tempo para enxertia de fenda no campo.",
+     "8": "Enxertia de borbulha (lasca) na cepa, de meados de agosto a setembro.",
+     "9": "Terminar a enxertia de borbulha até meados do mês."
+    }
+   }
   },
   {
    "id": "alecrim",
@@ -2432,12 +2892,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -2446,7 +2905,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Poda ligeira, sem cortar madeira velha."
+    },
+    "estacas": {
+     "3": "Estacas de 10 cm, tirando as folhas de baixo.",
+     "4": "Estacas de pontas.",
+     "5": "Estacas de pontas.",
+     "7": "Estacas de pontas."
+    }
+   }
   },
   {
    "id": "coentros",
@@ -2490,7 +2960,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Sementeira direta.",
+     "10": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "lavanda",
@@ -2541,12 +3017,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -2555,7 +3030,20 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "3": "Poda ligeira, sem cortar madeira velha.",
+     "7": "Corte das flores depois da floração."
+    },
+    "estacas": {
+     "3": "Estacas de 10 cm, tirando as folhas de baixo.",
+     "4": "Estacas de pontas.",
+     "5": "Estacas de pontas.",
+     "7": "Estacas de pontas.",
+     "8": "Estacas de pontas."
+    }
+   }
   },
   {
    "id": "loureiro",
@@ -2604,12 +3092,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -2617,7 +3104,15 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "alp": {
+     "3": "Alporque em ramos direitos de 1 a 2 cm."
+    },
+    "estacas": {
+     "9": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "manjericao",
@@ -2722,7 +3217,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Sementeira direta.",
+     "10": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "salva",
@@ -2774,12 +3275,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -2788,7 +3288,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "4": "Estacas de pontas."
+    }
+   }
   },
   {
    "id": "tomilho",
@@ -2840,12 +3345,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -2854,7 +3358,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "5": "Estacas de pontas."
+    }
+   }
   },
   {
    "id": "amieiro",
@@ -3048,12 +3557,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -3121,12 +3629,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -3136,7 +3643,23 @@
    "recolha_sementes": [
     11,
     12
-   ]
+   ],
+   "notas": {
+    "podas": {
+     "2": "Poda leve de forma no fim do inverno.",
+     "3": "Poda leve de forma no fim do inverno."
+    },
+    "plantar": {
+     "3": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
+     "10": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
+     "11": "Em torrão, à meia-sombra. Só as fêmeas dão bagas."
+    },
+    "sem": {
+     "10": "Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.",
+     "11": "Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.",
+     "12": "Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar."
+    }
+   }
   },
   {
    "id": "bordo_japones",
@@ -3211,7 +3734,19 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "notas": {
+    "sem": {
+     "2": "Sementes estratificadas 90–120 dias no frio (frigorífico).",
+     "3": "Sementes estratificadas 90–120 dias no frio (frigorífico).",
+     "4": "Sementes estratificadas 90–120 dias no frio (frigorífico)."
+    },
+    "alp": {
+     "4": "Melhor método de propagação: enraíza na mesma época e separa-se no outono.",
+     "5": "Melhor método de propagação: enraíza na mesma época e separa-se no outono.",
+     "6": "Melhor método de propagação: enraíza na mesma época e separa-se no outono."
+    }
+   }
   },
   {
    "id": "carvalho_alvarinho",
@@ -3346,7 +3881,17 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "notas": {
+    "sem": {
+     "1": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
+     "2": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
+     "3": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
+     "10": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
+     "11": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
+     "12": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera."
+    }
+   }
   },
   {
    "id": "carvalho_negral",
@@ -3483,7 +4028,15 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "7": "Poda de formação no verão (menos risco de cancro); evite podar no inverno."
+    },
+    "plantar": {
+     "11": "Raiz nua; boa para bordaduras, sebes altas e madeira."
+    }
+   }
   },
   {
    "id": "cerejeira_japao",
@@ -3555,7 +4108,24 @@
    "floracao": null,
    "solo": null,
    "resistencia_geada": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Em torrão, até ao início da floração.",
+     "12": "Raiz nua ou torrão, em local soalheiro."
+    },
+    "sem": {
+     "3": "Estratificação quente e fria. As plantas de semente não saem iguais à variedade: servem de cavalo para enxertar.",
+     "4": "Estratificação quente e fria. As plantas de semente não saem iguais à variedade: servem de cavalo para enxertar."
+    },
+    "alp": {
+     "4": "Alporque em ramos de 1 a 2 cm, com hormona.",
+     "5": "Alporque em ramos de 1 a 2 cm, com hormona."
+    },
+    "podas": {
+     "5": "Só poda leve depois da floração; evite cortes grandes."
+    }
+   }
   },
   {
    "id": "choupo",
@@ -3619,7 +4189,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "1": "Estacas lenhosas grossas, diretamente no solo húmido.",
+     "11": "Estacas lenhosas."
+    }
+   }
   },
   {
    "id": "cornus_kousa",
@@ -3972,7 +4548,24 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "notas": {
+    "podas": {
+     "1": "Poda de formação no inverno; mantenha um eixo central.",
+     "2": "Poda de formação no inverno; mantenha um eixo central.",
+     "12": "Poda de formação no inverno; mantenha um eixo central."
+    },
+    "plantar": {
+     "2": "Raiz nua ou torrão; folhagem vermelha no outono.",
+     "3": "Raiz nua ou torrão; folhagem vermelha no outono.",
+     "11": "Raiz nua ou torrão; folhagem vermelha no outono."
+    },
+    "sem": {
+     "2": "Sementes estratificadas 30–60 dias no frio.",
+     "3": "Sementes estratificadas 30–60 dias no frio.",
+     "4": "Sementes estratificadas 30–60 dias no frio."
+    }
+   }
   },
   {
    "id": "magnolia_grandiflora",
@@ -4030,12 +4623,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -4044,7 +4636,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "8": "Poda leve depois da floração."
+    }
+   }
   },
   {
    "id": "magnolia_stellata",
@@ -4306,12 +4903,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -4319,7 +4915,17 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Limpeza de ramos baixos e secos; corte rente ao tronco.",
+     "12": "Limpeza de ramos baixos e secos; corte rente ao tronco."
+    },
+    "plantar": {
+     "2": "Planta jovem em vaso ou torrão, em local soalheiro.",
+     "11": "Planta jovem em vaso ou torrão, em local soalheiro."
+    }
+   }
   },
   {
    "id": "platano",
@@ -4391,7 +4997,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de inverno de forma ou de rolagem.",
+     "2": "Poda de inverno de forma ou de rolagem.",
+     "12": "Poda de inverno de forma ou de rolagem."
+    },
+    "estacas": {
+     "1": "Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem.",
+     "12": "Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem."
+    }
+   }
   },
   {
    "id": "salgueiro_cinzento",
@@ -4455,7 +5072,13 @@
    "floracao": null,
    "solo": null,
    "resistencia_geada": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "sem": {
+     "3": "Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca.",
+     "4": "Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca."
+    }
+   }
   },
   {
    "id": "sanguinho",
@@ -4565,12 +5188,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -4724,7 +5346,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "1": "Poda de inverno: retire rebentos da base e ramos mal colocados.",
+     "2": "Poda de inverno: retire rebentos da base e ramos mal colocados.",
+     "12": "Poda de inverno: retire rebentos da base e ramos mal colocados."
+    },
+    "plantar": {
+     "1": "Raiz nua; árvore grande, precisa de espaço.",
+     "11": "Raiz nua; árvore grande, precisa de espaço."
+    }
+   }
   },
   {
    "id": "vidoeiro",
@@ -4847,18 +5480,24 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
    "floracao": null,
    "solo": null,
-   "resistencia_geada": null
+   "resistencia_geada": null,
+   "notas": {
+    "sem": {
+     "10": "Precisa de estratificação quente e depois fria; germina devagar.",
+     "11": "Precisa de estratificação quente e depois fria; germina devagar.",
+     "12": "Precisa de estratificação quente e depois fria; germina devagar."
+    }
+   }
   },
   {
    "id": "azalea",
@@ -4917,12 +5556,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -4930,7 +5568,12 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null
+   "autoctone": null,
+   "notas": {
+    "alp": {
+     "3": "Alporque em ramos do ano anterior."
+    }
+   }
   },
   {
    "id": "budleia",
@@ -4939,7 +5582,7 @@
    "categoria": "ornamental",
    "folha": "caduca",
    "tipo_lua": "a",
-   "legal": "Espécie invasora em Portugal (Decreto-Lei 92/2019): não a plante nem propague.",
+   "legal": "Invasora em vários países europeus. Confirme o estatuto na Lista Nacional de Espécies Invasoras (ICNF) antes de propagar.",
    "propagacao": {
     "estacas": {
      "dificuldade": 1,
@@ -5067,7 +5710,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "4": "Estacas semi-lenhosas.",
+     "5": "Estacas semi-lenhosas.",
+     "7": "Estacas semi-lenhosas."
+    },
+    "alp": {
+     "5": "Enraíza bem em alporque.",
+     "6": "Ainda a tempo."
+    }
+   }
   },
   {
    "id": "buxo",
@@ -5120,12 +5774,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -5133,7 +5786,15 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null
+   "autoctone": null,
+   "notas": {
+    "estacas": {
+     "3": "Estacas de 10–15 cm.",
+     "6": "Estacas semi-lenhosas.",
+     "8": "Estacas semi-lenhosas.",
+     "9": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "camelia",
@@ -5190,12 +5851,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -5204,7 +5864,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "alp": {
+     "3": "Alporque em ramos do ano anterior."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "crisantemo",
@@ -5245,12 +5913,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "divisao": [
     {
@@ -5268,7 +5935,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "3": "Rebentos da base."
+    }
+   }
   },
   {
    "id": "folhado",
@@ -5317,12 +5989,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -5447,12 +6118,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -5461,7 +6131,23 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Em torrão; boa para sebes, a 60–80 cm entre plantas.",
+     "10": "Em torrão; boa para sebes, a 60–80 cm entre plantas.",
+     "11": "Em torrão; boa para sebes, a 60–80 cm entre plantas."
+    },
+    "podas": {
+     "4": "Poda depois do primeiro rebento vermelho, para voltar a rebentar com cor.",
+     "9": "Segundo corte de sebe, ligeiro."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas de 10–15 cm, com hormona.",
+     "8": "Estacas semi-lenhosas de 10–15 cm, com hormona.",
+     "9": "Estacas semi-lenhosas de 10–15 cm, com hormona."
+    }
+   }
   },
   {
    "id": "fucsia",
@@ -5514,12 +6200,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -5528,7 +6213,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "4": "Estacas herbáceas."
+    }
+   }
   },
   {
    "id": "glicinia",
@@ -5605,7 +6295,14 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null
+   "autoctone": null,
+   "notas": {
+    "podas": {
+     "5": "Poda depois da floração.",
+     "7": "Poda de verão: encurtar rebentos longos.",
+     "8": "Poda de verão."
+    }
+   }
   },
   {
    "id": "hamamelis",
@@ -5821,7 +6518,27 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null
+   "autoctone": null,
+   "notas": {
+    "podas": {
+     "2": "Corte as flores secas até ao primeiro par de gomos fortes."
+    },
+    "estacas": {
+     "2": "Estacas lenhosas com 2 pares de gomos.",
+     "4": "Estacas herbáceas de rebentos sem flor.",
+     "5": "Estacas herbáceas.",
+     "6": "Estacas herbáceas.",
+     "7": "Até ao fim do mês.",
+     "8": "Últimas estacas.",
+     "9": "Estacas lenhosas.",
+     "10": "Estacas lenhosas."
+    },
+    "alp": {
+     "5": "Enraízam depressa, em 4 a 6 semanas.",
+     "6": "Ainda a tempo.",
+     "7": "Últimos alporques do ano."
+    }
+   }
   },
   {
    "id": "hortensia_carvalho",
@@ -5933,12 +6650,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -5947,7 +6663,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "6": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "lantana",
@@ -6011,7 +6732,9 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null
+   "autoctone": null,
+   "legal": "Espécie invasora em Portugal (Decreto-Lei 92/2019): é proibido plantar e propagar.",
+   "invasora": true
   },
   {
    "id": "lilas",
@@ -6081,7 +6804,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "podas": {
+     "5": "Poda depois da floração."
+    }
+   }
   },
   {
    "id": "limpa_garrafas",
@@ -6133,12 +6861,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -6149,7 +6876,14 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "notas": {
+    "sem": {
+     "3": "Sementes finas à superfície da terra, sem estratificação.",
+     "4": "Sementes finas à superfície da terra, sem estratificação.",
+     "5": "Sementes finas à superfície da terra, sem estratificação."
+    }
+   }
   },
   {
    "id": "loendro",
@@ -6204,18 +6938,24 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
    "floracao": null,
    "solo": null,
-   "resistencia_geada": null
+   "resistencia_geada": null,
+   "notas": {
+    "sem": {
+     "3": "Sem estratificação. Planta tóxica: use luvas.",
+     "4": "Sem estratificação. Planta tóxica: use luvas.",
+     "5": "Sem estratificação. Planta tóxica: use luvas."
+    }
+   }
   },
   {
    "id": "louro_cerejo",
@@ -6267,12 +7007,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -6280,7 +7019,26 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null
+   "autoctone": null,
+   "notas": {
+    "plantar": {
+     "2": "Em torrão; sebe densa, a 60–80 cm entre plantas.",
+     "3": "Em torrão; sebe densa, a 60–80 cm entre plantas.",
+     "10": "Em torrão; sebe densa, a 60–80 cm entre plantas.",
+     "11": "Em torrão; sebe densa, a 60–80 cm entre plantas."
+    },
+    "podas": {
+     "4": "Poda de sebe depois da floração.",
+     "8": "Segundo corte de sebe; use tesoura de mão nas plantas de folha grande."
+    },
+    "alp": {
+     "4": "Alporque em ramos do ano anterior."
+    },
+    "estacas": {
+     "7": "Estacas semi-lenhosas de 15 cm, cortando as folhas ao meio.",
+     "8": "Estacas semi-lenhosas de 15 cm, cortando as folhas ao meio."
+    }
+   }
   },
   {
    "id": "lucia_lima",
@@ -6399,12 +7157,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -6463,12 +7220,11 @@
    ],
    "plantacao": {
     "meses": [
-     3,
-     4,
      10,
-     11
+     11,
+     3
     ],
-    "o_que": "em torrão"
+    "o_que": "em torrão (melhor em outubro–novembro)"
    },
    "adubacao": null,
    "rega": null,
@@ -6477,7 +7233,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "8": "Estacas semi-lenhosas."
+    }
+   }
   },
   {
    "id": "quaresmeira",
@@ -6541,7 +7302,14 @@
    "floracao": null,
    "solo": null,
    "resistencia_geada": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "sem": {
+     "3": "Sem estratificação; em estufa ou abrigo.",
+     "4": "Sem estratificação; em estufa ou abrigo.",
+     "5": "Sem estratificação; em estufa ou abrigo."
+    }
+   }
   },
   {
    "id": "roseira",
@@ -6597,6 +7365,12 @@
       3
      ],
      "tipo": "Poda principal: 3 a 5 ramos com 2–3 gomos"
+    },
+    {
+     "meses": [
+      11
+     ],
+     "tipo": "Só poda ligeira de limpeza; a poda principal é em janeiro–março"
     }
    ],
    "plantacao": {
@@ -6615,7 +7389,35 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "1": "Estacas lenhosas de 20 cm, enterradas 2/3.",
+     "2": "Aproveite os ramos da poda.",
+     "5": "Estacas semi-lenhosas depois da floração.",
+     "6": "Estacas semi-lenhosas.",
+     "7": "Estacas semi-lenhosas.",
+     "8": "Estacas semi-lenhosas.",
+     "9": "Estacas semi-lenhosas.",
+     "10": "Estacas lenhosas.",
+     "11": "Estacas lenhosas.",
+     "12": "Estacas lenhosas."
+    },
+    "podas": {
+     "2": "Poda principal: deixe 3 a 5 ramos com 2–3 gomos.",
+     "10": "Só tirar flores secas.",
+     "11": "Poda ligeira de limpeza."
+    },
+    "alp": {
+     "5": "Enraízam depressa, em 4 a 6 semanas.",
+     "6": "Ainda a tempo.",
+     "7": "Últimos alporques do ano."
+    },
+    "enx": {
+     "7": "Borbulha em T em cavalo de roseira-brava.",
+     "8": "Borbulha em T."
+    }
+   }
   },
   {
    "id": "sardinheira",
@@ -6672,7 +7474,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "3": "Estacas de pontas, enraízam em vaso.",
+     "4": "Estacas de pontas.",
+     "5": "Estacas de pontas.",
+     "9": "Estacas para guardar no inverno."
+    }
+   }
   },
   {
    "id": "tamargueira",
@@ -6736,7 +7546,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "estacas": {
+     "10": "Estacas lenhosas."
+    }
+   }
   },
   {
    "id": "abobora",
@@ -6774,7 +7589,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Protegido do frio.",
+     "4": "Sementeira em alfobre; ao ar livre só no fim do mês.",
+     "5": "Sementeira ou transplante."
+    }
+   }
   },
   {
    "id": "acelga",
@@ -6827,7 +7649,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Sementeira ou transplante.",
+     "9": "Sementeira ou transplante."
+    }
+   }
   },
   {
    "id": "alface",
@@ -6882,7 +7710,19 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Sementeira ou transplante.",
+     "3": "Sementeira ou transplante.",
+     "4": "Sementeira e transplante.",
+     "5": "Variedades resistentes ao calor.",
+     "6": "Em meia-sombra.",
+     "7": "Sementeira e transplante.",
+     "8": "Sementeira ou transplante.",
+     "9": "Sementeira ou transplante."
+    }
+   }
   },
   {
    "id": "alho",
@@ -6912,7 +7752,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Plantar os dentes em terra bem drenada.",
+     "10": "Plantar os dentes."
+    }
+   }
   },
   {
    "id": "alho_frances",
@@ -6988,7 +7834,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Só em terreno abrigado, virado a sul e que não encharque; o normal aqui é março.",
+     "3": "Época principal de plantação em Castelo de Paiva (março e abril).",
+     "4": "Ainda a tempo, na primeira quinzena."
+    }
+   }
   },
   {
    "id": "batata_doce",
@@ -7017,7 +7870,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "4": "Preparar as ramas em alfobre; plantar em maio.",
+     "5": "Plantar as ramas."
+    }
+   }
   },
   {
    "id": "beringela",
@@ -7055,7 +7914,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Em estufa ou junto a uma parede abrigada, para transplantar em maio.",
+     "4": "Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.",
+     "5": "Época principal de transplante em Castelo de Paiva."
+    }
+   }
   },
   {
    "id": "beterraba",
@@ -7105,7 +7971,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Sementeira direta ao ar livre.",
+     "3": "Sementeira direta.",
+     "4": "Sementeira direta.",
+     "6": "Sementeira direta, com rega."
+    }
+   }
   },
   {
    "id": "brocolos",
@@ -7157,7 +8031,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "6": "Para outono e inverno."
+    }
+   }
   },
   {
    "id": "cebola",
@@ -7202,7 +8081,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Transplante para o terreno definitivo.",
+     "8": "Para transplantar no inverno.",
+     "9": "Sementeira em alfobre."
+    }
+   }
   },
   {
    "id": "cenoura",
@@ -7241,7 +8127,18 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Sementeira direta ao ar livre.",
+     "3": "Sementeira direta.",
+     "4": "Sementeira direta.",
+     "6": "Sementeira direta, com rega.",
+     "7": "Sementeira direta.",
+     "8": "Sementeira direta.",
+     "9": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "chicoria",
@@ -7287,7 +8184,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "8": "Sementeira ou transplante."
+    }
+   }
   },
   {
    "id": "couve_coracao",
@@ -7341,7 +8243,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Transplante de couve-galega e penca.",
+     "4": "Sementeira e transplante.",
+     "6": "Para outono e inverno.",
+     "7": "Galega, tronchuda, lombarda, coração: transplante."
+    }
+   }
   },
   {
    "id": "couve_flor",
@@ -7449,7 +8359,17 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Transplante de couve-galega e penca.",
+     "3": "Sementeira em alfobre ou transplante.",
+     "4": "Sementeira e transplante.",
+     "6": "Para outono e inverno.",
+     "7": "Galega, tronchuda, lombarda, coração: transplante.",
+     "9": "Transplante para o inverno."
+    }
+   }
   },
   {
    "id": "couve_lombarda",
@@ -7501,7 +8421,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Transplante de couve-galega e penca.",
+     "4": "Sementeira e transplante.",
+     "6": "Para outono e inverno.",
+     "7": "Galega, tronchuda, lombarda, coração: transplante."
+    }
+   }
   },
   {
    "id": "couve_tronchuda",
@@ -7552,7 +8480,17 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Transplante de couve-galega e penca.",
+     "3": "Sementeira em alfobre ou transplante.",
+     "4": "Sementeira e transplante.",
+     "6": "Para outono e inverno.",
+     "7": "Galega, tronchuda, lombarda, coração: transplante.",
+     "9": "Transplante para o inverno."
+    }
+   }
   },
   {
    "id": "curgete",
@@ -7594,7 +8532,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "4": "Sementeira em alfobre; ao ar livre só no fim do mês.",
+     "5": "Sementeira ou transplante.",
+     "6": "Segunda sementeira."
+    }
+   }
   },
   {
    "id": "endivia",
@@ -7640,7 +8585,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "8": "Sementeira ou transplante."
+    }
+   }
   },
   {
    "id": "ervilha",
@@ -7673,7 +8623,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Sementeira direta.",
+     "2": "Últimas sementeiras do inverno.",
+     "10": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "espargo",
@@ -7718,7 +8675,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Plantar as garras."
+    }
+   }
   },
   {
    "id": "espinafre",
@@ -7755,7 +8717,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Sementeira ou transplante.",
+     "3": "Sementeira ou transplante.",
+     "8": "No fim do mês.",
+     "9": "Sementeira ou transplante."
+    }
+   }
   },
   {
    "id": "fava",
@@ -7786,7 +8756,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Sementeira direta.",
+     "2": "Últimas sementeiras do inverno.",
+     "10": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "feijao",
@@ -7819,7 +8796,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "4": "Sementeira direta.",
+     "5": "Todas as variedades, incluindo o feijão de trepar no milho.",
+     "6": "Últimas sementeiras até meados do mês.",
+     "7": "Só no início do mês."
+    }
+   }
   },
   {
    "id": "melancia",
@@ -7856,7 +8841,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "5": "Transplante em terreno quente e abrigado, virado a sul."
+    }
+   }
   },
   {
    "id": "melao",
@@ -7893,7 +8883,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Protegido do frio.",
+     "5": "Transplante em terreno quente e abrigado, virado a sul."
+    }
+   }
   },
   {
    "id": "milho",
@@ -7923,7 +8919,12 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "5": "Sementeira direta, com a terra já quente."
+    }
+   }
   },
   {
    "id": "nabo",
@@ -7956,7 +8957,14 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "7": "No fim do mês.",
+     "8": "Sementeira direta.",
+     "9": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "pepino",
@@ -7998,7 +9006,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "3": "Protegido do frio.",
+     "4": "Sementeira em alfobre; ao ar livre só no fim do mês.",
+     "5": "Sementeira ou transplante.",
+     "6": "Segunda sementeira."
+    }
+   }
   },
   {
    "id": "pimento",
@@ -8036,7 +9052,15 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Em estufa ou junto a uma parede abrigada, para transplantar em maio.",
+     "3": "Protegido do frio.",
+     "4": "Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.",
+     "5": "Época principal de transplante em Castelo de Paiva."
+    }
+   }
   },
   {
    "id": "rabanete",
@@ -8079,7 +9103,16 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Sementeira direta ao ar livre.",
+     "3": "Sementeira direta.",
+     "7": "Sementeira direta.",
+     "8": "Sementeira direta.",
+     "9": "Sementeira direta."
+    }
+   }
   },
   {
    "id": "tomate",
@@ -8142,7 +9175,22 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "1": "Só em estufa ou abrigo aquecido; ao ar livre ainda é cedo.",
+     "2": "Em estufa ou junto a uma parede abrigada, para transplantar em maio.",
+     "3": "Protegido do frio.",
+     "4": "Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.",
+     "5": "Época principal de transplante em Castelo de Paiva."
+    },
+    "podas": {
+     "5": "Tirar os ladrões (rebentos nas axilas).",
+     "6": "Continuar a tirar ladrões.",
+     "7": "Ladrões e folhas de baixo.",
+     "8": "Despontar o topo para amadurecer os frutos."
+    }
+   }
   },
   {
    "id": "jacinto",
@@ -8286,7 +9334,13 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "legal": "O chorão (Carpobrotus edulis) é invasor em Portugal (Decreto-Lei 92/2019): não o plante nem propague.",
+   "notas": {
+    "estacas": {
+     "4": "Folhas ou pedaços de caule, deixar secar 2 dias."
+    }
+   }
   }
  ]
 }
