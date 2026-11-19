@@ -61,7 +61,7 @@
       7,
       8
      ],
-     "tipo": "Poda em verde depois da colheita"
+     "tipo": "Em árvores estabelecidas, pode em tempo seco durante o verão, preferencialmente após a colheita"
     }
    ],
    "colheita": [
@@ -86,9 +86,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "2": "Poda perto da floração, quando já se distinguem gomos de flor."
-    },
     "enx": {
      "2": "Enxertia de fenda ou à inglesa.",
      "3": "Enxertia de fenda, até ao início da floração.",
@@ -152,7 +149,8 @@
     {
      "meses": [
       1,
-      2
+      2,
+      12
      ],
      "tipo": "Poda leve de frutificação"
     }
@@ -181,7 +179,7 @@
    "notas": {
     "podas": {
      "1": "Poda leve de frutificação; retire ramos secos e cruzados.",
-     "12": "Poda leve de inverno, em dias sem geada."
+     "12": "Se a árvore já estiver em repouso, faça poda ligeira em dia seco e sem geada."
     },
     "plantar": {
      "1": "Raiz nua, a meia-encosta e ao sol; evite os fundos de vale, onde a geada assenta.",
@@ -356,7 +354,7 @@
    },
    "divisao": [
     {
-     "metodo": "Mergulhia e rebentos da base com raiz",
+     "metodo": "Multiplique por mergulhia ou aproveite rebentos da base já enraizados de plantas em pé-franco",
      "meses": [
       10,
       11,
@@ -387,9 +385,6 @@
      "1": "Raiz nua; plante pelo menos duas variedades para polinizar.",
      "2": "Raiz nua; plante pelo menos duas variedades para polinizar.",
      "11": "Raiz nua; plante pelo menos duas variedades para polinizar."
-    },
-    "estacas": {
-     "2": "Pega mal de estaca: separe rebentos da base com raiz ou faça mergulhia."
     }
    },
    "metodo_recomendado": [
@@ -630,8 +625,7 @@
      "meses": [
       4,
       5,
-      6,
-      9
+      6
      ],
      "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
@@ -681,8 +675,7 @@
     },
     "alp": {
      "5": "Ainda em boa altura.",
-     "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
+     "6": "Últimos alporques de plantas lentas."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas com hormona de enraizamento.",
@@ -741,8 +734,7 @@
      "meses": [
       4,
       5,
-      6,
-      9
+      6
      ],
      "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
@@ -799,8 +791,7 @@
     },
     "alp": {
      "5": "Ainda em boa altura.",
-     "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
+     "6": "Últimos alporques de plantas lentas."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas com hormona de enraizamento.",
@@ -859,8 +850,7 @@
      "meses": [
       4,
       5,
-      6,
-      9
+      6
      ],
      "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
@@ -909,8 +899,7 @@
     },
     "alp": {
      "5": "Ainda em boa altura.",
-     "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
+     "6": "Últimos alporques de plantas lentas."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas com hormona de enraizamento.",
@@ -1164,7 +1153,8 @@
     "meses": [
      10,
      11,
-     3
+     3,
+     4
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
@@ -1182,7 +1172,7 @@
     },
     "plantar": {
      "3": "Em torrão; dá-se bem no clima de Paiva.",
-     "4": "Em torrão, em local soalheiro.",
+     "4": "Em torrão ou vaso, escolha um local soalheiro. Adie se houver geada prevista.",
      "10": "Em torrão, antes das chuvas fortes."
     },
     "enx": {
@@ -1236,7 +1226,6 @@
       4,
       5,
       6,
-      9,
       3
      ],
      "nota": null
@@ -1281,9 +1270,7 @@
      "12": "Estacas lenhosas."
     },
     "alp": {
-     "3": "Pode iniciar a alporquia quando a planta retomar o crescimento e passar o risco de geadas fortes.",
-     "7": "Últimos alporques do ano.",
-     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
+     "3": "Pode iniciar a alporquia quando a planta retomar o crescimento e passar o risco de geadas fortes."
     }
    },
    "metodo_recomendado": [
@@ -1730,7 +1717,8 @@
     "meses": [
      10,
      11,
-     3
+     3,
+     4
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
@@ -1745,7 +1733,7 @@
    "notas": {
     "plantar": {
      "3": "Em torrão, em local abrigado do frio (floresce no inverno): junto a um muro virado a sul.",
-     "4": "Em torrão, em local abrigado.",
+     "4": "Use planta de vaso ou torrão em local abrigado. Adie se houver geada prevista.",
      "9": "Em torrão, antes do frio."
     },
     "enx": {
@@ -1792,9 +1780,11 @@
      "dificuldade": 3,
      "meses": [
       3,
-      4
+      4,
+      5,
+      6
      ],
-     "nota": "Fenda ou placa, com tempo quente."
+     "nota": "Enxertia de garfo na primavera; a de placa exige casca que se solte com facilidade."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -1840,8 +1830,8 @@
     },
     "enx": {
      "4": "Enxertia de fenda ou coroa no fim do mês, com tempo quente (acima de 15 °C).",
-     "5": "Enxertia de placa (borbulha em escudo retangular).",
-     "6": "Enxertia de placa."
+     "5": "Enxertia de placa apenas se a casca se soltar bem no porta-enxerto e no ramo que fornece o gomo.",
+     "6": "Enxertia de placa apenas se a casca se soltar bem no porta-enxerto e no ramo que fornece o gomo."
     },
     "podas": {
      "8": "Se necessário, retire ramos mortos ou cruzados durante o verão.",
@@ -1896,8 +1886,7 @@
      "meses": [
       4,
       5,
-      6,
-      9
+      6
      ],
      "nota": null
     }
@@ -1935,9 +1924,8 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Início da época de poda (até maio).",
-     "4": "Continuar a poda.",
-     "5": "Terminar a poda."
+     "3": "Pode para arejar a copa, em tempo seco e depois do risco de geada forte.",
+     "4": "Continuar a poda."
     },
     "estacas": {
      "3": "Estacas semi-lenhosas, em areia húmida e à sombra.",
@@ -1945,11 +1933,9 @@
      "9": "Estacas semi-lenhosas."
     },
     "alp": {
-     "3": "No fim do mês, com tempo mais quente.",
      "4": "Época principal; pode demorar 3 a 4 meses a enraizar.",
      "5": "Ainda em boa altura.",
-     "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
+     "6": "Últimos alporques de plantas lentas."
     },
     "enx": {
      "4": "Enxertia de coroa (casca) quando a casca descola bem.",
@@ -2231,8 +2217,7 @@
      "2": "Poda de formação no inverno."
     },
     "plantar": {
-     "2": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio.",
-     "3": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio."
+     "2": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio."
     },
     "enx": {
      "5": "Enxertia de placa ou de borbulha em T.",
@@ -2285,8 +2270,7 @@
      "meses": [
       4,
       5,
-      6,
-      9
+      6
      ],
      "nota": null
     }
@@ -2327,10 +2311,6 @@
      "2": "Estacas lenhosas de 20–25 cm.",
      "11": "Estacas lenhosas.",
      "12": "Estacas lenhosas."
-    },
-    "alp": {
-     "3": "Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.",
-     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     }
    },
    "metodo_recomendado": [
@@ -2530,7 +2510,8 @@
      "meses": [
       6,
       7,
-      8
+      8,
+      1
      ],
      "nota": null
     },
@@ -2612,7 +2593,7 @@
      "4": "Alporque em ramos do ano anterior."
     },
     "estacas": {
-     "12": "Estacas lenhosas."
+     "1": "Estacas lenhosas de plantas sãs durante o repouso, antes de começar a subir a seiva."
     }
    },
    "metodo_recomendado": [
@@ -2745,7 +2726,7 @@
      11,
      3
     ],
-    "o_que": "plantas"
+    "o_que": "plantas, em camalhão se o solo drenar mal"
    },
    "divisao": [
     {
@@ -2766,11 +2747,7 @@
    "exposicao": null,
    "autoctone": null,
    "toxicidade": null,
-   "notas": {
-    "plantar": {
-     "1": "Plantar em camalhão."
-    }
-   },
+   "notas": {},
    "nota_variedade": "Para conservar a variedade de um morangueiro existente, enraíze estolhos de plantas sãs. Para semear, use sementes de uma variedade vendida para esse fim.",
    "metodo_recomendado": [
     "divisao"
@@ -2956,13 +2933,11 @@
      "5": "Desponta e desladroamento.",
      "6": "Desponta e desfolha ligeira junto aos cachos.",
      "7": "Desponta dos rebentos.",
-     "11": "Só depois de cair toda a folha; a tradição prefere janeiro–fevereiro.",
      "12": "Pode começar depois da queda da folha, mas aqui as geadas tardias aconselham podar em janeiro–março."
     },
     "estacas": {
      "1": "Estacas lenhosas de sarmentos da poda, com 3 a 4 gomos.",
      "2": "Estacas lenhosas da poda.",
-     "11": "Com sarmentos, se já podou.",
      "12": "Estacas lenhosas."
     },
     "enx": {
@@ -3022,7 +2997,8 @@
     {
      "meses": [
       4,
-      5
+      5,
+      3
      ],
      "tipo": "Depois da floração, poda leve sem cortar madeira velha"
     }
@@ -3045,7 +3021,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Poda ligeira, sem cortar madeira velha."
+     "3": "Apare ligeiramente só se a floração já tiver terminado. Evite cortar madeira velha."
     },
     "estacas": {
      "3": "Estacas de 10 cm, tirando as folhas de baixo.",
@@ -3148,9 +3124,16 @@
     {
      "meses": [
       8,
-      9
+      9,
+      7
      ],
      "tipo": "Depois da floração, cortar as hastes florais e um pouco da folhagem"
+    },
+    {
+     "meses": [
+      3
+     ],
+     "tipo": "Aparo ligeiro de primavera"
     }
    ],
    "plantacao": {
@@ -3171,11 +3154,10 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Poda ligeira, sem cortar madeira velha.",
-     "7": "Corte das flores depois da floração."
+     "3": "Pode aparar folhagem desalinhada ou queimada pela geada. Evite madeira velha.",
+     "7": "Se a floração já terminou, corte as hastes florais e um pouco da folhagem, sem atingir madeira velha."
     },
     "estacas": {
-     "3": "Estacas de 10 cm, tirando as folhas de baixo.",
      "4": "Use pontas herbáceas de rebentos sem flor, quando houver crescimento novo suficiente.",
      "5": "Estacas de pontas.",
      "7": "Estacas de pontas.",
@@ -3760,7 +3742,8 @@
     {
      "meses": [
       3,
-      4
+      4,
+      2
      ],
      "tipo": "Poda de forma e limpeza em exemplares cultivados de origem legal"
     }
@@ -3780,7 +3763,7 @@
    "resistencia_geada": null,
    "notas": {
     "podas": {
-     "2": "Poda leve de forma no fim do inverno, em exemplares cultivados de origem legal.",
+     "2": "Em exemplares cultivados de origem legal, apare ligeiramente se necessário, no fim do inverno.",
      "3": "Poda leve de forma no fim do inverno, em exemplares cultivados de origem legal."
     },
     "plantar": {
@@ -4227,7 +4210,8 @@
      11,
      12,
      1,
-     2
+     2,
+     3
     ],
     "o_que": "raiz nua ou torrão"
    },
@@ -4239,7 +4223,7 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "3": "Em torrão, até ao início da floração.",
+     "3": "Plante em vaso ou torrão. Use raiz nua apenas se a árvore ainda estiver em repouso.",
      "12": "Raiz nua ou torrão, em local soalheiro."
     },
     "sem": {
@@ -4249,9 +4233,6 @@
     "alp": {
      "4": "Alporque em ramos de 1 a 2 cm, com hormona.",
      "5": "Alporque em ramos de 1 a 2 cm, com hormona."
-    },
-    "podas": {
-     "5": "Só poda leve depois da floração; evite cortes grandes."
     }
    },
    "metodo_recomendado": [
@@ -4666,7 +4647,8 @@
      11,
      12,
      1,
-     2
+     2,
+     3
     ],
     "o_que": "raiz nua ou torrão"
    },
@@ -4688,7 +4670,7 @@
     },
     "plantar": {
      "2": "Raiz nua ou torrão; folhagem vermelha no outono.",
-     "3": "Raiz nua ou torrão; folhagem vermelha no outono.",
+     "3": "Plante em vaso ou torrão. Use raiz nua apenas enquanto a árvore estiver em repouso.",
      "11": "Raiz nua ou torrão; folhagem vermelha no outono."
     },
     "sem": {
@@ -4747,7 +4729,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      8
      ],
      "tipo": "Poda leve de forma"
     }
@@ -4770,7 +4753,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "8": "Poda leve depois da floração."
+     "8": "Para exemplares conduzidos em parede, faça só o aparo ligeiro necessário no verão."
     }
    }
   },
@@ -5622,8 +5605,7 @@
    "notas": {
     "sem": {
      "10": "Precisa de estratificação quente e depois fria; germina devagar.",
-     "11": "Precisa de estratificação quente e depois fria; germina devagar.",
-     "12": "Precisa de estratificação quente e depois fria; germina devagar."
+     "11": "Precisa de estratificação quente e depois fria; germina devagar."
     }
    }
   },
@@ -6267,7 +6249,7 @@
       7,
       8
      ],
-     "tipo": "Cortes de sebe depois de cada rebento vermelho"
+     "tipo": "Apare para dar forma na primavera ou no verão, até meados de agosto"
     }
    ],
    "plantacao": {
@@ -6293,8 +6275,7 @@
      "11": "Em torrão; boa para sebes, a 60–80 cm entre plantas."
     },
     "podas": {
-     "4": "Poda depois do primeiro rebento vermelho, para voltar a rebentar com cor.",
-     "9": "Segundo corte de sebe, ligeiro."
+     "4": "Poda depois do primeiro rebento vermelho, para voltar a rebentar com cor."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas de 10–15 cm, com hormona.",
@@ -6700,8 +6681,7 @@
     },
     "alp": {
      "5": "Enraízam depressa, em 4 a 6 semanas.",
-     "6": "Ainda a tempo.",
-     "7": "Últimos alporques do ano."
+     "6": "Ainda a tempo."
     }
    },
    "metodo_recomendado": [
@@ -7176,7 +7156,8 @@
       6,
       7,
       8,
-      9
+      9,
+      4
      ],
      "tipo": "Cortes de sebe"
     }
@@ -7185,7 +7166,8 @@
     "meses": [
      10,
      11,
-     3
+     3,
+     2
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
@@ -7198,13 +7180,13 @@
    "autoctone": null,
    "notas": {
     "plantar": {
-     "2": "Em torrão; sebe densa, a 60–80 cm entre plantas.",
+     "2": "Plante em torrão ou vaso se o solo não estiver gelado nem encharcado.",
      "3": "Em torrão; sebe densa, a 60–80 cm entre plantas.",
      "10": "Em torrão; sebe densa, a 60–80 cm entre plantas.",
      "11": "Em torrão; sebe densa, a 60–80 cm entre plantas."
     },
     "podas": {
-     "4": "Poda de sebe depois da floração.",
+     "4": "Se a floração já terminou, pode aparar a sebe. Adie se houver ninhos ativos.",
      "8": "Segundo corte de sebe; use tesoura de mão nas plantas de folha grande."
     },
     "alp": {
@@ -7503,7 +7485,10 @@
       1,
       2,
       5,
-      10
+      10,
+      6,
+      7,
+      8
      ],
      "nota": null
     },
@@ -7541,7 +7526,8 @@
      "meses": [
       1,
       2,
-      3
+      3,
+      10
      ],
      "tipo": "Poda principal: 3 a 5 ramos com 2–3 gomos"
     },
@@ -7574,9 +7560,9 @@
      "1": "Estacas lenhosas de 20 cm, enterradas 2/3.",
      "2": "Aproveite os ramos da poda.",
      "5": "Tire estacas herbáceas de pontas de rebentos novos e sãos.",
-     "6": "Estacas semi-lenhosas.",
-     "7": "Estacas semi-lenhosas.",
-     "8": "Estacas semi-lenhosas.",
+     "6": "Use pontas herbáceas de rebentos novos e sãos.",
+     "7": "Use estacas semilenhosas de rebentos sãos do ano, com a base já firme.",
+     "8": "Use estacas semilenhosas de rebentos sãos do ano, com a base já firme.",
      "9": "Estacas semi-lenhosas.",
      "10": "No fim do mês, tire estacas lenhosas se os ramos do ano já estiverem em repouso.",
      "11": "Estacas lenhosas.",
@@ -7584,13 +7570,12 @@
     },
     "podas": {
      "2": "Poda principal: deixe 3 a 5 ramos com 2–3 gomos.",
-     "10": "Só tirar flores secas.",
+     "10": "Retire flores murchas se quiser prolongar a floração. Deixe-as nas roseiras de frutos decorativos.",
      "11": "Poda ligeira de limpeza."
     },
     "alp": {
      "5": "Enraízam depressa, em 4 a 6 semanas.",
-     "6": "Ainda a tempo.",
-     "7": "Últimos alporques do ano."
+     "6": "Ainda a tempo."
     },
     "enx": {
      "7": "Borbulha em T em cavalo de roseira-brava.",
@@ -7730,11 +7715,7 @@
    "exposicao": null,
    "autoctone": null,
    "toxicidade": null,
-   "notas": {
-    "estacas": {
-     "10": "Estacas lenhosas."
-    }
-   }
+   "notas": {}
   },
   {
    "id": "abobora",
@@ -8056,7 +8037,6 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "4": "Preparar as ramas em alfobre; plantar em maio.",
      "5": "Plantar as ramas."
     }
    }
@@ -8876,7 +8856,8 @@
      4,
      9,
      10,
-     11
+     11,
+     8
     ],
     "modo": "direta"
    },
@@ -8902,7 +8883,7 @@
     "plantar": {
      "2": "Sementeira ou transplante.",
      "3": "Sementeira ou transplante.",
-     "8": "No fim do mês.",
+     "8": "Semeie no fim de agosto se o tempo já tiver refrescado. Se continuar calor, espere por setembro.",
      "9": "Sementeira ou transplante."
     }
    }
@@ -9118,7 +9099,8 @@
      8,
      9,
      10,
-     11
+     11,
+     7
     ],
     "modo": "direta"
    },
@@ -9140,7 +9122,7 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "7": "No fim do mês.",
+     "7": "Para colheita de outono, semeie variedades de época se conseguir manter o solo fresco e húmido.",
      "8": "Sementeira direta.",
      "9": "Sementeira direta."
     }
@@ -9358,8 +9340,7 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "1": "Só em estufa ou abrigo aquecido; ao ar livre ainda é cedo.",
-     "2": "Em estufa ou junto a uma parede abrigada, para transplantar em maio.",
+     "2": "Semeie em abrigo aquecido, com boa luz, para manter as plantas protegidas até passar o frio.",
      "3": "Protegido do frio.",
      "4": "Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.",
      "5": "Época principal de transplante em Castelo de Paiva."

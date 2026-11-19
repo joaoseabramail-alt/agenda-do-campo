@@ -64,11 +64,18 @@
   {
    "categoria": "alp",
    "meses": [
-    8,
-    9
+    8
    ],
    "nome": "Ver se há raízes",
-   "texto": "Raízes brancas a encher o musgo: separe em duas fases e plante em vaso à sombra."
+   "texto": "Verifique o enraizamento. Se houver raízes em quantidade suficiente, corte abaixo da zona enraizada e plante em vaso abrigado. Se houver poucas raízes, deixe o ramo ligado à planta-mãe."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    9
+   ],
+   "nome": "Verificar e separar alporques já enraizados",
+   "texto": "Nos citrinos, na figueira, na oliveira e na romãzeira, verifique os alporques feitos antes. Separe só os que tiverem raízes suficientes: corte abaixo da zona enraizada e plante em vaso abrigado. Se houver poucas raízes, deixe o ramo ligado à planta-mãe."
   },
   {
    "categoria": "alp",
@@ -161,6 +168,14 @@
    ],
    "nome": "Maçã muito tardia · Porta da Loja",
    "texto": "Maturação no fim de outubro na coleção do INIAV em Alcobaça. Confirme a maturação no seu pomar."
+  },
+  {
+   "categoria": "plantar",
+   "meses": [
+    4
+   ],
+   "nome": "Batata-doce · preparar os rebentos",
+   "texto": "Enraíze ou instale os rebentos em vasos, em abrigo quente. Passe para o terreno só depois de passar o risco de geada e quando o solo aquecer."
   }
  ]
 }

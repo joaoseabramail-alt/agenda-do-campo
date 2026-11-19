@@ -310,7 +310,9 @@ function render(){
   $("moon").innerHTML=moonSVG(a)+`<div><b>${p.n}</b><span>${MOON_TXT[p.k]}</span></div>`;
   if(!DB){$("panel").innerHTML=`<div class="panel-head"><h2>A carregar…</h2><p>A abrir a base de dados das plantas.</p></div>`;return}
   document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);b.querySelector(".cnt").textContent=contar(k,m)+" "+CAT[k].u});
-  const c=CAT[cur],[vk,vt]=c.v(p),items=lista(cur,m);
+  const c=CAT[cur],items=lista(cur,m);
+  const acompanhamento=cur==="alp"&&items.length>0&&items.every(i=>i.tarefa);
+  const [vk,vt]=c.v(p);
   const li=items.map(i=>{
     let chip="";
     if(i.tag) chip=`<span class="chip${i.hot?" hot":""}">${i.tag}</span>`;
@@ -322,9 +324,9 @@ function render(){
   }).join("")||`<li><span class="it-note">Nada previsto para este mês.</span></li>`;
   let extra="";
   if(cur==="estacas"){const n=DB.plantas.filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
-  $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${c.sub} em ${MESES[day.getMonth()]}</p></div>
-    <div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>
-    <ul class="items">${li}</ul><div class="tips">${c.tips}${extra}</div>`;
+  $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${acompanhamento?"Acompanhamento de alporques":c.sub} em ${MESES[day.getMonth()]}</p></div>
+    ${acompanhamento?"":`<div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>`}
+    <ul class="items">${li}</ul>${acompanhamento?"":`<div class="tips">${c.tips}${extra}</div>`}`;
 }
 document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
 $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
