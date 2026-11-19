@@ -238,7 +238,7 @@ function lista(k,m){
     for(const t of DB.tratamentos){
       const iv=t.intervencoes.filter(i=>i.meses.includes(m));
       for(const i of iv) it(t.grupo,i.texto,{tag:TIPOINT[i.tipo]||"Intervir",hot:i.tipo==="fitofarmaco",ordem:i.tipo==="fitofarmaco"?0:i.tipo==="cultural"?1:2,interv:true});
-      if(!iv.length&&t.vigiar.includes(m)) it(t.grupo,"Vigiar: "+t.problemas.toLowerCase()+".",{tag:"Vigiar",ordem:1});
+      if(t.vigiar.includes(m)&&!iv.some(i=>i.tipo==="monitorizacao")) it(t.grupo,"Vigiar: "+t.problemas.toLowerCase()+".",{tag:"Vigiar",ordem:1});
     }
   }else if(k==="plantar"){
     const arv={};
