@@ -136,6 +136,31 @@
    ],
    "nome": "Separar alporques do ano passado",
    "texto": "Os de folha caduca que já têm raízes: corte abaixo do musgo e plante em vaso."
+  },
+  {
+   "categoria": "col",
+   "meses": [
+    7
+   ],
+   "nome": "Maçã muito precoce · Santiago",
+   "texto": "O INIAV observou maturação no fim de julho, na coleção de Alcobaça. Use esta referência para confirmar a maturação no seu pomar."
+  },
+  {
+   "categoria": "col",
+   "meses": [
+    8,
+    9
+   ],
+   "nome": "Maçã de meia estação · Camoesa de Coura",
+   "texto": "Na coleção do INIAV, a classe média amadureceu do fim de agosto ao início de setembro. A Camoesa de Coura amadureceu no início de setembro."
+  },
+  {
+   "categoria": "col",
+   "meses": [
+    10
+   ],
+   "nome": "Maçã muito tardia · Porta da Loja",
+   "texto": "Maturação no fim de outubro na coleção do INIAV em Alcobaça. Confirme a maturação no seu pomar."
   }
  ]
 }

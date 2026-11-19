@@ -9,16 +9,13 @@
    ],
    "problemas": "Pedrado, bichado, fogo bacteriano",
    "vigiar": [
-    1,
-    2,
     3,
     4,
     5,
     6,
     7,
     8,
-    9,
-    12
+    9
    ],
    "intervencoes": [
     {
@@ -61,14 +58,11 @@
    ],
    "problemas": "Lepra, moniliose",
    "vigiar": [
-    1,
     2,
     3,
     4,
     5,
-    6,
-    10,
-    11
+    6
    ],
    "intervencoes": [
     {
@@ -111,9 +105,7 @@
     5,
     6,
     7,
-    8,
-    11,
-    12
+    8
    ],
    "intervencoes": [
     {
@@ -154,8 +146,7 @@
     4,
     5,
     6,
-    7,
-    11
+    7
    ],
    "intervencoes": [
     {
@@ -193,8 +184,7 @@
     3,
     4,
     5,
-    6,
-    10
+    6
    ],
    "intervencoes": [
     {
@@ -312,7 +302,6 @@
    ],
    "problemas": "Mineira, cochonilha, afídeos",
    "vigiar": [
-    2,
     3,
     4,
     5,
@@ -453,7 +442,6 @@
    ],
    "problemas": "Cochonilha, podridão",
    "vigiar": [
-    2,
     5,
     6,
     7,
@@ -1150,14 +1138,13 @@
    ],
    "problemas": "Processionária",
    "vigiar": [
-    1,
-    2,
-    3,
-    6,
     9,
     10,
     11,
-    12
+    12,
+    1,
+    2,
+    3
    ],
    "intervencoes": [
     {
@@ -1266,8 +1253,7 @@
     6,
     7,
     8,
-    9,
-    11
+    9
    ],
    "intervencoes": [
     {
@@ -1410,6 +1396,118 @@
      ],
      "tipo": "cultural",
      "texto": "Borboleta-do-gerânio: retire os botões furados."
+    }
+   ]
+  },
+  {
+   "grupo": "Marmeleiro",
+   "especies": [
+    "marmeleiro"
+   ],
+   "problemas": "Fogo bacteriano",
+   "vigiar": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Na floração ou durante o crescimento, observe flores e rebentos que escurecem e ficam secos na planta, por vezes com a ponta em gancho. Em caso de suspeita de fogo bacteriano, contacte os serviços fitossanitários."
+    }
+   ]
+  },
+  {
+   "grupo": "Nespereira",
+   "especies": [
+    "nespereira"
+   ],
+   "problemas": "Pedrado e fogo bacteriano",
+   "vigiar": [
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Observe manchas escuras nas folhas e frutos, sobretudo com tempo húmido. Na floração ou durante o crescimento, observe flores e rebentos que escurecem e ficam secos na planta, por vezes com a ponta em gancho. Em caso de suspeita de fogo bacteriano, contacte os serviços fitossanitários."
+    }
+   ]
+  },
+  {
+   "grupo": "Espargo",
+   "especies": [
+    "espargo"
+   ],
+   "problemas": "Criócero-do-espargo",
+   "vigiar": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "tipo": "monitorizacao",
+     "texto": "A partir da saída dos turões, procure adultos, ovos ou marcas de alimentação. Depois da colheita, observe também a folhagem e procure larvas."
+    }
+   ]
+  },
+  {
+   "grupo": "Milho",
+   "especies": [
+    "milho"
+   ],
+   "problemas": "Brocas do milho",
+   "vigiar": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Com a cultura instalada, observe folhas, caules e maçarocas. Procure perfurações e resíduos semelhantes a serradura à entrada das galerias. Siga os avisos agrícolas da região."
     }
    ]
   }

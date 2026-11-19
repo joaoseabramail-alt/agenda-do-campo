@@ -192,7 +192,7 @@ const CAT={
     v:p=>p.k==="ming"?["good","Lua minguante: dia favorável para podar. A planta perde menos seiva e rebenta com mais equilíbrio."]:p.k==="nova"?["good","Lua nova: dia aceitável para podar."]:["meh","Lua "+L(p)+": a tradição prefere podar em lua minguante. Se puder, espere uns dias."],
     tips:"<b>Antes de podar:</b> evite dias de chuva e de geada; desinfete a tesoura entre plantas doentes; faça cortes limpos e inclinados acima de um gomo."},
   trat:{t:"Tratamentos",sub:"O que tratar e vigiar",u:"medidas",
-    v:()=>["good","O mais importante é o tempo: trate só sem chuva prevista para as próximas horas e sem vento."],
+    v:()=>["good","Comece pela vigilância. Antes de intervir, confirme o risco e siga o aviso agrícola e o rótulo, quando aplicável."],
     tips:"<b>Primeiro vigiar:</b> trate só quando há sintomas, risco pelo tempo (chuva, humidade, calor) ou aviso agrícola da região. <b>Regras:</b> trate de manhã cedo ou ao fim da tarde; com nevoeiro do rio, espere que levante e as folhas sequem; enxofre só abaixo de 30 °C; respeite o intervalo de segurança antes de colher; use luvas, máscara e óculos; leia sempre o rótulo do produto.<br><a href='#avisos'>Ver os Avisos Agrícolas oficiais ↓</a>"},
   plantar:{t:"Plantar e semear na horta",sub:"Horta, árvores e arbustos a plantar",u:"culturas",
     v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]:p.k==="ming"?["good","Lua minguante: dia indicado para raízes, bolbos, tubérculos e árvores."]:["good","Lua "+L(p)+": dia indicado para plantas de folha, fruto e grão."],
@@ -237,8 +237,8 @@ function lista(k,m){
   }else if(k==="trat"){
     for(const t of DB.tratamentos){
       const iv=t.intervencoes.filter(i=>i.meses.includes(m));
-      for(const i of iv) it(t.grupo,i.texto,{tag:TIPOINT[i.tipo]||"Intervir",hot:i.tipo==="fitofarmaco",ordem:i.tipo==="fitofarmaco"?0:i.tipo==="cultural"?1:2,interv:true});
-      if(t.vigiar.includes(m)&&!iv.some(i=>i.tipo==="monitorizacao")) it(t.grupo,"Vigiar: "+t.problemas.toLowerCase()+".",{tag:"Vigiar",ordem:1});
+      for(const i of iv) it(t.grupo,i.texto,{tag:TIPOINT[i.tipo]||"Intervir",hot:i.tipo==="fitofarmaco",ordem:i.tipo==="monitorizacao"?0:i.tipo==="cultural"?1:2});
+      if(t.vigiar.includes(m)&&!iv.some(i=>i.tipo==="monitorizacao")) it(t.grupo, t.problemas+".",{tag:"Vigiar",ordem:0});
     }
   }else if(k==="plantar"){
     const arv={};
@@ -291,7 +291,7 @@ function lista(k,m){
   out.sort((a,b)=>(a.ordem||0)-(b.ordem||0)||(a.grupo?1:0)-(b.grupo?1:0)||(a.dif||0)-(b.dif||0)||a.nome.localeCompare(b.nome,"pt"));
   return out;
 }
-function contar(k,m){const l=lista(k,m);return l.reduce((n,i)=>n+(i.grupo?i.nota.split(",").length:i.tarefa?0:k==="trat"&&!i.interv?0:1),0)}
+function contar(k,m){const l=lista(k,m);return l.reduce((n,i)=>n+(i.grupo?i.nota.split(",").length:i.tarefa?0:1),0)}
 
 /* ---------- Estado e desenho ---------- */
 let day=new Date(); day.setHours(12,0,0,0);

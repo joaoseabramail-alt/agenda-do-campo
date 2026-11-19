@@ -424,7 +424,8 @@
      "meses": [
       3,
       4,
-      5
+      5,
+      6
      ],
      "nota": "Coroa em abril, flauta em maio–junho."
     },
@@ -445,7 +446,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Nos primeiros anos, forme a estrutura da copa. Em árvore adulta, retire apenas ramos mortos ou mal posicionados e evite podas fortes"
     }
    ],
    "colheita": [
@@ -476,13 +477,12 @@
    ],
    "notas": {
     "podas": {
-     "1": "Limpeza de ramos secos e com cancro; desinfete os cortes."
+     "1": "Nos primeiros anos, forme a estrutura da copa. Em árvore adulta, retire apenas ramos mortos ou mal posicionados e evite podas fortes."
     },
     "enx": {
-     "1": "Colha agora os garfos dormentes e guarde-os no frio para a primavera.",
      "4": "Enxertia de coroa com garfos dormentes guardados no frio.",
      "5": "Enxertia de flauta (canutilho), com borbulhas do ano.",
-     "6": "Enxertia de flauta, até meados do mês."
+     "6": "Enxertia de flauta com gomos do ano, quando a casca se separa com facilidade."
     }
    },
    "metodo_recomendado": [
@@ -630,7 +630,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      9
      ],
      "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
@@ -681,7 +682,7 @@
     "alp": {
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas com hormona de enraizamento.",
@@ -740,7 +741,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      9
      ],
      "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
@@ -798,7 +800,7 @@
     "alp": {
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas com hormona de enraizamento.",
@@ -857,7 +859,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      9
      ],
      "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
@@ -907,7 +910,7 @@
     "alp": {
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas com hormona de enraizamento.",
@@ -1084,7 +1087,6 @@
      "2": "Terminar a poda antes do abrolhamento."
     },
     "enx": {
-     "1": "Colha agora os garfos dormentes e guarde-os no frio para a primavera.",
      "3": "Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."
     },
     "plantar": {
@@ -1215,7 +1217,8 @@
       12,
       1,
       2,
-      3
+      3,
+      10
      ],
      "nota": "Estacas lenhosas de 20–30 cm."
     },
@@ -1232,7 +1235,9 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      9,
+      3
      ],
      "nota": null
     }
@@ -1240,10 +1245,10 @@
    "poda": [
     {
      "meses": [
-      1,
-      2
+      3,
+      4
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Abra ligeiramente a copa e renove alguns ramos nus depois das geadas fortes. Deixe ramos do ano anterior com figos pequenos se quiser preservar a primeira colheita"
     }
    ],
    "colheita": [
@@ -1271,14 +1276,14 @@
     "estacas": {
      "1": "Estacas lenhosas de ramos do ano, com 20–30 cm.",
      "2": "Estacas lenhosas.",
-     "10": "Primeiras estacas lenhosas.",
+     "10": "No fim do mês, tire estacas lenhosas só depois da queda das folhas.",
      "11": "Estacas lenhosas.",
      "12": "Estacas lenhosas."
     },
     "alp": {
-     "3": "Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.",
+     "3": "Pode iniciar a alporquia quando a planta retomar o crescimento e passar o risco de geadas fortes.",
      "7": "Últimos alporques do ano.",
-     "9": "Separe e plante."
+     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     }
    },
    "metodo_recomendado": [
@@ -1338,16 +1343,17 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Pode começar depois da queda total da folha, em dias sem geada"
+     "tipo": "Começar só após a queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
     }
    ],
    "colheita": [
+    7,
     8,
     9,
     10
@@ -1364,17 +1370,17 @@
    "adubacao": null,
    "rega": null,
    "floracao": null,
-   "solo": null,
+   "solo": "Prefere solo fértil, profundo e bem drenado, neutro a ligeiramente ácido.",
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda de formação e de frutificação; tire ramos cruzados e doentes.",
-     "2": "Terminar a poda antes do abrolhamento.",
-     "11": "Pode começar depois da queda da folha.",
-     "12": "Poda de inverno em dias sem geada."
+     "1": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
+     "2": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
+     "11": "Depois da queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
+     "12": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação."
     },
     "enx": {
      "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
@@ -1629,10 +1635,11 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      4,
+      7,
+      8
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em dia seco, renove parte da madeira que já frutificou e preserve os ramos de um ano que dão fruto. Em abril, só com crescimento ativo; no verão, após a colheita"
     }
    ],
    "colheita": [
@@ -1730,9 +1737,9 @@
    "adubacao": null,
    "rega": null,
    "floracao": null,
-   "solo": null,
+   "solo": "Prefere solo bem drenado.",
    "resistencia_geada": null,
-   "exposicao": null,
+   "exposicao": "Sol ou meia-sombra, em local abrigado.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -1799,9 +1806,10 @@
     {
      "meses": [
       7,
-      8
+      8,
+      9
      ],
-     "tipo": "Podar no verão: no inverno a nogueira «chora» muita seiva"
+     "tipo": "Se necessário, retire ramos mortos ou cruzados durante o verão"
     }
    ],
    "colheita": [
@@ -1831,14 +1839,13 @@
      "11": "Raiz nua, em terra funda e fresca; precisa de 10–12 m de espaço."
     },
     "enx": {
-     "1": "Colha agora os garfos dormentes e guarde-os no frio para a primavera.",
      "4": "Enxertia de fenda ou coroa no fim do mês, com tempo quente (acima de 15 °C).",
      "5": "Enxertia de placa (borbulha em escudo retangular).",
      "6": "Enxertia de placa."
     },
     "podas": {
-     "8": "Podar no fim do verão: no inverno a nogueira «chora» muita seiva.",
-     "9": "Última altura boa para podar, antes da queda da folha."
+     "8": "Se necessário, retire ramos mortos ou cruzados durante o verão.",
+     "9": "Se for necessário, retire ramos mortos ou cruzados no início do outono. A nogueira dispensa poda regular."
     }
    },
    "metodo_recomendado": [
@@ -1889,7 +1896,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      9
      ],
      "nota": null
     }
@@ -1941,7 +1949,7 @@
      "4": "Época principal; pode demorar 3 a 4 meses a enraizar.",
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
-     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     },
     "enx": {
      "4": "Enxertia de coroa (casca) quando a casca descola bem.",
@@ -2006,13 +2014,13 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Pode começar depois da queda total da folha, em dias sem geada"
+     "tipo": "Começar só após a queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
     }
    ],
    "colheita": [
@@ -2040,10 +2048,10 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda de formação e de frutificação; tire ramos cruzados e doentes.",
-     "2": "Terminar a poda antes do abrolhamento.",
-     "11": "Pode começar depois da queda da folha.",
-     "12": "Poda de inverno em dias sem geada."
+     "1": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
+     "2": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
+     "11": "Depois da queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
+     "12": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação."
     },
     "enx": {
      "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
@@ -2108,10 +2116,11 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      4,
+      7,
+      8
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em dia seco, renove parte da madeira que já frutificou e preserve os ramos de um ano que dão fruto. Em abril, só com crescimento ativo; no verão, após a colheita"
     }
    ],
    "colheita": [
@@ -2138,11 +2147,7 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "2": "Poda perto da floração, quando já se distinguem gomos de flor.",
-     "3": "Últimas podas até à floração.",
-     "9": "Poda em verde depois da colheita."
-    },
+    "podas": {},
     "enx": {
      "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês).",
      "8": "Borbulha em T ou de lasca."
@@ -2280,7 +2285,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      9
      ],
      "nota": null
     }
@@ -2324,7 +2330,7 @@
     },
     "alp": {
      "3": "Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.",
-     "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
+     "9": "Separe apenas os alporques com raízes suficientes e plante-os em vaso abrigado."
     }
    },
    "metodo_recomendado": [
@@ -2367,14 +2373,14 @@
      "meses": [
       2
      ],
-     "tipo": "Encurtar as varas de outono"
+     "tipo": "Nas variedades remontantes conduzidas para uma só colheita de outono, corte todas as varas rente ao solo no fim do inverno"
     },
     {
      "meses": [
       8,
       9
      ],
-     "tipo": "Cortar rente ao chão as varas que já deram fruto"
+     "tipo": "Nas variedades de verão, após a colheita corte só as varas que deram fruto e conserve as novas"
     }
    ],
    "colheita": [
@@ -2414,11 +2420,8 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Retire as varas velhas junto ao solo.",
-     "8": "Cortar as varas que já deram fruto.",
-     "9": "Cortar as varas velhas.",
-     "10": "Limpeza das varas.",
-     "11": "Retirar varas velhas."
+     "8": "Nas variedades de verão, após a colheita corte só as varas que deram fruto e conserve as novas.",
+     "9": "Nas variedades de verão, após a colheita corte só as varas que deram fruto e conserve as novas."
     }
    },
    "metodo_recomendado": [
@@ -2661,7 +2664,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em arbustos adultos, retire madeira morta, fraca ou rasteira e renove um ou dois ramos velhos pela base, conservando os rebentos vigorosos"
     }
    ],
    "colheita": [
@@ -2687,8 +2690,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Retire ramos com mais de 4–5 anos e os fracos do centro.",
-     "2": "Terminar a poda antes de os gomos incharem."
+     "2": "Em arbustos adultos, retire madeira morta, fraca ou rasteira e renove um ou dois ramos velhos pela base, conservando os rebentos vigorosos. Conclua antes do abrolhamento."
     },
     "plantar": {
      "1": "Plantar em terra ácida e fresca."
@@ -2747,7 +2749,7 @@
    },
    "divisao": [
     {
-     "metodo": "Enraizar os estolhos",
+     "metodo": "Enraizar os estolhos ainda ligados à planta-mãe e separá-los quando tiverem raízes",
      "meses": [
       6,
       7,
@@ -2766,8 +2768,7 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "1": "Plantar em camalhão.",
-     "8": "Enraizar os estolhos."
+     "1": "Plantar em camalhão."
     }
    },
    "nota_variedade": "Para conservar a variedade de um morangueiro existente, enraíze estolhos de plantas sãs. Para semear, use sementes de uma variedade vendida para esse fim.",
@@ -2919,7 +2920,8 @@
      "meses": [
       5,
       6,
-      7
+      7,
+      4
      ],
      "tipo": "Desladroamento e desponta dos rebentos"
     }
@@ -2950,7 +2952,7 @@
      "1": "Poda de inverno a partir de meados do mês, em dias sem geada.",
      "2": "Continuar a poda de inverno (as castas do Vinho Verde podem ir até março).",
      "3": "Terminar a poda até ao abrolhamento, nas vinhas mais tardias.",
-     "4": "Desladroamento: tirar rebentos ladrões do tronco.",
+     "4": "Com os rebentos já visíveis, retire os ladrões do tronco que não vão servir para renovar a estrutura.",
      "5": "Desponta e desladroamento.",
      "6": "Desponta e desfolha ligeira junto aos cachos.",
      "7": "Desponta dos rebentos.",
@@ -3118,7 +3120,8 @@
       6,
       7,
       8,
-      9
+      9,
+      4
      ],
      "nota": null
     },
@@ -3173,7 +3176,7 @@
     },
     "estacas": {
      "3": "Estacas de 10 cm, tirando as folhas de baixo.",
-     "4": "Estacas de pontas.",
+     "4": "Use pontas herbáceas de rebentos sem flor, quando houver crescimento novo suficiente.",
      "5": "Estacas de pontas.",
      "7": "Estacas de pontas.",
      "8": "Estacas de pontas."
@@ -5164,7 +5167,7 @@
       5,
       6
      ],
-     "nota": "Semear logo: as sementes perdem a força em poucos dias."
+     "nota": "Semeie logo que as sementes amadurecerem: perdem rapidamente a viabilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -5202,10 +5205,7 @@
    "resistencia_geada": null,
    "toxicidade": null,
    "notas": {
-    "sem": {
-     "3": "Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca.",
-     "4": "Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca."
-    }
+    "sem": {}
    }
   },
   {
@@ -5669,7 +5669,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      3
      ],
      "nota": null
     }
@@ -5700,7 +5701,7 @@
    "autoctone": null,
    "notas": {
     "alp": {
-     "3": "Alporque em ramos do ano anterior."
+     "3": "Pode iniciar a alporquia no começo da primavera, em ramo são do ano anterior, depois do risco de geadas fortes."
     }
    },
    "metodo_recomendado": [
@@ -5968,7 +5969,8 @@
      "meses": [
       4,
       5,
-      6
+      6,
+      3
      ],
      "nota": null
     }
@@ -6000,7 +6002,7 @@
    "toxicidade": null,
    "notas": {
     "alp": {
-     "3": "Alporque em ramos do ano anterior."
+     "3": "Pode iniciar a alporquia no começo da primavera, em ramo são do ano anterior, depois do risco de geadas fortes."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas."
@@ -6622,7 +6624,9 @@
       6,
       7,
       8,
-      9
+      9,
+      2,
+      4
      ],
      "nota": null
     },
@@ -6686,14 +6690,13 @@
      "2": "Corte as flores secas até ao primeiro par de gomos fortes."
     },
     "estacas": {
-     "2": "Estacas lenhosas com 2 pares de gomos.",
-     "4": "Estacas herbáceas de rebentos sem flor.",
+     "2": "Pode usar estacas lenhosas de ramos sãos durante o repouso.",
+     "4": "Use estacas herbáceas quando já houver rebentos vigorosos sem flor.",
      "5": "Estacas herbáceas.",
      "6": "Estacas herbáceas.",
      "7": "Até ao fim do mês.",
      "8": "Últimas estacas.",
-     "9": "Estacas lenhosas.",
-     "10": "Estacas lenhosas."
+     "9": "Use estacas semilenhosas se a base do rebento já estiver firme."
     },
     "alp": {
      "5": "Enraízam depressa, em 4 a 6 semanas.",
@@ -7498,7 +7501,9 @@
       11,
       12,
       1,
-      2
+      2,
+      5,
+      10
      ],
      "nota": null
     },
@@ -7568,12 +7573,12 @@
     "estacas": {
      "1": "Estacas lenhosas de 20 cm, enterradas 2/3.",
      "2": "Aproveite os ramos da poda.",
-     "5": "Estacas semi-lenhosas depois da floração.",
+     "5": "Tire estacas herbáceas de pontas de rebentos novos e sãos.",
      "6": "Estacas semi-lenhosas.",
      "7": "Estacas semi-lenhosas.",
      "8": "Estacas semi-lenhosas.",
      "9": "Estacas semi-lenhosas.",
-     "10": "Estacas lenhosas.",
+     "10": "No fim do mês, tire estacas lenhosas se os ramos do ano já estiverem em repouso.",
      "11": "Estacas lenhosas.",
      "12": "Estacas lenhosas."
     },
@@ -9512,9 +9517,7 @@
    "toxicidade": null,
    "legal": "Identifique a espécie antes de plantar ou propagar. Não plante nem propague os chorões Carpobrotus edulis e C. acinaciformis, incluídos na Lista Nacional de Espécies Invasoras (Decreto-Lei n.º 92/2019, anexo II).",
    "notas": {
-    "estacas": {
-     "4": "Folhas ou pedaços de caule, deixar secar 2 dias."
-    }
+    "estacas": {}
    }
   }
  ]

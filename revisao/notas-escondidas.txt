@@ -2,48 +2,28 @@ ameixeira [podas 2] Poda perto da floração, quando já se distinguem gomos de 
 amendoeira [podas 12] Poda leve de inverno, em dias sem geada.
 aveleira [podas 5] Corte os rebentos novos que saem da base (chupões).
 aveleira [estacas 2] Pega mal de estaca: separe rebentos da base com raiz ou faça mergulhia.
-castanheiro [enx 1] Colha agora os garfos dormentes e guarde-os no frio para a primavera.
-castanheiro [enx 6] Enxertia de flauta, até meados do mês.
 cerejeira [enx 6] Borbulha de olho vivo (rebenta este ano).
-laranjeira [alp 9] Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado.
-limoeiro [alp 9] Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado.
-tangerineira [alp 9] Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado.
-diospireiro [enx 1] Colha agora os garfos dormentes e guarde-os no frio para a primavera.
 feijoa [plantar 4] Em torrão, em local soalheiro.
-figueira [estacas 10] Primeiras estacas lenhosas.
-figueira [alp 3] Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.
 figueira [alp 7] Últimos alporques do ano.
-figueira [alp 9] Separe e plante.
 marmeleiro [enx 8] Borbulha em T de olho dormente: rebenta na próxima primavera.
 medronheiro [plantar 2] Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.
 nespereira [plantar 4] Em torrão, em local abrigado.
 nespereira [plantar 9] Em torrão, antes do frio.
-nogueira [enx 1] Colha agora os garfos dormentes e guarde-os no frio para a primavera.
 nogueira [enx 5] Enxertia de placa (borbulha em escudo retangular).
 nogueira [enx 6] Enxertia de placa.
-nogueira [podas 9] Última altura boa para podar, antes da queda da folha.
 oliveira [podas 5] Terminar a poda.
 oliveira [estacas 9] Estacas semi-lenhosas.
 oliveira [alp 3] No fim do mês, com tempo mais quente.
-oliveira [alp 9] Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado.
-pessegueiro [podas 9] Poda em verde depois da colheita.
 pistacheiro [plantar 3] Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio.
 romazeira [alp 3] Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas.
-romazeira [alp 9] Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado.
-framboeseira [podas 1] Retire as varas velhas junto ao solo.
-framboeseira [podas 10] Limpeza das varas.
-framboeseira [podas 11] Retirar varas velhas.
 kiwi [estacas 12] Estacas lenhosas.
 morangueiro [plantar 1] Plantar em camalhão.
-morangueiro [plantar 8] Enraizar os estolhos.
-videira [podas 4] Desladroamento: tirar rebentos ladrões do tronco.
 videira [podas 11] Só depois de cair toda a folha; a tradição prefere janeiro–fevereiro.
 videira [estacas 11] Com sarmentos, se já podou.
 alecrim [podas 3] Poda ligeira, sem cortar madeira velha.
 lavanda [podas 3] Poda ligeira, sem cortar madeira velha.
 lavanda [podas 7] Corte das flores depois da floração.
 lavanda [estacas 3] Estacas de 10 cm, tirando as folhas de baixo.
-lavanda [estacas 4] Estacas de pontas.
 loureiro [alp 3] Alporque em ramos direitos de 1 a 2 cm.
 salsa [plantar 10] Sementeira direta.
 azevinho [podas 2] Poda leve de forma no fim do inverno, em exemplares cultivados de origem legal.
@@ -52,27 +32,18 @@ cerejeira_japao [podas 5] Só poda leve depois da floração; evite cortes grand
 liquidambar [plantar 3] Raiz nua ou torrão; folhagem vermelha no outono.
 magnolia_grandiflora [podas 8] Poda leve depois da floração.
 pinheiro_manso [plantar 2] Planta jovem em vaso ou torrão, em local soalheiro.
-salgueiro_cinzento [sem 3] Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca.
-salgueiro_cinzento [sem 4] Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca.
 aucuba [sem 12] Precisa de estratificação quente e depois fria; germina devagar.
-azalea [alp 3] Alporque em ramos do ano anterior.
 buganvilia [estacas 4] Estacas semi-lenhosas.
 buxo [estacas 3] Estacas de 10–15 cm.
 buxo [estacas 6] Estacas semi-lenhosas.
-camelia [alp 3] Alporque em ramos do ano anterior.
 fotinia [podas 9] Segundo corte de sebe, ligeiro.
-hortensia [estacas 2] Estacas lenhosas com 2 pares de gomos.
-hortensia [estacas 4] Estacas herbáceas de rebentos sem flor.
-hortensia [estacas 10] Estacas lenhosas.
 hortensia [alp 7] Últimos alporques do ano.
 louro_cerejo [plantar 2] Em torrão; sebe densa, a 60–80 cm entre plantas.
 louro_cerejo [podas 4] Poda de sebe depois da floração.
-roseira [estacas 5] Estacas semi-lenhosas depois da floração.
 roseira [estacas 6] Estacas semi-lenhosas.
 roseira [estacas 7] Estacas semi-lenhosas.
 roseira [estacas 8] Estacas semi-lenhosas.
 roseira [estacas 9] Estacas semi-lenhosas.
-roseira [estacas 10] Estacas lenhosas.
 roseira [podas 10] Só tirar flores secas.
 roseira [alp 7] Últimos alporques do ano.
 tamargueira [estacas 10] Estacas lenhosas.
@@ -82,4 +53,3 @@ couve_galega [plantar 1] Transplante de couve-galega e penca.
 espinafre [plantar 8] No fim do mês.
 nabo [plantar 7] No fim do mês.
 tomate [plantar 1] Só em estufa ou abrigo aquecido; ao ar livre ainda é cedo.
-suculentas [estacas 4] Folhas ou pedaços de caule, deixar secar 2 dias.

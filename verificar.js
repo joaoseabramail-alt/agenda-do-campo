@@ -19,17 +19,45 @@ for(const p of P){
 for(const t of T){for(const e of t.especies)if(!ids.has(e))erros.push('tratamento '+t.grupo+': espécie desconhecida '+e);mesesOk(t.vigiar,t.grupo+'.vigiar');
   for(const i of t.intervencoes){mesesOk(i.meses,t.grupo);if(!['fitofarmaco','cultural','monitorizacao'].includes(i.tipo))erros.push(t.grupo+': tipo de intervenção inválido')}}
 for(const c of C)mesesOk(c.meses,'tarefa '+c.nome);
-// meses de divisão e de recolha de sementes
-for(const p of P){for(const d of p.divisao||[])mesesOk(d.meses,p.id+'.divisao');if(p.recolha_sementes)mesesOk(p.recolha_sementes,p.id+'.recolha_sementes');
-  for(const m of p.metodo_recomendado||[])if(!(m==='divisao'?(p.divisao||[]).length:p.propagacao&&p.propagacao[m]))avisos.push(p.id+': método recomendado "'+m+'" sem dados na ficha');}
-// intervenções fora do período de vigilância
-for(const t of T)for(const i of t.intervencoes)for(const m of i.meses)if(!t.vigiar.includes(m))avisos.push(t.grupo+': intervenção no mês '+m+' fora do período de vigilância');
-// notas que a app nunca mostra (fora dos meses da operação)
-const opM=(p,k)=>k==='podas'?(p.poda||[]).flatMap(e=>e.meses):k==='plantar'?[...(p.plantacao&&p.plantacao.meses||[]),...(p.sementeira&&p.sementeira.meses||[]),...(p.categoria==='aromática'&&p.folha==='anual'&&p.propagacao&&p.propagacao.sementeira?p.propagacao.sementeira.meses:[])]:((p.propagacao||{})[{sem:'sementeira',estacas:'estacas',enx:'enxertia',alp:'alporquia'}[k]]||{meses:[]}).meses;
-let escondidas=0;for(const p of P)for(const k in p.notas||{})for(const m in p.notas[k])if(!opM(p,k).includes(+m))escondidas++;
-if(escondidas)avisos.push(escondidas+' notas ficam fora dos meses da operação e a app não as mostra (ver lista com: node verificar.js --escondidas)');
-if(process.argv.includes('--escondidas'))for(const p of P)for(const k in p.notas||{})for(const m in p.notas[k])if(!opM(p,k).includes(+m))console.log(p.id+' ['+k+' '+m+'] '+p.notas[k][m]);
+const propagationKeys={sem:'sementeira',estacas:'estacas',enx:'enxertia',alp:'alporquia'};
+const cultivadaNaHorta=p=>p.categoria==='hortícola'||(p.categoria==='aromática'&&p.folha==='anual');
+function notaVisivel(p, button, month){
+  if(button==='podas')return (p.poda||[]).some(e=>e.meses?.includes(month));
+  if(p.invasora)return false;
+  if(button==='plantar'){
+    if(p.plantacao?.meses?.includes(month))return true;
+    if(!cultivadaNaHorta(p))return false;
+    const sow=p.categoria==='hortícola'?p.sementeira:p.propagacao?.sementeira;
+    return sow?.meses?.includes(month);
+  }
+  if(button==='sem'&&cultivadaNaHorta(p))return false;
+  const operation=p.propagacao?.[propagationKeys[button]];
+  return operation?.dificuldade!==4&&operation?.meses?.includes(month);
+}
+const escondidas=[];
+for(const p of P){
+  for(const d of p.divisao||[])mesesOk(d.meses,p.id+'.divisao');
+  if(p.recolha_sementes!==undefined)mesesOk(p.recolha_sementes,p.id+'.recolha_sementes');
+  for(const method of p.metodo_recomendado||[]){
+    const operation=p.propagacao?.[method];
+    const available=method==='divisao'
+      ?(p.divisao||[]).some(d=>d.meses?.length)
+      :['estacas','enxertia','alporquia'].includes(method)&&operation?.dificuldade!==4&&operation?.meses?.length;
+    if(p.invasora||!available)avisos.push(p.id+': método recomendado "'+method+'" sem operação visível');
+  }
+  for(const [button,notes] of Object.entries(p.notas||{})){
+    for(const [month,note] of Object.entries(notes)){
+      if(!/^(?:[1-9]|1[0-2])$/.test(month)){
+        erros.push(p.id+' ['+button+']: mês de nota inválido '+month);
+      }else if(!notaVisivel(p,button,Number(month))){
+        escondidas.push(p.id+' ['+button+' '+month+'] '+note);
+      }
+    }
+  }
+}
+if(escondidas.length)avisos.push(escondidas.length+' notas não aparecem na app (ver lista com: node verificar.js --escondidas)');
+if(process.argv.includes('--escondidas'))for(const note of escondidas)console.log(note);
 console.log(P.length+' espécies, '+T.length+' grupos de tratamentos, '+C.length+' tarefas');
 console.log(erros.length?'ERROS:\n'+erros.join('\n'):'Sem erros.');
-if(avisos.length)console.log('A rever (nota menciona outra espécie):\n'+avisos.join('\n'));
+if(avisos.length)console.log('A rever:\n'+avisos.join('\n'));
 process.exit(erros.length?1:0);

@@ -29,6 +29,8 @@ A app lê três ficheiros. Os meses são números de 1 (janeiro) a 12 (dezembro)
 ## tratamentos.json → `tratamentos[]`
 `{grupo, especies[] (ids), problemas, vigiar[] (meses), intervencoes[]: {meses[], tipo, texto}}`
 
+`vigiar` define a janela para vigilância geral. Uma intervenção específica pode estar agendada fora dessa janela, por exemplo para retirar frutos mumificados no inverno.
+
 `tipo`: `monitorizacao` (armadilhas, observação), `cultural` (medidas sem produto) ou `fitofarmaco` (só se houver sintomas, risco ou aviso agrícola; a app nunca recomenda aplicação automática e remete para produtos autorizados no SIFITO).
 
 ## calendario.json → `tarefas[]`
