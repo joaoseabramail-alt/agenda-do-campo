@@ -205,7 +205,7 @@ const CAT={
     tips:"<b>Como fazer:</b> corte abaixo de um nó, tire as folhas de baixo, enterre 2/3 em terra leve ou areia húmida, mantenha à sombra e sem secar. Hormona de enraizamento ajuda."},
   enx:{t:"Enxertia",sub:"O que enxertar",u:"plantas",
     v:p=>subir(p)?["good","Lua "+L(p)+": a tradição diz que os enxertos pegam melhor com a seiva a subir."]:["meh","Lua "+L(p)+": bom dia para colher garfos; para enxertar, a tradição prefere lua crescente."],
-    tips:"<b>Como fazer:</b> enxerte em dia seco e sem vento; use canivete afiado e desinfetado; junte bem a casca verde (câmbio) do garfo e do cavalo; aperte com fita e cubra os cortes com mástique. Garfo e cavalo têm de ser da mesma família."},
+    tips:"<b>Como fazer:</b> enxerte em dia seco e sem vento; use canivete afiado e desinfetado; junte bem a casca verde (câmbio) do garfo e do cavalo; aperte com fita e cubra os cortes com mástique. Use um porta-enxerto conhecido e compatível com a espécie e a variedade do garfo."},
   alp:{t:"Alporquia",sub:"Alporques para fazer e separar",u:"plantas",
     v:p=>subir(p)?["good","Lua "+L(p)+": a tradição diz que os alporques enraízam melhor com a seiva a subir."]:["meh","Lua "+L(p)+": bom dia para separar e plantar alporques; para fazer novos, a tradição prefere lua crescente."],
     tips:"<b>Como fazer:</b> num ramo de 1 a 2 cm, tire um anel de casca com 2 a 3 cm e raspe a parte verde por baixo. Ponha hormona de enraizamento, envolva com musgo esfagno húmido e feche com plástico bem atado. Cubra com alumínio. Separe quando as raízes encherem o musgo."},
@@ -219,6 +219,7 @@ const CAT={
 const TIPO={r:["raiz","ming"],f:["folha/fruto","cresc"],a:["árvore","ming"]};
 const TIPOINT={fitofarmaco:"Se houver risco",cultural:"Medida cultural",monitorizacao:"Vigiar"};
 const KEYMET={sem:"sementeira",estacas:"estacas",enx:"enxertia",alp:"alporquia"};
+const NOMES_METODO={enxertia:"enxertia",estacas:"estacas",alporquia:"alporquia",divisao:"o método indicado em Divisão e mergulhia"};
 const DIFN=["","Fácil","Moderado","Difícil","Inviável"];
 const CATN={"fruteira":"Fruteiras","pequeno fruto":"Pequenos frutos","vinha":"Vinha","aromática":"Aromáticas","florestal":"Florestais","ornamental":"Ornamentais","bolbo":"Bolbos","hortícola":"Horta"};
 
@@ -242,6 +243,7 @@ function lista(k,m){
   }else if(k==="plantar"){
     const arv={};
     for(const p of P){
+      if(p.invasora) continue;
       const horta=p.categoria==="hortícola"||(p.categoria==="aromática"&&p.folha==="anual");
       if(horta){
         const sem=p.categoria==="hortícola"?p.sementeira:p.propagacao&&p.propagacao.sementeira;
@@ -250,7 +252,6 @@ function lista(k,m){
         if(tem(p.plantacao,m)) acc.push(p.plantacao.o_que?"Plantar "+p.plantacao.o_que:(sem&&sem.modo==="alfobre"?"Transplantar":"Plantar"));
         if(acc.length) it(p.nome,junta(acc.map((x,i)=>i?x[0].toLowerCase()+x.slice(1):x).join(" e ")+".",nm(p,"plantar",m))+geadaNota(p)+(m===2&&p.id==="batata"?" Em fevereiro, só em terreno abrigado e virado a sul.":""),{p,lua:p.tipo_lua});
       }else if(tem(p.plantacao,m)){
-        if(p.invasora) continue;
         if(p.nota_sardoura||p.legal||p.categoria==="bolbo"||nm(p,"plantar",m)) it(p.nome,junta("Plantar "+p.plantacao.o_que+".",nm(p,"plantar",m))+(p.nota_sardoura?" "+p.nota_sardoura:"")+geadaNota(p),{p,lua:p.tipo_lua});
         else {const g=(CATN[p.categoria]||"Outras")+" ("+p.plantacao.o_que+")";(arv[g]=arv[g]||[]).push(p.nome)}
       }
@@ -263,7 +264,14 @@ function lista(k,m){
       if(k==="sem"&&(p.categoria==="hortícola"||(p.categoria==="aromática"&&p.folha==="anual"))) continue;
       const e=p.propagacao&&p.propagacao[key]; if(!tem(e,m)||e.dificuldade===4||p.invasora) continue;
       let var_="";
-      if(k==="sem"&&e.fiel_variedade===false) var_="Não reproduz a variedade: serve para porta-enxertos ou plantas novas. Para manter a variedade use "+(p.metodo_recomendado||[]).map(x=>({enxertia:"enxertia",estacas:"estaca",alporquia:"alporquia",divisao:"divisão ou mergulhia"})[x]).join(" ou ")+".";
+      if(k==="sem"&&e.fiel_variedade===false){
+        const metodos=(p.metodo_recomendado||[]).map(x=>NOMES_METODO[x]).filter(Boolean);
+        var_=junta(
+          "A sementeira não mantém a variedade.",
+          metodos.length?"Para conservar a variedade, use "+metodos.join(" ou ")+".":"",
+          p.nota_variedade
+        );
+      }
       else if(k==="sem"&&p.nota_variedade) var_=p.nota_variedade;
       else if(p.metodo_recomendado&&p.metodo_recomendado.includes(KEYMET[k])) var_="Método recomendado para manter a variedade."+(p.nota_variedade?" "+p.nota_variedade:"");
       const nt=junta(nm(p,k,m),e.nota,var_);
@@ -271,7 +279,7 @@ function lista(k,m){
       else (grupos[e.dificuldade||0]=grupos[e.dificuldade||0]||[]).push(p.nome);
     }
     for(const d of Object.keys(grupos).sort()) it((DIFN[d]||"Outras")+":",grupos[d].sort((x,y)=>x.localeCompare(y,"pt")).join(", ")+".",{dif:+d,grupo:true});
-    if(k==="sem"){const r=P.filter(p=>tem({meses:p.recolha_sementes||[]},m)).map(p=>p.nome).sort((x,y)=>x.localeCompare(y,"pt"));if(r.length)it("Recolher sementes",r.join(", ")+".",{dif:0})}
+    if(k==="sem"){const r=P.filter(p=>!p.invasora&&tem({meses:p.recolha_sementes||[]},m)).map(p=>p.nome).sort((x,y)=>x.localeCompare(y,"pt"));if(r.length)it("Recolher sementes",r.join(", ")+".",{dif:0})}
   }else if(k==="div"){
     for(const p of P) if(!p.invasora) for(const d of p.divisao||[]) if(d.meses.includes(m)) it(p.nome,d.metodo+".",{p});
   }else if(k==="col"){

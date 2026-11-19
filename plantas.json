@@ -38,7 +38,9 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      7,
+      8
      ],
      "nota": null
     },
@@ -130,7 +132,9 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      7,
+      8
      ],
      "nota": null
     },
@@ -518,7 +522,8 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      8
      ],
      "nota": "Fenda em cerejeira-brava."
     },
@@ -618,7 +623,7 @@
       8,
       9
      ],
-     "nota": "Borbulha em T."
+     "nota": "Borbulha em T quando a casca do porta-enxerto se solta com facilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -627,7 +632,7 @@
       5,
       6
      ],
-     "nota": null
+     "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
    },
    "poda": [
@@ -674,7 +679,6 @@
      "9": "Últimas borbulhas em T."
     },
     "alp": {
-     "4": "Época principal. Enraízam em 8 a 12 semanas.",
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
      "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
@@ -687,7 +691,7 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "De semente pode sair parecida com a mãe, mas demora muitos anos a produzir e não tem porta-enxerto resistente: o normal é enxertar."
+   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar."
   },
   {
    "id": "limoeiro",
@@ -729,7 +733,7 @@
       8,
       9
      ],
-     "nota": "Borbulha em T."
+     "nota": "Borbulha em T quando a casca do porta-enxerto se solta com facilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -738,7 +742,7 @@
       5,
       6
      ],
-     "nota": null
+     "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
    },
    "poda": [
@@ -792,7 +796,6 @@
      "9": "Últimas borbulhas em T."
     },
     "alp": {
-     "4": "Época principal. Enraízam em 8 a 12 semanas.",
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
      "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
@@ -805,7 +808,7 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "De semente pode sair parecida com a mãe, mas demora muitos anos a produzir e não tem porta-enxerto resistente: o normal é enxertar."
+   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar."
   },
   {
    "id": "tangerineira",
@@ -847,7 +850,7 @@
       8,
       9
      ],
-     "nota": "Borbulha em T."
+     "nota": "Borbulha em T quando a casca do porta-enxerto se solta com facilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -856,7 +859,7 @@
       5,
       6
      ],
-     "nota": null
+     "nota": "A planta fica nas suas próprias raízes, sem as características que o porta-enxerto confere à planta enxertada."
     }
    },
    "poda": [
@@ -902,7 +905,6 @@
      "9": "Últimas borbulhas em T."
     },
     "alp": {
-     "4": "Época principal. Enraízam em 8 a 12 semanas.",
      "5": "Ainda em boa altura.",
      "6": "Últimos alporques de plantas lentas.",
      "9": "Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."
@@ -915,7 +917,7 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "De semente pode sair parecida com a mãe, mas demora muitos anos a produzir e não tem porta-enxerto resistente: o normal é enxertar."
+   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar."
   },
   {
    "id": "damasqueiro",
@@ -950,7 +952,8 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      7
      ],
      "nota": null
     },
@@ -1312,7 +1315,9 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      8,
+      9
      ],
      "nota": "Fenda em fevereiro–março; borbulha em agosto."
     },
@@ -1978,9 +1983,11 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      8,
+      9
      ],
-     "nota": "Fenda em marmeleiro ou pereira franca."
+     "nota": "Enxerte em porta-enxerto de pereira ou num marmeleiro compatível com a variedade. Algumas variedades precisam de um intermediário compatível."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -2082,7 +2089,9 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      7,
+      8
      ],
      "nota": null
     },
@@ -2708,7 +2717,8 @@
       3,
       4
      ],
-     "nota": null
+     "nota": null,
+     "fiel_variedade": null
     }
    },
    "poda": [
@@ -2759,7 +2769,11 @@
      "1": "Plantar em camalhão.",
      "8": "Enraizar os estolhos."
     }
-   }
+   },
+   "nota_variedade": "Para conservar a variedade de um morangueiro existente, enraíze estolhos de plantas sãs. Para semear, use sementes de uma variedade vendida para esse fim.",
+   "metodo_recomendado": [
+    "divisao"
+   ]
   },
   {
    "id": "uva_mesa",
@@ -2776,7 +2790,7 @@
       1,
       2
      ],
-     "nota": "Estacas lenhosas da poda; para pomar use porta-enxerto."
+     "nota": "As estacas lenhosas conservam a casta, mas crescem em pé-franco, sem a proteção de um porta-enxerto resistente à filoxera. Para plantar, prefira material certificado enxertado."
     },
     "enxertia": {
      "dificuldade": 1,
@@ -2846,16 +2860,12 @@
     "plantar": {
      "1": "Bacelo enxertado, junto a ramada ou parede soalheira.",
      "2": "Bacelo enxertado, junto a ramada ou parede soalheira."
-    },
-    "estacas": {
-     "1": "Estacas lenhosas como a videira; para pomar, use porta-enxerto.",
-     "2": "Estacas lenhosas como a videira; para pomar, use porta-enxerto."
     }
    },
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Use porta-enxerto resistente à filoxera."
+   "nota_variedade": "Use um porta-enxerto resistente à filoxera e adequado ao terreno."
   },
   {
    "id": "videira",
@@ -2872,16 +2882,18 @@
       1,
       2
      ],
-     "nota": "Estacas lenhosas da poda, com 3–4 gomos."
+     "nota": "As estacas lenhosas conservam a casta, mas crescem em pé-franco, sem a proteção de um porta-enxerto resistente à filoxera. Para plantar, prefira material certificado enxertado."
     },
     "enxertia": {
      "dificuldade": 1,
      "meses": [
       2,
       3,
-      4
+      4,
+      8,
+      9
      ],
-     "nota": "Mesa (inverno), fenda (primavera) ou borbulha (agosto)."
+     "nota": "Enxertia de mesa no fim do inverno, de fenda na primavera ou de borbulha em lasca no fim do verão."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -2935,7 +2947,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda de inverno a partir de meados do mês, em dias sem geada. Aproveite os sarmentos para estacas.",
+     "1": "Poda de inverno a partir de meados do mês, em dias sem geada.",
      "2": "Continuar a poda de inverno (as castas do Vinho Verde podem ir até março).",
      "3": "Terminar a poda até ao abrolhamento, nas vinhas mais tardias.",
      "4": "Desladroamento: tirar rebentos ladrões do tronco.",
@@ -2952,7 +2964,7 @@
      "12": "Estacas lenhosas."
     },
     "enx": {
-     "3": "Enxertia de fenda no campo, quando a cepa «chora»; corte a cepa uns dias antes.",
+     "3": "Enxertia de fenda no campo, no início da primavera, com material são e porta-enxerto compatível.",
      "4": "Ainda a tempo para enxertia de fenda no campo.",
      "8": "Enxertia de borbulha (lasca) na cepa, de meados de agosto a setembro.",
      "9": "Terminar a enxertia de borbulha até meados do mês."
@@ -2961,7 +2973,7 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Use porta-enxerto resistente à filoxera: uma estaca enraizada da própria videira (pé franco) fica sem essa proteção."
+   "nota_variedade": "Use um porta-enxerto resistente à filoxera e adequado ao terreno."
   },
   {
    "id": "alecrim",
@@ -3703,7 +3715,7 @@
    "autoctone": true,
    "exposicao": "Meia-sombra",
    "toxicidade": "Bagas tóxicas.",
-   "legal": "Espécie protegida: proibido cortar ou colher na natureza. Use plantas de viveiro.",
+   "legal": "Em Portugal continental, o azevinho espontâneo é protegido pelo Decreto-Lei n.º 423/89. Use material de viveiro ou de exemplares cultivados de origem legal.",
    "propagacao": {
     "estacas": {
      "dificuldade": 2,
@@ -3721,7 +3733,7 @@
       10,
       11
      ],
-     "nota": "Estratificação quente e fria; pode levar 2 anos a germinar."
+     "nota": "Use sementes de origem legal, de plantas cultivadas. A germinação pode demorar e requer estratificação quente e fria."
     },
     "enxertia": {
      "dificuldade": 2,
@@ -3747,7 +3759,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Poda de forma e limpeza em exemplares cultivados de origem legal"
     }
    ],
    "plantacao": {
@@ -3763,24 +3775,15 @@
    "floracao": null,
    "solo": null,
    "resistencia_geada": null,
-   "recolha_sementes": [
-    11,
-    12
-   ],
    "notas": {
     "podas": {
-     "2": "Poda leve de forma no fim do inverno.",
-     "3": "Poda leve de forma no fim do inverno."
+     "2": "Poda leve de forma no fim do inverno, em exemplares cultivados de origem legal.",
+     "3": "Poda leve de forma no fim do inverno, em exemplares cultivados de origem legal."
     },
     "plantar": {
      "3": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
      "10": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
      "11": "Em torrão, à meia-sombra. Só as fêmeas dão bagas."
-    },
-    "sem": {
-     "10": "Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.",
-     "11": "Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.",
-     "12": "Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar."
     }
    }
   },
@@ -3961,11 +3964,13 @@
     "sementeira": {
      "dificuldade": 1,
      "meses": [
+      10,
+      11,
       2,
       3,
       4
      ],
-     "nota": "Bolotas estratificadas 60–90 dias no frio."
+     "nota": "Semeie bolotas frescas no outono, para receberem frio húmido durante o inverno, ou semeie após estratificação em frio húmido."
     },
     "enxertia": {
      "dificuldade": 3,
@@ -4010,16 +4015,7 @@
     10,
     11
    ],
-   "notas": {
-    "sem": {
-     "1": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
-     "2": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
-     "3": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
-     "10": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
-     "11": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.",
-     "12": "Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera."
-    }
-   }
+   "notas": {}
   },
   {
    "id": "carvalho_negral",
@@ -4192,7 +4188,7 @@
       4,
       5
      ],
-     "nota": "As plantas de semente não saem iguais à variedade: servem de cavalo.",
+     "nota": null,
      "fiel_variedade": false
     },
     "enxertia": {
@@ -5283,7 +5279,7 @@
    "folha": "persistente",
    "tipo_lua": "a",
    "autoctone": true,
-   "legal": "Espécie protegida: o corte e a poda precisam de autorização do ICNF.",
+   "legal": "Protegido pelo Decreto-Lei n.º 169/2001. O corte e o arranque estão sujeitos ao regime de autorização, com as exceções previstas na lei. A poda requer autorização do ICNF e só é permitida de 1 de novembro a 31 de março.",
    "propagacao": {
     "estacas": {
      "dificuldade": 4,
@@ -5718,7 +5714,7 @@
    "categoria": "ornamental",
    "folha": "caduca",
    "tipo_lua": "a",
-   "legal": "Invasora em vários países europeus. Confirme o estatuto na Lista Nacional de Espécies Invasoras (ICNF) antes de propagar.",
+   "legal": "Espécie exótica que pode escapar ao cultivo no Norte de Portugal. Evite plantar ou propagar junto a habitats naturais.",
    "propagacao": {
     "estacas": {
      "dificuldade": 1,
@@ -6161,7 +6157,7 @@
       1,
       2
      ],
-     "nota": null
+     "nota": "Estacas herbáceas na primavera ou lenhosas durante o repouso vegetativo."
     },
     "sementeira": {
      "dificuldade": 2,
@@ -6170,7 +6166,8 @@
       4,
       5
      ],
-     "nota": null
+     "nota": null,
+     "fiel_variedade": false
     },
     "alporquia": {
      "dificuldade": 1,
@@ -6206,7 +6203,22 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "metodo_recomendado": [
+    "estacas",
+    "divisao"
+   ],
+   "divisao": [
+    {
+     "metodo": "Mergulhia simples: fixe no solo um ramo baixo ainda ligado à planta-mãe",
+     "meses": [
+      3,
+      4,
+      10,
+      11
+     ]
+    }
+   ]
   },
   {
    "id": "fotinia",
@@ -6374,9 +6386,12 @@
      "meses": [
       5,
       6,
-      7
+      7,
+      12,
+      1,
+      2
      ],
-     "nota": null
+     "nota": "Estacas herbáceas da primavera a meados do verão ou lenhosas no inverno."
     },
     "sementeira": {
      "dificuldade": 1,
@@ -6384,7 +6399,8 @@
       3,
       4
      ],
-     "nota": null
+     "nota": "As plantas de semente podem demorar muitos anos a florir.",
+     "fiel_variedade": false
     },
     "enxertia": {
      "dificuldade": 2,
@@ -6392,15 +6408,6 @@
       12,
       1,
       2
-     ],
-     "nota": null
-    },
-    "alporquia": {
-     "dificuldade": 1,
-     "meses": [
-      4,
-      5,
-      6
      ],
      "nota": null
     }
@@ -6441,7 +6448,22 @@
      "7": "Poda de verão: encurtar rebentos longos.",
      "8": "Poda de verão."
     }
-   }
+   },
+   "divisao": [
+    {
+     "metodo": "Mergulhia serpenteada: enterre troços de um ramo flexível ainda ligado à planta-mãe",
+     "meses": [
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "metodo_recomendado": [
+    "divisao",
+    "estacas",
+    "enxertia"
+   ]
   },
   {
    "id": "hamamelis",
@@ -6880,7 +6902,7 @@
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "legal": "Espécie invasora em Portugal (Decreto-Lei 92/2019): é proibido plantar e propagar.",
+   "legal": "Lantana camara consta da Lista Nacional de Espécies Invasoras (Decreto-Lei n.º 92/2019, anexo II). Não plante nem propague.",
    "invasora": true
   },
   {
@@ -7330,7 +7352,7 @@
    "categoria": "ornamental",
    "folha": "persistente",
    "tipo_lua": "a",
-   "legal": "Não confunda com Pittosporum undulatum, que é invasora em Portugal.",
+   "legal": "Confirme a identificação antes de propagar. A árvore-do-incenso (Pittosporum undulatum) consta da Lista Nacional de Espécies Invasoras. Esta ficha é do pitósporo-japonês (Pittosporum tobira).",
    "propagacao": {
     "estacas": {
      "dificuldade": 2,
@@ -9468,7 +9490,7 @@
    },
    "divisao": [
     {
-     "metodo": "Folha, estaca ou divisão",
+     "metodo": "Escolha folha, estaca ou divisão conforme a espécie identificada",
      "meses": [
       3,
       4,
@@ -9488,7 +9510,7 @@
    "exposicao": null,
    "autoctone": null,
    "toxicidade": null,
-   "legal": "O chorão (Carpobrotus edulis) é invasor em Portugal (Decreto-Lei 92/2019): não o plante nem propague.",
+   "legal": "Identifique a espécie antes de plantar ou propagar. Não plante nem propague os chorões Carpobrotus edulis e C. acinaciformis, incluídos na Lista Nacional de Espécies Invasoras (Decreto-Lei n.º 92/2019, anexo II).",
    "notas": {
     "estacas": {
      "4": "Folhas ou pedaços de caule, deixar secar 2 dias."
