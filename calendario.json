@@ -1,0 +1,115 @@
+{
+ "versao": 1,
+ "tarefas": [
+  {
+   "categoria": "enx",
+   "meses": [
+    12,
+    1
+   ],
+   "nome": "Colher garfos",
+   "texto": "Varas do ano, sãs, da grossura de um lápis. Guarde em pano húmido e plástico no frigorífico."
+  },
+  {
+   "categoria": "enx",
+   "meses": [
+    12
+   ],
+   "nome": "Preparar material",
+   "texto": "Canivete de enxertia afiado, fita, ráfia e mástique."
+  },
+  {
+   "categoria": "enx",
+   "meses": [
+    6
+   ],
+   "nome": "Verificar enxertos de primavera",
+   "texto": "Desaperte atilhos que estrangulam e tire rebentos do porta-enxerto."
+  },
+  {
+   "categoria": "enx",
+   "meses": [
+    10,
+    11
+   ],
+   "nome": "Verificar borbulhas do verão",
+   "texto": "Se o pecíolo cai ao tocar, pegou. Alivie os atilhos."
+  },
+  {
+   "categoria": "enx",
+   "meses": [
+    11
+   ],
+   "nome": "Plantar porta-enxertos",
+   "texto": "Cavalos para enxertar daqui a 1–2 anos."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    1,
+    2
+   ],
+   "nome": "Preparar material",
+   "texto": "Musgo esfagno, plástico, alumínio, atilhos e hormona de enraizamento."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    6,
+    7
+   ],
+   "nome": "Vigiar os alporques",
+   "texto": "Se o musgo secar, regue com seringa. Tape o plástico com alumínio contra o calor."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    8,
+    9
+   ],
+   "nome": "Ver se há raízes",
+   "texto": "Raízes brancas a encher o musgo: separe em duas fases e plante em vaso à sombra."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    10
+   ],
+   "nome": "Sem raízes suficientes?",
+   "texto": "Deixe na árvore até à primavera."
+  },
+  {
+   "categoria": "alp",
+   "meses": [
+    11
+   ],
+   "nome": "Proteger os novos vasos",
+   "texto": "Abrigue do frio e da chuva forte os alporques separados."
+  },
+  {
+   "categoria": "trat",
+   "meses": [
+    12
+   ],
+   "nome": "Ferramentas",
+   "texto": "Limpe e desinfete tesouras e serrotes."
+  },
+  {
+   "categoria": "podas",
+   "meses": [
+    5
+   ],
+   "nome": "Monda de frutos",
+   "texto": "Pessegueiro, ameixeira e macieira: tire frutos em excesso para ficarem maiores."
+  },
+  {
+   "categoria": "sem",
+   "meses": [
+    10,
+    11
+   ],
+   "nome": "Recolher sementes para o viveiro",
+   "texto": "Guarde-as em local fresco ou ponha-as logo a estratificar."
+  }
+ ]
+}

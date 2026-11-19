@@ -42,13 +42,13 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-of
 .moon b{display:block;font-size:15px}
 .moon span{font-size:13px;color:var(--muted)}
 
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.cat{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:16px;border-radius:18px;border:2px solid var(--line);
-  background:var(--surface);cursor:pointer;text-align:left;min-height:118px;transition:transform .12s,border-color .12s}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.cat{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:12px 10px;border-radius:16px;border:2px solid var(--line);
+  background:var(--surface);cursor:pointer;text-align:left;min-height:96px;min-width:0;transition:transform .12s,border-color .12s}
 .cat:active{transform:scale(.98)}
-.cat svg{width:38px;height:38px;color:var(--leaf)}
-.cat .lbl{font-family:var(--display);font-weight:800;font-size:20px;line-height:1.1}
-.cat .cnt{font-size:13px;color:var(--muted)}
+.cat svg{width:30px;height:30px;color:var(--leaf)}
+.cat .lbl{font-family:var(--display);font-weight:800;font-size:clamp(12px,3.4vw,17px);line-height:1.1;max-width:100%}
+.cat .cnt{font-size:12px;color:var(--muted)}
 .cat.wide{grid-column:1/-1;flex-direction:row;align-items:center;min-height:0;gap:14px}.cat.wide .cnt{margin-left:auto}
 .cat[aria-pressed="true"]{border-color:var(--leaf);background:var(--leaf-soft)}
 
@@ -69,6 +69,10 @@ ul.items li:last-child{border-bottom:0}
 .it-note{color:var(--muted);font-size:15px}
 .chip{font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
 .chip.hot{background:var(--leaf);border-color:var(--leaf);color:var(--surface)}
+.sci{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+.warn{display:block;font-size:13px;color:var(--sun);font-weight:700}
+li.grp .it-name{font-size:15px}
+.chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--sun);color:var(--sun)}.chip.d3{border-color:var(--muted)}
 .tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 .tips b{color:var(--ink)}
 .links{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
@@ -128,6 +132,18 @@ ul.items li:last-child{border-bottom:0}
       <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36 32 4M24 15l7 1"/><rect x="11" y="15" width="12" height="12" rx="4" transform="rotate(-37 17 21)"/></svg>
       <span class="lbl">Alporquia</span><span class="cnt"></span>
     </button>
+    <button class="cat" type="button" data-k="sem" id="c-sem">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30h28M10 30v5h20v-5"/><ellipse cx="13" cy="19" rx="3" ry="4.5" transform="rotate(-25 13 19)"/><ellipse cx="27" cy="19" rx="3" ry="4.5" transform="rotate(25 27 19)"/><ellipse cx="20" cy="10" rx="3" ry="4.5"/></svg>
+      <span class="lbl">Sementeira</span><span class="cnt"></span>
+    </button>
+    <button class="cat" type="button" data-k="div" id="c-div">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 20c-5 2-6 9-2 12 3 2 7 1 8-2V18c-2-1-4 1-6 2ZM27 20c5 2 6 9 2 12-3 2-7 1-8-2V18c2-1 4 1 6 2ZM19 18l-2-10M21 18l2-10M14 35l-1 3M26 35l1 3"/></svg>
+      <span class="lbl">Divisão</span><span class="cnt"></span>
+    </button>
+    <button class="cat" type="button" data-k="col" id="c-col">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18h30l-4 16H9L5 18ZM12 18l6-10M28 18l-6-10M14 24v5M20 24v5M26 24v5"/></svg>
+      <span class="lbl">Colheita</span><span class="cnt"></span>
+    </button>
   </div>
 
   <section class="panel" id="panel" aria-live="polite"></section>
@@ -143,96 +159,9 @@ ul.items li:last-child{border-bottom:0}
 </div>
 
 <script>
-/* ---------- Dados por mês ----------
-   plantar: tipo  r = raiz/bolbo/tubérculo, f = folha/fruto/grão, a = árvore/arbusto */
+/* Agenda do Campo — o calendário é gerado a partir de plantas.json, tratamentos.json e calendario.json */
 const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
-const D=[
-{
-podas:[["Videira","Poda de inverno a partir de meados do mês, em dias sem geada. Aproveite os sarmentos para estacas."],["Macieira e pereira","Poda de formação e de frutificação; tire ramos cruzados e doentes."],["Kiwi","Poda de inverno: encurte os ramos que já deram fruto."],["Mirtilo","Retire ramos com mais de 4–5 anos e os fracos do centro."],["Castanheiro","Limpeza de ramos secos e com cancro; desinfete os cortes."],["Groselheira e framboeseira","Retire as varas velhas junto ao solo."],["Árvores ornamentais de folha caduca","Poda de limpeza e de forma."],["Amendoeira","Poda leve de frutificação; retire ramos secos e cruzados."],["Diospireiro","Poda de inverno leve; frutifica nos rebentos do ano."],["Tília","Poda de inverno: retire rebentos da base e ramos mal colocados."],["Pinheiro-manso","Limpeza de ramos baixos e secos; corte rente ao tronco."],["Plátano","Poda de inverno de forma ou de rolagem."],["Carvalho","Poda de formação no inverno nas árvores jovens."],["Pistacheiro","Poda de formação no inverno."],["Aveleira","Retire rebentos da base e ramos com mais de 6–8 anos."],["Uva de mesa","Poda mais longa do que a vinha de vinho, deixando varas para a ramada ou latada."],["Liquidâmbar","Poda de formação no inverno; mantenha um eixo central."]],
-trat:[["Pessegueiro, ameixeira, nectarina","Calda bordalesa (cobre) contra a lepra, antes de os gomos incharem."],["Macieira, pereira e citrinos","Óleo de inverno contra cochonilhas e ovos de afídeos, em dia sem geada."],["Oliveira","Cobre contra olho-de-pavão, se não tratou no outono."],["Videira","Retire e queime sarmentos e cachos secos com doença."],["Pinheiro-manso","Processionária: corte e queime os ninhos (bolsas brancas) com luvas e óculos; os pelos são muito irritantes."]],
-plantar:[["Árvores de fruto em raiz nua","Macieira, pereira, ameixeira, cerejeira, marmeleiro, castanheiro.","a"],["Mirtilo e kiwi","Plantar em terra ácida e fresca.","a"],["Alho","Plantar os dentes em terra bem drenada.","r"],["Cebola (cebolinho)","Transplante para o terreno definitivo.","r"],["Favas e ervilhas","Sementeira direta.","f"],["Couves","Transplante de couve-galega e penca.","f"],["Morangueiro","Plantar em camalhão.","f"],["Tomate e pimento em alfobre","Só em estufa ou abrigo aquecido; ao ar livre ainda é cedo.","f"],["Amendoeira","Raiz nua, a meia-encosta e ao sol; evite os fundos de vale, onde a geada assenta.","a"],["Nogueira","Raiz nua, em terra funda e fresca.","a"],["Tília","Raiz nua; árvore grande, precisa de espaço.","a"],["Plátano","Raiz nua.","a"],["Carvalho","Raiz nua ou em vaso.","a"],["Aveleira","Raiz nua; plante pelo menos duas variedades para polinizar.","a"],["Uva de mesa","Bacelo enxertado, junto a ramada ou parede soalheira.","a"],["Sementeira: carvalho-dos-pântanos","Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.","a"]],
-estacas:[["Videira","Estacas lenhosas de sarmentos da poda, com 3 a 4 gomos."],["Figueira","Estacas lenhosas de ramos do ano, com 20–30 cm."],["Roseira","Estacas lenhosas de 20 cm, enterradas 2/3."],["Marmeleiro","Estacas lenhosas, enraízam bem."],["Choupo","Estacas lenhosas grossas, diretamente no solo húmido."],["Plátano","Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem."],["Uva de mesa","Estacas lenhosas como a videira; para pomar, use porta-enxerto."],["Salgueiro-cinzento (Salix atrocinerea)","Muito fácil: estacas lenhosas diretamente no solo húmido; enraízam em 2–6 semanas, sem hormona."]],
-enx:[["Colher garfos","Corte varas do ano de macieira, pereira, cerejeira, ameixeira e amendoeira. Guarde-as embrulhadas em pano húmido e plástico no frigorífico até março."],["Videira: enxertia de mesa","Enxerto à inglesa ou ómega em bacelo, para forçar em estufa."],["Castanheiro, nogueira, diospireiro","Colha agora os garfos dormentes e guarde-os no frio para a primavera."]],
-alp:[["Ainda é cedo","Com a seiva parada, os alporques não enraízam. Comece em março."],["Escolher ramos","Marque ramos sãos de 1 a 2 anos, com 1 a 2 cm de grossura, em figueira, citrinos, oliveira e camélia."],["Preparar material","Musgo esfagno, plástico transparente, papel de alumínio, atilhos e hormona de enraizamento."]]},
-{
-podas:[["Videira","Continuar a poda de inverno (as castas do Vinho Verde podem ir até março)."],["Mirtilo","Terminar a poda antes de os gomos incharem."],["Macieira, pereira e marmeleiro","Terminar a poda antes do abrolhamento."],["Pessegueiro e ameixeira","Poda perto da floração, quando já se distinguem gomos de flor."],["Roseiras","Poda principal: deixe 3 a 5 ramos com 2–3 gomos."],["Hortênsias","Corte as flores secas até ao primeiro par de gomos fortes."],["Kiwi","Terminar a poda antes do choro da seiva."],["Diospireiro","Terminar a poda antes do abrolhamento."],["Tília","Poda de inverno: retire rebentos da base e ramos mal colocados."],["Plátano","Poda de inverno de forma ou de rolagem."],["Azevinho","Poda leve de forma no fim do inverno."],["Carvalho","Poda de formação no inverno nas árvores jovens."],["Pistacheiro","Poda de formação no inverno."],["Aveleira","Retire rebentos da base e ramos com mais de 6–8 anos."],["Uva de mesa","Poda mais longa do que a vinha de vinho, deixando varas para a ramada ou latada."],["Liquidâmbar","Poda de formação no inverno; mantenha um eixo central."]],
-trat:[["Pessegueiro e ameixeira","2.º tratamento com cobre contra a lepra, quando os gomos incham."],["Videira","No abrolhamento, tratamento contra a escoriose."],["Macieira e pereira","Cobre no abrolhamento contra o pedrado."],["Citrinos","Óleo contra cochonilhas, se houver ataque."],["Couves","Vigiar afídeos; sabão potássico se necessário."],["Amendoeira","Cobre antes da floração contra crivado e monília. Floresce cedo: atenção às geadas tardias."],["Pinheiro-manso","Processionária: corte e queime os ninhos (bolsas brancas) com luvas e óculos; os pelos são muito irritantes."]],
-plantar:[["Batata temporã","Só em terreno abrigado, virado a sul e que não encharque; o normal aqui é março.","r"],["Cenoura, rabanete, beterraba","Sementeira direta ao ar livre.","r"],["Alho-francês e cebola","Transplante.","r"],["Ervilhas e favas","Últimas sementeiras do inverno.","f"],["Espinafre e alface","Sementeira ou transplante.","f"],["Alfobre: tomate, pimento, beringela","Em estufa ou junto a uma parede abrigada, para transplantar em maio.","f"],["Árvores de fruto em raiz nua","Último mês bom para plantar (também castanheiro, mirtilo e kiwi).","a"],["Espargos","Plantar as garras.","a"],["Diospireiro","Em torrão, antes do abrolhamento.","a"],["Cerejeira-brava","Raiz nua.","a"],["Louro-cerejo","Em torrão; sebe densa, a 60–80 cm entre plantas.","a"],["Pinheiro-manso","Planta jovem em vaso ou torrão, em local soalheiro.","a"],["Medronheiro","Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.","a"],["Carvalho","Raiz nua ou em vaso.","a"],["Pistacheiro","Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio.","a"],["Aveleira","Raiz nua; plante pelo menos duas variedades para polinizar.","a"],["Uva de mesa","Bacelo enxertado, junto a ramada ou parede soalheira.","a"],["Liquidâmbar","Raiz nua ou torrão; folhagem vermelha no outono.","a"],["Sementeira: bordo-japonês","Sementes estratificadas 90–120 dias no frio (frigorífico).","a"],["Sementeira: liquidâmbar","Sementes estratificadas 30–60 dias no frio.","a"],["Sementeira: carvalho-dos-pântanos","Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.","a"]],
-estacas:[["Videira","Estacas lenhosas da poda."],["Figueira","Estacas lenhosas."],["Romãzeira","Estacas lenhosas de 20–25 cm."],["Roseira","Aproveite os ramos da poda."],["Hortênsia","Estacas lenhosas com 2 pares de gomos."],["Marmeleiro","Estacas lenhosas."],["Aveleira","Pega mal de estaca: separe rebentos da base com raiz ou faça mergulhia."],["Uva de mesa","Estacas lenhosas como a videira; para pomar, use porta-enxerto."],["Salgueiro-cinzento (Salix atrocinerea)","Muito fácil: estacas lenhosas diretamente no solo húmido; enraízam em 2–6 semanas, sem hormona."]],
-enx:[["Macieira, pereira, marmeleiro","Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar."],["Cerejeira, ameixeira, amendoeira","Enxertia de fenda ou à inglesa. Cerejeira japonesa: em cavalo de cerejeira-brava."],["Videira: enxertia de mesa","Continuar em bacelo, para plantar em abril–maio."]],
-alp:[["Separar alporques do ano passado","Os de folha caduca (figueira, romãzeira) que já têm raízes: corte abaixo do musgo e plante em vaso."],["Preparar material","Ponha o musgo esfagno de molho na véspera de começar."]]},
-{
-podas:[["Videira","Terminar a poda até ao abrolhamento, nas vinhas mais tardias."],["Oliveira","Início da época de poda (até maio)."],["Citrinos","Poda ligeira depois da colheita, no fim do mês."],["Arbustos de flor de verão","Budleia, hibisco, lantana, lúcia-lima."],["Alecrim e lavanda","Poda ligeira, sem cortar madeira velha."],["Pessegueiro","Últimas podas até à floração."],["Feijoa","Poda leve depois da colheita; areje o centro."],["Medronheiro","Poda leve de forma; não precisa de poda forte."],["Azevinho","Poda leve de forma no fim do inverno."]],
-trat:[["Videira","Míldio: tratar com cobre quando os rebentos têm 10 cm, a temperatura passa os 10 °C e chove 10 mm. Nesta zona húmida o risco começa cedo."],["Pessegueiro e ameixeira","Afídeos nos rebentos: sabão potássico."],["Roseiras","Afídeos e oídio (enxofre)."],["Morangueiro e hortícolas","Lesmas e caracóis: iscas ou fosfato férrico."],["Fotínia","Manchas nas folhas (entomosporiose): cobre com tempo húmido e retire folhas caídas."]],
-plantar:[["Batata","Época principal de plantação em Castelo de Paiva (março e abril).","r"],["Cenoura, beterraba, rabanete","Sementeira direta.","r"],["Cebola","Transplante.","r"],["Alface, acelga, espinafre","Sementeira ou transplante.","f"],["Salsa e coentros","Sementeira direta.","f"],["Alfobre: tomate, pimento, pepino, abóbora, melão","Protegido do frio.","f"],["Morangueiro","Plantar.","f"],["Couve-galega e tronchuda","Sementeira em alfobre ou transplante.","f"],["Feijoa","Em torrão; dá-se bem no clima de Paiva.","a"],["Nespereira","Em torrão, em local abrigado do frio (floresce no inverno): junto a um muro virado a sul.","a"],["Cerejeira japonesa","Em torrão, até ao início da floração.","a"],["Fotínia","Em torrão; boa para sebes, a 60–80 cm entre plantas.","a"],["Louro-cerejo","Em torrão; sebe densa, a 60–80 cm entre plantas.","a"],["Medronheiro","Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.","a"],["Azevinho","Em torrão, à meia-sombra. Espécie protegida: compre de viveiro e não colha na natureza. Só as fêmeas dão bagas.","a"],["Pistacheiro","Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio.","a"],["Magnólia","Em torrão, em terra ácida e fresca; as raízes não gostam de ser mexidas.","a"],["Liquidâmbar","Raiz nua ou torrão; folhagem vermelha no outono.","a"],["Sementeira: bordo-japonês","Sementes estratificadas 90–120 dias no frio (frigorífico).","a"],["Sementeira: limpa-garrafas","Sementes finas à superfície da terra, sem estratificação.","a"],["Sementeira: liquidâmbar","Sementes estratificadas 30–60 dias no frio.","a"],["Sementeira: loendro","Sem estratificação. Planta tóxica: use luvas.","a"],["Sementeira: cerejeira-do-Japão","Estratificação quente e fria. As plantas de semente não saem iguais à variedade: servem de cavalo para enxertar.","a"],["Sementeira: carvalho-dos-pântanos","Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.","a"],["Sementeira: salgueiro-cinzento","Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca.","a"],["Sementeira: quaresmeira","Sem estratificação; em estufa ou abrigo.","a"]],
-estacas:[["Oliveira","Estacas semi-lenhosas, em areia húmida e à sombra."],["Alecrim e lavanda","Estacas de 10 cm, tirando as folhas de baixo."],["Sardinheiras (gerânios)","Estacas de pontas, enraízam em vaso."],["Buxo","Estacas de 10–15 cm."],["Crisântemo","Rebentos da base."]],
-enx:[["Macieira, pereira, marmeleiro","Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva."],["Cerejeira e ameixeira","Enxertia de fenda, até ao início da floração."],["Diospireiro","Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."],["Videira","Enxertia de fenda no campo, quando a cepa «chora»; corte a cepa uns dias antes."]],
-alp:[["Figueira e romãzeira","Primeiros alporques, quando os gomos rebentam. Enraízam em 6 a 8 semanas."],["Camélia e azálea","Alporque em ramos do ano anterior."],["Loureiro","Alporque em ramos direitos de 1 a 2 cm."],["Oliveira","No fim do mês, com tempo mais quente."]]},
-{
-podas:[["Oliveira","Continuar a poda."],["Citrinos","Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."],["Arbustos de floração precoce","Forsítia, camélia, jasmim: podar depois da flor."],["Videira","Desladroamento: tirar rebentos ladrões do tronco."],["Sebes","Primeiro corte do ano."],["Fotínia","Poda depois do primeiro rebento vermelho, para voltar a rebentar com cor."],["Louro-cerejo","Poda de sebe depois da floração."],["Magnólia","Só poda mínima depois da floração (magnólias de folha caduca)."]],
-trat:[["Videira","Míldio: risco elevado junto ao Douro, onde os nevoeiros deixam as folhas molhadas; trate logo depois de cada período de chuva. Oídio (enxofre) a partir dos cachos visíveis."],["Macieira e pereira","Pedrado; colocar armadilhas para o bichado."],["Batateira","Escaravelho: apanha manual de adultos e posturas."],["Citrinos e pessegueiro","Afídeos: sabão potássico."],["Hortícolas","Lesmas e caracóis."],["Nogueira","Cobre no abrolhamento contra a bacteriose."],["Cerejeira-brava e japonesa","Afídeo-negro nos rebentos: sabão potássico."],["Pistacheiro","Cobre preventivo na primavera húmida contra manchas nas folhas; aqui a humidade é o maior problema."]],
-plantar:[["Tomate, pimento, beringela","Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.","f"],["Feijão","Sementeira direta.","f"],["Abóbora, curgete, pepino","Sementeira em alfobre; ao ar livre só no fim do mês.","f"],["Alface e couves","Sementeira e transplante.","f"],["Batata","Ainda a tempo, na primeira quinzena.","r"],["Manjericão","Transplante.","f"],["Cenoura e beterraba","Sementeira direta.","r"],["Batata-doce","Preparar as ramas em alfobre; plantar em maio.","r"],["Feijoa","Em torrão, em local soalheiro.","a"],["Nespereira","Em torrão, em local abrigado.","a"],["Magnólia","Em torrão, em terra ácida e fresca; as raízes não gostam de ser mexidas.","a"],["Sementeira: bordo-japonês","Sementes estratificadas 90–120 dias no frio (frigorífico).","a"],["Sementeira: limpa-garrafas","Sementes finas à superfície da terra, sem estratificação.","a"],["Sementeira: liquidâmbar","Sementes estratificadas 30–60 dias no frio.","a"],["Sementeira: loendro","Sem estratificação. Planta tóxica: use luvas.","a"],["Sementeira: cerejeira-do-Japão","Estratificação quente e fria. As plantas de semente não saem iguais à variedade: servem de cavalo para enxertar.","a"],["Sementeira: salgueiro-cinzento","Semeie logo que as sementes amadurecem: perdem a força em poucos dias. O normal é por estaca.","a"],["Sementeira: quaresmeira","Sem estratificação; em estufa ou abrigo.","a"]],
-estacas:[["Alecrim, lavanda, salva","Estacas de pontas."],["Hortênsia","Estacas herbáceas de rebentos sem flor."],["Buganvília","Estacas semi-lenhosas."],["Fúcsia","Estacas herbáceas."],["Sardinheiras","Estacas de pontas."],["Suculentas","Folhas ou pedaços de caule, deixar secar 2 dias."],["Loendro (Nerium oleander)","Muito fácil: enraíza em 2–5 semanas, em terra ou em água; hormona facultativa. Planta tóxica: use luvas."]],
-enx:[["Castanheiro","Enxertia de coroa com garfos dormentes guardados no frio."],["Nogueira","Enxertia de fenda ou coroa no fim do mês, com tempo quente (acima de 15 °C)."],["Oliveira","Enxertia de coroa (casca) quando a casca descola bem."],["Nespereira e feijoa","Enxertia de fenda."],["Citrinos","Enxertia de borbulha em T (escudo), quando a casca descola."],["Videira","Ainda a tempo para enxertia de fenda no campo."]],
-alp:[["Citrinos","Época principal: limoeiro, laranjeira, tangerineira. Enraízam em 8 a 12 semanas."],["Oliveira","Época principal; pode demorar 3 a 4 meses a enraizar."],["Figueira","Continuar."],["Feijoa e nespereira","Alporque com hormona; enraízam devagar."],["Magnólia","Alporque em ramos novos; é mais fácil do que a estaca."],["Louro-cerejo e kiwi","Alporque em ramos do ano anterior."],["Bordo-japonês","Melhor método de propagação: enraíza na mesma época e separa-se no outono."],["Cerejeira-do-Japão","Alporque em ramos de 1 a 2 cm, com hormona."]]},
-{
-podas:[["Oliveira","Terminar a poda."],["Tomateiro","Tirar os ladrões (rebentos nas axilas)."],["Videira","Desponta e desladroamento."],["Glicínia e lilás","Poda depois da floração."],["Árvores de fruto","Monda dos frutos (pessegueiro, macieira) para frutos maiores."],["Sebes","Corte de forma."],["Cerejeira japonesa","Só poda leve depois da floração; evite cortes grandes."],["Aveleira","Corte os rebentos novos que saem da base (chupões)."],["Uva de mesa","Monda de cachos: deixe 1 a 2 cachos por vara para uvas maiores."]],
-trat:[["Videira","Míldio e oídio: época de maior risco. Com chuva e calor, renove o tratamento a cada 8–10 dias."],["Tomateiro","Míldio: cobre preventivo com tempo húmido."],["Batateira","Míldio e escaravelho."],["Couves","Lagartas: Bacillus thuringiensis."],["Feijão","Afídeos: sabão potássico."],["Oliveira","Traça da oliveira na floração (Bacillus thuringiensis)."],["Nogueira","2.º tratamento com cobre depois da floração (bacteriose e antracnose)."],["Nespereira","Mosca-da-fruta: armadilhas; pode ensacar os cachos."],["Tília","Afídeos e melada: sabão potássico nas árvores pequenas."],["Plátano","Tigre-do-plátano e antracnose em primaveras húmidas: retire e queime folhas caídas."],["Aveleira","Balanino (bicho da avelã): sacuda os ramos de manhã sobre um pano e destrua os insetos."],["Uva de mesa","Míldio e oídio, como a videira."]],
-plantar:[["Tomate, pimento, beringela","Época principal de transplante em Castelo de Paiva.","f"],["Feijão","Todas as variedades, incluindo o feijão de trepar no milho.","f"],["Milho","Sementeira direta, com a terra já quente.","f"],["Abóbora, curgete, pepino","Sementeira ou transplante.","f"],["Melão e melancia","Transplante em terreno quente e abrigado, virado a sul.","f"],["Alface de verão","Variedades resistentes ao calor.","f"],["Alfobre de couves de outono","Para transplantar em julho.","f"],["Batata-doce","Plantar as ramas.","r"],["Sementeira: limpa-garrafas","Sementes finas à superfície da terra, sem estratificação.","a"],["Sementeira: loendro","Sem estratificação. Planta tóxica: use luvas.","a"],["Sementeira: quaresmeira","Sem estratificação; em estufa ou abrigo.","a"]],
-estacas:[["Hortênsia","Estacas herbáceas."],["Roseira","Estacas semi-lenhosas depois da floração."],["Alecrim, lavanda, tomilho","Estacas de pontas."],["Buganvília","Estacas semi-lenhosas."],["Sardinheiras","Estacas de pontas."],["Bordo-japonês (Acer palmatum)","Difícil: estacas semi-lenhosas com hormona; enraízam em 6–12 semanas. O melhor método é a alporquia."],["Liquidâmbar (Liquidambar styraciflua)","Difícil: estacas de rebentos novos com hormona; 6–12 semanas. O melhor é por semente."],["Loendro (Nerium oleander)","Muito fácil: enraíza em 2–5 semanas, em terra ou em água; hormona facultativa. Planta tóxica: use luvas."],["Cerejeira-do-Japão (Prunus serrulata)","Difícil: estacas semi-lenhosas com hormona; 6–12 semanas. O normal é enxertia ou alporquia."],["Quaresmeira (Tibouchina urvilleana)","Fácil: enraíza em 4–8 semanas; hormona facultativa. Sensível à geada: guarde as estacas abrigadas no primeiro inverno."]],
-enx:[["Castanheiro","Enxertia de flauta (canutilho), com borbulhas do ano."],["Nogueira","Enxertia de placa (borbulha em escudo retangular)."],["Pistacheiro","Enxertia de placa ou de borbulha em T."],["Oliveira","Enxertia de coroa ou de borbulha."],["Citrinos","Borbulha em T."]],
-alp:[["Citrinos e oliveira","Ainda em boa altura."],["Buganvília","Enraíza bem em alporque."],["Roseira e hortênsia","Enraízam depressa, em 4 a 6 semanas."],["Camélia","Continuar."],["Diospireiro","Pode tentar com hormona; é difícil."],["Bordo-japonês","Melhor método de propagação: enraíza na mesma época e separa-se no outono."],["Cerejeira-do-Japão","Alporque em ramos de 1 a 2 cm, com hormona."]]},
-{
-podas:[["Tomateiro","Continuar a tirar ladrões."],["Videira","Desponta e desfolha ligeira junto aos cachos."],["Árvores de fruto","Poda em verde: tirar ramos ladrões (chupões)."],["Cerejeira","Poda logo depois da colheita."],["Sebes","Corte de manutenção."],["Nespereira","Poda logo depois da colheita."],["Uva de mesa","Desbaste de bagos com tesoura pontiaguda nas variedades de cacho apertado."]],
-trat:[["Videira","Oídio: enxofre (nunca acima de 30 °C); míldio se chover."],["Tomateiro","Míldio e traça (Tuta absoluta): armadilhas."],["Árvores de fruto","Mosca-da-fruta: armadilhas."],["Oliveira","Mosca-da-azeitona: armadilhas cromotrópicas."],["Citrinos","Mosca-branca e afídeos."],["Nogueira","Bichado da noz: coloque armadilhas."],["Pinheiro-manso","Processionária: coloque armadilhas de feromona para as borboletas (junho a setembro)."],["Carvalho","Oídio nas árvores jovens: enxofre se o ataque for forte."],["Aveleira","Balanino (bicho da avelã): sacuda os ramos de manhã sobre um pano e destrua os insetos."],["Uva de mesa","Míldio e oídio, como a videira."]],
-plantar:[["Feijão","Últimas sementeiras até meados do mês.","f"],["Alface de verão","Em meia-sombra.","f"],["Curgete e pepino","Segunda sementeira.","f"],["Alfobre: couves e brócolos","Para outono e inverno.","f"],["Cenoura e beterraba","Sementeira direta, com rega.","r"],["Alho-francês","Transplante.","r"]],
-estacas:[["Hortênsia","Estacas herbáceas."],["Roseira","Estacas semi-lenhosas."],["Buxo","Estacas semi-lenhosas."],["Oliveira","Estacas semi-lenhosas, com humidade constante."],["Jasmim","Estacas semi-lenhosas."],["Mirtilo","Estacas semi-lenhosas de 10–15 cm, em turfa e areia."],["Magnólia","Estacas semi-lenhosas com hormona, em abrigo húmido."],["Bordo-japonês (Acer palmatum)","Difícil: estacas semi-lenhosas com hormona; enraízam em 6–12 semanas. O melhor método é a alporquia."],["Limpa-garrafas (Callistemon citrinus)","Moderada: estacas semi-lenhosas com hormona; enraízam em 4–8 semanas."],["Liquidâmbar (Liquidambar styraciflua)","Difícil: estacas de rebentos novos com hormona; 6–12 semanas. O melhor é por semente."],["Loendro (Nerium oleander)","Muito fácil: enraíza em 2–5 semanas, em terra ou em água; hormona facultativa. Planta tóxica: use luvas."],["Cerejeira-do-Japão (Prunus serrulata)","Difícil: estacas semi-lenhosas com hormona; 6–12 semanas. O normal é enxertia ou alporquia."],["Quaresmeira (Tibouchina urvilleana)","Fácil: enraíza em 4–8 semanas; hormona facultativa. Sensível à geada: guarde as estacas abrigadas no primeiro inverno."]],
-enx:[["Castanheiro","Enxertia de flauta, até meados do mês."],["Nogueira e pistacheiro","Enxertia de placa."],["Cerejeira","Borbulha de olho vivo (rebenta este ano)."],["Verificar enxertos de primavera","Desaperte atilhos que estrangulam e tire rebentos do porta-enxerto."]],
-alp:[["Vigiar os alporques","Se o musgo secar, abra o plástico por cima e regue com seringa."],["Citrinos, oliveira, feijoa","Últimos alporques de plantas lentas."],["Buganvília, hortênsia, roseira","Ainda a tempo."],["Bordo-japonês","Melhor método de propagação: enraíza na mesma época e separa-se no outono."]]},
-{
-podas:[["Videira","Desponta dos rebentos."],["Árvores de caroço","Cerejeira, damasqueiro, ameixeira: poda em verde depois da colheita."],["Lavanda","Corte das flores depois da floração."],["Glicínia","Poda de verão: encurtar rebentos longos."],["Tomateiro","Ladrões e folhas de baixo."],["Nespereira","Terminar a poda; tire ramos que enchem o centro."],["Cerejeira-brava","Poda de formação no verão (menos risco de cancro); evite podar no inverno."]],
-trat:[["Videira","Oídio: enxofre de manhã cedo; míldio se chover."],["Oliveira","Mosca-da-azeitona: armadilhas, caulino."],["Tomateiro","Míldio e traça."],["Fruteiras","Mosca-do-mediterrâneo: armadilhas."],["Abóbora e pepino","Oídio: enxofre ou bicarbonato."],["Citrinos","Ácaros e cochonilhas."]],
-plantar:[["Couves","Galega, tronchuda, lombarda, coração: transplante.","f"],["Brócolos e couve-flor","Transplante.","f"],["Alface","Sementeira e transplante.","f"],["Feijão-verde","Só no início do mês.","f"],["Cenoura","Sementeira direta.","r"],["Nabos","No fim do mês.","r"],["Rabanete","Sementeira direta.","r"]],
-estacas:[["Hortênsia","Até ao fim do mês."],["Roseira","Estacas semi-lenhosas."],["Alecrim e lavanda","Estacas de pontas."],["Buganvília","Estacas semi-lenhosas."],["Citrinos","Estacas semi-lenhosas com hormona de enraizamento."],["Mirtilo","Estacas semi-lenhosas."],["Camélia","Estacas semi-lenhosas."],["Feijoa","Estacas semi-lenhosas com hormona de enraizamento; enraízam devagar."],["Fotínia","Estacas semi-lenhosas de 10–15 cm, com hormona."],["Louro-cerejo","Estacas semi-lenhosas de 15 cm, cortando as folhas ao meio."],["Magnólia","Estacas semi-lenhosas com hormona, em abrigo húmido."],["Bordo-japonês (Acer palmatum)","Difícil: estacas semi-lenhosas com hormona; enraízam em 6–12 semanas. O melhor método é a alporquia."],["Limpa-garrafas (Callistemon citrinus)","Moderada: estacas semi-lenhosas com hormona; enraízam em 4–8 semanas."],["Liquidâmbar (Liquidambar styraciflua)","Difícil: estacas de rebentos novos com hormona; 6–12 semanas. O melhor é por semente."],["Loendro (Nerium oleander)","Muito fácil: enraíza em 2–5 semanas, em terra ou em água; hormona facultativa. Planta tóxica: use luvas."],["Cerejeira-do-Japão (Prunus serrulata)","Difícil: estacas semi-lenhosas com hormona; 6–12 semanas. O normal é enxertia ou alporquia."],["Quaresmeira (Tibouchina urvilleana)","Fácil: enraíza em 4–8 semanas; hormona facultativa. Sensível à geada: guarde as estacas abrigadas no primeiro inverno."]],
-enx:[["Pessegueiro, ameixeira, damasqueiro","Borbulha em T ou de lasca, de olho dormente (fim do mês)."],["Amendoeira","Borbulha de olho dormente."],["Roseira","Borbulha em T em cavalo de roseira-brava."]],
-alp:[["Proteger do sol","Cubra o plástico com alumínio ou papel: o calor dentro do alporque queima as raízes."],["Hortênsia, roseira, figueira","Últimos alporques do ano."],["Vigiar a humidade","Com o calor, verifique o musgo todas as semanas."]]},
-{
-podas:[["Árvores de caroço","Poda em verde depois da colheita."],["Tomateiro","Despontar o topo para amadurecer os frutos."],["Framboeseira","Cortar as varas que já deram fruto."],["Glicínia","Poda de verão."],["Sebes","Último corte forte do ano."],["Nogueira","Podar no fim do verão: no inverno a nogueira «chora» muita seiva."],["Louro-cerejo","Segundo corte de sebe; use tesoura de mão nas plantas de folha grande."],["Magnólia grandiflora","Poda leve depois da floração."]],
-trat:[["Videira","Parar cobre e enxofre antes da vindima (respeitar intervalo de segurança). Vigiar podridão dos cachos, frequente com orvalhos."],["Oliveira","Mosca-da-azeitona: período crítico."],["Macieira","Bichado (2.ª geração)."],["Tomateiro","Míldio com orvalhos."],["Couves","Lagartas: Bacillus thuringiensis."],["Uva de mesa","Ensaque os cachos contra vespas e pássaros; respeite o intervalo de segurança."]],
-plantar:[["Couves, brócolos, couve-flor","Transplante.","f"],["Alface, chicória, endívia","Sementeira ou transplante.","f"],["Espinafre","No fim do mês.","f"],["Nabos e nabiças","Sementeira direta.","r"],["Cenoura e rabanete","Sementeira direta.","r"],["Alfobre: cebola","Para transplantar no inverno.","r"],["Morangueiro","Enraizar os estolhos.","f"]],
-estacas:[["Roseira","Estacas semi-lenhosas."],["Hortênsia","Últimas estacas."],["Buxo","Estacas semi-lenhosas."],["Citrinos","Estacas semi-lenhosas."],["Pitósporo","Estacas semi-lenhosas."],["Lavanda","Estacas de pontas."],["Feijoa","Estacas semi-lenhosas com hormona, em abrigo húmido."],["Fotínia","Estacas semi-lenhosas de 10–15 cm, com hormona."],["Louro-cerejo","Estacas semi-lenhosas de 15 cm, cortando as folhas ao meio."],["Aucuba (Aucuba japonica)","Muito fácil: enraíza em 3–6 semanas; hormona facultativa. Mantenha à sombra."],["Limpa-garrafas (Callistemon citrinus)","Moderada: estacas semi-lenhosas com hormona; enraízam em 4–8 semanas."],["Azevinho (Ilex aquifolium)","Moderada: estacas semi-lenhosas com hormona; enraízam devagar, em 8–16 semanas."],["Loendro (Nerium oleander)","Muito fácil: enraíza em 2–5 semanas, em terra ou em água; hormona facultativa. Planta tóxica: use luvas."],["Quaresmeira (Tibouchina urvilleana)","Fácil: enraíza em 4–8 semanas; hormona facultativa. Sensível à geada: guarde as estacas abrigadas no primeiro inverno."]],
-enx:[["Macieira, pereira, marmeleiro","Borbulha em T de olho dormente: rebenta na próxima primavera."],["Cerejeira, ameixeira, pessegueiro","Borbulha em T ou de lasca. Cerejeira japonesa: borbulha em cerejeira-brava."],["Amendoeira","Borbulha de olho dormente."],["Videira","Enxertia de borbulha (lasca) na cepa, de meados de agosto a setembro."],["Citrinos","Borbulha em T."],["Roseira","Borbulha em T."]],
-alp:[["Ver se há raízes","Espreite por baixo do alumínio: raízes brancas a encher o musgo indicam que está pronto."],["Separar os de primavera","Figueira, hortênsia e roseira com raízes: corte e plante em vaso, à sombra."],["Não começar novos","Já não têm tempo de enraizar antes do frio."]]},
-{
-podas:[["Framboeseira","Cortar as varas velhas."],["Pessegueiro","Poda em verde depois da colheita."],["Sebes","Último corte ligeiro."],["Ervas aromáticas","Poda ligeira de forma."],["Nogueira","Última altura boa para podar, antes da queda da folha."],["Fotínia","Segundo corte de sebe, ligeiro."]],
-trat:[["Videira","Depois da vindima não precisa de tratamentos."],["Castanheiro","Vigiar o bichado da castanha; apanhar e destruir os ouriços caídos cedo."],["Oliveira","Mosca; cobre contra a gafa com as primeiras chuvas."],["Citrinos","Cobre preventivo antes das chuvas."],["Fruteiras","Apanhar e destruir frutos caídos."],["Couves","Lagartas e afídeos."],["Hortícolas","Lesmas, que voltam com as chuvas."],["Feijoa","Mosca-da-fruta: armadilhas antes de os frutos amadurecerem (colheita de outubro a dezembro)."],["Diospireiro","Mosca-do-mediterrâneo: armadilhas."]],
-plantar:[["Couves, brócolos, couve-flor","Transplante.","f"],["Alface, espinafre, acelga","Sementeira ou transplante.","f"],["Couve-galega e tronchuda","Transplante para o inverno.","f"],["Morangueiro","Plantar.","f"],["Nabos, rabanetes, cenouras","Sementeira direta.","r"],["Cebola","Sementeira em alfobre.","r"],["Nespereira","Em torrão, antes do frio.","a"]],
-estacas:[["Roseira","Estacas semi-lenhosas."],["Hortênsia","Estacas lenhosas."],["Buxo","Estacas semi-lenhosas."],["Sardinheiras","Estacas para guardar no inverno."],["Loureiro","Estacas semi-lenhosas."],["Oliveira","Estacas semi-lenhosas."],["Fotínia","Estacas semi-lenhosas de 10–15 cm, com hormona."],["Aucuba (Aucuba japonica)","Muito fácil: enraíza em 3–6 semanas; hormona facultativa. Mantenha à sombra."],["Limpa-garrafas (Callistemon citrinus)","Moderada: estacas semi-lenhosas com hormona; enraízam em 4–8 semanas."],["Azevinho (Ilex aquifolium)","Moderada: estacas semi-lenhosas com hormona; enraízam devagar, em 8–16 semanas."],["Loendro (Nerium oleander)","Muito fácil: enraíza em 2–5 semanas, em terra ou em água; hormona facultativa. Planta tóxica: use luvas."],["Quaresmeira (Tibouchina urvilleana)","Fácil: enraíza em 4–8 semanas; hormona facultativa. Sensível à geada: guarde as estacas abrigadas no primeiro inverno."]],
-enx:[["Videira","Terminar a enxertia de borbulha até meados do mês."],["Citrinos","Últimas borbulhas em T."],["Macieira e pereira","Últimas borbulhas de olho dormente, no início do mês."]],
-alp:[["Separar em duas fases","Corte metade do ramo abaixo do alporque e espere 2 semanas antes de o separar."],["Citrinos, oliveira, romãzeira","Separe os que têm raízes. Plante em vaso com terra leve, à sombra e regado."],["Figueira","Separe e plante."]]},
-{
-podas:[["Framboeseira","Limpeza das varas."],["Fruteiras","Retirar ramos secos e doentes (sem poda forte)."],["Roseiras","Só tirar flores secas."],["Sebes","Corte ligeiro de acabamento."]],
-trat:[["Pessegueiro e ameixeira","Cobre na queda da folha contra lepra e cancro."],["Castanheiro","Apanhar e queimar ouriços e castanhas bichadas."],["Oliveira","Cobre contra olho-de-pavão e gafa."],["Citrinos","Cobre contra o aguado."],["Hortícolas","Lesmas e caracóis."],["Couves","Lagartas."],["Amendoeira","Cobre na queda da folha contra o crivado."],["Nespereira","Cobre contra o pedrado antes da floração (floresce no outono)."],["Diospireiro","Mosca-do-mediterrâneo: armadilhas; apanhe os frutos caídos."],["Fotínia","Manchas nas folhas (entomosporiose): cobre com tempo húmido e retire folhas caídas."],["Louro-cerejo","Furos nas folhas (crivado): cobre no outono."],["Pinheiro-manso","Processionária: Bacillus thuringiensis nas lagartas jovens."]],
-plantar:[["Favas e ervilhas","Sementeira direta.","f"],["Couves, alface, espinafre","Transplante.","f"],["Salsa e coentros","Sementeira direta.","f"],["Morangueiro","Plantar.","f"],["Alho","Plantar os dentes.","r"],["Cebola","Transplante.","r"],["Nabos","Sementeira.","r"],["Bolbos de primavera","Tulipas, narcisos, jacintos.","r"],["Árvores e arbustos em vaso","Plantar.","a"],["Feijoa","Em torrão, antes das chuvas fortes.","a"],["Fotínia","Em torrão; boa para sebes, a 60–80 cm entre plantas.","a"],["Louro-cerejo","Em torrão; sebe densa, a 60–80 cm entre plantas.","a"],["Medronheiro","Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.","a"],["Azevinho","Em torrão, à meia-sombra. Espécie protegida: compre de viveiro e não colha na natureza. Só as fêmeas dão bagas.","a"],["Carvalho (bolotas)","Semeie as bolotas logo que caem, a 3–5 cm de fundo.","a"],["Magnólia","Em torrão, em terra ácida e fresca; as raízes não gostam de ser mexidas.","a"],["Sementeira: aucuba","Precisa de estratificação quente e depois fria; germina devagar.","a"],["Sementeira: azevinho","Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.","a"],["Sementeira: carvalho-dos-pântanos","Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.","a"],["Recolher sementes para o viveiro","Bordo-japonês, liquidâmbar, carvalho-dos-pântanos, azevinho e limpa-garrafas. Guarde-as para estratificar.","a"]],
-estacas:[["Roseira","Estacas lenhosas."],["Figueira","Primeiras estacas lenhosas."],["Hortênsia","Estacas lenhosas."],["Buxo","Estacas."],["Loureiro","Estacas."],["Tamargueira","Estacas lenhosas."],["Aucuba (Aucuba japonica)","Muito fácil: enraíza em 3–6 semanas; hormona facultativa. Mantenha à sombra."],["Azevinho (Ilex aquifolium)","Moderada: estacas semi-lenhosas com hormona; enraízam devagar, em 8–16 semanas."]],
-enx:[["Verificar borbulhas do verão","Se a borbulha está verde e o pecíolo cai ao tocar, pegou. Alivie os atilhos."],["Escolher árvores-mãe","Marque as árvores saudáveis e produtivas de onde vai tirar garfos no inverno."]],
-alp:[["Últimos a separar","Separe os alporques com raízes antes das chuvas fortes."],["Sem raízes suficientes?","Deixe na árvore até à primavera, sobretudo camélia, magnólia, loureiro e oliveira."]]},
-{
-podas:[["Macieira e pereira","Pode começar depois da queda da folha."],["Roseiras","Poda ligeira de limpeza."],["Groselheira e framboeseira","Retirar varas velhas."],["Ornamentais de folha caduca","Poda de forma."],["Videira","Só depois de cair toda a folha; a tradição prefere janeiro–fevereiro."]],
-trat:[["Pessegueiro e ameixeira","Cobre na queda da folha (lepra)."],["Oliveira","Cobre depois da colheita (gafa, olho-de-pavão)."],["Fruteiras","Retirar e queimar frutos mumificados."],["Citrinos","Cobre depois das chuvas."],["Couves","Afídeos e lesmas."],["Cerejeira-brava e japonesa","Cobre na queda da folha contra o cancro bacteriano."]],
-plantar:[["Árvores de fruto e ornamentais","Começa a melhor época de plantação: macieira, pereira, castanheiro, kiwi, mirtilo.","a"],["Sebes","Plantar.","a"],["Alho","Plantar.","r"],["Cebola","Transplante.","r"],["Bolbos","Plantar.","r"],["Favas e ervilhas","Sementeira.","f"],["Couves e alface de inverno","Transplante.","f"],["Espinafre","Sementeira.","f"],["Morangueiro","Plantar.","f"],["Nogueira","Raiz nua, em terra funda e fresca; precisa de 10–12 m de espaço.","a"],["Cerejeira-brava","Raiz nua; boa para bordaduras, sebes altas e madeira.","a"],["Fotínia","Em torrão; boa para sebes, a 60–80 cm entre plantas.","a"],["Louro-cerejo","Em torrão; sebe densa, a 60–80 cm entre plantas.","a"],["Tília","Raiz nua; árvore grande, precisa de espaço.","a"],["Pinheiro-manso","Planta jovem em vaso ou torrão, em local soalheiro.","a"],["Plátano","Raiz nua.","a"],["Medronheiro","Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.","a"],["Azevinho","Em torrão, à meia-sombra. Espécie protegida: compre de viveiro e não colha na natureza. Só as fêmeas dão bagas.","a"],["Carvalho","Raiz nua ou em vaso.","a"],["Carvalho (bolotas)","Semeie as bolotas logo que caem, a 3–5 cm de fundo.","a"],["Aveleira","Raiz nua; plante pelo menos duas variedades para polinizar.","a"],["Liquidâmbar","Raiz nua ou torrão; folhagem vermelha no outono.","a"],["Sementeira: aucuba","Precisa de estratificação quente e depois fria; germina devagar.","a"],["Sementeira: azevinho","Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.","a"],["Sementeira: carvalho-dos-pântanos","Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.","a"],["Recolher sementes para o viveiro","Bordo-japonês, liquidâmbar, carvalho-dos-pântanos, azevinho e limpa-garrafas. Guarde-as para estratificar.","a"]],
-estacas:[["Figueira","Estacas lenhosas."],["Videira","Com sarmentos, se já podou."],["Roseira","Estacas lenhosas."],["Marmeleiro","Estacas lenhosas."],["Romãzeira","Estacas lenhosas."],["Groselheira","Estacas lenhosas."],["Choupo","Estacas lenhosas."],["Aucuba (Aucuba japonica)","Muito fácil: enraíza em 3–6 semanas; hormona facultativa. Mantenha à sombra."],["Azevinho (Ilex aquifolium)","Moderada: estacas semi-lenhosas com hormona; enraízam devagar, em 8–16 semanas."],["Salgueiro-cinzento (Salix atrocinerea)","Muito fácil: estacas lenhosas diretamente no solo húmido; enraízam em 2–6 semanas, sem hormona."]],
-enx:[["Plantar porta-enxertos","Cavalos de macieira, pereira, cerejeira-brava, castanheiro (resistente à tinta) e nogueira, para enxertar daqui a 1–2 anos."],["Verificar borbulhas","Tire atilhos que estejam a apertar."]],
-alp:[["Proteger os novos vasos","Ponha os alporques separados num sítio abrigado do frio e da chuva forte."],["Alporques ainda na árvore","Confirme que o plástico está bem atado para não encharcar."]]},
-{
-podas:[["Macieira e pereira","Poda de inverno em dias sem geada."],["Kiwi","Poda de inverno."],["Videira","Pode começar depois da queda da folha, mas aqui as geadas tardias aconselham podar em janeiro–março."],["Groselheira","Poda de limpeza."],["Ornamentais de folha caduca","Poda de forma."],["Amendoeira","Poda leve de inverno, em dias sem geada."],["Tília","Poda de inverno: retire rebentos da base e ramos mal colocados."],["Pinheiro-manso","Limpeza de ramos baixos e secos; corte rente ao tronco."],["Plátano","Poda de inverno de forma ou de rolagem."],["Carvalho","Poda de formação no inverno nas árvores jovens."],["Aveleira","Retire rebentos da base e ramos com mais de 6–8 anos."],["Liquidâmbar","Poda de formação no inverno; mantenha um eixo central."]],
-trat:[["Fruteiras","Óleo de inverno contra cochonilhas e ovos de afídeos e ácaros, sem geada."],["Pessegueiro","Cobre contra a lepra."],["Oliveira e citrinos","Cobre, se ainda não tratou."],["Ferramentas","Limpar e desinfetar tesouras e serrotes."],["Pinheiro-manso","Processionária: corte e queime os ninhos (bolsas brancas) com luvas e óculos; os pelos são muito irritantes."],["Magnólia","Cochonilhas: óleo de inverno."]],
-plantar:[["Árvores de fruto em raiz nua","Época ideal, incluindo castanheiro, mirtilo e kiwi.","a"],["Sebes e arbustos de folha caduca","Plantar.","a"],["Alho","Plantar.","r"],["Cebola","Transplante.","r"],["Favas e ervilhas","Sementeira.","f"],["Couves e alface","Transplante.","f"],["Morangueiro","Plantar.","f"],["Amendoeira","Raiz nua, em local soalheiro e abrigado das geadas de fevereiro. Em Sardoura, a meia-encosta, nunca no fundo do vale.","a"],["Diospireiro","De preferência em torrão: as raízes ressentem-se do transplante.","a"],["Cerejeira japonesa","Raiz nua ou torrão, em local soalheiro.","a"],["Sementeira: aucuba","Precisa de estratificação quente e depois fria; germina devagar.","a"],["Sementeira: azevinho","Bagas limpas, com estratificação quente e fria; pode levar 2 anos a germinar.","a"],["Sementeira: carvalho-dos-pântanos","Bolotas frescas no outono, ou estratificadas 60–90 dias no frio e semeadas na primavera.","a"]],
-estacas:[["Videira","Estacas lenhosas."],["Figueira","Estacas lenhosas."],["Roseira","Estacas lenhosas."],["Marmeleiro","Estacas lenhosas."],["Romãzeira","Estacas lenhosas."],["Kiwi","Estacas lenhosas."],["Amoreira","Estacas lenhosas."],["Plátano","Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem."],["Salgueiro-cinzento (Salix atrocinerea)","Muito fácil: estacas lenhosas diretamente no solo húmido; enraízam em 2–6 semanas, sem hormona."]],
-enx:[["Colher garfos","Castanheiro, nogueira, diospireiro e videira: varas dormentes, sãs, da grossura de um lápis."],["Videira: enxertia de mesa","Pode começar em bacelo, para forçar em estufa."],["Preparar material","Canivete de enxertia afiado, fita, ráfia e mástique."]],
-alp:[["Nada a começar","Inverno: os alporques não enraízam."],["Planear","Escolha as plantas a multiplicar na primavera."]]}
-];
-
+let DB=null;
 /* ---------- Lua ---------- */
 const SYN=29.530588853, REF=Date.UTC(2000,0,6,18,14);
 function moonAge(d){const t=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate(),12);let a=((t-REF)/864e5)%SYN;return a<0?a+SYN:a}
@@ -254,65 +183,130 @@ const MOON_TXT={
   cheia:"Seiva no máximo: bom para folha e fruto; evitar podas.",
   ming:"A seiva desce: bom para podar e para plantar raízes, bolbos e árvores."
 };
+const L=p=>p.k==="cheia"?"cheia":p.k==="nova"?"nova":p.k==="cresc"?"crescente":"minguante";
+const subir=p=>p.k==="cresc"||p.k==="cheia";
 
-/* ---------- Conselho do dia por categoria ---------- */
+/* ---------- Categorias: conselho do dia e dicas ---------- */
 const CAT={
-  podas:{t:"Podas",sub:"O que podar este mês",
-    v:p=>p.k==="ming"?["good","Lua minguante: dia favorável para podar. A planta perde menos seiva e rebenta com mais equilíbrio."]
-       :p.k==="nova"?["good","Lua nova: dia aceitável para podar."]
-       :["meh","Lua "+(p.k==="cheia"?"cheia":"crescente")+": a tradição prefere podar em lua minguante. Se puder, espere uns dias."],
+  podas:{t:"Podas",sub:"O que podar",u:"plantas",
+    v:p=>p.k==="ming"?["good","Lua minguante: dia favorável para podar. A planta perde menos seiva e rebenta com mais equilíbrio."]:p.k==="nova"?["good","Lua nova: dia aceitável para podar."]:["meh","Lua "+L(p)+": a tradição prefere podar em lua minguante. Se puder, espere uns dias."],
     tips:"<b>Antes de podar:</b> evite dias de chuva e de geada; desinfete a tesoura entre plantas doentes; faça cortes limpos e inclinados acima de um gomo."},
-  trat:{t:"Tratamentos",sub:"Plantas a vigiar e tratar este mês",
+  trat:{t:"Tratamentos",sub:"O que tratar e vigiar",u:"a tratar",
     v:()=>["good","O mais importante é o tempo: trate só sem chuva prevista para as próximas horas e sem vento."],
     tips:"<b>Regras:</b> trate de manhã cedo ou ao fim da tarde; com nevoeiro do rio, espere que levante e as folhas sequem; enxofre só abaixo de 30 °C; respeite o intervalo de segurança antes de colher; use luvas, máscara e óculos; leia sempre o rótulo do produto.<br><a href='#avisos'>Ver os Avisos Agrícolas oficiais ↓</a>"},
-  plantar:{t:"Plantar e semear",sub:"Hortícolas e plantas para este mês",
-    v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]
-       :p.k==="ming"?["good","Lua minguante: dia indicado para raízes, bolbos, tubérculos e árvores."]
-       :["good","Lua "+(p.k==="cheia"?"cheia":"crescente")+": dia indicado para plantas de folha, fruto e grão."],
-    tips:"<b>Dica:</b> as plantas marcadas com «Hoje» são as que a tradição lunar favorece neste dia. Regue logo depois de plantar."},
-  estacas:{t:"Estaquia",sub:"Plantas para multiplicar por estacas este mês",
-    v:p=>p.k==="cresc"||p.k==="cheia"?["good","Lua "+(p.k==="cheia"?"cheia":"crescente")+": a tradição diz que as estacas pegam melhor com a seiva a subir."]
-       :["meh","Lua "+(p.k==="nova"?"nova":"minguante")+": pode fazer estacas, mas a tradição prefere lua crescente."],
-    tips:"<b>Como fazer:</b> corte abaixo de um nó, tire as folhas de baixo, enterre 2/3 em terra leve ou areia húmida, mantenha à sombra e sem secar. Hormona de enraizamento ajuda.<br><b>Não pegam bem de estaca:</b> amendoeira, nogueira, nespereira, diospireiro, cerejeira-brava, tília, pinheiro-manso, carvalho, pistacheiro, medronheiro e carvalho-dos-pântanos. Estas multiplicam-se por enxertia ou semente."},
-  enx:{t:"Enxertia",sub:"O que enxertar este mês",
-    v:p=>p.k==="cresc"||p.k==="cheia"?["good","Lua "+(p.k==="cheia"?"cheia":"crescente")+": a tradição diz que os enxertos pegam melhor com a seiva a subir."]
-       :["meh","Lua "+(p.k==="nova"?"nova":"minguante")+": bom dia para colher garfos; para enxertar, a tradição prefere lua crescente."],
-    tips:"<b>Como fazer:</b> enxerte em dia seco e sem vento; use canivete afiado e desinfetado; junte bem a casca verde (câmbio) do garfo e do cavalo; aperte com fita e cubra os cortes com mástique. Garfo e cavalo têm de ser da mesma família (ex.: cerejeira em cerejeira-brava, pereira em marmeleiro)."}
-  ,alp:{t:"Alporquia",sub:"Alporques para fazer e separar este mês",
-    v:p=>p.k==="cresc"||p.k==="cheia"?["good","Lua "+(p.k==="cheia"?"cheia":"crescente")+": a tradição diz que os alporques enraízam melhor com a seiva a subir."]
-       :["meh","Lua "+(p.k==="nova"?"nova":"minguante")+": bom dia para separar e plantar alporques; para fazer novos, a tradição prefere lua crescente."],
-    tips:"<b>Como fazer:</b> num ramo de 1 a 2 cm, tire um anel de casca com 2 a 3 cm e raspe a parte verde por baixo. Ponha hormona de enraizamento, envolva com musgo esfagno húmido e feche com plástico bem atado em cima e em baixo. Cubra com alumínio. Separe quando as raízes encherem o musgo."}
+  plantar:{t:"Plantar e semear na horta",sub:"Horta, árvores e arbustos a plantar",u:"culturas",
+    v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]:p.k==="ming"?["good","Lua minguante: dia indicado para raízes, bolbos, tubérculos e árvores."]:["good","Lua "+L(p)+": dia indicado para plantas de folha, fruto e grão."],
+    tips:"<b>Dica:</b> as culturas marcadas com «Hoje» são as que a tradição lunar favorece neste dia. Regue logo depois de plantar."},
+  sem:{t:"Sementeira de viveiro",sub:"Árvores, arbustos e aromáticas a semear",u:"plantas",
+    v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]:["good","Lua "+L(p)+": bom dia para semear."],
+    tips:"<b>Estratificar:</b> guarde as sementes em areia húmida, num saco no frigorífico, durante o tempo indicado. <b>Estratificação quente e fria:</b> primeiro 2–3 meses à temperatura ambiente, depois o frio. Semeie em alvéolos com terra leve e mantenha húmido."},
+  estacas:{t:"Estaquia",sub:"Plantas para multiplicar por estacas",u:"plantas",
+    v:p=>subir(p)?["good","Lua "+L(p)+": a tradição diz que as estacas pegam melhor com a seiva a subir."]:["meh","Lua "+L(p)+": pode fazer estacas, mas a tradição prefere lua crescente."],
+    tips:"<b>Como fazer:</b> corte abaixo de um nó, tire as folhas de baixo, enterre 2/3 em terra leve ou areia húmida, mantenha à sombra e sem secar. Hormona de enraizamento ajuda."},
+  enx:{t:"Enxertia",sub:"O que enxertar",u:"plantas",
+    v:p=>subir(p)?["good","Lua "+L(p)+": a tradição diz que os enxertos pegam melhor com a seiva a subir."]:["meh","Lua "+L(p)+": bom dia para colher garfos; para enxertar, a tradição prefere lua crescente."],
+    tips:"<b>Como fazer:</b> enxerte em dia seco e sem vento; use canivete afiado e desinfetado; junte bem a casca verde (câmbio) do garfo e do cavalo; aperte com fita e cubra os cortes com mástique. Garfo e cavalo têm de ser da mesma família."},
+  alp:{t:"Alporquia",sub:"Alporques para fazer e separar",u:"plantas",
+    v:p=>subir(p)?["good","Lua "+L(p)+": a tradição diz que os alporques enraízam melhor com a seiva a subir."]:["meh","Lua "+L(p)+": bom dia para separar e plantar alporques; para fazer novos, a tradição prefere lua crescente."],
+    tips:"<b>Como fazer:</b> num ramo de 1 a 2 cm, tire um anel de casca com 2 a 3 cm e raspe a parte verde por baixo. Ponha hormona de enraizamento, envolva com musgo esfagno húmido e feche com plástico bem atado. Cubra com alumínio. Separe quando as raízes encherem o musgo."},
+  div:{t:"Divisão e mergulhia",sub:"Bolbos, touceiras, estolhos e rebentos",u:"plantas",
+    v:p=>p.k==="ming"||p.k==="nova"?["good","Lua "+L(p)+": bom dia para dividir e separar bolbos e rebentos."]:["meh","Lua "+L(p)+": a tradição prefere dividir em lua minguante."],
+    tips:"<b>Como fazer:</b> use uma faca ou pá limpa; cada parte deve ter raízes e rebentos. Replante logo e regue. Na mergulhia, enterre um ramo ainda preso à planta-mãe e separe-o quando tiver raízes."},
+  col:{t:"Colheita",sub:"O que está pronto a colher",u:"culturas",
+    v:p=>p.k==="ming"?["good","Lua minguante: a tradição diz que é a melhor altura para colher o que é para guardar (batata, cebola, castanha, maçã)."]:["good","Lua "+L(p)+": bom para colher para comer fresco; o que é para guardar, a tradição prefere colher em minguante."],
+    tips:"<b>Dica:</b> colha de manhã e com tempo seco. Fruta e tubérculos para guardar não devem ter pancadas nem terra húmida."}
 };
 const TIPO={r:["raiz","ming"],f:["folha/fruto","cresc"],a:["árvore","ming"]};
+const DIFN=["","Fácil","Moderado","Difícil","Inviável"];
+const CATN={"fruteira":"Fruteiras","pequeno fruto":"Pequenos frutos","vinha":"Vinha","aromática":"Aromáticas","florestal":"Florestais","ornamental":"Ornamentais","bolbo":"Bolbos","hortícola":"Horta"};
 
-/* ---------- Estado ---------- */
+/* ---------- Gerar a lista do mês ---------- */
+const tem=(o,m)=>o&&o.meses&&o.meses.includes(m);
+const avisos=p=>[p.legal,p.toxicidade].filter(Boolean);
+function lista(k,m){
+  const P=DB.plantas, out=[];
+  const it=(nome,nota,extra)=>out.push({nome,nota,...extra});
+  const geadaNota=(p)=>p.geada&&(m===3||m===4)?" Em Sardoura, só depois de meados de abril e em leira abrigada.":"";
+  if(k==="podas"){
+    for(const p of P) for(const e of p.poda||[]) if(e.meses.includes(m)) it(p.nome,e.tipo+".",{p});
+  }else if(k==="trat"){
+    for(const t of DB.tratamentos){
+      const iv=t.intervencoes.filter(i=>i.meses.includes(m));
+      if(iv.length) it(t.grupo,iv.map(i=>i.texto).join(" "),{tag:"Tratar",hot:true,ordem:0});
+      else if(t.vigiar.includes(m)) it(t.grupo,"Vigiar: "+t.problemas.toLowerCase()+".",{tag:"Vigiar",ordem:1});
+    }
+  }else if(k==="plantar"){
+    const arv={};
+    for(const p of P){
+      const horta=p.categoria==="hortícola"||(p.categoria==="aromática"&&p.folha==="anual");
+      if(horta){
+        const sem=p.categoria==="hortícola"?p.sementeira:p.propagacao&&p.propagacao.sementeira;
+        const acc=[];
+        if(tem(sem,m)) acc.push(sem.modo==="direta"?"Semear diretamente":sem.modo==="alfobre"?"Semear em alfobre":"Semear");
+        if(tem(p.plantacao,m)) acc.push(p.plantacao.o_que?"Plantar "+p.plantacao.o_que:(sem&&sem.modo==="alfobre"?"Transplantar":"Plantar"));
+        if(acc.length) it(p.nome,acc.join(" e ")+"."+geadaNota(p)+(m===2&&p.id==="batata"?" Em fevereiro, só em terreno abrigado e virado a sul.":""),{p,lua:p.tipo_lua});
+      }else if(tem(p.plantacao,m)){
+        if(p.nota_sardoura||p.legal||p.categoria==="bolbo") it(p.nome,"Plantar "+p.plantacao.o_que+"."+(p.nota_sardoura?" "+p.nota_sardoura:"")+geadaNota(p),{p,lua:p.tipo_lua});
+        else {const g=(CATN[p.categoria]||"Outras")+" ("+p.plantacao.o_que+")";(arv[g]=arv[g]||[]).push(p.nome)}
+      }
+    }
+    for(const g in arv) it(g,arv[g].sort((x,y)=>x.localeCompare(y,"pt")).join(", ")+".",{lua:"a",grupo:true});
+  }else if(["sem","estacas","enx","alp"].includes(k)){
+    const key={sem:"sementeira",estacas:"estacas",enx:"enxertia",alp:"alporquia"}[k];
+    const grupos={};
+    for(const p of P){
+      if(k==="sem"&&(p.categoria==="hortícola"||(p.categoria==="aromática"&&p.folha==="anual"))) continue;
+      const e=p.propagacao&&p.propagacao[key]; if(!tem(e,m)||e.dificuldade===4) continue;
+      if(e.nota||avisos(p).length) it(p.nome,e.nota||"",{p,dif:e.dificuldade});
+      else (grupos[e.dificuldade||0]=grupos[e.dificuldade||0]||[]).push(p.nome);
+    }
+    for(const d of Object.keys(grupos).sort()) it((DIFN[d]||"Outras")+":",grupos[d].sort((x,y)=>x.localeCompare(y,"pt")).join(", ")+".",{dif:+d,grupo:true});
+    if(k==="sem"){const r=P.filter(p=>tem({meses:p.recolha_sementes||[]},m)).map(p=>p.nome);if(r.length)it("Recolher sementes",r.join(", ")+".",{dif:0})}
+  }else if(k==="div"){
+    for(const p of P) for(const d of p.divisao||[]) if(d.meses.includes(m)) it(p.nome,d.metodo+".",{p});
+  }else if(k==="col"){
+    const g={};
+    for(const p of P) if(tem({meses:p.colheita||[]},m)) (g[CATN[p.categoria]||"Outras"]=g[CATN[p.categoria]||"Outras"]||[]).push(p.nome);
+    for(const c in g) it(c,g[c].sort((x,y)=>x.localeCompare(y,"pt")).join(", ")+".",{grupo:true});
+  }
+  for(const t of DB.tarefas) if(t.categoria===k&&t.meses.includes(m)) it(t.nome,t.texto,{tarefa:true,ordem:-1});
+  out.sort((a,b)=>(a.ordem||0)-(b.ordem||0)||(a.grupo?1:0)-(b.grupo?1:0)||(a.dif||0)-(b.dif||0)||a.nome.localeCompare(b.nome,"pt"));
+  return out;
+}
+function contar(k,m){const l=lista(k,m);return l.reduce((n,i)=>n+(i.grupo?i.nota.split(",").length:i.tarefa?0:k==="trat"&&!i.hot?0:1),0)}
+
+/* ---------- Estado e desenho ---------- */
 let day=new Date(); day.setHours(12,0,0,0);
 let cur="podas";
 try{const s=localStorage.getItem("agenda-cat"); if(s&&CAT[s]) cur=s}catch(e){}
 const $=id=>document.getElementById(id);
-const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 
 function render(){
-  const m=D[day.getMonth()], a=moonAge(day), p=phase(a);
+  const a=moonAge(day), p=phase(a), m=day.getMonth()+1;
   const isToday=iso(day)===iso(new Date());
   $("wd").textContent=(isToday?"Hoje · ":"")+day.toLocaleDateString("pt-PT",{weekday:"long"});
   $("dt").textContent=day.getDate()+" de "+MESES[day.getMonth()]+" "+(day.getFullYear()!==new Date().getFullYear()?day.getFullYear():"");
   $("pick").value=iso(day);
   $("moon").innerHTML=moonSVG(a)+`<div><b>${p.n}</b><span>${MOON_TXT[p.k]}</span></div>`;
-  document.querySelectorAll(".cat").forEach(b=>{
-    const k=b.dataset.k; b.setAttribute("aria-pressed",k===cur);
-    const n=m[k].length; b.querySelector(".cnt").textContent=n+(k==="trat"?" a vigiar":k==="plantar"?" culturas":k==="enx"||k==="alp"?" tarefas":" plantas");
-  });
-  const c=CAT[cur], [vk,vt]=c.v(p);
-  const items=m[cur].map(([n,note,t])=>{
+  if(!DB){$("panel").innerHTML=`<div class="panel-head"><h2>A carregar…</h2><p>A abrir a base de dados das plantas.</p></div>`;return}
+  document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);b.querySelector(".cnt").textContent=contar(k,m)+" "+CAT[k].u});
+  const c=CAT[cur],[vk,vt]=c.v(p),items=lista(cur,m);
+  const li=items.map(i=>{
     let chip="";
-    if(cur==="plantar"&&t){const [lbl,ph]=TIPO[t];const fav=p.k!=="nova"&&(ph===p.k||(ph==="cresc"&&p.k==="cheia"));chip=`<span class="chip${fav?" hot":""}">${fav?"Hoje · ":""}${lbl}</span>`}
-    return `<li><div class="it-top"><span class="it-name">${esc(n)}</span>${chip}</div><span class="it-note">${esc(note)}</span></li>`;
-  }).join("");
-  $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${c.sub.replace("este mês","em "+MESES[day.getMonth()])}</p></div>
+    if(i.tag) chip=`<span class="chip${i.hot?" hot":""}">${i.tag}</span>`;
+    else if(i.lua&&cur==="plantar"){const [lbl,ph]=TIPO[i.lua];const fav=p.k!=="nova"&&(ph===p.k||(ph==="cresc"&&p.k==="cheia"));chip=`<span class="chip${fav?" hot":""}">${fav?"Hoje · ":""}${lbl}</span>`}
+    else if(i.dif&&!i.grupo) chip=`<span class="chip d${i.dif}">${DIFN[i.dif]}</span>`;
+    const sci=i.p&&!i.grupo?`<i class="sci">${esc(i.p.nome_cientifico)}</i>`:"";
+    const av=i.p?avisos(i.p).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
+    return `<li${i.grupo?' class="grp"':""}><div class="it-top"><span class="it-name">${esc(i.nome)}${sci}</span>${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
+  }).join("")||`<li><span class="it-note">Nada previsto para este mês.</span></li>`;
+  let extra="";
+  if(cur==="estacas"){const n=DB.plantas.filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
+  $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${c.sub} em ${MESES[day.getMonth()]}</p></div>
     <div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>
-    <ul class="items">${items}</ul><div class="tips">${c.tips}</div>`;
+    <ul class="items">${li}</ul><div class="tips">${c.tips}${extra}</div>`;
 }
 document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
 $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
@@ -321,6 +315,9 @@ $("btnHoje").onclick=()=>{day=new Date();day.setHours(12,0,0,0);render()};
 $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]=e.target.value.split("-").map(Number);day=new Date(y,mo-1,d,12);render()});
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
 render();
+Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()})))
+  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};render()})
+  .catch(()=>{$("panel").innerHTML=`<div class="panel-head"><h2>Sem dados</h2><p>Não foi possível abrir a base de dados das plantas. Ligue-se à internet e abra a app outra vez.</p></div>`});
 </script>
 <div id="instalar" hidden><span id="instTxt">Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar" hidden>Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>
 <script>

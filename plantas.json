@@ -1,0 +1,8292 @@
+{
+ "versao": 1,
+ "regiao": "Santa Maria de Sardoura, Castelo de Paiva",
+ "meses": "1 = janeiro … 12 = dezembro",
+ "dificuldade": "1 fácil · 2 moderado · 3 difícil · 4 praticamente inviável",
+ "plantas": [
+  {
+   "id": "ameixeira",
+   "nome": "Ameixeira",
+   "nome_cientifico": "Prunus domestica",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "Poda em verde depois da colheita"
+    }
+   ],
+   "colheita": [
+    7,
+    8
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "amendoeira",
+   "nome": "Amendoeira",
+   "nome_cientifico": "Prunus dulcis",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "nota_sardoura": "Floresce cedo: plante a meia-encosta, longe dos fundos de vale onde a geada assenta.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda leve de frutificação"
+    }
+   ],
+   "colheita": [
+    8,
+    9
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "amoreira",
+   "nome": "Amoreira",
+   "nome_cientifico": "Morus nigra / Morus alba",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    6,
+    7
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "aveleira",
+   "nome": "Aveleira",
+   "nome_cientifico": "Corylus avellana",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    9
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "divisao": [
+    {
+     "metodo": "Mergulhia e rebentos da base com raiz",
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "castanheiro",
+   "nome": "Castanheiro",
+   "nome_cientifico": "Castanea sativa",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Castanhas frescas; servem de cavalo para enxertar."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "Coroa em abril, flauta em maio–junho."
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    10,
+    11
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "nota_sardoura": "Use porta-enxertos resistentes à doença da tinta.",
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "cerejeira",
+   "nome": "Cerejeira",
+   "nome_cientifico": "Prunus avium",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Fenda em cerejeira-brava."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "Poda em verde depois da colheita (menos risco de cancro)"
+    }
+   ],
+   "colheita": [
+    5,
+    6
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "laranjeira",
+   "nome": "Laranjeira",
+   "nome_cientifico": "Citrus × sinensis",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "grupo": "citrinos",
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": "Borbulha em T."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "tipo": "Poda ligeira depois da colheita"
+    }
+   ],
+   "colheita": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "limoeiro",
+   "nome": "Limoeiro",
+   "nome_cientifico": "Citrus × limon",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "grupo": "citrinos",
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": "Borbulha em T."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "tipo": "Poda ligeira"
+    }
+   ],
+   "colheita": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "tangerineira",
+   "nome": "Tangerineira",
+   "nome_cientifico": "Citrus reticulata",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "grupo": "citrinos",
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": "Borbulha em T."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "tipo": "Poda ligeira depois da colheita"
+    }
+   ],
+   "colheita": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "damasqueiro",
+   "nome": "Damasqueiro",
+   "nome_cientifico": "Prunus armeniaca",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "Poda em verde depois da colheita"
+    }
+   ],
+   "colheita": [
+    6,
+    7
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "diospireiro",
+   "nome": "Diospireiro",
+   "nome_cientifico": "Diospyros kaki",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    10,
+    11
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "feijoa",
+   "nome": "Feijoa",
+   "nome_cientifico": "Acca sellowiana",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    10,
+    11,
+    12
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "figueira",
+   "nome": "Figueira",
+   "nome_cientifico": "Ficus carica",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2,
+      3
+     ],
+     "nota": "Estacas lenhosas de 20–30 cm."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    8,
+    9
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "macieira",
+   "nome": "Macieira",
+   "nome_cientifico": "Malus domestica",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Fenda em fevereiro–março; borbulha em agosto."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    8,
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "marmeleiro",
+   "nome": "Marmeleiro",
+   "nome_cientifico": "Cydonia oblonga",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "medronheiro",
+   "nome": "Medronheiro",
+   "nome_cientifico": "Arbutus unedo",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    10,
+    11,
+    12
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "nectarina",
+   "nome": "Nectarina",
+   "nome_cientifico": "Prunus persica var. nucipersica",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    7,
+    8
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "nespereira",
+   "nome": "Nespereira",
+   "nome_cientifico": "Eriobotrya japonica",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "nota_sardoura": "Floresce no inverno: plante junto a um muro virado a sul.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7
+     ],
+     "tipo": "Logo depois da colheita"
+    }
+   ],
+   "colheita": [
+    5,
+    6
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "nogueira",
+   "nome": "Nogueira",
+   "nome_cientifico": "Juglans regia",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2,
+      3
+     ],
+     "nota": "Nozes frescas ou estratificadas."
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Fenda ou placa, com tempo quente."
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Podar no verão: no inverno a nogueira «chora» muita seiva"
+    }
+   ],
+   "colheita": [
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "oliveira",
+   "nome": "Oliveira",
+   "nome_cientifico": "Olea europaea",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": "Estacas semi-lenhosas em areia húmida, à sombra."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "Coroa quando a casca descola."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "tipo": "Poda de produção e arejamento"
+    }
+   ],
+   "colheita": [
+    10,
+    11,
+    12
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pereira",
+   "nome": "Pereira",
+   "nome_cientifico": "Pyrus communis",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Fenda em marmeleiro ou pereira franca."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pessegueiro",
+   "nome": "Pessegueiro",
+   "nome_cientifico": "Prunus persica",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pistacheiro",
+   "nome": "Pistacheiro",
+   "nome_cientifico": "Pistacia vera",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "nota_sardoura": "Precisa de pé macho e fêmea e de verões secos: só numa leira soalheira virada a sul ou poente.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    9
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "romazeira",
+   "nome": "Romãzeira",
+   "nome_cientifico": "Punica granatum",
+   "categoria": "fruteira",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    9,
+    10,
+    11
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "framboeseira",
+   "nome": "Framboeseira",
+   "nome_cientifico": "Rubus idaeus",
+   "categoria": "pequeno fruto",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas de raiz."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2
+     ],
+     "tipo": "Encurtar as varas de outono"
+    },
+    {
+     "meses": [
+      8,
+      9
+     ],
+     "tipo": "Cortar rente ao chão as varas que já deram fruto"
+    }
+   ],
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "divisao": [
+    {
+     "metodo": "Separar rebentos de raiz",
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "groselheira",
+   "nome": "Groselheira",
+   "nome_cientifico": "Ribes rubrum",
+   "categoria": "pequeno fruto",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    6,
+    7
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "kiwi",
+   "nome": "Kiwi",
+   "nome_cientifico": "Actinidia deliciosa",
+   "categoria": "pequeno fruto",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno: encurtar os ramos que deram fruto"
+    },
+    {
+     "meses": [
+      6,
+      7
+     ],
+     "tipo": "Poda verde: despontar os rebentos longos"
+    }
+   ],
+   "colheita": [
+    10,
+    11
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "mirtilo",
+   "nome": "Mirtilo",
+   "nome_cientifico": "Vaccinium corymbosum",
+   "categoria": "pequeno fruto",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "solo": "Ácido (pH 4,5–5,5)",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "colheita": [
+    6,
+    7,
+    8
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "morangueiro",
+   "nome": "Morangueiro",
+   "nome_cientifico": "Fragaria × ananassa",
+   "categoria": "pequeno fruto",
+   "folha": "persistente",
+   "tipo_lua": "f",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Depois da colheita: cortar folhas velhas e estolhos que não quer"
+    }
+   ],
+   "colheita": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "plantacao": {
+    "meses": [
+     9,
+     10,
+     11,
+     3
+    ],
+    "o_que": "plantas"
+   },
+   "divisao": [
+    {
+     "metodo": "Enraizar os estolhos",
+     "meses": [
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "uva_mesa",
+   "nome": "Uva de mesa",
+   "nome_cientifico": "Vitis vinifera (uva de mesa)",
+   "categoria": "vinha",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas lenhosas da poda; para pomar use porta-enxerto."
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda mais longa do que a vinha de vinho, deixando varas para a ramada"
+    },
+    {
+     "meses": [
+      5,
+      6
+     ],
+     "tipo": "Monda de cachos e desbaste de bagos"
+    }
+   ],
+   "colheita": [
+    8,
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "videira",
+   "nome": "Videira (vinho)",
+   "nome_cientifico": "Vitis vinifera",
+   "categoria": "vinha",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas lenhosas da poda, com 3–4 gomos."
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": "Mesa (inverno), fenda (primavera) ou borbulha (agosto)."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno; nas castas tardias do Vinho Verde pode ir até março"
+    },
+    {
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "tipo": "Desladroamento e desponta dos rebentos"
+    }
+   ],
+   "colheita": [
+    9,
+    10
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "alecrim",
+   "nome": "Alecrim",
+   "nome_cientifico": "Salvia rosmarinus",
+   "categoria": "aromática",
+   "folha": "persistente",
+   "tipo_lua": "f",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5
+     ],
+     "tipo": "Depois da floração, poda leve sem cortar madeira velha"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "coentros",
+   "nome": "Coentros",
+   "nome_cientifico": "Coriandrum sativum",
+   "categoria": "aromática",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    }
+   },
+   "poda": [],
+   "colheita": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "lavanda",
+   "nome": "Lavanda",
+   "nome_cientifico": "Lavandula spp.",
+   "categoria": "aromática",
+   "folha": "persistente",
+   "tipo_lua": "f",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      8,
+      9
+     ],
+     "tipo": "Depois da floração, cortar as hastes florais e um pouco da folhagem"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "loureiro",
+   "nome": "Loureiro",
+   "nome_cientifico": "Laurus nobilis",
+   "categoria": "aromática",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "manjericao",
+   "nome": "Manjericão",
+   "nome_cientifico": "Ocimum basilicum",
+   "categoria": "aromática",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "tipo": "Despontar as pontas para ramificar e atrasar a flor"
+    }
+   ],
+   "colheita": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "salsa",
+   "nome": "Salsa",
+   "nome_cientifico": "Petroselinum crispum",
+   "categoria": "aromática",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    }
+   },
+   "poda": [],
+   "colheita": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "salva",
+   "nome": "Salva",
+   "nome_cientifico": "Salvia officinalis",
+   "categoria": "aromática",
+   "folha": "persistente",
+   "tipo_lua": "f",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "tomilho",
+   "nome": "Tomilho",
+   "nome_cientifico": "Thymus spp.",
+   "categoria": "aromática",
+   "folha": "persistente",
+   "tipo_lua": "f",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7
+     ],
+     "tipo": "Depois da floração, poda leve"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "amieiro",
+   "nome": "Amieiro",
+   "nome_cientifico": "Alnus glutinosa",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "arvore_ferro",
+   "nome": "Árvore-de-ferro",
+   "nome_cientifico": "Parrotia persica",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "azereiro",
+   "nome": "Azereiro",
+   "nome_cientifico": "Prunus lusitanica",
+   "categoria": "florestal",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": "Folhas e sementes tóxicas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "Poda de sebe ou de forma"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null
+  },
+  {
+   "id": "azevinho",
+   "nome": "Azevinho",
+   "nome_cientifico": "Ilex aquifolium",
+   "categoria": "florestal",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "exposicao": "Meia-sombra",
+   "toxicidade": "Bagas tóxicas.",
+   "legal": "Espécie protegida: proibido cortar ou colher na natureza. Use plantas de viveiro.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "nota": "Com hormona; enraíza devagar, em 8–16 semanas."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Estratificação quente e fria; pode levar 2 anos a germinar."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "recolha_sementes": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "bordo_japones",
+   "nome": "Bordo-japonês",
+   "nome_cientifico": "Acer palmatum",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "exposicao": "Meia-sombra",
+   "autoctone": false,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": "Hormona; enraíza em 6–12 semanas."
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": "Estratificar 90–120 dias no frio."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": "Melhor método; separa-se no outono."
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Só poda leve de ramos mal colocados"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "carvalho_alvarinho",
+   "nome": "Carvalho-alvarinho",
+   "nome_cientifico": "Quercus robur",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Bolotas frescas, logo que caem."
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "carvalho_pantanos",
+   "nome": "Carvalho-dos-pântanos",
+   "nome_cientifico": "Quercus palustris",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "exposicao": "Sol",
+   "autoctone": false,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": "Bolotas estratificadas 60–90 dias no frio."
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "carvalho_negral",
+   "nome": "Carvalho-negral",
+   "nome_cientifico": "Quercus pyrenaica",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Bolotas frescas, logo que caem."
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "cerejeira_brava",
+   "nome": "Cerejeira-brava",
+   "nome_cientifico": "Prunus avium (silvestre)",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "Poda de formação no verão"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "cerejeira_japao",
+   "nome": "Cerejeira-do-Japão",
+   "nome_cientifico": "Prunus serrulata",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "exposicao": "Sol",
+   "autoctone": false,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": "Com hormona; 6–12 semanas."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "As plantas de semente não saem iguais à variedade: servem de cavalo."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "Só poda leve, no verão"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null
+  },
+  {
+   "id": "choupo",
+   "nome": "Choupo",
+   "nome_cientifico": "Populus spp.",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "cornus_kousa",
+   "nome": "Corniso-japonês",
+   "nome_cientifico": "Cornus kousa",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "extremosa",
+   "nome": "Extremosa",
+   "nome_cientifico": "Lagerstroemia indica",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "freixo",
+   "nome": "Freixo",
+   "nome_cientifico": "Fraxinus angustifolia",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "ginkgo",
+   "nome": "Ginkgo",
+   "nome_cientifico": "Ginkgo biloba",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "toxicidade": "A polpa das sementes cheira mal e irrita a pele.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "liquidambar",
+   "nome": "Liquidâmbar",
+   "nome_cientifico": "Liquidambar styraciflua",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "exposicao": "Sol",
+   "autoctone": false,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": "Com hormona; 6–12 semanas."
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": "Estratificar 30–60 dias no frio."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "magnolia_grandiflora",
+   "nome": "Magnólia-de-flor-grande",
+   "nome_cientifico": "Magnolia grandiflora",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "tipo": "Poda leve de forma"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "magnolia_stellata",
+   "nome": "Magnólia-estrelada",
+   "nome_cientifico": "Magnolia stellata",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5
+     ],
+     "tipo": "Só poda mínima depois da floração"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "olaia",
+   "nome": "Olaia",
+   "nome_cientifico": "Cercis siliquastrum",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5,
+      6
+     ],
+     "tipo": "Depois da floração, poda leve de forma"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pilriteiro",
+   "nome": "Pilriteiro",
+   "nome_cientifico": "Crataegus monogyna",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pinheiro_manso",
+   "nome": "Pinheiro-manso",
+   "nome_cientifico": "Pinus pinea",
+   "categoria": "florestal",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Limpeza de ramos baixos e secos"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "platano",
+   "nome": "Plátano",
+   "nome_cientifico": "Platanus × hispanica",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "salgueiro_cinzento",
+   "nome": "Salgueiro-cinzento",
+   "nome_cientifico": "Salix atrocinerea",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "exposicao": "Sol",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas lenhosas diretamente no solo húmido; 2–6 semanas, sem hormona."
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": "Semear logo: as sementes perdem a força em poucos dias."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null
+  },
+  {
+   "id": "sanguinho",
+   "nome": "Sanguinho-de-água",
+   "nome_cientifico": "Frangula alnus",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": "Casca e bagas purgativas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null
+  },
+  {
+   "id": "sobreiro",
+   "nome": "Sobreiro",
+   "nome_cientifico": "Quercus suber",
+   "categoria": "florestal",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "legal": "Espécie protegida: o corte e a poda precisam de autorização do ICNF.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Bolotas frescas, logo que caem."
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [],
+     "tipo": "Poda condicionada por lei: precisa de autorização do ICNF"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "stewartia",
+   "nome": "Stewartia",
+   "nome_cientifico": "Stewartia pseudocamellia",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "tilia",
+   "nome": "Tília",
+   "nome_cientifico": "Tilia spp.",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "vidoeiro",
+   "nome": "Vidoeiro",
+   "nome_cientifico": "Betula pubescens",
+   "categoria": "florestal",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Podar no verão: no inverno perde muita seiva"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "aucuba",
+   "nome": "Aucuba",
+   "nome_cientifico": "Aucuba japonica",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "exposicao": "Sombra",
+   "autoctone": false,
+   "toxicidade": "Bagas tóxicas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "nota": "Enraíza em 3–6 semanas; hormona facultativa."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Estratificação quente e depois fria."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null
+  },
+  {
+   "id": "azalea",
+   "nome": "Azálea",
+   "nome_cientifico": "Rhododendron spp.",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "toxicidade": "Toda a planta é tóxica.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5,
+      6
+     ],
+     "tipo": "Depois da floração, cortar flores secas e despontar"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "budleia",
+   "nome": "Budleia",
+   "nome_cientifico": "Buddleja davidii",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "legal": "Espécie invasora em Portugal (Decreto-Lei 92/2019): não a plante nem propague.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda forte a 30–50 cm do chão"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "buganvilia",
+   "nome": "Buganvília",
+   "nome_cientifico": "Bougainvillea spp.",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "buxo",
+   "nome": "Buxo",
+   "nome_cientifico": "Buxus sempervirens",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "toxicidade": "Toda a planta é tóxica.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "Cortes de forma ao longo da época"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "camelia",
+   "nome": "Camélia",
+   "nome_cientifico": "Camellia japonica",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5
+     ],
+     "tipo": "Depois da floração, poda leve"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "crisantemo",
+   "nome": "Crisântemo",
+   "nome_cientifico": "Chrysanthemum × morifolium",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "f",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "tipo": "Despontar as pontas até julho para ficar mais compacto"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "divisao": [
+    {
+     "metodo": "Divisão da touceira",
+     "meses": [
+      3,
+      4
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "folhado",
+   "nome": "Folhado",
+   "nome_cientifico": "Viburnum tinus",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "autoctone": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5
+     ],
+     "tipo": "Depois da floração, poda de forma"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "toxicidade": null
+  },
+  {
+   "id": "forsitia",
+   "nome": "Forsítia",
+   "nome_cientifico": "Forsythia × intermedia",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4
+     ],
+     "tipo": "Logo depois da floração, cortar os ramos que floriram"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "fotinia",
+   "nome": "Fotínia",
+   "nome_cientifico": "Photinia × fraseri",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "tipo": "Cortes de sebe depois de cada rebento vermelho"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "fucsia",
+   "nome": "Fúcsia",
+   "nome_cientifico": "Fuchsia spp.",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "glicinia",
+   "nome": "Glicínia",
+   "nome_cientifico": "Wisteria sinensis",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "toxicidade": "Sementes e vagens tóxicas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2
+     ],
+     "tipo": "Poda de inverno: encurtar os rebentos a 2–3 gomos"
+    },
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Poda de verão: encurtar os rebentos longos"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "hamamelis",
+   "nome": "Hamamélis",
+   "nome_cientifico": "Hamamelis spp.",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      1,
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3
+     ],
+     "tipo": "Depois da floração, só poda leve"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "hibisco",
+   "nome": "Hibisco",
+   "nome_cientifico": "Hibiscus syriacus",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "hortensia",
+   "nome": "Hortênsia",
+   "nome_cientifico": "Hydrangea macrophylla",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "toxicidade": "Tóxica se ingerida.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Cortar as flores secas até ao primeiro par de gomos fortes"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "divisao": [
+    {
+     "metodo": "Divisão e mergulhia",
+     "meses": [
+      3,
+      4,
+      5
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "hortensia_carvalho",
+   "nome": "Hortênsia-folha-de-carvalho",
+   "nome_cientifico": "Hydrangea quercifolia",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "toxicidade": "Tóxica se ingerida.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      8
+     ],
+     "tipo": "Depois da floração, poda leve"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "jasmim",
+   "nome": "Jasmim",
+   "nome_cientifico": "Jasminum officinale",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      9
+     ],
+     "tipo": "Depois da floração, desbastar os ramos velhos"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "lantana",
+   "nome": "Lantana",
+   "nome_cientifico": "Lantana camara",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "geada": true,
+   "toxicidade": "Bagas tóxicas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "lilas",
+   "nome": "Lilás",
+   "nome_cientifico": "Syringa vulgaris",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5,
+      6
+     ],
+     "tipo": "Depois da floração, cortar as flores secas"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "limpa_garrafas",
+   "nome": "Limpa-garrafas",
+   "nome_cientifico": "Callistemon citrinus",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "exposicao": "Sol",
+   "autoctone": false,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": "Com hormona; enraíza em 4–8 semanas."
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "Sementes finas à superfície, sem estratificação."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Depois da floração, cortar as flores secas"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null,
+   "recolha_sementes": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "loendro",
+   "nome": "Loendro",
+   "nome_cientifico": "Nerium oleander",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "exposicao": "Sol",
+   "autoctone": true,
+   "toxicidade": "Toda a planta é muito tóxica: use luvas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": "Enraíza em 2–5 semanas, em terra ou em água."
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "Sem estratificação."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      9,
+      10
+     ],
+     "tipo": "Depois da floração; use luvas, a seiva é tóxica"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null
+  },
+  {
+   "id": "louro_cerejo",
+   "nome": "Louro-cerejo",
+   "nome_cientifico": "Prunus laurocerasus",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "toxicidade": "Folhas e sementes tóxicas.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "Cortes de sebe"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "lucia_lima",
+   "nome": "Lúcia-lima",
+   "nome_cientifico": "Aloysia citrodora",
+   "categoria": "aromática",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de inverno de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "osmanto",
+   "nome": "Osmanto",
+   "nome_cientifico": "Osmanthus spp.",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      5
+     ],
+     "tipo": "Depois da floração, poda de forma"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pitosporo",
+   "nome": "Pitósporo",
+   "nome_cientifico": "Pittosporum tobira",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "legal": "Não confunda com Pittosporum undulatum, que é invasora em Portugal.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "quaresmeira",
+   "nome": "Quaresmeira",
+   "nome_cientifico": "Tibouchina urvilleana",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "exposicao": "Sol",
+   "autoctone": false,
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": "Enraíza em 4–8 semanas. Guarde abrigada no primeiro inverno."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "Sem estratificação; em abrigo."
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "toxicidade": null
+  },
+  {
+   "id": "roseira",
+   "nome": "Roseira",
+   "nome_cientifico": "Rosa spp.",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2,
+      3
+     ],
+     "tipo": "Poda principal: 3 a 5 ramos com 2–3 gomos"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "sardinheira",
+   "nome": "Sardinheira",
+   "nome_cientifico": "Pelargonium spp.",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "geada": true,
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3,
+      4
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Poda de forma e limpeza"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "tamargueira",
+   "nome": "Tamargueira",
+   "nome_cientifico": "Tamarix spp.",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Poda de inverno (variedades de flor de verão); as de flor de primavera, logo depois da floração"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "abobora",
+   "nome": "Abóbora",
+   "nome_cientifico": "Cucurbita spp.",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "acelga",
+   "nome": "Acelga",
+   "nome_cientifico": "Beta vulgaris var. cicla",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "alface",
+   "nome": "Alface",
+   "nome_cientifico": "Lactuca sativa",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "alho",
+   "nome": "Alho",
+   "nome_cientifico": "Allium sativum",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "plantacao": {
+    "meses": [
+     10,
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "dentes"
+   },
+   "colheita": [
+    6,
+    7
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "alho_frances",
+   "nome": "Alho-francês",
+   "nome_cientifico": "Allium ampeloprasum var. porrum",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "batata",
+   "nome": "Batata",
+   "nome_cientifico": "Solanum tuberosum",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "plantacao": {
+    "meses": [
+     2,
+     3,
+     4
+    ],
+    "o_que": "tubérculos"
+   },
+   "colheita": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "batata_doce",
+   "nome": "Batata-doce",
+   "nome_cientifico": "Ipomoea batatas",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "geada": true,
+   "plantacao": {
+    "meses": [
+     5,
+     6
+    ],
+    "o_que": "rebentos"
+   },
+   "colheita": [
+    9,
+    10,
+    11
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "beringela",
+   "nome": "Beringela",
+   "nome_cientifico": "Solanum melongena",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "beterraba",
+   "nome": "Beterraba",
+   "nome_cientifico": "Beta vulgaris",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "brocolos",
+   "nome": "Brócolos",
+   "nome_cientifico": "Brassica oleracea var. italica",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "cebola",
+   "nome": "Cebola",
+   "nome_cientifico": "Allium cepa",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "sementeira": {
+    "meses": [
+     9,
+     10,
+     11,
+     12,
+     1,
+     2,
+     3
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2,
+     3,
+     4
+    ],
+    "o_que": "bolbilhos"
+   },
+   "colheita": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "cenoura",
+   "nome": "Cenoura",
+   "nome_cientifico": "Daucus carota",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "chicoria",
+   "nome": "Chicória",
+   "nome_cientifico": "Cichorium intybus",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "couve_coracao",
+   "nome": "Couve-coração",
+   "nome_cientifico": "Brassica oleracea var. capitata",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "couve_flor",
+   "nome": "Couve-flor",
+   "nome_cientifico": "Brassica oleracea var. botrytis",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "couve_galega",
+   "nome": "Couve-galega",
+   "nome_cientifico": "Brassica oleracea var. acephala",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "couve_lombarda",
+   "nome": "Couve lombarda",
+   "nome_cientifico": "Brassica oleracea var. sabauda",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "couve_tronchuda",
+   "nome": "Couve tronchuda",
+   "nome_cientifico": "Brassica oleracea var. costata",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "curgete",
+   "nome": "Curgete",
+   "nome_cientifico": "Cucurbita pepo",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "endivia",
+   "nome": "Endívia",
+   "nome_cientifico": "Cichorium endivia",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "ervilha",
+   "nome": "Ervilha",
+   "nome_cientifico": "Pisum sativum",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     10,
+     11,
+     12,
+     1,
+     2,
+     3
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "espargo",
+   "nome": "Espargo",
+   "nome_cientifico": "Asparagus officinalis",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     3,
+     4
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     2,
+     3
+    ],
+    "o_que": "garras (coroas)"
+   },
+   "colheita": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "divisao": [
+    {
+     "metodo": "Divisão de coroas",
+     "meses": [
+      2,
+      3
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "espinafre",
+   "nome": "Espinafre",
+   "nome_cientifico": "Spinacia oleracea",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     9,
+     10,
+     11
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "fava",
+   "nome": "Fava",
+   "nome_cientifico": "Vicia faba",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "sementeira": {
+    "meses": [
+     10,
+     11,
+     12,
+     1,
+     2
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    4,
+    5,
+    6
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "feijao",
+   "nome": "Feijão",
+   "nome_cientifico": "Phaseolus vulgaris",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "melancia",
+   "nome": "Melancia",
+   "nome_cientifico": "Citrullus lanatus",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    7,
+    8,
+    9
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "melao",
+   "nome": "Melão",
+   "nome_cientifico": "Cucumis melo",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    7,
+    8,
+    9
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "milho",
+   "nome": "Milho",
+   "nome_cientifico": "Zea mays",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     4,
+     5,
+     6
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "nabo",
+   "nome": "Nabo e nabiças",
+   "nome_cientifico": "Brassica rapa",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "sementeira": {
+    "meses": [
+     8,
+     9,
+     10,
+     11
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pepino",
+   "nome": "Pepino",
+   "nome_cientifico": "Cucumis sativus",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "pimento",
+   "nome": "Pimento",
+   "nome_cientifico": "Capsicum annuum",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "rabanete",
+   "nome": "Rabanete",
+   "nome_cientifico": "Raphanus sativus",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "modo": "direta"
+   },
+   "colheita": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "tomate",
+   "nome": "Tomate",
+   "nome_cientifico": "Solanum lycopersicum",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     4,
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "nota": "Enraizar os ladrões em água ou em terra."
+    }
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "poda": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "tipo": "Tirar os ladrões e as folhas de baixo"
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  },
+  {
+   "id": "jacinto",
+   "nome": "Jacinto",
+   "nome_cientifico": "Hyacinthus orientalis",
+   "categoria": "bolbo",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "toxicidade": "Bolbo irritante.",
+   "propagacao": {},
+   "poda": [],
+   "plantacao": {
+    "meses": [
+     10,
+     11
+    ],
+    "o_que": "bolbos"
+   },
+   "divisao": [
+    {
+     "metodo": "Separação de bolbilhos",
+     "meses": [
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "narciso",
+   "nome": "Narciso",
+   "nome_cientifico": "Narcissus spp.",
+   "categoria": "bolbo",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "toxicidade": "Bolbo tóxico.",
+   "propagacao": {},
+   "poda": [],
+   "plantacao": {
+    "meses": [
+     10,
+     11
+    ],
+    "o_que": "bolbos"
+   },
+   "divisao": [
+    {
+     "metodo": "Divisão de bolbos",
+     "meses": [
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "tulipa",
+   "nome": "Tulipa",
+   "nome_cientifico": "Tulipa spp.",
+   "categoria": "bolbo",
+   "folha": "anual",
+   "tipo_lua": "r",
+   "toxicidade": "Bolbo irritante.",
+   "propagacao": {},
+   "poda": [],
+   "plantacao": {
+    "meses": [
+     10,
+     11
+    ],
+    "o_que": "bolbos"
+   },
+   "divisao": [
+    {
+     "metodo": "Separação de bolbilhos",
+     "meses": [
+      6,
+      7
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null
+  },
+  {
+   "id": "suculentas",
+   "nome": "Suculentas",
+   "nome_cientifico": "Várias espécies",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "geada": true,
+   "propagacao": {},
+   "poda": [],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "divisao": [
+    {
+     "metodo": "Folha, estaca ou divisão",
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "adubacao": null,
+   "rega": null,
+   "floracao": null,
+   "solo": null,
+   "resistencia_geada": null,
+   "exposicao": null,
+   "autoctone": null,
+   "toxicidade": null
+  }
+ ]
+}
