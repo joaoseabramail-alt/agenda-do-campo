@@ -1,5 +1,5 @@
 {
- "versao": 1,
+ "versao": 2,
  "tratamentos": [
   {
    "grupo": "Macieira e pereira",
@@ -23,25 +23,29 @@
       12,
       1
      ],
-     "texto": "Óleo de inverno contra cochonilhas e ovos de afídeos, em dia sem geada."
+     "tipo": "fitofarmaco",
+     "texto": "Cochonilhas e ovos de afídeos nos ramos. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, óleo de inverno, em dia sem geada), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       2,
       3
      ],
-     "texto": "Cobre no abrolhamento contra o pedrado."
+     "tipo": "fitofarmaco",
+     "texto": "Pedrado: risco no abrolhamento com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       4
      ],
-     "texto": "Coloque armadilhas para o bichado."
+     "tipo": "monitorizacao",
+     "texto": "Coloque armadilhas para seguir o voo do bichado."
     },
     {
      "meses": [
       8
      ],
+     "tipo": "monitorizacao",
      "texto": "Bichado (2.ª geração): vigie as armadilhas."
     }
    ]
@@ -66,21 +70,24 @@
       1,
       2
      ],
-     "texto": "Cobre contra a lepra antes de os gomos incharem."
+     "tipo": "fitofarmaco",
+     "texto": "Lepra: risco antes de os gomos incharem, com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       3,
       4
      ],
-     "texto": "Afídeos nos rebentos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos nos rebentos."
     },
     {
      "meses": [
       10,
       11
      ],
-     "texto": "Cobre na queda da folha contra a lepra."
+     "tipo": "fitofarmaco",
+     "texto": "Lepra: risco na queda da folha. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -105,21 +112,24 @@
      "meses": [
       2
      ],
-     "texto": "Cobre antes da floração."
+     "tipo": "fitofarmaco",
+     "texto": "Moniliose: risco na floração com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       3,
       4
      ],
-     "texto": "Afídeos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos nos rebentos."
     },
     {
      "meses": [
       11,
       12
      ],
-     "texto": "Retire e queime os frutos secos (múmias) que ficaram na árvore."
+     "tipo": "cultural",
+     "texto": "Frutos secos (múmias) na árvore espalham a moniliose: retire-os e destrua-os fora da parcela (enterrar ou compostagem a quente); queimar sobrantes precisa de autorização da câmara ou do ICNF."
     }
    ]
   },
@@ -143,20 +153,23 @@
      "meses": [
       4
      ],
-     "texto": "Afídeo-negro nos rebentos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie o afídeo-negro nos rebentos."
     },
     {
      "meses": [
       4,
       5
      ],
-     "texto": "Mosca da cereja: armadilhas amarelas."
+     "tipo": "monitorizacao",
+     "texto": "Mosca da cereja: armadilhas amarelas para seguir o voo."
     },
     {
      "meses": [
       11
      ],
-     "texto": "Cobre na queda da folha contra o cancro bacteriano."
+     "tipo": "fitofarmaco",
+     "texto": "Cancro bacteriano: risco na queda da folha. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -178,13 +191,15 @@
      "meses": [
       2
      ],
-     "texto": "Cobre antes da floração (crivado, moniliose)."
+     "tipo": "fitofarmaco",
+     "texto": "Crivado e moniliose: risco antes e durante a floração com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       10
      ],
-     "texto": "Cobre na queda da folha."
+     "tipo": "fitofarmaco",
+     "texto": "Crivado: risco na queda da folha. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -210,7 +225,8 @@
      "meses": [
       5
      ],
-     "texto": "Traça da oliveira na floração: Bacillus thuringiensis."
+     "tipo": "monitorizacao",
+     "texto": "Vigie a traça da oliveira na floração."
     },
     {
      "meses": [
@@ -220,14 +236,16 @@
       9,
       10
      ],
-     "texto": "Mosca da azeitona: armadilhas e caulino."
+     "tipo": "monitorizacao",
+     "texto": "Mosca da azeitona: armadilhas para seguir a população."
     },
     {
      "meses": [
       10,
       11
      ],
-     "texto": "Cobre contra olho-de-pavão e gafa."
+     "tipo": "fitofarmaco",
+     "texto": "Olho-de-pavão e gafa: risco com as chuvas de outono. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -254,7 +272,8 @@
       6,
       7
      ],
-     "texto": "Míldio: junto ao Douro os nevoeiros deixam as folhas molhadas; trate com cobre depois de cada chuva."
+     "tipo": "fitofarmaco",
+     "texto": "Míldio: junto ao Douro os nevoeiros mantêm as folhas molhadas. O risco depende da chuva, da temperatura e do estado da vinha; siga os avisos da Estação de Avisos de Entre Douro e Minho. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
@@ -262,13 +281,15 @@
       6,
       7
      ],
-     "texto": "Oídio: enxofre, nunca acima de 30 °C."
+     "tipo": "fitofarmaco",
+     "texto": "Oídio: risco com tempo quente e abafado. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de enxofre, nunca acima de 30 °C), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       8
      ],
-     "texto": "Pare os tratamentos antes da vindima (intervalo de segurança). Uva de mesa: ensaque os cachos."
+     "tipo": "cultural",
+     "texto": "Respeite o intervalo de segurança antes da vindima. Uva de mesa: ensaque os cachos contra vespas e pássaros."
     }
    ]
   },
@@ -296,13 +317,15 @@
      "meses": [
       2
      ],
-     "texto": "Óleo contra cochonilhas, se houver ataque."
+     "tipo": "fitofarmaco",
+     "texto": "Cochonilhas, se houver ataque. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, óleo), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       4
      ],
-     "texto": "Afídeos nos rebentos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos nos rebentos."
     },
     {
      "meses": [
@@ -311,6 +334,7 @@
       8,
       9
      ],
+     "tipo": "monitorizacao",
      "texto": "Mineira: vigie os rebentos novos."
     },
     {
@@ -319,7 +343,8 @@
       10,
       11
      ],
-     "texto": "Cobre preventivo antes e depois das chuvas."
+     "tipo": "fitofarmaco",
+     "texto": "Aguado (podridão dos frutos): risco com as chuvas de outono. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -349,7 +374,8 @@
       1,
       2
      ],
-     "texto": "Cancro: corte e queime ramos doentes; desinfete os cortes."
+     "tipo": "cultural",
+     "texto": "Cancro: corte os ramos doentes e desinfete os cortes e a ferramenta; retire-os e destrua-os fora da parcela (enterrar ou compostagem a quente); queimar sobrantes precisa de autorização da câmara ou do ICNF."
     },
     {
      "meses": [
@@ -357,6 +383,7 @@
       5,
       6
      ],
+     "tipo": "monitorizacao",
      "texto": "Vespa-das-galhas: vigie as galhas nos rebentos."
     },
     {
@@ -364,6 +391,7 @@
       9,
       10
      ],
+     "tipo": "cultural",
      "texto": "Apanhe e destrua ouriços e castanhas bichadas."
     }
    ]
@@ -388,19 +416,22 @@
      "meses": [
       4
      ],
-     "texto": "Cobre no abrolhamento."
+     "tipo": "fitofarmaco",
+     "texto": "Bacteriose: risco no abrolhamento com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       5
      ],
-     "texto": "Cobre depois da floração."
+     "tipo": "fitofarmaco",
+     "texto": "Bacteriose e antracnose: risco depois da floração com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       6
      ],
-     "texto": "Bichado da noz: armadilhas."
+     "tipo": "monitorizacao",
+     "texto": "Bichado da noz: armadilhas para seguir o voo."
     }
    ]
   },
@@ -422,7 +453,8 @@
      "meses": [
       2
      ],
-     "texto": "Óleo de inverno se houver cochonilha."
+     "tipo": "fitofarmaco",
+     "texto": "Cochonilha, se houver ataque. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, óleo de inverno), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -446,6 +478,7 @@
      "meses": [
       9
      ],
+     "tipo": "monitorizacao",
      "texto": "Mosca da fruta: armadilhas antes da maturação."
     }
    ]
@@ -471,7 +504,8 @@
       4,
       5
      ],
-     "texto": "Afídeos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos nos rebentos."
     }
    ]
   },
@@ -500,14 +534,23 @@
      "meses": [
       2
      ],
-     "texto": "Cobre depois da poda; desinfete as ferramentas."
+     "tipo": "cultural",
+     "texto": "Cancro bacteriano (PSA): desinfete a ferramenta entre plantas."
+    },
+    {
+     "meses": [
+      2
+     ],
+     "tipo": "fitofarmaco",
+     "texto": "PSA: risco nas feridas da poda. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       11,
       12
      ],
-     "texto": "Cobre na queda da folha."
+     "tipo": "fitofarmaco",
+     "texto": "PSA: risco nas feridas da queda da folha. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -533,7 +576,8 @@
       3,
       4
      ],
-     "texto": "Clorose: adubo acidificante e rega com água pouco calcária."
+     "tipo": "cultural",
+     "texto": "Clorose: use adubo acidificante e rega com água pouco calcária."
     }
    ]
   },
@@ -559,7 +603,8 @@
       4,
       5
      ],
-     "texto": "Botrytis: palha por baixo dos frutos e boa ventilação; lesmas com fosfato férrico."
+     "tipo": "cultural",
+     "texto": "Botrytis: palha por baixo dos frutos e boa ventilação. Retire frutos podres."
     }
    ]
   },
@@ -585,6 +630,7 @@
       6,
       7
      ],
+     "tipo": "cultural",
      "texto": "Retire os frutos podres."
     }
    ]
@@ -612,13 +658,15 @@
       7,
       8
      ],
-     "texto": "Míldio: cobre preventivo com tempo húmido."
+     "tipo": "fitofarmaco",
+     "texto": "Míldio: risco com tempo húmido e orvalhos. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
       6
      ],
-     "texto": "Traça (Tuta absoluta): armadilhas."
+     "tipo": "monitorizacao",
+     "texto": "Traça (Tuta absoluta): armadilhas para seguir o voo."
     }
    ]
   },
@@ -643,6 +691,7 @@
       5,
       6
      ],
+     "tipo": "cultural",
      "texto": "Escaravelho: apanha manual de adultos e posturas."
     },
     {
@@ -650,7 +699,8 @@
       5,
       6
      ],
-     "texto": "Míldio: cobre com tempo húmido."
+     "tipo": "fitofarmaco",
+     "texto": "Míldio: risco com tempo húmido. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -676,7 +726,8 @@
       7,
       8
      ],
-     "texto": "Afídeos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos e ácaros, sobretudo no verso das folhas."
     }
    ]
   },
@@ -701,7 +752,8 @@
       7,
       8
      ],
-     "texto": "Oídio: enxofre ou bicarbonato."
+     "tipo": "fitofarmaco",
+     "texto": "Oídio: manchas brancas nas folhas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -726,7 +778,8 @@
       7,
       8
      ],
-     "texto": "Oídio: enxofre ou bicarbonato."
+     "tipo": "fitofarmaco",
+     "texto": "Oídio: manchas brancas nas folhas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -765,7 +818,8 @@
       9,
       10
      ],
-     "texto": "Lagartas: Bacillus thuringiensis."
+     "tipo": "fitofarmaco",
+     "texto": "Lagartas nas folhas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, Bacillus thuringiensis), confirmado no SIFITO, segundo o rótulo."
     },
     {
      "meses": [
@@ -773,7 +827,8 @@
       3,
       4
      ],
-     "texto": "Afídeos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos."
     }
    ]
   },
@@ -800,6 +855,7 @@
       4,
       5
      ],
+     "tipo": "cultural",
      "texto": "Ferrugem: não regue as folhas e faça rotação de culturas."
     }
    ]
@@ -839,7 +895,8 @@
       4,
       5
      ],
-     "texto": "Lesmas e caracóis: iscas ou fosfato férrico."
+     "tipo": "fitofarmaco",
+     "texto": "Lesmas e caracóis com tempo húmido. Apanha manual à noite. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, fosfato férrico), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -868,7 +925,8 @@
       4,
       5
      ],
-     "texto": "Afídeos: sabão potássico."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos nas pontas."
     }
    ]
   },
@@ -898,7 +956,8 @@
       8,
       9
      ],
-     "texto": "Rede anti-insetos ou consociação com cebola."
+     "tipo": "cultural",
+     "texto": "Mosca da cenoura: rede anti-insetos ou consociação com cebola."
     }
    ]
   },
@@ -928,7 +987,20 @@
       8,
       9
      ],
-     "texto": "Lagartas da traça: Bacillus thuringiensis."
+     "tipo": "monitorizacao",
+     "texto": "Traça-do-buxo: procure lagartas e teias no interior da planta."
+    },
+    {
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "fitofarmaco",
+     "texto": "Traça-do-buxo com lagartas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, Bacillus thuringiensis), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -955,7 +1027,17 @@
       5,
       6
      ],
-     "texto": "Oídio: enxofre. Retire e queime as folhas com mancha-negra."
+     "tipo": "cultural",
+     "texto": "Mancha-negra: retire as folhas doentes e não as deixe no chão."
+    },
+    {
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "tipo": "fitofarmaco",
+     "texto": "Oídio: manchas brancas nos rebentos. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de enxofre), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -982,7 +1064,16 @@
       5,
       6
      ],
-     "texto": "Cochonilha: óleo de verão. Clorose: quelato de ferro."
+     "tipo": "monitorizacao",
+     "texto": "Vigie cochonilhas."
+    },
+    {
+     "meses": [
+      5,
+      6
+     ],
+     "tipo": "cultural",
+     "texto": "Clorose: folhas amarelas com nervuras verdes. Corrija com quelato de ferro e adubo para plantas acidófilas."
     }
    ]
   },
@@ -1008,6 +1099,7 @@
       4,
       5
      ],
+     "tipo": "cultural",
      "texto": "Psila: corte os rebentos com folhas enroladas."
     }
    ]
@@ -1034,7 +1126,8 @@
      "meses": [
       6
      ],
-     "texto": "Oídio nas árvores jovens: enxofre se o ataque for forte."
+     "tipo": "monitorizacao",
+     "texto": "Oídio nas árvores jovens."
     }
    ]
   },
@@ -1060,19 +1153,22 @@
       1,
       2
      ],
-     "texto": "Corte e queime os ninhos com luvas e óculos: os pelos são muito irritantes."
+     "tipo": "cultural",
+     "texto": "Processionária: corte os ninhos (bolsas brancas) com luvas, máscara e óculos; os pelos são muito irritantes. Retire-os e destrua-os fora da parcela (enterrar ou compostagem a quente); queimar sobrantes precisa de autorização da câmara ou do ICNF."
     },
     {
      "meses": [
       6
      ],
-     "texto": "Armadilhas de feromona para as borboletas."
+     "tipo": "monitorizacao",
+     "texto": "Armadilhas de feromona para seguir o voo das borboletas."
     },
     {
      "meses": [
       10
      ],
-     "texto": "Bacillus thuringiensis nas lagartas jovens."
+     "tipo": "fitofarmaco",
+     "texto": "Processionária: lagartas jovens. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, Bacillus thuringiensis), confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -1106,6 +1202,7 @@
       2,
       3
      ],
+     "tipo": "cultural",
      "texto": "Evite encharcamento e feridas nas raízes. Comunique declínio ao ICNF."
     }
    ]
@@ -1138,6 +1235,7 @@
       1,
       2
      ],
+     "tipo": "cultural",
      "texto": "Retire árvores mortas; não mova terra de zonas afetadas."
     }
    ]
@@ -1162,7 +1260,8 @@
      "meses": [
       11
      ],
-     "texto": "Recolha e queime as folhas caídas."
+     "tipo": "cultural",
+     "texto": "Antracnose: recolha as folhas caídas e destrua-os fora da parcela (enterrar ou compostagem a quente); queimar sobrantes precisa de autorização da câmara ou do ICNF."
     }
    ]
   },
@@ -1188,7 +1287,8 @@
       4,
       5
      ],
-     "texto": "Clorose: quelato de ferro."
+     "tipo": "cultural",
+     "texto": "Clorose: corrija com quelato de ferro."
     }
    ]
   },
@@ -1211,7 +1311,8 @@
       6,
       7
      ],
-     "texto": "Oídio: enxofre."
+     "tipo": "fitofarmaco",
+     "texto": "Oídio: manchas brancas nas folhas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
     }
    ]
   },
@@ -1238,7 +1339,8 @@
       5,
       6
      ],
-     "texto": "Afídeos: sabão potássico (use luvas)."
+     "tipo": "monitorizacao",
+     "texto": "Vigie afídeos (use luvas ao mexer na planta)."
     }
    ]
   },
@@ -1263,6 +1365,7 @@
       7,
       8
      ],
+     "tipo": "cultural",
      "texto": "Ácaros: pulverize as folhas com água."
     }
    ]
@@ -1291,7 +1394,8 @@
       8,
       9
      ],
-     "texto": "Retire os botões furados; Bacillus thuringiensis."
+     "tipo": "cultural",
+     "texto": "Borboleta-do-gerânio: retire os botões furados."
     }
    ]
   }
