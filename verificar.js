@@ -19,6 +19,16 @@ for(const p of P){
 for(const t of T){for(const e of t.especies)if(!ids.has(e))erros.push('tratamento '+t.grupo+': espécie desconhecida '+e);mesesOk(t.vigiar,t.grupo+'.vigiar');
   for(const i of t.intervencoes){mesesOk(i.meses,t.grupo);if(!['fitofarmaco','cultural','monitorizacao'].includes(i.tipo))erros.push(t.grupo+': tipo de intervenção inválido')}}
 for(const c of C)mesesOk(c.meses,'tarefa '+c.nome);
+// meses de divisão e de recolha de sementes
+for(const p of P){for(const d of p.divisao||[])mesesOk(d.meses,p.id+'.divisao');if(p.recolha_sementes)mesesOk(p.recolha_sementes,p.id+'.recolha_sementes');
+  for(const m of p.metodo_recomendado||[])if(!(m==='divisao'?(p.divisao||[]).length:p.propagacao&&p.propagacao[m]))avisos.push(p.id+': método recomendado "'+m+'" sem dados na ficha');}
+// intervenções fora do período de vigilância
+for(const t of T)for(const i of t.intervencoes)for(const m of i.meses)if(!t.vigiar.includes(m))avisos.push(t.grupo+': intervenção no mês '+m+' fora do período de vigilância');
+// notas que a app nunca mostra (fora dos meses da operação)
+const opM=(p,k)=>k==='podas'?(p.poda||[]).flatMap(e=>e.meses):k==='plantar'?[...(p.plantacao&&p.plantacao.meses||[]),...(p.sementeira&&p.sementeira.meses||[]),...(p.categoria==='aromática'&&p.folha==='anual'&&p.propagacao&&p.propagacao.sementeira?p.propagacao.sementeira.meses:[])]:((p.propagacao||{})[{sem:'sementeira',estacas:'estacas',enx:'enxertia',alp:'alporquia'}[k]]||{meses:[]}).meses;
+let escondidas=0;for(const p of P)for(const k in p.notas||{})for(const m in p.notas[k])if(!opM(p,k).includes(+m))escondidas++;
+if(escondidas)avisos.push(escondidas+' notas ficam fora dos meses da operação e a app não as mostra (ver lista com: node verificar.js --escondidas)');
+if(process.argv.includes('--escondidas'))for(const p of P)for(const k in p.notas||{})for(const m in p.notas[k])if(!opM(p,k).includes(+m))console.log(p.id+' ['+k+' '+m+'] '+p.notas[k][m]);
 console.log(P.length+' espécies, '+T.length+' grupos de tratamentos, '+C.length+' tarefas');
 console.log(erros.length?'ERROS:\n'+erros.join('\n'):'Sem erros.');
 if(avisos.length)console.log('A rever (nota menciona outra espécie):\n'+avisos.join('\n'));

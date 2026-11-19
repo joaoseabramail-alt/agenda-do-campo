@@ -1,5 +1,5 @@
 {
- "versao": 2,
+ "versao": 3,
  "tratamentos": [
   {
    "grupo": "Macieira e pereira",
@@ -9,13 +9,16 @@
    ],
    "problemas": "Pedrado, bichado, fogo bacteriano",
    "vigiar": [
+    1,
+    2,
     3,
     4,
     5,
     6,
     7,
     8,
-    9
+    9,
+    12
    ],
    "intervencoes": [
     {
@@ -58,11 +61,14 @@
    ],
    "problemas": "Lepra, moniliose",
    "vigiar": [
+    1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    10,
+    11
    ],
    "intervencoes": [
     {
@@ -105,7 +111,9 @@
     5,
     6,
     7,
-    8
+    8,
+    11,
+    12
    ],
    "intervencoes": [
     {
@@ -146,7 +154,8 @@
     4,
     5,
     6,
-    7
+    7,
+    11
    ],
    "intervencoes": [
     {
@@ -184,7 +193,8 @@
     3,
     4,
     5,
-    6
+    6,
+    10
    ],
    "intervencoes": [
     {
@@ -302,6 +312,7 @@
    ],
    "problemas": "Mineira, cochonilha, afídeos",
    "vigiar": [
+    2,
     3,
     4,
     5,
@@ -442,6 +453,7 @@
    ],
    "problemas": "Cochonilha, podridão",
    "vigiar": [
+    2,
     5,
     6,
     7,
@@ -1138,13 +1150,14 @@
    ],
    "problemas": "Processionária",
    "vigiar": [
+    1,
+    2,
+    3,
+    6,
     9,
     10,
     11,
-    12,
-    1,
-    2,
-    3
+    12
    ],
    "intervencoes": [
     {
@@ -1253,7 +1266,8 @@
     6,
     7,
     8,
-    9
+    9,
+    11
    ],
    "intervencoes": [
     {
