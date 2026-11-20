@@ -9843,6 +9843,693 @@
    "solo": "Solo fértil e bem drenado; tolera solo ácido ou calcário.",
    "resistencia_geada": "Muito rústica.",
    "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "choupo_negro",
+   "nome": "Choupo-negro",
+   "nome_cientifico": "Populus nigra",
+   "folha": "caduca",
+   "nota_sardoura": "As raízes vão longe e procuram água: plante a mais de 20 m de casas, muros, poços e canos.",
+   "metodo_recomendado": [
+    "estacas"
+   ],
+   "nota_variedade": "Prefira estacas de árvores masculinas: as femininas largam muita «penugem» com as sementes.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 1,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas lenhosas grossas, de 30–40 cm, enterradas diretamente em solo húmido."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": "Semeie logo que as sementes amadurecem: perdem a viabilidade em poucos dias.",
+     "fiel_variedade": false
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Em árvores jovens, conserve um eixo dominante e retire ramos baixos aos poucos. Nas adultas, retire ramos mortos ou partidos"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Gosta de solo húmido; regue bem na instalação e em verões secos.",
+   "floracao": "Amentilhos no fim do inverno ou início da primavera, antes das folhas; há árvores masculinas e femininas.",
+   "solo": "Solo fresco a húmido, profundo; adequado a margens de rios e terrenos baixos.",
+   "resistencia_geada": "Muito rústico.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "choupo_branco",
+   "nome": "Choupo-branco",
+   "nome_cientifico": "Populus alba",
+   "folha": "caduca",
+   "nota_sardoura": "As raízes vão longe e procuram água: plante a mais de 20 m de casas, muros, poços e canos. Lança muitos rebentos de raiz à volta.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas lenhosas; pegam menos facilmente do que as do choupo-negro."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": "Semeie logo que as sementes amadurecem: perdem a viabilidade em poucos dias."
+    }
+   },
+   "divisao": [
+    {
+     "metodo": "Separe rebentos de raiz já enraizados, com um pedaço da raiz-mãe",
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ]
+    }
+   ],
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Na formação, conserve um eixo dominante. Corte os rebentos de raiz que não quer junto à base"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue bem na instalação e em verões secos.",
+   "floracao": "Amentilhos no fim do inverno ou início da primavera, antes das folhas.",
+   "solo": "Solo fresco a húmido; tolera solos arenosos e alguma salinidade.",
+   "resistencia_geada": "Muito rústico.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "choupo_tremedor",
+   "nome": "Choupo-tremedor",
+   "nome_cientifico": "Populus tremula",
+   "folha": "caduca",
+   "nota_sardoura": "As raízes vão longe e procuram água: plante a mais de 20 m de casas, muros, poços e canos.",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "As estacas de ramo pegam mal; use estacas de raiz durante o repouso."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": "Semeie logo que as sementes amadurecem: perdem a viabilidade em poucos dias."
+    }
+   },
+   "divisao": [
+    {
+     "metodo": "Separe rebentos de raiz já enraizados",
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ]
+    }
+   ],
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Dispensa poda regular. Retire ramos mortos e os rebentos de raiz que não quer"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Amentilhos no fim do inverno, antes das folhas.",
+   "solo": "Solo fresco e bem drenado; prefere locais frescos.",
+   "resistencia_geada": "Muito rústico.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "carvalho_cerquinho",
+   "nome": "Carvalho-cerquinho",
+   "nome_cientifico": "Quercus faginea",
+   "folha": "caduca",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Bolotas frescas, logo que caem, de preferência em alvéolos fundos: a raiz principal cresce depressa."
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Em árvore jovem, corrija só ramos concorrentes. Em adulta, preserve a copa natural"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "planta jovem em alvéolo ou torrão"
+   },
+   "recolha_sementes": [
+    10,
+    11
+   ],
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Amentilhos na primavera, com a saída das folhas.",
+   "solo": "Tolera solos secos, pedregosos e calcários; não gosta de encharcamento.",
+   "resistencia_geada": "Rústico.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "azinheira",
+   "nome": "Azinheira",
+   "nome_cientifico": "Quercus rotundifolia",
+   "folha": "persistente",
+   "nota_sardoura": "É árvore de clima seco: em Sardoura escolha a encosta mais soalheira e com solo bem drenado; sofre com encharcamento.",
+   "legal": "Espécie protegida pelo Decreto-Lei n.º 169/2001: o corte e o arranque precisam de autorização; confirme com o ICNF as regras para a poda.",
+   "legal_botoes": [
+    "podas",
+    "plantar"
+   ],
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11,
+      12
+     ],
+     "nota": "Bolotas frescas, em alvéolos fundos: a raiz principal cresce depressa e não gosta de ser mexida."
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [],
+   "plantacao": {
+    "meses": [
+     10,
+     11,
+     3
+    ],
+    "o_que": "em torrão ou alvéolo (melhor em outubro–novembro)"
+   },
+   "recolha_sementes": [
+    10,
+    11,
+    12
+   ],
+   "adubacao": "Dispensa adubação; use cobertura orgânica na instalação.",
+   "rega": "Regue só na instalação e nos primeiros verões secos; depois aguenta bem a seca.",
+   "floracao": "Amentilhos na primavera.",
+   "solo": "Solo bem drenado, mesmo pobre ou pedregoso; não tolera encharcamento.",
+   "resistencia_geada": "Rústica quando estabelecida.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": "Os frutos crus são indigestos; só se consomem cozinhados.",
+   "categoria": "florestal",
+   "id": "tramazeira",
+   "nome": "Tramazeira",
+   "nome_cientifico": "Sorbus aucuparia",
+   "folha": "caduca",
+   "metodo_recomendado": [
+    "enxertia"
+   ],
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Retire a polpa dos frutos maduros e estratifique 3–4 meses no frio húmido; ou semeie no outono ao ar livre.",
+     "fiel_variedade": false
+    },
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": "Estacas semi-lenhosas com hormona; pegam com dificuldade."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Para cultivares, enxerte em tramazeira de semente."
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda mínima: retire ramos mortos, cruzados ou mal colocados"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Corimbos de flores brancas no fim da primavera; frutos vermelhos no fim do verão, muito procurados pelas aves.",
+   "solo": "Solo fresco, de preferência ácido, bem drenado.",
+   "resistencia_geada": "Muito rústica.",
+   "exposicao": "Sol ou meia-sombra."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "sorveira",
+   "nome": "Sorveira",
+   "nome_cientifico": "Sorbus torminalis",
+   "folha": "caduca",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Retire a polpa e estratifique vários meses no frio húmido; a germinação é lenta e irregular."
+    },
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "divisao": [
+    {
+     "metodo": "Separe rebentos de raiz já enraizados",
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ]
+    }
+   ],
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda mínima de formação; preserve a copa natural"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores brancas no fim da primavera; frutos castanhos comestíveis depois de amolecerem.",
+   "solo": "Solo bem drenado; tolera solos argilosos e calcários.",
+   "resistencia_geada": "Rústica.",
+   "exposicao": "Sol ou meia-sombra."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": "Toda a planta é muito tóxica, incluindo as folhas e a semente dentro do arilo vermelho. Perigosa para pessoas, cavalos e gado: não plante junto a pastagens.",
+   "categoria": "florestal",
+   "id": "teixo",
+   "nome": "Teixo",
+   "nome_cientifico": "Taxus baccata",
+   "folha": "persistente",
+   "metodo_recomendado": [
+    "estacas"
+   ],
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      9,
+      10,
+      11
+     ],
+     "nota": "Estacas semi-lenhosas ou lenhosas com hormona, em abrigo húmido; enraízam devagar (vários meses)."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Precisa de estratificação quente e depois fria; pode demorar dois anos a germinar. Use luvas.",
+     "fiel_variedade": false
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4,
+      8,
+      9
+     ],
+     "tipo": "Tolera poda forte e rebenta de madeira velha; ideal para sebes e formas. Use luvas e não deixe restos ao alcance de animais"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     10,
+     11,
+     3
+    ],
+    "o_que": "em torrão ou alvéolo (melhor em outubro–novembro)"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores discretas no fim do inverno; há plantas masculinas e femininas.",
+   "solo": "Solo bem drenado, de ácido a calcário; não tolera encharcamento.",
+   "resistencia_geada": "Muito rústico.",
+   "exposicao": "Sol a sombra; cresce devagar."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "ulmeiro",
+   "nome": "Ulmeiro",
+   "nome_cientifico": "Ulmus minor",
+   "folha": "caduca",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": "Semeie logo que as sementes amadurecem, na primavera; perdem a viabilidade depressa."
+    },
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas de raiz durante o repouso."
+    }
+   },
+   "divisao": [
+    {
+     "metodo": "Separe rebentos de raiz já enraizados",
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ]
+    }
+   ],
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Na formação, conserve um eixo dominante. Desinfete a ferramenta, por causa da grafiose"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores discretas no fim do inverno, antes das folhas.",
+   "solo": "Solo fértil e fresco; tolera vários tipos de solo.",
+   "resistencia_geada": "Muito rústico.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "pereira_brava",
+   "nome": "Pereira-brava",
+   "nome_cientifico": "Pyrus cordata",
+   "folha": "caduca",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Estratifique as sementes 2–3 meses no frio húmido. As plantas servem também de porta-enxerto para pereiras."
+    },
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Poda mínima; preserve a forma natural de sebe ou de pequena árvore"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores brancas na primavera; pequenos frutos procurados pela fauna.",
+   "solo": "Solo bem drenado, de preferência ácido; comum em sebes e orlas de bosque.",
+   "resistencia_geada": "Rústica.",
+   "exposicao": "Sol ou meia-sombra."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": true,
+   "toxicidade": null,
+   "categoria": "florestal",
+   "id": "pinheiro_bravo",
+   "nome": "Pinheiro-bravo",
+   "nome_cientifico": "Pinus pinaster",
+   "folha": "persistente",
+   "legal": "Portugal continental tem regras próprias para o nemátodo da madeira do pinheiro: o abate, o transporte e a eliminação de madeira e sobrantes de pinheiro estão condicionados. Confirme com o ICNF antes de abater ou transportar.",
+   "legal_botoes": [
+    "podas",
+    "plantar"
+   ],
+   "nota_sardoura": "Muito inflamável: mantenha-o afastado de casas e respeite as faixas de gestão de combustível.",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Sementes das pinhas maduras; germinam sem estratificação. Semeie em alvéolos e plante novo."
+    },
+    "estacas": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    },
+    "alporquia": {
+     "dificuldade": 4,
+     "meses": [],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Desramação dos ramos baixos e secos, rente ao tronco. Retire os sobrantes segundo as regras do nemátodo"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     10,
+     11,
+     12,
+     1,
+     2,
+     3
+    ],
+    "o_que": "planta jovem em alvéolo"
+   },
+   "recolha_sementes": [
+    1,
+    2,
+    3
+   ],
+   "adubacao": "Dispensa adubação.",
+   "rega": "Regue só na instalação, se o tempo estiver seco.",
+   "floracao": "Pinhas masculinas na primavera; não tem flores verdadeiras.",
+   "solo": "Solo arenoso ou pobre, ácido e bem drenado.",
+   "resistencia_geada": "Rústico.",
+   "exposicao": "Sol pleno."
   }
  ]
 }

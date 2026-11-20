@@ -265,7 +265,7 @@ function lista(k,m){
         if(tem(p.plantacao,m)) acc.push(p.plantacao.o_que?"Plantar "+p.plantacao.o_que:(sem&&sem.modo==="alfobre"?"Transplantar":"Plantar"));
         if(acc.length) it(p.nome,junta(acc.map((x,i)=>i?x[0].toLowerCase()+x.slice(1):x).join(" e ")+".",nm(p,"plantar",m))+(nm(p,"plantar",m)?"":geadaNota(p))+(m===2&&p.id==="batata"?" Em fevereiro, só em terreno abrigado e virado a sul.":""),{p,lua:p.tipo_lua});
       }else if(tem(p.plantacao,m)){
-        if(p.nota_sardoura||p.legal||p.categoria==="bolbo"||nm(p,"plantar",m)) it(p.nome,junta("Plantar "+p.plantacao.o_que+".",nm(p,"plantar",m))+(p.nota_sardoura?" "+p.nota_sardoura:"")+(nm(p,"plantar",m)?"":geadaNota(p)),{p,lua:p.tipo_lua});
+        if(p.nota_sardoura||p.legal||p.toxicidade||p.categoria==="bolbo"||nm(p,"plantar",m)) it(p.nome,junta("Plantar "+p.plantacao.o_que+".",nm(p,"plantar",m))+(p.nota_sardoura?" "+p.nota_sardoura:"")+(nm(p,"plantar",m)?"":geadaNota(p)),{p,lua:p.tipo_lua});
         else {const g=(CATN[p.categoria]||"Outras")+" ("+p.plantacao.o_que+")";(arv[g]=arv[g]||[]).push(p.nome)}
       }
     }
