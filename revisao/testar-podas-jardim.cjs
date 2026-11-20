@@ -1,5 +1,6 @@
 // node revisao/testar-podas-jardim.cjs
-// Contrato sobre 9a3cb51 e lógica real das listas; não certifica renderização.
+// Regressão das 17 fichas contra 9a3cb51; não certifica renderização.
+// O contrato global de cada ronda pertence ao respetivo teste.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='9a3cb5148f9cca7752818245e22cb5681f14d825';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>fs.readFileSync(path.join(root,f),'utf8');
@@ -10,8 +11,8 @@ assert.equal(after.plantas.length,before.plantas.length);
 const changes=[];
 for(let i=0;i<after.plantas.length;i++){
  const a=structuredClone(after.plantas[i]),b=structuredClone(before.plantas[i]);
+ if(!targets.includes(a.id))continue;
  if(JSON.stringify(a)!==JSON.stringify(b))changes.push(a.id);
- if(!targets.includes(a.id)){assert.deepEqual(a,b,'Ficha fora do âmbito: '+a.id);continue}
  assert.equal(a.id,b.id);
  assert.deepEqual(a.poda.map(x=>x.meses),expectedChangedMonths[a.id]||b.poda.map(x=>x.meses),'Meses imprevistos: '+a.id);
  const rev=a.revisao.poda;
@@ -25,7 +26,7 @@ for(let i=0;i<after.plantas.length;i++){
 assert.deepEqual(changes.sort(),[...targets].sort());
 for(const p of after.plantas)for(const m of Object.keys(p.notas?.podas||{}))assert(p.poda?.some(x=>x.meses.includes(Number(m))),'Nota de poda escondida: '+p.id+'/'+m);
 for(const f of ['index.html','calendario.json','tratamentos.json'])assert.equal(now(f),old(f),f+' alterado');
-assert.equal(now('sw.js'),old('sw.js').replace('agenda-v43','agenda-v44'));
+assert.equal(now('sw.js').replace(/agenda-v\d+/g,'agenda-v43'),old('sw.js'));
 function app(P){
  const dados={plantas:P.plantas,tratamentos:JSON.parse(now('tratamentos.json')).tratamentos,tarefas:JSON.parse(now('calendario.json')).tarefas};
  const ctx=vm.createContext({dados});
@@ -33,14 +34,15 @@ function app(P){
  return ctx.app;
 }
 const a=app(after),b=app(before),plain=x=>JSON.parse(JSON.stringify(x)),strip=l=>plain(l.map(({p,...row})=>row));
-const delta={2:-3,4:3,5:1,6:2,7:2};let pares=0;
+let pares=0;
 for(const cat of a.categorias)for(let m=1;m<=12;m++){
  const la=a.lista(cat,m),lb=b.lista(cat,m);
  if(cat!=='podas'){
   assert.deepEqual(strip(la),strip(lb),`${cat}/${m}`);assert.equal(a.contar(cat,m),b.contar(cat,m));
  }else{
-  assert.equal(a.contar(cat,m)-b.contar(cat,m),delta[m]||0,'Contagem de Podas: '+m);
-  assert.deepEqual(strip(la.filter(x=>!targets.includes(x.p?.id))),strip(lb.filter(x=>!targets.includes(x.p?.id))));
+  const inScope=l=>plain(l.filter(x=>targets.includes(x.p?.id)).map(x=>x.p.id).sort());
+  const expectedInScope=after.plantas.filter(p=>targets.includes(p.id)&&p.poda?.some(x=>x.meses.includes(m))).map(p=>p.id).sort();
+  assert.deepEqual(inScope(la),expectedInScope);
   const expected=after.plantas.filter(p=>p.poda?.some(x=>x.meses.includes(m))).map(p=>p.id).sort();
   assert.deepEqual(plain(la.filter(x=>x.p).map(x=>x.p.id).sort()),expected);
   for(const p of after.plantas.filter(x=>targets.includes(x.id)))if(p.poda.some(x=>x.meses.includes(m))){
@@ -62,4 +64,4 @@ assert.equal(row('tamargueira',2),undefined);assert.match(row('tamargueira',3),/
 assert.match(row('lavanda',3),/madeira velha/);assert.match(row('fotinia',4),/só se necessário/);
 const idsInitial=before.plantas.filter(p=>p.poda?.some(x=>x.meses.some(m=>[12,1,2,3].includes(m))));
 assert.equal(idsInitial.filter(p=>targets.includes(p.id)).length,16,'São 16 fichas do levantamento de inverno e uma adicional');
-console.log(`17 fichas e âmbito conferidos; ${pares} combinações; cinco calendários alterados; nenhuma nota de poda escondida; outras 132 fichas e restantes botões iguais à base.`);
+console.log(`Regressão das 17 fichas: ${pares} combinações; cinco calendários e textos preservados; nenhuma nota de poda escondida. Contrato das rondas seguintes no respetivo teste.`);

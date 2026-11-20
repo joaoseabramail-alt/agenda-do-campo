@@ -4711,7 +4711,7 @@
       1,
       2
      ],
-     "tipo": "Preserve o porte natural, incluindo a forma de vários troncos quando desejada. Retire apenas ramos danificados ou que se rocem"
+     "tipo": "A árvore-de-ferro geralmente dispensa poda regular. Preserve o porte natural, de um ou vários troncos; retire apenas ramos danificados ou que se rocem. A formação de um tronco único, se desejada, faz-se gradualmente na árvore jovem, sem cortar toda a copa"
     }
    ],
    "plantacao": {
@@ -4730,7 +4730,39 @@
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Parrotia persica: Persian Parrotia, ST-432",
+       "url": "https://hort.ifas.ufl.edu/database/documents/pdf/tree_fact_sheets/parpera.pdf",
+       "seccao": "p. 2: Trunk and Branches; Pruning requirement",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantida a janela de inverno para avaliação. A fonte específica sustenta a pouca necessidade de poda e a possibilidade de vários troncos; não se propõe converter todos os exemplares em árvores de tronco único."
+    }
+   }
   },
   {
    "id": "azereiro",
@@ -5113,7 +5145,7 @@
       1,
       2
      ],
-     "tipo": "Em árvore jovem, preserve o eixo principal e corrija só ramos concorrentes. Em adultos, mantenha os ramos baixos saudáveis quando houver espaço"
+     "tipo": "No carvalho-dos-pântanos jovem, preserve o eixo central e corrija gradualmente ramos que competem com ele. Os ramos inferiores pendentes fazem parte do porte natural: conserve-os quando houver espaço e eleve a copa só se for necessário libertar a passagem"
     }
    ],
    "plantacao": {
@@ -5142,7 +5174,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: notas.sem, propagacao.sementeira.meses, propagacao.sementeira.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Quercus palustris: Pin Oak, ST-555",
+       "url": "https://hort.ifas.ufl.edu/trees/QUEPALA.pdf",
+       "seccao": "p. 3: Use and Management",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Confirmada a distinção entre formação e elevação da copa. Dezembro–fevereiro permanece indicativo. Não se reutilizam recomendações de tratamentos ou afirmações de segurança absoluta da ficha estrangeira."
+    }
+   }
   },
   {
    "id": "carvalho_negral",
@@ -5507,7 +5571,7 @@
       2,
       3
      ],
-     "tipo": "Dispensa poda regular. Se necessário, retire ramos danificados ou a roçar e preserve a ramificação natural"
+     "tipo": "O Cornus kousa dispensa poda regular, sobretudo depois de estabelecido. Se necessário, retire seletivamente madeira morta, danificada ou ramos que se rocem. Nos jovens, faça só pequenos ajustes de formação; preserve a ramificação natural e não o corte rente como os cornus cultivados pelos caules coloridos"
     }
    ],
    "plantacao": {
@@ -5526,7 +5590,49 @@
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow flowering dogwood",
+       "url": "https://www.rhs.org.uk/plants/cornus/flowering/growing-guide",
+       "seccao": "Pruning and Training",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs and trees: light pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+       "seccao": "When / How to lightly prune",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantidos fevereiro–março para eventual limpeza e pequenos ajustes, não para reduzir anualmente a copa. Cornus kousa não recebe a talhadia usada em certos Cornus de caules decorativos."
+    }
+   }
   },
   {
    "id": "extremosa",
@@ -5571,7 +5677,7 @@
       2,
       3
      ],
-     "tipo": "Mantenha a estrutura existente. Retire apenas ramos mortos ou cruzados e evite cortar toda a copa para estimular a floração"
+     "tipo": "A extremosa estabelecida pode precisar de pouca ou nenhuma poda. No fim do repouso, retire apenas ramos mortos, danificados ou cruzados e rebentos indesejados da base, preservando a estrutura. Não encurte sistematicamente os troncos e pernadas: a desponta severa da copa origina rebentos frágeis e pode prejudicar a floração"
     }
    ],
    "plantacao": {
@@ -5590,7 +5696,39 @@
    "resistencia_geada": "Prefere local quente; resguarde plantas jovens de geadas fortes.",
    "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Crape Myrtle Pruning",
+       "url": "https://sfyl.ifas.ufl.edu/lawn-and-garden/crape-myrtle-pruning/",
+       "seccao": "Cultivar Selection; Consequences of Severe Crape Myrtle Pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantida a janela provisória. A fonte distingue ajustes necessários de topping e documenta os seus efeitos; não se importam calendários da Florida nem se prescreve a reabilitação radical descrita no documento."
+    }
+   }
   },
   {
    "id": "freixo",
@@ -5715,7 +5853,7 @@
       1,
       2
      ],
-     "tipo": "Preserve o eixo dominante. Na formação de árvores jovens, retire apenas ramos concorrentes ou mal inseridos"
+     "tipo": "O ginkgo precisa de pouca poda. Na formação de uma árvore jovem de tronco único, preserve o eixo dominante e corrija apenas ramos concorrentes ou mal inseridos, com pequenos cortes. Na árvore estabelecida, conserve o porte natural e não encurte regularmente a copa"
     }
    ],
    "plantacao": {
@@ -5733,7 +5871,39 @@
    "solo": "Solo bem drenado. Evite zonas encharcadas.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol pleno.",
-   "autoctone": null
+   "autoctone": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Ginkgo biloba: Ginkgo, ENH432",
+       "url": "https://edis.ifas.ufl.edu/publication/ST273/pdf",
+       "seccao": "p. 3: Pruning requirement; Use and Management",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Confirmados pouca poda e eixo central na formação; não se impõe esse modelo às cultivares de porte especial. Meses mantidos como janela provisória de repouso."
+    }
+   }
   },
   {
    "id": "liquidambar",
@@ -5788,7 +5958,7 @@
       1,
       2
      ],
-     "tipo": "Na formação, conserve um único eixo central e retire seletivamente ramos que competem com ele. Preserve a copa piramidal"
+     "tipo": "O liquidâmbar geralmente forma uma copa regular com pouca intervenção. Nos jovens, conserve o eixo central e corrija seletivamente os ramos que competem com ele. Preserve a forma natural; a remoção de ramos baixos só se justifica quando for preciso libertar a passagem"
     }
    ],
    "plantacao": {
@@ -5821,6 +5991,38 @@
      "2": "Sementes estratificadas 30–60 dias no frio.",
      "3": "Sementes estratificadas 30–60 dias no frio.",
      "4": "Sementes estratificadas 30–60 dias no frio."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Liquidambar styraciflua: Sweetgum, ST-358",
+       "url": "https://hort.ifas.ufl.edu/database/documents/pdf/tree_fact_sheets/liqstya.pdf",
+       "seccao": "p. 2: Trunk and Branches; Pruning requirement",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "A fonte sustenta eixo único e pouca poda para obter boa estrutura; dezembro–fevereiro não fica validado para a parcela."
     }
    }
   },
@@ -6249,7 +6451,7 @@
       1,
       2
      ],
-     "tipo": "Em árvores jovens, corrija ramos concorrentes ou cruzados. A rolagem é reservada a árvores já conduzidas nesse sistema, por pessoal qualificado"
+     "tipo": "No plátano jovem, faça apenas correções de formação, preservando a estrutura. Num adulto de porte livre, não corte toda a copa por rotina. A manutenção de uma árvore já conduzida em cabeça exige um plano próprio e avaliação por arborista; não confunda essa condução com amputar pernadas grandes de uma árvore não preparada"
     }
    ],
    "plantacao": {
@@ -6273,6 +6475,48 @@
     "estacas": {
      "1": "Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem.",
      "12": "Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Trees: formative pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/formative-pruning",
+       "seccao": "When / How to carry out formative pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Pollarding",
+       "url": "https://www.rhs.org.uk/plants/types/trees/pollarding",
+       "seccao": "Suitable for; Maintaining a pollard; Rejuvenating an overgrown pollarded tree",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Substituída a referência ambígua a rolagem por distinção entre porte livre e condução em cabeça (pollarding). Não é uma receita para iniciar essa condução nem para recuperar árvores com manutenção interrompida. A janela de inverno não valida um plano de poda específico."
     }
    }
   },
@@ -6530,7 +6774,7 @@
       2,
       3
      ],
-     "tipo": "Preserve a ramificação natural. Em exemplares jovens conduzidos em tronco único, corrija um eixo concorrente só se necessário"
+     "tipo": "A stewartia precisa de pouca poda. Preserve a ramificação natural, incluindo vários troncos quando fazem parte do porte desejado. Num exemplar jovem conduzido em tronco único, faça só pequenas correções se houver um eixo concorrente; evite reduzir a copa regularmente"
     }
    ],
    "plantacao": {
@@ -6549,7 +6793,49 @@
    "resistencia_geada": "Tolera frio em repouso; escolha local abrigado de ventos frios e secos.",
    "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Stewartia pseudocamellia: Japanese Stewartia, ST-603",
+       "url": "https://hort.ifas.ufl.edu/trees/STEPSEA.pdf",
+       "seccao": "pp. 2–3: Trunk and Branches; Pruning requirement",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Stewartia pseudocamellia",
+       "url": "https://www.rhs.org.uk/plants/17794/stewartia-pseudocamellia/details",
+       "seccao": "Pruning: group 1",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantidos fevereiro–março para avaliação de pequenas correções. A formação em tronco único é uma escolha, não uma necessidade de todas as stewartias."
+    }
+   }
   },
   {
    "id": "tilia",
@@ -6601,7 +6887,14 @@
       1,
       2
      ],
-     "tipo": "Na formação de árvores jovens, corrija ramos concorrentes ou mal inseridos. Retire rebentos da base quando o objetivo for manter um tronco limpo"
+     "tipo": "Na tília jovem de porte livre, faça apenas as correções necessárias à formação, preservando o eixo principal e ramos bem distribuídos. Nos adultos, mantenha a estrutura; uma copa conduzida em cabeça ou em espaldeira precisa de um plano próprio, não de cortes fortes improvisados"
+    },
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Se a tília produzir rebentos indesejados na base ou no tronco, avalie a sua remoção no início da primavera, sem ferir a casca. Esta limpeza é distinta da poda das pernadas e só é necessária se quiser manter o tronco livre"
     }
    ],
    "plantacao": {
@@ -6627,7 +6920,60 @@
      "11": "Raiz nua; árvore grande, precisa de espaço."
     }
    },
-   "foto": "Tilia"
+   "foto": "Tilia",
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "identificacao"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Tilia × europaea",
+       "url": "https://www.rhs.org.uk/plants/93218/tilia-%C3%97-europaea/details",
+       "seccao": "Pruning: group 1; suckers at the base of the trunk",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Trees: formative pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/formative-pruning",
+       "seccao": "When / How to carry out formative pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Pollarding",
+       "url": "https://www.rhs.org.uk/plants/types/trees/pollarding",
+       "seccao": "Suitable for; Maintaining a pollard; Rejuvenating an overgrown pollarded tree",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Separadas a formação invernal e a avaliação dos rebentos na primavera. A fonte específica é Tilia × europaea, usada como exemplo; a ficha mantém Tilia spp., e falta identificar a espécie/cultivar do utilizador. Não se extrapola igual intensidade de rebentação para todo o género."
+    }
+   }
   },
   {
    "id": "vidoeiro",
@@ -6745,7 +7091,7 @@
       3,
       4
      ],
-     "tipo": "Se precisar de limitar o volume, encurte seletivamente alguns ramos acima de uma lateral e retire os danificados pelo inverno"
+     "tipo": "Na aucuba isolada, pode só se for preciso corrigir a forma: encurte seletivamente rebentos demasiado longos e retire pontas mortas até crescimento são, na primavera. Se estiver muito crescida ou despida na base, a renovação deve ser faseada, sem confundir esse trabalho com o aparo de manutenção"
     }
    ],
    "plantacao": {
@@ -6765,6 +7111,38 @@
     "sem": {
      "10": "Precisa de estratificação quente e depois fria; germina devagar.",
      "11": "Precisa de estratificação quente e depois fria; germina devagar."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow Aucuba",
+       "url": "https://www.rhs.org.uk/plants/aucuba/growing-guide",
+       "seccao": "Pruning and Training: free-standing shrubs",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantida a janela provisória de primavera. A orientação refere-se a arbusto isolado; não transforma as recomendações para sebes ou renovação em necessidade anual."
     }
    }
   },
@@ -7848,7 +8226,7 @@
      "meses": [
       3
      ],
-     "tipo": "Depois da floração, só poda leve"
+     "tipo": "A hamamélis geralmente dispensa poda regular. Se precisar de ajustar a forma, faça-o depois da floração, preservando o porte natural e os gomos florais. Março é apenas um lembrete para os tipos de floração invernal; identifique a espécie ou cultivar, pois há hamamélis que florescem no outono"
     }
    ],
    "plantacao": {
@@ -7867,7 +8245,50 @@
    "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
    "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "identificacao"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow witch hazel",
+       "url": "https://www.rhs.org.uk/plants/witch-hazel/growing-guide",
+       "seccao": "Pruning and Training; Dealing with suckers",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Hamamelis virginiana",
+       "url": "https://www.rhs.org.uk/plants/21628/hamamelis-virginiana/details",
+       "seccao": "Description; Botanical details; Pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantido março para os tipos de floração invernal já visados pela ficha; não se certifica esse mês para todo o género Hamamelis. A identificação e o calendário das formas outonais ficam por resolver."
+    }
+   }
   },
   {
    "id": "hibisco",
@@ -9062,7 +9483,7 @@
       3,
       4
      ],
-     "tipo": "Se a planta abrigada precisar de caber no espaço disponível, encurte seletivamente os rebentos longos ao retomar o crescimento"
+     "tipo": "Na quaresmeira abrigada, ao retomar o crescimento, desponte os rebentos jovens para favorecer a ramificação e encurte seletivamente os que excedam o espaço, acima de gomos vivos. Evite reduzir indiscriminadamente a madeira velha; no exterior, adie os cortes enquanto houver risco de geada"
     }
    ],
    "plantacao": {
@@ -9083,6 +9504,48 @@
      "3": "Sem estratificação; em estufa ou abrigo.",
      "4": "Sem estratificação; em estufa ou abrigo.",
      "5": "Sem estratificação; em estufa ou abrigo."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Tibouchina urvilleana",
+       "url": "https://www.rhs.org.uk/plants/18220/tibouchina-urvilleana/details",
+       "seccao": "Cultivation; Pruning: group 9; restrictive pruning under glass",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "Landwirtschaftskammer Nordrhein-Westfalen — Wie wird ein Prinzessinnenstrauch gepflegt?",
+       "url": "https://www.landwirtschaftskammer.de/verbraucher/garten/gartentipp065.htm",
+       "seccao": "Rückschnitt; Überwinterung",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "A RHS distingue poda restritiva em abrigo da cultura ao ar livre sem geadas; a Câmara de Agricultura NRW alerta para cortes em madeira plurianual. A fonte alemã trata sobretudo de planta em vaso. Março–abril é provisório, não dispensa avaliar o abrigo e a retoma do crescimento."
     }
    }
   },
@@ -11356,10 +11819,10 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      4,
+      5
      ],
-     "tipo": "Poda ligeira de formação, apenas se necessária, no fim do inverno e depois do frio mais forte"
+     "tipo": "No jacarandá ao ar livre, espere que passe o risco de geada e se distinga a madeira viva. Nos jovens, faça só correções de formação para obter tronco e ramos principais bem distribuídos. Nos adultos, preserve a copa natural; ramos grandes ou uniões frágeis devem ser avaliados por arborista"
     }
    ],
    "plantacao": {
@@ -11387,7 +11850,49 @@
      "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: nota_sardoura, notas, poda, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.meses, propagacao.sementeira.nota, recolha_sementes, resistencia_geada. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Jacaranda mimosifolia: Jacaranda, ENH476",
+       "url": "https://edis.ifas.ufl.edu/publication/ST317/pdf",
+       "seccao": "pp. 2–3: Trunk and Branches; Use and Management",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Trees: formative pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/formative-pruning",
+       "seccao": "When / How to carry out formative pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Alteração editorial conservadora de fevereiro–março para abril–maio, para não sugerir formação antes de passar o risco de geada na parcela. Não é uma data de última geada comprovada. A orientação RHS de fim de inverno refere-se sobretudo a cultivo em abrigo; não foi transposta para árvore exterior. O risco, a retoma e a floração observados podem exigir adiar ou dispensar a poda."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -11430,7 +11935,7 @@
       1,
       2
      ],
-     "tipo": "Poda de formação nas árvores jovens; nas adultas, retire ramos partidos (a madeira é quebradiça)"
+     "tipo": "Na mélia jovem, corrija cedo os eixos concorrentes e favoreça ramos principais bem distribuídos. Na árvore adulta, avalie ramos partidos ou uniões frágeis; a suscetibilidade à quebra justifica avaliação estrutural, não uma redução forte anual de toda a copa"
     }
    ],
    "plantacao": {
@@ -11452,7 +11957,39 @@
      "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: legal, legal_botoes, plantacao.meses, plantacao.o_que, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.meses, propagacao.sementeira.nota, recolha_sementes, resistencia_geada, toxicidade. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Melia azedarach: Chinaberry, ST-406",
+       "url": "https://hort.ifas.ufl.edu/trees/MELAZEA.pdf",
+       "seccao": "p. 2: Trunk and Branches; Pruning requirement; Breakage",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
+     },
+     "nota": "Mantida a janela provisória para formação; a remoção de um ramo perigoso não fica dependente destes meses. As recomendações antigas sobre invasividade e tratamentos da fonte não integram esta revisão."
+    }
+   }
   },
   {
    "tipo_lua": "a",

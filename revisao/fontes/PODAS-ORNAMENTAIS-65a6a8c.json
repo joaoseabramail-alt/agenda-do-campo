@@ -1,0 +1,206 @@
+{
+  "base": "65a6a8c7864c5b22cbc56f30bb5e1f0fc1fdccb7",
+  "data_consulta": "2026-11-20",
+  "fontes": {
+    "FORM": {
+      "titulo": "RHS — Trees: formative pruning",
+      "url": "https://www.rhs.org.uk/plants/types/trees/formative-pruning",
+      "seccao": "When / How to carry out formative pruning",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "LIGHT": {
+      "titulo": "RHS — Shrubs and trees: light pruning",
+      "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+      "seccao": "When / How to lightly prune",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "PAR": {
+      "titulo": "UF/IFAS — Parrotia persica: Persian Parrotia, ST-432",
+      "url": "https://hort.ifas.ufl.edu/database/documents/pdf/tree_fact_sheets/parpera.pdf",
+      "seccao": "p. 2: Trunk and Branches; Pruning requirement",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "QUE": {
+      "titulo": "UF/IFAS — Quercus palustris: Pin Oak, ST-555",
+      "url": "https://hort.ifas.ufl.edu/trees/QUEPALA.pdf",
+      "seccao": "p. 3: Use and Management",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "COR": {
+      "titulo": "RHS — How to grow flowering dogwood",
+      "url": "https://www.rhs.org.uk/plants/cornus/flowering/growing-guide",
+      "seccao": "Pruning and Training",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "LAG": {
+      "titulo": "UF/IFAS — Crape Myrtle Pruning",
+      "url": "https://sfyl.ifas.ufl.edu/lawn-and-garden/crape-myrtle-pruning/",
+      "seccao": "Cultivar Selection; Consequences of Severe Crape Myrtle Pruning",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "GIN": {
+      "titulo": "UF/IFAS — Ginkgo biloba: Ginkgo, ENH432",
+      "url": "https://edis.ifas.ufl.edu/publication/ST273/pdf",
+      "seccao": "p. 3: Pruning requirement; Use and Management",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "LIQ": {
+      "titulo": "UF/IFAS — Liquidambar styraciflua: Sweetgum, ST-358",
+      "url": "https://hort.ifas.ufl.edu/database/documents/pdf/tree_fact_sheets/liqstya.pdf",
+      "seccao": "p. 2: Trunk and Branches; Pruning requirement",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "POLL": {
+      "titulo": "RHS — Pollarding",
+      "url": "https://www.rhs.org.uk/plants/types/trees/pollarding",
+      "seccao": "Suitable for; Maintaining a pollard; Rejuvenating an overgrown pollarded tree",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "STE": {
+      "titulo": "UF/IFAS — Stewartia pseudocamellia: Japanese Stewartia, ST-603",
+      "url": "https://hort.ifas.ufl.edu/trees/STEPSEA.pdf",
+      "seccao": "pp. 2–3: Trunk and Branches; Pruning requirement",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "STE_R": {
+      "titulo": "RHS — Stewartia pseudocamellia",
+      "url": "https://www.rhs.org.uk/plants/17794/stewartia-pseudocamellia/details",
+      "seccao": "Pruning: group 1",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "TIL": {
+      "titulo": "RHS — Tilia × europaea",
+      "url": "https://www.rhs.org.uk/plants/93218/tilia-%C3%97-europaea/details",
+      "seccao": "Pruning: group 1; suckers at the base of the trunk",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "AUC": {
+      "titulo": "RHS — How to grow Aucuba",
+      "url": "https://www.rhs.org.uk/plants/aucuba/growing-guide",
+      "seccao": "Pruning and Training: free-standing shrubs",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "HAM": {
+      "titulo": "RHS — How to grow witch hazel",
+      "url": "https://www.rhs.org.uk/plants/witch-hazel/growing-guide",
+      "seccao": "Pruning and Training; Dealing with suckers",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "HAM_V": {
+      "titulo": "RHS — Hamamelis virginiana",
+      "url": "https://www.rhs.org.uk/plants/21628/hamamelis-virginiana/details",
+      "seccao": "Description; Botanical details; Pruning",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "TIB": {
+      "titulo": "RHS — Tibouchina urvilleana",
+      "url": "https://www.rhs.org.uk/plants/18220/tibouchina-urvilleana/details",
+      "seccao": "Cultivation; Pruning: group 9; restrictive pruning under glass",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "TIB_L": {
+      "titulo": "Landwirtschaftskammer Nordrhein-Westfalen — Wie wird ein Prinzessinnenstrauch gepflegt?",
+      "url": "https://www.landwirtschaftskammer.de/verbraucher/garten/gartentipp065.htm",
+      "seccao": "Rückschnitt; Überwinterung",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "JAC": {
+      "titulo": "UF/IFAS — Jacaranda mimosifolia: Jacaranda, ENH476",
+      "url": "https://edis.ifas.ufl.edu/publication/ST317/pdf",
+      "seccao": "pp. 2–3: Trunk and Branches; Use and Management",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "JAC_R": {
+      "titulo": "RHS — Jacaranda",
+      "url": "https://www.rhs.org.uk/plants/jacaranda/growing-guide",
+      "seccao": "Cultivation notes; Pruning and training — cultivo em abrigo",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "MEL": {
+      "titulo": "UF/IFAS — Melia azedarach: Chinaberry, ST-406",
+      "url": "https://hort.ifas.ufl.edu/trees/MELAZEA.pdf",
+      "seccao": "p. 2: Trunk and Branches; Pruning requirement; Breakage",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    }
+  }
+}
