@@ -387,8 +387,8 @@ function render(){
 }
 /* ---------- Ficha da planta (ao tocar no nome) ---------- */
 const CAMPOS=[["exposicao","Exposição"],["solo","Solo"],["rega","Rega"],["adubacao","Adubação"],["floracao","Floração"],["resistencia_geada","Geada"]];
-function fichaHTML(p,comAvisos){
-  const av=comAvisos?[p.legal,p.toxicidade].filter(Boolean).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
+function fichaHTML(p,avisosPresentes=[]){
+  const av=[p.legal,p.toxicidade].filter(t=>t&&!avisosPresentes.includes(t)).map(t=>`<span class="warn">${esc(t)}</span>`).join("");
   const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("");
   return `<div class="ficha" id="ficha-${esc(p.id)}">${botaoMinha(p)}${av}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
 }
@@ -424,7 +424,8 @@ document.addEventListener("click",e=>{
   const li=b.closest("li"),aberta=li.querySelector(".ficha");
   if(aberta){aberta.remove();b.setAttribute("aria-expanded","false");return}
   const p=DB.plantas.find(x=>x.id===b.dataset.id);if(!p)return;
-  li.insertAdjacentHTML("beforeend",fichaHTML(p,!li.querySelector(":scope > .warn")));b.setAttribute("aria-expanded","true");
+  const avisosPresentes=Array.from(li.querySelectorAll(":scope > .warn"),el=>el.textContent);
+  li.insertAdjacentHTML("beforeend",fichaHTML(p,avisosPresentes));b.setAttribute("aria-expanded","true");
   mostrarFoto(p,li.querySelector(".ficha .foto"));
 });
 /* ---------- As minhas plantas e pesquisa ---------- */
@@ -461,7 +462,8 @@ function mostrarResultados(){
     modoRes="procura";$("verMinhas").setAttribute("aria-expanded","false");
   }else if(modoRes==="minhas"){
     res=DB.plantas.filter(p=>minhas.has(p.id)).sort((a,b)=>a.nome.localeCompare(b.nome,"pt"));
-    info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
+    info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":desconhecidas.size?"Nenhuma das plantas guardadas é reconhecida por esta versão da app.":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
+    if(desconhecidas.size)info+=" "+(desconhecidas.size===1?"Tem 1 planta guardada que esta versão da app não reconhece. Continua guardada e é incluída na exportação.":"Tem "+desconhecidas.size+" plantas guardadas que esta versão da app não reconhece. Continuam guardadas e são incluídas na exportação.");
   }else{box.hidden=true;box.innerHTML="";return}
   box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.map(linhaPlanta).join("")}</ul>`:""}`;
   box.hidden=false;
@@ -489,7 +491,8 @@ $("exportar").addEventListener("click",()=>{
   const url=URL.createObjectURL(blob),a=document.createElement("a");
   a.href=url;a.download="minhas-plantas-"+iso(new Date())+".json";document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),2000);
-  msgCopia("Ficheiro criado com "+total+(total===1?" planta":" plantas")+". Guarde-o num sítio seguro (por exemplo, no Google Drive ou enviado a si próprio por email).");
+  const resumo=minhas.size+(minhas.size===1?" planta reconhecida":" plantas reconhecidas")+(desconhecidas.size?" e "+desconhecidas.size+(desconhecidas.size===1?" não reconhecida":" não reconhecidas"):"");
+  msgCopia("Ficheiro criado com "+resumo+". Todas foram incluídas na cópia. Guarde-o num sítio seguro (por exemplo, no Google Drive ou enviado a si próprio por email).");
 });
 $("importarBtn").addEventListener("click",()=>{$("importarFicheiro").value="";$("importarFicheiro").click()});
 // Valida o conteúdo sem alterar nada; devolve {ids} ou {erro}
