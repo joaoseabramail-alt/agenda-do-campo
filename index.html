@@ -8,15 +8,15 @@
 /* Layout: uma coluna de telemóvel — cabeçalho com o dia e a lua, grelha 2×2 de botões grandes, lista do dia por baixo */
 :root{
   --bg:#eef2ea; --surface:#ffffff; --ink:#1d2a1f; --muted:#5b6b5d; --line:#d3dccf;
-  --leaf:#2f6b3a; --leaf-soft:#dcebd9; --sun:#c98a14; --sun-soft:#f6e9c8; --moon:#f4efd9; --shadow:#c9d3c4;
+  --leaf:#2f6b3a; --leaf-soft:#dcebd9; --sun:#c98a14; --sun-soft:#f6e9c8; --warn:#8a5600; --moon:#f4efd9; --shadow:#c9d3c4;
   --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#121a14; --surface:#1b261d; --ink:#e6eee3; --muted:#9db0a0; --line:#2d3c30;
-  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --moon:#efe8c9; --shadow:#0b100c; color-scheme:dark}}
+  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --warn:#e5b34d; --moon:#efe8c9; --shadow:#0b100c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#121a14; --surface:#1b261d; --ink:#e6eee3; --muted:#9db0a0; --line:#2d3c30;
-  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --moon:#efe8c9; --shadow:#0b100c; color-scheme:dark}
+  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --warn:#e5b34d; --moon:#efe8c9; --shadow:#0b100c; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{background:var(--bg)}
 body{color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
@@ -28,13 +28,14 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-of
 
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--leaf);display:flex;flex-direction:column;line-height:1.2}.brand small{font-family:var(--body);font-weight:400;font-size:13px;letter-spacing:0;text-transform:none;color:var(--muted)}
-.today-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:14px;cursor:pointer}
+.today-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 16px;min-height:44px;font-size:15px;cursor:pointer}
 
 .day{display:flex;align-items:center;gap:16px}
 .day-nav{display:flex;align-items:center;gap:6px;flex:1;min-width:0}
 .arrow{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:22px;cursor:pointer;display:grid;place-items:center}
 .date-box{flex:1;min-width:0;text-align:center;position:relative}
-.date-box .wd{font-size:14px;color:var(--muted);text-transform:capitalize}
+.date-box .wd{font-size:14px;color:var(--muted)}
+.date-box .wd::first-letter{text-transform:uppercase}
 .date-box h1{font-size:clamp(24px,7vw,32px);font-weight:800;line-height:1.1}
 .date-box input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}
 .moon{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
@@ -70,7 +71,7 @@ ul.items li:last-child{border-bottom:0}
 .chip{font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
 .chip.hot{background:var(--leaf);border-color:var(--leaf);color:var(--surface)}
 .sci{display:block;font-weight:400;font-size:13px;color:var(--muted)}
-.warn{display:block;font-size:13px;color:var(--sun);font-weight:700}
+.warn{display:block;font-size:13px;color:var(--warn);font-weight:700}
 li.grp .it-name{font-size:15px}
 .ficha-btn{all:unset;cursor:pointer;display:flex;align-items:flex-start;gap:6px;border-radius:6px}
 .ficha-btn:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
@@ -91,7 +92,7 @@ ul.resultados li{padding:10px 2px;border-bottom:1px solid var(--line);display:fl
 ul.resultados li:last-child{border-bottom:0}
 .res-info{font-size:13px;color:var(--muted);padding:6px 2px}
 @media (prefers-reduced-motion:reduce){.ficha-btn .seta{transition:none}}
-.chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--sun);color:var(--sun)}.chip.d3{border-color:var(--muted)}
+.chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--warn);color:var(--warn)}.chip.d3{border-color:var(--muted)}
 .tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 .tips b{color:var(--ink)}
 .links{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
@@ -218,7 +219,7 @@ const CAT={
   trat:{t:"Tratamentos",sub:"O que tratar e vigiar",u:"medidas",
     v:()=>["good","Comece pela vigilância. Antes de intervir, confirme o risco e siga o aviso agrícola e o rótulo, quando aplicável."],
     tips:"<b>Primeiro vigiar:</b> trate só quando há sintomas, risco pelo tempo (chuva, humidade, calor) ou aviso agrícola da região. <b>Regras:</b> trate de manhã cedo ou ao fim da tarde; com nevoeiro do rio, espere que levante e as folhas sequem; enxofre só abaixo de 30 °C; respeite o intervalo de segurança antes de colher; use luvas, máscara e óculos; leia sempre o rótulo do produto.<br><a href='#avisos'>Ver os Avisos Agrícolas oficiais ↓</a>"},
-  plantar:{t:"Plantar e semear na horta",sub:"Horta, árvores e arbustos a plantar",u:"culturas",
+  plantar:{t:"Plantar e semear",sub:"Horta, árvores e arbustos a plantar",u:"culturas",
     v:p=>p.k==="nova"?["meh","Lua nova: a tradição aconselha esperar um ou dois dias para semear."]:p.k==="ming"?["good","Lua minguante: dia indicado para raízes, bolbos, tubérculos e árvores."]:["good","Lua "+L(p)+": dia indicado para plantas de folha, fruto e grão."],
     tips:"<b>Dica:</b> as culturas marcadas com «Hoje» são as que a tradição lunar favorece neste dia. Não plante com o solo encharcado nem em dias de geada. Regue logo depois de plantar."},
   sem:{t:"Sementeira de viveiro",sub:"Árvores, arbustos e aromáticas a semear",u:"plantas",
@@ -409,7 +410,7 @@ function mostrarResultados(){
   const res=DB.plantas.filter(p=>semAc(p.nome).includes(q)||semAc(p.nome_cientifico).includes(q));
   res.sort((a,b)=>(semAc(a.nome).startsWith(q)?0:1)-(semAc(b.nome).startsWith(q)?0:1)||a.nome.localeCompare(b.nome,"pt"));
   const info=res.length?res.length+(res.length===1?" planta encontrada":" plantas encontradas")+". Toque no nome para ver a ficha.":"Nenhuma planta com esse nome na base de dados.";
-  box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.map(linhaPlanta).join("")}</ul>`:""}`;
+  box.innerHTML=`<div class="res-info" role="status">${info}</div>${res.length?`<ul class="resultados">${res.map(linhaPlanta).join("")}</ul>`:""}`;
   box.hidden=false;
 }
 $("procura").addEventListener("input",mostrarResultados);
@@ -418,7 +419,10 @@ $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
 $("next").onclick=()=>{day.setDate(day.getDate()+1);render()};
 $("btnHoje").onclick=()=>{day=new Date();day.setHours(12,0,0,0);render()};
 $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]=e.target.value.split("-").map(Number);day=new Date(y,mo-1,d,12);render()});
-document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
+// Ao voltar à app: se mostrava o dia de hoje e entretanto mudou o dia, passa para o novo dia; senão não redesenha (mantém as fichas abertas)
+let hojeVisto=iso(new Date());
+document.addEventListener("visibilitychange",()=>{if(document.hidden){hojeVisto=iso(new Date());return}
+  const agora=iso(new Date());if(agora!==hojeVisto){if(iso(day)===hojeVisto){day=new Date();day.setHours(12,0,0,0)}hojeVisto=agora;render()}});
 render();
 Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()})))
   .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};render();mostrarResultados()})
@@ -429,12 +433,14 @@ Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");
 const bar=document.getElementById("instalar"),txt=document.getElementById("instTxt"),btn=document.getElementById("btnInstalar");
 const instalada=matchMedia("(display-mode: standalone)").matches||navigator.standalone;
+let fechada=false;try{fechada=localStorage.getItem("instalar-fechado")==="1"}catch(e){}
+const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
 let pedido=null;
 function mostrar(){bar.hidden=false;document.body.style.paddingBottom="96px"}
 function esconder(){bar.hidden=true;document.body.style.paddingBottom=""}
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();pedido=e;txt.textContent="Instale a Agenda do Campo no telemóvel";btn.hidden=false;mostrar()});
-setTimeout(()=>{if(!instalada&&!pedido){txt.innerHTML="Para instalar: toque em <b>⋮</b> (canto superior direito do Chrome) e depois em <b>Adicionar ao ecrã principal</b> ou <b>Instalar app</b>.";mostrar()}},2500);
+setTimeout(()=>{if(!instalada&&!pedido&&!fechada){txt.innerHTML=ios?"Para instalar: toque em <b>Partilhar</b> (o quadrado com a seta) e depois em <b>Adicionar ao ecrã principal</b>.":"Para instalar: toque em <b>⋮</b> (canto superior direito do Chrome) e depois em <b>Adicionar ao ecrã principal</b> ou <b>Instalar app</b>.";mostrar()}},2500);
 btn.onclick=async()=>{if(!pedido)return;pedido.prompt();await pedido.userChoice;pedido=null;esconder()};
-document.getElementById("fecharInstalar").onclick=esconder;
+document.getElementById("fecharInstalar").onclick=()=>{esconder();try{localStorage.setItem("instalar-fechado","1")}catch(e){}};
 addEventListener("appinstalled",esconder);
 </script></body></html>
