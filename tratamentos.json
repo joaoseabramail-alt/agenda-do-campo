@@ -1510,6 +1510,415 @@
      "texto": "Com a cultura instalada, observe folhas, caules e maçarocas. Procure perfurações e resíduos semelhantes a serradura à entrada das galerias. Siga os avisos agrícolas da região."
     }
    ]
+  },
+  {
+   "grupo": "Amoreira",
+   "especies": [
+    "amoreira"
+   ],
+   "problemas": "Cochonilhas",
+   "vigiar": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Observe raminhos e folhas. Procure pequenas carapaças aderentes e confirme se contêm insetos vivos. Algumas cochonilhas deixam melada e fumagina. Vigie se a presença está a aumentar."
+    }
+   ]
+  },
+  {
+   "grupo": "Aveleira",
+   "especies": [
+    "aveleira"
+   ],
+   "problemas": "Gorgulho-da-avelã",
+   "vigiar": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Observe avelãs que caiam antes da maturação e abra alguns frutos suspeitos. Procure larvas no interior ou um orifício redondo na casca."
+    }
+   ]
+  },
+  {
+   "grupo": "Diospireiro",
+   "especies": [
+    "diospireiro"
+   ],
+   "problemas": "Manchas foliares e antracnose",
+   "vigiar": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Após períodos húmidos, procure manchas nas folhas e lesões escuras e deprimidas nos frutos. As manchas podem ter várias causas; confirme o diagnóstico se a incidência aumentar."
+    },
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "cultural",
+     "texto": "Se precisar de regar, aplique água ao solo para reduzir o tempo de molhamento das folhas."
+    }
+   ]
+  },
+  {
+   "grupo": "Medronheiro",
+   "especies": [
+    "medronheiro"
+   ],
+   "problemas": "Manchas foliares",
+   "vigiar": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Em tempo húmido, observe manchas escuras ou arroxeadas nas folhas e queda prematura. Manchas isoladas podem ser sobretudo um problema estético."
+    },
+    {
+     "meses": [
+      10,
+      11,
+      12
+     ],
+     "tipo": "cultural",
+     "texto": "Quando a incidência for elevada, recolha as folhas caídas mais afetadas e regue junto ao solo se for necessário."
+    }
+   ]
+  },
+  {
+   "grupo": "Pistacheiro",
+   "especies": [
+    "pistacheiro"
+   ],
+   "problemas": "Seca de rebentos e cachos associada a Botryosphaeriaceae",
+   "vigiar": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Em tempo quente e húmido, procure escurecimento de rebentos, folhas e cachos. Se a secagem se espalhar, peça confirmação da causa."
+    },
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "cultural",
+     "texto": "Se regar por aspersão, ajuste o sistema para a água não atingir a copa."
+    }
+   ]
+  },
+  {
+   "grupo": "Batata-doce",
+   "especies": [
+    "batata_doce"
+   ],
+   "problemas": "Alfinetes do solo",
+   "vigiar": [
+    4,
+    5,
+    9,
+    10,
+    11
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      4,
+      5,
+      9,
+      10,
+      11
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Antes de plantar, verifique se há larvas duras, finas e amareladas no solo, sobretudo em talhões com histórico de danos. À colheita, verifique se há pequenos orifícios nas raízes."
+    },
+    {
+     "meses": [
+      4,
+      5
+     ],
+     "tipo": "cultural",
+     "texto": "Se o talhão tiver histórico de danos, considere plantar noutro local e planeie a rotação."
+    }
+   ]
+  },
+  {
+   "grupo": "Beterraba",
+   "especies": [
+    "beterraba"
+   ],
+   "problemas": "Cercosporiose",
+   "vigiar": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Em tempo quente e húmido, procure manchas pequenas, com centro acinzentado e margem escura, primeiro nas folhas mais velhas."
+    },
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "tipo": "cultural",
+     "texto": "Dê espaço para as folhas secarem e prefira rega junto ao solo. Em parcelas com cercosporiose confirmada, faça rotação com culturas não hospedeiras."
+    }
+   ]
+  },
+  {
+   "grupo": "Chicória",
+   "especies": [
+    "chicoria"
+   ],
+   "problemas": "Lesmas e caracóis",
+   "vigiar": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Em mudas e plantas jovens, procure furos irregulares e rastos de muco. Inspecione ao entardecer, sobretudo após chuva, e observe debaixo das folhas baixas."
+    }
+   ]
+  },
+  {
+   "grupo": "Endívia",
+   "especies": [
+    "endivia"
+   ],
+   "problemas": "Lesmas e caracóis",
+   "vigiar": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Em mudas e plantas jovens, procure furos irregulares e rastos de muco. Inspecione ao entardecer, sobretudo após chuva, e observe debaixo das folhas baixas."
+    }
+   ]
+  },
+  {
+   "grupo": "Nabo e nabiças",
+   "especies": [
+    "nabo"
+   ],
+   "problemas": "Álticas",
+   "vigiar": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Da emergência às primeiras folhas verdadeiras, procure pequenos furos redondos e observe se há besouros pequenos que saltam ao aproximar-se."
+    },
+    {
+     "meses": [
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "tipo": "cultural",
+     "texto": "Em parcelas com histórico de ataque, instale rede fina logo após a sementeira, com os bordos fechados e espaço para a cultura crescer."
+    }
+   ]
+  },
+  {
+   "grupo": "Rabanete",
+   "especies": [
+    "rabanete"
+   ],
+   "problemas": "Álticas",
+   "vigiar": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Vigie cotilédones e primeiras folhas. Muitos furos pequenos e redondos podem indicar álticas, sobretudo se observar besouros pequenos que saltam."
+    },
+    {
+     "meses": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "tipo": "cultural",
+     "texto": "Em parcelas com histórico de ataque, proteja as plântulas com rede fina desde a sementeira, usando um canteiro em rotação."
+    }
+   ]
   }
  ]
 }

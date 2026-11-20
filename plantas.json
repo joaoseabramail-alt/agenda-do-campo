@@ -243,17 +243,11 @@
    "poda": [
     {
      "meses": [
+      11,
       12,
-      1,
-      2
+      1
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
-    },
-    {
-     "meses": [
-      11
-     ],
-     "tipo": "Pode começar depois da queda da folha"
+     "tipo": "Pode apenas se necessário, em repouso após a queda da folha. Retire ramos cruzados ou danificados e conserve o porte natural"
     }
    ],
    "colheita": [
@@ -337,7 +331,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em touceira, renove gradualmente os ramos velhos e preserve rebentos bem colocados. Em tronco único, conserve a estrutura principal"
     },
     {
      "meses": [
@@ -381,11 +375,6 @@
    "exposicao": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "1": "Retire ramos mortos ou mal posicionados. Se conduzir em touceira, renove gradualmente os ramos velhos e conserve rebentos bem colocados para os substituir.",
-     "2": "Retire ramos mortos ou mal posicionados. Se conduzir em touceira, renove gradualmente os ramos velhos e conserve rebentos bem colocados para os substituir.",
-     "12": "Retire ramos mortos ou mal posicionados. Se conduzir em touceira, renove gradualmente os ramos velhos e conserve rebentos bem colocados para os substituir."
-    },
     "plantar": {
      "1": "Raiz nua; plante pelo menos duas variedades para polinizar.",
      "2": "Raiz nua; plante pelo menos duas variedades para polinizar.",
@@ -1051,7 +1040,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Faça um desbaste ligeiro para a luz entrar na copa. Preserve os ramos de um ano que vão produzir rebentos frutíferos"
     }
    ],
    "colheita": [
@@ -1067,18 +1056,17 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Ajuste ao vigor e à análise do solo. Evite doses fortes de azoto de ação rápida, que podem agravar a queda de frutos.",
+   "rega": "Regue regularmente em períodos secos, de preferência junto ao solo. Evite encharcamento e molhar frequentemente a copa.",
+   "floracao": "Floresce nos rebentos do ano, várias semanas após o abrolhamento. A data depende da cultivar e da primavera.",
+   "solo": "Solo bem drenado, de preferência ligeiramente ácido a neutro.",
+   "resistencia_geada": "Os rebentos jovens podem sofrer com geadas após o abrolhamento. A floração posterior ao abrolhamento reduz a exposição a algumas geadas precoces.",
+   "exposicao": "Sol pleno; evite baixadas onde se acumule ar frio.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda de inverno leve; frutifica nos rebentos do ano.",
-     "2": "Terminar a poda antes do abrolhamento."
+     "2": "Faça um desbaste ligeiro para a luz entrar na copa. Preserve os ramos de um ano que vão produzir rebentos frutíferos. Termine antes do abrolhamento."
     },
     "enx": {
      "3": "Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."
@@ -1146,7 +1134,7 @@
       2,
       3
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Desbaste ligeiramente os ramos que fecham o centro, se necessário. Preserve os ramos bem distribuídos que sustentam a produção"
     }
    ],
    "colheita": [
@@ -1172,9 +1160,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "3": "Poda leve depois da colheita; areje o centro."
-    },
     "plantar": {
      "3": "Em torrão; dá-se bem no clima de Paiva.",
      "4": "Em torrão ou vaso, escolha um local soalheiro. Adie se houver geada prevista.",
@@ -1359,12 +1344,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
+   "adubacao": "Use cobertura de composto ou estrume bem curtido. Em pomar, ajuste a fertilização à análise do solo e ao vigor.",
+   "rega": "Regue durante períodos secos, sobretudo em árvores jovens e em vaso. Mantenha o solo húmido, sem o saturar.",
+   "floracao": "Na primavera, com época variável conforme a cultivar. Escolha um polinizador compatível com floração coincidente.",
    "solo": "Prefere solo fértil, profundo e bem drenado, neutro a ligeiramente ácido.",
-   "resistencia_geada": null,
-   "exposicao": null,
+   "resistencia_geada": "A árvore em repouso tolera frio. Flores abertas e frutos recém-formados são vulneráveis a geadas tardias.",
+   "exposicao": "Sol, em local abrigado, fora dos pontos onde o ar frio se acumula.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -1438,13 +1423,13 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Abra ligeiramente o centro e retire ramos cruzados. Preserve as pontas dos ramos, onde surgem flores e frutos"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Pode começar depois da queda total da folha"
+     "tipo": "Só após a queda total das folhas. Abra ligeiramente o centro e retire ramos cruzados. Preserve as pontas dos ramos, onde surgem flores e frutos"
     }
    ],
    "colheita": [
@@ -1474,9 +1459,6 @@
      "2": "Estacas lenhosas.",
      "11": "Estacas lenhosas.",
      "12": "Estacas lenhosas."
-    },
-    "podas": {
-     "2": "Terminar a poda antes do abrolhamento."
     },
     "enx": {
      "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
@@ -1542,7 +1524,7 @@
       2,
       3
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Preserve o porte natural e limite o corte a ramos danificados ou cruzados, se necessário"
     }
    ],
    "colheita": [
@@ -1560,19 +1542,16 @@
    },
    "adubacao": null,
    "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "floracao": "No outono, por vezes enquanto amadurecem os frutos da floração anterior.",
+   "solo": "Solo fértil, rico em matéria orgânica e bem drenado.",
+   "resistencia_geada": "Exemplares jovens são mais vulneráveis ao gelo e podem beneficiar de proteção no inverno.",
+   "exposicao": "Sol, em local abrigado de ventos frios e secos.",
    "toxicidade": null,
    "notas": {
     "plantar": {
      "3": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada.",
      "10": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada.",
      "11": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada."
-    },
-    "podas": {
-     "3": "Poda leve de forma; não precisa de poda forte."
     }
    }
   },
@@ -2030,12 +2009,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Aplique cobertura orgânica na primavera. Ajuste o reforço ao vigor da árvore e ao tipo de cultivo.",
+   "rega": "Regue árvores jovens em períodos secos e vigie a humidade dos vasos. Dê água adicional enquanto os frutos crescem se houver seca.",
+   "floracao": "Na primavera, em geral antes das macieiras. Para polinização cruzada, escolha uma variedade compatível que floresça ao mesmo tempo.",
+   "solo": "Solo fértil e bem drenado, com humidade regular. Evite solos encharcados.",
+   "resistencia_geada": "A árvore suporta frio em repouso. A floração precoce fica exposta a geadas tardias.",
+   "exposicao": "Sol e abrigo do vento frio. Em locais frios, uma parede soalheira favorece o amadurecimento.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -2194,7 +2173,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvores jovens, forme pernadas bem espaçadas. Em árvores adultas, desbaste seletivamente e preserve os ramos de um ano produtivos"
     }
    ],
    "colheita": [
@@ -2218,10 +2197,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "1": "Poda de formação no inverno.",
-     "2": "Poda de formação no inverno."
-    },
     "plantar": {
      "2": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio."
     },
@@ -2287,7 +2262,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Desbaste ramos cruzados e renove gradualmente os caules velhos. Preserve os ramos curtos produtivos e alguns rebentos para renovação"
     }
    ],
    "colheita": [
@@ -2455,17 +2430,12 @@
    "poda": [
     {
      "meses": [
+      11,
       12,
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
-    },
-    {
-     "meses": [
-      11
-     ],
-     "tipo": "Retire as varas velhas depois da queda da folha"
+     "tipo": "Em arbustos adultos, renove alguns ramos velhos de cada vez e conserve os ramos curtos que dão fruto"
     }
    ],
    "colheita": [
@@ -2490,11 +2460,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "1": "Retire as varas velhas junto ao solo.",
-     "11": "Retirar varas velhas.",
-     "12": "Poda de limpeza."
-    },
     "estacas": {
      "11": "Estacas lenhosas."
     }
@@ -2668,11 +2633,11 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em solo com cobertura orgânica regular, evite adubação de rotina. Em vaso ou perante uma carência confirmada, use adubo próprio para plantas acidófilas.",
+   "rega": "Mantenha o substrato regularmente húmido, sobretudo em vaso e durante o crescimento dos frutos. Prefira água da chuva quando a água da rede for calcária.",
+   "floracao": "Floresce na primavera. A época varia com a variedade; cultivares de floração coincidente favorecem a polinização cruzada.",
+   "resistencia_geada": "O frio primaveril pode danificar as flores. Em vaso, proteja também as raízes durante períodos de frio intenso.",
+   "exposicao": "Sol ou meia-sombra leve, em local abrigado. O sol favorece a produção.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3219,7 +3184,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Em exemplares livres, encurte apenas os rebentos que desequilibram a copa e retire pontas danificadas pelo frio"
     }
    ],
    "plantacao": {
@@ -3409,7 +3374,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Quando retomar o crescimento, apare ligeiramente para manter a planta compacta. Evite cortar para dentro da madeira velha sem folhas"
     }
    ],
    "plantacao": {
@@ -3548,7 +3513,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvore jovem, corrija apenas ramos concorrentes ou cruzados para estabelecer a estrutura. Evite reduzir uma copa adulta por rotina"
     }
    ],
    "plantacao": {
@@ -3618,7 +3583,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Preserve o porte natural, incluindo a forma de vários troncos quando desejada. Retire apenas ramos danificados ou que se rocem"
     }
    ],
    "plantacao": {
@@ -3764,7 +3729,7 @@
       4,
       2
      ],
-     "tipo": "Poda de forma e limpeza em exemplares cultivados de origem legal"
+     "tipo": "Em exemplares cultivados de origem legal, apare ligeiramente, se necessário, para conservar a forma e evitar danos nos ramos"
     }
    ],
    "plantacao": {
@@ -3781,10 +3746,6 @@
    "solo": null,
    "resistencia_geada": null,
    "notas": {
-    "podas": {
-     "2": "Em exemplares cultivados de origem legal, apare ligeiramente se necessário, no fim do inverno.",
-     "3": "Poda leve de forma no fim do inverno, em exemplares cultivados de origem legal."
-    },
     "plantar": {
      "3": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
      "10": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
@@ -3927,7 +3888,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Faça formação apenas se a árvore jovem tiver ramos que competem com o eixo ou se roçam. Em adultos, preserve a copa natural"
     }
    ],
    "plantacao": {
@@ -3998,7 +3959,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvore jovem, preserve o eixo principal e corrija só ramos concorrentes. Em adultos, mantenha os ramos baixos saudáveis quando houver espaço"
     }
    ],
    "plantacao": {
@@ -4065,7 +4026,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Selecione o eixo apenas em exemplares jovens conduzidos em fuste. Em exemplares livres, mantenha o porte e retire só ramos problemáticos"
     }
    ],
    "plantacao": {
@@ -4301,7 +4262,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvores jovens, preserve o eixo principal e retire pequenos ramos concorrentes ou cruzados. Intervenções em ramos grandes exigem avaliação"
     }
    ],
    "plantacao": {
@@ -4377,7 +4338,7 @@
       2,
       3
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Dispensa poda regular. Se necessário, retire ramos danificados ou a roçar e preserve a ramificação natural"
     }
    ],
    "plantacao": {
@@ -4441,7 +4402,7 @@
       2,
       3
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Mantenha a estrutura existente. Retire apenas ramos mortos ou cruzados e evite cortar toda a copa para estimular a floração"
     }
    ],
    "plantacao": {
@@ -4513,7 +4474,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvore jovem, conserve um eixo dominante e corrija forquilhas concorrentes cedo. Em árvores adultas, avalie danos antes de podar"
     }
    ],
    "plantacao": {
@@ -4585,7 +4546,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Preserve o eixo dominante. Na formação de árvores jovens, retire apenas ramos concorrentes ou mal inseridos"
     }
    ],
    "plantacao": {
@@ -4658,7 +4619,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Na formação, conserve um único eixo central e retire seletivamente ramos que competem com ele. Preserve a copa piramidal"
     }
    ],
    "plantacao": {
@@ -4682,11 +4643,6 @@
     11
    ],
    "notas": {
-    "podas": {
-     "1": "Poda de formação no inverno; mantenha um eixo central.",
-     "2": "Poda de formação no inverno; mantenha um eixo central.",
-     "12": "Poda de formação no inverno; mantenha um eixo central."
-    },
     "plantar": {
      "2": "Raiz nua ou torrão; folhagem vermelha no outono.",
      "3": "Plante em vaso ou torrão. Use raiz nua apenas enquanto a árvore estiver em repouso.",
@@ -4966,7 +4922,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em exemplares livres, desbaste apenas ramos danificados ou cruzados. Conserve os ramos laterais que sustentam flores e frutos"
     }
    ],
    "plantacao": {
@@ -5111,7 +5067,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em árvores jovens, corrija ramos concorrentes ou cruzados. A rolagem é reservada a árvores já conduzidas nesse sistema, por pessoal qualificado"
     }
    ],
    "plantacao": {
@@ -5132,11 +5088,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "1": "Poda de inverno de forma ou de rolagem.",
-     "2": "Poda de inverno de forma ou de rolagem.",
-     "12": "Poda de inverno de forma ou de rolagem."
-    },
     "estacas": {
      "1": "Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem.",
      "12": "Estacas lenhosas de 25–30 cm de ramos do ano; enraízam bem."
@@ -5188,7 +5139,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Em exemplares livres, retire apenas ramos danificados ou que se rocem. Conserve a ramificação e as gemas florais"
     }
    ],
    "plantacao": {
@@ -5254,7 +5205,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Preserve o porte arbustivo. Desbaste só ramos danificados ou em conflito e deixe os restantes florescer e frutificar"
     }
    ],
    "plantacao": {
@@ -5386,7 +5337,7 @@
       2,
       3
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Preserve a ramificação natural. Em exemplares jovens conduzidos em tronco único, corrija um eixo concorrente só se necessário"
     }
    ],
    "plantacao": {
@@ -5457,7 +5408,7 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Na formação de árvores jovens, corrija ramos concorrentes ou mal inseridos. Retire rebentos da base quando o objetivo for manter um tronco limpo"
     }
    ],
    "plantacao": {
@@ -5478,11 +5429,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "1": "Poda de inverno: retire rebentos da base e ramos mal colocados.",
-     "2": "Poda de inverno: retire rebentos da base e ramos mal colocados.",
-     "12": "Poda de inverno: retire rebentos da base e ramos mal colocados."
-    },
     "plantar": {
      "1": "Raiz nua; árvore grande, precisa de espaço.",
      "11": "Raiz nua; árvore grande, precisa de espaço."
@@ -5605,7 +5551,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Se precisar de limitar o volume, encurte seletivamente alguns ramos acima de uma lateral e retire os danificados pelo inverno"
     }
    ],
    "plantacao": {
@@ -5826,7 +5772,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Antes do crescimento forte, retire ramos finos ou danificados e encurte laterais que excedam o suporte. Conserve os ramos principais"
     }
    ],
    "plantacao": {
@@ -6343,7 +6289,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Nas fúcsias rústicas, espere que se veja o crescimento novo após o frio e retire as pontas mortas até madeira viva"
     }
    ],
    "plantacao": {
@@ -6578,10 +6524,10 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      3,
+      4
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Conserve a estrutura do arbusto. Quando retomar o crescimento, retire ramos danificados e desbaste ligeiramente se a copa estiver congestionada"
     }
    ],
    "plantacao": {
@@ -6875,15 +6821,7 @@
      "nota": null
     }
    },
-   "poda": [
-    {
-     "meses": [
-      3,
-      4
-     ],
-     "tipo": "Poda de forma e limpeza"
-    }
-   ],
+   "poda": [],
    "plantacao": {
     "meses": [
      4,
@@ -7258,7 +7196,7 @@
       3,
       4
      ],
-     "tipo": "Poda de inverno de forma e limpeza"
+     "tipo": "Quando o crescimento retomar, retire pontas secas ou atingidas pelo frio e encurte ligeiramente acima de rebentos vivos"
     }
    ],
    "plantacao": {
@@ -7390,7 +7328,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Em exemplares isolados, corte pontas danificadas pelo inverno e encurte apenas rebentos que saiam do contorno desejado"
     }
    ],
    "plantacao": {
@@ -7462,7 +7400,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Se a planta abrigada precisar de caber no espaço disponível, encurte seletivamente os rebentos longos ao retomar o crescimento"
     }
    ],
    "plantacao": {
@@ -7645,7 +7583,7 @@
       3,
       4
      ],
-     "tipo": "Poda de forma e limpeza"
+     "tipo": "Desponte rebentos jovens para estimular a ramificação. Em plantas que passaram o inverno em abrigo, retire as partes secas"
     }
    ],
    "plantacao": {

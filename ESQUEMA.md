@@ -24,7 +24,8 @@ A app lê três ficheiros. Os meses são números de 1 (janeiro) a 12 (dezembro)
 | `toxicidade`, `legal`, `nota_sardoura` | texto | Aparecem como avisos |
 | `invasora` | true | Esconde a espécie de plantar e propagar |
 | `geada` | true | Sensível à geada: aviso em março e abril |
-| `adubacao`, `rega`, `floracao`, `solo`, `resistencia_geada`, `exposicao`, `autoctone` | — | Ainda por preencher (`null`); a app ainda não os mostra |
+| `adubacao`, `rega`, `floracao`, `solo`, `resistencia_geada`, `exposicao` | texto ou `null` | Orientações por espécie. Use `null` quando faltar informação validada. A app ainda não os mostra. |
+| `autoctone` | booleano ou `null` | A app ainda não o mostra. |
 
 ## tratamentos.json → `tratamentos[]`
 `{grupo, especies[] (ids), problemas, vigiar[] (meses), intervencoes[]: {meses[], tipo, texto}}`
