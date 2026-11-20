@@ -84,6 +84,23 @@ li.grp .it-name{font-size:15px}
 .ficha dt{font-weight:700;color:var(--ink)}
 .ficha dd{margin:0;color:var(--muted);min-width:0}
 .ficha .vazia{font-size:14px;color:var(--muted)}
+.minha-btn{align-self:flex-start;border:1px solid var(--leaf);background:var(--surface);color:var(--leaf);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.minha-btn[aria-pressed="true"]{background:var(--leaf);color:var(--surface)}
+.procura{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.procura input[type=search]{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.procura-acoes{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+.minhas-ver{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.minhas-ver[aria-expanded="true"]{border-color:var(--leaf);color:var(--leaf)}
+.filtro{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
+.filtro input{width:20px;height:20px;accent-color:var(--leaf)}
+.filtro.off{opacity:.55;cursor:default}
+ul.resultados{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+ul.resultados li{padding:10px 2px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+ul.resultados li:last-child{border-bottom:0}
+.res-info{font-size:13px;color:var(--muted);padding:6px 2px}
+.estrela{flex:none;border:0;background:none;font-size:22px;line-height:1;color:var(--sun);cursor:pointer;padding:2px 4px}
+.filtro-aviso{padding:10px 18px;font-size:14px;background:var(--leaf-soft);border-bottom:1px solid var(--line)}
+.filtro-aviso a{color:var(--leaf);font-weight:700}
 @media (prefers-reduced-motion:reduce){.ficha-btn .seta{transition:none}}
 .chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--sun);color:var(--sun)}.chip.d3{border-color:var(--muted)}
 .tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
@@ -119,6 +136,15 @@ li.grp .it-name{font-size:15px}
   </div>
 
   <div class="moon" id="moon"></div>
+
+  <section class="procura" aria-label="Procurar plantas">
+    <input type="search" id="procura" placeholder="Procurar planta (nome ou nome científico)" autocomplete="off" aria-label="Procurar planta">
+    <div class="procura-acoes">
+      <button type="button" class="minhas-ver" id="verMinhas" aria-expanded="false">★ As minhas plantas (0)</button>
+      <label class="filtro" id="filtroLbl"><input type="checkbox" id="soMinhas"> Só as minhas plantas</label>
+    </div>
+    <div id="resultados" hidden></div>
+  </section>
 
   <div class="grid" role="group" aria-label="O que fazer">
     <button class="cat" type="button" data-k="podas" id="c-podas">
@@ -229,6 +255,8 @@ const CAT={
     v:p=>p.k==="ming"?["good","Lua minguante: a tradição diz que é a melhor altura para colher o que é para guardar (batata, cebola, castanha, maçã)."]:["good","Lua "+L(p)+": bom para colher para comer fresco; o que é para guardar, a tradição prefere colher em minguante."],
     tips:"<b>Atenção:</b> os meses são um intervalo geral; a época certa depende da variedade (precoce, média ou tardia). <b>Dica:</b> colha de manhã e com tempo seco. Fruta e tubérculos para guardar não devem ter pancadas nem terra húmida."}
 };
+const SING={plantas:"planta",culturas:"cultura",medidas:"medida"};
+const cntTxt=(k,n)=>n+" "+(n===1?(SING[CAT[k].u]||CAT[k].u):CAT[k].u);
 const TIPO={r:["raiz","ming"],f:["folha/fruto","cresc"],a:["árvore","ming"]};
 const TIPOINT={fitofarmaco:"Se houver risco",cultural:"Medida cultural",monitorizacao:"Vigiar"};
 const KEYMET={sem:"sementeira",estacas:"estacas",enx:"enxertia",alp:"alporquia"};
@@ -242,13 +270,14 @@ const avisos=(p,k)=>[p.legal&&(!p.legal_botoes||p.legal_botoes.includes(k))?p.le
 const nm=(p,k,m)=>p.notas&&p.notas[k]&&p.notas[k][String(m)];
 const junta=(...t)=>[...new Set(t.filter(Boolean).map(x=>x.trim()))].join(" ");
 function lista(k,m){
-  const P=DB.plantas, out=[];
+  const P=soMinhas?DB.plantas.filter(p=>minhas.has(p.id)):DB.plantas, out=[];
   const it=(nome,nota,extra)=>out.push({nome,nota,...extra});
   const geadaNota=(p)=>p.geada&&(m===3||m===4)?" Em Sardoura, só depois de meados de abril e em leira abrigada.":"";
   if(k==="podas"){
     for(const p of P){if(p.poda&&p.poda.some(e=>e.meses.includes(m))) it(p.nome,nm(p,"podas",m)||p.poda.filter(e=>e.meses.includes(m)).map(e=>e.tipo+".").join(" "),{p})}
   }else if(k==="trat"){
     for(const t of DB.tratamentos){
+      if(soMinhas&&!t.especies.some(e=>minhas.has(e)))continue;
       const iv=t.intervencoes.filter(i=>i.meses.includes(m));
       for(const i of iv) it(t.grupo,i.texto,{tag:TIPOINT[i.tipo]||"Intervir",hot:i.tipo==="fitofarmaco",ordem:i.tipo==="monitorizacao"?0:i.tipo==="cultural"?1:2});
       if(t.vigiar.includes(m)&&!iv.some(i=>i.tipo==="monitorizacao")) it(t.grupo, t.problemas+".",{tag:"Vigiar",ordem:0});
@@ -309,6 +338,8 @@ function contar(k,m){const l=lista(k,m);return l.reduce((n,i)=>n+(i.grupo?i.nota
 /* ---------- Estado e desenho ---------- */
 let day=new Date(); day.setHours(12,0,0,0);
 let cur="podas";
+let minhas=new Set();try{minhas=new Set(JSON.parse(localStorage.getItem("minhas-plantas")||"[]"))}catch(e){}
+let soMinhas=false;try{soMinhas=localStorage.getItem("so-minhas")==="1"}catch(e){}
 try{const s=localStorage.getItem("agenda-cat"); if(s&&CAT[s]) cur=s}catch(e){}
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -322,7 +353,7 @@ function render(){
   $("pick").value=iso(day);
   $("moon").innerHTML=moonSVG(a)+`<div><b>${p.n}</b><span>${MOON_TXT[p.k]}</span></div>`;
   if(!DB){$("panel").innerHTML=`<div class="panel-head"><h2>A carregar…</h2><p>A abrir a base de dados das plantas.</p></div>`;return}
-  document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);b.querySelector(".cnt").textContent=contar(k,m)+" "+CAT[k].u});
+  document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);b.querySelector(".cnt").textContent=cntTxt(k,contar(k,m))});
   const c=CAT[cur],items=lista(cur,m);
   const acompanhamento=cur==="alp"&&items.length>0&&items.every(i=>i.tarefa);
   const [vk,vt]=c.v(p);
@@ -335,18 +366,19 @@ function render(){
     const av=i.p?avisos(i.p,cur).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
     const nomeHTML=i.p&&!i.grupo?`<button type="button" class="ficha-btn it-name" data-id="${esc(i.p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(i.nome)}${sci}</span></button>`:`<span class="it-name">${esc(i.nome)}${sci}</span>`;
     return `<li${i.grupo?' class="grp"':""}><div class="it-top">${nomeHTML}${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
-  }).join("")||`<li><span class="it-note">Nada previsto para este mês.</span></li>`;
+  }).join("")||`<li><span class="it-note">${soMinhas?"Nenhuma das suas plantas tem esta operação neste mês.":"Nada previsto para este mês."}</span></li>`;
   let extra="";
   if(cur==="estacas"){const n=DB.plantas.filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
   $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${acompanhamento?"Acompanhamento de alporques":c.sub} em ${MESES[day.getMonth()]}</p></div>
     ${acompanhamento?"":`<div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>`}
+    ${soMinhas?`<div class="filtro-aviso">A mostrar só as suas ${minhas.size} plantas. <a href="#" id="tirarFiltro">Mostrar todas</a></div>`:""}
     <ul class="items">${li}</ul>${acompanhamento?"":`<div class="tips">${c.tips}${extra}</div>`}`;
 }
 /* ---------- Ficha da planta (ao tocar no nome) ---------- */
 const CAMPOS=[["exposicao","Exposição"],["solo","Solo"],["rega","Rega"],["adubacao","Adubação"],["floracao","Floração"],["resistencia_geada","Geada"]];
 function fichaHTML(p){
   const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("");
-  return `<div class="ficha" id="ficha-${esc(p.id)}"><div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
+  return `<div class="ficha" id="ficha-${esc(p.id)}">${botaoMinha(p)}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
 }
 const fotoCache={};
 function titulosFoto(p){
@@ -375,13 +407,60 @@ async function mostrarFoto(p,box){
   box.innerHTML=`<img src="${esc(f.src)}" alt="${esc(p.nome)}" loading="lazy"><span class="credito">Foto: <a href="${esc(f.url)}" target="_blank" rel="noopener">Wikipédia · ${esc(f.titulo)}</a></span>`;
   const img=box.querySelector("img");img.onerror=()=>{box.hidden=true};box.hidden=false;
 }
-$("panel").addEventListener("click",e=>{
+document.addEventListener("click",e=>{
   const b=e.target.closest(".ficha-btn");if(!b||!DB)return;
   const li=b.closest("li"),aberta=li.querySelector(".ficha");
   if(aberta){aberta.remove();b.setAttribute("aria-expanded","false");return}
   const p=DB.plantas.find(x=>x.id===b.dataset.id);if(!p)return;
   li.insertAdjacentHTML("beforeend",fichaHTML(p));b.setAttribute("aria-expanded","true");
   mostrarFoto(p,li.querySelector(".ficha .foto"));
+});
+/* ---------- As minhas plantas e pesquisa ---------- */
+const semAc=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+function guardarMinhas(){try{localStorage.setItem("minhas-plantas",JSON.stringify([...minhas]))}catch(e){}}
+function botaoMinha(p){const t=minhas.has(p.id);return `<button type="button" class="minha-btn" data-minha="${esc(p.id)}" aria-pressed="${t}">${t?"★ Nas minhas plantas":"☆ Adicionar às minhas plantas"}</button>`}
+function atualizarContagens(){if(!DB)return;const m=day.getMonth()+1;document.querySelectorAll(".cat").forEach(x=>x.querySelector(".cnt").textContent=cntTxt(x.dataset.k,contar(x.dataset.k,m)))}
+function atualizarMinhasUI(){
+  $("verMinhas").textContent="★ As minhas plantas ("+minhas.size+")";
+  const cb=$("soMinhas");
+  if(minhas.size===0&&soMinhas){soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(e){}}
+  cb.disabled=minhas.size===0;cb.checked=soMinhas;$("filtroLbl").classList.toggle("off",minhas.size===0);
+  $("filtroLbl").title=minhas.size?"":"Marque primeiro algumas plantas como suas";
+  document.querySelectorAll("[data-minha]").forEach(b=>{const t=minhas.has(b.dataset.minha);b.setAttribute("aria-pressed",t);
+    if(b.classList.contains("estrela")){b.textContent=t?"★":"☆";b.setAttribute("aria-label",(t?"Tirar das":"Pôr nas")+" minhas plantas")}
+    else b.textContent=t?"★ Nas minhas plantas":"☆ Adicionar às minhas plantas"});
+}
+function linhaPlanta(p){
+  const t=minhas.has(p.id);
+  return `<li><div class="it-top"><button type="button" class="ficha-btn it-name" data-id="${esc(p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(p.nome)}<i class="sci">${esc(p.nome_cientifico)}</i></span></button><button type="button" class="estrela" data-minha="${esc(p.id)}" aria-pressed="${t}" aria-label="${t?"Tirar das":"Pôr nas"} minhas plantas">${t?"★":"☆"}</button></div></li>`;
+}
+let modoRes="";
+function mostrarResultados(){
+  const box=$("resultados"),q=semAc($("procura").value.trim());
+  if(!DB){box.hidden=true;return}
+  let res=[],info="";
+  if(q){
+    res=DB.plantas.filter(p=>semAc(p.nome).includes(q)||semAc(p.nome_cientifico).includes(q));
+    res.sort((a,b)=>(semAc(a.nome).startsWith(q)?0:1)-(semAc(b.nome).startsWith(q)?0:1)||a.nome.localeCompare(b.nome,"pt"));
+    info=res.length?res.length+(res.length===1?" planta encontrada":" plantas encontradas")+". Toque no nome para ver a ficha; ☆ marca como sua.":"Nenhuma planta com esse nome na base de dados.";
+    modoRes="procura";$("verMinhas").setAttribute("aria-expanded","false");
+  }else if(modoRes==="minhas"){
+    res=DB.plantas.filter(p=>minhas.has(p.id)).sort((a,b)=>a.nome.localeCompare(b.nome,"pt"));
+    info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
+  }else{box.hidden=true;box.innerHTML="";return}
+  box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.slice(0,40).map(linhaPlanta).join("")}</ul>`:""}`;
+  box.hidden=false;
+}
+$("procura").addEventListener("input",()=>{if(!$("procura").value.trim()&&modoRes==="procura")modoRes="";mostrarResultados()});
+$("verMinhas").addEventListener("click",()=>{const abrir=modoRes!=="minhas"||!!$("procura").value.trim();$("procura").value="";modoRes=abrir?"minhas":"";$("verMinhas").setAttribute("aria-expanded",abrir);mostrarResultados()});
+$("soMinhas").addEventListener("change",e=>{soMinhas=e.target.checked;try{localStorage.setItem("so-minhas",soMinhas?"1":"0")}catch(_){}render()});
+document.addEventListener("click",e=>{
+  if(e.target.closest("#tirarFiltro")){e.preventDefault();soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(_){}atualizarMinhasUI();render();return}
+  const b=e.target.closest("[data-minha]");if(!b)return;
+  const id=b.dataset.minha;if(minhas.has(id))minhas.delete(id);else minhas.add(id);
+  guardarMinhas();atualizarMinhasUI();
+  if(soMinhas)render();else atualizarContagens();
+  if(modoRes==="minhas"&&b.classList.contains("estrela")&&!minhas.has(id))mostrarResultados();
 });
 document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
 $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
@@ -391,7 +470,7 @@ $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
 render();
 Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()})))
-  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};render()})
+  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};minhas=new Set([...minhas].filter(id=>DB.plantas.some(p=>p.id===id)));atualizarMinhasUI();render();mostrarResultados()})
   .catch(()=>{$("panel").innerHTML=`<div class="panel-head"><h2>Sem dados</h2><p>Não foi possível abrir a base de dados das plantas. Ligue-se à internet e abra a app outra vez.</p></div>`});
 </script>
 <div id="instalar" hidden><span id="instTxt">Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar" hidden>Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>

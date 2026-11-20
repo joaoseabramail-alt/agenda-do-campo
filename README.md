@@ -16,3 +16,6 @@ A app gera o calendário de cada dia a partir de três ficheiros. Para mudar a i
 - `calendario.json` — tarefas gerais que não são de uma espécie (colher garfos, preparar material, etc.).
 
 Os meses são números de 1 (janeiro) a 12 (dezembro).
+
+## As minhas plantas
+Na caixa de pesquisa, procure uma planta pelo nome comum ou científico e toque em ☆ para a marcar como sua (também pode fazê-lo na ficha que abre ao tocar no nome de uma planta em qualquer botão). Ative **Só as minhas plantas** para que todos os botões mostrem apenas as suas plantas e os tratamentos que lhes dizem respeito. A lista fica guardada no telemóvel (não passa automaticamente para outros aparelhos).
