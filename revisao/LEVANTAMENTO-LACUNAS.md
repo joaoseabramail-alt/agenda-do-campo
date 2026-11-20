@@ -4,18 +4,31 @@ Base: commit seguinte a `6263ae1`, 20/11/2026. **Levantamento sem alterar dados.
 
 ## 1. Estado da informação
 
-| Estado | Espécies | Onde está a prova |
+*Corrigido depois da revisão do ChatGPT. A revisão documental e a adaptação local passam a ser duas coisas separadas.*
+
+### Revisão documental
+
+| Situação | Espécies | Prova |
 |---|---|---|
-| **Revistas com fontes guardadas no repositório** | 12 florestais: pinheiro-manso, pinheiro-bravo, choupo-negro, choupo-branco, choupo-tremedor, carvalho-cerquinho, azinheira, tramazeira, sorveira, teixo, ulmeiro, pereira-brava | `revisao/FLORESTAIS-e729811.md` (22 ligações) |
-| **Revistas com fontes, mas as fontes não ficaram guardadas** | 5 espécies novas (jacarandá, mélia, magnólia-pepino, cipreste-de-Monterey, cladrástis), no commit `aef27b6` | Só a mensagem do commit. Os relatórios ficaram na conversa e não no repositório. |
-| **Revistas só em parte, com fontes não guardadas** | 23 fichas (commit `7a020da`) | Só os aspetos legais e de propagação, por exemplo o estatuto da lantana, a filoxera da videira e os citrinos nucelares. As podas, os tratamentos e os meses não foram revistos aí. |
-| **Calendário com adaptação explícita a Sardoura** | 11 com `nota_sardoura` (amendoeira, castanheiro, nespereira, pistacheiro, jacarandá, cipreste, 3 choupos, azinheira, pinheiro-bravo) e 21 com `geada` (aviso de geada tardia) | Campos dos dados |
-| **Calendário geral do Norte litoral, sem confirmação local** | Todas as outras espécies (cerca de 115) | Os meses vêm de calendários gerais. Ninguém os confirmou para Sardoura. |
+| **Documentação no repositório, com limitações declaradas** | 12 florestais: pinheiro-manso, pinheiro-bravo, choupo-negro, choupo-branco, choupo-tremedor, carvalho-cerquinho, azinheira, tramazeira, sorveira, teixo, ulmeiro e pereira-brava | `revisao/FLORESTAIS-e729811.md`. O próprio relatório diz que «não certifica individualmente todos os campos herdados» (rega, adubação, rusticidade e taxas de sucesso). **Não estão integralmente confirmadas.** |
+| **Revisão anterior registada; documentação não recuperada** | 5 espécies novas (`aef27b6`) e 23 fichas (`7a020da`, só nos aspetos legais e de propagação) | Só as mensagens dos commits. Nem o ChatGPT nem o Claude conseguiram recuperar as fontes. Uma pesquisa nova fica registada como revisão nova. |
+| **Sem revisão documental registada** | As restantes 109 | — |
 | **Suspenso** | Sementeira da pereira-brava | Nota «Calendário suspenso nesta revisão» |
 
-As revisões gerais (as rondas 2 a 8) alteraram textos das 149 espécies. Quase todas as alterações foram de redação e coerência: avisos, notas escondidas e o tipo de intervenção. Não permitem dizer que os meses de cada espécie foram confirmados.
+Estas três revisões estão agora registadas em `revisoes_anteriores`, em 40 espécies, com o âmbito de cada uma e o estado da documentação. Nenhum campo tem ainda registo de `revisao`, por isso todos contam como `nao_revisto`.
 
-**Nenhum dado tem fonte nem data de revisão.** Não existe campo para isso em `plantas.json` nem em `tratamentos.json`. Nenhum dos 58 grupos de tratamentos tem uma fonte ou uma ligação.
+### Adaptação local (Sardoura)
+
+| Situação | Espécies |
+|---|---|
+| Com `nota_sardoura` | 11 |
+| Com `geada` (aviso de geada tardia em março e abril) | 21 |
+| Com as duas | 1 (jacarandá) |
+| **Sem adaptação local documentada** | **118** |
+
+**Ter `nota_sardoura` ou `geada` não demonstra que os meses foram validados localmente.** Das 11 notas, só cinco tratam da localização da planta: amendoeira, nespereira, pistacheiro, jacarandá e azinheira. As outras seis tratam de raízes (os 3 choupos), de risco de incêndio (pinheiro-bravo), do porta-enxerto (castanheiro) e de doença (cipreste). O aviso `geada` é uma regra geral da app e não uma validação de meses.
+
+Também não está provado de onde vêm os meses das 118 espécies («calendário geral do Norte litoral» era uma suposição). Ficam como «sem adaptação local documentada».
 
 ## 2. Textos genéricos, que não são errados mas são pouco específicos
 
@@ -45,19 +58,18 @@ Há também cerca de 30 textos que pedem ao utilizador para «confirmar», por e
 3. **Plantação de raiz nua e enxertia de fenda.** Dependem da geada local e do estado dos garfos.
 4. **Sementeiras de inverno da horta.** O risco é baixo, mas são muitas.
 
-## 4. Proposta de registo de fontes (por decidir, ainda não implementada)
+## 4. Registo de fontes
 
-Um campo opcional por espécie, com o estado por operação:
+O formato ficou definido em `ESQUEMA.md` («Registo de revisão»), seguindo a revisão do ChatGPT:
+- há cinco estados: `nao_revisto`, `parcial`, `confirmado`, `provisorio` e `suspenso`;
+- a adaptação local (`adaptacao_local`) é um atributo separado;
+- o alcance diz o que foi verificado e o que está por rever;
+- cada fonte tem secção, data de consulta e os aspetos que sustenta;
+- a data da revisão é separada da data de consulta;
+- nos tratamentos, a revisão faz-se por intervenção;
+- se não houver registo, o campo conta como `nao_revisto`.
 
-```json
-"revisao": {
-  "podas":  {"estado": "confirmado", "data": "2026-11-20", "fontes": ["…"]},
-  "plantar":{"estado": "adaptado",   "data": "2026-11-20", "fontes": ["…"], "nota": "atrasado 2 semanas em fundos de vale"},
-  "enx":    {"estado": "provisorio"}
-}
-```
-
-O `estado` pode ser `confirmado`, `adaptado` (confirmado e ajustado a Sardoura), `provisorio` ou `suspenso`. Nos tratamentos seria o mesmo campo, por grupo. O `verificar.js` passaria a contar o estado e a avisar quando uma fonte tem mais de N anos. A app mostraria, se se quiser, «revisto em …» na ficha.
+O `verificar.js` valida o formato: deteta estados, datas, fontes e alcances inválidos, e campos ou ficheiros que não existem. Foi testado com 15 erros de propósito, e todos foram detetados. `node verificar.js --revisao` mostra a contagem. Uma fonte antiga não gera aviso automático.
 
 ## 5. Próximo passo
 

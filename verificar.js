@@ -56,6 +56,69 @@ for(const p of P){
     }
   }
 }
+
+// ---------- Registo de revisão (ver ESQUEMA.md) ----------
+const ESTADOS=['nao_revisto','parcial','confirmado','provisorio','suspenso'];
+const ASPETOS=['meses','tecnica','dificuldade','texto','estatuto','identificacao','produto'];
+const ALVOS=['poda','plantacao','sementeira','colheita','divisao','recolha_sementes','legal','toxicidade','autoctone','invasora','exposicao','solo','rega','adubacao','floracao','resistencia_geada','nota_sardoura','propagacao.estacas','propagacao.enxertia','propagacao.sementeira','propagacao.alporquia'];
+const hoje=new Date().toISOString().slice(0,10);
+const dataOk=d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&!isNaN(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d;
+const contagem={};
+function verRevisao(r,o){
+  if(!r||typeof r!=='object'||Array.isArray(r))return erros.push(o+': registo de revisão inválido');
+  for(const k of Object.keys(r))if(!['estado','data_revisao','alcance','fontes','adaptacao_local','nota'].includes(k))erros.push(o+': chave desconhecida "'+k+'"');
+  if(!ESTADOS.includes(r.estado))return erros.push(o+': estado inválido '+JSON.stringify(r.estado));
+  contagem[r.estado]=(contagem[r.estado]||0)+1;
+  if(r.estado!=='nao_revisto'&&!dataOk(r.data_revisao))erros.push(o+': data_revisao em falta ou inválida');
+  if(r.data_revisao!==undefined&&dataOk(r.data_revisao)&&r.data_revisao>hoje)erros.push(o+': data_revisao no futuro');
+  const al=r.alcance||{},ver=al.verificado||[],por=al.por_rever||[];
+  for(const [n,l] of [['verificado',ver],['por_rever',por]]){if(!Array.isArray(l)||l.some(x=>!ASPETOS.includes(x)))erros.push(o+': alcance.'+n+' com aspeto desconhecido '+JSON.stringify(l))}
+  if(Array.isArray(ver)&&Array.isArray(por)&&ver.some(x=>por.includes(x)))erros.push(o+': o mesmo aspeto está verificado e por rever');
+  const F=r.fontes||[];
+  if(!Array.isArray(F))erros.push(o+': fontes deve ser uma lista');
+  else for(const [i,f] of F.entries()){const of=o+' fonte '+(i+1);
+    for(const k of Object.keys(f||{}))if(!['titulo','url','seccao','consultado','sustenta'].includes(k))erros.push(of+': chave desconhecida "'+k+'"');
+    if(!f||!f.titulo)erros.push(of+': falta titulo');
+    if(f&&f.url!==undefined&&!/^https?:\/\/\S+$/.test(f.url))erros.push(of+': url inválido');
+    if(!f||!dataOk(f.consultado))erros.push(of+': consultado em falta ou inválido');
+    else{if(f.consultado>hoje)erros.push(of+': consultado no futuro');if(dataOk(r.data_revisao)&&f.consultado>r.data_revisao)erros.push(of+': consultado depois da data_revisao')}
+    if(f&&f.sustenta!==undefined&&(!Array.isArray(f.sustenta)||f.sustenta.some(x=>!ver.includes(x))))erros.push(of+': sustenta aspetos que não estão em alcance.verificado');
+  }
+  if(['parcial','confirmado'].includes(r.estado)){if(!F.length)erros.push(o+': '+r.estado+' sem fontes');if(!ver.length)erros.push(o+': '+r.estado+' sem alcance.verificado')}
+  if(r.estado==='parcial'&&!por.length)erros.push(o+': parcial sem alcance.por_rever');
+  if(r.estado==='confirmado'&&por.length)erros.push(o+': confirmado mas com aspetos por rever');
+  if(['provisorio','suspenso'].includes(r.estado)&&!r.nota)erros.push(o+': '+r.estado+' sem nota');
+  if(r.adaptacao_local!==undefined){const a=r.adaptacao_local;if(!a||!['documentada','provisoria'].includes(a.estado)||!a.nota)erros.push(o+': adaptacao_local precisa de estado (documentada/provisoria) e nota')}
+}
+const obter=(p,c)=>c.split('.').reduce((x,k)=>x==null?undefined:x[k],p);
+for(const p of P){
+  if(p.revisao!==undefined){
+    if(!p.revisao||typeof p.revisao!=='object'||Array.isArray(p.revisao))erros.push(p.id+': revisao deve ser um objeto');
+    else for(const [c,r] of Object.entries(p.revisao)){
+      if(!ALVOS.includes(c))erros.push(p.id+': revisao de campo desconhecido "'+c+'"');
+      else if(obter(p,c)===undefined)erros.push(p.id+': revisao de "'+c+'", que não existe nesta ficha');
+      verRevisao(r,p.id+'.revisao.'+c);
+    }
+  }
+  for(const [i,h] of (p.revisoes_anteriores||[]).entries()){const o=p.id+'.revisoes_anteriores['+i+']';
+    if(!/^[0-9a-f]{7,40}$/.test(h.commit||''))erros.push(o+': commit inválido');
+    if(!h.ambito)erros.push(o+': falta ambito');
+    if(!['no_repositorio','nao_recuperada'].includes(h.documentacao))erros.push(o+': documentacao inválida');
+    if(h.documentacao==='no_repositorio'&&!(h.ficheiro&&fs.existsSync(__dirname+'/'+h.ficheiro)))erros.push(o+': ficheiro em falta '+h.ficheiro);
+  }
+}
+for(const t of T){
+  if(t.revisao!==undefined)verRevisao(t.revisao,'tratamento '+t.grupo+'.revisao');
+  for(const [i,iv] of t.intervencoes.entries())if(iv.revisao!==undefined)verRevisao(iv.revisao,'tratamento '+t.grupo+' intervenção '+(i+1));
+}
+if(process.argv.includes('--revisao')){
+  const nP=P.length;
+  console.log('Registos de revisão por estado:',JSON.stringify(contagem),'(campos sem registo contam como nao_revisto)');
+  console.log('Espécies com algum registo:',P.filter(p=>p.revisao).length+'/'+nP,'| com revisões anteriores:',P.filter(p=>(p.revisoes_anteriores||[]).length).length+'/'+nP,
+    '| intervenções com registo:',T.reduce((n,t)=>n+t.intervencoes.filter(i=>i.revisao).length,0)+'/'+T.reduce((n,t)=>n+t.intervencoes.length,0));
+  const hist={};for(const p of P)for(const h of p.revisoes_anteriores||[])(hist[h.commit+' ('+h.documentacao+')']??=[]).push(p.id);
+  for(const [k,v] of Object.entries(hist))console.log('  '+k+': '+v.length+' espécies');
+}
 if(escondidas.length)avisos.push(escondidas.length+' notas não aparecem na app (ver lista com: node verificar.js --escondidas)');
 if(process.argv.includes('--escondidas'))for(const note of escondidas)console.log(note);
 console.log(P.length+' espécies, '+T.length+' grupos de tratamentos, '+C.length+' tarefas');

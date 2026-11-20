@@ -95,6 +95,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -193,6 +200,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -569,6 +583,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -678,7 +699,14 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar."
+   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar.",
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: sementeira (citrinos nucelares). As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "id": "limoeiro",
@@ -794,7 +822,14 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar."
+   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar.",
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: sementeira (citrinos nucelares). As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "id": "tangerineira",
@@ -902,7 +937,14 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar."
+   "nota_variedade": "Algumas variedades dão plântulas geneticamente iguais à planta-mãe a partir de embriões nucelares, mas também podem surgir plântulas de origem sexual. Para conservar a variedade e beneficiar de um porta-enxerto adequado, use material são para enxertar.",
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: sementeira (citrinos nucelares). As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "id": "damasqueiro",
@@ -990,6 +1032,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -1367,6 +1416,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -2036,6 +2092,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -2129,6 +2192,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -2725,6 +2795,13 @@
    "nota_variedade": "Para conservar a variedade de um morangueiro existente, enraíze estolhos de plantas sãs. Para semear, use sementes de uma variedade vendida para esse fim.",
    "metodo_recomendado": [
     "divisao"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: propagação por estolhos. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -2817,7 +2894,14 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Use um porta-enxerto resistente à filoxera e adequado ao terreno."
+   "nota_variedade": "Use um porta-enxerto resistente à filoxera e adequado ao terreno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: propagação (pé-franco e filoxera). As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "id": "videira",
@@ -2924,7 +3008,14 @@
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "Use um porta-enxerto resistente à filoxera e adequado ao terreno."
+   "nota_variedade": "Use um porta-enxerto resistente à filoxera e adequado ao terreno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: propagação (pé-franco e filoxera). As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "id": "alecrim",
@@ -3785,6 +3876,13 @@
     "enx",
     "alp",
     "div"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -4015,7 +4113,14 @@
     10,
     11
    ],
-   "notas": {}
+   "notas": {},
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: aspetos não especificados na mensagem do commit. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "id": "carvalho_negral",
@@ -4251,6 +4356,13 @@
    },
    "metodo_recomendado": [
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: aspetos não especificados na mensagem do commit. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -5054,6 +5166,14 @@
    "legal_botoes": [
     "podas",
     "plantar"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
    ]
   },
   {
@@ -5330,6 +5450,13 @@
    "legal_botoes": [
     "podas",
     "plantar"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -5771,6 +5898,13 @@
     "enx",
     "alp",
     "div"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -6214,6 +6348,13 @@
       11
      ]
     }
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: mergulhia. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -6458,6 +6599,13 @@
     "divisao",
     "estacas",
     "enxertia"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: mergulhia. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -6898,6 +7046,13 @@
     "enx",
     "alp",
     "div"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -7420,6 +7575,13 @@
     "enx",
     "alp",
     "div"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
    ]
   },
   {
@@ -9542,7 +9704,14 @@
     "alp",
     "div"
    ],
-   "foto": "Planta suculenta"
+   "foto": "Planta suculenta",
+   "revisoes_anteriores": [
+    {
+     "commit": "7a020da",
+     "ambito": "Auditoria documental de 23 fichas: aspetos não especificados na mensagem do commit. As podas, os tratamentos e os meses não foram revistos.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9600,7 +9769,14 @@
      "4": "Prefira maio. Em abril, plante apenas num local abrigado, depois de passar o risco de geada e com previsão favorável.",
      "5": "Plante quando já tiver passado o risco de geada na parcela."
     }
-   }
+   },
+   "revisoes_anteriores": [
+    {
+     "commit": "aef27b6",
+     "ambito": "Revisão das 5 espécies novas: sementeira em abrigo aquecido e plantação de preferência em maio; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9658,7 +9834,14 @@
    "floracao": "Cachos lilás perfumados na primavera.",
    "solo": "Tolera solos pobres; prefere solo bem drenado.",
    "resistencia_geada": "Proteja exemplares jovens da geada. Escolha um local abrigado.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "aef27b6",
+     "ambito": "Revisão das 5 espécies novas: estatuto legal (DL 92/2019), aviso de dispersão e plantação depois das geadas; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9729,7 +9912,14 @@
    "floracao": "Flores verde-amareladas, discretas, no fim da primavera, depois das folhas.",
    "solo": "Solo profundo, fértil e fresco, de ácido a neutro, bem drenado.",
    "resistencia_geada": "Árvore rústica quando estabelecida. Geadas tardias podem danificar os botões florais.",
-   "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço."
+   "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço.",
+   "revisoes_anteriores": [
+    {
+     "commit": "aef27b6",
+     "ambito": "Revisão das 5 espécies novas: aspetos não especificados na mensagem do commit; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9789,7 +9979,14 @@
    "solo": "Solo bem drenado, mesmo arenoso; tolera vento e ar marítimo.",
    "resistencia_geada": "Tolera geadas moderadas; geadas fortes e vento frio podem queimar a folhagem.",
    "exposicao": "Sol pleno.",
-   "nota_sardoura": "O cancro do cipreste é mais preocupante em locais quentes e secos do interior. Evite parcelas muito secas e regue durante a instalação."
+   "nota_sardoura": "O cancro do cipreste é mais preocupante em locais quentes e secos do interior. Evite parcelas muito secas e regue durante a instalação.",
+   "revisoes_anteriores": [
+    {
+     "commit": "aef27b6",
+     "ambito": "Revisão das 5 espécies novas: estacas no fim do verão e vigilância do cancro; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9847,7 +10044,14 @@
    "floracao": "Cachos brancos perfumados no fim da primavera; floresce melhor em anos alternados.",
    "solo": "Solo fértil e bem drenado; tolera solo ácido ou calcário.",
    "resistencia_geada": "Muito rústica.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "aef27b6",
+     "ambito": "Revisão das 5 espécies novas: aspetos não especificados na mensagem do commit; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "documentacao": "nao_recuperada"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9908,7 +10112,15 @@
    "floracao": "Amentilhos no fim do inverno ou início da primavera, antes das folhas; há árvores masculinas e femininas.",
    "solo": "Solo fresco a húmido, profundo; adequado a margens de rios e terrenos baixos.",
    "resistencia_geada": "Muito rústico.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -9975,7 +10187,15 @@
    "floracao": "Amentilhos no fim do inverno ou início da primavera, antes das folhas.",
    "solo": "Solo fresco a húmido; tolera solos arenosos e alguma salinidade.",
    "resistencia_geada": "Muito rústico.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10042,7 +10262,15 @@
    "floracao": "Amentilhos no fim do inverno, antes das folhas.",
    "solo": "Solo fresco e bem drenado; prefere locais frescos.",
    "resistencia_geada": "Muito rústico.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10101,7 +10329,15 @@
    "floracao": "Amentilhos na primavera, com a saída das folhas.",
    "solo": "Indiferente ao tipo de substrato; escolha solo com drenagem e humidade suficientes para a instalação. Evite encharcamento.",
    "resistencia_geada": "Rústico.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10169,7 +10405,15 @@
    "floracao": "Amentilhos na primavera.",
    "solo": "Solo bem drenado, mesmo pobre ou pedregoso; não tolera encharcamento.",
    "resistencia_geada": "Rústica quando estabelecida.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10241,7 +10485,15 @@
    "floracao": "Corimbos de flores brancas no fim da primavera; frutos vermelhos no fim do verão, muito procurados pelas aves.",
    "solo": "Solo fresco, de preferência ácido, bem drenado.",
    "resistencia_geada": "Muito rústica.",
-   "exposicao": "Sol ou meia-sombra."
+   "exposicao": "Sol ou meia-sombra.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10313,7 +10565,15 @@
    "solo": "Solo bem drenado; tolera solos argilosos e calcários.",
    "resistencia_geada": "Rústica.",
    "exposicao": "Sol ou meia-sombra.",
-   "nota_variedade": "Esta ficha refere-se a Sorbus torminalis (mostajeiro-das-cólicas), não a Sorbus domestica, também chamada sorveira."
+   "nota_variedade": "Esta ficha refere-se a Sorbus torminalis (mostajeiro-das-cólicas), não a Sorbus domestica, também chamada sorveira.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10372,7 +10632,15 @@
    "solo": "Solo bem drenado, de ácido a calcário; não tolera encharcamento.",
    "resistencia_geada": "Muito rústico.",
    "exposicao": "Sol a sombra; cresce devagar.",
-   "legal": "Os exemplares espontâneos são objeto de medidas de proteção específica nos PROF, incluindo o Centro Litoral (Portaria n.º 56/2019, anexo A, art. 8.º) e Entre Douro e Minho (Portaria n.º 58/2019, anexo A, art. 8.º), nas redações atuais. Antes de cortar, podar ou recolher material em populações silvestres, confirme com o ICNF as regras do local. Os teixedos mediterrânicos constituem o habitat prioritário 9580* do DL n.º 140/99. Um teixo ornamental plantado não fica, só pela espécie, sujeito ao regime da azinheira; podem aplicar-se proteção de exemplares classificados e regras locais."
+   "legal": "Os exemplares espontâneos são objeto de medidas de proteção específica nos PROF, incluindo o Centro Litoral (Portaria n.º 56/2019, anexo A, art. 8.º) e Entre Douro e Minho (Portaria n.º 58/2019, anexo A, art. 8.º), nas redações atuais. Antes de cortar, podar ou recolher material em populações silvestres, confirme com o ICNF as regras do local. Os teixedos mediterrânicos constituem o habitat prioritário 9580* do DL n.º 140/99. Um teixo ornamental plantado não fica, só pela espécie, sujeito ao regime da azinheira; podem aplicar-se proteção de exemplares classificados e regras locais.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10437,7 +10705,15 @@
    "floracao": "Flores discretas no fim do inverno, antes das folhas.",
    "solo": "Solo fértil e fresco; tolera vários tipos de solo.",
    "resistencia_geada": "Muito rústico.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10502,6 +10778,14 @@
    ],
    "metodo_recomendado": [
     "divisao"
+   ],
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
    ]
   },
   {
@@ -10570,7 +10854,15 @@
    "floracao": "Pinhas masculinas na primavera; não tem flores verdadeiras.",
    "solo": "Solo arenoso ou pobre, ácido e bem drenado.",
    "resistencia_geada": "Rústico.",
-   "exposicao": "Sol pleno."
+   "exposicao": "Sol pleno.",
+   "revisoes_anteriores": [
+    {
+     "commit": "8edfc8d",
+     "ambito": "Revisão das espécies florestais: identidade, estatuto legal e pontos corrigidos no relatório. Não certifica a rega, a adubação, a rusticidade nem as taxas de sucesso herdadas.",
+     "documentacao": "no_repositorio",
+     "ficheiro": "revisao/FLORESTAIS-e729811.md"
+    }
+   ]
   }
  ]
 }

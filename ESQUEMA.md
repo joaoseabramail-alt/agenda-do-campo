@@ -50,3 +50,62 @@ Criado pelo botão **Exportar as minhas plantas**:
 ```
 
 `plantas` são os `id` de `plantas.json` e é o único campo usado na importação (`nomes` serve só para ler o ficheiro). A importação recusa o ficheiro, sem alterar a lista, se não for JSON, se `formato` for diferente, se `versao` não for um inteiro entre 1 e a versão atual, ou se `plantas` não for uma lista de textos. Identificadores que não existem em `plantas.json` são ignorados e contados. **Os `id` das espécies são permanentes: não se mudam nem se reutilizam.** Se um dia for mesmo preciso mudar um, cria-se nessa altura uma correspondência antigo → novo, aplicada ao armazenamento do telemóvel e à importação. Os `id` guardados no telemóvel que a versão atual não conhece são mantidos e exportados (não aparecem nem contam); os desconhecidos de um ficheiro importado são ignorados.
+
+## Registo de revisão (`revisao` e `revisoes_anteriores`)
+
+Campos opcionais. **Se não houver `revisao` para um campo, esse campo conta como `nao_revisto`.** Não se preenchem fichas só para as marcar.
+
+### Em `plantas[]`
+
+```json
+"revisao": {
+  "poda": {
+    "estado": "parcial",
+    "data_revisao": "2026-11-20",
+    "alcance": {"verificado": ["tecnica"], "por_rever": ["meses"]},
+    "fontes": [{"titulo": "…", "url": "https://…", "seccao": "p. 12", "consultado": "2026-11-20", "sustenta": ["tecnica"]}],
+    "adaptacao_local": {"estado": "provisoria", "nota": "atrasar 2 semanas em fundos de vale"},
+    "nota": "…"
+  },
+  "propagacao.enxertia": {"estado": "provisorio", "data_revisao": "2026-11-20", "nota": "…"}
+},
+"revisoes_anteriores": [
+  {"commit": "aef27b6", "ambito": "…", "documentacao": "nao_recuperada"}
+]
+```
+
+- **A chave** é o nome de um campo que existe na ficha: `poda`, `plantacao`, `sementeira`, `colheita`, `divisao`, `recolha_sementes`, `legal`, `toxicidade`, `autoctone`, `invasora`, `exposicao`, `solo`, `rega`, `adubacao`, `floracao`, `resistencia_geada` ou `nota_sardoura`. Para a propagação usa-se `propagacao.estacas`, `propagacao.enxertia`, `propagacao.sementeira` ou `propagacao.alporquia`.
+- **`estado`** pode ser:
+
+  | Estado | Significado |
+  |---|---|
+  | `nao_revisto` | Ainda não foi verificado em documentação. |
+  | `parcial` | Só alguns aspetos foram verificados, indicados em `alcance`. |
+  | `confirmado` | As fontes sustentam os aspetos indicados. |
+  | `provisorio` | Informação com reservas ou extrapolação explicada em `nota`. |
+  | `suspenso` | Recomendação retirada enquanto se resolve uma dúvida, explicada em `nota`. |
+
+- **`alcance.verificado`** e **`alcance.por_rever`** dizem que aspetos foram e não foram verificados: `meses`, `tecnica`, `dificuldade`, `texto`, `estatuto`, `identificacao` ou `produto`. Confirmar uma técnica não confirma os meses.
+- **`data_revisao`** é a data da revisão. É diferente de **`fontes[].consultado`**, que é a data em que cada fonte foi lida. **`fontes[].sustenta`** diz que aspetos essa fonte sustenta.
+- **`adaptacao_local`** é separada do estado. Uma recomendação adaptada a Sardoura pode continuar provisória. O seu `estado` pode ser `documentada` ou `provisoria`, sempre com `nota`.
+- **`revisoes_anteriores`** regista revisões já feitas. Em `documentacao`, `no_repositorio` exige `ficheiro`; `nao_recuperada` indica uma revisão que aconteceu mas cujas fontes se perderam. Uma pesquisa nova regista-se como nova `revisao`, nunca como recuperação das fontes originais.
+- **Uma fonte antiga não invalida o dado.** A necessidade de atualizar depende do assunto (a lei e as listas de produtos mudam mais do que a biologia).
+
+### Em `tratamentos[]`
+
+O mesmo objeto de revisão vai **em cada intervenção** (`intervencoes[].revisao`), porque um grupo pode juntar medidas com fundamentos diferentes. `tratamentos[].revisao` serve só para `vigiar` e `problemas`.
+
+### Regras do `verificar.js`
+
+O verificador dá erro quando:
+- falta o `estado`, ou o estado não é um dos cinco acima;
+- a chave aponta para um campo que não existe;
+- há uma chave desconhecida dentro do registo;
+- uma data é inválida ou fica no futuro, ou uma fonte foi `consultado` depois da `data_revisao`;
+- um registo `parcial` ou `confirmado` não tem fontes nem `alcance.verificado`;
+- um registo `parcial` não tem `por_rever`, ou um `confirmado` tem;
+- uma fonte não tem `titulo` e `consultado`, ou sustenta um aspeto que não está em `verificado`;
+- um registo `provisorio` ou `suspenso` não tem `nota`;
+- um `ficheiro` em `no_repositorio` não existe.
+
+Com `node verificar.js --revisao` vê a contagem por estado.
