@@ -1,10 +1,10 @@
 // node revisao/testar-plantacao-raiz-nua.cjs
 // Contrato da ronda de plantação (4 espécies) contra b5dc26f; não testa Chromium.
-// Quando houver uma ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
+// Dados fixados no commit em que esta ronda foi publicada (a9060b4): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
-const root=path.join(__dirname,'..'),base='b5dc26f23150e06aae55e5b968c5010cb9c1a518';
+const root=path.join(__dirname,'..'),base='b5dc26f23150e06aae55e5b968c5010cb9c1a518',ronda='a9060b4';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 const targets={diospireiro:'em torrão ou vaso',mirtilo:'em vaso ou torrão',uva_mesa:'bacelo enxertado',videira:'bacelo enxertado'};
 const estados={diospireiro:'provisorio',mirtilo:'parcial',uva_mesa:'provisorio',videira:'parcial'};
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));

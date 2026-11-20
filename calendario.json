@@ -176,6 +176,17 @@
    ],
    "nome": "Batata-doce · preparar os rebentos",
    "texto": "Enraíze ou instale os rebentos em vasos, em abrigo quente. Passe para o terreno só depois de passar o risco de geada e quando o solo aquecer."
+  },
+  {
+   "categoria": "plantar",
+   "meses": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "nome": "Fruteiras · cuidados na plantação",
+   "texto": "Plante em repouso, sem geada nem solo encharcado. Mantenha húmidas as raízes nuas; se não plantar logo, cubra-as com terra numa vala provisória. Abra uma cova larga e deixe a enxertia, se existir, acima do solo. Coloque tutor se necessário, regue ao plantar e não encoste estrume fresco às raízes."
   }
  ]
 }

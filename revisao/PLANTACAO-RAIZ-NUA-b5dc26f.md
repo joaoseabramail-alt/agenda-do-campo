@@ -31,9 +31,23 @@ Em todos os registos, os **meses ficam por rever**. Março entra como janela pro
 
 ## O que fica por fazer
 
-- As 19 espécies acima não têm revisão de plantação. Na app aparecem só na lista agrupada «Fruteiras (raiz nua ou torrão)», sem texto. Proposta: uma **tarefa geral de Plantar (dezembro–março)** em `calendario.json` com os cuidados comuns da raiz nua, em vez de repetir notas em 19 fichas.
+- As 19 espécies acima continuam sem registo de revisão de plantação. Desde a sub-ronda 2 (abaixo) têm uma tarefa geral com os cuidados comuns.
 - Fonte portuguesa (INIAV, CCDR-Norte) para os bacelos e o diospireiro.
 - A enxertia (55 espécies) fica para a sub-ronda seguinte.
+
+## Sub-ronda 2 (sobre a9060b4): tarefa geral para as 19 fichas
+
+Em vez de repetir notas nas 19 fichas sem texto, há uma tarefa geral em `calendario.json` que aparece no topo de **Plantar** de novembro a fevereiro (os mesmos meses das fichas):
+
+> **Fruteiras · cuidados na plantação** — Plante em repouso, sem geada nem solo encharcado. Mantenha húmidas as raízes nuas; se não plantar logo, cubra-as com terra numa vala provisória. Abra uma cova larga e deixe a enxertia, se existir, acima do solo. Coloque tutor se necessário, regue ao plantar e não encoste estrume fresco às raízes.
+
+Texto do ChatGPT, sem alterações. As fontes foram abertas pelo Claude no browser a 20-11-2026:
+
+- **Agente Agrícola — Novembro na Vinha e no Pomar: Plantar Árvores de Fruto** (agenteagricola.pt), secções «Quando plantar», «Como plantar uma árvore de fruto a raiz nua» e «Passo a passo». Sustenta: só em dias sem geada; cuidado com a terra encharcada no Norte; enterrar as raízes numa vala provisória se não plantar logo; raízes sem estrume fresco nem adubo; ponto de enxertia acima do solo; tutor. É uma revista, não uma fonte oficial.
+- **Regulamento n.º 379/2025, de 20 de março (Município de Braga)**, Diário da República, alínea «d) Época de plantação». Raiz nua aconselhada em outubro–fevereiro; torrão em outubro–março. Confirma que novembro–fevereiro está dentro da janela geral. É um regulamento de arvoredo urbano, não de pomares.
+- Também indicado pelo ChatGPT, mas **não usado**: o *Manual de Boas Práticas para a Gestão Florestal nos Açores*. Não foi aberto e não acrescenta nada às duas fontes acima.
+
+As tarefas gerais não têm registo `revisao` (o formato do ESQUEMA.md aplica-se às fichas e aos tratamentos). As fontes ficam registadas aqui. Teste: `node revisao/testar-tarefa-plantacao.cjs` (só muda `calendario.json`; a tarefa aparece nos 4 meses e as contagens dos botões não mudam, porque as tarefas não contam). Cache agenda-v51.
 
 ## Testes
 
