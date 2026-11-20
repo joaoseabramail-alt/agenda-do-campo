@@ -101,6 +101,11 @@ ul.resultados li:last-child{border-bottom:0}
 .estrela{flex:none;border:0;background:none;font-size:22px;line-height:1;color:var(--sun);cursor:pointer;padding:2px 4px}
 .filtro-aviso{padding:10px 18px;font-size:14px;background:var(--leaf-soft);border-bottom:1px solid var(--line)}
 .filtro-aviso a{color:var(--leaf);font-weight:700}
+.copia{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.copia button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.copia button:disabled{opacity:.5;cursor:default}
+.copia-msg{font-size:14px;padding:8px 10px;border-radius:10px;background:var(--leaf-soft);color:var(--ink)}
+.copia-msg.erro{background:var(--sun-soft)}
 @media (prefers-reduced-motion:reduce){.ficha-btn .seta{transition:none}}
 .chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--sun);color:var(--sun)}.chip.d3{border-color:var(--muted)}
 .tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
@@ -143,6 +148,12 @@ ul.resultados li:last-child{border-bottom:0}
       <button type="button" class="minhas-ver" id="verMinhas" aria-expanded="false">★ As minhas plantas (0)</button>
       <label class="filtro" id="filtroLbl"><input type="checkbox" id="soMinhas"> Só as minhas plantas</label>
     </div>
+    <div class="copia"><span>Cópia de segurança:</span>
+      <button type="button" id="exportar">Exportar as minhas plantas</button>
+      <button type="button" id="importarBtn">Importar plantas</button>
+      <input type="file" id="importarFicheiro" accept=".json,application/json" hidden>
+    </div>
+    <div class="copia-msg" id="copiaMsg" role="status" hidden></div>
     <div id="resultados" hidden></div>
   </section>
 
@@ -422,6 +433,7 @@ function botaoMinha(p){const t=minhas.has(p.id);return `<button type="button" cl
 function atualizarContagens(){if(!DB)return;const m=day.getMonth()+1;document.querySelectorAll(".cat").forEach(x=>x.querySelector(".cnt").textContent=cntTxt(x.dataset.k,contar(x.dataset.k,m)))}
 function atualizarMinhasUI(){
   $("verMinhas").textContent="★ As minhas plantas ("+minhas.size+")";
+  $("exportar").disabled=minhas.size===0;$("exportar").title=minhas.size?"":"Ainda não marcou nenhuma planta";
   const cb=$("soMinhas");
   if(minhas.size===0&&soMinhas){soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(e){}}
   cb.disabled=minhas.size===0;cb.checked=soMinhas;$("filtroLbl").classList.toggle("off",minhas.size===0);
@@ -461,6 +473,50 @@ document.addEventListener("click",e=>{
   guardarMinhas();atualizarMinhasUI();
   if(soMinhas)render();else atualizarContagens();
   if(modoRes==="minhas"&&b.classList.contains("estrela")&&!minhas.has(id))mostrarResultados();
+});
+/* ---------- Cópia de segurança das minhas plantas ---------- */
+const FORMATO="agenda-do-campo/minhas-plantas",VERSAO_FORMATO=1;
+function msgCopia(texto,erro){const m=$("copiaMsg");m.textContent=texto;m.classList.toggle("erro",!!erro);m.hidden=false}
+$("exportar").addEventListener("click",()=>{
+  if(!minhas.size)return;
+  const dados={formato:FORMATO,versao:VERSAO_FORMATO,exportado:new Date().toISOString(),
+    plantas:[...minhas].sort(),nomes:[...minhas].sort().map(id=>{const p=DB&&DB.plantas.find(x=>x.id===id);return p?p.nome:id})};
+  const blob=new Blob([JSON.stringify(dados,null,1)],{type:"application/json"});
+  const url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download="minhas-plantas-"+iso(new Date())+".json";document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),2000);
+  msgCopia("Ficheiro criado com "+minhas.size+(minhas.size===1?" planta":" plantas")+". Guarde-o num sítio seguro (por exemplo, no Google Drive ou enviado a si próprio por email).");
+});
+$("importarBtn").addEventListener("click",()=>{$("importarFicheiro").value="";$("importarFicheiro").click()});
+// Valida o conteúdo sem alterar nada; devolve {ids} ou {erro}
+function validarCopia(texto){
+  let d;try{d=JSON.parse(texto)}catch(e){return {erro:"O ficheiro não é um ficheiro de plantas válido (não é JSON)."}}
+  if(!d||typeof d!=="object"||Array.isArray(d))return {erro:"O ficheiro não tem o formato de uma cópia das minhas plantas."};
+  if(d.formato!==FORMATO)return {erro:"Este ficheiro não foi criado pela Agenda do Campo."};
+  if(!Number.isInteger(d.versao)||d.versao<1)return {erro:"O ficheiro não indica uma versão de formato válida."};
+  if(d.versao>VERSAO_FORMATO)return {erro:"O ficheiro foi criado por uma versão mais recente da app. Atualize a app e tente outra vez."};
+  if(!Array.isArray(d.plantas)||d.plantas.some(x=>typeof x!=="string"))return {erro:"A lista de plantas do ficheiro está danificada."};
+  return {ids:d.plantas};
+}
+function importarCopia(texto){
+  if(!DB)return msgCopia("Espere que a base de dados das plantas acabe de carregar e tente outra vez.",true);
+  const v=validarCopia(texto);
+  if(v.erro)return msgCopia(v.erro+" A sua lista não foi alterada.",true);
+  const conhecidos=new Set(DB.plantas.map(p=>p.id));
+  const unicos=[...new Set(v.ids)];
+  let novos=0,ja=0,ign=0;
+  for(const id of unicos){if(!conhecidos.has(id))ign++;else if(minhas.has(id))ja++;else{minhas.add(id);novos++}}
+  guardarMinhas();atualizarMinhasUI();if(soMinhas)render();else atualizarContagens();
+  if(modoRes==="minhas")mostrarResultados();
+  const partes=[novos===1?"1 planta acrescentada":novos+" plantas acrescentadas"];
+  if(ja)partes.push(ja===1?"1 já estava na lista":ja+" já estavam na lista");
+  if(ign)partes.push(ign===1?"1 ignorada (não existe nesta versão da app)":ign+" ignoradas (não existem nesta versão da app)");
+  msgCopia(partes.join("; ")+". Tem agora "+minhas.size+(minhas.size===1?" planta.":" plantas."));
+}
+$("importarFicheiro").addEventListener("change",e=>{
+  const f=e.target.files&&e.target.files[0];if(!f)return;
+  if(f.size>500000)return msgCopia("O ficheiro é demasiado grande para ser uma cópia das minhas plantas. A sua lista não foi alterada.",true);
+  const r=new FileReader();r.onload=()=>importarCopia(String(r.result));r.onerror=()=>msgCopia("Não foi possível ler o ficheiro. A sua lista não foi alterada.",true);r.readAsText(f);
 });
 document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
 $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};

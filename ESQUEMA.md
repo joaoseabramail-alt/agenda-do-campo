@@ -40,3 +40,13 @@ A app lê três ficheiros. Os meses são números de 1 (janeiro) a 12 (dezembro)
 `{categoria, meses[], nome, texto}` — tarefas gerais. `categoria`: `podas`, `trat`, `plantar`, `sem`, `estacas`, `enx`, `alp`, `div`, `col`.
 
 Antes de enviar alterações, corra `node verificar.js`: confirma ids, meses, dificuldades, tipos de intervenção e procura notas que mencionam outra espécie.
+
+## Ficheiro de cópia «As minhas plantas»
+Criado pelo botão **Exportar as minhas plantas**:
+
+```json
+{"formato": "agenda-do-campo/minhas-plantas", "versao": 1, "exportado": "2026-11-20T10:00:00.000Z",
+ "plantas": ["figueira", "macieira"], "nomes": ["Figueira", "Macieira"]}
+```
+
+`plantas` são os `id` de `plantas.json` e é o único campo usado na importação (`nomes` serve só para ler o ficheiro). A importação recusa o ficheiro, sem alterar a lista, se não for JSON, se `formato` for diferente, se `versao` não for um inteiro entre 1 e a versão atual, ou se `plantas` não for uma lista de textos. Identificadores que não existem em `plantas.json` são ignorados e contados. Se um `id` mudar de nome no futuro, convém manter o antigo reconhecível para não perder plantas nas cópias antigas.

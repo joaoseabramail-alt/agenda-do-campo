@@ -19,3 +19,6 @@ Os meses são números de 1 (janeiro) a 12 (dezembro).
 
 ## As minhas plantas
 Na caixa de pesquisa, procure uma planta pelo nome comum ou científico e toque em ☆ para a marcar como sua (também pode fazê-lo na ficha que abre ao tocar no nome de uma planta em qualquer botão). Ative **Só as minhas plantas** para que todos os botões mostrem apenas as suas plantas e os tratamentos que lhes dizem respeito. A lista fica guardada no telemóvel (não passa automaticamente para outros aparelhos).
+
+### Cópia de segurança
+Use **Exportar as minhas plantas** para criar um ficheiro `.json` com a sua lista e guarde-o (por exemplo, no Google Drive ou num email para si próprio). Noutro telemóvel, ou depois de reinstalar a app, use **Importar plantas** e escolha esse ficheiro: as plantas são juntadas às que já tem, sem duplicados. Um ficheiro inválido não altera a lista.
