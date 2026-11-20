@@ -10471,7 +10471,7 @@
       8,
       9
      ],
-     "nota": null
+     "nota": "Se estiver seco, regue o porta-enxerto nas duas semanas antes; na primavera, corte acima da borbulha."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -10550,8 +10550,9 @@
      "6": "Ainda a tempo."
     },
     "enx": {
-     "7": "Borbulha em T em cavalo de roseira-brava.",
-     "8": "Borbulha em T."
+     "7": "Borbulha em T em roseira-brava, com tempo fresco.",
+     "8": "Use um ramo que já deu flor, sem folhas; ate com fita de borracha ou ráfia húmida.",
+     "9": "Borbulha em T no fim do verão, com tempo fresco."
     }
    },
    "metodo_recomendado": [
@@ -10629,6 +10630,37 @@
       "nota": "Mantidos janeiro–março, outubro e novembro; acrescentados julho–agosto para lembrar a avaliação após floração única. Todas as janelas são provisórias e não substituem identificar o grupo da roseira."
      },
      "nota": "Rosa spp. é demasiado amplo para uma única receita. Retirada a instrução de deixar sempre 3–5 ramos com 2–3 gomos. Os meses de inverno existentes ficam condicionados ao grupo; acrescentado lembrete de verão para floração única."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — T-budding",
+       "url": "https://www.rhs.org.uk/propagation/t-budding",
+       "seccao": "Quick facts; When to T-bud; How to T-bud",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte britânica («do meio para o fim do verão»): julho–setembro fica como janela indicativa em Sardoura, nos dias frescos."
+     },
+     "nota": "A fonte: borbulha em T do meio para o fim do verão, com tempo fresco; regar os porta-enxertos duas semanas antes se estiver seco, para a casca levantar; ramo que deu flor, sem folhas; atar com borracha ou ráfia húmida; cortar acima da borbulha na primavera seguinte. Proposta do ChatGPT; o Claude passou o texto ao imperativo."
     }
    }
   },
