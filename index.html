@@ -72,6 +72,19 @@ ul.items li:last-child{border-bottom:0}
 .sci{display:block;font-weight:400;font-size:13px;color:var(--muted)}
 .warn{display:block;font-size:13px;color:var(--sun);font-weight:700}
 li.grp .it-name{font-size:15px}
+.ficha-btn{all:unset;cursor:pointer;display:flex;align-items:flex-start;gap:6px;border-radius:6px}
+.ficha-btn:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.ficha-btn .seta{flex:none;color:var(--leaf);font-size:14px;line-height:1.6;transition:transform .15s}
+.ficha-btn[aria-expanded="true"] .seta{transform:rotate(90deg)}
+.ficha{margin-top:8px;padding:12px;border-radius:12px;background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.ficha img{width:100%;max-height:220px;object-fit:cover;border-radius:10px;background:var(--line)}
+.ficha .credito{font-size:12px;color:var(--muted)}
+.ficha .credito a{color:var(--muted)}
+.ficha dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px}
+.ficha dt{font-weight:700;color:var(--ink)}
+.ficha dd{margin:0;color:var(--muted);min-width:0}
+.ficha .vazia{font-size:14px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.ficha-btn .seta{transition:none}}
 .chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--sun);color:var(--sun)}.chip.d3{border-color:var(--muted)}
 .tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 .tips b{color:var(--ink)}
@@ -320,7 +333,8 @@ function render(){
     else if(i.dif&&!i.grupo) chip=`<span class="chip d${i.dif}">${DIFN[i.dif]}</span>`;
     const sci=i.p&&!i.grupo?`<i class="sci">${esc(i.p.nome_cientifico)}</i>`:"";
     const av=i.p?avisos(i.p).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
-    return `<li${i.grupo?' class="grp"':""}><div class="it-top"><span class="it-name">${esc(i.nome)}${sci}</span>${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
+    const nomeHTML=i.p&&!i.grupo?`<button type="button" class="ficha-btn it-name" data-id="${esc(i.p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(i.nome)}${sci}</span></button>`:`<span class="it-name">${esc(i.nome)}${sci}</span>`;
+    return `<li${i.grupo?' class="grp"':""}><div class="it-top">${nomeHTML}${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
   }).join("")||`<li><span class="it-note">Nada previsto para este mês.</span></li>`;
   let extra="";
   if(cur==="estacas"){const n=DB.plantas.filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
@@ -328,6 +342,46 @@ function render(){
     ${acompanhamento?"":`<div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>`}
     <ul class="items">${li}</ul>${acompanhamento?"":`<div class="tips">${c.tips}${extra}</div>`}`;
 }
+/* ---------- Ficha da planta (ao tocar no nome) ---------- */
+const CAMPOS=[["exposicao","Exposição"],["solo","Solo"],["rega","Rega"],["adubacao","Adubação"],["floracao","Floração"],["resistencia_geada","Geada"]];
+function fichaHTML(p){
+  const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("");
+  return `<div class="ficha" id="ficha-${esc(p.id)}"><div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
+}
+const fotoCache={};
+function titulosFoto(p){
+  const sci=String(p.nome_cientifico||"").split(" / ")[0].replace(/\(.*?\)/g,"").replace(/\s+spp\.?$/,"").replace(/\s+/g," ").trim();
+  const t=[];if(p.foto)t.push(["pt",p.foto]);if(sci&&!/^Várias/.test(sci))t.push(["en",sci]);t.push(["pt",p.nome.replace(/\s*\(.*?\)/g,"")]);return t;
+}
+async function obterFoto(p){
+  if(p.id in fotoCache)return fotoCache[p.id];
+  try{const c=localStorage.getItem("foto:"+p.id);if(c){return fotoCache[p.id]=JSON.parse(c)}}catch(e){}
+  for(const [lang,t] of titulosFoto(p)){
+    try{
+      const r=await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(t.replace(/ /g,"_"))}`);
+      if(!r.ok)continue;const j=await r.json();
+      if(j.type==="disambiguation"||!j.thumbnail)continue;
+      const f={src:j.thumbnail.source,url:(j.content_urls&&j.content_urls.mobile&&j.content_urls.mobile.page)||"",titulo:j.title||t};
+      fotoCache[p.id]=f;try{localStorage.setItem("foto:"+p.id,JSON.stringify(f))}catch(e){}
+      return f;
+    }catch(e){}
+  }
+  return fotoCache[p.id]=null;
+}
+async function mostrarFoto(p,box){
+  const f=await obterFoto(p);
+  if(!f||!box.isConnected)return;
+  box.innerHTML=`<img src="${esc(f.src)}" alt="${esc(p.nome)}" loading="lazy"><span class="credito">Foto: <a href="${esc(f.url)}" target="_blank" rel="noopener">Wikipédia · ${esc(f.titulo)}</a></span>`;
+  const img=box.querySelector("img");img.onerror=()=>{box.hidden=true};box.hidden=false;
+}
+$("panel").addEventListener("click",e=>{
+  const b=e.target.closest(".ficha-btn");if(!b||!DB)return;
+  const li=b.closest("li"),aberta=li.querySelector(".ficha");
+  if(aberta){aberta.remove();b.setAttribute("aria-expanded","false");return}
+  const p=DB.plantas.find(x=>x.id===b.dataset.id);if(!p)return;
+  li.insertAdjacentHTML("beforeend",fichaHTML(p));b.setAttribute("aria-expanded","true");
+  mostrarFoto(p,li.querySelector(".ficha .foto"));
+});
 document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
 $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
 $("next").onclick=()=>{day.setDate(day.getDate()+1);render()};
