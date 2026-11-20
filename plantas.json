@@ -99,7 +99,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -204,7 +204,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -587,7 +587,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -703,7 +703,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: sementeira (citrinos nucelares). As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.alp.4, propagacao.alporquia.nota, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -826,7 +826,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: sementeira (citrinos nucelares). As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.alp.4, propagacao.alporquia.nota, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -941,7 +941,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: sementeira (citrinos nucelares). As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.alp.4, propagacao.alporquia.nota, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -1036,7 +1036,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -1420,7 +1420,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -2096,7 +2096,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -2196,7 +2196,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: borbulha de verão. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -2799,7 +2799,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: propagação por estolhos. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: metodo_recomendado, nota_variedade. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -2898,7 +2898,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: propagação (pé-franco e filoxera). As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.estacas, propagacao.estacas.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -3012,7 +3012,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: propagação (pé-franco e filoxera). As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.enx.3, notas.podas.1, propagacao.enxertia.meses, propagacao.enxertia.nota, propagacao.estacas.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -3880,7 +3880,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal, notas.podas.2, notas.podas.3, notas.sem, poda, propagacao.sementeira.nota, recolha_sementes. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -4117,7 +4117,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: aspetos não especificados na mensagem do commit. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: notas.sem, propagacao.sementeira.meses, propagacao.sementeira.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -4360,7 +4360,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: aspetos não especificados na mensagem do commit. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.sementeira.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -5454,7 +5454,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -5902,7 +5902,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -6352,7 +6352,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: mergulhia. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: divisao, metodo_recomendado, propagacao.estacas.nota, propagacao.sementeira.fiel_variedade. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -6603,7 +6603,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: mergulhia. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: divisao, metodo_recomendado, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.fiel_variedade, propagacao.sementeira.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -7050,7 +7050,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -7579,7 +7579,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: estatuto legal. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -9708,7 +9708,7 @@
    "revisoes_anteriores": [
     {
      "commit": "7a020da",
-     "ambito": "Auditoria documental de 23 fichas: aspetos não especificados na mensagem do commit. As podas, os tratamentos e os meses não foram revistos.",
+     "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: divisao, legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -9773,7 +9773,7 @@
    "revisoes_anteriores": [
     {
      "commit": "aef27b6",
-     "ambito": "Revisão das 5 espécies novas: sementeira em abrigo aquecido e plantação de preferência em maio; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: nota_sardoura, notas, poda, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.meses, propagacao.sementeira.nota, recolha_sementes, resistencia_geada. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -9838,7 +9838,7 @@
    "revisoes_anteriores": [
     {
      "commit": "aef27b6",
-     "ambito": "Revisão das 5 espécies novas: estatuto legal (DL 92/2019), aviso de dispersão e plantação depois das geadas; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: legal, legal_botoes, plantacao.meses, plantacao.o_que, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.meses, propagacao.sementeira.nota, recolha_sementes, resistencia_geada, toxicidade. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -9916,7 +9916,7 @@
    "revisoes_anteriores": [
     {
      "commit": "aef27b6",
-     "ambito": "Revisão das 5 espécies novas: aspetos não especificados na mensagem do commit; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: nota_variedade, poda, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.nota, resistencia_geada. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -9983,7 +9983,7 @@
    "revisoes_anteriores": [
     {
      "commit": "aef27b6",
-     "ambito": "Revisão das 5 espécies novas: estacas no fim do verão e vigilância do cancro; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: nota_sardoura, nota_variedade, propagacao.estacas.meses, propagacao.estacas.nota, recolha_sementes. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]
@@ -10048,7 +10048,7 @@
    "revisoes_anteriores": [
     {
      "commit": "aef27b6",
-     "ambito": "Revisão das 5 espécies novas: aspetos não especificados na mensagem do commit; retiradas alporquias e recolhas de sementes não confirmadas.",
+     "ambito": "Revisão das 5 espécies novas. O diff deste commit altera: adubacao, poda, propagacao.alporquia, propagacao.estacas.nota, propagacao.sementeira.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
    ]

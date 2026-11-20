@@ -64,31 +64,65 @@ const ALVOS=['poda','plantacao','sementeira','colheita','divisao','recolha_semen
 const hoje=new Date().toISOString().slice(0,10);
 const dataOk=d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&!isNaN(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d;
 const contagem={};
+const objeto=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
+const texto=x=>typeof x==='string'&&x.trim().length>0;
+const path=require('path');
+function chaves(x,permitidas,o){for(const k of Object.keys(x))if(!permitidas.includes(k))erros.push(o+': chave desconhecida "'+k+'"')}
+function ficheiroOk(f){
+  if(!texto(f)||path.isAbsolute(f))return false;
+  const destino=path.resolve(__dirname,f);
+  if(!destino.startsWith(__dirname+path.sep))return false;
+  try{return fs.statSync(destino).isFile()}catch{return false}
+}
+function urlOk(u){if(!texto(u)||/\s/.test(u))return false;try{const a=new URL(u);return ['http:','https:'].includes(a.protocol)&&!!a.hostname}catch{return false}}
+function aspetos(l,o){
+  if(l===undefined)return [];
+  if(!Array.isArray(l)){erros.push(o+': deve ser uma lista de aspetos');return []}
+  if(l.some(x=>!ASPETOS.includes(x)))erros.push(o+': aspeto desconhecido '+JSON.stringify(l));
+  if(new Set(l).size!==l.length)erros.push(o+': aspetos repetidos');
+  return l;
+}
 function verRevisao(r,o){
-  if(!r||typeof r!=='object'||Array.isArray(r))return erros.push(o+': registo de revisão inválido');
-  for(const k of Object.keys(r))if(!['estado','data_revisao','alcance','fontes','adaptacao_local','nota'].includes(k))erros.push(o+': chave desconhecida "'+k+'"');
+  if(!objeto(r))return erros.push(o+': registo de revisão inválido');
+  chaves(r,['estado','data_revisao','alcance','fontes','adaptacao_local','nota'],o);
   if(!ESTADOS.includes(r.estado))return erros.push(o+': estado inválido '+JSON.stringify(r.estado));
   contagem[r.estado]=(contagem[r.estado]||0)+1;
-  if(r.estado!=='nao_revisto'&&!dataOk(r.data_revisao))erros.push(o+': data_revisao em falta ou inválida');
+  if((r.estado!=='nao_revisto'||r.data_revisao!==undefined)&&!dataOk(r.data_revisao))erros.push(o+': data_revisao em falta ou inválida');
   if(r.data_revisao!==undefined&&dataOk(r.data_revisao)&&r.data_revisao>hoje)erros.push(o+': data_revisao no futuro');
-  const al=r.alcance||{},ver=al.verificado||[],por=al.por_rever||[];
-  for(const [n,l] of [['verificado',ver],['por_rever',por]]){if(!Array.isArray(l)||l.some(x=>!ASPETOS.includes(x)))erros.push(o+': alcance.'+n+' com aspeto desconhecido '+JSON.stringify(l))}
-  if(Array.isArray(ver)&&Array.isArray(por)&&ver.some(x=>por.includes(x)))erros.push(o+': o mesmo aspeto está verificado e por rever');
-  const F=r.fontes||[];
-  if(!Array.isArray(F))erros.push(o+': fontes deve ser uma lista');
-  else for(const [i,f] of F.entries()){const of=o+' fonte '+(i+1);
-    for(const k of Object.keys(f||{}))if(!['titulo','url','seccao','consultado','sustenta'].includes(k))erros.push(of+': chave desconhecida "'+k+'"');
-    if(!f||!f.titulo)erros.push(of+': falta titulo');
-    if(f&&f.url!==undefined&&!/^https?:\/\/\S+$/.test(f.url))erros.push(of+': url inválido');
-    if(!f||!dataOk(f.consultado))erros.push(of+': consultado em falta ou inválido');
+  if(r.alcance!==undefined&&!objeto(r.alcance))erros.push(o+': alcance deve ser um objeto');
+  const al=objeto(r.alcance)?r.alcance:{};
+  chaves(al,['verificado','por_rever'],o+'.alcance');
+  const ver=aspetos(al.verificado,o+'.alcance.verificado'),por=aspetos(al.por_rever,o+'.alcance.por_rever');
+  if(ver.some(x=>por.includes(x)))erros.push(o+': o mesmo aspeto está verificado e por rever');
+  if(r.fontes!==undefined&&!Array.isArray(r.fontes))erros.push(o+': fontes deve ser uma lista');
+  const F=Array.isArray(r.fontes)?r.fontes:[],sustentados=new Set();
+  for(const [i,f] of F.entries()){const of=o+' fonte '+(i+1);
+    if(!objeto(f)){erros.push(of+': fonte deve ser um objeto');continue}
+    chaves(f,['titulo','url','ficheiro','seccao','consultado','sustenta'],of);
+    if(!texto(f.titulo))erros.push(of+': titulo em falta ou inválido');
+    if(f.url!==undefined&&!urlOk(f.url))erros.push(of+': url inválido');
+    if(f.ficheiro!==undefined&&!ficheiroOk(f.ficheiro))erros.push(of+': ficheiro local inválido ou em falta');
+    if(f.url===undefined&&f.ficheiro===undefined)erros.push(of+': falta url ou ficheiro que permita localizar a fonte');
+    if(f.seccao!==undefined&&!texto(f.seccao))erros.push(of+': seccao inválida');
+    if(!dataOk(f.consultado))erros.push(of+': consultado em falta ou inválido');
     else{if(f.consultado>hoje)erros.push(of+': consultado no futuro');if(dataOk(r.data_revisao)&&f.consultado>r.data_revisao)erros.push(of+': consultado depois da data_revisao')}
-    if(f&&f.sustenta!==undefined&&(!Array.isArray(f.sustenta)||f.sustenta.some(x=>!ver.includes(x))))erros.push(of+': sustenta aspetos que não estão em alcance.verificado');
+    const sustenta=aspetos(f.sustenta,of+'.sustenta');
+    if(!sustenta.length)erros.push(of+': falta sustenta não vazio');
+    if(sustenta.some(x=>!ver.includes(x)))erros.push(of+': sustenta aspetos que não estão em alcance.verificado');
+    for(const aspeto of sustenta)sustentados.add(aspeto);
   }
-  if(['parcial','confirmado'].includes(r.estado)){if(!F.length)erros.push(o+': '+r.estado+' sem fontes');if(!ver.length)erros.push(o+': '+r.estado+' sem alcance.verificado')}
+  if(['parcial','confirmado'].includes(r.estado)){
+    if(!F.length)erros.push(o+': '+r.estado+' sem fontes');if(!ver.length)erros.push(o+': '+r.estado+' sem alcance.verificado');
+    for(const aspeto of ver)if(!sustentados.has(aspeto))erros.push(o+': aspeto verificado sem fonte que o sustente: '+JSON.stringify(aspeto));
+  }
   if(r.estado==='parcial'&&!por.length)erros.push(o+': parcial sem alcance.por_rever');
   if(r.estado==='confirmado'&&por.length)erros.push(o+': confirmado mas com aspetos por rever');
-  if(['provisorio','suspenso'].includes(r.estado)&&!r.nota)erros.push(o+': '+r.estado+' sem nota');
-  if(r.adaptacao_local!==undefined){const a=r.adaptacao_local;if(!a||!['documentada','provisoria'].includes(a.estado)||!a.nota)erros.push(o+': adaptacao_local precisa de estado (documentada/provisoria) e nota')}
+  if(r.nota!==undefined&&!texto(r.nota))erros.push(o+': nota inválida');
+  if(['provisorio','suspenso'].includes(r.estado)&&!texto(r.nota))erros.push(o+': '+r.estado+' sem nota');
+  if(r.adaptacao_local!==undefined){const a=r.adaptacao_local;
+    if(!objeto(a))erros.push(o+': adaptacao_local deve ser um objeto');
+    else{chaves(a,['estado','nota'],o+'.adaptacao_local');if(!['documentada','provisoria'].includes(a.estado)||!texto(a.nota))erros.push(o+': adaptacao_local precisa de estado (documentada/provisoria) e nota')}
+  }
 }
 const obter=(p,c)=>c.split('.').reduce((x,k)=>x==null?undefined:x[k],p);
 for(const p of P){
@@ -100,23 +134,34 @@ for(const p of P){
       verRevisao(r,p.id+'.revisao.'+c);
     }
   }
-  for(const [i,h] of (p.revisoes_anteriores||[]).entries()){const o=p.id+'.revisoes_anteriores['+i+']';
-    if(!/^[0-9a-f]{7,40}$/.test(h.commit||''))erros.push(o+': commit inválido');
-    if(!h.ambito)erros.push(o+': falta ambito');
+  if(p.revisoes_anteriores!==undefined&&!Array.isArray(p.revisoes_anteriores))erros.push(p.id+': revisoes_anteriores deve ser uma lista');
+  for(const [i,h] of (Array.isArray(p.revisoes_anteriores)?p.revisoes_anteriores:[]).entries()){const o=p.id+'.revisoes_anteriores['+i+']';
+    if(!objeto(h)){erros.push(o+': registo histórico deve ser um objeto');continue}
+    chaves(h,['commit','ambito','documentacao','ficheiro'],o);
+    if(typeof h.commit!=='string'||!/^[0-9a-f]{7,40}$/.test(h.commit))erros.push(o+': commit inválido');
+    if(!texto(h.ambito))erros.push(o+': ambito em falta ou inválido');
     if(!['no_repositorio','nao_recuperada'].includes(h.documentacao))erros.push(o+': documentacao inválida');
-    if(h.documentacao==='no_repositorio'&&!(h.ficheiro&&fs.existsSync(__dirname+'/'+h.ficheiro)))erros.push(o+': ficheiro em falta '+h.ficheiro);
+    if((h.documentacao==='no_repositorio'||h.ficheiro!==undefined)&&!ficheiroOk(h.ficheiro))erros.push(o+': ficheiro em falta ou inválido '+JSON.stringify(h.ficheiro));
   }
 }
 for(const t of T){
-  if(t.revisao!==undefined)verRevisao(t.revisao,'tratamento '+t.grupo+'.revisao');
+  if(t.revisao!==undefined){
+    if(!objeto(t.revisao))erros.push('tratamento '+t.grupo+': revisao deve ser um objeto por campo');
+    else for(const [c,r] of Object.entries(t.revisao)){
+      if(!['vigiar','problemas'].includes(c)||t[c]===undefined)erros.push('tratamento '+t.grupo+': campo de revisão desconhecido '+c);
+      verRevisao(r,'tratamento '+t.grupo+'.revisao.'+c);
+    }
+  }
   for(const [i,iv] of t.intervencoes.entries())if(iv.revisao!==undefined)verRevisao(iv.revisao,'tratamento '+t.grupo+' intervenção '+(i+1));
 }
 if(process.argv.includes('--revisao')){
   const nP=P.length;
-  console.log('Registos de revisão por estado:',JSON.stringify(contagem),'(campos sem registo contam como nao_revisto)');
-  console.log('Espécies com algum registo:',P.filter(p=>p.revisao).length+'/'+nP,'| com revisões anteriores:',P.filter(p=>(p.revisoes_anteriores||[]).length).length+'/'+nP,
+  const ausentes=P.reduce((n,p)=>n+ALVOS.filter(c=>obter(p,c)!==undefined&&(!objeto(p.revisao)||!Object.hasOwn(p.revisao,c))).length,0)
+    +T.reduce((n,t)=>n+['vigiar','problemas'].filter(c=>t[c]!==undefined&&(!objeto(t.revisao)||!Object.hasOwn(t.revisao,c))).length+t.intervencoes.filter(i=>i.revisao===undefined).length,0);
+  console.log('Registos explícitos de revisão por estado:',JSON.stringify(contagem),'| não revistos implícitos:',ausentes,'(campos presentes sem registo e intervenções sem registo)');
+  console.log('Espécies com algum registo:',P.filter(p=>objeto(p.revisao)&&Object.keys(p.revisao).length).length+'/'+nP,'| com revisões anteriores:',P.filter(p=>Array.isArray(p.revisoes_anteriores)&&p.revisoes_anteriores.length).length+'/'+nP,
     '| intervenções com registo:',T.reduce((n,t)=>n+t.intervencoes.filter(i=>i.revisao).length,0)+'/'+T.reduce((n,t)=>n+t.intervencoes.length,0));
-  const hist={};for(const p of P)for(const h of p.revisoes_anteriores||[])(hist[h.commit+' ('+h.documentacao+')']??=[]).push(p.id);
+  const hist={};for(const p of P)for(const h of Array.isArray(p.revisoes_anteriores)?p.revisoes_anteriores:[])if(objeto(h)&&typeof h.commit==='string'&&typeof h.documentacao==='string')(hist[h.commit+' ('+h.documentacao+')']??=[]).push(p.id);
   for(const [k,v] of Object.entries(hist))console.log('  '+k+': '+v.length+' espécies');
 }
 if(escondidas.length)avisos.push(escondidas.length+' notas não aparecem na app (ver lista com: node verificar.js --escondidas)');

@@ -11,7 +11,7 @@ Base: commit seguinte a `6263ae1`, 20/11/2026. **Levantamento sem alterar dados.
 | Situação | Espécies | Prova |
 |---|---|---|
 | **Documentação no repositório, com limitações declaradas** | 12 florestais: pinheiro-manso, pinheiro-bravo, choupo-negro, choupo-branco, choupo-tremedor, carvalho-cerquinho, azinheira, tramazeira, sorveira, teixo, ulmeiro e pereira-brava | `revisao/FLORESTAIS-e729811.md`. O próprio relatório diz que «não certifica individualmente todos os campos herdados» (rega, adubação, rusticidade e taxas de sucesso). **Não estão integralmente confirmadas.** |
-| **Revisão anterior registada; documentação não recuperada** | 5 espécies novas (`aef27b6`) e 23 fichas (`7a020da`, só nos aspetos legais e de propagação) | Só as mensagens dos commits. Nem o ChatGPT nem o Claude conseguiram recuperar as fontes. Uma pesquisa nova fica registada como revisão nova. |
+| **Revisão anterior registada; documentação não recuperada** | 5 espécies novas (`aef27b6`) e 23 fichas (`7a020da`) | Mensagens e diffs dos commits comprovam as alterações; não recuperam as fontes nem certificam a fundamentação. O diff das 23 inclui alterações de meses de propagação e de notas de poda. Não permite concluir uma validação integral do calendário. Uma pesquisa nova fica registada como revisão nova. |
 | **Sem revisão documental registada** | As restantes 109 | — |
 | **Suspenso** | Sementeira da pereira-brava | Nota «Calendário suspenso nesta revisão» |
 
