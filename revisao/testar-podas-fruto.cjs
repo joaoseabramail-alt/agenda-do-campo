@@ -27,6 +27,7 @@ for(let i=0;i<after.plantas.length;i++){
 }
 assert.deepEqual(changes.sort(),[...targets].sort());
 for(const file of ['calendario.json'])assert.equal(now(file),old(file),file+' alterado');
+// As alterações de tratamentos são verificadas nos testes próprios de tratamentos.
 // index.html e sw.js deixaram de ser comparados com a base: a interface pode evoluir; o comportamento das listas continua verificado abaixo.
 function app(P){
  const dados={plantas:P.plantas,tratamentos:JSON.parse(now('tratamentos.json')).tratamentos,tarefas:JSON.parse(now('calendario.json')).tarefas};
@@ -70,5 +71,3 @@ assert.match(row('mirtilo',2),/primeiros dois anos/);
 assert.match(row('amendoeira',2),/doença do chumbo/);
 console.log(`Regressão das 14 fichas de fruto: ${pares} combinações sem exceções; meses e textos verificados. Contrato das rondas seguintes no respetivo teste.`);
 
-// Tratamentos: iguais à base, ignorando espécies acrescentadas depois nas listas de espécies dos grupos.
-{const semNovas=x=>{const d=JSON.parse(x);for(const g of d.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));return d};const _ta=semNovas(now('tratamentos.json')),_tb=semNovas(old('tratamentos.json'));assert.deepEqual(_ta,_tb,'tratamentos.json alterado');}

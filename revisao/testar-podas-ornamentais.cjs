@@ -28,6 +28,7 @@ for(let i=0;i<after.plantas.length;i++){
 assert.deepEqual(changes.sort(),[...targets].sort());
 for(const p of after.plantas)for(const m of Object.keys(p.notas?.podas||{}))assert(p.poda?.some(x=>x.meses.includes(+m)),`Nota escondida: ${p.id}/${m}`);
 for(const f of ['calendario.json','verificar.js','ESQUEMA.md'])assert.equal(now(f),old(f),f+' alterado');
+// As alterações de tratamentos são verificadas nos testes próprios de tratamentos.
 // index.html e sw.js deixaram de ser comparados com a base: a interface pode evoluir; o comportamento das listas continua verificado abaixo.
 const fontes=JSON.parse(now('revisao/fontes/PODAS-ORNAMENTAIS-65a6a8c.json'));
 for(const p of after.plantas.filter(x=>targets.includes(x.id)))for(const f of p.revisao.poda.fontes)assert(Object.values(fontes.fontes).some(x=>JSON.stringify(x)===JSON.stringify(f)),`Fonte ausente do catálogo: ${p.id}`);
@@ -65,5 +66,3 @@ for(const id of targets.filter(x=>!['jacaranda','tilia'].includes(x)))for(let m=
 console.log(`Regressão das 14 fichas: campos e fontes conferidos; ${pares} combinações; dois calendários e textos preservados; nenhuma nota de poda escondida. Contrato das rondas seguintes no respetivo teste.`);
 console.log('Contagens de Podas:',JSON.stringify(Object.fromEntries(Array.from({length:12},(_,i)=>[i+1,a.contar('podas',i+1)]))));
 
-// Tratamentos: iguais à base, ignorando espécies acrescentadas depois nas listas de espécies dos grupos.
-{const semNovas=x=>{const d=JSON.parse(x);for(const g of d.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));return d};const _ta=semNovas(now('tratamentos.json')),_tb=semNovas(old('tratamentos.json'));assert.deepEqual(_ta,_tb,'tratamentos.json alterado');}

@@ -26,20 +26,19 @@ for(let n=0;n<after.plantas.length;n++){
  assert.deepEqual(a,b,'Campo fora do âmbito: '+a.id);
 }
 assert.deepEqual(changes.sort(),[...targets].sort());
-const ta=JSON.parse(now('tratamentos.json')),tb=JSON.parse(old('tratamentos.json'));
+const ta=JSON.parse(now('tratamentos.json'));
 const fig=ta.tratamentos.find(x=>x.grupo==='Figueira').intervencoes[0];
 assert.equal(fig.revisao.estado,'suspenso');assert.deepEqual(fig.meses,[]);
 assert(!Object.hasOwn(fig.revisao,'adaptacao_local'));
-delete tb.tratamentos.find(x=>x.grupo==='Figueira').intervencoes[0].revisao.adaptacao_local;
-for(const g of ta.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));assert.deepEqual(ta,tb);
 for(const f of ['calendario.json'])assert.equal(now(f),old(f),f+' alterado');
+// As alterações de tratamentos são verificadas nos testes próprios de tratamentos.
 // index.html e sw.js deixaram de ser comparados com a base: a interface pode evoluir; o comportamento das listas continua verificado abaixo.
 function app(P,T,html){
  const ctx=vm.createContext({dados:{plantas:P.plantas,tratamentos:T.tratamentos,tarefas:JSON.parse(now('calendario.json')).tarefas}});
  vm.runInContext(html.split('<script>')[1].split('/* ---------- Estado e desenho ---------- */')[0]+'\nDB=dados;globalThis.app={lista,contar,categorias:Object.keys(CAT)};',ctx);
  return ctx.app;
 }
-const a=app(after,ta,now('index.html')),b=app(before,JSON.parse(old('tratamentos.json')),old('index.html'));
+const a=app(after,ta,now('index.html')),b=app(before,ta,now('index.html'));
 const json=x=>JSON.parse(JSON.stringify(x));
 let pares=0;
 for(const cat of a.categorias)for(let m=1;m<=12;m++){
@@ -73,5 +72,3 @@ for(const id of ['laranjeira','limoeiro','tangerineira'])for(const m of [3,4,5])
 for(const m of [2,3,4])assert.match(row('oliveira',m),/adie a poda/);
 console.log(`Regressão das 9 fichas da primeira ronda: ${pares} combinações sem exceções; textos mensais e suspensão da figueira verificados. Âmbito das rondas seguintes no respetivo teste.`);
 
-// Tratamentos: iguais à base, ignorando espécies acrescentadas depois nas listas de espécies dos grupos.
-{const semNovas=x=>{const d=JSON.parse(x);for(const g of d.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));return d};const _ta=semNovas(now('tratamentos.json')),_tb=semNovas(old('tratamentos.json'));for(const g of _tb.tratamentos)for(const i of g.intervencoes)if(i.revisao&&i.revisao.estado==='suspenso')delete i.revisao.adaptacao_local;assert.deepEqual(_ta,_tb,'tratamentos.json alterado');}

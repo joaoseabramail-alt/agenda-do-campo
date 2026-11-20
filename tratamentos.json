@@ -117,10 +117,43 @@
     },
     {
      "meses": [
-      4
+      4,
+      5,
+      6,
+      7
      ],
      "tipo": "monitorizacao",
-     "texto": "Coloque armadilhas para seguir o voo do bichado."
+     "texto": "Bichado (Cydia pomonella): instale a armadilha com feromona antes do primeiro voo e registe as capturas regularmente. Observe também os frutos e consulte o aviso agrícola; capturas e tempo favorável ajudam a avaliar o risco, mas não mandam tratar por calendário. Continue a observação nas gerações seguintes.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 08/2026, 21 de maio",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=887:circ-08-22-maio-2026-eeadm-compressed",
+        "seccao": "Secções Bichado das pomóideas; Cigarrinha-verde (estimativa do risco); Traça-do-buxo. Datas e produtos de 2026 não são prescrições para campanhas seguintes.",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Abril–julho em vez de um único lembrete em abril: manter a observação entre a instalação e a entrada seguinte, de agosto, que fica intacta. Limites mensais locais por rever."
+     }
     },
     {
      "meses": [
@@ -208,10 +241,52 @@
     {
      "meses": [
       3,
-      4
+      4,
+      5,
+      6
      ],
      "tipo": "monitorizacao",
-     "texto": "Vigie afídeos nos rebentos."
+     "texto": "Afídeos: observe os rebentos em crescimento e o verso das folhas, procurando colónias, enrolamento e melada. Avalie o ataque e a presença de auxiliares antes de decidir qualquer combate; a presença de alguns piolhos não justifica uma pulverização automática.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 04/2018 — divulgação sobre afídios nas prunóideas",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_04_2018.pdf",
+        "seccao": "Divulgação: afídios na ameixeira, cerejeira, damasqueiro e pessegueiro; sintomas nos rebentos e folhas; não usar as antigas indicações químicas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "RHS, Aphids",
+        "url": "https://www.rhs.org.uk/biodiversity/aphids",
+        "seccao": "Symptoms, Management e Biology; observar colónias e auxiliares; não valida um calendário português",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Prolonga o lembrete até junho para acompanhar os rebentos da primavera; não valida os limites da estação em Sardoura."
+     }
     },
     {
      "meses": [
@@ -302,10 +377,52 @@
     {
      "meses": [
       3,
-      4
+      4,
+      5,
+      6
      ],
      "tipo": "monitorizacao",
-     "texto": "Vigie afídeos nos rebentos."
+     "texto": "Afídeos: observe os rebentos em crescimento e o verso das folhas, procurando colónias, enrolamento e melada. Avalie o ataque e a presença de auxiliares antes de decidir qualquer combate; a presença de alguns piolhos não justifica uma pulverização automática.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 04/2018 — divulgação sobre afídios nas prunóideas",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_04_2018.pdf",
+        "seccao": "Divulgação: afídios na ameixeira, cerejeira, damasqueiro e pessegueiro; sintomas nos rebentos e folhas; não usar as antigas indicações químicas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "RHS, Aphids",
+        "url": "https://www.rhs.org.uk/biodiversity/aphids",
+        "seccao": "Symptoms, Management e Biology; observar colónias e auxiliares; não valida um calendário português",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Prolonga o lembrete até junho para acompanhar os rebentos da primavera; não valida os limites da estação em Sardoura."
+     }
     },
     {
      "meses": [
@@ -367,18 +484,92 @@
    "intervencoes": [
     {
      "meses": [
-      4
+      4,
+      5,
+      6
      ],
      "tipo": "monitorizacao",
-     "texto": "Vigie o afídeo-negro nos rebentos."
+     "texto": "Afídeo-negro nas cerejeiras de fruto: examine rebentos novos e folhas enroladas, procurando colónias e melada. Acompanhe a evolução e preserve os auxiliares; as árvores jovens exigem atenção especial. Confirme a praga antes de decidir qualquer combate.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 04/2018 — divulgação sobre afídios nas prunóideas",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_04_2018.pdf",
+        "seccao": "Divulgação: afídios na ameixeira, cerejeira, damasqueiro e pessegueiro; sintomas nos rebentos e folhas; não usar as antigas indicações químicas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "RHS, Aphids",
+        "url": "https://www.rhs.org.uk/biodiversity/aphids",
+        "seccao": "Symptoms, Management e Biology; observar colónias e auxiliares; não valida um calendário português",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Abril–junho em vez de abril isolado: acompanhar os rebentos durante a primavera. Meses locais por rever."
+     }
     },
     {
      "meses": [
       4,
-      5
+      5,
+      6,
+      7
      ],
      "tipo": "monitorizacao",
-     "texto": "Mosca da cereja: armadilhas amarelas para seguir o voo."
+     "texto": "Mosca-da-cereja (Rhagoletis cerasi): nas cerejeiras com produção de cereja, coloque armadilhas amarelas antes da mudança de cor dos frutos e acompanhe o voo até à colheita, sobretudo nas variedades tardias. Cruze as capturas com a maturação e o aviso agrícola. Este lembrete não se aplica automaticamente à cerejeira-do-Japão ornamental.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Divulgação técnica 07/2012 — Mosca da Cereja",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_07_2012.pdf",
+        "seccao": "Ficha final: Rhagoletis cerasi, maturação varietal, armadilhas amarelas; apenas biologia e observação",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Acrescenta junho e julho, para não interromper a observação das variedades tardias; a ficha regional situa a emergência entre fim de maio e início de julho, dependente do local. Abril serve de preparação, não de previsão de voo."
+     }
     },
     {
      "meses": [
@@ -480,10 +671,41 @@
    "intervencoes": [
     {
      "meses": [
-      5
+      5,
+      6
      ],
      "tipo": "monitorizacao",
-     "texto": "Vigie a traça da oliveira na floração."
+     "texto": "Traça-da-oliveira (Prays oleae): perto da floração, acompanhe as armadilhas com feromona e procure ataques nas inflorescências. Avalie a intensidade do ataque com o aviso agrícola. Capturar adultos não basta para decidir tratar; preserve os polinizadores e evite inseticidas durante a floração.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 08/2018, 22 de maio",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_08_2018.pdf",
+        "seccao": "Castanheiro: preservar galhas verdes e secas; Oliveira: traça na floração; Tomateiro: deteção precoce de Tuta; apenas técnica/biologia",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Acrescenta junho para abranger florações mais tardias; a fase da oliveira prevalece sobre o mês."
+     }
     },
     {
      "meses": [
@@ -494,7 +716,37 @@
       10
      ],
      "tipo": "monitorizacao",
-     "texto": "Mosca da azeitona: armadilhas para seguir a população."
+     "texto": "Mosca-da-azeitona (Bactrocera oleae): acompanhe as armadilhas e observe também os frutos, procurando picadas e infestação. A captura de adultos, por si só, não demonstra estrago nem justifica tratamento. Relacione o risco com a evolução da azeitona, a variedade e o aviso agrícola.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 14/2019, 24 de julho",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_14_2019.pdf",
+        "seccao": "p. 5: mosca da azeitona e Tuta absoluta; monitorização sem transpor as antigas indicações de produtos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
@@ -530,16 +782,109 @@
       7
      ],
      "tipo": "fitofarmaco",
-     "texto": "Míldio: junto ao Douro os nevoeiros mantêm as folhas molhadas. O risco depende da chuva, da temperatura e do estado da vinha; siga os avisos da Estação de Avisos de Entre Douro e Minho. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
+     "texto": "Míldio: acompanhe a rebentação, a chuva e a duração do molhamento das folhas, incluindo orvalho e nevoeiro. A proteção, quando necessária, deve prevenir infeções; não espere pelas manchas. Ajuste-a à fase da vinha, ao risco da parcela e ao aviso de Entre Douro e Minho. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 04/2026, 7 de abril",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=873:circ-04-2026-eaedm",
+        "seccao": "pp. 1–2: míldio e traça da videira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Videira e uva de mesa #0; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
+      4,
       5,
       6,
       7
      ],
      "tipo": "fitofarmaco",
-     "texto": "Oídio: risco com tempo quente e abafado. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de enxofre, nunca acima de 30 °C), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Oídio: vigie folhas, rebentos e cachos, com atenção à pré-floração, floração e desenvolvimento dos bagos até ao pintor. Pode desenvolver-se sem chuva; favoreça o arejamento e evite excesso de vigor. Siga o aviso agrícola para decidir a proteção, sem esperar pelo pó branco nos cachos. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 05/2026, 27 de abril",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=879:circ-05-abril-2026-eaedm",
+        "seccao": "Secções Oídio da videira, Podridão cinzenta e Cigarrinha-verde.",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 09/2026, 15 de junho",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=893:circ-09-2026-eaedm",
+        "seccao": "pp. 2–3: traça, cigarrinha-verde e vetor da flavescência; p. 5: míldio e escaravelho da batateira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Videira e uva de mesa #1; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Acrescenta abril: a pré-floração e os avisos regionais de abril já exigem acompanhamento. O pintor e a casta, não julho, determinam o fim do período sensível."
+     }
     },
     {
      "meses": [
@@ -547,6 +892,197 @@
      ],
      "tipo": "cultural",
      "texto": "Respeite o intervalo de segurança antes da vindima. Uva de mesa: ensaque os cachos contra vespas e pássaros."
+    },
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Traça-da-uva (Lobesia botrana): coloque a armadilha com feromona antes do primeiro voo e acompanhe as capturas. Procure também glomérulos nas inflorescências e ovos ou larvas nos cachos; as capturas, por si só, não justificam tratar. Mantenha a vigilância de míldio, oídio e podridão cinzenta indicada nos avisos agrícolas.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 04/2026, 7 de abril",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=873:circ-04-2026-eaedm",
+        "seccao": "pp. 1–2: míldio e traça da videira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 09/2026, 15 de junho",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=893:circ-09-2026-eaedm",
+        "seccao": "pp. 2–3: traça, cigarrinha-verde e vetor da flavescência; p. 5: míldio e escaravelho da batateira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DRAPN, EDM, Circular 03/2021, 12 de março",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_03_2021.pdf",
+        "seccao": "Secção Traça-da-uva: armadilhas até ao fim de março (biologia e técnica, não produtos antigos)",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Nova vigilância, março–setembro como janela provisória. O início depende do voo local; os avisos de março e abril mostram que é preciso preparar cedo a observação. Preserva os três alertas de doença do lembrete geral substituído na lista."
+     }
+    },
+    {
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Cigarrinha-verde (Empoasca vitis): as placas amarelas ajudam a detetar adultos, mas a avaliação do risco exige procurar e contar ninfas no verso das folhas. Cruze a observação com o aviso agrícola antes de ponderar combate. Não confunda esta praga com Scaphoideus titanus, vetor da flavescência dourada.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 05/2026, 27 de abril",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=879:circ-05-abril-2026-eaedm",
+        "seccao": "Secções Oídio da videira, Podridão cinzenta e Cigarrinha-verde.",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 08/2026, 21 de maio",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=887:circ-08-22-maio-2026-eeadm-compressed",
+        "seccao": "Secções Bichado das pomóideas; Cigarrinha-verde (estimativa do risco); Traça-do-buxo. Datas e produtos de 2026 não são prescrições para campanhas seguintes.",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Nova vigilância, abril–setembro como lembrete provisório; observação de ninfas e risco da parcela prevalecem sobre as capturas de adultos."
+     }
+    },
+    {
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Flavescência dourada e vetor Scaphoideus titanus: consulte no início da campanha o edital da DGAV e os avisos de Entre Douro e Minho para a freguesia. Comunique de imediato suspeitas à DGAV ou à inspeção fitossanitária da CCDR-Norte. Onde existam medidas obrigatórias, cumpra-as; não espere por sintomas nem use o critério da cigarrinha-verde para dispensar o combate oficial.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica",
+        "estatuto"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DGAV, Portaria 267/2023, de 21 de agosto",
+        "url": "https://www.dgav.pt/wp-content/uploads/2023/08/Portaria-267.2023-flavescencia_gesfito.pdf",
+        "seccao": "Artigos 3.º e 5.º–7.º: informação da suspeita e medidas oficiais contra flavescência dourada e vetor",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica",
+         "estatuto"
+        ]
+       },
+       {
+        "titulo": "DGAV, Edital 1/2026/FD_ST, de 28 de abril",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/04/Edital-_1_FD_-ST_2026_DGAV.pdf",
+        "seccao": "pontos 1–3 e Anexo I, p. 6: Castelo de Paiva; só enquadramento da campanha de 2026, não prescrição para anos seguintes",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica",
+         "estatuto"
+        ]
+       },
+       {
+        "titulo": "DGAV, Flavescência dourada — legislação e medidas da campanha",
+        "url": "https://www.dgav.pt/plantas/conteudo/sanidade-vegetal/inspecao-fitossanitaria/informacao-fitossanitaria/flavescencia-dourada/",
+        "seccao": "Portaria 267/2023, despacho e edital da campanha; verificar atualizações antes de agir",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica",
+         "estatuto"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 09/2026, 15 de junho",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=893:circ-09-2026-eaedm",
+        "seccao": "pp. 2–3: traça, cigarrinha-verde e vetor da flavescência; p. 5: míldio e escaravelho da batateira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Nova vigilância, abril–setembro como lembrete de consulta e acompanhamento. Não fixa datas, número de aplicações nem produtos para campanhas futuras; obrigações e comunicação de suspeita não se limitam a estes meses."
+     }
     }
    ]
   },
@@ -622,10 +1158,52 @@
     },
     {
      "meses": [
-      4
+      4,
+      5,
+      6
      ],
      "tipo": "monitorizacao",
-     "texto": "Vigie afídeos nos rebentos."
+     "texto": "Afídeos dos citrinos: examine rebentos tenros e o verso das folhas, procurando colónias, deformação e melada. Observe também os auxiliares e a evolução do ataque. A presença da praga não equivale a uma ordem de tratamento; proteja os polinizadores durante a floração.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Algarve, Circular 06/2025 — citrinos",
+        "url": "https://arba.pt/wp-content/uploads/2025/09/Circular_06_2025.pdf",
+        "seccao": "1.3 e 1.4: observar rebentos jovens, mineira e afídeos; técnica, sem transpor calendário algarvio nem recomendações químicas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "RHS, Aphids",
+        "url": "https://www.rhs.org.uk/biodiversity/aphids",
+        "seccao": "Symptoms, Management e Biology; observar colónias e auxiliares; não valida um calendário português",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Prolonga a observação dos rebentos durante a primavera; a técnica não confirma os meses específicos de Sardoura."
+     }
     },
     {
      "meses": [
@@ -635,7 +1213,47 @@
       9
      ],
      "tipo": "monitorizacao",
-     "texto": "Mineira: vigie os rebentos novos."
+     "texto": "Mineira dos citrinos (Phyllocnistis citrella): procure galerias nas folhas tenras dos rebentos novos, sobretudo em árvores jovens ou reenxertadas. Folhas velhas com galerias não demonstram ataque ativo. Evite podas severas que provoquem rebentação abundante; avalie os danos no crescimento novo antes de decidir qualquer combate.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 02/2025, 11 de março",
+        "url": "https://drapnsiapd.utad.pt/sia/Portals/0/Avisos/Circulares/EntreDouro/Circular%2002%20_2025_%20EAEDM.pdf",
+        "seccao": "Citrinos: mineira dos rebentos, importância nas árvores jovens e reenxertadas; rebentação tenra, não folhas velhas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Algarve, Circular 06/2025 — citrinos",
+        "url": "https://arba.pt/wp-content/uploads/2025/09/Circular_06_2025.pdf",
+        "seccao": "1.3 e 1.4: observar rebentos jovens, mineira e afídeos; técnica, sem transpor calendário algarvio nem recomendações químicas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
@@ -738,7 +1356,47 @@
       6
      ],
      "tipo": "monitorizacao",
-     "texto": "Vespa-das-galhas: vigie as galhas nos rebentos."
+     "texto": "Vespa-das-galhas: procure galhas após o abrolhamento. Não corte nem destrua galhas verdes ou secas por rotina, pois podem alojar o parasitoide Torymus sinensis. Peça acompanhamento técnico para avaliar a praga e o estabelecimento do auxiliar; as largadas exigem orientação e acompanhamento.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 08/2018, 22 de maio",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_08_2018.pdf",
+        "seccao": "Castanheiro: preservar galhas verdes e secas; Oliveira: traça na floração; Tomateiro: deteção precoce de Tuta; apenas técnica/biologia",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "INIAV/IPB, Procedimentos para largadas e monitorização de Torymus sinensis, versão 02, fevereiro de 2021",
+        "url": "https://www.dgav.pt/metodologia-para-largadas-e-monitorizacao-de-torymus-sinensis-final/",
+        "seccao": "I.1–I.2 e II: galhas após abrolhamento, acompanhamento técnico e monitorização do parasitoide",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
@@ -768,24 +1426,161 @@
    "intervencoes": [
     {
      "meses": [
+      3,
       4
      ],
      "tipo": "fitofarmaco",
-     "texto": "Bacteriose: risco no abrolhamento com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Bacteriose: avalie o historial da nogueira e o risco de chuva desde o abrolhamento. A prevenção depende da fase dos gomos e flores. Não aplique cobre nas flores femininas abertas; siga o aviso agrícola e as restrições da finalidade escolhida. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 03/2021, 12 de março",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_03_2021.pdf",
+        "seccao": "Nogueira: abrolhamento; Ornamentais: lagartas de Cydalima já ativas em março; apenas biologia, não a antiga lista de produtos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 06/2026, 5 de maio",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=883:circ-06-maio-2026-eaedm",
+        "seccao": "p. 2: bacteriose da nogueira; precaução com cobre na floração feminina",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Nogueira #0; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Acrescenta março porque o abrolhamento pode começar nesse mês, como documentado pelo aviso regional de 12/03/2021. Não significa tratar antes de a nogueira entrar na fase sensível."
+     }
     },
     {
      "meses": [
-      5
-     ],
-     "tipo": "fitofarmaco",
-     "texto": "Bacteriose e antracnose: risco depois da floração com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
-    },
-    {
-     "meses": [
+      5,
       6
      ],
+     "tipo": "fitofarmaco",
+     "texto": "Bacteriose e antracnose são doenças diferentes: confirme o diagnóstico e a finalidade autorizada para cada uma; um produto para uma não fica validado para a outra. Com chuva e tecidos novos, acompanhe o aviso agrícola; se ponderar cobre contra bacteriose, espere que termine a floração feminina. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 06/2026, 5 de maio",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=883:circ-06-maio-2026-eaedm",
+        "seccao": "p. 2: bacteriose da nogueira; precaução com cobre na floração feminina",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CNCFS / António Ramos, Nogueira: Estado da Produção, maio de 2017",
+        "url": "https://cncfs.pt/sites/default/files/documentos/2024-04/nogueiraproducao.pdf",
+        "seccao": "8.4, pp. impressas 53–55 (PDF 60–62): bichado e antracnose; apenas biologia e técnica de observação, não receitas químicas antigas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Nogueira #1; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Acrescenta junho para acompanhar tecidos novos e períodos húmidos após a floração; a persistência do risco e os limites locais continuam por rever."
+     }
+    },
+    {
+     "meses": [
+      5,
+      6,
+      7,
+      8
+     ],
      "tipo": "monitorizacao",
-     "texto": "Bichado da noz: armadilhas para seguir o voo."
+     "texto": "Bichado-da-noz (Cydia pomonella): instale armadilhas com feromona antes do primeiro voo e acompanhe capturas e frutos durante as gerações seguintes. Procure perfurações e nozes atacadas; use os registos e o aviso agrícola para avaliar o risco, sem converter cada captura numa pulverização.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CNCFS / António Ramos, Nogueira: Estado da Produção, maio de 2017",
+        "url": "https://cncfs.pt/sites/default/files/documentos/2024-04/nogueiraproducao.pdf",
+        "seccao": "8.4, pp. impressas 53–55 (PDF 60–62): bichado e antracnose; apenas biologia e técnica de observação, não receitas químicas antigas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Maio–agosto em vez de junho isolado: a fonte portuguesa descreve adultos em maio–junho e outra geração em julho–agosto. Ajustar início e fim ao voo local."
+     }
     }
    ]
   },
@@ -1227,14 +2022,101 @@
       8
      ],
      "tipo": "fitofarmaco",
-     "texto": "Míldio: risco com tempo húmido e orvalhos. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
+     "texto": "Míldio do tomateiro: a humidade persistente, orvalhos, nevoeiro e rega que molha a folhagem favorecem a doença. Reduza o molhamento e acompanhe a previsão e o aviso agrícola. Quando necessária, a proteção é preventiva; não espere pela destruição da rama ou dos frutos. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 09/2021",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_09_2021.pdf",
+        "seccao": "pp. 6–7: míldio da batateira e do tomateiro; humidade persistente e prevenção; não as listas antigas de produtos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Tomate #0; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
-      6
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
      ],
      "tipo": "monitorizacao",
-     "texto": "Traça (Tuta absoluta): armadilhas para seguir o voo."
+     "texto": "Traça-do-tomateiro (Tuta absoluta): acompanhe armadilhas com feromona e examine folhas e frutos, procurando minas com larvas e perfurações. Comece com a cultura instalada e mantenha a observação até ao fim do ciclo; a captura de adultos serve de alerta para procurar ataque, não de ordem automática para tratar.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 08/2018, 22 de maio",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_08_2018.pdf",
+        "seccao": "Castanheiro: preservar galhas verdes e secas; Oliveira: traça na floração; Tomateiro: deteção precoce de Tuta; apenas técnica/biologia",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DRAPN, EDM, Circular 14/2019, 24 de julho",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_14_2019.pdf",
+        "seccao": "p. 5: mosca da azeitona e Tuta absoluta; monitorização sem transpor as antigas indicações de produtos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Alarga junho isolado a abril–outubro para acompanhar a cultura instalada, incluindo ataques de verão documentados regionalmente. Janela indicativa de cultivo, não validação de risco em todos esses meses."
+     }
     }
    ]
   },
@@ -1260,15 +2142,109 @@
       6
      ],
      "tipo": "cultural",
-     "texto": "Escaravelho: apanha manual de adultos e posturas."
+     "texto": "Escaravelho-da-batateira: observe os dois lados das folhas e procure adultos, posturas e larvas. Em pequenas parcelas, recolha-os manualmente enquanto os focos são limitados e repita a inspeção. Avalie a evolução e a desfolha antes de decidir outras medidas; encontrar alguns insetos não obriga a pulverizar.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "Iowa State University Extension, Colorado Potato Beetle Control in the Home Garden",
+        "url": "https://yardandgarden.extension.iastate.edu/how-to/colorado-potato-beetle-control-home-garden",
+        "seccao": "Hand Picking; só apanha manual em pequena escala, sem importar calendários ou produtos norte-americanos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 09/2026, 15 de junho",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=893:circ-09-2026-eaedm",
+        "seccao": "pp. 2–3: traça, cigarrinha-verde e vetor da flavescência; p. 5: míldio e escaravelho da batateira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
+      3,
+      4,
       5,
-      6
+      6,
+      7
      ],
      "tipo": "fitofarmaco",
-     "texto": "Míldio: risco com tempo húmido. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
+     "texto": "Míldio da batateira: vigie desde que haja rama, sobretudo com chuva, nevoeiro, orvalho ou rega por aspersão. Acompanhe a previsão e os avisos agrícolas para posicionar uma eventual proteção preventiva; não espere que o batatal fique atacado. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 09/2021",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_09_2021.pdf",
+        "seccao": "pp. 6–7: míldio da batateira e do tomateiro; humidade persistente e prevenção; não as listas antigas de produtos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Batata #1; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 03/2024, 20 de março",
+        "url": "https://agricultura.ccdr-n.pt/component/phocadownload/category/73-avisos-agricolas?download=751:circ-03-2024-edm-20-mar2024-ccdr",
+        "seccao": "pp. 6–7: princípios da proteção contra míldio da batateira desde a instalação, observação e prevenção; apenas técnica, não a lista de produtos de 2024",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Março–julho em vez de maio–junho: culturas com rama não ficam sem risco fora desses dois meses. Lembrete provisório segundo o ciclo; colheitas tardias podem exigir observação posterior, que os meses não excluem."
+     }
     }
    ]
   },
@@ -1388,16 +2364,93 @@
       10
      ],
      "tipo": "fitofarmaco",
-     "texto": "Lagartas nas folhas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, Bacillus thuringiensis), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Lagartas das couves: identifique a praga e procure ovos e larvas no verso das folhas. Numa horta pequena, comece pela remoção manual dos focos e preserve os auxiliares. Só avalie um inseticida se o ataque e os estragos o justificarem; o momento depende da praga e do estado das larvas. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador. Confirme a espécie de couve: uma autorização para couve-flor não se estende automaticamente às restantes.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 13/2026, 23 de setembro",
+        "url": "https://agrodigital.ccdr-n.pt/sia/Portals/0/Avisos/Circulares/EntreDouro/CIRC_13_EAEDM_2026_compressed.pdf",
+        "seccao": "p. 7: lagarta verde da couve; observação e remoção manual de ovos/lagartas em hortas familiares",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Couves e brócolos #0; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     },
     {
      "meses": [
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
      ],
      "tipo": "monitorizacao",
-     "texto": "Vigie afídeos."
+     "texto": "Afídeos das couves: observe o verso das folhas, os pontos de crescimento e as partes que serão colhidas. Registe a evolução das colónias e os auxiliares, especialmente nas plantas jovens. Pequenos focos podem ser removidos manualmente; decida pelo ataque e pelos danos, não apenas pela presença de piolhos.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "RHS, Mealy cabbage aphid",
+        "url": "https://www.rhs.org.uk/biodiversity/mealy-cabbage-aphid",
+        "seccao": "Symptoms, Management e Biology; técnica e biologia, sem validar meses portugueses",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Prolonga fevereiro–abril até outubro, acompanhando as culturas de primavera e verão; não certifica os limites mensais de Sardoura nem exclui ataques no inverno."
+     }
     }
    ]
   },
@@ -1611,6 +2664,7 @@
     },
     {
      "meses": [
+      3,
       4,
       5,
       6,
@@ -1619,7 +2673,58 @@
       9
      ],
      "tipo": "fitofarmaco",
-     "texto": "Traça-do-buxo com lagartas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, Bacillus thuringiensis), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Traça-do-buxo (Cydalima perspectalis): procure lagartas vivas, teias e folhas roídas no interior da planta. Remova pequenos focos acessíveis e reavalie o ataque; não trate só por encontrar uma borboleta ou estragos antigos. Se necessário, posicione o combate na fase larvar vulnerável indicada no rótulo. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAPN, EDM, Circular 03/2021, 12 de março",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_03_2021.pdf",
+        "seccao": "Nogueira: abrolhamento; Ornamentais: lagartas de Cydalima já ativas em março; apenas biologia, não a antiga lista de produtos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte, EDM, Circular 08/2026, 21 de maio",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=887:circ-08-22-maio-2026-eeadm-compressed",
+        "seccao": "Secções Bichado das pomóideas; Cigarrinha-verde (estimativa do risco); Traça-do-buxo. Datas e produtos de 2026 não são prescrições para campanhas seguintes.",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Buxo #1; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Acrescenta março: o aviso regional de 12/03/2021 documenta lagartas já ativas. A monitorização #0 fica para a ronda B; em março mantém-se também o lembrete geral do grupo."
+     }
     }
    ]
   },
@@ -1656,7 +2761,48 @@
       6
      ],
      "tipo": "fitofarmaco",
-     "texto": "Oídio: manchas brancas nos rebentos. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de enxofre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Oídio da roseira: procure pó branco nos rebentos, folhas e botões e confirme a doença. Melhore o arejamento, evite excesso de azoto e retire rebentos muito afetados. O oídio pode surgir sem chuva; avalie a evolução e a sensibilidade da roseira antes de ponderar um fungicida. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "RHS, Rose powdery mildew",
+        "url": "https://www.rhs.org.uk/disease/rose-powdery-mildew",
+        "seccao": "Symptoms, Non-chemical control e Biology; apenas biologia e técnica, não produtos britânicos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Roseira #1; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     }
    ]
   },
@@ -1955,7 +3101,48 @@
       7
      ],
      "tipo": "fitofarmaco",
-     "texto": "Oídio: manchas brancas nas folhas. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
+     "texto": "Oídio da extremosa: confirme o pó branco em folhas, rebentos e botões; sombra e fraco arejamento favorecem o problema. Avalie a intensidade e os danos antes de ponderar fungicida. Só pondere um fitofármaco com finalidade autorizada no SIFITO para a cultura e o inimigo identificados, nas condições atuais do rótulo e da categoria de utilizador. No SIFITO, verifique também o grupo de ornamentais aplicável e o uso ao ar livre; uma autorização só para estufa não serve.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "UF/IFAS, Key Plant, Key Pests: Crapemyrtle (Lagerstroemia), revisão fevereiro de 2025",
+        "url": "https://ask.ifas.ufl.edu/publication/ep560",
+        "seccao": "Powdery Mildew (Oidium sp./Erysiphe lagerstroemiae); biologia/identificação, sem transpor meses da Florida nem produtos dos EUA",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV, SIFITO — consulta de finalidades em 20/11/2026",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "ficheiro": "revisao/fontes/SIFITO-primavera-A-2026-11-20.json",
+        "seccao": "Matriz de verificação: Extremosa #0; testemunhos de existência, não seleção de produto",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Lembrete para Sardoura; ajustar à fenologia, ao ciclo da cultura, ao tempo e aos avisos atuais de Entre Douro e Minho. Não há validação mensal local."
+      },
+      "nota": "Verificação da finalidade limitada à existência de usos; nenhum produto comercial, dose, intervalo ou programa de aplicações foi validado. Meses herdados mantidos como lembrete; não constituem uma janela exclusiva de risco."
+     }
     }
    ]
   },

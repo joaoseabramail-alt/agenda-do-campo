@@ -11,6 +11,19 @@ function run(name,change,expected){
  try{
   fs.copyFileSync(path.join(root,'verificar.js'),path.join(dir,'verificar.js'));
   fs.mkdirSync(path.join(dir,'revisao'));fs.copyFileSync(path.join(root,'revisao/FLORESTAIS-e729811.md'),path.join(dir,'revisao/FLORESTAIS-e729811.md'));
+  // Reproduzir as fontes locais já referenciadas nos dados, para que os casos
+  // positivos não falhem apenas por a pasta temporária omitir documentos reais.
+  function copiarFontes(o){
+   if(!o||typeof o!=='object')return;
+   if(typeof o.ficheiro==='string'){
+    const origem=path.resolve(root,o.ficheiro),destino=path.resolve(dir,o.ficheiro);
+    if(origem.startsWith(root+path.sep)&&destino.startsWith(dir+path.sep)&&fs.existsSync(origem)&&fs.statSync(origem).isFile()){
+     fs.mkdirSync(path.dirname(destino),{recursive:true});fs.copyFileSync(origem,destino);
+    }
+   }
+   for(const v of Object.values(o))copiarFontes(v);
+  }
+  for(const texto of Object.values(raw))copiarFontes(JSON.parse(texto));
   fs.writeFileSync(path.join(dir,'fonte.md'),'Fonte fictícia apenas para testes estruturais.');
   const p=JSON.parse(raw['plantas.json']),t=JSON.parse(raw['tratamentos.json']);
   change(p.plantas,t.tratamentos);

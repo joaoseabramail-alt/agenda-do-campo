@@ -53,7 +53,10 @@ assert(lista('trat',3).some(x=>x.nome==='Pessegueiro e nectarina'&&x.hot));
 assert(lista('trat',3).some(x=>x.nome==='Amendoeira'&&x.hot));
 assert(lista('trat',4).some(x=>x.nome==='Ameixeira e damasqueiro'&&x.hot));
 assert(!lista('trat',12).some(x=>x.nome==='Macieira e pereira'&&x.hot));
-const reg=tratamentos.flatMap(t=>t.intervencoes).filter(iv=>iv.revisao);
+// Limitar as contagens e o contrato de revisão às 14 intervenções desta ronda.
+const inverno=[[0,0],[0,1],[1,0],[2,0],[2,2],[4,0],[7,0],[7,3],[10,0],[10,1],[13,0],[13,1],[13,2],[24,0]];
+const reg=inverno.map(([g,i])=>tratamentos[g].intervencoes[i]);
+assert(reg.every(iv=>iv.revisao),'Revisão de inverno removida');
 assert.equal(reg.length,14);
 assert.equal(reg.filter(iv=>iv.revisao.estado==='suspenso').length,1);
 assert.equal(reg.filter(iv=>iv.revisao.estado==='parcial').length,13);

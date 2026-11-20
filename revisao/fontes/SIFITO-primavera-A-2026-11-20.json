@@ -1,0 +1,372 @@
+{
+  "consultado": "2026-11-20",
+  "pagina": "https://sifito.dgav.pt/divulgacao/usos",
+  "manual": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+  "metodo": "Consulta pública do endpoint usado pela página de divulgação. Filtro Kendo na chave filter; página 1, pageSize 1000. Conferidos Total e número de linhas recebidas. Projeção documental: os testemunhos identificam finalidades existentes, não validam produtos comerciais, doses, programas nem rótulos completos. A resposta integral não é reproduzida; conserva-se o seu SHA-256 para identificação. A repetição da consulta pode mudar com as autorizações.",
+  "consultas": [
+    {
+      "id": "videira_mildio",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27Videira%27~and~NomeInimigo~eq~%27M%C3%ADldio%27",
+      "filtro": "NomeCultura~contains~'Videira'~and~NomeInimigo~eq~'Míldio'",
+      "total_declarado": 284,
+      "recebidos": 284,
+      "sha256_resposta": "463be7d65b3cdf1fa071fdc9ff5d57aa2c1c8cad30bf4dcf8b3f76ffb7808dc1"
+    },
+    {
+      "id": "videira_oidio",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27Videira%27~and~NomeInimigo~eq~%27O%C3%ADdio%27",
+      "filtro": "NomeCultura~contains~'Videira'~and~NomeInimigo~eq~'Oídio'",
+      "total_declarado": 213,
+      "recebidos": 213,
+      "sha256_resposta": "3da1c69caf17233a14a5a05590d5374740f34088014317efe9637e8fea5b0ea6"
+    },
+    {
+      "id": "nogueira",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~eq~%27Nogueira%27",
+      "filtro": "NomeCultura~eq~'Nogueira'",
+      "total_declarado": 599,
+      "recebidos": 599,
+      "sha256_resposta": "e5682c1deb66c05cd946b14c47cf4cad696f85c5286fcc56608a64a53e9afe7d"
+    },
+    {
+      "id": "tomate_mildio",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27Tomat%27~and~NomeInimigo~eq~%27M%C3%ADldio%27",
+      "filtro": "NomeCultura~contains~'Tomat'~and~NomeInimigo~eq~'Míldio'",
+      "total_declarado": 195,
+      "recebidos": 195,
+      "sha256_resposta": "a67e5cb2dee1b39c6f7df1efd0b7475d0a4aec4210103cbcacf2e8b655843190"
+    },
+    {
+      "id": "batata_mildio",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27Batat%27~and~NomeInimigo~eq~%27M%C3%ADldio%27",
+      "filtro": "NomeCultura~contains~'Batat'~and~NomeInimigo~eq~'Míldio'",
+      "total_declarado": 123,
+      "recebidos": 123,
+      "sha256_resposta": "2df323ae88e2038dc2feae83aebd6ffee7d6f22ab54f49a85ae4ef26a77ab30d"
+    },
+    {
+      "id": "couves_lagartas",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=%28NomeCultura~contains~%27Couve%27~or~NomeCultura~contains~%27Br%C3%B3col%27%29~and~NomeInimigo~contains~%27Lagart%27",
+      "filtro": "(NomeCultura~contains~'Couve'~or~NomeCultura~contains~'Brócol')~and~NomeInimigo~contains~'Lagart'",
+      "total_declarado": 960,
+      "recebidos": 960,
+      "sha256_resposta": "aa47524009649baf25e432ca4bc231ba3e913c57d09bde9172fc5921213a2424"
+    },
+    {
+      "id": "buxo",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeInimigo~contains~%27buxo%27",
+      "filtro": "NomeInimigo~contains~'buxo'",
+      "total_declarado": 6,
+      "recebidos": 6,
+      "sha256_resposta": "7f7f36091ae5038b05633444cae317b0448b723dc99c3b060837e1f04de33c57"
+    },
+    {
+      "id": "roseira_oidio",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27Roseira%27~and~NomeInimigo~eq~%27O%C3%ADdio%27",
+      "filtro": "NomeCultura~contains~'Roseira'~and~NomeInimigo~eq~'Oídio'",
+      "total_declarado": 62,
+      "recebidos": 62,
+      "sha256_resposta": "b5bdf6e1aec9fc673fdd901d22c6781efcaa73073e8e01b3b43da843cf9a7dfb"
+    },
+    {
+      "id": "ornamentais_oidio",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27ornamenta%27~and~NomeInimigo~eq~%27O%C3%ADdio%27",
+      "filtro": "NomeCultura~contains~'ornamenta'~and~NomeInimigo~eq~'Oídio'",
+      "total_declarado": 129,
+      "recebidos": 129,
+      "sha256_resposta": "c5f636f5bb33f781fed06d9a820f0dcad48bfab8b55826283f0cc0ff5d3e442f"
+    },
+    {
+      "id": "extremosa",
+      "url": "https://sifito.dgav.pt/tools/divulgacaousos_read?page=1&pageSize=1000&filter=NomeCultura~contains~%27Extremosa%27",
+      "filtro": "NomeCultura~contains~'Extremosa'",
+      "total_declarado": 0,
+      "recebidos": 0,
+      "sha256_resposta": "fe01bcce2f83efa7daa5b3707b0280d7b2485ed9caf359b61cb77a1eca1167b2"
+    }
+  ],
+  "matriz": [
+    {
+      "grupo": "Videira e uva de mesa",
+      "intervencao": 0,
+      "consulta": "videira_mildio",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "Testemunho explicita uva de mesa e de vinificação; não transfere as suas restrições de época para todos os produtos.",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "1797",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Videira",
+          "NomeCientCult": "Vitis vinifera",
+          "SitPartic": "Uva de mesa e uva para vinificação",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Míldio",
+          "NomeCientInim": "Plasmopara viticola",
+          "DataValidF1": "2031-05-18T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Videira e uva de mesa",
+      "intervencao": 1,
+      "consulta": "videira_oidio",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2250",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Videira",
+          "NomeCientCult": "Vitis vinifera",
+          "SitPartic": "Uva de mesa e uva para vinificação",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Oídio",
+          "NomeCientInim": "Erysiphe necator",
+          "DataValidF1": "2027-06-30T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Nogueira",
+      "intervencao": 0,
+      "consulta": "nogueira",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2128",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Nogueira",
+          "NomeCientCult": "Juglans regia",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Bacteriose",
+          "NomeCientInim": "Xanthomonas sp.",
+          "DataValidF1": "2034-02-28T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Nogueira",
+      "intervencao": 1,
+      "consulta": "nogueira",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "Dois alvos verificados separadamente; não se afirma que o mesmo produto ou época sirva para ambos.",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2128",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Nogueira",
+          "NomeCientCult": "Juglans regia",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Bacteriose",
+          "NomeCientInim": "Xanthomonas sp.",
+          "DataValidF1": "2034-02-28T00:00:00"
+        },
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2121",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Nogueira",
+          "NomeCientCult": "Juglans regia",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Antracnose",
+          "NomeCientInim": "Ophiognomonia leptostyla",
+          "DataValidF1": "2027-12-31T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Tomate",
+      "intervencao": 0,
+      "consulta": "tomate_mildio",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "Excluída a finalidade para tomateiro-arbóreo.",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "1797",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Tomateiro",
+          "NomeCientCult": "Solanum lycopersicum",
+          "SitPartic": "Transformação industrial",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Míldio",
+          "NomeCientInim": "Phytophthora infestans",
+          "DataValidF1": "2031-05-18T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Batata",
+      "intervencao": 1,
+      "consulta": "batata_mildio",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "Excluídas as finalidades para batata-doce.",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "1120",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Batateira",
+          "NomeCientCult": "Solanum tuberosum",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Míldio",
+          "NomeCientInim": "Phytophthora infestans",
+          "DataValidF1": "2028-02-14T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Couves e brócolos",
+      "intervencao": 0,
+      "consulta": "couves_lagartas",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "Cada cultura do grupo tem testemunho próprio para lagarta-da-couve. Isto não valida outras lagartas, culturas ou produtos por extensão.",
+      "testemunhos": [
+        {
+          "TipoAutProd": "ACP",
+          "NumAutProd": "0172",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Couve-brócolo",
+          "NomeCientCult": "Brassica oleracea var. italica",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Lagarta-da-couve",
+          "NomeCientInim": "Pieris brassicae",
+          "DataValidF1": "2031-07-09T00:00:00"
+        },
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2360",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Couve-coração",
+          "NomeCientCult": "Brassica oleracea var. capitata f. conica",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A + P",
+          "NomeInimigo": "Lagarta-da-couve",
+          "NomeCientInim": "Pieris brassicae",
+          "DataValidF1": "2039-06-30T00:00:00"
+        },
+        {
+          "TipoAutProd": "ACP",
+          "NumAutProd": "0172",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Couve-flor",
+          "NomeCientCult": "Brassica oleracea var. botrytis",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Lagarta-da-couve",
+          "NomeCientInim": "Pieris brassicae",
+          "DataValidF1": "2031-07-09T00:00:00"
+        },
+        {
+          "TipoAutProd": "ACP",
+          "NumAutProd": "0172",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Couve-galega",
+          "NomeCientCult": "Brassica oleracea var. viridis",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Lagarta-da-couve",
+          "NomeCientInim": "Pieris brassicae",
+          "DataValidF1": "2031-07-09T00:00:00"
+        },
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2360",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Couve-lombarda",
+          "NomeCientCult": "Brassica oleracea var. sabauda",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A + P",
+          "NomeInimigo": "Lagarta-da-couve",
+          "NomeCientInim": "Pieris brassicae",
+          "DataValidF1": "2039-06-30T00:00:00"
+        },
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "1427",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Couve-portuguesa (inclui couve-tronchuda, couve-penca)",
+          "NomeCientCult": "Brassica oleracea var. costata",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Lagarta-da-couve",
+          "NomeCientInim": "Pieris brassicae",
+          "DataValidF1": "2027-04-20T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Buxo",
+      "intervencao": 1,
+      "consulta": "buxo",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "",
+      "testemunhos": [
+        {
+          "TipoAutProd": "APV",
+          "NumAutProd": "3681",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Buxo",
+          "NomeCientCult": "Buxus sp.",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A + P",
+          "NomeInimigo": "Traça-do-buxo",
+          "NomeCientInim": "Cydalima perspectalis",
+          "DataValidF1": "2027-04-21T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Roseira",
+      "intervencao": 1,
+      "consulta": "roseira_oidio",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "1013",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Roseira",
+          "NomeCientCult": "Rosa sp.",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A + P",
+          "NomeInimigo": "Oídio",
+          "NomeCientInim": "Podosphaera pannosa",
+          "DataValidF1": "2031-04-22T00:00:00"
+        }
+      ]
+    },
+    {
+      "grupo": "Extremosa",
+      "intervencao": 0,
+      "consulta": "ornamentais_oidio",
+      "conclusao": "Existem finalidades publicadas correspondentes, ao ar livre, com DataValidF1 não anterior à consulta. Produto permanece por_rever.",
+      "nota": "A consulta por Extremosa deu zero, mas não demonstra ausência de finalidade: há grupo de árvores/arbustos ornamentais para Oidío/Oidium sp. ao ar livre. Lagerstroemia é enquadrada nesse grupo e UF/IFAS identifica o oídio como Oidium sp./Erysiphe lagerstroemiae. Enquadramento de grupo, não consulta nominal positiva; confirmar rótulo/cultura/praga/ambiente concretos antes de qualquer utilização.",
+      "testemunhos": [
+        {
+          "TipoAutProd": "AV",
+          "NumAutProd": "2507",
+          "TipoUtilDivulg1": "Uso profissional",
+          "NomeCultura": "Ornamentais (coníferas, árvores e arbustos)",
+          "NomeCientCult": "-",
+          "SitPartic": "-",
+          "ArLivreProtInt": "A",
+          "NomeInimigo": "Oídio",
+          "NomeCientInim": "Oidium sp.",
+          "DataValidF1": "2027-07-31T00:00:00"
+        }
+      ]
+    }
+  ]
+}
