@@ -1276,6 +1276,7 @@
    "grupo": "Pimento e beringela",
    "especies": [
     "pimento",
+    "pimento_padron",
     "beringela"
    ],
    "problemas": "Afídeos, ácaros, mosca-branca",

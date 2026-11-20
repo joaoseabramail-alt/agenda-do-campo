@@ -6,6 +6,8 @@ const root=path.join(__dirname,'..'),base='89e4f31959349261ced6e2ae56aa6b00bf9dc
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>fs.readFileSync(path.join(root,f),'utf8');
 const targets=['amendoeira','amoreira','aveleira','castanheiro','diospireiro','feijoa','marmeleiro','medronheiro','pistacheiro','romazeira','framboeseira','groselheira','mirtilo','uva_mesa'];
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
+// Espécies acrescentadas depois desta ronda não fazem parte do contrato: ficam de fora da comparação.
+const idsBase=new Set(before.plantas.map(p=>p.id));after.plantas=after.plantas.filter(p=>idsBase.has(p.id));
 assert.equal(after.plantas.length,before.plantas.length);
 const changes=[];
 for(let i=0;i<after.plantas.length;i++){
@@ -24,7 +26,7 @@ for(let i=0;i<after.plantas.length;i++){
  assert.deepEqual(a,b,'Campo fora do âmbito: '+a.id);
 }
 assert.deepEqual(changes.sort(),[...targets].sort());
-for(const file of ['calendario.json','tratamentos.json'])assert.equal(now(file),old(file),file+' alterado');
+for(const file of ['calendario.json'])assert.equal(now(file),old(file),file+' alterado');
 // index.html e sw.js deixaram de ser comparados com a base: a interface pode evoluir; o comportamento das listas continua verificado abaixo.
 function app(P){
  const dados={plantas:P.plantas,tratamentos:JSON.parse(now('tratamentos.json')).tratamentos,tarefas:JSON.parse(now('calendario.json')).tarefas};
@@ -67,3 +69,6 @@ assert.match(row('groselheira',1),/groselheira vermelha/);
 assert.match(row('mirtilo',2),/primeiros dois anos/);
 assert.match(row('amendoeira',2),/doença do chumbo/);
 console.log(`Regressão das 14 fichas de fruto: ${pares} combinações sem exceções; meses e textos verificados. Contrato das rondas seguintes no respetivo teste.`);
+
+// Tratamentos: iguais à base, ignorando espécies acrescentadas depois nas listas de espécies dos grupos.
+{const semNovas=x=>{const d=JSON.parse(x);for(const g of d.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));return d};const _ta=semNovas(now('tratamentos.json')),_tb=semNovas(old('tratamentos.json'));assert.deepEqual(_ta,_tb,'tratamentos.json alterado');}

@@ -7,6 +7,8 @@ const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'u
 const now=f=>fs.readFileSync(path.join(root,f),'utf8');
 const targets=['videira','macieira','pereira','figueira','oliveira','kiwi','laranjeira','limoeiro','tangerineira'];
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
+// Espécies acrescentadas depois desta ronda não fazem parte do contrato: ficam de fora da comparação.
+const idsBase=new Set(before.plantas.map(p=>p.id));after.plantas=after.plantas.filter(p=>idsBase.has(p.id));
 assert.equal(after.plantas.length,before.plantas.length);
 const changes=[];
 for(let n=0;n<after.plantas.length;n++){
@@ -29,7 +31,7 @@ const fig=ta.tratamentos.find(x=>x.grupo==='Figueira').intervencoes[0];
 assert.equal(fig.revisao.estado,'suspenso');assert.deepEqual(fig.meses,[]);
 assert(!Object.hasOwn(fig.revisao,'adaptacao_local'));
 delete tb.tratamentos.find(x=>x.grupo==='Figueira').intervencoes[0].revisao.adaptacao_local;
-assert.deepEqual(ta,tb);
+for(const g of ta.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));assert.deepEqual(ta,tb);
 for(const f of ['calendario.json'])assert.equal(now(f),old(f),f+' alterado');
 // index.html e sw.js deixaram de ser comparados com a base: a interface pode evoluir; o comportamento das listas continua verificado abaixo.
 function app(P,T,html){
@@ -70,3 +72,6 @@ assert.match(row('videira',5),/a partir da floração/);
 for(const id of ['laranjeira','limoeiro','tangerineira'])for(const m of [3,4,5])assert.match(row(id,m),/fora do risco de geada/);
 for(const m of [2,3,4])assert.match(row('oliveira',m),/adie a poda/);
 console.log(`Regressão das 9 fichas da primeira ronda: ${pares} combinações sem exceções; textos mensais e suspensão da figueira verificados. Âmbito das rondas seguintes no respetivo teste.`);
+
+// Tratamentos: iguais à base, ignorando espécies acrescentadas depois nas listas de espécies dos grupos.
+{const semNovas=x=>{const d=JSON.parse(x);for(const g of d.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));return d};const _ta=semNovas(now('tratamentos.json')),_tb=semNovas(old('tratamentos.json'));for(const g of _tb.tratamentos)for(const i of g.intervencoes)if(i.revisao&&i.revisao.estado==='suspenso')delete i.revisao.adaptacao_local;assert.deepEqual(_ta,_tb,'tratamentos.json alterado');}

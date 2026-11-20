@@ -7356,6 +7356,76 @@
    "toxicidade": null
   },
   {
+   "id": "castanheiro_india",
+   "nome": "Castanheiro-da-índia",
+   "nome_cientifico": "Aesculus hippocastanum",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "tipo_lua": "a",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      10,
+      11
+     ],
+     "nota": "Semeie as castanhas frescas logo depois de caírem, sem as deixar secar; germinam na primavera.",
+     "fiel_variedade": false
+    },
+    "enxertia": {
+     "dificuldade": 3,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Usada para manter cultivares (por exemplo, de flor dobrada), sobre porta-enxerto de semente."
+    }
+   },
+   "metodo_recomendado": [
+    "enxertia"
+   ],
+   "nota_variedade": "A semente dá a espécie comum; as cultivares só se mantêm por enxertia.",
+   "poda": [
+    {
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "tipo": "Precisa de pouca poda. Na árvore jovem, corrija só ramos concorrentes ou mal inseridos; na adulta, retire apenas ramos mortos, partidos ou perigosos. Cortes grandes ou em altura devem ser feitos por arborista"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2,
+     3
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante os primeiros anos, com água suficiente para humedecer a zona das raízes. Depois, só em secas prolongadas.",
+   "floracao": "Cachos erguidos de flores brancas na primavera (abril–maio).",
+   "solo": "Solo profundo, fresco e bem drenado.",
+   "resistencia_geada": "Rústica no solo.",
+   "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço.",
+   "autoctone": false,
+   "toxicidade": "As castanhas-da-índia, a casca e as folhas são tóxicas se ingeridas. Não são comestíveis: não as confunda com as castanhas do castanheiro.",
+   "notas": {
+    "plantar": {
+     "11": "Árvore muito grande (25–30 m): plante longe de casas, muros e canalizações.",
+     "1": "Árvore muito grande (25–30 m): plante longe de casas, muros e canalizações."
+    }
+   },
+   "foto": "Castanheiro-da-índia"
+  },
+  {
    "id": "aucuba",
    "nome": "Aucuba",
    "nome_cientifico": "Aucuba japonica",
@@ -11796,6 +11866,55 @@
      "5": "Época principal de transplante em Castelo de Paiva."
     }
    }
+  },
+  {
+   "id": "pimento_padron",
+   "nome": "Pimento Padrón",
+   "nome_cientifico": "Capsicum annuum (cultivar Padrón)",
+   "categoria": "hortícola",
+   "folha": "anual",
+   "tipo_lua": "f",
+   "geada": true,
+   "sementeira": {
+    "meses": [
+     2,
+     3,
+     4
+    ],
+    "modo": "alfobre"
+   },
+   "plantacao": {
+    "meses": [
+     5,
+     6
+    ],
+    "o_que": null
+   },
+   "colheita": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "nota_variedade": "Cruza facilmente com outros pimentos: para guardar semente fiel, isole as plantas ou compre semente certificada.",
+   "adubacao": "No solo, ajuste à fertilidade. Em vaso, reforce regularmente com adubo para hortícolas de fruto, conforme o rótulo.",
+   "rega": "Mantenha humidade regular e evite secar a terra entre regas: a falta de água aumenta os frutos picantes.",
+   "floracao": "Floresce continuamente durante o verão.",
+   "solo": "Solo fértil e bem drenado.",
+   "resistencia_geada": "Sensível à geada. Instale no exterior quando tiver passado o risco.",
+   "exposicao": "Sol pleno, em local abrigado.",
+   "autoctone": null,
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "2": "Em estufa ou junto a uma parede abrigada, para transplantar em maio.",
+     "3": "Protegido do frio.",
+     "4": "Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.",
+     "5": "Época principal de transplante em Castelo de Paiva."
+    }
+   },
+   "foto": "Pimento-padrón"
   },
   {
    "id": "rabanete",

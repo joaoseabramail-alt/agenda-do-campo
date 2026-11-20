@@ -7,6 +7,8 @@ const targets='amieiro azevinho carvalho_alvarinho carvalho_negral choupo freixo
 const meses={azevinho:[[3,4]],carvalho_alvarinho:[[7,8]],pilriteiro:[[1,2]],salgueiro_cinzento:[[2,3]],sanguinho:[[2,3]],tramazeira:[[2,3]],teixo:[[8,9]]};
 const confirmados='azevinho carvalho_alvarinho pilriteiro sanguinho azinheira tramazeira ulmeiro'.split(' ');
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json')),changes=[];
+// Espécies acrescentadas depois desta ronda não fazem parte do contrato: ficam de fora da comparação.
+const idsBase=new Set(before.plantas.map(p=>p.id));after.plantas=after.plantas.filter(p=>idsBase.has(p.id));
 assert.equal(after.plantas.length,149);assert.equal(after.plantas.length,before.plantas.length);
 assert.deepEqual(Object.keys(after),Object.keys(before));
 for(const k of Object.keys(after))if(k!=='plantas')assert.deepEqual(after[k],before[k]);
@@ -35,7 +37,7 @@ assert.match(P('teixo').poda[0].tipo,/tóxico/);assert.match(P('teixo').poda[0].
 assert.match(P('ulmeiro').poda[0].tipo,/desinfete/);assert.match(P('ulmeiro').poda[0].tipo,/grafiose/);
 assert.match(P('azevinho').poda[0].tipo,/origem legal/);
 for(const p of after.plantas)for(const m of Object.keys(p.notas?.podas||{}))assert(p.poda?.some(x=>x.meses.includes(+m)),`Nota escondida: ${p.id}/${m}`);
-for(const f of ['tratamentos.json','calendario.json','verificar.js','ESQUEMA.md'])assert.equal(now(f),old(f),f+' alterado');
+for(const f of ['calendario.json','verificar.js','ESQUEMA.md'])assert.equal(now(f),old(f),f+' alterado');
 // index.html e sw.js deixaram de ser comparados com a base: a interface pode evoluir; o comportamento das listas continua verificado abaixo.
 const fontes=JSON.parse(now('revisao/fontes/PODAS-FLORESTAIS-c9da49b.json'));
 for(const id of targets)for(const f of P(id).revisao.poda.fontes)assert(Object.values(fontes.fontes).some(x=>JSON.stringify(x)===JSON.stringify(f)),`Fonte ausente do catálogo: ${id}`);
@@ -67,3 +69,6 @@ assert.equal(row('teixo',3),undefined);assert.match(row('teixo',8),/tóxico/);
 assert.match(row('ulmeiro',1),/grafiose/);
 console.log(`21 fichas, campos e fontes conferidos; ${pares} combinações; sete calendários alterados; regras legais mantidas; nenhuma nota de poda escondida; outras 128 fichas e restantes botões iguais à base.`);
 console.log('Contagens de Podas:',JSON.stringify(Object.fromEntries(Array.from({length:12},(_,i)=>[i+1,a.contar('podas',i+1)]))));
+
+// Tratamentos: iguais à base, ignorando espécies acrescentadas depois nas listas de espécies dos grupos.
+{const semNovas=x=>{const d=JSON.parse(x);for(const g of d.tratamentos)g.especies=g.especies.filter(e=>idsBase.has(e));return d};const _ta=semNovas(now('tratamentos.json')),_tb=semNovas(old('tratamentos.json'));assert.deepEqual(_ta,_tb,'tratamentos.json alterado');}
