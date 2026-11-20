@@ -354,19 +354,20 @@ function titulosFoto(p){
   const t=[];if(p.foto)t.push(["pt",p.foto]);if(sci&&!/^Várias/.test(sci))t.push(["en",sci]);t.push(["pt",p.nome.replace(/\s*\(.*?\)/g,"")]);return t;
 }
 async function obterFoto(p){
-  if(p.id in fotoCache)return fotoCache[p.id];
-  try{const c=localStorage.getItem("foto:"+p.id);if(c){return fotoCache[p.id]=JSON.parse(c)}}catch(e){}
+  const chave="foto:"+p.id+(p.foto?":"+p.foto:"");
+  if(chave in fotoCache)return fotoCache[chave];
+  try{const c=localStorage.getItem(chave);if(c){return fotoCache[chave]=JSON.parse(c)}}catch(e){}
   for(const [lang,t] of titulosFoto(p)){
     try{
       const r=await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(t.replace(/ /g,"_"))}`);
       if(!r.ok)continue;const j=await r.json();
       if(j.type==="disambiguation"||!j.thumbnail)continue;
       const f={src:j.thumbnail.source,url:(j.content_urls&&j.content_urls.mobile&&j.content_urls.mobile.page)||"",titulo:j.title||t};
-      fotoCache[p.id]=f;try{localStorage.setItem("foto:"+p.id,JSON.stringify(f))}catch(e){}
+      fotoCache[chave]=f;try{localStorage.setItem(chave,JSON.stringify(f))}catch(e){}
       return f;
     }catch(e){}
   }
-  return fotoCache[p.id]=null;
+  return null;
 }
 async function mostrarFoto(p,box){
   const f=await obterFoto(p);

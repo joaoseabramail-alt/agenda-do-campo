@@ -174,7 +174,7 @@
    "solo": "Solo profundo e bem drenado. Evite baixadas húmidas e solos encharcados.",
    "resistencia_geada": "Flores e frutos recém-formados são sensíveis às geadas tardias. Evite fundos onde se acumule ar frio.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "podas": {
@@ -458,7 +458,7 @@
    "solo": "Solo profundo, bem drenado, preferencialmente ácido a pouco ácido, com pouco calcário ativo.",
    "resistencia_geada": "Evite fundos de vale sujeitos a geada. O frio tardio pode atingir os rebentos em crescimento.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -514,7 +514,7 @@
       3,
       8
      ],
-     "nota": "Fenda em cerejeira-brava."
+     "nota": null
     },
     "alporquia": {
      "dificuldade": 2,
@@ -555,13 +555,12 @@
    "solo": "Solo fértil e bem drenado.",
    "resistencia_geada": "Flores e frutos recém-formados são sensíveis às geadas tardias. Evite fundos onde se acumule ar frio.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": true,
    "toxicidade": null,
    "notas": {
     "enx": {
-     "2": "Enxertia de fenda ou à inglesa.",
-     "3": "Enxertia de fenda, até ao início da floração.",
-     "6": "Borbulha de olho vivo (rebenta este ano).",
+     "2": "Enxertia de fenda ou à inglesa em porta-enxerto de Prunus avium.",
+     "3": "Enxertia de fenda em porta-enxerto de Prunus avium, até ao início da floração.",
      "8": "Borbulha em T ou de lasca."
     },
     "podas": {
@@ -1249,7 +1248,7 @@
    "solo": "Solo bem drenado. Em vaso, use substrato que não fique saturado.",
    "resistencia_geada": "Os rebentos e figos jovens sofrem com geada. Proteja plantas jovens ou em vaso do frio intenso.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": true,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -1350,7 +1349,7 @@
    "solo": "Prefere solo fértil, profundo e bem drenado, neutro a ligeiramente ácido.",
    "resistencia_geada": "A árvore em repouso tolera frio. Flores abertas e frutos recém-formados são vulneráveis a geadas tardias.",
    "exposicao": "Sol, em local abrigado, fora dos pontos onde o ar frio se acumula.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "podas": {
@@ -1402,7 +1401,8 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      8
      ],
      "nota": null
     },
@@ -1451,7 +1451,7 @@
    "solo": "Solo fértil, profundo, que conserve humidade sem encharcar.",
    "resistencia_geada": "Flores e frutos recém-formados são sensíveis às geadas tardias. Evite fundos onde se acumule ar frio.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -1463,7 +1463,7 @@
     "enx": {
      "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
      "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
-     "8": "Borbulha em T de olho dormente: rebenta na próxima primavera."
+     "8": "No fim de agosto, se a casca do porta-enxerto ainda se separar facilmente, pode fazer borbulhia em T de olho dormente. O gomo deverá rebentar na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -1711,7 +1711,7 @@
    "solo": "Prefere solo bem drenado.",
    "resistencia_geada": "Flores e frutos jovens podem ser destruídos pela geada, mesmo quando a árvore adulta sobrevive.",
    "exposicao": "Sol ou meia-sombra, em local abrigado.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -1805,7 +1805,7 @@
    "solo": "Solo profundo, fértil e bem drenado, com reserva de humidade.",
    "resistencia_geada": "As geadas tardias podem danificar rebentos e flores. A época de abrolhamento varia entre cultivares.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -2288,7 +2288,7 @@
    "solo": "Solo profundo e bem drenado.",
    "resistencia_geada": "O repouso aumenta a tolerância ao frio. Os rebentos e flores são mais vulneráveis às geadas após o abrolhamento.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -2996,7 +2996,7 @@
    "solo": "Solo bem drenado. Evite zonas encharcadas.",
    "resistencia_geada": "Tolera algum frio em solo drenado; geadas persistentes e solo húmido aumentam o risco.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": true,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -3048,7 +3048,7 @@
    "solo": "Solo leve, fértil e drenado, sem secar depressa.",
    "resistencia_geada": "Prefere tempo fresco. Proteja as sementeiras e mudas de geadas fortes.",
    "exposicao": "Sol ou meia-sombra.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -3143,7 +3143,8 @@
      "7": "Estacas de pontas.",
      "8": "Estacas de pontas."
     }
-   }
+   },
+   "foto": "Lavanda"
   },
   {
    "id": "loureiro",
@@ -3323,7 +3324,7 @@
    "solo": "Solo fértil, fresco e bem drenado.",
    "resistencia_geada": "Tolera algum frio; proteja as folhas e mudas nos períodos de geada.",
    "exposicao": "Sol ou meia-sombra.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -3394,7 +3395,7 @@
    "solo": "Solo leve, drenado, de neutro a alcalino.",
    "resistencia_geada": "Tolera frio em condições drenadas; a humidade persistente no inverno aumenta o risco.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -3480,7 +3481,8 @@
     "enx",
     "alp",
     "div"
-   ]
+   ],
+   "foto": "Thymus"
   },
   {
    "id": "amieiro",
@@ -4319,7 +4321,8 @@
      "1": "Estacas lenhosas grossas, diretamente no solo húmido.",
      "11": "Estacas lenhosas."
     }
-   }
+   },
+   "foto": "Populus"
   },
   {
    "id": "cornus_kousa",
@@ -5469,7 +5472,8 @@
      "1": "Raiz nua; árvore grande, precisa de espaço.",
      "11": "Raiz nua; árvore grande, precisa de espaço."
     }
-   }
+   },
+   "foto": "Tilia"
   },
   {
    "id": "vidoeiro",
@@ -5753,7 +5757,7 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "legal_botoes": [
     "plantar",
@@ -5905,7 +5909,7 @@
    "solo": "Solo bem drenado. Evite zonas encharcadas.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol ou meia-sombra.",
-   "autoctone": null,
+   "autoctone": true,
    "notas": {
     "estacas": {
      "6": "Use rebentos sãos do ano, quando a base começar a ficar firme.",
@@ -6668,7 +6672,7 @@
    "solo": "Solo rico em matéria orgânica, fresco e bem drenado. O pH pode influenciar a cor em certas cultivares.",
    "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
    "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
-   "autoctone": null,
+   "autoctone": false,
    "notas": {
     "podas": {
      "2": "Corte as flores secas até ao primeiro par de gomos fortes."
@@ -6817,7 +6821,7 @@
    "solo": "Solo fértil, fresco e bem drenado.",
    "resistencia_geada": "A planta estabelecida tolera algum frio; dê abrigo a plantas jovens e de vaso.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -6879,7 +6883,7 @@
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
-   "autoctone": null,
+   "autoctone": false,
    "legal": "Lantana camara consta da Lista Nacional de Espécies Invasoras (Decreto-Lei n.º 92/2019, anexo II). Não plante nem propague.",
    "invasora": true,
    "legal_botoes": [
@@ -7185,7 +7189,7 @@
    "solo": "Solo fértil, fresco e bem drenado.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol ou meia-sombra.",
-   "autoctone": null,
+   "autoctone": false,
    "notas": {
     "plantar": {
      "2": "Plante em torrão ou vaso se o solo não estiver gelado nem encharcado.",
@@ -7397,7 +7401,7 @@
    "solo": "Solo bem drenado. Evite zonas encharcadas.",
    "resistencia_geada": "Proteja de frio forte, sobretudo em vaso ou em locais expostos.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -7603,7 +7607,8 @@
    "metodo_recomendado": [
     "estacas",
     "enxertia"
-   ]
+   ],
+   "foto": "Rosa"
   },
   {
    "id": "sardinheira",
@@ -7668,7 +7673,8 @@
      "5": "Estacas de pontas.",
      "9": "Estacas para guardar no inverno."
     }
-   }
+   },
+   "foto": "Pelargonium"
   },
   {
    "id": "tamargueira",
@@ -8015,7 +8021,7 @@
    "solo": "Solo solto, fértil e bem drenado.",
    "resistencia_geada": "A geada queima a rama. Proteja rebentos jovens se houver risco.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -8151,7 +8157,7 @@
    "solo": "Solo solto e drenado, com humidade regular.",
    "resistencia_geada": "Tolera geadas ligeiras quando estabelecida; proteja mudas de frio forte.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -8363,7 +8369,7 @@
    "solo": "Solo fértil e bem drenado.",
    "resistencia_geada": "A tolerância depende do tipo. Proteja folhas destinadas à colheita e mudas de geadas fortes.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": true,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -8894,7 +8900,7 @@
    "solo": "Solo fértil, fresco e bem drenado.",
    "resistencia_geada": "Tolera geadas ligeiras quando estabelecida; proteja mudas de frio forte.",
    "exposicao": "Sol no tempo fresco ou meia-sombra no calor.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -8933,7 +8939,7 @@
    "solo": "Solo fértil e bem drenado.",
    "resistencia_geada": "Variedades de outono toleram algum frio quando estabelecidas. Flores e mudas sujeitas a geada forte podem precisar de abrigo.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -9281,7 +9287,7 @@
    "solo": "Solo solto, fresco e bem drenado.",
    "resistencia_geada": "Tolera geadas ligeiras quando estabelecida; proteja mudas de frio forte.",
    "exposicao": "Sol pleno.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -9353,7 +9359,7 @@
    "solo": "Solo fértil e bem drenado.",
    "resistencia_geada": "Sensível à geada. Instale no exterior quando tiver passado o risco.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
+   "autoctone": false,
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -9530,7 +9536,8 @@
     "enx",
     "alp",
     "div"
-   ]
+   ],
+   "foto": "Planta suculenta"
   },
   {
    "tipo_lua": "a",

@@ -3,7 +3,7 @@ const fs=require('fs');const erros=[],avisos=[];
 const P=JSON.parse(fs.readFileSync(__dirname+'/plantas.json')).plantas;
 const T=JSON.parse(fs.readFileSync(__dirname+'/tratamentos.json')).tratamentos;
 const C=JSON.parse(fs.readFileSync(__dirname+'/calendario.json')).tarefas;
-const ids=new Set();const mesesOk=(a,o)=>{if(!Array.isArray(a)||a.some(m=>!Number.isInteger(m)||m<1||m>12))erros.push(o+': meses inválidos '+JSON.stringify(a))};
+const ids=new Set();const mesesOk=(a,o)=>{if(!Array.isArray(a)||a.some(m=>!Number.isInteger(m)||m<1||m>12))erros.push(o+': meses inválidos '+JSON.stringify(a));else if(new Set(a).size!==a.length)erros.push(o+': meses repetidos '+JSON.stringify(a))};
 const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 for(const p of P){
   if(ids.has(p.id))erros.push('id repetido: '+p.id);ids.add(p.id);

@@ -26,7 +26,7 @@ A app lê três ficheiros. Os meses são números de 1 (janeiro) a 12 (dezembro)
 | `invasora` | true | Esconde a espécie de plantar e propagar |
 | `geada` | true | Sensível à geada: aviso em março e abril |
 | `adubacao`, `rega`, `floracao`, `solo`, `resistencia_geada`, `exposicao` | texto ou `null` | Orientações por espécie. Use `null` quando faltar informação validada. A app mostra-os na ficha que abre ao tocar no nome da planta. |
-| `autoctone` | booleano ou `null` | A app ainda não o mostra. |
+| `autoctone` | booleano ou `null` | Estatuto do táxon em Portugal continental, não da variedade de cultivo. `true` para autóctone e `false` para introduzido (incluindo arqueófitos). Use `null` quando a origem não estiver confirmada ou a ficha agrupar plantas sem um estatuto comum demonstrado. A app ainda não o mostra. |
 | `foto` | texto opcional | Título exato da página da Wikipédia em português para a foto da ficha, quando a procura pelo nome científico falha ou dá a foto errada. |
 
 ## tratamentos.json → `tratamentos[]`
