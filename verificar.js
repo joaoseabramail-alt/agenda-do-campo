@@ -38,6 +38,7 @@ const escondidas=[];
 for(const p of P){
   for(const d of p.divisao||[])mesesOk(d.meses,p.id+'.divisao');
   if(p.recolha_sementes!==undefined)mesesOk(p.recolha_sementes,p.id+'.recolha_sementes');
+  if(p.legal_botoes!==undefined){if(!Array.isArray(p.legal_botoes)||p.legal_botoes.some(b=>!['podas','plantar','sem','estacas','enx','alp','div'].includes(b)))erros.push(p.id+': legal_botoes inválido');if(!p.legal)avisos.push(p.id+': legal_botoes sem aviso legal');}
   for(const method of p.metodo_recomendado||[]){
     const operation=p.propagacao?.[method];
     const available=method==='divisao'

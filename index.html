@@ -238,7 +238,7 @@ const CATN={"fruteira":"Fruteiras","pequeno fruto":"Pequenos frutos","vinha":"Vi
 
 /* ---------- Gerar a lista do mês ---------- */
 const tem=(o,m)=>o&&o.meses&&o.meses.includes(m);
-const avisos=p=>[p.legal,p.toxicidade].filter(Boolean);
+const avisos=(p,k)=>[p.legal&&(!p.legal_botoes||p.legal_botoes.includes(k))?p.legal:null,p.toxicidade].filter(Boolean);
 const nm=(p,k,m)=>p.notas&&p.notas[k]&&p.notas[k][String(m)];
 const junta=(...t)=>[...new Set(t.filter(Boolean).map(x=>x.trim()))].join(" ");
 function lista(k,m){
@@ -288,7 +288,7 @@ function lista(k,m){
       else if(k==="sem"&&p.nota_variedade) var_=p.nota_variedade;
       else if(p.metodo_recomendado&&p.metodo_recomendado.includes(KEYMET[k])) var_="Método recomendado para manter a variedade."+(p.nota_variedade?" "+p.nota_variedade:"");
       const nt=junta(nm(p,k,m),e.nota,var_);
-      if(nt||avisos(p).length) it(p.nome,nt,{p,dif:e.dificuldade});
+      if(nt||avisos(p,k).length) it(p.nome,nt,{p,dif:e.dificuldade});
       else (grupos[e.dificuldade||0]=grupos[e.dificuldade||0]||[]).push(p.nome);
     }
     for(const d of Object.keys(grupos).sort()) it((DIFN[d]||"Outras")+":",grupos[d].sort((x,y)=>x.localeCompare(y,"pt")).join(", ")+".",{dif:+d,grupo:true});
@@ -332,7 +332,7 @@ function render(){
     else if(i.lua&&cur==="plantar"){const [lbl,ph]=TIPO[i.lua];const fav=p.k!=="nova"&&(ph===p.k||(ph==="cresc"&&p.k==="cheia"));chip=`<span class="chip${fav?" hot":""}">${fav?"Hoje · ":""}${lbl}</span>`}
     else if(i.dif&&!i.grupo) chip=`<span class="chip d${i.dif}">${DIFN[i.dif]}</span>`;
     const sci=i.p&&!i.grupo?`<i class="sci">${esc(i.p.nome_cientifico)}</i>`:"";
-    const av=i.p?avisos(i.p).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
+    const av=i.p?avisos(i.p,cur).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
     const nomeHTML=i.p&&!i.grupo?`<button type="button" class="ficha-btn it-name" data-id="${esc(i.p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(i.nome)}${sci}</span></button>`:`<span class="it-name">${esc(i.nome)}${sci}</span>`;
     return `<li${i.grupo?' class="grp"':""}><div class="it-top">${nomeHTML}${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
   }).join("")||`<li><span class="it-note">Nada previsto para este mês.</span></li>`;

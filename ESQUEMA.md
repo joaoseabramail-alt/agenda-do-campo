@@ -22,10 +22,12 @@ A app lê três ficheiros. Os meses são números de 1 (janeiro) a 12 (dezembro)
 | `recolha_sementes` | lista de meses | |
 | `notas` | objeto | Notas por botão e mês: `{"podas": {"1": "texto"}}`. Botões: `podas`, `plantar`, `sem`, `estacas`, `enx`, `alp` |
 | `toxicidade`, `legal`, `nota_sardoura` | texto | Aparecem como avisos |
+| `legal_botoes` | lista opcional | Botões previstos para o aviso `legal`: `podas`, `plantar`, `sem`, `estacas`, `enx`, `alp`, `div`. Se ausente, o aviso aparece em todos os botões. Não afeta `toxicidade` nem o filtro `invasora`. |
 | `invasora` | true | Esconde a espécie de plantar e propagar |
 | `geada` | true | Sensível à geada: aviso em março e abril |
-| `adubacao`, `rega`, `floracao`, `solo`, `resistencia_geada`, `exposicao` | texto ou `null` | Orientações por espécie. Use `null` quando faltar informação validada. A app ainda não os mostra. |
+| `adubacao`, `rega`, `floracao`, `solo`, `resistencia_geada`, `exposicao` | texto ou `null` | Orientações por espécie. Use `null` quando faltar informação validada. A app mostra-os na ficha que abre ao tocar no nome da planta. |
 | `autoctone` | booleano ou `null` | A app ainda não o mostra. |
+| `foto` | texto opcional | Título exato da página da Wikipédia em português para a foto da ficha, quando a procura pelo nome científico falha ou dá a foto errada. |
 
 ## tratamentos.json → `tratamentos[]`
 `{grupo, especies[] (ids), problemas, vigiar[] (meses), intervencoes[]: {meses[], tipo, texto}}`

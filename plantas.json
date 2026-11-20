@@ -1912,7 +1912,6 @@
      "4": "Continuar a poda."
     },
     "estacas": {
-     "3": "Estacas semi-lenhosas, em areia húmida e à sombra.",
      "6": "Estacas semi-lenhosas, com humidade constante.",
      "7": "Use ramos sãos do ano, com base já firme e ponta ainda flexível.",
      "8": "Use ramos sãos do ano, com base já firme e ponta ainda flexível."
@@ -1931,7 +1930,10 @@
     "estacas",
     "enxertia"
    ],
-   "legal": "Em Portugal continental, o arranque ou corte raso de oliveiras está sujeito a autorização prévia, salvo o caso de oliveiras isoladas previsto no Decreto-Lei n.º 120/86. Confirme a aplicação do regime com a CCDR antes de intervir."
+   "legal": "Em Portugal continental, o arranque ou corte raso de oliveiras está sujeito a autorização prévia, salvo o caso de oliveiras isoladas previsto no Decreto-Lei n.º 120/86. Confirme a aplicação do regime com a CCDR antes de intervir.",
+   "legal_botoes": [
+    "podas"
+   ]
   },
   {
    "id": "pereira",
@@ -2988,12 +2990,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em solo de jardim, evite adubar de rotina. Em vaso ou perante carência confirmada, faça um reforço moderado.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Em geral da primavera ao início do verão, com novas flores em condições amenas.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Tolera algum frio em solo drenado; geadas persistentes e solo húmido aumentam o risco.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3040,12 +3042,12 @@
     10,
     11
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Flores brancas ou rosadas durante o crescimento. Calor, seca e sementeira densa antecipam a subida à flor.",
+   "solo": "Solo leve, fértil e drenado, sem secar depressa.",
+   "resistencia_geada": "Prefere tempo fresco. Proteja as sementeiras e mudas de geadas fortes.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3123,12 +3125,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em solo de jardim, evite adubar de rotina. Em vaso ou perante carência confirmada, faça um reforço moderado.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Da primavera ao verão, conforme a espécie.",
+   "solo": "Solo leve, mesmo pobre, com drenagem rápida.",
+   "resistencia_geada": "As lavandas inglesas são em geral mais rústicas; outras espécies precisam de abrigo quando há geada.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3196,12 +3198,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Pequenas flores na primavera; as femininas e masculinas ocorrem normalmente em plantas diferentes.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Abrigue de frio forte e ventos secos. Em vaso, proteja também as raízes.",
+   "exposicao": "Sol ou meia-sombra.",
    "toxicidade": null,
    "notas": {
     "estacas": {
@@ -3267,12 +3269,12 @@
     8,
     9
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Floresce no verão; retirar as hastes florais prolonga a produção de folhas.",
+   "solo": "Solo fértil e drenado, com humidade regular.",
+   "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -3315,12 +3317,12 @@
     11,
     12
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Bienal: em geral floresce no segundo ano, se a planta ficar no terreno.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Tolera algum frio; proteja as folhas e mudas nos períodos de geada.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3386,12 +3388,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em solo de jardim, evite adubar de rotina. Em vaso ou perante carência confirmada, faça um reforço moderado.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Flores no fim da primavera e início do verão.",
+   "solo": "Solo leve, drenado, de neutro a alcalino.",
+   "resistencia_geada": "Tolera frio em condições drenadas; a humidade persistente no inverno aumenta o risco.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3456,12 +3458,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em solo de jardim, evite adubar de rotina. Em vaso ou perante carência confirmada, faça um reforço moderado.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Em geral da primavera ao verão; confirme a espécie.",
+   "solo": "Solo leve ou pedregoso, muito bem drenado.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -3469,7 +3471,16 @@
      "5": "Estacas de pontas."
     }
    },
-   "legal": "Alguns tomilhos silvestres, como Thymus capitellatus, estão protegidos pelo Decreto-Lei n.º 140/99 (anexos B-II e B-IV, conforme o táxon). Use plantas de viveiro e não recolha plantas silvestres protegidas."
+   "legal": "Alguns tomilhos silvestres, como Thymus capitellatus, estão protegidos pelo Decreto-Lei n.º 140/99 (anexos B-II e B-IV, conforme o táxon). Use plantas de viveiro e não recolha plantas silvestres protegidas.",
+   "legal_botoes": [
+    "podas",
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   },
   {
    "id": "amieiro",
@@ -3527,12 +3538,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Evite que a zona das raízes seque durante a instalação e em estiagem.",
+   "floracao": "Amentilhos no fim do inverno ou início da primavera.",
+   "solo": "Solo húmido a molhado, adequado a margens e terrenos frescos.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "toxicidade": null
   },
   {
@@ -3597,12 +3608,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores vermelhas discretas no fim do inverno ou início da primavera.",
+   "solo": "Solo fresco e bem drenado, rico em matéria orgânica.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -3669,13 +3680,22 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
-   "legal": "Confirme o táxon e use material de viveiro. O azereiro-dos-Açores (Prunus lusitanica subsp. azorica) está abrangido pelo regime de proteção do Decreto-Lei n.º 140/99. A proteção do habitat pode também condicionar intervenções em populações naturais."
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Cachos brancos no fim da primavera ou início do verão.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Tolera frio quando estabelecido; evite exposição a ventos frios intensos.",
+   "exposicao": "Sol ou meia-sombra.",
+   "legal": "Confirme o táxon e use material de viveiro. O azereiro-dos-Açores (Prunus lusitanica subsp. azorica) está abrangido pelo regime de proteção do Decreto-Lei n.º 140/99. A proteção do habitat pode também condicionar intervenções em populações naturais.",
+   "legal_botoes": [
+    "podas",
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   },
   {
    "id": "azevinho",
@@ -3743,18 +3763,27 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Pequenas flores claras na primavera. Normalmente há plantas masculinas e femininas distintas.",
+   "solo": "Solo fresco e bem drenado; tolera diversas texturas.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "notas": {
     "plantar": {
      "3": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
      "10": "Em torrão, à meia-sombra. Só as fêmeas dão bagas.",
      "11": "Em torrão, à meia-sombra. Só as fêmeas dão bagas."
     }
-   }
+   },
+   "legal_botoes": [
+    "podas",
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   },
   {
    "id": "bordo_japones",
@@ -3821,11 +3850,11 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Mantenha humidade regular, sobretudo durante o calor e em vasos.",
+   "floracao": "Flores pequenas na primavera, habitualmente discretas.",
+   "solo": "Solo rico em matéria orgânica, fresco e bem drenado. Evite solos muito alcalinos.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -3903,12 +3932,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Amentilhos na primavera.",
+   "solo": "Solo profundo, fresco e bem drenado. Tolera diferentes texturas.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -3974,11 +4003,11 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Mantenha humidade na instalação, sem encharcar permanentemente.",
+   "floracao": "Flores discretas na primavera, com amentilhos masculinos.",
+   "solo": "Solo ácido a neutro, fresco mas drenado. Evite terreno calcário, que favorece a clorose.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -4041,12 +4070,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores discretas na primavera.",
+   "solo": "Prefere solos ácidos e drenados.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -4115,12 +4144,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores brancas na primavera, habitualmente antes ou junto das folhas.",
+   "solo": "Solo profundo, fértil e drenado.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
+   "exposicao": "Sol pleno.",
    "toxicidade": null,
    "notas": {
     "podas": {
@@ -4198,11 +4227,11 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores na primavera; a data varia com a cultivar.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
    "toxicidade": null,
    "notas": {
     "plantar": {
@@ -4277,12 +4306,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Amentilhos no fim do inverno ou primavera, conforme a espécie.",
+   "solo": "Em geral solo profundo e fresco; a tolerância a encharcamento varia por espécie.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -4353,12 +4382,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Brácteas vistosas do fim da primavera ao início do verão.",
+   "solo": "Solo fértil e fresco, de ácido a neutro, bem drenado.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -4417,12 +4446,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores no verão e, com calor suficiente, até ao outono.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Prefere local quente; resguarde plantas jovens de geadas fortes.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -4489,12 +4518,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores discretas antes ou perto da abertura das folhas.",
+   "solo": "Solo profundo e fresco. Tolera terrenos húmidos, mas a instalação depende da drenagem do local.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol pleno.",
    "toxicidade": null
   },
   {
@@ -4561,12 +4590,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Estruturas reprodutivas discretas na primavera; a espécie é gimnospérmica e não produz flores verdadeiras.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol pleno.",
    "autoctone": null
   },
   {
@@ -4635,11 +4664,11 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores discretas na primavera.",
+   "solo": "Solo profundo, fresco e bem drenado, preferencialmente ácido ou neutro.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -4721,12 +4750,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores brancas durante o verão, podendo prolongar-se para o outono.",
+   "solo": "Solo rico em matéria orgânica, fresco e bem drenado.",
+   "resistencia_geada": "Escolha local abrigado; geada forte e vento frio podem danificar a folhagem.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -4796,12 +4825,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores antes das folhas, no fim do inverno ou início da primavera.",
+   "solo": "Solo rico em matéria orgânica, fresco e drenado, de ácido a neutro.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -4865,12 +4894,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores rosadas na primavera, em ramos antigos e por vezes no tronco.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -4937,12 +4966,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores geralmente brancas na primavera.",
+   "solo": "Tolera vários solos; evite extremos de seca ou saturação durante a instalação.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "toxicidade": null
   },
   {
@@ -5001,12 +5030,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Estróbilos masculinos e femininos na primavera; não tem flores verdadeiras.",
+   "solo": "Solo bem drenado, incluindo arenoso. Evite encharcamento.",
+   "resistencia_geada": "As plantas jovens são mais vulneráveis a geadas fortes.",
+   "exposicao": "Sol pleno.",
    "toxicidade": null,
    "notas": {
     "podas": {
@@ -5082,12 +5111,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Inflorescências globosas discretas na primavera.",
+   "solo": "Solo profundo e fresco, bem drenado; tolera diversas texturas.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -5154,11 +5183,11 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Evite secura prolongada na zona das raízes quando jovem.",
+   "floracao": "Amentilhos no fim do inverno ou início da primavera.",
+   "solo": "Solo húmido, apropriado a margens e outros locais frescos.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "toxicidade": null,
    "notas": {
     "sem": {}
@@ -5220,12 +5249,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores pequenas do fim da primavera ao verão.",
+   "solo": "Solo fresco a húmido, frequentemente ácido.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra."
   },
   {
    "id": "sobreiro",
@@ -5278,17 +5307,21 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Flores discretas na primavera, incluindo amentilhos masculinos.",
+   "solo": "Solo drenado, em geral ácido ou pouco calcário. Evite saturação prolongada.",
+   "resistencia_geada": "Prefere invernos moderados; plantas jovens são mais vulneráveis a geadas fortes.",
+   "exposicao": "Sol pleno.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
     11,
     12
+   ],
+   "legal_botoes": [
+    "podas",
+    "plantar"
    ]
   },
   {
@@ -5352,12 +5385,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores brancas no verão.",
+   "solo": "Solo fresco, bem drenado e de ácido a neutro.",
+   "resistencia_geada": "Tolera frio em repouso; escolha local abrigado de ventos frios e secos.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -5423,12 +5456,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores geralmente no verão, com variação entre espécies.",
+   "solo": "Solo profundo, fresco e drenado; confirme as preferências da espécie.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -5501,12 +5534,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Amentilhos que libertam pólen na primavera.",
+   "solo": "Aceita solos ácidos e frescos a húmidos.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol pleno.",
    "toxicidade": null
   },
   {
@@ -5565,11 +5598,11 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores pequenas na primavera. Os frutos surgem nas plantas femininas polinizadas.",
+   "solo": "Solo bem drenado, de preferência com matéria orgânica.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "notas": {
     "sem": {
      "10": "Precisa de estratificação quente e depois fria; germina devagar.",
@@ -5642,12 +5675,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica adequada a acidófilas. Em vaso ou perante carência, use adubo para acidófilas conforme o rótulo.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Normalmente na primavera. A época varia com espécie e cultivar.",
+   "solo": "Solo ácido, rico em matéria orgânica, fresco e bem drenado.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
    "autoctone": null,
    "notas": {
     "alp": {
@@ -5716,12 +5749,20 @@
    },
    "adubacao": null,
    "rega": null,
-   "floracao": null,
+   "floracao": "Flores geralmente no verão e até ao início do outono. Evite a dispersão de sementes.",
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   },
   {
    "id": "buganvilia",
@@ -5785,12 +5826,12 @@
     ],
     "o_que": "em torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Regue bem no crescimento, deixando o excesso escoar. Diminua bastante a rega no inverno.",
+   "floracao": "As brácteas vistosas surgem nos meses quentes, com duração dependente da luz e da temperatura.",
+   "solo": "Substrato fértil e de drenagem rápida.",
+   "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -5858,12 +5899,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Regue junto ao solo em seca, especialmente na instalação e em vasos.",
+   "floracao": "Pequenas flores claras na primavera.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "notas": {
     "estacas": {
@@ -5936,12 +5977,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica adequada a acidófilas. Em vaso ou perante carência, use adubo para acidófilas conforme o rótulo.",
+   "rega": "Mantenha humidade regular no verão, quando se formam os botões. Prefira água da chuva se a água da rede for calcária.",
+   "floracao": "Do fim do inverno à primavera, conforme a cultivar.",
+   "solo": "Solo ácido, rico em matéria orgânica, fresco e bem drenado.",
+   "resistencia_geada": "A planta tolera frio moderado; botões e flores podem sofrer geada.",
+   "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -6010,12 +6051,12 @@
      ]
     }
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Habitualmente do fim do verão ao outono. A época depende da cultivar e do comprimento do dia.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -6077,12 +6118,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores do inverno à primavera.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Em geral tolera frio moderado; flores e pontas podem sofrer com geadas fortes.",
+   "exposicao": "Sol ou meia-sombra.",
    "toxicidade": null
   },
   {
@@ -6142,12 +6183,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores amarelas no início da primavera, antes das folhas.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "metodo_recomendado": [
@@ -6222,12 +6263,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Cachos brancos na primavera se o aparo não retirar os botões.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Os rebentos jovens podem sofrer geadas tardias; escolha lugar abrigado.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -6303,12 +6344,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Do verão ao outono, em função do tipo de fúcsia.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "As fúcsias rústicas diferem das tenras; proteja estas últimas da geada.",
+   "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -6381,12 +6422,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Evite excesso de azoto. Reforce apenas se o solo ou o vigor justificar.",
+   "rega": "Regue durante a instalação e em estiagem, sobretudo quando se formam os botões no verão.",
+   "floracao": "Cachos na primavera, em geral antes ou juntamente com as folhas.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "notas": {
     "podas": {
@@ -6470,12 +6511,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Em muitos cultivares, do fim do outono ao fim do inverno; confirme a espécie.",
+   "solo": "Solo rico em matéria orgânica, fresco e drenado, preferencialmente ácido a neutro.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -6542,12 +6583,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores no verão e início do outono.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "O hibisco-da-Síria é rústico no solo quando estabelecido.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -6621,12 +6662,12 @@
      ]
     }
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Em geral do verão ao início do outono.",
+   "solo": "Solo rico em matéria orgânica, fresco e bem drenado. O pH pode influenciar a cor em certas cultivares.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
+   "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
    "autoctone": null,
    "notas": {
     "podas": {
@@ -6705,12 +6746,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Inflorescências sobretudo do início a meados do verão.",
+   "solo": "Solo rico em matéria orgânica, fresco e drenado.",
+   "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
+   "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
    "autoctone": null,
    "metodo_recomendado": [
     "estacas"
@@ -6770,12 +6811,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Flores perfumadas no verão, podendo prolongar-se no início do outono.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "A planta estabelecida tolera algum frio; dê abrigo a plantas jovens e de vaso.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -6834,13 +6875,21 @@
    },
    "adubacao": null,
    "rega": null,
-   "floracao": null,
+   "floracao": "Flores do fim da primavera ao outono. Espécie invasora: não cultivar nem propagar.",
    "solo": null,
    "resistencia_geada": null,
    "exposicao": null,
    "autoctone": null,
    "legal": "Lantana camara consta da Lista Nacional de Espécies Invasoras (Decreto-Lei n.º 92/2019, anexo II). Não plante nem propague.",
-   "invasora": true
+   "invasora": true,
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   },
   {
    "id": "lilas",
@@ -6904,12 +6953,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Inflorescências perfumadas na primavera.",
+   "solo": "Solo fértil e bem drenado, em geral neutro a alcalino.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -6977,11 +7026,11 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Inflorescências cilíndricas sobretudo do fim da primavera ao verão.",
+   "solo": "Solo fértil e bem drenado, preferencialmente com pH ácido a neutro.",
+   "resistencia_geada": "Proteja de geada forte e vento frio, em especial exemplares jovens ou de vaso.",
    "toxicidade": null,
    "recolha_sementes": [
     10,
@@ -7054,11 +7103,11 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Flores do verão ao início do outono, com calor suficiente.",
+   "solo": "Solo drenado. Em vaso, use substrato que não fique encharcado.",
+   "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
    "notas": {
     "sem": {
      "3": "Sem estratificação. Planta tóxica: use luvas.",
@@ -7130,12 +7179,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Cachos brancos na primavera, se não tiverem sido retirados no aparo.",
+   "solo": "Solo fértil, fresco e bem drenado.",
+   "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "notas": {
     "plantar": {
@@ -7211,12 +7260,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Pequenas flores claras no verão ou início do outono.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -7279,12 +7328,12 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
+   "floracao": "Há espécies de floração primaveril e outras de floração outonal; identifique a planta.",
+   "solo": "Solo fértil e bem drenado, com matéria orgânica.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
    "toxicidade": null
   },
@@ -7342,19 +7391,27 @@
     ],
     "o_que": "em torrão (melhor em outubro–novembro)"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Flores perfumadas na primavera ou início do verão.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Proteja de frio forte, sobretudo em vaso ou em locais expostos.",
+   "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
     "estacas": {
      "8": "Estacas semi-lenhosas."
     }
-   }
+   },
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   },
   {
    "id": "quaresmeira",
@@ -7413,11 +7470,11 @@
     ],
     "o_que": "em torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Mantenha humidade regular durante o crescimento, sem saturar o solo. Em vaso, verifique o substrato mais vezes.",
+   "floracao": "Flores roxas habitualmente do fim do verão ao outono.",
+   "solo": "Substrato fértil, húmido mas bem drenado.",
+   "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
    "toxicidade": null,
    "notas": {
     "sem": {
@@ -7510,12 +7567,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Use composto e ajuste a adubação ao vigor. Em vasos, siga a dose do adubo para roseiras durante o crescimento.",
+   "rega": "Regue em estiagem e durante a instalação, de preferência na base. Em vaso, controle a humidade com frequência.",
+   "floracao": "Da primavera ao outono, em função de a variedade ser remontante ou de floração única.",
+   "solo": "Solo fértil, profundo, fresco e drenado.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -7596,12 +7653,12 @@
     ],
     "o_que": "em torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, reforce a alimentação durante o crescimento seguindo o rótulo. No solo, ajuste ao vigor e à fertilidade.",
+   "rega": "Regue no crescimento sem saturar; no inverno reduza bastante.",
+   "floracao": "Da primavera ao outono, conforme variedade e temperatura.",
+   "solo": "Substrato fértil e bem drenado. Deixe o recipiente escoar livremente.",
+   "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {
@@ -7668,12 +7725,12 @@
     ],
     "o_que": "raiz nua ou torrão"
    },
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em solo de jardim, evite adubar de rotina. Em vaso ou perante carência confirmada, faça um reforço moderado.",
+   "rega": "Regue enquanto enraíza. Depois regue em secas prolongadas; em vaso, deixe a superfície do substrato secar entre regas.",
+   "floracao": "Pode florir na primavera ou no verão, conforme a espécie.",
+   "solo": "Solo drenado. Várias espécies toleram salinidade e solos pobres.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
    "notas": {}
@@ -7874,7 +7931,7 @@
    "rega": "Regue em períodos secos durante o crescimento dos bolbos. Reduza à aproximação da maturação.",
    "floracao": "Cultivados para bolbo. Hastes florais podem aparecer consoante a cultivar e o frio.",
    "solo": "Solo bem drenado, sem excesso de matéria orgânica fresca.",
-   "resistencia_geada": null,
+   "resistencia_geada": "Variedades de outono podem passar o inverno no solo drenado. Proteja rebentos de geadas fortes.",
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
@@ -7988,7 +8045,7 @@
     10,
     11
    ],
-   "adubacao": null,
+   "adubacao": "Baseie a adubação na análise do solo. Evite excesso de azoto, que favorece a rama em detrimento das raízes.",
    "rega": "Regue na instalação e em seca sem deixar o terreno encharcado.",
    "floracao": null,
    "solo": "Solo quente, solto e bem drenado.",
@@ -8202,7 +8259,7 @@
    "rega": "Regue em períodos secos durante o crescimento dos bolbos. Reduza à aproximação da maturação.",
    "floracao": "Cultivados para bolbo. Hastes florais podem aparecer consoante a cultivar e o frio.",
    "solo": "Solo bem drenado, sem excesso de matéria orgânica fresca.",
-   "resistencia_geada": null,
+   "resistencia_geada": "Variedades de outono estabelecidas toleram algum frio. Proteja mudas e cultivares mais sensíveis de geadas fortes.",
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
@@ -8304,7 +8361,7 @@
    "rega": "Regue para manter humidade regular durante a instalação e crescimento das folhas.",
    "floracao": "Colha antes de subir à flor; o calor ou o stresse hídrico podem antecipar a floração.",
    "solo": "Solo fértil e bem drenado.",
-   "resistencia_geada": null,
+   "resistencia_geada": "A tolerância depende do tipo. Proteja folhas destinadas à colheita e mudas de geadas fortes.",
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
@@ -8702,7 +8759,7 @@
    "rega": "Regue para manter humidade regular durante a instalação e crescimento das folhas.",
    "floracao": "Colha antes de subir à flor; o calor ou o stresse hídrico podem antecipar a floração.",
    "solo": "Solo fértil e bem drenado.",
-   "resistencia_geada": null,
+   "resistencia_geada": "A tolerância depende da cultivar. Use abrigo ligeiro para proteger folhas e mudas quando houver geada.",
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
@@ -8736,11 +8793,11 @@
     5,
     6
    ],
-   "adubacao": null,
+   "adubacao": "Ajuste a adubação à análise do solo. Evite doses elevadas de azoto, sobretudo quando há boa nodulação.",
    "rega": "Regue em estiagem na floração e formação das vagens. Evite encharcar.",
    "floracao": "Floresce durante o crescimento, antes da formação das vagens. A época varia com a sementeira.",
    "solo": "Solo fértil e bem drenado.",
-   "resistencia_geada": null,
+   "resistencia_geada": "Plantas jovens toleram frio ligeiro. Proteja flores e vagens da geada.",
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
@@ -8870,11 +8927,11 @@
     5,
     6
    ],
-   "adubacao": null,
+   "adubacao": "Ajuste a adubação à análise do solo. Evite doses elevadas de azoto, sobretudo quando há boa nodulação.",
    "rega": "Regue em estiagem na floração e formação das vagens. Evite encharcar.",
    "floracao": "Floresce durante o crescimento, antes da formação das vagens. A época varia com a sementeira.",
    "solo": "Solo fértil e bem drenado.",
-   "resistencia_geada": null,
+   "resistencia_geada": "Variedades de outono toleram algum frio quando estabelecidas. Flores e mudas sujeitas a geada forte podem precisar de abrigo.",
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
@@ -8910,7 +8967,7 @@
     9,
     10
    ],
-   "adubacao": null,
+   "adubacao": "Ajuste a adubação à análise do solo. Evite doses elevadas de azoto, sobretudo quando há boa nodulação.",
    "rega": "Regue em seca na floração e formação das vagens.",
    "floracao": "As flores desenvolvem-se antes das vagens durante o crescimento.",
    "solo": "Solo fértil e bem drenado.",
@@ -9340,12 +9397,12 @@
      ]
     }
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, use adubo para bolbos conforme o rótulo enquanto as folhas estão verdes. Em solo fértil, evite reforços desnecessários.",
+   "rega": "Mantenha ligeiramente húmido enquanto há folhas ativas. Reduza após amarelecerem.",
+   "floracao": "Na primavera ao ar livre; o forçamento em vaso pode antecipar a floração.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Os bolbos enterrados toleram frio; proteja vasos e flores de geadas fortes.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null
   },
   {
@@ -9375,14 +9432,19 @@
      ]
     }
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, use adubo para bolbos conforme o rótulo enquanto as folhas estão verdes. Em solo fértil, evite reforços desnecessários.",
+   "rega": "Regue na instalação e em seca durante o crescimento. Deixe a folhagem secar naturalmente.",
+   "floracao": "Do fim do inverno à primavera, conforme a espécie e a cultivar.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
+   "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
-   "legal": "Alguns narcisos silvestres, como Narcissus triandrus, são protegidos pelo Decreto-Lei n.º 140/99 (anexos B-II e B-IV, conforme o táxon). Use bolbos de viveiro e não recolha plantas silvestres protegidas."
+   "legal": "Alguns narcisos silvestres, como Narcissus triandrus, são protegidos pelo Decreto-Lei n.º 140/99 (anexos B-II e B-IV, conforme o táxon). Use bolbos de viveiro e não recolha plantas silvestres protegidas.",
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "div"
+   ]
   },
   {
    "id": "tulipa",
@@ -9410,12 +9472,12 @@
      ]
     }
    ],
-   "adubacao": null,
-   "rega": null,
-   "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
-   "exposicao": null,
+   "adubacao": "Em vaso, use adubo para bolbos conforme o rótulo enquanto as folhas estão verdes. Em solo fértil, evite reforços desnecessários.",
+   "rega": "Regue em seca enquanto cresce; evite manter o bolbo encharcado depois de a folhagem secar.",
+   "floracao": "Na primavera, com cultivares precoces, médias e tardias.",
+   "solo": "Solo bem drenado. Evite zonas encharcadas.",
+   "resistencia_geada": "Os bolbos toleram frio no solo drenado. Proteja vasos e flores em geada forte.",
+   "exposicao": "Sol pleno.",
    "autoctone": null
   },
   {
@@ -9450,17 +9512,25 @@
     }
    ],
    "adubacao": null,
-   "rega": null,
+   "rega": "O intervalo depende da espécie e da estação. Para muitas suculentas de vaso, deixe o substrato secar entre regas e evite água acumulada.",
    "floracao": null,
-   "solo": null,
-   "resistencia_geada": null,
+   "solo": "Para muitas suculentas de vaso, use substrato muito drenante. Confirme primeiro a espécie e o seu estatuto.",
+   "resistencia_geada": "A tolerância varia muito. Identifique a espécie antes de a deixar no exterior durante geadas.",
    "exposicao": null,
    "autoctone": null,
    "toxicidade": null,
    "legal": "Identifique a espécie antes de plantar ou propagar. Não plante nem propague os chorões Carpobrotus edulis e C. acinaciformis nem outras suculentas da Lista Nacional de Espécies Invasoras, como Opuntia elata e O. subulata. Opuntia ficus-indica tem regime próprio (Decreto-Lei n.º 92/2019, anexo III).",
    "notas": {
     "estacas": {}
-   }
+   },
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "estacas",
+    "enx",
+    "alp",
+    "div"
+   ]
   }
  ]
 }
