@@ -1927,6 +1927,8 @@
    ],
    "problemas": "Cancro do cipreste (Seiridium)",
    "vigiar": [
+    1,
+    2,
     3,
     4,
     5,
@@ -1934,11 +1936,15 @@
     7,
     8,
     9,
-    10
+    10,
+    11,
+    12
    ],
    "intervencoes": [
     {
      "meses": [
+      1,
+      2,
       3,
       4,
       5,
@@ -1946,19 +1952,30 @@
       7,
       8,
       9,
-      10
+      10,
+      11,
+      12
      ],
      "tipo": "monitorizacao",
-     "texto": "Procure ramos que secam de repente, com a folhagem avermelhada, e lesões na casca com resina a escorrer."
+     "texto": "Cancro do cipreste (Seiridium): vigie a secagem isolada de ramos e procure lesões na casca, por vezes com resina. Reforce a observação após períodos de chuva ou nevoeiro e quando houver stress por seca."
     },
     {
      "meses": [
+      1,
+      2,
+      3,
+      4,
+      5,
       6,
       7,
-      8
+      8,
+      9,
+      10,
+      11,
+      12
      ],
      "tipo": "cultural",
-     "texto": "Corte os ramos doentes bem abaixo da lesão, em tempo seco, desinfete a ferramenta e destrua os restos fora da parcela."
+     "texto": "Se houver ramos afetados, pode-os em tempo seco, abaixo da lesão, até madeira sã. Desinfete a ferramenta entre cortes e retire os ramos afetados da parcela."
     }
    ]
   }
