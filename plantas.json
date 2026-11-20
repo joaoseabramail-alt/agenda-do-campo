@@ -159,7 +159,7 @@
       2,
       12
      ],
-     "tipo": "Poda leve de frutificação"
+     "tipo": "No repouso e em tempo seco, limite a poda de manutenção ao necessário, ajustando-a à idade e à condução. Retire madeira doente e desinfete as ferramentas. Se houver doença do chumbo, prefira a poda de verão; fevereiro não garante que a árvore ainda esteja em repouso"
     }
    ],
    "colheita": [
@@ -185,8 +185,8 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda leve de frutificação; retire ramos secos e cruzados.",
-     "12": "Se a árvore já estiver em repouso, faça poda ligeira em dia seco e sem geada."
+     "1": "No repouso e em tempo seco, limite a poda de manutenção ao necessário, ajustando-a à idade e à condução. Retire madeira doente e desinfete as ferramentas. Se houver doença do chumbo, prefira a poda de verão; fevereiro não garante que a árvore ainda esteja em repouso.",
+     "12": "No repouso e em tempo seco, limite a poda de manutenção ao necessário, ajustando-a à idade e à condução. Retire madeira doente e desinfete as ferramentas. Se houver doença do chumbo, prefira a poda de verão; fevereiro não garante que a árvore ainda esteja em repouso."
     },
     "plantar": {
      "1": "Raiz nua, a meia-encosta e ao sol; evite os fundos de vale, onde a geada assenta.",
@@ -207,7 +207,49 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "INIAV / Filipa Queirós — Manual de Boas Práticas de Fruticultura: amendoeira",
+       "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_de_fruticultura_amendoeira.pdf",
+       "seccao": "Poda e condução da cultura; Proteção fitossanitária",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Prunus communis (sinónimo de Prunus dulcis)",
+       "url": "https://www.rhs.org.uk/plants/323239/prunus-communis/details",
+       "seccao": "Pruning: poda de verão quando a doença do chumbo é um problema",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "A intensidade depende do sistema cultural; não se transferiu a poda severa tradicional para todas as árvores. A alternativa de verão perante doença do chumbo é indicada no texto, sem criar uma janela mensal não validada. Não se selecionaram produtos."
+    }
+   }
   },
   {
    "id": "amoreira",
@@ -261,7 +303,7 @@
       12,
       1
      ],
-     "tipo": "Pode apenas se necessário, em repouso após a queda da folha. Retire ramos cruzados ou danificados e conserve o porte natural"
+     "tipo": "Pode apenas se necessário, depois da queda da folha e ainda em repouso, preferindo o fim do outono ou início do inverno. Retire ramos cruzados ou danificados e evite cortes grandes. Não adie até à subida da seiva: as amoreiras podem perder muita seiva pelos cortes"
     }
    ],
    "colheita": [
@@ -292,7 +334,49 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow mulberries",
+       "url": "https://www.rhs.org.uk/fruit/mulberries/grow-your-own",
+       "seccao": "Pruning and training: árvores de copa livre e perda de seiva",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Morus alba",
+       "url": "https://www.rhs.org.uk/plants/11216/morus-alba/details/",
+       "seccao": "Pruning: fim do outono / início do inverno",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Ficha conjunta Morus nigra / Morus alba. A fonte específica de M. alba prefere intervenção mais precoce; janeiro fica condicionado ao repouso efetivo, sem o apresentar como igualmente adequado a todas as plantas."
+    }
+   }
   },
   {
    "id": "aveleira",
@@ -345,13 +429,13 @@
       1,
       2
      ],
-     "tipo": "Em touceira, renove gradualmente os ramos velhos e preserve rebentos bem colocados. Em tronco único, conserve a estrutura principal"
+     "tipo": "Em plantas estabelecidas, desbaste a madeira congestionada e renove os ramos velhos gradualmente, preservando madeira com flores. Em tronco único, mantenha as pernadas principais; em touceira, conserve os caules necessários à estrutura e renovação. Não corte toda a touceira por rotina"
     },
     {
      "meses": [
       5
      ],
-     "tipo": "Nas aveleiras conduzidas em tronco único, retire os rebentos novos da base. Em touceira, conserve os que forem necessários para renovar a estrutura"
+     "tipo": "Retire rebentos novos da base que não sejam necessários à condução ou renovação; em tronco único, mantenha o tronco livre desses rebentos"
     }
    ],
    "colheita": [
@@ -398,7 +482,49 @@
    "metodo_recomendado": [
     "divisao",
     "enxertia"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Cobnuts and filberts",
+       "url": "https://www.rhs.org.uk/nuts/cobnuts-filberts",
+       "seccao": "Pruning and training: plantas novas e estabelecidas",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "OSU Extension / Jeff L. Olsen — Growing Hazelnuts in the Pacific Northwest: Training and Pruning, EM 9078",
+       "url": "https://extension.oregonstate.edu/catalog/pub/em9078",
+       "seccao": "Pruning mature orchards; What to prune; Healthy pruning cuts",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Revistas as duas operações. Não se transpuseram os programas de renovação intensa por blocos de um pomar comercial do Oregon para uma aveleira de jardim. A renovação e o controlo de rebentos dependem da condução existente."
+    }
+   }
   },
   {
    "id": "castanheiro",
@@ -445,11 +571,10 @@
    "poda": [
     {
      "meses": [
-      12,
-      1,
-      2
+      2,
+      3
      ],
-     "tipo": "Nos primeiros anos, forme a estrutura da copa. Em árvore adulta, retire apenas ramos mortos ou mal posicionados e evite podas fortes"
+     "tipo": "Nos jovens, intervenha pouco e retire apenas ramos mal inseridos. Nos adultos, faça poda moderada para luz e arejamento, privilegiando cortes pequenos. Escolha dias frios e secos e desinfete as ferramentas; perante cancro, peça orientação para a poda sanitária"
     }
    ],
    "colheita": [
@@ -479,9 +604,7 @@
     11
    ],
    "notas": {
-    "podas": {
-     "1": "Nos primeiros anos, forme a estrutura da copa. Em árvore adulta, retire apenas ramos mortos ou mal posicionados e evite podas fortes."
-    },
+    "podas": {},
     "enx": {
      "4": "Enxertia de coroa com garfos dormentes guardados no frio.",
      "5": "Enxertia de flauta (canutilho), com borbulhas do ano.",
@@ -490,7 +613,49 @@
    },
    "metodo_recomendado": [
     "enxertia"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "INIAV / Rita Lourenço Costa — Manual de Boas Práticas de Fruticultura: castanheiro",
+       "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_de_fruticultura_castanheiro.pdf",
+       "seccao": "p. 3 do PDF, Boas práticas para a instalação e gestão do souto; PDF obtido por leitura HTTP e lido localmente",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "ELA Montesinho-Nogueira / DRAP Norte e parceiros — Soutos Notáveis da Terra Fria: Poda de Castanheiros",
+       "url": "https://agricultura.ccdr-n.pt/phocadownloadpap/userupload/pepac/Manual_Poda_do_Castanheiro.pdf",
+       "seccao": "§§ 1.2, 1.4.2 e 1.5, pp. 5, 7–8: época, higiene e poda ligeira",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela proposta passa de dezembro–fevereiro para fevereiro–março, apoiada no manual regional; continua provisória para a parcela, a idade e o historial de cancro. Não foram acrescentados os meses de verão do manual."
+     },
+     "nota": "A fonte INIAV sustenta intervenção mínima nos primeiros anos. O manual dos soutos notáveis sustenta prudência, higiene e a preferência de fevereiro–março; não é uma autorização para poda drástica nem valida todos os soutos de Sardoura."
+    }
+   }
   },
   {
    "id": "cerejeira",
@@ -1184,7 +1349,7 @@
       1,
       2
      ],
-     "tipo": "Faça um desbaste ligeiro para a luz entrar na copa. Preserve os ramos de um ano que vão produzir rebentos frutíferos"
+     "tipo": "Em repouso e antes do abrolhamento, faça desbaste ligeiro dos ramos mortos, cruzados ou fracos. Preserve madeira de um ano e as pontas produtivas; evite encurtar todos os ramos por igual"
     }
    ],
    "colheita": [
@@ -1210,7 +1375,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "2": "Faça um desbaste ligeiro para a luz entrar na copa. Preserve os ramos de um ano que vão produzir rebentos frutíferos. Termine antes do abrolhamento."
+     "2": "Em repouso e antes do abrolhamento, faça desbaste ligeiro dos ramos mortos, cruzados ou fracos. Preserve madeira de um ano e as pontas produtivas; evite encurtar todos os ramos por igual."
     },
     "enx": {
      "3": "Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."
@@ -1225,7 +1390,39 @@
    },
    "metodo_recomendado": [
     "enxertia"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Marin Master Gardeners — Pruning Persimmon",
+       "url": "https://ucanr.edu/site/uc-marin-master-gardeners/document/pruning-persimmon",
+       "seccao": "Special considerations; What to prune in winter",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Orientação de manutenção para árvore estabelecida; não se impôs o mesmo atarraque a todos os ramos nem se certificou a época local."
+    }
+   }
   },
   {
    "id": "feijoa",
@@ -1275,10 +1472,10 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      4,
+      5
      ],
-     "tipo": "Desbaste ligeiramente os ramos que fecham o centro, se necessário. Preserve os ramos bem distribuídos que sustentam a produção"
+     "tipo": "Não necessita de poda anual por rotina. Se necessário, faça desbaste ligeiro para manter a estrutura; a limpeza de ramos danificados pelo inverno deve esperar pela primavera, depois do frio. Evite cortar a planta como uma sebe se pretende colher fruto"
     }
    ],
    "colheita": [
@@ -1324,7 +1521,59 @@
    "metodo_recomendado": [
     "enxertia",
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Growing Feijoa Fruit in Florida, HS1424",
+       "url": "https://ask.ifas.ufl.edu/publication/HS1424.pdf",
+       "seccao": "Spacing, Training, Pruning; apenas técnica, sem transpor calendário da Florida",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Acca sellowiana",
+       "url": "https://www.rhs.org.uk/plants/26630/acca-sellowiana/details",
+       "seccao": "Pruning: ausência de poda de rotina e limpeza de danos de inverno na primavera",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "California Rare Fruit Growers — Feijoa: Fruit Facts",
+       "url": "https://crfg.org/homepage/library/fruitfacts/feijoa/",
+       "seccao": "Culture: Pruning; efeito da tosquia de sebe na floração e produção",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela proposta passa de fevereiro–março para abril–maio para lembrar a avaliação depois do frio. É uma adaptação editorial provisória, não uma validação de meados de abril nem dos meses da RHS para Sardoura."
+     },
+     "nota": "A feijoa não exige poda anual para produzir. A fonte da Florida sustenta apenas a intervenção mínima, sem transpor as suas épocas de floração ou colheita."
+    }
+   }
   },
   {
    "id": "figueira",
@@ -1649,13 +1898,13 @@
       1,
       2
      ],
-     "tipo": "Abra ligeiramente o centro e retire ramos cruzados. Preserve as pontas dos ramos, onde surgem flores e frutos"
+     "tipo": "Em repouso, faça apenas desbaste ligeiro de ramos mortos, danificados ou cruzados. Preserve as pontas dos ramos do ano anterior, importantes para a frutificação; evite encurtar a copa toda"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Só após a queda total das folhas. Abra ligeiramente o centro e retire ramos cruzados. Preserve as pontas dos ramos, onde surgem flores e frutos"
+     "tipo": "Só após a queda das folhas e ainda em repouso. Em repouso, faça apenas desbaste ligeiro de ramos mortos, danificados ou cruzados. Preserve as pontas dos ramos do ano anterior, importantes para a frutificação; evite encurtar a copa toda"
     }
    ],
    "colheita": [
@@ -1694,7 +1943,39 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow quinces",
+       "url": "https://www.rhs.org.uk/fruit/quince/grow-your-own",
+       "seccao": "Pruning and training",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Distingue manutenção de árvore estabelecida da formação de árvores jovens. A preservação das pontas refere-se aos crescimentos do ano anterior; não foi revisto o calendário da colheita."
+    }
+   }
   },
   {
    "id": "medronheiro",
@@ -1750,7 +2031,7 @@
       2,
       3
      ],
-     "tipo": "Preserve o porte natural e limite o corte a ramos danificados ou cruzados, se necessário"
+     "tipo": "Não precisa de poda anual por rotina. Preserve o porte natural e limite a intervenção, se necessária, a ramos mortos, danificados ou cruzados; evite desbastes fortes"
     }
    ],
    "colheita": [
@@ -1778,6 +2059,48 @@
      "3": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada.",
      "10": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada.",
      "11": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Arbutus unedo",
+       "url": "https://www.rhs.org.uk/plants/1473/arbutus-unedo/details",
+       "seccao": "Pruning: manter a intervenção mínima",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs and trees: light pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+       "seccao": "Suitable for (Arbutus); How to lightly prune",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Orientação conservadora de manutenção do porte natural. Não corresponde a um programa de condução de um pomar intensivo de medronho nem certifica a época de produção da parcela."
     }
    }
   },
@@ -2491,7 +2814,7 @@
       1,
       2
      ],
-     "tipo": "Em árvores jovens, forme pernadas bem espaçadas. Em árvores adultas, desbaste seletivamente e preserve os ramos de um ano produtivos"
+     "tipo": "Em repouso, distinga formação de manutenção: nos jovens, selecione pernadas bem distribuídas; nos adultos, retire ramos partidos ou sobrepostos e desbaste seletivamente para entrar luz. Evite encurtar todos os ramos produtivos por igual; se despontar, preserve gomos vegetativos acima dos florais"
     }
    ],
    "colheita": [
@@ -2525,7 +2848,39 @@
    },
    "metodo_recomendado": [
     "enxertia"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC ANR / Robert H. Beede — Pruning & Training Resources: Pistachio",
+       "url": "https://ucanr.edu/site/california-pistachio-research/pruning-training-resources",
+       "seccao": "Typical types of pruning cuts; Mature trees; Dormant season pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "As técnicas da Califórnia sustentam a distinção entre formação e manutenção. Não se transferiram alturas de corte, número de pernadas ou comprimentos fixos de varas; a fonte é técnica, não uma recomendação de adaptação da cultura a Sardoura."
+    }
+   }
   },
   {
    "id": "romazeira",
@@ -2580,7 +2935,7 @@
       1,
       2
      ],
-     "tipo": "Desbaste ramos cruzados e renove gradualmente os caules velhos. Preserve os ramos curtos produtivos e alguns rebentos para renovação"
+     "tipo": "Na manutenção de inverno, retire ramos mortos, cruzados ou fracos e renove gradualmente a estrutura. Preserve os ramos curtos produtivos e os rebentos bem colocados necessários à renovação; retire os restantes rebentos da base conforme a forma conduzida"
     }
    ],
    "colheita": [
@@ -2614,7 +2969,39 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Marin Master Gardeners — Pruning Pomegranate",
+       "url": "https://ucanr.edu/site/uc-marin-master-gardeners/document/pruning-pomegranate",
+       "seccao": "Fruit grows on; What to prune in winter",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "A renovação considera tanto a forma arbustiva como a árvore de tronco único; não se elimina indistintamente toda a rebentação de substituição nem se impõe um diâmetro fixo de copa."
+    }
+   }
   },
   {
    "id": "framboeseira",
@@ -2652,7 +3039,7 @@
      "meses": [
       2
      ],
-     "tipo": "Nas variedades remontantes conduzidas para uma só colheita de outono, corte todas as varas rente ao solo no fim do inverno"
+     "tipo": "Só nas remontantes conduzidas para uma única colheita de outono, corte todas as varas rente ao solo no fim do inverno. Nas variedades de verão, conserve as varas novas que vão frutificar; a condução das remontantes para duas colheitas exige outra poda"
     },
     {
      "meses": [
@@ -2705,7 +3092,39 @@
    },
    "metodo_recomendado": [
     "divisao"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow raspberries",
+       "url": "https://www.rhs.org.uk/fruit/raspberries/grow-your-own",
+       "seccao": "Pruning summer-fruiting raspberries; Pruning autumn-fruiting raspberries; Double cropping",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Revistas ambas as entradas, incluindo as notas de agosto/setembro, que ficam iguais. Corte total só para uma colheita de outono. Não se prescreveu número fixo de varas por planta, e a variedade deve ser identificada antes de cortar."
+    }
+   }
   },
   {
    "id": "groselheira",
@@ -2753,7 +3172,7 @@
       1,
       2
      ],
-     "tipo": "Em arbustos adultos, renove alguns ramos velhos de cada vez e conserve os ramos curtos que dão fruto"
+     "tipo": "Na groselheira vermelha adulta, pode em repouso para manter ramos bem espaçados. Preserve os ramos curtos produtivos; renove apenas os ramos velhos menos produtivos e conserve os substitutos. Não aplique a renovação intensa usada na groselheira preta"
     }
    ],
    "colheita": [
@@ -2784,7 +3203,39 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Redcurrants and whitecurrants: pruning and training",
+       "url": "https://www.rhs.org.uk/fruit/redcurrants/redcurrant-pruning-and-training",
+       "seccao": "Fruiting; Bushes: pruning and training established plants",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Ficha Ribes rubrum, não Ribes nigrum. Orientação para arbusto adulto; cordões e formas em leque exigem condução própria. Os meses amplos da base mantêm-se provisórios e sujeitos ao repouso."
+    }
+   }
   },
   {
    "id": "kiwi",
@@ -2986,7 +3437,7 @@
       1,
       2
      ],
-     "tipo": "Em arbustos adultos, retire madeira morta, fraca ou rasteira e renove um ou dois ramos velhos pela base, conservando os rebentos vigorosos"
+     "tipo": "Nos primeiros dois anos, limite os cortes a madeira danificada ou que se cruza. Nos adultos, antes do abrolhamento, retire ramos mortos, fracos ou rasteiros e renove gradualmente os mais velhos pela base, preservando gomos florais e ramos vigorosos de várias idades"
     }
    ],
    "colheita": [
@@ -3012,7 +3463,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "2": "Em arbustos adultos, retire madeira morta, fraca ou rasteira e renove um ou dois ramos velhos pela base, conservando os rebentos vigorosos. Conclua antes do abrolhamento."
+     "2": "Nos primeiros dois anos, limite os cortes a madeira danificada ou que se cruza. Nos adultos, antes do abrolhamento, retire ramos mortos, fracos ou rasteiros e renove gradualmente os mais velhos pela base, preservando gomos florais e ramos vigorosos de várias idades."
     },
     "plantar": {
      "1": "Plantar em terra ácida e fresca."
@@ -3024,7 +3475,39 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow blueberries",
+       "url": "https://www.rhs.org.uk/fruit/blueberries/grow-your-own",
+       "seccao": "Pruning and training",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Retira a quota fixa de um ou dois ramos, desadequada a plantas de tamanhos diferentes. A renovação depende da idade e estrutura; não se transpôs o mês britânico considerado ideal para todas as cultivares locais."
+    }
+   }
   },
   {
    "id": "morangueiro",
@@ -3144,14 +3627,14 @@
       1,
       2
      ],
-     "tipo": "Poda mais longa do que a vinha de vinho, deixando varas para a ramada"
+     "tipo": "Pode em repouso, depois da queda da folha e antes do abrolhamento, em tempo seco e sem geada forte. A poda curta ou longa depende da casta, do vigor e da fertilidade dos gomos; não é sempre mais longa do que na uva de vinho. Evite cortes grandes e pode cepas doentes no fim, com ferramentas desinfetadas"
     },
     {
      "meses": [
       5,
       6
      ],
-     "tipo": "Monda de cachos e desbaste de bagos"
+     "tipo": "Se houver excesso de produção, ajuste a monda ao vigor, à idade e ao vingamento. Desbaste bagos apenas quando necessário em cachos apertados, depois do vingamento; não imponha o mesmo número de cachos a todas as plantas"
     }
    ],
    "colheita": [
@@ -3178,10 +3661,10 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda mais longa do que a vinha de vinho, deixando varas para a ramada ou latada.",
-     "2": "Poda mais longa do que a vinha de vinho, deixando varas para a ramada ou latada.",
-     "5": "Monda de cachos: deixe 1 a 2 cachos por vara para uvas maiores.",
-     "6": "Desbaste de bagos com tesoura pontiaguda nas variedades de cacho apertado."
+     "1": "Pode em repouso, depois da queda da folha e antes do abrolhamento, em tempo seco e sem geada forte. A poda curta ou longa depende da casta, do vigor e da fertilidade dos gomos; não é sempre mais longa do que na uva de vinho. Evite cortes grandes e pode cepas doentes no fim, com ferramentas desinfetadas.",
+     "2": "Pode em repouso, depois da queda da folha e antes do abrolhamento, em tempo seco e sem geada forte. A poda curta ou longa depende da casta, do vigor e da fertilidade dos gomos; não é sempre mais longa do que na uva de vinho. Evite cortes grandes e pode cepas doentes no fim, com ferramentas desinfetadas.",
+     "5": "Se houver excesso de produção, ajuste a monda ao vigor, à idade e ao vingamento. Desbaste bagos apenas quando necessário em cachos apertados, depois do vingamento; não imponha o mesmo número de cachos a todas as plantas.",
+     "6": "Se houver excesso de produção, ajuste a monda ao vigor, à idade e ao vingamento. Desbaste bagos apenas quando necessário em cachos apertados, depois do vingamento; não imponha o mesmo número de cachos a todas as plantas."
     },
     "plantar": {
      "1": "Bacelo enxertado, junto a ramada ou parede soalheira.",
@@ -3198,7 +3681,69 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.estacas, propagacao.estacas.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC IPM — Training and Pruning Grapes",
+       "url": "https://ipm.ucanr.edu/home-and-landscape/training-and-pruning-grapes/",
+       "seccao": "Diferenças entre poda curta e longa conforme a fertilidade dos gomos e a casta",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — How to grow grapes",
+       "url": "https://www.rhs.org.uk/fruit/grapes/grow-your-own",
+       "seccao": "Fruit thinning; Pruning and training",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "CVRVV — Intervenções na videira",
+       "url": "https://viticultura.cvrvv.pt/pt/a-vinha/cultura/intervencoes-na-videira/",
+       "seccao": "Época de poda; Conselhos de ordem cultural; Poda de produção",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "CCDR-Norte — Norte Transmontano, circular 13/2025, 19 de novembro",
+       "url": "https://agricultura.ccdr-n.pt/component/phocadownload/category/73-avisos-agricolas?download=859%3Acircular-13eant",
+       "seccao": "Videira: doenças do lenho; trabalho em tempo seco",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
+     },
+     "nota": "Revistas as duas operações e notas de janeiro, fevereiro, maio e junho. Não se presume ramada/latada nem poda longa para todas as castas; retirada a quota fixa de cachos por vara. A monda depende do vingamento real. Não foi acrescentado março por cópia automática da videira de vinho."
+    }
+   }
   },
   {
    "id": "videira",

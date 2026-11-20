@@ -1,0 +1,252 @@
+{
+  "base": "89e4f31959349261ced6e2ae56aa6b00bf9dc55c",
+  "data_consulta": "2026-11-20",
+  "fontes": {
+    "A1": {
+      "titulo": "INIAV / Filipa Queirós — Manual de Boas Práticas de Fruticultura: amendoeira",
+      "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_de_fruticultura_amendoeira.pdf",
+      "seccao": "Poda e condução da cultura; Proteção fitossanitária",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "A2": {
+      "titulo": "RHS — Prunus communis (sinónimo de Prunus dulcis)",
+      "url": "https://www.rhs.org.uk/plants/323239/prunus-communis/details",
+      "seccao": "Pruning: poda de verão quando a doença do chumbo é um problema",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "M1": {
+      "titulo": "RHS — How to grow mulberries",
+      "url": "https://www.rhs.org.uk/fruit/mulberries/grow-your-own",
+      "seccao": "Pruning and training: árvores de copa livre e perda de seiva",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "M2": {
+      "titulo": "RHS — Morus alba",
+      "url": "https://www.rhs.org.uk/plants/11216/morus-alba/details/",
+      "seccao": "Pruning: fim do outono / início do inverno",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "AV1": {
+      "titulo": "RHS — Cobnuts and filberts",
+      "url": "https://www.rhs.org.uk/nuts/cobnuts-filberts",
+      "seccao": "Pruning and training: plantas novas e estabelecidas",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "AV2": {
+      "titulo": "OSU Extension / Jeff L. Olsen — Growing Hazelnuts in the Pacific Northwest: Training and Pruning, EM 9078",
+      "url": "https://extension.oregonstate.edu/catalog/pub/em9078",
+      "seccao": "Pruning mature orchards; What to prune; Healthy pruning cuts",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "C1": {
+      "titulo": "INIAV / Rita Lourenço Costa — Manual de Boas Práticas de Fruticultura: castanheiro",
+      "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_de_fruticultura_castanheiro.pdf",
+      "seccao": "p. 3 do PDF, Boas práticas para a instalação e gestão do souto; PDF obtido por leitura HTTP e lido localmente",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "C2": {
+      "titulo": "ELA Montesinho-Nogueira / DRAP Norte e parceiros — Soutos Notáveis da Terra Fria: Poda de Castanheiros",
+      "url": "https://agricultura.ccdr-n.pt/phocadownloadpap/userupload/pepac/Manual_Poda_do_Castanheiro.pdf",
+      "seccao": "§§ 1.2, 1.4.2 e 1.5, pp. 5, 7–8: época, higiene e poda ligeira",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "D1": {
+      "titulo": "UC Marin Master Gardeners — Pruning Persimmon",
+      "url": "https://ucanr.edu/site/uc-marin-master-gardeners/document/pruning-persimmon",
+      "seccao": "Special considerations; What to prune in winter",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "F1": {
+      "titulo": "UF/IFAS — Growing Feijoa Fruit in Florida, HS1424",
+      "url": "https://ask.ifas.ufl.edu/publication/HS1424.pdf",
+      "seccao": "Spacing, Training, Pruning; apenas técnica, sem transpor calendário da Florida",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "F2": {
+      "titulo": "RHS — Acca sellowiana",
+      "url": "https://www.rhs.org.uk/plants/26630/acca-sellowiana/details",
+      "seccao": "Pruning: ausência de poda de rotina e limpeza de danos de inverno na primavera",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "MA1": {
+      "titulo": "RHS — How to grow quinces",
+      "url": "https://www.rhs.org.uk/fruit/quince/grow-your-own",
+      "seccao": "Pruning and training",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "ME1": {
+      "titulo": "RHS — Arbutus unedo",
+      "url": "https://www.rhs.org.uk/plants/1473/arbutus-unedo/details",
+      "seccao": "Pruning: manter a intervenção mínima",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "ME2": {
+      "titulo": "RHS — Shrubs and trees: light pruning",
+      "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+      "seccao": "Suitable for (Arbutus); How to lightly prune",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "P1": {
+      "titulo": "UC ANR / Robert H. Beede — Pruning & Training Resources: Pistachio",
+      "url": "https://ucanr.edu/site/california-pistachio-research/pruning-training-resources",
+      "seccao": "Typical types of pruning cuts; Mature trees; Dormant season pruning",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "R1": {
+      "titulo": "UC Marin Master Gardeners — Pruning Pomegranate",
+      "url": "https://ucanr.edu/site/uc-marin-master-gardeners/document/pruning-pomegranate",
+      "seccao": "Fruit grows on; What to prune in winter",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "FR1": {
+      "titulo": "RHS — How to grow raspberries",
+      "url": "https://www.rhs.org.uk/fruit/raspberries/grow-your-own",
+      "seccao": "Pruning summer-fruiting raspberries; Pruning autumn-fruiting raspberries; Double cropping",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "G1": {
+      "titulo": "RHS — Redcurrants and whitecurrants: pruning and training",
+      "url": "https://www.rhs.org.uk/fruit/redcurrants/redcurrant-pruning-and-training",
+      "seccao": "Fruiting; Bushes: pruning and training established plants",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "MI1": {
+      "titulo": "RHS — How to grow blueberries",
+      "url": "https://www.rhs.org.uk/fruit/blueberries/grow-your-own",
+      "seccao": "Pruning and training",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "U1": {
+      "titulo": "UC IPM — Training and Pruning Grapes",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/training-and-pruning-grapes/",
+      "seccao": "Diferenças entre poda curta e longa conforme a fertilidade dos gomos e a casta",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "U2": {
+      "titulo": "RHS — How to grow grapes",
+      "url": "https://www.rhs.org.uk/fruit/grapes/grow-your-own",
+      "seccao": "Fruit thinning; Pruning and training",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "U3": {
+      "titulo": "CVRVV — Intervenções na videira",
+      "url": "https://viticultura.cvrvv.pt/pt/a-vinha/cultura/intervencoes-na-videira/",
+      "seccao": "Época de poda; Conselhos de ordem cultural; Poda de produção",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "U4": {
+      "titulo": "CCDR-Norte — Norte Transmontano, circular 13/2025, 19 de novembro",
+      "url": "https://agricultura.ccdr-n.pt/component/phocadownload/category/73-avisos-agricolas?download=859%3Acircular-13eant",
+      "seccao": "Videira: doenças do lenho; trabalho em tempo seco",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "F3": {
+      "titulo": "California Rare Fruit Growers — Feijoa: Fruit Facts",
+      "url": "https://crfg.org/homepage/library/fruitfacts/feijoa/",
+      "seccao": "Culture: Pruning; efeito da tosquia de sebe na floração e produção",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    }
+  },
+  "leitura_direta_castanheiro": {
+    "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_de_fruticultura_castanheiro.pdf",
+    "sha256": "40675bde32584b2c0c11ed6d332d14adb8725c687f32e2406e36c438d07a3306",
+    "pagina_pdf": 3,
+    "nota": "A leitura web devolveu timeout; o download HTTP foi bem-sucedido e a página foi lida com extração local. Não se inclui uma cópia integral do manual."
+  }
+}

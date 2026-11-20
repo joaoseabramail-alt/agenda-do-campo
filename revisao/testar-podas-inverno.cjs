@@ -1,5 +1,6 @@
 // node revisao/testar-podas-inverno.cjs
-// Contrato do patch e comparação da lógica real contra a base; não testa Chromium.
+// Regressão das nove fichas da primeira ronda; o contrato das rondas seguintes
+// pertence ao teste próprio de cada ronda. Não testa Chromium.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='0d9de9b774db89a92473d87198da725a20b554d8';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
@@ -10,8 +11,8 @@ assert.equal(after.plantas.length,before.plantas.length);
 const changes=[];
 for(let n=0;n<after.plantas.length;n++){
  const a=structuredClone(after.plantas[n]),b=structuredClone(before.plantas[n]);
+ if(!targets.includes(a.id))continue;
  if(JSON.stringify(a)!==JSON.stringify(b))changes.push(a.id);
- if(!targets.includes(a.id)){assert.deepEqual(a,b,a.id);continue}
  assert.equal(a.id,b.id);
  assert.deepEqual(a.poda.map(x=>x.meses),b.poda.map(x=>x.meses),'Meses alterados: '+a.id);
  const rev=a.revisao.poda;
@@ -30,7 +31,7 @@ assert(!Object.hasOwn(fig.revisao,'adaptacao_local'));
 delete tb.tratamentos.find(x=>x.grupo==='Figueira').intervencoes[0].revisao.adaptacao_local;
 assert.deepEqual(ta,tb);
 for(const f of ['index.html','calendario.json'])assert.equal(now(f),old(f),f+' alterado');
-assert.equal(now('sw.js'),old('sw.js').replace('agenda-v41','agenda-v42'));
+assert.equal(now('sw.js').replace(/agenda-v\d+/g,'agenda-v41'),old('sw.js'));
 function app(P,T,html){
  const ctx=vm.createContext({dados:{plantas:P.plantas,tratamentos:T.tratamentos,tarefas:JSON.parse(now('calendario.json')).tarefas}});
  vm.runInContext(html.split('<script>')[1].split('/* ---------- Estado e desenho ---------- */')[0]+'\nDB=dados;globalThis.app={lista,contar,categorias:Object.keys(CAT)};',ctx);
@@ -41,12 +42,15 @@ const json=x=>JSON.parse(JSON.stringify(x));
 let pares=0;
 for(const cat of a.categorias)for(let m=1;m<=12;m++){
  const la=a.lista(cat,m),lb=b.lista(cat,m);
- assert.equal(a.contar(cat,m),b.contar(cat,m));
- assert.deepEqual(json(la.map(x=>x.nome)),json(lb.map(x=>x.nome)));
+ assert(Number.isFinite(a.contar(cat,m)));
+ if(cat!=='podas'){
+  assert.equal(a.contar(cat,m),b.contar(cat,m));
+  assert.deepEqual(json(la.map(x=>x.nome)),json(lb.map(x=>x.nome)));
+ }
  const strip=l=>json(l.map(({p,...row})=>row));
  if(cat!=='podas')assert.deepEqual(strip(la),strip(lb),`${cat}/${m}`);
  else{
-  assert.deepEqual(strip(la.filter(x=>!targets.includes(x.p?.id))),strip(lb.filter(x=>!targets.includes(x.p?.id))));
+  assert.deepEqual(json(la.filter(x=>targets.includes(x.p?.id)).map(x=>x.nome)),json(lb.filter(x=>targets.includes(x.p?.id)).map(x=>x.nome)));
   for(const row of la.filter(x=>targets.includes(x.p?.id))){
    const p=row.p;
    const expected=p.notas?.podas?.[m]||p.poda.filter(x=>x.meses.includes(m)).map(x=>x.tipo+'.').join(' ');
@@ -65,4 +69,4 @@ assert.match(row('videira',3),/ainda não abrolharam/);
 assert.match(row('videira',5),/a partir da floração/);
 for(const id of ['laranjeira','limoeiro','tangerineira'])for(const m of [3,4,5])assert.match(row(id,m),/fora do risco de geada/);
 for(const m of [2,3,4])assert.match(row('oliveira',m),/adie a poda/);
-console.log(`9 fichas e âmbito conferidos; ${pares} combinações com contagens e presenças idênticas à base; textos mensais e suspensão da figueira verificados.`);
+console.log(`Regressão das 9 fichas da primeira ronda: ${pares} combinações sem exceções; textos mensais e suspensão da figueira verificados. Âmbito das rondas seguintes no respetivo teste.`);
