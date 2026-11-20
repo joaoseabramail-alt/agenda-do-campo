@@ -39,7 +39,6 @@
      "meses": [
       2,
       3,
-      7,
       8
      ],
      "nota": null
@@ -87,10 +86,9 @@
    "toxicidade": null,
    "notas": {
     "enx": {
-     "2": "Enxertia de fenda ou à inglesa.",
-     "3": "Enxertia de fenda, até ao início da floração.",
-     "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês).",
-     "8": "Borbulha em T ou de lasca."
+     "2": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "3": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "8": "Borbulha em T no fim do mês: casca que descola e olho dormente que rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -102,7 +100,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Georgia Extension — Propagating Deciduous Fruit Plants Common to Georgia (B 818)",
+       "url": "https://fieldreport.caes.uga.edu/publications/B818/propagating-deciduous-fruit-plants-common-to-georgia/",
+       "seccao": "T-budding; Whip Grafting; Cleft Grafting",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Geórgia (EUA), mais quente: as datas não estão validadas para Sardoura. Guie-se pela planta dormente (garfo) e pela casca que descola (borbulha)."
+     },
+     "nota": "A UGA cobre esta espécie: borbulha de olho dormente no fim de agosto/início de setembro; garfo em fevereiro–março, com a planta dormente. Retirado julho: a borbulha de junho–julho da fonte é forçada no mesmo ano (viveiro), não de olho dormente. A fonte cita «plums» (Prunus domestica não especificado). Julho tinha sido acrescentado em 7a020da sem fonte."
+    }
+   }
   },
   {
    "id": "amendoeira",
@@ -1241,7 +1271,7 @@
      "meses": [
       2,
       3,
-      7
+      8
      ],
      "nota": null
     },
@@ -1288,7 +1318,9 @@
    "toxicidade": null,
    "notas": {
     "enx": {
-     "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês)."
+     "2": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "3": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "8": "Borbulha em T no fim do mês: casca que descola e olho dormente que rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -1300,7 +1332,22 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "por_rever": [
+       "meses",
+       "texto",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "nota": "Alinhado com os outros Prunus (garfo em fevereiro–março, borbulha de olho dormente em agosto; julho retirado). A UGA não cita o damasqueiro e a fonte indiana indicada pelo ChatGPT (NHB) não pôde ser aberta. Provisório até haver fonte."
+    }
+   }
   },
   {
    "id": "diospireiro",
@@ -2212,7 +2259,8 @@
      "dificuldade": 1,
      "meses": [
       2,
-      3
+      3,
+      8
      ],
      "nota": null
     },
@@ -2259,7 +2307,46 @@
    "toxicidade": null,
    "metodo_recomendado": [
     "enxertia"
-   ]
+   ],
+   "notas": {
+    "enx": {
+     "2": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "3": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "8": "Borbulha em T no fim do mês: casca que descola e olho dormente que rebenta na primavera seguinte."
+    }
+   },
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Georgia Extension — Propagating Deciduous Fruit Plants Common to Georgia (B 818)",
+       "url": "https://fieldreport.caes.uga.edu/publications/B818/propagating-deciduous-fruit-plants-common-to-georgia/",
+       "seccao": "T-budding; Whip Grafting; Cleft Grafting",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Geórgia (EUA), mais quente: as datas não estão validadas para Sardoura. Guie-se pela planta dormente (garfo) e pela casca que descola (borbulha)."
+     },
+     "nota": "A UGA cobre esta espécie: borbulha de olho dormente no fim de agosto/início de setembro; garfo em fevereiro–março, com a planta dormente. Retirado julho: a borbulha de junho–julho da fonte é forçada no mesmo ano (viveiro), não de olho dormente. Forma de Prunus persica; a fonte cita «nectarines». Acrescentada a borbulha de agosto, como no pessegueiro."
+    }
+   }
   },
   {
    "id": "nespereira",
@@ -2818,7 +2905,6 @@
      "meses": [
       2,
       3,
-      7,
       8
      ],
      "nota": null
@@ -2869,8 +2955,9 @@
    "notas": {
     "podas": {},
     "enx": {
-     "7": "Borbulha em T ou de lasca, de olho dormente (fim do mês).",
-     "8": "Borbulha em T ou de lasca."
+     "2": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "3": "Enxertia de garfo (fenda ou inglesa), com a planta dormente, antes do novo crescimento.",
+     "8": "Borbulha em T no fim do mês: casca que descola e olho dormente que rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -2882,7 +2969,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Georgia Extension — Propagating Deciduous Fruit Plants Common to Georgia (B 818)",
+       "url": "https://fieldreport.caes.uga.edu/publications/B818/propagating-deciduous-fruit-plants-common-to-georgia/",
+       "seccao": "T-budding; Whip Grafting; Cleft Grafting",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Geórgia (EUA), mais quente: as datas não estão validadas para Sardoura. Guie-se pela planta dormente (garfo) e pela casca que descola (borbulha)."
+     },
+     "nota": "A UGA cobre esta espécie: borbulha de olho dormente no fim de agosto/início de setembro; garfo em fevereiro–março, com a planta dormente. Retirado julho: a borbulha de junho–julho da fonte é forçada no mesmo ano (viveiro), não de olho dormente. Julho tinha sido acrescentado em 7a020da sem fonte."
+    }
+   }
   },
   {
    "id": "pistacheiro",

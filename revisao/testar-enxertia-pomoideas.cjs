@@ -1,10 +1,10 @@
 // node revisao/testar-enxertia-pomoideas.cjs
 // Contrato da ronda de enxertia (macieira, pereira, marmeleiro) contra 8f516f3; não testa Chromium.
-// Numa ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
+// Dados fixados no commit em que esta ronda foi publicada (a98da65): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
-const root=path.join(__dirname,'..'),base='8f516f3';
+const root=path.join(__dirname,'..'),base='8f516f3',ronda='a98da65';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 const alvos=['macieira','pereira','marmeleiro'];
 for(const f of ['tratamentos.json','calendario.json'])assert.equal(now(f),old(f),f+' fora do âmbito');
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
