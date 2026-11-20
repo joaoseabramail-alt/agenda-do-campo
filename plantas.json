@@ -338,6 +338,12 @@
       2
      ],
      "tipo": "Poda de inverno de forma e limpeza"
+    },
+    {
+     "meses": [
+      5
+     ],
+     "tipo": "Nas aveleiras conduzidas em tronco único, retire os rebentos novos da base. Em touceira, conserve os que forem necessários para renovar a estrutura"
     }
    ],
    "colheita": [
@@ -376,10 +382,9 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Retire rebentos da base e ramos com mais de 6–8 anos.",
-     "2": "Retire rebentos da base e ramos com mais de 6–8 anos.",
-     "5": "Corte os rebentos novos que saem da base (chupões).",
-     "12": "Retire rebentos da base e ramos com mais de 6–8 anos."
+     "1": "Retire ramos mortos ou mal posicionados. Se conduzir em touceira, renove gradualmente os ramos velhos e conserve rebentos bem colocados para os substituir.",
+     "2": "Retire ramos mortos ou mal posicionados. Se conduzir em touceira, renove gradualmente os ramos velhos e conserve rebentos bem colocados para os substituir.",
+     "12": "Retire ramos mortos ou mal posicionados. Se conduzir em touceira, renove gradualmente os ramos velhos e conserve rebentos bem colocados para os substituir."
     },
     "plantar": {
      "1": "Raiz nua; plante pelo menos duas variedades para polinizar.",
@@ -1562,10 +1567,9 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "2": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.",
-     "3": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.",
-     "10": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva.",
-     "11": "Em torrão, em terra ácida e bem drenada; dá-se bem em Paiva."
+     "3": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada.",
+     "10": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada.",
+     "11": "Plante em torrão, em solo bem drenado e local soalheiro, abrigado de ventos frios. Proteja as plantas jovens da geada."
     },
     "podas": {
      "3": "Poda leve de forma; não precisa de poda forte."
@@ -1734,7 +1738,8 @@
     "plantar": {
      "3": "Em torrão, em local abrigado do frio (floresce no inverno): junto a um muro virado a sul.",
      "4": "Use planta de vaso ou torrão em local abrigado. Adie se houver geada prevista.",
-     "9": "Em torrão, antes do frio."
+     "10": "Plante em torrão ou vaso, em solo bem drenado e local soalheiro, abrigado das geadas.",
+     "11": "Plante em torrão ou vaso, em solo bem drenado e local soalheiro, abrigado das geadas."
     },
     "enx": {
      "4": "Enxertia de fenda."
@@ -1930,7 +1935,8 @@
     "estacas": {
      "3": "Estacas semi-lenhosas, em areia húmida e à sombra.",
      "6": "Estacas semi-lenhosas, com humidade constante.",
-     "9": "Estacas semi-lenhosas."
+     "7": "Use ramos sãos do ano, com base já firme e ponta ainda flexível.",
+     "8": "Use ramos sãos do ano, com base já firme e ponta ainda flexível."
     },
     "alp": {
      "4": "Época principal; pode demorar 3 a 4 meses a enraizar.",
@@ -2997,10 +3003,15 @@
     {
      "meses": [
       4,
-      5,
-      3
+      5
      ],
      "tipo": "Depois da floração, poda leve sem cortar madeira velha"
+    },
+    {
+     "meses": [
+      3
+     ],
+     "tipo": "Apare ligeiramente só se a floração já tiver terminado. Evite cortar madeira velha"
     }
    ],
    "plantacao": {
@@ -3020,9 +3031,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "3": "Apare ligeiramente só se a floração já tiver terminado. Evite cortar madeira velha."
-    },
     "estacas": {
      "3": "Estacas de 10 cm, tirando as folhas de baixo.",
      "4": "Estacas de pontas.",
@@ -3124,8 +3132,7 @@
     {
      "meses": [
       8,
-      9,
-      7
+      9
      ],
      "tipo": "Depois da floração, cortar as hastes florais e um pouco da folhagem"
     },
@@ -3134,6 +3141,12 @@
       3
      ],
      "tipo": "Aparo ligeiro de primavera"
+    },
+    {
+     "meses": [
+      7
+     ],
+     "tipo": "Se a floração já terminou, corte as hastes florais e um pouco da folhagem, sem atingir madeira velha"
     }
    ],
    "plantacao": {
@@ -3154,8 +3167,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Pode aparar folhagem desalinhada ou queimada pela geada. Evite madeira velha.",
-     "7": "Se a floração já terminou, corte as hastes florais e um pouco da folhagem, sem atingir madeira velha."
+     "3": "Pode aparar folhagem desalinhada ou queimada pela geada. Evite madeira velha."
     },
     "estacas": {
      "4": "Use pontas herbáceas de rebentos sem flor, quando houver crescimento novo suficiente.",
@@ -3226,13 +3238,19 @@
    "exposicao": null,
    "toxicidade": null,
    "notas": {
-    "alp": {
-     "3": "Alporque em ramos direitos de 1 a 2 cm."
-    },
     "estacas": {
      "9": "Estacas semi-lenhosas."
     }
-   }
+   },
+   "divisao": [
+    {
+     "meses": [
+      10,
+      11
+     ],
+     "metodo": "Mergulhia: fixe um ramo baixo ao solo, ainda ligado à planta-mãe, e separe-o quando tiver raízes"
+    }
+   ]
   },
   {
    "id": "manjericao",
@@ -3310,7 +3328,8 @@
       6,
       7,
       8,
-      9
+      9,
+      10
      ],
      "nota": null
     }
@@ -3341,7 +3360,7 @@
    "notas": {
     "plantar": {
      "3": "Sementeira direta.",
-     "10": "Sementeira direta."
+     "10": "Sementeira direta em solo húmido, sem encharcar."
     }
    }
   },
@@ -5036,7 +5055,7 @@
      "12": "Limpeza de ramos baixos e secos; corte rente ao tronco."
     },
     "plantar": {
-     "2": "Planta jovem em vaso ou torrão, em local soalheiro.",
+     "3": "Plante um exemplar jovem em vaso ou torrão, em local soalheiro e solo bem drenado. Adie se houver geada prevista.",
      "11": "Planta jovem em vaso ou torrão, em local soalheiro."
     }
    }
@@ -5767,12 +5786,11 @@
     "estacas": {
      "dificuldade": 2,
      "meses": [
-      5,
       6,
       7,
       8
      ],
-     "nota": null
+     "nota": "No verão, use estacas semilenhosas com talão, de rebentos já firmes na base."
     },
     "sementeira": {
      "dificuldade": 3,
@@ -5827,11 +5845,6 @@
    "autoctone": null,
    "toxicidade": null,
    "notas": {
-    "estacas": {
-     "4": "Estacas semi-lenhosas.",
-     "5": "Estacas semi-lenhosas.",
-     "7": "Estacas semi-lenhosas."
-    },
     "alp": {
      "5": "Enraíza bem em alporque.",
      "6": "Ainda a tempo."
@@ -5850,6 +5863,7 @@
     "estacas": {
      "dificuldade": 1,
      "meses": [
+      6,
       8,
       9,
       10,
@@ -5904,8 +5918,7 @@
    "autoctone": null,
    "notas": {
     "estacas": {
-     "3": "Estacas de 10–15 cm.",
-     "6": "Estacas semi-lenhosas.",
+     "6": "Use rebentos sãos do ano, quando a base começar a ficar firme.",
      "8": "Estacas semi-lenhosas.",
      "9": "Estacas semi-lenhosas."
     }
@@ -7156,10 +7169,15 @@
       6,
       7,
       8,
-      9,
-      4
+      9
      ],
      "tipo": "Cortes de sebe"
+    },
+    {
+     "meses": [
+      4
+     ],
+     "tipo": "Se a floração já terminou, pode aparar a sebe. Adie se houver ninhos ativos"
     }
    ],
    "plantacao": {
@@ -7186,7 +7204,6 @@
      "11": "Em torrão; sebe densa, a 60–80 cm entre plantas."
     },
     "podas": {
-     "4": "Se a floração já terminou, pode aparar a sebe. Adie se houver ninhos ativos.",
      "8": "Segundo corte de sebe; use tesoura de mão nas plantas de folha grande."
     },
     "alp": {
@@ -7526,8 +7543,7 @@
      "meses": [
       1,
       2,
-      3,
-      10
+      3
      ],
      "tipo": "Poda principal: 3 a 5 ramos com 2–3 gomos"
     },
@@ -7536,6 +7552,12 @@
       11
      ],
      "tipo": "Só poda ligeira de limpeza; a poda principal é em janeiro–março"
+    },
+    {
+     "meses": [
+      10
+     ],
+     "tipo": "Retire flores murchas se quiser prolongar a floração. Deixe-as nas roseiras de frutos decorativos"
     }
    ],
    "plantacao": {
@@ -7563,14 +7585,12 @@
      "6": "Use pontas herbáceas de rebentos novos e sãos.",
      "7": "Use estacas semilenhosas de rebentos sãos do ano, com a base já firme.",
      "8": "Use estacas semilenhosas de rebentos sãos do ano, com a base já firme.",
-     "9": "Estacas semi-lenhosas.",
      "10": "No fim do mês, tire estacas lenhosas se os ramos do ano já estiverem em repouso.",
      "11": "Estacas lenhosas.",
      "12": "Estacas lenhosas."
     },
     "podas": {
      "2": "Poda principal: deixe 3 a 5 ramos com 2–3 gomos.",
-     "10": "Retire flores murchas se quiser prolongar a floração. Deixe-as nas roseiras de frutos decorativos.",
      "11": "Poda ligeira de limpeza."
     },
     "alp": {
@@ -8248,8 +8268,7 @@
    "notas": {
     "plantar": {
      "1": "Transplante para o terreno definitivo.",
-     "8": "Para transplantar no inverno.",
-     "9": "Sementeira em alfobre."
+     "9": "Semeie em alfobre. Para passar o inverno no terreno, escolha uma variedade adequada à sementeira de outono."
     }
    }
   },
@@ -8524,12 +8543,12 @@
    "toxicidade": null,
    "notas": {
     "plantar": {
-     "1": "Transplante de couve-galega e penca.",
      "3": "Sementeira em alfobre ou transplante.",
      "4": "Sementeira e transplante.",
      "6": "Para outono e inverno.",
      "7": "Galega, tronchuda, lombarda, coração: transplante.",
-     "9": "Transplante para o inverno."
+     "9": "Transplante para o inverno.",
+     "10": "Transplante mudas de couve-galega já estabelecidas."
     }
    }
   },
