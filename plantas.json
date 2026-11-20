@@ -3948,13 +3948,13 @@
       4,
       5
      ],
-     "tipo": "Depois da floração, poda leve sem cortar madeira velha"
+     "tipo": "Depois da floração, apare ligeiramente os rebentos com folhas para manter a planta compacta; não corte para dentro da madeira velha sem folhas"
     },
     {
      "meses": [
       3
      ],
-     "tipo": "Apare ligeiramente só se a floração já tiver terminado. Evite cortar madeira velha"
+     "tipo": "Só apare se a floração já terminou e a planta está a crescer; conserve folhagem abaixo dos cortes e não tente recuperar madeira velha com poda forte"
     }
    ],
    "plantacao": {
@@ -3979,6 +3979,38 @@
      "4": "Estacas de pontas.",
      "5": "Estacas de pontas.",
      "7": "Estacas de pontas."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow rosemary",
+       "url": "https://www.rhs.org.uk/herbs/rosemary/grow-your-own",
+       "seccao": "Pruning and training",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Revistas as duas entradas. É uma manutenção após floração, não uma regra de poda forte de primavera."
     }
    }
   },
@@ -4077,19 +4109,19 @@
       8,
       9
      ],
-     "tipo": "Depois da floração, cortar as hastes florais e um pouco da folhagem"
+     "tipo": "Só depois da floração, retire as hastes florais e um pouco da folhagem, deixando folhas abaixo do corte. Evite madeira velha e não faça uma poda tardia se já houver frio ou tempo húmido persistente"
     },
     {
      "meses": [
       3
      ],
-     "tipo": "Aparo ligeiro de primavera"
+     "tipo": "Com crescimento visível e depois do frio forte, faça apenas aparo ligeiro de folhagem desalinhada ou danificada; não corte madeira velha sem folhas"
     },
     {
      "meses": [
       7
      ],
-     "tipo": "Se a floração já terminou, corte as hastes florais e um pouco da folhagem, sem atingir madeira velha"
+     "tipo": "Se a floração da espécie ou cultivar já terminou, retire hastes florais e um pouco de folhagem, sem atingir madeira velha"
     }
    ],
    "plantacao": {
@@ -4110,7 +4142,7 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Pode aparar folhagem desalinhada ou queimada pela geada. Evite madeira velha."
+     "3": "Com crescimento visível e depois do frio forte, faça apenas aparo ligeiro de folhagem desalinhada ou danificada; não corte madeira velha sem folhas."
     },
     "estacas": {
      "4": "Use pontas herbáceas de rebentos sem flor, quando houver crescimento novo suficiente.",
@@ -4119,7 +4151,49 @@
      "8": "Estacas de pontas."
     }
    },
-   "foto": "Lavanda"
+   "foto": "Lavanda",
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow lavender",
+       "url": "https://www.rhs.org.uk/plants/lavender/growing-guide",
+       "seccao": "Pruning and training",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Lavandula angustifolia",
+       "url": "https://www.rhs.org.uk/plants/91398/lavandula-angustifolia/details",
+       "seccao": "Pruning: evitar cortes no outono frio/húmido e em madeira velha",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "A ficha agrupa Lavandula spp.; as épocas de floração e rusticidade diferem. A fonte de L. angustifolia sustenta a prudência perante cortes tardios em clima frio/húmido, não a uniformidade de todas as espécies. Setembro mantém-se apenas condicionado; não é uma segunda poda obrigatória."
+    }
+   }
   },
   {
    "id": "loureiro",
@@ -4163,7 +4237,7 @@
       3,
       4
      ],
-     "tipo": "Em exemplares livres, encurte apenas os rebentos que desequilibram a copa e retire pontas danificadas pelo frio"
+     "tipo": "Em exemplares livres, faça só os cortes necessários para equilibrar a copa. Espere pela primavera para avaliar e retirar pontas atingidas pelo frio; não confunda esta limpeza com tosquia regular de topiaria ou com renovação forte"
     }
    ],
    "plantacao": {
@@ -4194,7 +4268,39 @@
      ],
      "metodo": "Mergulhia: fixe um ramo baixo ao solo, ainda ligado à planta-mãe, e separe-o quando tiver raízes"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Bay tree care and uses",
+       "url": "https://www.rhs.org.uk/plants/bay-tree/growing-guide",
+       "seccao": "Pruning and training: exemplares livres versus topiaria",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Orientação de manutenção de exemplares livres. A topiaria e a renovação forte têm época e intensidade próprias, não prescritas nesta entrada."
+    }
+   }
   },
   {
    "id": "manjericao",
@@ -4353,7 +4459,7 @@
       3,
       4
      ],
-     "tipo": "Quando retomar o crescimento, apare ligeiramente para manter a planta compacta. Evite cortar para dentro da madeira velha sem folhas"
+     "tipo": "Na salva culinária, quando o crescimento retomar depois do frio, apare ligeiramente os rebentos com folhas para manter a planta compacta. Não corte para dentro da madeira velha sem folhas, que pode não rebentar"
     }
    ],
    "plantacao": {
@@ -4375,6 +4481,38 @@
    "notas": {
     "estacas": {
      "4": "Estacas de pontas."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow sage",
+       "url": "https://www.rhs.org.uk/herbs/sage/grow-your-own",
+       "seccao": "Pruning and training: Salvia officinalis",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Ficha Salvia officinalis. Não se generaliza a outras sálvias ornamentais nem se certifica março para uma planta ainda sem crescimento."
     }
    }
   },
@@ -6752,10 +6890,10 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      3,
+      4
      ],
-     "tipo": "Poda forte a 30–50 cm do chão"
+     "tipo": "Na Buddleja davidii estabelecida, quando os gomos começam a crescer e passou o frio forte, encurte os ramos do ano anterior até gomos vivos numa estrutura baixa. Ajuste a altura ao porte e à cultivar; não aplique a mesma poda às espécies que florescem na madeira do ano anterior"
     }
    ],
    "plantacao": {
@@ -6789,7 +6927,49 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow buddlejas",
+       "url": "https://www.rhs.org.uk/plants/buddleja/growing-guide",
+       "seccao": "Pruning and training: Buddleja davidii versus espécies de madeira do ano anterior",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs: pruning summer- or autumn-flowering",
+       "url": "https://www.rhs.org.uk/plants/types/shrubs/summer-autumn-pruning-guide",
+       "seccao": "When to prune; How to prune (grupo 6)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela proposta passa de fevereiro–março para março–abril, com decisão pela retoma dos gomos e pelo frio. A fonte sustenta primavera, não datas verificadas em Sardoura."
+     },
+     "nota": "Retirada a altura fixa de 30–50 cm para todos os exemplares. A ficha é B. davidii; não se generaliza a B. alternifolia ou a outras budleias."
+    }
+   }
   },
   {
    "id": "buganvilia",
@@ -6843,7 +7023,7 @@
       3,
       4
      ],
-     "tipo": "Antes do crescimento forte, retire ramos finos ou danificados e encurte laterais que excedam o suporte. Conserve os ramos principais"
+     "tipo": "Depois do frio e antes do crescimento forte, retire ramos danificados e encurte laterais que excedam o suporte, preservando a estrutura principal. Floresce no crescimento do ano; ajuste a intensidade ao vigor e não faça poda forte numa planta debilitada pelo inverno"
     }
    ],
    "plantacao": {
@@ -6865,6 +7045,38 @@
     "alp": {
      "5": "Enraíza bem em alporque.",
      "6": "Ainda a tempo."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Bougainvillea care tips",
+       "url": "https://www.rhs.org.uk/plants/bougainvillea/growing-guide",
+       "seccao": "Pruning and training; orientação de plantas cultivadas em abrigo",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "A fonte britânica trata sobretudo plantas em abrigo. Usaram-se a biologia e a manutenção; não se importaram temperaturas, épocas de floração ou necessidades de estufa para a parcela portuguesa."
     }
    }
   },
@@ -7286,7 +7498,7 @@
       7,
       8
      ],
-     "tipo": "Apare para dar forma na primavera ou no verão, até meados de agosto"
+     "tipo": "Apare só se necessário para dar forma ou adensar a Photinia × fraseri, na primavera ou verão. Nas sebes, desponte rebentos jovens; prefira tesoura para não cortar as folhas a meio. Evite cortes tardios que provoquem rebentação antes das geadas de outono"
     }
    ],
    "plantacao": {
@@ -7312,12 +7524,44 @@
      "11": "Em torrão; boa para sebes, a 60–80 cm entre plantas."
     },
     "podas": {
-     "4": "Poda depois do primeiro rebento vermelho, para voltar a rebentar com cor."
+     "4": "Apare só se necessário para dar forma ou adensar a Photinia × fraseri, na primavera ou verão. Nas sebes, desponte rebentos jovens; prefira tesoura para não cortar as folhas a meio. Evite cortes tardios que provoquem rebentação antes das geadas de outono."
     },
     "estacas": {
      "7": "Estacas semi-lenhosas de 10–15 cm, com hormona.",
      "8": "Estacas semi-lenhosas de 10–15 cm, com hormona.",
      "9": "Estacas semi-lenhosas de 10–15 cm, com hormona."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow photinia",
+       "url": "https://www.rhs.org.uk/plants/photinia/growing-guide",
+       "seccao": "Pruning and training: Photinia × fraseri e rebentação tardia",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados. A indicação da RHS de terminar até meados de agosto é uma prudência para o seu clima, não um prazo local validado; em Sardoura, ponderar vigor e frio esperado antes de qualquer corte tardio."
+     },
+     "nota": "A nota de abril deixa de ordenar corte automático após o primeiro rebento vermelho. Mantidos os meses amplos; agosto não é uma autorização para aparar até ao fim do mês."
     }
    }
   },
@@ -7367,7 +7611,7 @@
       3,
       4
      ],
-     "tipo": "Nas fúcsias rústicas, espere que se veja o crescimento novo após o frio e retire as pontas mortas até madeira viva"
+     "tipo": "Nas fúcsias rústicas, espere que o crescimento novo mostre a madeira viva depois do frio. Retire as partes mortas até gomos sãos e proteja os rebentos novos da base durante o corte. Se toda a parte aérea morreu, corte só a madeira morta; não aplique a mesma regra às fúcsias sensíveis mantidas em abrigo"
     }
    ],
    "plantacao": {
@@ -7389,6 +7633,38 @@
    "notas": {
     "estacas": {
      "4": "Estacas herbáceas."
+    }
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow hardy fuchsias",
+       "url": "https://www.rhs.org.uk/plants/fuchsia/hardy/growing-guide",
+       "seccao": "Pruning shrubs; proteger rebentos basais durante a limpeza",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "A ficha Fuchsia spp. agrupa plantas com rusticidade diferente; a orientação continua limitada às rústicas. Não se declara morta uma planta apenas por ainda não apresentar folhas."
     }
    }
   },
@@ -7437,14 +7713,14 @@
      "meses": [
       2
      ],
-     "tipo": "Poda de inverno: encurtar os rebentos a 2–3 gomos"
+     "tipo": "Na glicínia já formada, encurte a 2–3 gomos os laterais que foram aparados no verão, preservando os ramos principais e os rebentos escolhidos para preencher ou renovar a estrutura"
     },
     {
      "meses": [
       7,
       8
      ],
-     "tipo": "Poda de verão: encurtar os rebentos longos"
+     "tipo": "Depois da floração, encurte os rebentos longos laterais a cerca de 5–6 folhas, exceto os que são necessários para prolongar ou renovar a estrutura. Não corte os ramos principais como se fossem laterais"
     }
    ],
    "plantacao": {
@@ -7465,8 +7741,8 @@
    "autoctone": null,
    "notas": {
     "podas": {
-     "7": "Poda de verão: encurtar rebentos longos.",
-     "8": "Poda de verão."
+     "7": "Depois da floração, encurte os rebentos longos laterais a cerca de 5–6 folhas, exceto os que são necessários para prolongar ou renovar a estrutura. Não corte os ramos principais como se fossem laterais.",
+     "8": "Depois da floração, encurte os rebentos longos laterais a cerca de 5–6 folhas, exceto os que são necessários para prolongar ou renovar a estrutura. Não corte os ramos principais como se fossem laterais."
     }
    },
    "divisao": [
@@ -7490,7 +7766,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: divisao, metodo_recomendado, propagacao.alporquia, propagacao.estacas.meses, propagacao.estacas.nota, propagacao.sementeira.fiel_variedade, propagacao.sementeira.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Wisteria pruning",
+       "url": "https://www.rhs.org.uk/plants/wisteria/pruning-guide",
+       "seccao": "Summer pruning; Winter pruning: laterais versus estrutura",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Revistas as duas podas e as notas de julho/agosto, antes vagas. A referência de 2–3 gomos é para laterais na manutenção, não para cortar toda a planta nem a estrutura em formação."
+    }
+   }
   },
   {
    "id": "hamamelis",
@@ -7612,7 +7920,7 @@
       3,
       4
      ],
-     "tipo": "Conserve a estrutura do arbusto. Quando retomar o crescimento, retire ramos danificados e desbaste ligeiramente se a copa estiver congestionada"
+     "tipo": "Neste Hibiscus syriacus, conserve a estrutura do arbusto e retire madeira morta ou danificada, desbastando ligeiramente só se necessário. Floresce nos rebentos do ano; não imponha poda forte anual nem confunda esta ficha com o hibisco tropical"
     }
    ],
    "plantacao": {
@@ -7631,7 +7939,59 @@
    "resistencia_geada": "O hibisco-da-Síria é rústico no solo quando estabelecido.",
    "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Pruning shrubs (beginners guide)",
+       "url": "https://www.rhs.org.uk/advice/beginners-guide/pruning-plants/pruning-shrubs",
+       "seccao": "Spring pruning: arbustos caducos que florescem nos crescimentos do ano; exemplo Hibiscus",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs and trees: light pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+       "seccao": "How to lightly prune: manutenção mínima",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Hibiscus syriacus",
+       "url": "https://www.rhs.org.uk/plants/40530/hibiscus-syriacus/details",
+       "seccao": "Pruning: grupo 1, poda mínima; espécie caduca de floração estival",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "H. syriacus, arbusto caduco; não H. rosa-sinensis. A poda forte de arbustos de floração estival não foi imposta como rotina a todas as cultivares."
+    }
+   }
   },
   {
    "id": "hortensia",
@@ -7678,10 +8038,10 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      3,
+      4
      ],
-     "tipo": "Cortar as flores secas até ao primeiro par de gomos fortes"
+     "tipo": "Na Hydrangea macrophylla, espere que passe o frio forte e se distingam os gomos vivos. Retire a flor seca cortando apenas até ao primeiro par de gomos sãos abaixo dela; preserve os ramos vivos com gomos florais. Não corte todas as hastes rente ao solo: nas cultivares tradicionais perderia a floração seguinte"
     }
    ],
    "plantacao": {
@@ -7711,9 +8071,7 @@
    "exposicao": "Meia-sombra, com abrigo do sol forte da tarde.",
    "autoctone": false,
    "notas": {
-    "podas": {
-     "2": "Corte as flores secas até ao primeiro par de gomos fortes."
-    },
+    "podas": {},
     "estacas": {
      "2": "Pode usar estacas lenhosas de ramos sãos durante o repouso.",
      "4": "Use estacas herbáceas quando já houver rebentos vigorosos sem flor.",
@@ -7730,7 +8088,49 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Hydrangea pruning",
+       "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+       "seccao": "Deadheading; Established mopheads and lacecaps; Other hydrangeas",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "University of Maryland Extension — Pruning hydrangeas",
+       "url": "https://www.extension.umd.edu/resource/pruning-hydrangeas",
+       "seccao": "Old wood; New wood; Remontant; flowering groups",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela proposta passa de fevereiro–março para março–abril para lembrar a avaliação depois do frio. Não se confirmou a data da última geada local; adiar se necessário e usar gomos vivos como referência."
+     },
+     "nota": "Distingue retirar flores secas de reduzir a estrutura. As cultivares remontantes também podem florir na madeira nova; isso não justifica poda forte indistinta."
+    }
+   }
   },
   {
    "id": "hortensia_carvalho",
@@ -7773,9 +8173,10 @@
    "poda": [
     {
      "meses": [
-      8
+      6,
+      7
      ],
-     "tipo": "Depois da floração, poda leve"
+     "tipo": "A Hydrangea quercifolia geralmente precisa de pouca poda. Se for necessário reduzir ou dar forma, faça-o logo depois da floração, preservando a madeira para os gomos do ano seguinte. Se essa oportunidade já passou, adie a redução em vez de cortar no fim do verão por calendário"
     }
    ],
    "plantacao": {
@@ -7796,7 +8197,59 @@
    "autoctone": null,
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Hydrangea pruning",
+       "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+       "seccao": "Deadheading; Established mopheads and lacecaps; Other hydrangeas",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "University of Maryland Extension — Pruning hydrangeas",
+       "url": "https://www.extension.umd.edu/resource/pruning-hydrangeas",
+       "seccao": "Old wood; New wood; Remontant; flowering groups",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "UC Marin Master Gardeners — Pruning Hydrangea: Mophead, Lacecap & Oakleaf Varieties",
+       "url": "https://ucanr.edu/site/uc-marin-master-gardeners/document/pruning-hydrangea-mophead-lacecap-oakleaf-varieties",
+       "seccao": "Momento após a floração e preservação da madeira do ano anterior; sem transpor a época de floração californiana",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela proposta passa de agosto para junho–julho como lembrete condicional ao fim da floração. A data real depende da cultivar, exposição e ano; os meses locais não foram certificados."
+     },
+     "nota": "Distingue redução da copa após floração de simples remoção de madeira morta na primavera. Não se transpôs a floração californiana mencionada numa das fontes."
+    }
+   }
   },
   {
    "id": "jasmim",
@@ -8296,7 +8749,7 @@
       3,
       4
      ],
-     "tipo": "Quando o crescimento retomar, retire pontas secas ou atingidas pelo frio e encurte ligeiramente acima de rebentos vivos"
+     "tipo": "Quando os gomos vivos começarem a abrir depois do frio forte, retire as pontas secas até madeira viva e encurte conforme o vigor, acima de rebentos sãos. Não corte por calendário se a planta ainda não mostrar onde vai rebentar"
     }
    ],
    "plantacao": {
@@ -8315,7 +8768,49 @@
    "resistencia_geada": "Sensível a geadas. Proteja em local abrigado e mantenha os vasos sem geada no inverno.",
    "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Aloysia citrodora",
+       "url": "https://www.rhs.org.uk/plants/284648/aloysia-citrodora/details",
+       "seccao": "Pruning: grupos 6 ou 13 conforme condução",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs: pruning summer- or autumn-flowering",
+       "url": "https://www.rhs.org.uk/plants/types/shrubs/summer-autumn-pruning-guide",
+       "seccao": "When to prune; How to prune (grupo 6)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Aloysia citrodora, não Verbena bonariensis nem Verbena officinalis. Orientação conservadora de limpeza e manutenção, sem impor a poda forte possível noutros sistemas de condução."
+    }
+   }
   },
   {
    "id": "osmanto",
@@ -8428,7 +8923,7 @@
       3,
       4
      ],
-     "tipo": "Em exemplares isolados, corte pontas danificadas pelo inverno e encurte apenas rebentos que saiam do contorno desejado"
+     "tipo": "No Pittosporum tobira isolado, mantenha o porte natural e corte apenas pontas danificadas pelo inverno ou rebentos que saiam do contorno, quando retomar o crescimento. Não trate esta manutenção como uma tosquia de sebe ou uma poda forte obrigatória"
     }
    ],
    "plantacao": {
@@ -8466,7 +8961,59 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Pittosporum tobira",
+       "url": "https://www.rhs.org.uk/plants/13205/pittosporum-tobira/details",
+       "seccao": "Pruning: grupo 1",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs and trees: light pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+       "seccao": "How to lightly prune: manutenção mínima",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — How to grow pittosporum",
+       "url": "https://www.rhs.org.uk/plants/pittosporum/growing-guide",
+       "seccao": "Pruning and training: Stand-alone shrubs",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Orientação para exemplar livre de P. tobira. Não se importou um programa de tosquia de P. tenuifolium nem uma renovação forte de todos os pitosporos."
+    }
+   }
   },
   {
    "id": "quaresmeira",
@@ -8598,19 +9145,26 @@
       2,
       3
      ],
-     "tipo": "Poda principal: 3 a 5 ramos com 2–3 gomos"
+     "tipo": "Identifique o tipo antes de cortar. Nas roseiras arbustivas remontantes, faça a poda principal no fim do inverno, conforme o vigor e a retoma do crescimento, retirando madeira morta ou cruzada. Nas trepadeiras, preserve e conduza os ramos principais. Não aplique esta poda às de floração única, nem uma quota universal de ramos ou gomos"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Só poda ligeira de limpeza; a poda principal é em janeiro–março"
+     "tipo": "Faça apenas limpeza necessária e prenda os ramos compridos sujeitos ao vento; não trate novembro como uma poda principal igual para todas as roseiras"
     },
     {
      "meses": [
       10
      ],
      "tipo": "Retire flores murchas se quiser prolongar a floração. Deixe-as nas roseiras de frutos decorativos"
+    },
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Nas roseiras de floração única, pode depois de terminarem as flores, renovando seletivamente os ramos velhos e conservando os novos. Nas trepadeiras de floração única, conduza os ramos de substituição; se pretende frutos decorativos, tenha em conta que esta poda os retira"
     }
    ],
    "plantacao": {
@@ -8643,8 +9197,8 @@
      "12": "Estacas lenhosas."
     },
     "podas": {
-     "2": "Poda principal: deixe 3 a 5 ramos com 2–3 gomos.",
-     "11": "Poda ligeira de limpeza."
+     "2": "Identifique o tipo antes de cortar. Nas roseiras arbustivas remontantes, faça a poda principal no fim do inverno, conforme o vigor e a retoma do crescimento, retirando madeira morta ou cruzada. Nas trepadeiras, preserve e conduza os ramos principais. Não aplique esta poda às de floração única, nem uma quota universal de ramos ou gomos.",
+     "11": "Faça apenas limpeza necessária e prenda os ramos compridos sujeitos ao vento; não trate novembro como uma poda principal igual para todas as roseiras."
     },
     "alp": {
      "5": "Enraízam depressa, em 4 a 6 semanas.",
@@ -8659,7 +9213,79 @@
     "estacas",
     "enxertia"
    ],
-   "foto": "Rosa"
+   "foto": "Rosa",
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Rose pruning: general tips",
+       "url": "https://www.rhs.org.uk/plants/roses/pruning-guide",
+       "seccao": "Suitable for; How to prune roses; identificação do tipo",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Rose pruning: floribunda and hybrid tea roses",
+       "url": "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide",
+       "seccao": "When to prune; diferenças de intensidade entre os grupos",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Rose pruning: shrub roses",
+       "url": "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+       "seccao": "Single-flowering e repeat-flowering shrub roses",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Rose pruning: climbing roses",
+       "url": "https://www.rhs.org.uk/plants/roses/climbing/pruning-guide",
+       "seccao": "When to do it; How to prune climbing roses",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Rose pruning: rambling roses",
+       "url": "https://www.rhs.org.uk/plants/roses/rambler/pruning-guide",
+       "seccao": "When to prune; Routine pruning; Deadheading e frutos decorativos",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Mantidos janeiro–março, outubro e novembro; acrescentados julho–agosto para lembrar a avaliação após floração única. Todas as janelas são provisórias e não substituem identificar o grupo da roseira."
+     },
+     "nota": "Rosa spp. é demasiado amplo para uma única receita. Retirada a instrução de deixar sempre 3–5 ramos com 2–3 gomos. Os meses de inverno existentes ficam condicionados ao grupo; acrescentado lembrete de verão para floração única."
+    }
+   }
   },
   {
    "id": "sardinheira",
@@ -8699,7 +9325,7 @@
       3,
       4
      ],
-     "tipo": "Desponte rebentos jovens para estimular a ramificação. Em plantas que passaram o inverno em abrigo, retire as partes secas"
+     "tipo": "Quando houver crescimento ativo na primavera, desponte as pontas jovens para estimular a ramificação. Nas plantas que passaram o inverno em abrigo, retire partes secas e ajuste a poda ao modo de conservação; não imponha o mesmo corte forte a todos os Pelargonium"
     }
    ],
    "plantacao": {
@@ -8725,7 +9351,39 @@
      "9": "Estacas para guardar no inverno."
     }
    },
-   "foto": "Pelargonium"
+   "foto": "Pelargonium",
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow pelargoniums",
+       "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+       "seccao": "Pruning and training; Overwintering methods: condições de abrigo",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
+     },
+     "nota": "Pelargonium spp., não os gerânios vivazes do género Geranium. A fonte distingue vários modos de conservação no inverno; não se prescreve corte forte universal."
+    }
+   }
   },
   {
    "id": "tamargueira",
@@ -8767,10 +9425,17 @@
    "poda": [
     {
      "meses": [
-      2,
-      3
+      3,
+      4
      ],
-     "tipo": "Poda de inverno (variedades de flor de verão); as de flor de primavera, logo depois da floração"
+     "tipo": "Só nas tamargueiras de floração de verão, pode na primavera antes do crescimento forte, encurtando ramos do ano anterior sobre uma estrutura sã. Se floresce na primavera ou não sabe qual tem, não faça esta poda"
+    },
+    {
+     "meses": [
+      5,
+      6
+     ],
+     "tipo": "Só nas tamargueiras de floração de primavera, se for necessário, ajuste ligeiramente a forma logo depois da floração, preservando ramos novos para o ano seguinte. Não é uma poda forte anual nem uma segunda poda para as plantas de floração de verão"
     }
    ],
    "plantacao": {
@@ -8790,7 +9455,69 @@
    "exposicao": "Sol pleno.",
    "autoctone": null,
    "toxicidade": null,
-   "notas": {}
+   "notas": {},
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Tamarix gallica",
+       "url": "https://www.rhs.org.uk/plants/56738/tamarix-gallica/details",
+       "seccao": "Pruning: grupo 6; floração de verão",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Tamarix tetrandra",
+       "url": "https://www.rhs.org.uk/plants/58409/tamarix-tetrandra/details",
+       "seccao": "Floração de primavera; Pruning: grupo 1 (poda mínima), não grupo 2",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs: pruning early-flowering",
+       "url": "https://www.rhs.org.uk/plants/types/shrubs/pruning-early-flowering",
+       "seccao": "When to prune; How to prune (grupo 2)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs: pruning summer- or autumn-flowering",
+       "url": "https://www.rhs.org.uk/plants/types/shrubs/summer-autumn-pruning-guide",
+       "seccao": "When to prune; How to prune (grupo 6)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A indicação única de fevereiro–março passa a março–abril para floração de verão e maio–junho para floração de primavera. As janelas são provisórias e dependem da identificação e da floração observada em Sardoura."
+     },
+     "nota": "Separadas duas épocas para Tamarix spp.; T. gallica exemplifica o grupo de verão e T. tetrandra o de primavera. A ficha RHS desta última indica poda mínima (grupo 1), não grupo 2; a indicação de forma após floração é ligeira e condicional. São alternativas, não duas podas obrigatórias na mesma planta."
+    }
+   }
   },
   {
    "id": "abobora",

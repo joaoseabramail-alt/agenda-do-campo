@@ -1,0 +1,296 @@
+{
+  "base": "9a3cb5148f9cca7752818245e22cb5681f14d825",
+  "data_consulta": "2026-11-20",
+  "fontes": {
+    "A": {
+      "titulo": "RHS — How to grow rosemary",
+      "url": "https://www.rhs.org.uk/herbs/rosemary/grow-your-own",
+      "seccao": "Pruning and training",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "L1": {
+      "titulo": "RHS — How to grow lavender",
+      "url": "https://www.rhs.org.uk/plants/lavender/growing-guide",
+      "seccao": "Pruning and training",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "L2": {
+      "titulo": "RHS — Lavandula angustifolia",
+      "url": "https://www.rhs.org.uk/plants/91398/lavandula-angustifolia/details",
+      "seccao": "Pruning: evitar cortes no outono frio/húmido e em madeira velha",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "LO": {
+      "titulo": "RHS — Bay tree care and uses",
+      "url": "https://www.rhs.org.uk/plants/bay-tree/growing-guide",
+      "seccao": "Pruning and training: exemplares livres versus topiaria",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "S": {
+      "titulo": "RHS — How to grow sage",
+      "url": "https://www.rhs.org.uk/herbs/sage/grow-your-own",
+      "seccao": "Pruning and training: Salvia officinalis",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "LL": {
+      "titulo": "RHS — Aloysia citrodora",
+      "url": "https://www.rhs.org.uk/plants/284648/aloysia-citrodora/details",
+      "seccao": "Pruning: grupos 6 ou 13 conforme condução",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "G6": {
+      "titulo": "RHS — Shrubs: pruning summer- or autumn-flowering",
+      "url": "https://www.rhs.org.uk/plants/types/shrubs/summer-autumn-pruning-guide",
+      "seccao": "When to prune; How to prune (grupo 6)",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "R1": {
+      "titulo": "RHS — Rose pruning: general tips",
+      "url": "https://www.rhs.org.uk/plants/roses/pruning-guide",
+      "seccao": "Suitable for; How to prune roses; identificação do tipo",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "R2": {
+      "titulo": "RHS — Rose pruning: floribunda and hybrid tea roses",
+      "url": "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide",
+      "seccao": "When to prune; diferenças de intensidade entre os grupos",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "R3": {
+      "titulo": "RHS — Rose pruning: shrub roses",
+      "url": "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+      "seccao": "Single-flowering e repeat-flowering shrub roses",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "R4": {
+      "titulo": "RHS — Rose pruning: climbing roses",
+      "url": "https://www.rhs.org.uk/plants/roses/climbing/pruning-guide",
+      "seccao": "When to do it; How to prune climbing roses",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "R5": {
+      "titulo": "RHS — Rose pruning: rambling roses",
+      "url": "https://www.rhs.org.uk/plants/roses/rambler/pruning-guide",
+      "seccao": "When to prune; Routine pruning; Deadheading e frutos decorativos",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "H1": {
+      "titulo": "RHS — Hydrangea pruning",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+      "seccao": "Deadheading; Established mopheads and lacecaps; Other hydrangeas",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "H2": {
+      "titulo": "University of Maryland Extension — Pruning hydrangeas",
+      "url": "https://www.extension.umd.edu/resource/pruning-hydrangeas",
+      "seccao": "Old wood; New wood; Remontant; flowering groups",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "H3": {
+      "titulo": "UC Marin Master Gardeners — Pruning Hydrangea: Mophead, Lacecap & Oakleaf Varieties",
+      "url": "https://ucanr.edu/site/uc-marin-master-gardeners/document/pruning-hydrangea-mophead-lacecap-oakleaf-varieties",
+      "seccao": "Momento após a floração e preservação da madeira do ano anterior; sem transpor a época de floração californiana",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "G": {
+      "titulo": "RHS — Wisteria pruning",
+      "url": "https://www.rhs.org.uk/plants/wisteria/pruning-guide",
+      "seccao": "Summer pruning; Winter pruning: laterais versus estrutura",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "B": {
+      "titulo": "RHS — Bougainvillea care tips",
+      "url": "https://www.rhs.org.uk/plants/bougainvillea/growing-guide",
+      "seccao": "Pruning and training; orientação de plantas cultivadas em abrigo",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "BU": {
+      "titulo": "RHS — How to grow buddlejas",
+      "url": "https://www.rhs.org.uk/plants/buddleja/growing-guide",
+      "seccao": "Pruning and training: Buddleja davidii versus espécies de madeira do ano anterior",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "FO": {
+      "titulo": "RHS — How to grow photinia",
+      "url": "https://www.rhs.org.uk/plants/photinia/growing-guide",
+      "seccao": "Pruning and training: Photinia × fraseri e rebentação tardia",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "HI": {
+      "titulo": "RHS — Pruning shrubs (beginners guide)",
+      "url": "https://www.rhs.org.uk/advice/beginners-guide/pruning-plants/pruning-shrubs",
+      "seccao": "Spring pruning: arbustos caducos que florescem nos crescimentos do ano; exemplo Hibiscus",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "FU": {
+      "titulo": "RHS — How to grow hardy fuchsias",
+      "url": "https://www.rhs.org.uk/plants/fuchsia/hardy/growing-guide",
+      "seccao": "Pruning shrubs; proteger rebentos basais durante a limpeza",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "SA": {
+      "titulo": "RHS — How to grow pelargoniums",
+      "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+      "seccao": "Pruning and training; Overwintering methods: condições de abrigo",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "T1": {
+      "titulo": "RHS — Tamarix gallica",
+      "url": "https://www.rhs.org.uk/plants/56738/tamarix-gallica/details",
+      "seccao": "Pruning: grupo 6; floração de verão",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "T2": {
+      "titulo": "RHS — Tamarix tetrandra",
+      "url": "https://www.rhs.org.uk/plants/58409/tamarix-tetrandra/details",
+      "seccao": "Floração de primavera; Pruning: grupo 1 (poda mínima), não grupo 2",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "T3": {
+      "titulo": "RHS — Shrubs: pruning early-flowering",
+      "url": "https://www.rhs.org.uk/plants/types/shrubs/pruning-early-flowering",
+      "seccao": "When to prune; How to prune (grupo 2)",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "P1": {
+      "titulo": "RHS — Pittosporum tobira",
+      "url": "https://www.rhs.org.uk/plants/13205/pittosporum-tobira/details",
+      "seccao": "Pruning: grupo 1",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "P2": {
+      "titulo": "RHS — Shrubs and trees: light pruning",
+      "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+      "seccao": "How to lightly prune: manutenção mínima",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "P3": {
+      "titulo": "RHS — How to grow pittosporum",
+      "url": "https://www.rhs.org.uk/plants/pittosporum/growing-guide",
+      "seccao": "Pruning and training: Stand-alone shrubs",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "HI2": {
+      "titulo": "RHS — Hibiscus syriacus",
+      "url": "https://www.rhs.org.uk/plants/40530/hibiscus-syriacus/details",
+      "seccao": "Pruning: grupo 1, poda mínima; espécie caduca de floração estival",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    }
+  }
+}
