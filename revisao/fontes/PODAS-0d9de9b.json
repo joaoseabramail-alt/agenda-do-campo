@@ -1,0 +1,115 @@
+{
+  "data_consulta": "2026-11-20",
+  "fontes": {
+    "vinha": {
+      "titulo": "CVRVV — Intervenções na videira",
+      "url": "https://viticultura.cvrvv.pt/pt/a-vinha/cultura/intervencoes-na-videira/",
+      "seccao": "Época de poda; Conselhos de ordem cultural; Poda de produção; Desponta; Desfolha",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "pomo": {
+      "titulo": "RHS — Apples and pears: winter pruning",
+      "url": "https://www.rhs.org.uk/fruit/apples/winter-pruning",
+      "seccao": "Before you start; Which trees to winter prune; Use the same method for all types; How much to remove",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "figo": {
+      "titulo": "Rui Maia de Sousa / INIAV — Manual de Boas Práticas de Fruticultura: figueira",
+      "url": "https://fenix.isa.ulisboa.pt/downloadFile/844497944593242/Manual%20da_Figueira.pdf",
+      "seccao": "Tipos de figos; Formação e poda; Produção de figos lampos; Produção de figos vindimos",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "figo_epoca": {
+      "titulo": "RHS — Figs: pruning and training",
+      "url": "https://www.rhs.org.uk/fruit/figs/fig-pruning-and-training",
+      "seccao": "When to prune figs (apenas época relativa às geadas; não se transpôs o ciclo de maturação britânico)",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "oliva": {
+      "titulo": "CCDR-Norte — Avisos da Terra Quente, circular 1/2025, 28 de fevereiro",
+      "url": "https://agrodigital.ccdr-n.pt/sia/Portals/0/Avisos/Circulares/TerraQuente/Circular%201%20Terra%20Quente.pdf",
+      "seccao": "Oliveira: Poda de formação e Poda de frutificação",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "oliva_hig": {
+      "titulo": "DRAP Centro — Tuberculose ou Ronha da Oliveira (2013)",
+      "url": "https://www.ccdrc.pt/wp-content/uploads/2025/02/tuberculose_oliveira_2013.pdf",
+      "seccao": "Meios de luta: tempo seco e ferramentas; sem reutilizar receitas ou produtos do documento",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "kiwi": {
+      "titulo": "Oregon State University Extension — Growing kiwifruit in your home garden, EM 9322",
+      "url": "https://extension.oregonstate.edu/catalog/em-9322-growing-kiwifruit-your-home-garden",
+      "seccao": "Pruning and training; Mature vines: Female vines; Male vines; Summer pruning female and male vines",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "kiwi_hig": {
+      "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 01/2025, 12 de fevereiro",
+      "url": "https://portal.drapnorte.gov.pt/component/phocadownload/category/73-avisos-agricolas?download=803%3Acirc-01-2025-edm-12fev2025",
+      "seccao": "p. 2: Bacteriose da actinídea — PSA; apenas medidas culturais",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "cit": {
+      "titulo": "Universidade do Algarve — Poda de Citrinos na Região Mediterrânica. Manual Técnico",
+      "url": "https://sapientia.ualg.pt/bitstreams/6e3d4f25-edec-49f5-b852-ce776aafd6f1/download",
+      "seccao": "Capítulos V–VIII, em especial VII: Época de poda, pp. 45–47",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "kiwi_pan": {
+      "titulo": "DGAV — Plano de ação nacional para o controlo da PSA do kiwi, maio de 2013",
+      "url": "https://www.drapnorte.gov.pt/drapn/conteudos/lca/PAN-PSA%20KIWI_2013.pdf",
+      "seccao": "§ 8.1, pp. 17–18: higiene na poda; sem transpor obrigações legais, produtos ou concentrações antigas",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    },
+    "vinha_hig": {
+      "titulo": "CCDR-Norte — Norte Transmontano, circular 13/2025, 19 de novembro",
+      "url": "https://agricultura.ccdr-n.pt/component/phocadownload/category/73-avisos-agricolas?download=859%3Acircular-13eant",
+      "seccao": "Videira: Doenças do lenho; poda em tempo seco e sem vento",
+      "consultado": "2026-11-20",
+      "sustenta": [
+        "texto",
+        "tecnica"
+      ]
+    }
+  }
+}

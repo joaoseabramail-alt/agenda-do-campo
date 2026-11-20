@@ -651,7 +651,7 @@
       4,
       5
      ],
-     "tipo": "Poda ligeira depois da colheita"
+     "tipo": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos"
     }
    ],
    "colheita": [
@@ -678,8 +678,8 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Poda ligeira depois da colheita, no fim do mês.",
-     "4": "Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."
+     "3": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos.",
+     "4": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos."
     },
     "enx": {
      "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
@@ -706,7 +706,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.alp.4, propagacao.alporquia.nota, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Universidade do Algarve — Poda de Citrinos na Região Mediterrânica. Manual Técnico",
+       "url": "https://sapientia.ualg.pt/bitstreams/6e3d4f25-edec-49f5-b852-ce776aafd6f1/download",
+       "seccao": "Capítulos V–VIII, em especial VII: Época de poda, pp. 45–47",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Março–maio mantêm-se como lembrete provisório, não como janela universal de produção. Confirmar cultivar e ciclo de frutificação antes de definir a época; retirar a regra indiferenciada depois da colheita, particularmente ambígua no limoeiro."
+    }
+   }
   },
   {
    "id": "limoeiro",
@@ -767,7 +799,7 @@
       4,
       5
      ],
-     "tipo": "Poda ligeira"
+     "tipo": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos"
     }
    ],
    "colheita": [
@@ -801,8 +833,8 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Poda ligeira depois da colheita, no fim do mês.",
-     "4": "Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."
+     "3": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos.",
+     "4": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos."
     },
     "enx": {
      "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
@@ -829,7 +861,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.alp.4, propagacao.alporquia.nota, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Universidade do Algarve — Poda de Citrinos na Região Mediterrânica. Manual Técnico",
+       "url": "https://sapientia.ualg.pt/bitstreams/6e3d4f25-edec-49f5-b852-ce776aafd6f1/download",
+       "seccao": "Capítulos V–VIII, em especial VII: Época de poda, pp. 45–47",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Março–maio mantêm-se como lembrete provisório, não como janela universal de produção. Confirmar cultivar e ciclo de frutificação antes de definir a época; retirar a regra indiferenciada depois da colheita, particularmente ambígua no limoeiro."
+    }
+   }
   },
   {
    "id": "tangerineira",
@@ -890,7 +954,7 @@
       4,
       5
      ],
-     "tipo": "Poda ligeira depois da colheita"
+     "tipo": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos"
     }
    ],
    "colheita": [
@@ -916,8 +980,8 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Poda ligeira depois da colheita, no fim do mês.",
-     "4": "Poda ligeira de limpeza; plantar novos citrinos em lugar abrigado."
+     "3": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos.",
+     "4": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos."
     },
     "enx": {
      "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
@@ -944,7 +1008,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.alp.4, propagacao.alporquia.nota, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Universidade do Algarve — Poda de Citrinos na Região Mediterrânica. Manual Técnico",
+       "url": "https://sapientia.ualg.pt/bitstreams/6e3d4f25-edec-49f5-b852-ce776aafd6f1/download",
+       "seccao": "Capítulos V–VIII, em especial VII: Época de poda, pp. 45–47",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Março–maio mantêm-se como lembrete provisório, não como janela universal de produção. Confirmar cultivar e ciclo de frutificação antes de definir a época; retirar a regra indiferenciada depois da colheita, particularmente ambígua no limoeiro."
+    }
+   }
   },
   {
    "id": "damasqueiro",
@@ -1275,7 +1371,7 @@
       3,
       4
      ],
-     "tipo": "Abra ligeiramente a copa e renove alguns ramos nus depois das geadas fortes. Deixe ramos do ano anterior com figos pequenos se quiser preservar a primeira colheita"
+     "tipo": "Depois das geadas fortes, faça apenas a limpeza e renovação necessárias. Nas cultivares com figos lampos, preserve ramos do ano anterior e as suas pontas; evite encurtá-los por rotina. A poda depende da cultivar e do objetivo de colher lampos ou vindimos"
     }
    ],
    "colheita": [
@@ -1313,7 +1409,49 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Rui Maia de Sousa / INIAV — Manual de Boas Práticas de Fruticultura: figueira",
+       "url": "https://fenix.isa.ulisboa.pt/downloadFile/844497944593242/Manual%20da_Figueira.pdf",
+       "seccao": "Tipos de figos; Formação e poda; Produção de figos lampos; Produção de figos vindimos",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Figs: pruning and training",
+       "url": "https://www.rhs.org.uk/fruit/figs/fig-pruning-and-training",
+       "seccao": "When to prune figs (apenas época relativa às geadas; não se transpôs o ciclo de maturação britânico)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Revista a orientação para árvores com copa formada. O INIAV distingue lampos/vindimos; a RHS sustenta apenas a prudência relativa às geadas. Mantêm-se março–abril provisórios, sem importar o calendário de maturação britânico nem a receita de formação de um pomar comercial."
+    }
+   }
   },
   {
    "id": "macieira",
@@ -1368,13 +1506,13 @@
       1,
       2
      ],
-     "tipo": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
+     "tipo": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Começar só após a queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
+     "tipo": "Só começar depois da queda total da folha. Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa"
     }
    ],
    "colheita": [
@@ -1402,10 +1540,10 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
-     "2": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
-     "11": "Depois da queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
-     "12": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação."
+     "1": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa.",
+     "2": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa.",
+     "11": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa.",
+     "12": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa."
     },
     "enx": {
      "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
@@ -1423,7 +1561,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Apples and pears: winter pruning",
+       "url": "https://www.rhs.org.uk/fruit/apples/winter-pruning",
+       "seccao": "Before you start; Which trees to winter prune; Use the same method for all types; How much to remove",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Orientação para árvores adultas de copa livre; a formação de árvores jovens e as formas conduzidas em espaldeira/cordão exigem orientação própria. Não se certificam os meses locais nem se aplica um corte uniforme a todas as variedades."
+    }
+   }
   },
   {
    "id": "marmeleiro",
@@ -1938,7 +2108,7 @@
       3,
       4
      ],
-     "tipo": "Poda de produção e arejamento"
+     "tipo": "Poda moderada de produção, ajustada ao vigor, depois da colheita e fora dos períodos de geada forte. Trabalhe em tempo seco; retire ramos com tumores e desinfete as ferramentas após árvores afetadas. Evite cortes severos"
     }
    ],
    "colheita": [
@@ -1964,8 +2134,9 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "3": "Pode para arejar a copa, em tempo seco e depois do risco de geada forte.",
-     "4": "Continuar a poda."
+     "3": "Poda moderada de produção, ajustada ao vigor, depois da colheita e fora dos períodos de geada forte. Trabalhe em tempo seco; retire ramos com tumores e desinfete as ferramentas após árvores afetadas. Evite cortes severos. Se persistir risco de geada forte, adie a poda.",
+     "4": "Poda moderada de produção, ajustada ao vigor, depois da colheita e fora dos períodos de geada forte. Trabalhe em tempo seco; retire ramos com tumores e desinfete as ferramentas após árvores afetadas. Evite cortes severos. Se persistir risco de geada forte, adie a poda.",
+     "2": "Poda moderada de produção, ajustada ao vigor, depois da colheita e fora dos períodos de geada forte. Trabalhe em tempo seco; retire ramos com tumores e desinfete as ferramentas após árvores afetadas. Evite cortes severos. Se persistir risco de geada forte, adie a poda."
     },
     "estacas": {
      "6": "Estacas semi-lenhosas, com humidade constante.",
@@ -1989,7 +2160,49 @@
    "legal": "Em Portugal continental, o arranque ou corte raso de oliveiras está sujeito a autorização prévia, salvo o caso de oliveiras isoladas previsto no Decreto-Lei n.º 120/86. Confirme a aplicação do regime com a CCDR antes de intervir.",
    "legal_botoes": [
     "podas"
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "CCDR-Norte — Avisos da Terra Quente, circular 1/2025, 28 de fevereiro",
+       "url": "https://agrodigital.ccdr-n.pt/sia/Portals/0/Avisos/Circulares/TerraQuente/Circular%201%20Terra%20Quente.pdf",
+       "seccao": "Oliveira: Poda de formação e Poda de frutificação",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "DRAP Centro — Tuberculose ou Ronha da Oliveira (2013)",
+       "url": "https://www.ccdrc.pt/wp-content/uploads/2025/02/tuberculose_oliveira_2013.pdf",
+       "seccao": "Meios de luta: tempo seco e ferramentas; sem reutilizar receitas ou produtos do documento",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Fevereiro não é autorização para podar com frio. A circular da Terra Quente e a ficha do Centro sustentam técnica e higiene, não um calendário para Sardoura; não foram transpostas receitas químicas nem doses de desinfetantes."
+    }
+   }
   },
   {
    "id": "pereira",
@@ -2044,13 +2257,13 @@
       1,
       2
      ],
-     "tipo": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
+     "tipo": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa"
     },
     {
      "meses": [
       11
      ],
-     "tipo": "Começar só após a queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação"
+     "tipo": "Só começar depois da queda total da folha. Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa"
     }
    ],
    "colheita": [
@@ -2078,10 +2291,10 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
-     "2": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
-     "11": "Depois da queda total da folha e sem geada. Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação.",
-     "12": "Em árvores adultas de copa livre, areje a copa, retire ramos cruzados e preserve a madeira de frutificação."
+     "1": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa.",
+     "2": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa.",
+     "11": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa.",
+     "12": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa."
     },
     "enx": {
      "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
@@ -2099,7 +2312,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses, propagacao.enxertia.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Apples and pears: winter pruning",
+       "url": "https://www.rhs.org.uk/fruit/apples/winter-pruning",
+       "seccao": "Before you start; Which trees to winter prune; Use the same method for all types; How much to remove",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Orientação para árvores adultas de copa livre; a formação de árvores jovens e as formas conduzidas em espaldeira/cordão exigem orientação própria. Não se certificam os meses locais nem se aplica um corte uniforme a todas as variedades."
+    }
+   }
   },
   {
    "id": "pessegueiro",
@@ -2593,14 +2838,14 @@
       1,
       2
      ],
-     "tipo": "Poda de inverno: encurtar os ramos que deram fruto"
+     "tipo": "Em plantas adultas, em repouso e antes da subida da seiva, renove nas plantas femininas a madeira que frutificou, conservando ramos sãos de um ano, bem distribuídos. Nos machos, reserve a poda principal para depois da floração. Pode em tempo seco, deixando as plantas com PSA para o fim; retire a lenha doente e desinfete as ferramentas"
     },
     {
      "meses": [
       6,
       7
      ],
-     "tipo": "Poda verde: despontar os rebentos longos"
+     "tipo": "Nas femininas, controle rebentos excessivos sem eliminar os necessários à renovação; nos machos, faça a poda principal depois da floração"
     }
    ],
    "colheita": [
@@ -2626,9 +2871,9 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda de inverno: encurte os ramos que já deram fruto.",
-     "2": "Terminar a poda antes do choro da seiva.",
-     "12": "Poda de inverno."
+     "1": "Em plantas adultas, em repouso e antes da subida da seiva, renove nas plantas femininas a madeira que frutificou, conservando ramos sãos de um ano, bem distribuídos. Nos machos, reserve a poda principal para depois da floração. Pode em tempo seco, deixando as plantas com PSA para o fim; retire a lenha doente e desinfete as ferramentas.",
+     "2": "Em plantas adultas, em repouso e antes da subida da seiva, renove nas plantas femininas a madeira que frutificou, conservando ramos sãos de um ano, bem distribuídos. Nos machos, reserve a poda principal para depois da floração. Pode em tempo seco, deixando as plantas com PSA para o fim; retire a lenha doente e desinfete as ferramentas.",
+     "12": "Em plantas adultas, em repouso e antes da subida da seiva, renove nas plantas femininas a madeira que frutificou, conservando ramos sãos de um ano, bem distribuídos. Nos machos, reserve a poda principal para depois da floração. Pode em tempo seco, deixando as plantas com PSA para o fim; retire a lenha doente e desinfete as ferramentas."
     },
     "plantar": {
      "1": "Terra funda, fresca e bem drenada, de preferência ligeiramente ácida."
@@ -2644,7 +2889,59 @@
     "estacas",
     "enxertia"
    ],
-   "nota_variedade": "Plante pés macho e fêmea (ou variedade autofértil)."
+   "nota_variedade": "Plante pés macho e fêmea (ou variedade autofértil).",
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Oregon State University Extension — Growing kiwifruit in your home garden, EM 9322",
+       "url": "https://extension.oregonstate.edu/catalog/em-9322-growing-kiwifruit-your-home-garden",
+       "seccao": "Pruning and training; Mature vines: Female vines; Male vines; Summer pruning female and male vines",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 01/2025, 12 de fevereiro",
+       "url": "https://portal.drapnorte.gov.pt/component/phocadownload/category/73-avisos-agricolas?download=803%3Acirc-01-2025-edm-12fev2025",
+       "seccao": "p. 2: Bacteriose da actinídea — PSA; apenas medidas culturais",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "DGAV — Plano de ação nacional para o controlo da PSA do kiwi, maio de 2013",
+       "url": "https://www.drapnorte.gov.pt/drapn/conteudos/lca/PAN-PSA%20KIWI_2013.pdf",
+       "seccao": "§ 8.1, pp. 17–18: higiene na poda; sem transpor obrigações legais, produtos ou concentrações antigas",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Revistas poda de inverno e orientação da poda verde; sem impor carga fixa de gomos ou número de varas, dependentes da condução. Dezembro–fevereiro e junho–julho mantêm-se provisórios: não se deve esperar por fevereiro se a seiva já subiu."
+    }
+   }
   },
   {
    "id": "mirtilo",
@@ -2949,7 +3246,7 @@
       2,
       3
      ],
-     "tipo": "Poda de inverno; nas castas tardias do Vinho Verde pode ir até março"
+     "tipo": "Em repouso, depois da queda da folha e antes do abrolhamento; evite chuva e geadas fortes. Ajuste a carga à casta, ao vigor e à condução; evite cortes grandes e pode as cepas doentes por último, com ferramentas desinfetadas"
     },
     {
      "meses": [
@@ -2958,7 +3255,7 @@
       7,
       4
      ],
-     "tipo": "Desladroamento e desponta dos rebentos"
+     "tipo": "Desladroamento dos rebentos dispensáveis; desponta segundo o vigor e a floração, nunca antes desta"
     }
    ],
    "colheita": [
@@ -2984,14 +3281,14 @@
    "toxicidade": null,
    "notas": {
     "podas": {
-     "1": "Poda de inverno a partir de meados do mês, em dias sem geada.",
-     "2": "Continuar a poda de inverno (as castas do Vinho Verde podem ir até março).",
-     "3": "Terminar a poda até ao abrolhamento, nas vinhas mais tardias.",
+     "1": "Em repouso, depois da queda da folha e antes do abrolhamento; evite chuva e geadas fortes. Ajuste a carga à casta, ao vigor e à condução; evite cortes grandes e pode as cepas doentes por último, com ferramentas desinfetadas.",
+     "2": "Em repouso, depois da queda da folha e antes do abrolhamento; evite chuva e geadas fortes. Ajuste a carga à casta, ao vigor e à condução; evite cortes grandes e pode as cepas doentes por último, com ferramentas desinfetadas.",
+     "3": "Só terminar se os gomos ainda não abrolharam; março não é um prazo garantido para todas as castas. Em repouso, depois da queda da folha e antes do abrolhamento; evite chuva e geadas fortes. Ajuste a carga à casta, ao vigor e à condução; evite cortes grandes e pode as cepas doentes por último, com ferramentas desinfetadas.",
      "4": "Com os rebentos já visíveis, retire os ladrões do tronco que não vão servir para renovar a estrutura.",
-     "5": "Desponta e desladroamento.",
-     "6": "Desponta e desfolha ligeira junto aos cachos.",
+     "5": "Desladroamento; só despontar a partir da floração, conforme o vigor.",
+     "6": "Desponta conforme o vigor, depois do início da floração; evite retirar demasiada folha.",
      "7": "Desponta dos rebentos.",
-     "12": "Pode começar depois da queda da folha, mas aqui as geadas tardias aconselham podar em janeiro–março."
+     "12": "Em repouso, depois da queda da folha e antes do abrolhamento; evite chuva e geadas fortes. Ajuste a carga à casta, ao vigor e à condução; evite cortes grandes e pode as cepas doentes por último, com ferramentas desinfetadas."
     },
     "estacas": {
      "1": "Estacas lenhosas de sarmentos da poda, com 3 a 4 gomos.",
@@ -3015,7 +3312,49 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: nota_variedade, notas.enx.3, notas.podas.1, propagacao.enxertia.meses, propagacao.enxertia.nota, propagacao.estacas.nota. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "CVRVV — Intervenções na videira",
+       "url": "https://viticultura.cvrvv.pt/pt/a-vinha/cultura/intervencoes-na-videira/",
+       "seccao": "Época de poda; Conselhos de ordem cultural; Poda de produção; Desponta; Desfolha",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "CCDR-Norte — Norte Transmontano, circular 13/2025, 19 de novembro",
+       "url": "https://agricultura.ccdr-n.pt/component/phocadownload/category/73-avisos-agricolas?download=859%3Acircular-13eant",
+       "seccao": "Videira: Doenças do lenho; poda em tempo seco e sem vento",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
+     },
+     "nota": "Revistos poda de inverno, desladroamento e desponta. Retirada a indicação inespecífica de desfolha em junho; mantidos todos os meses, incluindo os das operações em verde. A época final depende do abrolhamento, não da designação Vinho Verde nem apenas de a casta ser tardia."
+    }
+   }
   },
   {
    "id": "alecrim",
