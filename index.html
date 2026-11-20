@@ -379,7 +379,7 @@ function render(){
     return `<li${i.grupo?' class="grp"':""}><div class="it-top">${nomeHTML}${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
   }).join("")||`<li><span class="it-note">${soMinhas?"Nenhuma das suas plantas tem esta operação neste mês.":"Nada previsto para este mês."}</span></li>`;
   let extra="";
-  if(cur==="estacas"){const n=DB.plantas.filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
+  if(cur==="estacas"){const n=(soMinhas?DB.plantas.filter(x=>minhas.has(x.id)):DB.plantas).filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
   $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${acompanhamento?"Acompanhamento de alporques":c.sub} em ${MESES[day.getMonth()]}</p></div>
     ${acompanhamento?"":`<div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>`}
     ${soMinhas?`<div class="filtro-aviso">A mostrar só as suas ${minhas.size} plantas. <a href="#" id="tirarFiltro">Mostrar todas</a></div>`:""}
@@ -387,9 +387,10 @@ function render(){
 }
 /* ---------- Ficha da planta (ao tocar no nome) ---------- */
 const CAMPOS=[["exposicao","Exposição"],["solo","Solo"],["rega","Rega"],["adubacao","Adubação"],["floracao","Floração"],["resistencia_geada","Geada"]];
-function fichaHTML(p){
+function fichaHTML(p,comAvisos){
+  const av=comAvisos?[p.legal,p.toxicidade].filter(Boolean).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
   const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("");
-  return `<div class="ficha" id="ficha-${esc(p.id)}">${botaoMinha(p)}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
+  return `<div class="ficha" id="ficha-${esc(p.id)}">${botaoMinha(p)}${av}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
 }
 const fotoCache={};
 function titulosFoto(p){
@@ -423,18 +424,19 @@ document.addEventListener("click",e=>{
   const li=b.closest("li"),aberta=li.querySelector(".ficha");
   if(aberta){aberta.remove();b.setAttribute("aria-expanded","false");return}
   const p=DB.plantas.find(x=>x.id===b.dataset.id);if(!p)return;
-  li.insertAdjacentHTML("beforeend",fichaHTML(p));b.setAttribute("aria-expanded","true");
+  li.insertAdjacentHTML("beforeend",fichaHTML(p,!li.querySelector(":scope > .warn")));b.setAttribute("aria-expanded","true");
   mostrarFoto(p,li.querySelector(".ficha .foto"));
 });
 /* ---------- As minhas plantas e pesquisa ---------- */
 const semAc=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
 // As desconhecidas (ids que esta versão da app não conhece) são guardadas e exportadas na mesma, para não se perderem
-function guardarMinhas(){try{localStorage.setItem("minhas-plantas",JSON.stringify([...minhas,...desconhecidas]))}catch(e){}}
+function guardarMinhas(){try{localStorage.setItem("minhas-plantas",JSON.stringify([...minhas,...desconhecidas]));return true}catch(e){return false}}
+const ERRO_GRAVAR="Não foi possível guardar no telemóvel (memória cheia ou navegação privada). A sua lista não foi alterada.";
 function botaoMinha(p){const t=minhas.has(p.id);return `<button type="button" class="minha-btn" data-minha="${esc(p.id)}" aria-pressed="${t}">${t?"★ Nas minhas plantas":"☆ Adicionar às minhas plantas"}</button>`}
 function atualizarContagens(){if(!DB)return;const m=day.getMonth()+1;document.querySelectorAll(".cat").forEach(x=>x.querySelector(".cnt").textContent=cntTxt(x.dataset.k,contar(x.dataset.k,m)))}
 function atualizarMinhasUI(){
   $("verMinhas").textContent="★ As minhas plantas ("+minhas.size+")";
-  $("exportar").disabled=minhas.size===0;$("exportar").title=minhas.size?"":"Ainda não marcou nenhuma planta";
+  const total=minhas.size+desconhecidas.size;$("exportar").disabled=total===0;$("exportar").title=total?"":"Ainda não marcou nenhuma planta";
   const cb=$("soMinhas");
   if(minhas.size===0&&soMinhas){soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(e){}}
   cb.disabled=minhas.size===0;cb.checked=soMinhas;$("filtroLbl").classList.toggle("off",minhas.size===0);
@@ -470,23 +472,24 @@ $("soMinhas").addEventListener("change",e=>{soMinhas=e.target.checked;try{localS
 document.addEventListener("click",e=>{
   if(e.target.closest("#tirarFiltro")){e.preventDefault();soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(_){}atualizarMinhasUI();render();return}
   const b=e.target.closest("[data-minha]");if(!b)return;
-  const id=b.dataset.minha;if(minhas.has(id))minhas.delete(id);else minhas.add(id);
-  guardarMinhas();atualizarMinhasUI();
-  if(soMinhas)render();else atualizarContagens();
-  if(modoRes==="minhas"&&b.classList.contains("estrela")&&!minhas.has(id))mostrarResultados();
+  const id=b.dataset.minha,tinha=minhas.has(id);if(tinha)minhas.delete(id);else minhas.add(id);
+  if(!guardarMinhas()){if(tinha)minhas.add(id);else minhas.delete(id);msgCopia(ERRO_GRAVAR,true);$("copiaMsg").scrollIntoView({block:"nearest"});return}
+  const filtroAntes=soMinhas;atualizarMinhasUI();
+  if(filtroAntes)render();else atualizarContagens();
+  if(modoRes==="minhas")mostrarResultados();
 });
 /* ---------- Cópia de segurança das minhas plantas ---------- */
 const FORMATO="agenda-do-campo/minhas-plantas",VERSAO_FORMATO=1;
 function msgCopia(texto,erro){const m=$("copiaMsg");m.textContent=texto;m.classList.toggle("erro",!!erro);m.hidden=false}
 $("exportar").addEventListener("click",()=>{
-  if(!minhas.size)return;
+  const total=minhas.size+desconhecidas.size;if(!total)return;
   const dados={formato:FORMATO,versao:VERSAO_FORMATO,exportado:new Date().toISOString(),
     plantas:[...minhas,...desconhecidas].sort(),nomes:[...minhas,...desconhecidas].sort().map(id=>{const p=DB&&DB.plantas.find(x=>x.id===id);return p?p.nome:id})};
   const blob=new Blob([JSON.stringify(dados,null,1)],{type:"application/json"});
   const url=URL.createObjectURL(blob),a=document.createElement("a");
   a.href=url;a.download="minhas-plantas-"+iso(new Date())+".json";document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),2000);
-  msgCopia("Ficheiro criado com "+minhas.size+(minhas.size===1?" planta":" plantas")+". Guarde-o num sítio seguro (por exemplo, no Google Drive ou enviado a si próprio por email).");
+  msgCopia("Ficheiro criado com "+total+(total===1?" planta":" plantas")+". Guarde-o num sítio seguro (por exemplo, no Google Drive ou enviado a si próprio por email).");
 });
 $("importarBtn").addEventListener("click",()=>{$("importarFicheiro").value="";$("importarFicheiro").click()});
 // Valida o conteúdo sem alterar nada; devolve {ids} ou {erro}
@@ -505,9 +508,10 @@ function importarCopia(texto){
   if(v.erro)return msgCopia(v.erro+" A sua lista não foi alterada.",true);
   const conhecidos=new Set(DB.plantas.map(p=>p.id));
   const unicos=[...new Set(v.ids)];
-  let novos=0,ja=0,ign=0;
+  let novos=0,ja=0,ign=0;const antes=new Set(minhas);
   for(const id of unicos){if(!conhecidos.has(id))ign++;else if(minhas.has(id))ja++;else{minhas.add(id);novos++}}
-  guardarMinhas();atualizarMinhasUI();if(soMinhas)render();else atualizarContagens();
+  if(novos&&!guardarMinhas()){minhas=antes;return msgCopia(ERRO_GRAVAR,true)}
+  atualizarMinhasUI();if(soMinhas)render();else atualizarContagens();
   if(modoRes==="minhas")mostrarResultados();
   const partes=[novos===1?"1 planta acrescentada":novos+" plantas acrescentadas"];
   if(ja)partes.push(ja===1?"1 já estava na lista":ja+" já estavam na lista");
