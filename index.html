@@ -84,28 +84,12 @@ li.grp .it-name{font-size:15px}
 .ficha dt{font-weight:700;color:var(--ink)}
 .ficha dd{margin:0;color:var(--muted);min-width:0}
 .ficha .vazia{font-size:14px;color:var(--muted)}
-.minha-btn{align-self:flex-start;border:1px solid var(--leaf);background:var(--surface);color:var(--leaf);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
-.minha-btn[aria-pressed="true"]{background:var(--leaf);color:var(--surface)}
 .procura{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:10px}
 .procura input[type=search]{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
-.procura-acoes{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
-.minhas-ver{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
-.minhas-ver[aria-expanded="true"]{border-color:var(--leaf);color:var(--leaf)}
-.filtro{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
-.filtro input{width:20px;height:20px;accent-color:var(--leaf)}
-.filtro.off{opacity:.55;cursor:default}
 ul.resultados{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 ul.resultados li{padding:10px 2px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
 ul.resultados li:last-child{border-bottom:0}
 .res-info{font-size:13px;color:var(--muted);padding:6px 2px}
-.estrela{flex:none;border:0;background:none;font-size:22px;line-height:1;color:var(--sun);cursor:pointer;padding:2px 4px}
-.filtro-aviso{padding:10px 18px;font-size:14px;background:var(--leaf-soft);border-bottom:1px solid var(--line)}
-.filtro-aviso a{color:var(--leaf);font-weight:700}
-.copia{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
-.copia button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
-.copia button:disabled{opacity:.5;cursor:default}
-.copia-msg{font-size:14px;padding:8px 10px;border-radius:10px;background:var(--leaf-soft);color:var(--ink)}
-.copia-msg.erro{background:var(--sun-soft)}
 @media (prefers-reduced-motion:reduce){.ficha-btn .seta{transition:none}}
 .chip.d1{border-color:var(--leaf);color:var(--leaf)}.chip.d2{border-color:var(--sun);color:var(--sun)}.chip.d3{border-color:var(--muted)}
 .tips{padding:14px 18px;background:var(--bg);font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
@@ -144,16 +128,6 @@ ul.resultados li:last-child{border-bottom:0}
 
   <section class="procura" aria-label="Procurar plantas">
     <input type="search" id="procura" placeholder="Procurar planta (nome ou nome científico)" autocomplete="off" aria-label="Procurar planta">
-    <div class="procura-acoes">
-      <button type="button" class="minhas-ver" id="verMinhas" aria-expanded="false">★ As minhas plantas (0)</button>
-      <label class="filtro" id="filtroLbl"><input type="checkbox" id="soMinhas"> Só as minhas plantas</label>
-    </div>
-    <div class="copia"><span>Cópia de segurança:</span>
-      <button type="button" id="exportar">Exportar as minhas plantas</button>
-      <button type="button" id="importarBtn">Importar plantas</button>
-      <input type="file" id="importarFicheiro" accept=".json,application/json" hidden>
-    </div>
-    <div class="copia-msg" id="copiaMsg" role="status" hidden></div>
     <div id="resultados" hidden></div>
   </section>
 
@@ -281,14 +255,13 @@ const avisos=(p,k)=>[p.legal&&(!p.legal_botoes||p.legal_botoes.includes(k))?p.le
 const nm=(p,k,m)=>p.notas&&p.notas[k]&&p.notas[k][String(m)];
 const junta=(...t)=>[...new Set(t.filter(Boolean).map(x=>x.trim()))].join(" ");
 function lista(k,m){
-  const P=soMinhas?DB.plantas.filter(p=>minhas.has(p.id)):DB.plantas, out=[];
+  const P=DB.plantas, out=[];
   const it=(nome,nota,extra)=>out.push({nome,nota,...extra});
   const geadaNota=(p)=>p.geada&&(m===3||m===4)?" Em Sardoura, só depois de meados de abril e em leira abrigada.":"";
   if(k==="podas"){
     for(const p of P){if(p.poda&&p.poda.some(e=>e.meses.includes(m))) it(p.nome,nm(p,"podas",m)||p.poda.filter(e=>e.meses.includes(m)).map(e=>e.tipo+".").join(" "),{p})}
   }else if(k==="trat"){
     for(const t of DB.tratamentos){
-      if(soMinhas&&!t.especies.some(e=>minhas.has(e)))continue;
       const iv=t.intervencoes.filter(i=>i.meses.includes(m));
       for(const i of iv) it(t.grupo,i.texto,{tag:TIPOINT[i.tipo]||"Intervir",hot:i.tipo==="fitofarmaco",ordem:i.tipo==="monitorizacao"?0:i.tipo==="cultural"?1:2});
       if(t.vigiar.includes(m)&&!iv.some(i=>i.tipo==="monitorizacao")) it(t.grupo, t.problemas+".",{tag:"Vigiar",ordem:0});
@@ -349,8 +322,6 @@ function contar(k,m){const l=lista(k,m);return l.reduce((n,i)=>n+(i.grupo?i.nota
 /* ---------- Estado e desenho ---------- */
 let day=new Date(); day.setHours(12,0,0,0);
 let cur="podas";
-let minhas=new Set(),desconhecidas=new Set();try{const v=JSON.parse(localStorage.getItem("minhas-plantas")||"[]");if(Array.isArray(v))minhas=new Set(v.filter(x=>typeof x==="string"))}catch(e){}
-let soMinhas=false;try{soMinhas=localStorage.getItem("so-minhas")==="1"}catch(e){}
 try{const s=localStorage.getItem("agenda-cat"); if(s&&CAT[s]) cur=s}catch(e){}
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -377,12 +348,11 @@ function render(){
     const av=i.p?avisos(i.p,cur).map(t=>`<span class="warn">${esc(t)}</span>`).join(""):"";
     const nomeHTML=i.p&&!i.grupo?`<button type="button" class="ficha-btn it-name" data-id="${esc(i.p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(i.nome)}${sci}</span></button>`:`<span class="it-name">${esc(i.nome)}${sci}</span>`;
     return `<li${i.grupo?' class="grp"':""}><div class="it-top">${nomeHTML}${chip}</div>${i.nota?`<span class="it-note">${esc(i.nota)}</span>`:""}${av}</li>`;
-  }).join("")||`<li><span class="it-note">${soMinhas?"Nenhuma das suas plantas tem esta operação neste mês.":"Nada previsto para este mês."}</span></li>`;
+  }).join("")||`<li><span class="it-note">Nada previsto para este mês.</span></li>`;
   let extra="";
-  if(cur==="estacas"){const n=(soMinhas?DB.plantas.filter(x=>minhas.has(x.id)):DB.plantas).filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
+  if(cur==="estacas"){const n=DB.plantas.filter(x=>x.propagacao&&x.propagacao.estacas&&x.propagacao.estacas.dificuldade===4).map(x=>x.nome.toLowerCase());if(n.length)extra=`<br><b>Não pegam de estaca:</b> ${esc(n.join(", "))}. Multiplicam-se por semente ou enxertia.`}
   $("panel").innerHTML=`<div class="panel-head"><h2>${c.t}</h2><p>${acompanhamento?"Acompanhamento de alporques":c.sub} em ${MESES[day.getMonth()]}</p></div>
     ${acompanhamento?"":`<div class="verdict ${vk}"><span class="dot"></span><span>${vt}</span></div>`}
-    ${soMinhas?`<div class="filtro-aviso">A mostrar só as suas ${minhas.size} plantas. <a href="#" id="tirarFiltro">Mostrar todas</a></div>`:""}
     <ul class="items">${li}</ul>${acompanhamento?"":`<div class="tips">${c.tips}${extra}</div>`}`;
 }
 /* ---------- Ficha da planta (ao tocar no nome) ---------- */
@@ -390,7 +360,7 @@ const CAMPOS=[["exposicao","Exposição"],["solo","Solo"],["rega","Rega"],["adub
 function fichaHTML(p,avisosPresentes=[]){
   const av=[p.legal,p.toxicidade].filter(t=>t&&!avisosPresentes.includes(t)).map(t=>`<span class="warn">${esc(t)}</span>`).join("");
   const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("");
-  return `<div class="ficha" id="ficha-${esc(p.id)}">${botaoMinha(p)}${av}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
+  return `<div class="ficha" id="ficha-${esc(p.id)}">${av}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
 }
 const fotoCache={};
 function titulosFoto(p){
@@ -428,104 +398,21 @@ document.addEventListener("click",e=>{
   li.insertAdjacentHTML("beforeend",fichaHTML(p,avisosPresentes));b.setAttribute("aria-expanded","true");
   mostrarFoto(p,li.querySelector(".ficha .foto"));
 });
-/* ---------- As minhas plantas e pesquisa ---------- */
-const semAc=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
-// As desconhecidas (ids que esta versão da app não conhece) são guardadas e exportadas na mesma, para não se perderem
-function guardarMinhas(){try{localStorage.setItem("minhas-plantas",JSON.stringify([...minhas,...desconhecidas]));return true}catch(e){return false}}
-const ERRO_GRAVAR="Não foi possível guardar no telemóvel (memória cheia ou navegação privada). A sua lista não foi alterada.";
-function botaoMinha(p){const t=minhas.has(p.id);return `<button type="button" class="minha-btn" data-minha="${esc(p.id)}" aria-pressed="${t}">${t?"★ Nas minhas plantas":"☆ Adicionar às minhas plantas"}</button>`}
-function atualizarContagens(){if(!DB)return;const m=day.getMonth()+1;document.querySelectorAll(".cat").forEach(x=>x.querySelector(".cnt").textContent=cntTxt(x.dataset.k,contar(x.dataset.k,m)))}
-function atualizarMinhasUI(){
-  $("verMinhas").textContent="★ As minhas plantas ("+minhas.size+")";
-  const total=minhas.size+desconhecidas.size;$("exportar").disabled=total===0;$("exportar").title=total?"":"Ainda não marcou nenhuma planta";
-  const cb=$("soMinhas");
-  if(minhas.size===0&&soMinhas){soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(e){}}
-  cb.disabled=minhas.size===0;cb.checked=soMinhas;$("filtroLbl").classList.toggle("off",minhas.size===0);
-  $("filtroLbl").title=minhas.size?"":"Marque primeiro algumas plantas como suas";
-  document.querySelectorAll("[data-minha]").forEach(b=>{const t=minhas.has(b.dataset.minha);b.setAttribute("aria-pressed",t);
-    if(b.classList.contains("estrela")){b.textContent=t?"★":"☆";b.setAttribute("aria-label",(t?"Tirar das":"Pôr nas")+" minhas plantas")}
-    else b.textContent=t?"★ Nas minhas plantas":"☆ Adicionar às minhas plantas"});
-}
+/* ---------- Pesquisa de plantas ---------- */
+const semAc=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 function linhaPlanta(p){
-  const t=minhas.has(p.id);
-  return `<li><div class="it-top"><button type="button" class="ficha-btn it-name" data-id="${esc(p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(p.nome)}<i class="sci">${esc(p.nome_cientifico)}</i></span></button><button type="button" class="estrela" data-minha="${esc(p.id)}" aria-pressed="${t}" aria-label="${t?"Tirar das":"Pôr nas"} minhas plantas">${t?"★":"☆"}</button></div></li>`;
+  return `<li><div class="it-top"><button type="button" class="ficha-btn it-name" data-id="${esc(p.id)}" aria-expanded="false"><span class="seta" aria-hidden="true">›</span><span>${esc(p.nome)}<i class="sci">${esc(p.nome_cientifico)}</i></span></button></div></li>`;
 }
-let modoRes="";
 function mostrarResultados(){
   const box=$("resultados"),q=semAc($("procura").value.trim());
-  if(!DB){box.hidden=true;return}
-  let res=[],info="";
-  if(q){
-    res=DB.plantas.filter(p=>semAc(p.nome).includes(q)||semAc(p.nome_cientifico).includes(q));
-    res.sort((a,b)=>(semAc(a.nome).startsWith(q)?0:1)-(semAc(b.nome).startsWith(q)?0:1)||a.nome.localeCompare(b.nome,"pt"));
-    info=res.length?res.length+(res.length===1?" planta encontrada":" plantas encontradas")+". Toque no nome para ver a ficha; ☆ marca como sua.":"Nenhuma planta com esse nome na base de dados.";
-    modoRes="procura";$("verMinhas").setAttribute("aria-expanded","false");
-  }else if(modoRes==="minhas"){
-    res=DB.plantas.filter(p=>minhas.has(p.id)).sort((a,b)=>a.nome.localeCompare(b.nome,"pt"));
-    info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":desconhecidas.size?"":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
-    if(desconhecidas.size)info+=(info?" ":"")+(desconhecidas.size===1?"Tem 1 planta guardada que esta versão da app não reconhece. Continua guardada e é incluída na exportação.":"Tem "+desconhecidas.size+" plantas guardadas que esta versão da app não reconhece. Continuam guardadas e são incluídas na exportação.");
-  }else{box.hidden=true;box.innerHTML="";return}
+  if(!DB||!q){box.hidden=true;box.innerHTML="";return}
+  const res=DB.plantas.filter(p=>semAc(p.nome).includes(q)||semAc(p.nome_cientifico).includes(q));
+  res.sort((a,b)=>(semAc(a.nome).startsWith(q)?0:1)-(semAc(b.nome).startsWith(q)?0:1)||a.nome.localeCompare(b.nome,"pt"));
+  const info=res.length?res.length+(res.length===1?" planta encontrada":" plantas encontradas")+". Toque no nome para ver a ficha.":"Nenhuma planta com esse nome na base de dados.";
   box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.map(linhaPlanta).join("")}</ul>`:""}`;
   box.hidden=false;
 }
-$("procura").addEventListener("input",()=>{if(!$("procura").value.trim()&&modoRes==="procura")modoRes="";mostrarResultados()});
-$("verMinhas").addEventListener("click",()=>{const abrir=modoRes!=="minhas"||!!$("procura").value.trim();$("procura").value="";modoRes=abrir?"minhas":"";$("verMinhas").setAttribute("aria-expanded",abrir);mostrarResultados()});
-$("soMinhas").addEventListener("change",e=>{soMinhas=e.target.checked;try{localStorage.setItem("so-minhas",soMinhas?"1":"0")}catch(_){}render()});
-document.addEventListener("click",e=>{
-  if(e.target.closest("#tirarFiltro")){e.preventDefault();soMinhas=false;try{localStorage.setItem("so-minhas","0")}catch(_){}atualizarMinhasUI();render();return}
-  const b=e.target.closest("[data-minha]");if(!b)return;
-  const id=b.dataset.minha,tinha=minhas.has(id);if(tinha)minhas.delete(id);else minhas.add(id);
-  if(!guardarMinhas()){if(tinha)minhas.add(id);else minhas.delete(id);msgCopia(ERRO_GRAVAR,true);$("copiaMsg").scrollIntoView({block:"nearest"});return}
-  const filtroAntes=soMinhas;atualizarMinhasUI();
-  if(filtroAntes)render();else atualizarContagens();
-  if(modoRes==="minhas")mostrarResultados();
-});
-/* ---------- Cópia de segurança das minhas plantas ---------- */
-const FORMATO="agenda-do-campo/minhas-plantas",VERSAO_FORMATO=1;
-function msgCopia(texto,erro){const m=$("copiaMsg");m.textContent=texto;m.classList.toggle("erro",!!erro);m.hidden=false}
-$("exportar").addEventListener("click",()=>{
-  const total=minhas.size+desconhecidas.size;if(!total)return;
-  const dados={formato:FORMATO,versao:VERSAO_FORMATO,exportado:new Date().toISOString(),
-    plantas:[...minhas,...desconhecidas].sort(),nomes:[...minhas,...desconhecidas].sort().map(id=>{const p=DB&&DB.plantas.find(x=>x.id===id);return p?p.nome:id})};
-  const blob=new Blob([JSON.stringify(dados,null,1)],{type:"application/json"});
-  const url=URL.createObjectURL(blob),a=document.createElement("a");
-  a.href=url;a.download="minhas-plantas-"+iso(new Date())+".json";document.body.appendChild(a);a.click();a.remove();
-  setTimeout(()=>URL.revokeObjectURL(url),2000);
-  const resumo=minhas.size+(minhas.size===1?" planta reconhecida":" plantas reconhecidas")+(desconhecidas.size?" e "+desconhecidas.size+(desconhecidas.size===1?" não reconhecida":" não reconhecidas"):"");
-  msgCopia("Ficheiro criado com "+resumo+". Todas foram incluídas na cópia. Guarde-o num sítio seguro (por exemplo, no Google Drive ou enviado a si próprio por email).");
-});
-$("importarBtn").addEventListener("click",()=>{$("importarFicheiro").value="";$("importarFicheiro").click()});
-// Valida o conteúdo sem alterar nada; devolve {ids} ou {erro}
-function validarCopia(texto){
-  let d;try{d=JSON.parse(texto)}catch(e){return {erro:"O ficheiro não é um ficheiro de plantas válido (não é JSON)."}}
-  if(!d||typeof d!=="object"||Array.isArray(d))return {erro:"O ficheiro não tem o formato de uma cópia das minhas plantas."};
-  if(d.formato!==FORMATO)return {erro:"Este ficheiro não foi criado pela Agenda do Campo."};
-  if(!Number.isInteger(d.versao)||d.versao<1)return {erro:"O ficheiro não indica uma versão de formato válida."};
-  if(d.versao>VERSAO_FORMATO)return {erro:"O ficheiro foi criado por uma versão mais recente da app. Atualize a app e tente outra vez."};
-  if(!Array.isArray(d.plantas)||d.plantas.some(x=>typeof x!=="string"))return {erro:"A lista de plantas do ficheiro está danificada."};
-  return {ids:d.plantas};
-}
-function importarCopia(texto){
-  if(!DB)return msgCopia("Espere que a base de dados das plantas acabe de carregar e tente outra vez.",true);
-  const v=validarCopia(texto);
-  if(v.erro)return msgCopia(v.erro+" A sua lista não foi alterada.",true);
-  const conhecidos=new Set(DB.plantas.map(p=>p.id));
-  const unicos=[...new Set(v.ids)];
-  let novos=0,ja=0,ign=0;const antes=new Set(minhas);
-  for(const id of unicos){if(!conhecidos.has(id))ign++;else if(minhas.has(id))ja++;else{minhas.add(id);novos++}}
-  if(novos&&!guardarMinhas()){minhas=antes;return msgCopia(ERRO_GRAVAR,true)}
-  atualizarMinhasUI();if(soMinhas)render();else atualizarContagens();
-  if(modoRes==="minhas")mostrarResultados();
-  const partes=[novos===1?"1 planta acrescentada":novos+" plantas acrescentadas"];
-  if(ja)partes.push(ja===1?"1 já estava na lista":ja+" já estavam na lista");
-  if(ign)partes.push(ign===1?"1 ignorada (não existe nesta versão da app)":ign+" ignoradas (não existem nesta versão da app)");
-  msgCopia(partes.join("; ")+". Tem agora "+minhas.size+(minhas.size===1?" planta.":" plantas."));
-}
-$("importarFicheiro").addEventListener("change",e=>{
-  const f=e.target.files&&e.target.files[0];if(!f)return;
-  if(f.size>500000)return msgCopia("O ficheiro é demasiado grande para ser uma cópia das minhas plantas. A sua lista não foi alterada.",true);
-  const r=new FileReader();r.onload=()=>importarCopia(String(r.result));r.onerror=()=>msgCopia("Não foi possível ler o ficheiro. A sua lista não foi alterada.",true);r.readAsText(f);
-});
+$("procura").addEventListener("input",mostrarResultados);
 document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{cur=b.dataset.k;try{localStorage.setItem("agenda-cat",cur)}catch(e){}render();$("panel").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}));
 $("prev").onclick=()=>{day.setDate(day.getDate()-1);render()};
 $("next").onclick=()=>{day.setDate(day.getDate()+1);render()};
@@ -534,7 +421,7 @@ $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
 render();
 Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()})))
-  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};const ids=new Set(DB.plantas.map(p=>p.id));desconhecidas=new Set([...minhas].filter(id=>!ids.has(id)));minhas=new Set([...minhas].filter(id=>ids.has(id)));atualizarMinhasUI();render();mostrarResultados()})
+  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};render();mostrarResultados()})
   .catch(()=>{$("panel").innerHTML=`<div class="panel-head"><h2>Sem dados</h2><p>Não foi possível abrir a base de dados das plantas. Ligue-se à internet e abra a app outra vez.</p></div>`});
 </script>
 <div id="instalar" hidden><span id="instTxt">Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar" hidden>Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>

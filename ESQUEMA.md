@@ -41,16 +41,6 @@ A app lê três ficheiros. Os meses são números de 1 (janeiro) a 12 (dezembro)
 
 Antes de enviar alterações, corra `node verificar.js`: confirma ids, meses, dificuldades, tipos de intervenção e procura notas que mencionam outra espécie.
 
-## Ficheiro de cópia «As minhas plantas»
-Criado pelo botão **Exportar as minhas plantas**:
-
-```json
-{"formato": "agenda-do-campo/minhas-plantas", "versao": 1, "exportado": "2026-11-20T10:00:00.000Z",
- "plantas": ["figueira", "macieira"], "nomes": ["Figueira", "Macieira"]}
-```
-
-`plantas` são os `id` de `plantas.json` e é o único campo usado na importação (`nomes` serve só para ler o ficheiro). A importação recusa o ficheiro, sem alterar a lista, se não for JSON, se `formato` for diferente, se `versao` não for um inteiro entre 1 e a versão atual, ou se `plantas` não for uma lista de textos. Identificadores que não existem em `plantas.json` são ignorados e contados. **Os `id` das espécies são permanentes: não se mudam nem se reutilizam.** Se um dia for mesmo preciso mudar um, cria-se nessa altura uma correspondência antigo → novo, aplicada ao armazenamento do telemóvel e à importação. Os `id` guardados no telemóvel que a versão atual não conhece são mantidos e exportados (não aparecem nem contam); os desconhecidos de um ficheiro importado são ignorados.
-
 ## Registo de revisão (`revisao` e `revisoes_anteriores`)
 
 Campos opcionais. **Se não houver `revisao` para um campo, esse campo conta como `nao_revisto`.** Não se preenchem fichas só para as marcar.
