@@ -1137,18 +1137,20 @@
     "pinheiro_manso",
     "pinheiro_bravo"
    ],
-   "problemas": "Processionária",
+   "problemas": "Processionária; nemátodo da madeira do pinheiro",
    "vigiar": [
-    9,
-    10,
-    11,
-    12,
     1,
     2,
     3,
+    4,
+    5,
     6,
     7,
-    8
+    8,
+    9,
+    10,
+    11,
+    12
    ],
    "intervencoes": [
     {
@@ -1176,13 +1178,21 @@
     },
     {
      "meses": [
+      1,
+      2,
+      3,
+      4,
+      5,
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11,
+      12
      ],
      "tipo": "monitorizacao",
-     "texto": "Nemátodo da madeira: um pinheiro que seca de repente, com a agulha a ficar castanha, deve ser comunicado ao ICNF; não corte nem transporte a madeira sem orientação."
+     "texto": "Nemátodo: vigie durante todo o ano árvores mortas ou com amarelecimento e secura anormais. Os sintomas não confirmam a doença: o diagnóstico é laboratorial. Contacte o ICNF para o enquadramento da parcela e cumpra o abate obrigatório das árvores em declínio e a eliminação dos sobrantes, mesmo sem notificação. Comunicar previamente abate/desramação por MADC; transportar só nas condições legais. DL n.º 95/2011, na redação atual, arts. 6.º–11.º e anexos. Não espere pelo inverno para comunicar ou cumprir medidas urgentes."
     }
    ]
   },
@@ -2009,13 +2019,21 @@
     },
     {
      "meses": [
-      11,
-      12,
       1,
-      2
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
      ],
      "tipo": "cultural",
-     "texto": "Corte e retire da parcela os ramos ou árvores mortos pela grafiose, para não servirem de abrigo ao escaravelho que a transmite."
+     "texto": "Perante suspeita de grafiose, peça avaliação técnica e faça o saneamento atempadamente, sem esperar por novembro. A remoção dos ramos ou árvores infetados pode reduzir a dispersão; retire ou processe adequadamente a madeira com casca para não manter criadouros dos escaravelhos vetores. Não a leve para outro local como lenha. Desinfetar ferramentas não impede a transmissão por insetos ou por ligações entre raízes."
     }
    ]
   }

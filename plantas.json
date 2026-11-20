@@ -5049,7 +5049,12 @@
      "3": "Plante um exemplar jovem em vaso ou torrão, em local soalheiro e solo bem drenado. Adie se houver geada prevista.",
      "11": "Planta jovem em vaso ou torrão, em local soalheiro."
     }
-   }
+   },
+   "legal": "Nemátodo da madeira do pinheiro: Decreto-Lei n.º 95/2011, na redação atual (alterado pelo DL n.º 123/2015, retificado pela Declaração n.º 38/2015 e alterado pelo DL n.º 9/2021), arts. 6.º–11.º e anexos. Na zona de restrição, abate e desramação exigem comunicação prévia pelo manifesto de abate, desramação e circulação (MADC); o transporte exige MADC, salvo exceções legais. As árvores com sintomas de declínio devem ser abatidas e os sobrantes eliminados segundo as regras aplicáveis, mesmo sem notificação. Os requisitos e prazos de remoção, tratamento e transporte dependem da zona, do material e da época (1 de novembro–1 de abril / 2 de abril–31 de outubro). Confirme o enquadramento da parcela com o ICNF; não guarde nem transporte material suspeito como lenha.",
+   "legal_botoes": [
+    "podas",
+    "plantar"
+   ]
   },
   {
    "id": "platano",
@@ -9846,18 +9851,18 @@
   },
   {
    "tipo_lua": "a",
-   "autoctone": true,
+   "autoctone": false,
    "toxicidade": null,
    "categoria": "florestal",
    "id": "choupo_negro",
    "nome": "Choupo-negro",
    "nome_cientifico": "Populus nigra",
    "folha": "caduca",
-   "nota_sardoura": "As raízes vão longe e procuram água: plante a mais de 20 m de casas, muros, poços e canos.",
+   "nota_sardoura": "Raízes vigorosas e extensas: evite a proximidade de casas, muros, poços e canalizações. A distância adequada depende do solo, da árvore adulta e das construções; 20 m não é uma garantia de segurança.",
    "metodo_recomendado": [
     "estacas"
    ],
-   "nota_variedade": "Prefira estacas de árvores masculinas: as femininas largam muita «penugem» com as sementes.",
+   "nota_variedade": "O Flora-On classifica Populus nigra como exótica em Portugal continental. Confirme a identidade do material: existem híbridos e cultivares frequentes. As árvores femininas produzem sementes com penugem.",
    "propagacao": {
     "estacas": {
      "dificuldade": 1,
@@ -9871,10 +9876,11 @@
     "sementeira": {
      "dificuldade": 2,
      "meses": [
+      4,
       5,
       6
      ],
-     "nota": "Semeie logo que as sementes amadurecem: perdem a viabilidade em poucos dias.",
+     "nota": "Abril–junho é uma janela indicativa: semeie logo que as cápsulas locais abram e libertem sementes maduras. Sem estratificação; mantenha o substrato húmido. Fora de conservação controlada, a viabilidade perde-se rapidamente.",
      "fiel_variedade": false
     }
    },
@@ -9913,7 +9919,7 @@
    "nome": "Choupo-branco",
    "nome_cientifico": "Populus alba",
    "folha": "caduca",
-   "nota_sardoura": "As raízes vão longe e procuram água: plante a mais de 20 m de casas, muros, poços e canos. Lança muitos rebentos de raiz à volta.",
+   "nota_sardoura": "Raízes vigorosas e extensas: evite a proximidade de casas, muros, poços e canalizações. A distância adequada depende do solo, da árvore adulta e das construções; 20 m não é uma garantia de segurança. Em Portugal, é considerada nativa apenas no quadrante sudeste; não a trate como autóctone de Sardoura. Pode emitir muitos rebentos de raiz.",
    "propagacao": {
     "estacas": {
      "dificuldade": 2,
@@ -9922,15 +9928,16 @@
       1,
       2
      ],
-     "nota": "Estacas lenhosas; pegam menos facilmente do que as do choupo-negro."
+     "nota": "Estacas lenhosas de rebentos de um ano, durante o repouso e antes da rebentação; o sucesso varia com o clone."
     },
     "sementeira": {
      "dificuldade": 2,
      "meses": [
+      4,
       5,
       6
      ],
-     "nota": "Semeie logo que as sementes amadurecem: perdem a viabilidade em poucos dias."
+     "nota": "Abril–junho é uma janela indicativa: semeie logo que as cápsulas locais abram e libertem sementes maduras. Sem estratificação; mantenha o substrato húmido. Fora de conservação controlada, a viabilidade perde-se rapidamente."
     }
    },
    "divisao": [
@@ -9979,7 +9986,7 @@
    "nome": "Choupo-tremedor",
    "nome_cientifico": "Populus tremula",
    "folha": "caduca",
-   "nota_sardoura": "As raízes vão longe e procuram água: plante a mais de 20 m de casas, muros, poços e canos.",
+   "nota_sardoura": "Raízes vigorosas e extensas: evite a proximidade de casas, muros, poços e canalizações. A distância adequada depende do solo, da árvore adulta e das construções; 20 m não é uma garantia de segurança.",
    "propagacao": {
     "estacas": {
      "dificuldade": 3,
@@ -9988,15 +9995,16 @@
       1,
       2
      ],
-     "nota": "As estacas de ramo pegam mal; use estacas de raiz durante o repouso."
+     "nota": "Estacas de raiz no repouso invernal; as estacas de ramo enraízam com dificuldade. Use substrato leve e húmido, sem encharcar; não danifique excessivamente as raízes da planta-mãe."
     },
     "sementeira": {
      "dificuldade": 2,
      "meses": [
+      4,
       5,
       6
      ],
-     "nota": "Semeie logo que as sementes amadurecem: perdem a viabilidade em poucos dias."
+     "nota": "Abril–junho é uma janela indicativa: semeie logo que as cápsulas locais abram e libertem sementes maduras. Sem estratificação; mantenha o substrato húmido. Fora de conservação controlada, a viabilidade perde-se rapidamente."
     }
    },
    "divisao": [
@@ -10091,7 +10099,7 @@
    "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
    "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
    "floracao": "Amentilhos na primavera, com a saída das folhas.",
-   "solo": "Tolera solos secos, pedregosos e calcários; não gosta de encharcamento.",
+   "solo": "Indiferente ao tipo de substrato; escolha solo com drenagem e humidade suficientes para a instalação. Evite encharcamento.",
    "resistencia_geada": "Rústico.",
    "exposicao": "Sol pleno."
   },
@@ -10105,7 +10113,7 @@
    "nome_cientifico": "Quercus rotundifolia",
    "folha": "persistente",
    "nota_sardoura": "É árvore de clima seco: em Sardoura escolha a encosta mais soalheira e com solo bem drenado; sofre com encharcamento.",
-   "legal": "Espécie protegida pelo Decreto-Lei n.º 169/2001: o corte e o arranque precisam de autorização; confirme com o ICNF as regras para a poda.",
+   "legal": "Protegida pelo Decreto-Lei n.º 169/2001, na redação atual (arts. 3.º e 15.º): corte ou arranque, mesmo de árvores isoladas, carecem de autorização, salvo as exceções legais. A poda também carece de autorização do ICNF, só é permitida de 1 de novembro a 31 de março e deve visar a melhoria das características produtivas. Não mutile a copa.",
    "legal_botoes": [
     "podas",
     "plantar"
@@ -10131,7 +10139,18 @@
      "nota": null
     }
    },
-   "poda": [],
+   "poda": [
+    {
+     "meses": [
+      11,
+      12,
+      1,
+      2,
+      3
+     ],
+     "tipo": "Só executar poda previamente autorizada pelo ICNF, destinada a melhorar as características produtivas; não é uma recomendação de poda anual"
+    }
+   ],
    "plantacao": {
     "meses": [
      10,
@@ -10169,18 +10188,21 @@
      "dificuldade": 2,
      "meses": [
       3,
-      4
+      4,
+      9,
+      10,
+      11
      ],
-     "nota": "Retire a polpa dos frutos maduros e estratifique 3–4 meses no frio húmido; ou semeie no outono ao ar livre.",
+     "nota": "No outono, retire a polpa dos frutos maduros e semeie no exterior, protegido de animais, para estratificação natural. Em março–abril, use apenas sementes já pré-tratadas: como referência, 2–4 semanas de fase quente húmida seguidas de 16–30 semanas de frio húmido. A duração varia com o lote; pode exigir outro ciclo e germinar só num ano posterior.",
      "fiel_variedade": false
     },
     "estacas": {
      "dificuldade": 3,
      "meses": [
-      6,
-      7
+      5,
+      6
      ],
-     "nota": "Estacas semi-lenhosas com hormona; pegam com dificuldade."
+     "nota": "Estacas herbáceas de rebentos jovens ainda tenros, sob humidade elevada e em abrigo. Maio–junho é indicativo; ajuste ao crescimento local. Enraizamento exigente, sem garantia de sucesso."
     },
     "enxertia": {
      "dificuldade": 2,
@@ -10188,7 +10210,7 @@
       2,
       3
      ],
-     "nota": "Para cultivares, enxerte em tramazeira de semente."
+     "nota": "Para manter uma cultivar, enxerte sobre tramazeira de semente no fim do inverno/início da primavera, antes da rebentação; fevereiro–março é indicativo."
     }
    },
    "poda": [
@@ -10235,14 +10257,20 @@
      "dificuldade": 3,
      "meses": [
       3,
-      4
+      4,
+      9,
+      10,
+      11
      ],
-     "nota": "Retire a polpa e estratifique vários meses no frio húmido; a germinação é lenta e irregular."
+     "nota": "No outono, retire a polpa dos frutos maduros e semeie no exterior, protegido de animais, para estratificação natural. Em março–abril, use apenas sementes já pré-tratadas: como referência, 2–4 semanas de fase quente húmida seguidas de 16–30 semanas de frio húmido. A duração varia com o lote; pode exigir outro ciclo e germinar só num ano posterior."
     },
     "estacas": {
-     "dificuldade": 4,
-     "meses": [],
-     "nota": null
+     "dificuldade": 3,
+     "meses": [
+      5,
+      6
+     ],
+     "nota": "Estacas herbáceas de rebentos jovens ainda tenros, sob humidade elevada e em abrigo. Maio–junho é indicativo; ajuste ao crescimento local. Enraizamento exigente, sem garantia de sucesso."
     }
    },
    "divisao": [
@@ -10284,12 +10312,13 @@
    "floracao": "Flores brancas no fim da primavera; frutos castanhos comestíveis depois de amolecerem.",
    "solo": "Solo bem drenado; tolera solos argilosos e calcários.",
    "resistencia_geada": "Rústica.",
-   "exposicao": "Sol ou meia-sombra."
+   "exposicao": "Sol ou meia-sombra.",
+   "nota_variedade": "Esta ficha refere-se a Sorbus torminalis (mostajeiro-das-cólicas), não a Sorbus domestica, também chamada sorveira."
   },
   {
    "tipo_lua": "a",
    "autoctone": true,
-   "toxicidade": "Toda a planta é muito tóxica, incluindo as folhas e a semente dentro do arilo vermelho. Perigosa para pessoas, cavalos e gado: não plante junto a pastagens.",
+   "toxicidade": "Folhas, ramos e sementes são muito tóxicos por ingestão, mesmo secos. A parte carnuda vermelha (arilo) é a exceção, mas envolve uma semente tóxica: não consuma. Use luvas e mantenha plantas e restos de poda longe de crianças, animais e pastagens.",
    "categoria": "florestal",
    "id": "teixo",
    "nome": "Teixo",
@@ -10326,7 +10355,7 @@
       8,
       9
      ],
-     "tipo": "Tolera poda forte e rebenta de madeira velha; ideal para sebes e formas. Use luvas e não deixe restos ao alcance de animais"
+     "tipo": "Em exemplares ornamentais plantados, poda apenas se necessária para formação ou sebe; use luvas e não deixe restos ao alcance de animais. Em exemplares silvestres, confirmar primeiro o regime de proteção"
     }
    ],
    "plantacao": {
@@ -10342,7 +10371,8 @@
    "floracao": "Flores discretas no fim do inverno; há plantas masculinas e femininas.",
    "solo": "Solo bem drenado, de ácido a calcário; não tolera encharcamento.",
    "resistencia_geada": "Muito rústico.",
-   "exposicao": "Sol a sombra; cresce devagar."
+   "exposicao": "Sol a sombra; cresce devagar.",
+   "legal": "Os exemplares espontâneos são objeto de medidas de proteção específica nos PROF, incluindo o Centro Litoral (Portaria n.º 56/2019, anexo A, art. 8.º) e Entre Douro e Minho (Portaria n.º 58/2019, anexo A, art. 8.º), nas redações atuais. Antes de cortar, podar ou recolher material em populações silvestres, confirme com o ICNF as regras do local. Os teixedos mediterrânicos constituem o habitat prioritário 9580* do DL n.º 140/99. Um teixo ornamental plantado não fica, só pela espécie, sujeito ao regime da azinheira; podem aplicar-se proteção de exemplares classificados e regras locais."
   },
   {
    "tipo_lua": "a",
@@ -10357,10 +10387,10 @@
     "sementeira": {
      "dificuldade": 2,
      "meses": [
-      5,
-      6
+      4,
+      5
      ],
-     "nota": "Semeie logo que as sementes amadurecem, na primavera; perdem a viabilidade depressa."
+     "nota": "Abril–maio é indicativo: recolha sámaras maduras e semeie imediatamente, sem estratificação. Verifique se contêm semente cheia; há árvores com muitos frutos vazios. Ajuste à maturação local."
     },
     "estacas": {
      "dificuldade": 2,
@@ -10390,7 +10420,7 @@
       1,
       2
      ],
-     "tipo": "Na formação, conserve um eixo dominante. Desinfete a ferramenta, por causa da grafiose"
+     "tipo": "Poda de formação mínima durante o repouso; desinfete as ferramentas. Suspeita de grafiose exige avaliação e saneamento atempados, sem esperar pelo calendário de poda"
     }
    ],
    "plantacao": {
@@ -10420,12 +10450,9 @@
    "folha": "caduca",
    "propagacao": {
     "sementeira": {
-     "dificuldade": 1,
-     "meses": [
-      2,
-      3
-     ],
-     "nota": "Estratifique as sementes 2–3 meses no frio húmido. As plantas servem também de porta-enxerto para pereiras."
+     "dificuldade": null,
+     "meses": [],
+     "nota": "Calendário suspenso nesta revisão: falta confirmar um protocolo específico de Pyrus cordata em fonte técnica primária. Não aplicar automaticamente o calendário ou o porta-enxerto da pereira cultivada."
     },
     "estacas": {
      "dificuldade": 4,
@@ -10459,9 +10486,23 @@
    "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
    "rega": "Regue em períodos secos durante a instalação, com água suficiente para humedecer a zona das raízes. Depois, ajuste à chuva e à humidade do solo.",
    "floracao": "Flores brancas na primavera; pequenos frutos procurados pela fauna.",
-   "solo": "Solo bem drenado, de preferência ácido; comum em sebes e orlas de bosque.",
+   "solo": "Indiferente ao substrato; ocorre em orlas e clareiras de bosques, matagais e sebes. Prefira solo bem drenado.",
    "resistencia_geada": "Rústica.",
-   "exposicao": "Sol ou meia-sombra."
+   "exposicao": "Sol ou meia-sombra.",
+   "divisao": [
+    {
+     "metodo": "Separe rebentos de raiz já enraizados durante o repouso vegetativo, sem danificar excessivamente a planta-mãe",
+     "meses": [
+      11,
+      12,
+      1,
+      2
+     ]
+    }
+   ],
+   "metodo_recomendado": [
+    "divisao"
+   ]
   },
   {
    "tipo_lua": "a",
@@ -10472,7 +10513,7 @@
    "nome": "Pinheiro-bravo",
    "nome_cientifico": "Pinus pinaster",
    "folha": "persistente",
-   "legal": "Portugal continental tem regras próprias para o nemátodo da madeira do pinheiro: o abate, o transporte e a eliminação de madeira e sobrantes de pinheiro estão condicionados. Confirme com o ICNF antes de abater ou transportar.",
+   "legal": "Nemátodo da madeira do pinheiro: Decreto-Lei n.º 95/2011, na redação atual (alterado pelo DL n.º 123/2015, retificado pela Declaração n.º 38/2015 e alterado pelo DL n.º 9/2021), arts. 6.º–11.º e anexos. Na zona de restrição, abate e desramação exigem comunicação prévia pelo manifesto de abate, desramação e circulação (MADC); o transporte exige MADC, salvo exceções legais. As árvores com sintomas de declínio devem ser abatidas e os sobrantes eliminados segundo as regras aplicáveis, mesmo sem notificação. Os requisitos e prazos de remoção, tratamento e transporte dependem da zona, do material e da época (1 de novembro–1 de abril / 2 de abril–31 de outubro). Confirme o enquadramento da parcela com o ICNF; não guarde nem transporte material suspeito como lenha.",
    "legal_botoes": [
     "podas",
     "plantar"
@@ -10485,7 +10526,7 @@
       3,
       4
      ],
-     "nota": "Sementes das pinhas maduras; germinam sem estratificação. Semeie em alvéolos e plante novo."
+     "nota": "Sementes de pinhas maduras, em alvéolos. A estratificação não é geralmente obrigatória; pode beneficiar sementes armazenadas. Plante enquanto jovem, sem deformar as raízes."
     },
     "estacas": {
      "dificuldade": 4,
@@ -10505,7 +10546,7 @@
       1,
       2
      ],
-     "tipo": "Desramação dos ramos baixos e secos, rente ao tronco. Retire os sobrantes segundo as regras do nemátodo"
+     "tipo": "Desramação de formação apenas se necessária, sem cortar o colar do ramo nem deixar cortes rentes ao tronco; cumprir o MADC e eliminar os sobrantes segundo as regras do nemátodo"
     }
    ],
    "plantacao": {
