@@ -1,10 +1,10 @@
 // node revisao/testar-enxertia-prunus.cjs
 // Contrato da ronda de enxertia dos Prunus (pessegueiro, nectarina, ameixeira, damasqueiro) contra a98da65; não testa Chromium.
-// Numa ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
+// Dados fixados no commit em que esta ronda foi publicada (eb45468): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
-const root=path.join(__dirname,'..'),base='a98da65';
+const root=path.join(__dirname,'..'),base='a98da65',ronda='eb45468';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 const estados={pessegueiro:'parcial',nectarina:'parcial',ameixeira:'parcial',damasqueiro:'provisorio'};
 const alvos=Object.keys(estados);
 for(const f of ['tratamentos.json','calendario.json'])assert.equal(now(f),old(f),f+' fora do âmbito');

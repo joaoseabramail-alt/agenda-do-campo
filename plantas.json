@@ -827,7 +827,7 @@
       8,
       9
      ],
-     "nota": "Borbulha em T quando a casca do porta-enxerto se solta com facilidade."
+     "nota": "Borbulha em T quando a casca do porta-enxerto descola com facilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -877,10 +877,7 @@
      "4": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos."
     },
     "enx": {
-     "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
-     "5": "Borbulha em T.",
-     "8": "Borbulha em T.",
-     "9": "Últimas borbulhas em T."
+     "9": "Borbulha cedo no mês, com calor para a união pegar; proteja o enxerto da geada."
     },
     "alp": {
      "5": "Ainda em boa altura.",
@@ -932,6 +929,37 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Março–maio mantêm-se como lembrete provisório, não como janela universal de produção. Confirmar cultivar e ciclo de frutificação antes de definir a época; retirar a regra indiferenciada depois da colheita, particularmente ambígua no limoeiro."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Cooperative Extension Ventura County — Answers to frequently asked questions about Citrus",
+       "url": "https://ucanr.edu/county/cooperative-extension-ventura-county/answers-frequently-asked-questions-about-citrus",
+       "seccao": "Budding and grafting of avocado and citrus: When to Bud or Graft; Budding; How to make a T-bud",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Califórnia costeira, mais amena: abril–setembro fica como janela indicativa em Sardoura, condicionada à casca que descola e ao calor."
+     },
+     "nota": "A fonte: borbulha em T é o método padrão nos citrinos; fazer na primavera ou no outono, quando a casca se separa facilmente, cedo o bastante para o calor ajudar a união; enxertos de outono protegidos da geada. Retiradas as notas mensais repetitivas."
     }
    }
   },
@@ -975,7 +1003,7 @@
       8,
       9
      ],
-     "nota": "Borbulha em T quando a casca do porta-enxerto se solta com facilidade."
+     "nota": "Borbulha em T quando a casca do porta-enxerto descola com facilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -1032,10 +1060,7 @@
      "4": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos."
     },
     "enx": {
-     "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
-     "5": "Borbulha em T.",
-     "8": "Borbulha em T.",
-     "9": "Últimas borbulhas em T."
+     "9": "Borbulha cedo no mês, com calor para a união pegar; proteja o enxerto da geada."
     },
     "alp": {
      "5": "Ainda em boa altura.",
@@ -1087,6 +1112,37 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Março–maio mantêm-se como lembrete provisório, não como janela universal de produção. Confirmar cultivar e ciclo de frutificação antes de definir a época; retirar a regra indiferenciada depois da colheita, particularmente ambígua no limoeiro."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Cooperative Extension Ventura County — Answers to frequently asked questions about Citrus",
+       "url": "https://ucanr.edu/county/cooperative-extension-ventura-county/answers-frequently-asked-questions-about-citrus",
+       "seccao": "Budding and grafting of avocado and citrus: When to Bud or Graft; Budding; How to make a T-bud",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Califórnia costeira, mais amena: abril–setembro fica como janela indicativa em Sardoura, condicionada à casca que descola e ao calor."
+     },
+     "nota": "A fonte: borbulha em T é o método padrão nos citrinos; fazer na primavera ou no outono, quando a casca se separa facilmente, cedo o bastante para o calor ajudar a união; enxertos de outono protegidos da geada. Retiradas as notas mensais repetitivas."
     }
    }
   },
@@ -1130,7 +1186,7 @@
       8,
       9
      ],
-     "nota": "Borbulha em T quando a casca do porta-enxerto se solta com facilidade."
+     "nota": "Borbulha em T quando a casca do porta-enxerto descola com facilidade."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -1179,10 +1235,7 @@
      "4": "Poda ligeira fora do risco de geada, ajustada à cultivar e à colheita. Cultivares tardias e produções sobrepostas podem exigir outra época; não aplique uma data única a todos os citrinos."
     },
     "enx": {
-     "4": "Enxertia de borbulha em T (escudo), quando a casca descola.",
-     "5": "Borbulha em T.",
-     "8": "Borbulha em T.",
-     "9": "Últimas borbulhas em T."
+     "9": "Borbulha cedo no mês, com calor para a união pegar; proteja o enxerto da geada."
     },
     "alp": {
      "5": "Ainda em boa altura.",
@@ -1234,6 +1287,37 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Março–maio mantêm-se como lembrete provisório, não como janela universal de produção. Confirmar cultivar e ciclo de frutificação antes de definir a época; retirar a regra indiferenciada depois da colheita, particularmente ambígua no limoeiro."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Cooperative Extension Ventura County — Answers to frequently asked questions about Citrus",
+       "url": "https://ucanr.edu/county/cooperative-extension-ventura-county/answers-frequently-asked-questions-about-citrus",
+       "seccao": "Budding and grafting of avocado and citrus: When to Bud or Graft; Budding; How to make a T-bud",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Califórnia costeira, mais amena: abril–setembro fica como janela indicativa em Sardoura, condicionada à casca que descola e ao calor."
+     },
+     "nota": "A fonte: borbulha em T é o método padrão nos citrinos; fazer na primavera ou no outono, quando a casca se separa facilmente, cedo o bastante para o calor ajudar a união; enxertos de outono protegidos da geada. Retiradas as notas mensais repetitivas."
     }
    }
   },
