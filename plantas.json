@@ -2558,12 +2558,13 @@
     "enxertia": {
      "dificuldade": 3,
      "meses": [
-      3,
       4,
       5,
-      6
+      6,
+      8,
+      9
      ],
-     "nota": "Enxertia de garfo na primavera; a de placa exige casca que se solte com facilidade."
+     "nota": "A inglesa é o garfo mais comum; a borbulha de placa é frequente e a de T também resulta."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -2608,9 +2609,11 @@
      "11": "Raiz nua, em terra funda e fresca; precisa de 10–12 m de espaço."
     },
     "enx": {
-     "4": "Enxertia de fenda ou coroa no fim do mês, com tempo quente (acima de 15 °C).",
-     "5": "Enxertia de placa apenas se a casca se soltar bem no porta-enxerto e no ramo que fornece o gomo.",
-     "6": "Enxertia de placa apenas se a casca se soltar bem no porta-enxerto e no ramo que fornece o gomo."
+     "4": "Garfo só com o porta-enxerto já com folhas; corte-o 7–10 dias antes, para escorrer a seiva.",
+     "5": "Garfo só com o porta-enxerto já com folhas; corte-o 7–10 dias antes, para escorrer a seiva.",
+     "6": "Garfo ou placa; evite as duas semanas antes e depois de chuva forte, por causa da seiva.",
+     "8": "Borbulha de placa ou em T no fim do mês, quando a casca descolar nos dois ramos.",
+     "9": "Borbulha de placa ou em T até meados do mês, quando a casca descolar nos dois ramos."
     },
     "podas": {
      "8": "Se necessário, retire ramos mortos ou cruzados durante o verão.",
@@ -2619,7 +2622,39 @@
    },
    "metodo_recomendado": [
     "enxertia"
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Davis Fruit & Nut Research and Information Center — Walnut Propagation",
+       "url": "https://fruitsandnuts.ucdavis.edu/walnut-propagation",
+       "seccao": "Budding; Patch & T-budding; Grafting",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Califórnia: confirmar em Sardoura quando o porta-enxerto tem folhas e quando a casca descola; os meses são indicativos."
+     },
+     "nota": "A fonte: garfo no fim da primavera, depois de o porta-enxerto ter folhas; o risco principal é a seiva escorrer (cortar 7–10 dias antes; evitar oscilações de temperatura e as duas semanas antes e depois de chuva forte ou rega); placa é o método mais comum; borbulha de outono de fim de agosto a meados de setembro. Retirados março e a regra dos 15 °C, que a fonte não sustenta. Proposta do ChatGPT; o Claude repôs nas notas o conselho da seiva."
+    }
+   }
   },
   {
    "id": "oliveira",
@@ -2658,7 +2693,7 @@
       4,
       5
      ],
-     "nota": "Coroa quando a casca descola."
+     "nota": "Na enxertia de coroa, os garfos são colocados entre a casca e a madeira."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -2718,8 +2753,8 @@
      "6": "Últimos alporques de plantas lentas."
     },
     "enx": {
-     "4": "Enxertia de coroa (casca) quando a casca descola bem.",
-     "5": "Enxertia de coroa ou de borbulha."
+     "4": "A coroa faz-se na primavera, quando a casca descola.",
+     "5": "A coroa faz-se na primavera, quando a casca descola."
     }
    },
    "metodo_recomendado": [
@@ -2770,6 +2805,19 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Fevereiro não é autorização para podar com frio. A circular da Terra Quente e a ficha do Centro sustentam técnica e higiene, não um calendário para Sardoura; não foram transpostas receitas químicas nem doses de desinfetantes."
+    },
+    "propagacao.enxertia": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "nota": "Texto genérico da enxertia de coroa (Revista Jardins, «Enxertia: o que é, quando fazer…»: primavera, quando a casca se destaca; não cita a oliveira). Retirada a borbulha de maio, sem fonte. Meses mantidos até haver fonte para a oliveira (por exemplo, o manual RevitAGRI do IPVC, em PDF, não lido)."
     }
    }
   },
