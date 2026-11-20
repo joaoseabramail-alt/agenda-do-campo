@@ -20,11 +20,52 @@
    "intervencoes": [
     {
      "meses": [
-      12,
-      1
+      1,
+      2,
+      3
      ],
      "tipo": "fitofarmaco",
-     "texto": "Cochonilhas e ovos de afídeos nos ramos. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, óleo de inverno, em dia sem geada), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Cochonilhas e afídeos: observe os ramos durante o repouso e no início do inchamento dos gomos. Só pondere tratar árvores infestadas, tendo em conta o historial de ataques e a avaliação do risco; não trate apenas por ser inverno. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 03/2026 (13 de março)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=870:circ-03-13mar-2026",
+        "seccao": "p. 7: afídeos, pulgão-lanígero e cochonilha de São José",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "A janela dezembro–janeiro foi deslocada para janeiro–março para lembrar a avaliação antes da rebentação. A fonte sustenta os alvos e o posicionamento, não um calendário fixo para todas as variedades das duas culturas. Identificação da praga e escolha do produto continuam dependentes da parcela."
+     }
     },
     {
      "meses": [
@@ -32,7 +73,47 @@
       3
      ],
      "tipo": "fitofarmaco",
-     "texto": "Pedrado: risco no abrolhamento com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Pedrado: acompanhe a rebentação e a previsão de chuva, sobretudo nas variedades sensíveis. A proteção deve anteceder as infeções; não espere por manchas nas folhas. A sensibilidade começa em fases diferentes na macieira e na pereira. Siga o aviso agrícola para posicionar uma eventual intervenção. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 03/2026 (13 de março)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=870:circ-03-13mar-2026",
+        "seccao": "pp. 5–6: pedrado da macieira e da pereira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Confirmados o fundamento e o momento biológico; os meses não constituem uma ordem de aplicação. Nenhum produto comercial ou rótulo foi validado para a parcela."
+     }
     },
     {
      "meses": [
@@ -68,10 +149,61 @@
     {
      "meses": [
       1,
-      2
+      2,
+      3
      ],
      "tipo": "fitofarmaco",
-     "texto": "Lepra: risco antes de os gomos incharem, com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Lepra do pessegueiro e da nectarina: observe os gomos foliares; a oportunidade preventiva é nos primeiros sinais de inchamento e abertura, antes de as folhas se desenvolverem. Não espere pelos sintomas. Ajuste a decisão à fenologia, ao historial da doença e ao aviso agrícola. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 02/2026 (25 de fevereiro)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=866:circ-2-2026-eaedm-pdf",
+        "seccao": "p. 5: lepra do pessegueiro",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 01/2026 (23 de janeiro)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=861:circ-01-2026-compressed",
+        "seccao": "p. 6 e quadro 1: desenvolvimento dos gomos foliares",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Inclui março para variedades ou locais mais tardios, como janela provisória. O aviso regional descreve pessegueiro; a nectarina pertence à mesma espécie, mas a finalidade autorizada tem de ser confirmada para a cultura indicada no rótulo. Não generalizar cobre a folhas já abertas."
+     }
     },
     {
      "meses": [
@@ -110,10 +242,62 @@
    "intervencoes": [
     {
      "meses": [
-      2
+      2,
+      3,
+      4
      ],
      "tipo": "fitofarmaco",
-     "texto": "Moniliose: risco na floração com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
+     "texto": "Moniliose: avalie o risco desde os botões florais até à queda das pétalas, especialmente com chuva e humidade persistente. A fase a proteger depende da cultura e variedade; no damasqueiro o risco pode começar antes da flor aberta. Se necessária, a proteção é preventiva, orientada pelo aviso agrícola. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DRAP Norte — Avisos de Entre Douro e Minho, circular 03/2019",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_03_2019.pdf",
+        "seccao": "p. 5: moniliose na ameixeira",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "University of California IPM — Apricot: Brown Rot Blossom and Twig Blight",
+        "url": "https://ipm.ucanr.edu/agriculture/apricot/brown-rot-blossom-and-twig-blight/",
+        "seccao": "Comments on the Disease; Management: estádio red bud no damasqueiro",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Fevereiro isolado não cobre a diversidade de florações; fevereiro–abril é uma janela provisória. A fonte da Califórnia sustenta biologia/fenologia do damasqueiro, não meses, doses ou autorizações em Portugal. A lista de produtos do aviso de 2019 não foi reutilizada."
+     }
     },
     {
      "meses": [
@@ -126,10 +310,42 @@
     {
      "meses": [
       11,
-      12
+      12,
+      1,
+      2
      ],
      "tipo": "cultural",
-     "texto": "Frutos secos (múmias) na árvore espalham a moniliose: retire-os e destrua-os fora da parcela (enterrar ou compostagem a quente); queimar sobrantes precisa de autorização da câmara ou do ICNF."
+     "texto": "Moniliose: após a colheita e durante o repouso, retire os frutos mumificados da árvore e do chão, reduzindo a fonte de infeção. Encaminhe-os para eliminação que impeça a dispersão do fungo; não os deixe acumulados junto das árvores.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "University of California IPM — Apricot: Brown Rot Blossom and Twig Blight",
+        "url": "https://ipm.ucanr.edu/agriculture/apricot/brown-rot-blossom-and-twig-blight/",
+        "seccao": "Comments on the Disease; Management: sobrevivência em frutos mumificados e remoção no repouso",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Confirmado o princípio sanitário; novembro–fevereiro é indicativo. Retiradas as indicações sem verificação de compostagem a quente e do regime de queimas. Não se prescreve aqui um procedimento legal de eliminação nem poda de inverno das prunóideas."
+     }
     }
    ]
   },
@@ -189,10 +405,51 @@
    "intervencoes": [
     {
      "meses": [
-      2
+      2,
+      3
      ],
      "tipo": "fitofarmaco",
-     "texto": "Crivado e moniliose: risco antes e durante a floração com chuva. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura, confirmado no SIFITO, segundo o rótulo."
+     "texto": "Moniliose da amendoeira: o período crítico é a floração com tempo húmido, sobretudo em variedades sensíveis ou com ataques anteriores. Pondere proteção preventiva no início da floração, segundo o risco e o aviso agrícola. O crivado é uma doença distinta; a proteção deve ser decidida separadamente. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "INIAV — Manual de boas práticas de fruticultura: amendoeira",
+        "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_de_fruticultura_amendoeira.pdf",
+        "seccao": "Proteção fitossanitária: moniliose e crivado",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Separados os dois alvos antes agrupados na mesma indicação. Fevereiro–março é provisório e depende da variedade; não significa tratar o crivado durante a floração. A intervenção de outubro fica fora desta ronda."
+     }
     },
     {
      "meses": [
@@ -315,10 +572,53 @@
    "intervencoes": [
     {
      "meses": [
-      2
+      12,
+      1,
+      2,
+      3
      ],
-     "tipo": "fitofarmaco",
-     "texto": "Cochonilhas, se houver ataque. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, óleo), confirmado no SIFITO, segundo o rótulo."
+     "tipo": "monitorizacao",
+     "texto": "Cochonilhas dos citrinos: observe folhas, ramos e frutos e identifique a espécie e as formas presentes. A presença de cochonilhas não justifica automaticamente uma pulverização em fevereiro. A decisão depende da intensidade do ataque, dos auxiliares e da fase vulnerável da praga; siga o aviso agrícola.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Algarve — Avisos Agrícolas, circular 05/2025, 24 de junho (cópia na ARBA)",
+        "url": "https://arba.pt/wp-content/uploads/2025/09/Circular_05_2025.pdf",
+        "seccao": "pp. 1–2: estimativa do risco e posicionamento nas formas larvares",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — Proteção Integrada e Modos de Produção",
+        "url": "https://www.dgav.pt/plantas/conteudo/sanidade-vegetal/protecao-integrada-e-modos-de-producao/",
+        "seccao": "Implementação dos princípios de proteção integrada",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Convertida a indicação química de fevereiro em monitorização de inverno. A fonte algarvia sustenta a decisão pela praga, não a transposição do seu calendário para Sardoura. A vigilância das restantes épocas permanece fora desta revisão."
+     }
     },
     {
      "meses": [
@@ -341,10 +641,64 @@
      "meses": [
       9,
       10,
-      11
+      11,
+      12,
+      1,
+      2,
+      3
      ],
      "tipo": "fitofarmaco",
-     "texto": "Aguado (podridão dos frutos): risco com as chuvas de outono. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Aguado dos citrinos: o risco acompanha períodos chuvosos do outono e inverno, podendo continuar na primavera. Corrija a drenagem e evite água acumulada junto do tronco. Em situação de risco, avalie a proteção preventiva segundo o aviso agrícola; a repetição depende das condições do produto e do tempo. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 01/2026 (23 de janeiro)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=861:circ-01-2026-compressed",
+        "seccao": "pp. 6–7: gomose e míldio (aguado)",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DRAP Norte — Avisos de Entre Douro e Minho, circular 03/2019",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/edm/Circular_03_2019.pdf",
+        "seccao": "p. 5: aguado na primavera",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Corrigida a omissão do inverno: a indicação anterior só aparecia em setembro–novembro. A extensão até março é indicativa e não certifica o fim do risco nesse mês. Não se fixa limiar de chuva ou repetição sem o rótulo do produto escolhido."
+     }
     }
    ]
   },
@@ -450,11 +804,105 @@
    ],
    "intervencoes": [
     {
-     "meses": [
-      2
-     ],
+     "meses": [],
      "tipo": "fitofarmaco",
-     "texto": "Cochonilha, se houver ataque. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, óleo de inverno), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Cochonilha da figueira: indicação química suspensa enquanto não for confirmada uma finalidade autorizada aplicável à cultura e à praga.",
+     "revisao": {
+      "estado": "suspenso",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "Rui Maia de Sousa / INIAV — Manual de boas práticas de fruticultura: figueira (cópia no ISA)",
+        "url": "https://fenix.isa.ulisboa.pt/downloadFile/844497944593242/Manual%20da_Figueira.pdf",
+        "seccao": "Principais Pragas e Doenças: Ceroplastes rusci, pp. 11–12 do PDF",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO, pesquisa pública de finalidades autorizadas: Figueira",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "seccao": "Consulta de 20-11-2026: filtro NomeCultura igual a Figueira; 162 registos recebidos; transcrição em revisao/fontes/SIFITO-figueira-2026-11-20.json",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Suspensa a indicação química: na listagem autorizada filtrada por Figueira (162/162 registos), os quatro usos de óleo parafínico destinavam-se a aranhiço-vermelho, não a cochonilha. Não se conclui que nenhuma extensão ou finalidade agrupada seja aplicável; falta a sua confirmação e o rótulo. O manual agronómico, por si só, não demonstra autorização. Meses retirados para a suspensão ter efeito na app."
+     }
+    },
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Cochonilha da figueira: observe os ramos antes do abrolhamento, procurando infestação e fumagina associada. Se encontrar cochonilhas, confirme a identificação e peça avaliação do controlo adequado; esta observação não autoriza a aplicação de um óleo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "Rui Maia de Sousa / INIAV — Manual de boas práticas de fruticultura: figueira (cópia no ISA)",
+        "url": "https://fenix.isa.ulisboa.pt/downloadFile/844497944593242/Manual%20da_Figueira.pdf",
+        "seccao": "Principais Pragas e Doenças: Ceroplastes rusci, pp. 11–12 do PDF",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO, pesquisa pública de finalidades autorizadas: Figueira",
+        "url": "https://sifito.dgav.pt/divulgacao/usos",
+        "seccao": "Consulta de 20-11-2026: filtro NomeCultura igual a Figueira; 162 registos recebidos; transcrição em revisao/fontes/SIFITO-figueira-2026-11-20.json",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Nova observação que acompanha a suspensão da indicação química anterior. Fevereiro–março é indicativo; a fonte agronómica posiciona o controlo antes do abrolhamento, sem validar estes meses em Sardoura."
+     }
     }
    ]
   },
@@ -532,17 +980,101 @@
    "intervencoes": [
     {
      "meses": [
+      12,
+      1,
       2
      ],
      "tipo": "cultural",
-     "texto": "Cancro bacteriano (PSA): desinfete a ferramenta entre plantas."
+     "texto": "PSA do kiwi: na poda de inverno, desinfete cuidadosamente as ferramentas de corte e retire os ramos com sintomas. Evite transportar restos infetados para outras parcelas; peça orientação técnica para o seu encaminhamento.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "DGAV — Plano de ação nacional para o controlo da PSA do kiwi, maio de 2013",
+        "url": "https://www.drapnorte.gov.pt/drapn/conteudos/lca/PAN-PSA%20KIWI_2013.pdf",
+        "seccao": "§ 8.1, pp. 16–17: higiene das ferramentas e detritos em pomares infetados",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 01/2026 (23 de janeiro)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=861:circ-01-2026-compressed",
+        "seccao": "p. 2: remoção de ramos com sintomas na poda de inverno",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "A recomendação de higiene assenta na orientação técnica do plano de 2013, corroborada quanto à remoção de ramos pelo aviso de 2026. Não se validam como legislação atual as obrigações, produtos desinfetantes ou regras de destruição do plano antigo. Meses alinhados provisoriamente com a poda de inverno já existente na ficha."
+     }
     },
     {
      "meses": [
+      12,
+      1,
       2
      ],
      "tipo": "fitofarmaco",
-     "texto": "PSA: risco nas feridas da poda. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "PSA do kiwi: os cortes da poda de inverno são portas de entrada. Avalie a proteção preventiva após a poda, segundo o risco e o aviso agrícola. O tratamento não recupera os ramos infetados nem substitui a higiene das ferramentas e a remoção do material doente. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 01/2026 (23 de janeiro)",
+        "url": "https://agricultura.ccdr-n.pt/divulgacao/component-phocadownload-categories/73-avisos-agricolas/157-entre-douro-e-minho/161-2026?download=861:circ-01-2026-compressed",
+        "seccao": "p. 2 e quadro 7: PSA e proteção após a poda de inverno",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Confirmados o fundamento e o momento biológico; os meses não constituem uma ordem de aplicação. Nenhum produto comercial ou rótulo foi validado para a parcela."
+     }
     },
     {
      "meses": [
@@ -550,7 +1082,47 @@
       12
      ],
      "tipo": "fitofarmaco",
-     "texto": "PSA: risco nas feridas da queda da folha. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, à base de cobre), confirmado no SIFITO, segundo o rótulo."
+     "texto": "PSA do kiwi: nos pomares afetados, a colheita e a queda das folhas deixam pequenas lesões suscetíveis à infeção. Avalie a proteção preventiva após a colheita e durante a queda das folhas, segundo o aviso agrícola; não confunda esta operação com a proteção dos cortes da poda. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 13/2026 (23 de setembro)",
+        "url": "https://agrodigital.ccdr-n.pt/sia/Portals/0/Avisos/Circulares/EntreDouro/CIRC_13_EAEDM_2026_compressed.pdf",
+        "seccao": "p. 2: depois da colheita, início e fim da queda das folhas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Confirmados o fundamento e o momento biológico; os meses não constituem uma ordem de aplicação. Nenhum produto comercial ou rótulo foi validado para a parcela."
+     }
     }
    ]
   },
@@ -896,7 +1468,57 @@
       5
      ],
      "tipo": "fitofarmaco",
-     "texto": "Lesmas e caracóis com tempo húmido. Apanha manual à noite. Se os sintomas, o tempo ou o aviso agrícola indicarem risco, use um produto autorizado para esta cultura (por exemplo, fosfato férrico), confirmado no SIFITO, segundo o rótulo."
+     "texto": "Lesmas e caracóis: vigie os danos nas culturas, sobretudo com humidade e no início da instalação. Dê prioridade à remoção manual e à redução dos abrigos e restos de cultura. Só pondere moluscicida se estas medidas forem insuficientes e o ataque o justificar; confirme separadamente alface, acelga ou espinafre. Só com finalidade cultura/inimigo autorizada no SIFITO e nas condições do rótulo.",
+     "revisao": {
+      "estado": "parcial",
+      "data_revisao": "2026-11-20",
+      "alcance": {
+       "verificado": [
+        "texto",
+        "tecnica"
+       ],
+       "por_rever": [
+        "meses",
+        "produto"
+       ]
+      },
+      "fontes": [
+       {
+        "titulo": "CCDR-Norte — Avisos de Entre Douro e Minho, circular 13/2026 (23 de setembro)",
+        "url": "https://agrodigital.ccdr-n.pt/sia/Portals/0/Avisos/Circulares/EntreDouro/CIRC_13_EAEDM_2026_compressed.pdf",
+        "seccao": "p. 7: hortícolas, caracóis e lesmas",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — Proteção Integrada e Modos de Produção",
+        "url": "https://www.dgav.pt/plantas/conteudo/sanidade-vegetal/protecao-integrada-e-modos-de-producao/",
+        "seccao": "Princípios de proteção integrada: preferência pelos meios não químicos",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto",
+         "tecnica"
+        ]
+       },
+       {
+        "titulo": "DGAV — SIFITO: Manual de Consulta, atualizado em maio de 2026",
+        "url": "https://www.dgav.pt/wp-content/uploads/2026/06/SIFITO-Manual-de-Consulta_rev_20260529_M.pdf",
+        "seccao": "§ 2.2, pp. 15–22: finalidade e condições de utilização",
+        "consultado": "2026-11-20",
+        "sustenta": [
+         "texto"
+        ]
+       }
+      ],
+      "adaptacao_local": {
+       "estado": "provisoria",
+       "nota": "Janela indicativa; falta observar a fenologia e o risco na parcela de Sardoura."
+      },
+      "nota": "Mantida a janela de setembro–maio como indicação provisória, sem excluir ataques noutras épocas. Retirado o exemplo de fosfato férrico sem rótulo verificado para cada cultura. Não se atribui a alface/acelga/espinafre uma autorização comum por estarem no mesmo grupo."
+     }
     }
    ]
   },
