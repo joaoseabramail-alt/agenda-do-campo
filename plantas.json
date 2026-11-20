@@ -3996,8 +3996,6 @@
    ],
    "plantacao": {
     "meses": [
-     11,
-     12,
      1,
      2,
      3
@@ -4022,9 +4020,7 @@
     "plantar": {
      "1": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira.",
      "2": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira.",
-     "3": "Se ainda estiver em repouso, plante junto a uma ramada ou parede soalheira.",
-     "11": "Se estiver em repouso, plante junto a uma ramada ou parede soalheira.",
-     "12": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira."
+     "3": "Se ainda estiver em repouso, plante junto a uma ramada ou parede soalheira."
     }
    },
    "metodo_recomendado": [
@@ -4100,16 +4096,33 @@
      "nota": "Revistas as duas operações e notas de janeiro, fevereiro, maio e junho. Não se presume ramada/latada nem poda longa para todas as castas; retirada a quota fixa de cachos por vara. A monda depende do vingamento real. Não foi acrescentado março por cópia automática da videira de vinho."
     },
     "plantacao": {
-     "estado": "provisorio",
+     "estado": "parcial",
      "data_revisao": "2026-11-20",
      "alcance": {
+      "verificado": [
+       "meses"
+      ],
       "por_rever": [
-       "meses",
-       "texto",
-       "tecnica"
+       "tecnica",
+       "texto"
       ]
      },
-     "nota": "Proposta do ChatGPT sem fonte registada para a uva de mesa: bacelo enxertado e março acrescentado. A técnica da videira (vinho) tem fonte; aqui fica provisória."
+     "fontes": [
+      {
+       "titulo": "CVRVV — Plantação (Implantação da vinha)",
+       "url": "https://viticultura.cvrvv.pt/pt/a-vinha/implantacao/plantacao/",
+       "seccao": "Épocas de plantação; Cuidados à plantação",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "documentada",
+      "nota": "A CVRVV é a comissão da Região dos Vinhos Verdes, onde fica Castelo de Paiva (sub-região de Paiva): plantação normal de janeiro a março, mais cedo em locais quentes e secos e mais tarde nos frios e húmidos."
+     },
+     "nota": "A CVRVV refere-se à vinha (Vitis vinifera); aplicado à uva de mesa, que é a mesma espécie, só quanto aos meses. Retirados novembro e dezembro. Bacelo enxertado mantido (filoxera)."
     }
    }
   },
@@ -4177,8 +4190,6 @@
    ],
    "plantacao": {
     "meses": [
-     11,
-     12,
      1,
      2,
      3
@@ -4218,9 +4229,7 @@
     "plantar": {
      "1": "Mantenha as raízes húmidas e espalhe-as na cova.",
      "2": "Mantenha as raízes húmidas e espalhe-as na cova.",
-     "3": "Plante enquanto estiver em repouso e mantenha as raízes húmidas.",
-     "11": "Plante com a videira em repouso e mantenha as raízes húmidas.",
-     "12": "Mantenha as raízes húmidas e espalhe-as na cova."
+     "3": "Em terra fria e húmida, planta-se mais tarde; plante ainda em repouso, com as raízes húmidas."
     }
    },
    "metodo_recomendado": [
@@ -4280,10 +4289,10 @@
      "data_revisao": "2026-11-20",
      "alcance": {
       "verificado": [
-       "tecnica"
+       "tecnica",
+       "meses"
       ],
       "por_rever": [
-       "meses",
        "texto"
       ]
      },
@@ -4296,13 +4305,23 @@
        "sustenta": [
         "tecnica"
        ]
+      },
+      {
+       "titulo": "CVRVV — Plantação (Implantação da vinha)",
+       "url": "https://viticultura.cvrvv.pt/pt/a-vinha/implantacao/plantacao/",
+       "seccao": "Épocas de plantação; Cuidados à plantação",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica",
+        "meses"
+       ]
       }
      ],
      "adaptacao_local": {
-      "estado": "provisoria",
-      "nota": "O calendário da fonte é de Minnesota e não valida os meses em Sardoura."
+      "estado": "documentada",
+      "nota": "A CVRVV é a comissão da Região dos Vinhos Verdes, onde fica Castelo de Paiva (sub-região de Paiva): plantação normal de janeiro a março, mais cedo em locais quentes e secos e mais tarde nos frios e húmidos."
      },
-     "nota": "A fonte sustenta os cuidados com bacelos dormentes de raiz nua; os meses e o texto completo carecem de revisão local. \"Bacelo enxertado\" (e não pé-franco) por causa da filoxera, como na nota de propagação."
+     "nota": "A fonte sustenta os cuidados com bacelos dormentes de raiz nua; os meses e o texto completo carecem de revisão local. \"Bacelo enxertado\" (e não pé-franco) por causa da filoxera, como na nota de propagação. Meses corrigidos para janeiro–março segundo a CVRVV (2026-11-20); retirados novembro e dezembro."
     }
    }
   },

@@ -49,6 +49,20 @@ Texto do ChatGPT, sem alterações. As fontes foram abertas pelo Claude no brows
 
 As tarefas gerais não têm registo `revisao` (o formato do ESQUEMA.md aplica-se às fichas e aos tratamentos). As fontes ficam registadas aqui. Teste: `node revisao/testar-tarefa-plantacao.cjs` (só muda `calendario.json`; a tarefa aparece nos 4 meses e as contagens dos botões não mudam, porque as tarefas não contam). Cache agenda-v51.
 
+## Correção (sobre 07c10d3): vinha de janeiro a março
+
+Ao procurar fontes para a enxertia, o Claude abriu a página **CVRVV — Plantação** (viticultura.cvrvv.pt), secção «Épocas de plantação», a 20-11-2026. Diz que o período normal de plantação da vinha é o do repouso vegetativo, **de janeiro a março**. Deve plantar-se mais cedo nos locais quentes e secos e mais tarde nos frios e húmidos. A CVRVV é a comissão da Região dos Vinhos Verdes, que inclui Castelo de Paiva (sub-região de Paiva).
+
+- **Videira e uva de mesa:** plantação [11,12,1,2,3] → **[1,2,3]**, e saem as notas de novembro e dezembro.
+- **Nota de março da videira:** «Em terra fria e húmida, planta-se mais tarde; plante ainda em repouso, com as raízes húmidas.»
+- **Registos:**
+  - videira: `parcial`, com técnica e meses verificados (UMN e CVRVV) e texto por rever;
+  - uva de mesa: passa de `provisorio` a `parcial`, com só os meses verificados (a CVRVV fala da vinha; é a mesma espécie);
+  - nas duas, `adaptacao_local` passa a **documentada**.
+- O ChatGPT concordou sem consultar a web. Teste: `node revisao/testar-plantacao-vinha.cjs`. Cache agenda-v55.
+
+Na mesma ronda, a enxertia da videira e da uva de mesa ficou **sem alterações**: nem o Claude nem o ChatGPT encontraram uma fonte que se pudesse abrir e que desse as épocas de enxertia no campo.
+
 ## Testes
 
 - `node verificar.js --revisao`: sem erros; 110 parciais, 2 provisórios, 7 confirmados, 1 suspenso.
