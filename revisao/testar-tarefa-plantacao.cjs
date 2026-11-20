@@ -1,10 +1,10 @@
 // node revisao/testar-tarefa-plantacao.cjs
 // Contrato da tarefa geral "Fruteiras · cuidados na plantação" contra a9060b4; não testa Chromium.
-// Numa ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
+// Dados fixados no commit em que esta ronda foi publicada (8f516f3): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
-const root=path.join(__dirname,'..'),base='a9060b4';
+const root=path.join(__dirname,'..'),base='a9060b4',ronda='8f516f3';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 for(const f of ['plantas.json','tratamentos.json'])assert.equal(now(f),old(f),f+' fora do âmbito');
 const antes=JSON.parse(old('calendario.json')),depois=JSON.parse(now('calendario.json'));
 assert.deepEqual(depois.tarefas.slice(0,antes.tarefas.length),antes.tarefas,'tarefas existentes alteradas');

@@ -1751,7 +1751,7 @@
       8,
       9
      ],
-     "nota": "Fenda em fevereiro–março; borbulha em agosto."
+     "nota": null
     },
     "alporquia": {
      "dificuldade": 2,
@@ -1810,10 +1810,10 @@
      "12": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa."
     },
     "enx": {
-     "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
-     "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
-     "8": "Borbulha em T de olho dormente: rebenta na próxima primavera.",
-     "9": "Últimas borbulhas de olho dormente, no início do mês."
+     "2": "Enxertia de garfo, quando os gomos do porta-enxerto começam a inchar.",
+     "3": "Enxertia de garfo, quando os gomos do porta-enxerto começam a inchar.",
+     "8": "Borbulha em T: casca que descola e olho dormente que rebenta na primavera seguinte.",
+     "9": "Borbulha em T: casca que descola e olho dormente que rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -1856,6 +1856,36 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Orientação para árvores adultas de copa livre; a formação de árvores jovens e as formas conduzidas em espaldeira/cordão exigem orientação própria. Não se certificam os meses locais nem se aplica um corte uniforme a todas as variedades."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "IPB/ESA — Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: De garfo; De gomo (borbulha)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Datas a confirmar em Sardoura: guie-se pelos gomos do porta-enxerto a inchar (garfo) e pela casca que descola (borbulha)."
+     },
+     "nota": "F1 sustenta a técnica e a época do garfo de forma genérica (fim do inverno, antes do abrolhamento), não os meses da macieira. Retirada a \"época principal em Castelo de Paiva\", sem validação local, e a nota geral redundante."
     }
    }
   },
@@ -1951,9 +1981,9 @@
      "12": "Estacas lenhosas."
     },
     "enx": {
-     "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
-     "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
-     "8": "No fim de agosto, se a casca do porta-enxerto ainda se separar facilmente, pode fazer borbulhia em T de olho dormente. O gomo deverá rebentar na primavera seguinte."
+     "2": "Enxertia de garfo, quando os gomos do porta-enxerto começam a inchar.",
+     "3": "Enxertia de garfo, quando os gomos do porta-enxerto começam a inchar.",
+     "8": "Borbulha em T: casca que descola e olho dormente que rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -1989,6 +2019,36 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "Distingue manutenção de árvore estabelecida da formação de árvores jovens. A preservação das pontas refere-se aos crescimentos do ano anterior; não foi revisto o calendário da colheita."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "IPB/ESA — Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: De garfo; De gomo (borbulha)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Datas a confirmar em Sardoura: guie-se pelos gomos do porta-enxerto a inchar (garfo) e pela casca que descola (borbulha)."
+     },
+     "nota": "F1 sustenta a técnica do garfo de forma genérica; não há fonte específica do marmeleiro para os meses. Retirada a \"época principal em Castelo de Paiva\"."
     }
    }
   },
@@ -2635,10 +2695,10 @@
      "12": "Em árvores adultas de copa livre e em repouso, após a queda da folha e antes do abrolhamento, retire ramos mortos e cruzados e desbaste a copa. Preserve a madeira de frutificação; não encurte todos os rebentos, sobretudo nas variedades que frutificam nas pontas. Evite poda severa."
     },
     "enx": {
-     "2": "Enxertia de fenda no fim do mês, quando os gomos do porta-enxerto começam a inchar.",
-     "3": "Enxertia de fenda ou de coroa. Época principal em Castelo de Paiva.",
-     "8": "Borbulha em T de olho dormente: rebenta na próxima primavera.",
-     "9": "Últimas borbulhas de olho dormente, no início do mês."
+     "2": "Enxertia de fenda, quando os gomos do porta-enxerto começam a inchar.",
+     "3": "Enxertia de fenda, quando os gomos do porta-enxerto começam a inchar.",
+     "8": "Borbulha em escudo: casca que descola e olho dormente que rebenta na primavera seguinte.",
+     "9": "Borbulha em escudo: casca que descola e olho dormente que rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -2681,6 +2741,46 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Orientação para árvores adultas de copa livre; a formação de árvores jovens e as formas conduzidas em espaldeira/cordão exigem orientação própria. Não se certificam os meses locais nem se aplica um corte uniforme a todas as variedades."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "meses"
+      ],
+      "por_rever": [
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "IPB/ESA — Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: De garfo; De gomo (borbulha)",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "Revista Jardins — Método biológico da pereira",
+       "url": "https://revistajardins.pt/plantas/arvores/metodo-biologico-da-pereira/",
+       "seccao": "Técnicas de cultivo: Multiplicação",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica",
+        "meses"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Datas a confirmar em Sardoura: guie-se pelos gomos do porta-enxerto a inchar (garfo) e pela casca que descola (borbulha)."
+     },
+     "nota": "F2 sustenta fenda em fevereiro–março e escudo em agosto–setembro na pereira (referência geral, não de Sardoura). Os critérios do texto (gomos a inchar, casca que descola) não estão na F2. Retirada a \"época principal em Castelo de Paiva\"."
     }
    }
   },
