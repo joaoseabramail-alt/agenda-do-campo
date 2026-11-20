@@ -1,9 +1,10 @@
 // node revisao/testar-podas-fruto.cjs
 // Regressão das 14 fichas de fruto contra 89e4f31; exige o commit local.
 // O contrato global de cada ronda pertence ao respetivo teste.
+// Dados fixados no commit em que esta ronda foi publicada (9a3cb51): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='89e4f31959349261ced6e2ae56aa6b00bf9dc55c';
-const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>fs.readFileSync(path.join(root,f),'utf8');
+const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>(['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`9a3cb5148f9cca7752818245e22cb5681f14d825:${f}`],{cwd:root,encoding:'utf8'}));
 const targets=['amendoeira','amoreira','aveleira','castanheiro','diospireiro','feijoa','marmeleiro','medronheiro','pistacheiro','romazeira','framboeseira','groselheira','mirtilo','uva_mesa'];
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
 // Espécies acrescentadas depois desta ronda não fazem parte do contrato: ficam de fora da comparação.

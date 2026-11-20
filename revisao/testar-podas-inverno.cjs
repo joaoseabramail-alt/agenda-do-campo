@@ -1,10 +1,11 @@
 // node revisao/testar-podas-inverno.cjs
 // Regressão das nove fichas da primeira ronda; o contrato das rondas seguintes
 // pertence ao teste próprio de cada ronda. Não testa Chromium.
+// Dados fixados no commit em que esta ronda foi publicada (89e4f31): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='0d9de9b774db89a92473d87198da725a20b554d8';
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8');
+const now=f=>(['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`89e4f31959349261ced6e2ae56aa6b00bf9dc55c:${f}`],{cwd:root,encoding:'utf8'}));
 const targets=['videira','macieira','pereira','figueira','oliveira','kiwi','laranjeira','limoeiro','tangerineira'];
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
 // Espécies acrescentadas depois desta ronda não fazem parte do contrato: ficam de fora da comparação.

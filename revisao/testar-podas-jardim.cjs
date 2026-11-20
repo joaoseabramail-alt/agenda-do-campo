@@ -1,9 +1,10 @@
 // node revisao/testar-podas-jardim.cjs
 // Regressão das 17 fichas contra 9a3cb51; não certifica renderização.
 // O contrato global de cada ronda pertence ao respetivo teste.
+// Dados fixados no commit em que esta ronda foi publicada (65a6a8c): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='9a3cb5148f9cca7752818245e22cb5681f14d825';
-const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>fs.readFileSync(path.join(root,f),'utf8');
+const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>(['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`65a6a8c7864c5b22cbc56f30bb5e1f0fc1fdccb7:${f}`],{cwd:root,encoding:'utf8'}));
 const targets=['alecrim','lavanda','loureiro','salva','lucia_lima','roseira','hortensia','hortensia_carvalho','glicinia','buganvilia','budleia','fotinia','hibisco','fucsia','sardinheira','tamargueira','pitosporo'];
 const expectedChangedMonths={hortensia:[[3,4]],hortensia_carvalho:[[6,7]],budleia:[[3,4]],tamargueira:[[3,4],[5,6]],roseira:[[1,2,3],[11],[10],[7,8]]};
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));

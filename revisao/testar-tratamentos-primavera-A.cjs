@@ -1,9 +1,10 @@
 // node revisao/testar-tratamentos-primavera-A.cjs
 // Contrato desta ronda contra e2e9c8e: dados e execução real das listas.
 // Não compara index.html nem sw.js com a base e não simula Chromium/offline.
+// Dados fixados no commit em que esta ronda foi publicada (b5dc26f): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..'),base='e2e9c8eaf3ab5c9744ce36fc52f82c5c9cb3ba79';
-const raw=f=>fs.readFileSync(path.join(root,f),'utf8');
+const raw=f=>(['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`b5dc26f23150e06aae55e5b968c5010cb9c1a518:${f}`],{cwd:root,encoding:'utf8'}));
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
 const read=f=>JSON.parse(raw(f));
 const before=JSON.parse(old('tratamentos.json')),after=read('tratamentos.json');

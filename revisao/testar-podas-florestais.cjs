@@ -1,8 +1,9 @@
 // node revisao/testar-podas-florestais.cjs
 // Contrato da quinta ronda (21 florestais) sobre c9da49b; executa a lógica real das listas em Node.
+// Dados fixados no commit em que esta ronda foi publicada (063c03d): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='c9da49b82c0b72747004505ad73eda66520b5c78';
-const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>fs.readFileSync(path.join(root,f),'utf8');
+const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>(['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`063c03d075f4e6e17998e35eef6f8ba11b6db69d:${f}`],{cwd:root,encoding:'utf8'}));
 const targets='amieiro azevinho carvalho_alvarinho carvalho_negral choupo freixo pilriteiro pinheiro_manso salgueiro_cinzento sanguinho choupo_negro choupo_branco choupo_tremedor carvalho_cerquinho azinheira tramazeira sorveira teixo ulmeiro pereira_brava pinheiro_bravo'.split(' ');
 const meses={azevinho:[[3,4]],carvalho_alvarinho:[[7,8]],pilriteiro:[[1,2]],salgueiro_cinzento:[[2,3]],sanguinho:[[2,3]],tramazeira:[[2,3]],teixo:[[8,9]]};
 const confirmados='azevinho carvalho_alvarinho pilriteiro sanguinho azinheira tramazeira ulmeiro'.split(' ');

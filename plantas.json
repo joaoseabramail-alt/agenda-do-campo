@@ -1361,9 +1361,10 @@
      11,
      12,
      1,
-     2
+     2,
+     3
     ],
-    "o_que": "raiz nua ou torrão"
+    "o_que": "em torrão ou vaso"
    },
    "adubacao": "Ajuste ao vigor e à análise do solo. Evite doses fortes de azoto de ação rápida, que podem agravar a queda de frutos.",
    "rega": "Regue regularmente em períodos secos, de preferência junto ao solo. Evite encharcamento e molhar frequentemente a copa.",
@@ -1381,8 +1382,10 @@
      "3": "Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."
     },
     "plantar": {
-     "2": "Em torrão, antes do abrolhamento.",
-     "12": "De preferência em torrão: as raízes ressentem-se do transplante."
+     "1": "Evite desfazer o torrão e não plante com o solo encharcado.",
+     "2": "Evite desfazer o torrão ao plantar.",
+     "3": "Plante antes do abrolhamento e evite desfazer o torrão.",
+     "12": "Evite desfazer o torrão e escolha solo bem drenado."
     },
     "alp": {
      "5": "Pode tentar com hormona; é difícil."
@@ -1421,6 +1424,18 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "Orientação de manutenção para árvore estabelecida; não se impôs o mesmo atarraque a todos os ramos nem se certificou a época local."
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "por_rever": [
+       "meses",
+       "texto",
+       "tecnica"
+      ]
+     },
+     "nota": "Proposta do ChatGPT sem fonte registada: torrão/vaso em vez de raiz nua e março acrescentado. Texto e meses provisórios até haver fonte."
     }
    }
   },
@@ -3450,9 +3465,10 @@
      11,
      12,
      1,
-     2
+     2,
+     3
     ],
-    "o_que": "raiz nua ou torrão"
+    "o_que": "em vaso ou torrão"
    },
    "adubacao": "Em solo com cobertura orgânica regular, evite adubação de rotina. Em vaso ou perante uma carência confirmada, use adubo próprio para plantas acidófilas.",
    "rega": "Mantenha o substrato regularmente húmido, sobretudo em vaso e durante o crescimento dos frutos. Prefira água da chuva quando a água da rede for calcária.",
@@ -3466,7 +3482,11 @@
      "2": "Nos primeiros dois anos, limite os cortes a madeira danificada ou que se cruza. Nos adultos, antes do abrolhamento, retire ramos mortos, fracos ou rasteiros e renove gradualmente os mais velhos pela base, preservando gomos florais e ramos vigorosos de várias idades."
     },
     "plantar": {
-     "1": "Plantar em terra ácida e fresca."
+     "1": "Plante em terra ácida e fresca, sem encharcar.",
+     "2": "Escolha terra ácida e mantenha-a fresca, sem encharcar.",
+     "3": "Escolha terra ácida e mantenha-a fresca após a plantação.",
+     "11": "Escolha terra ácida e mantenha-a fresca, sem encharcar.",
+     "12": "Escolha terra ácida e não plante com o solo encharcado."
     },
     "estacas": {
      "6": "Estacas semi-lenhosas de 10–15 cm, em turfa e areia.",
@@ -3506,6 +3526,35 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "Retira a quota fixa de um ou dois ramos, desadequada a plantas de tamanhos diferentes. A renovação depende da idade e estrutura; não se transpôs o mês britânico considerado ideal para todas as cultivares locais."
+    },
+    "plantacao": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS Schools — Growing fruit in containers",
+       "url": "https://www.rhs.org.uk/education-learning/school-gardening/resources/food-growing/growing-fruit-in-containers",
+       "seccao": "Fruit bushes and berries",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Confirmar o pH e a drenagem do local em Sardoura."
+     },
+     "nota": "A fonte sustenta o cultivo em recipiente e a necessidade de substrato ácido; os meses e o texto completo carecem de revisão."
     }
    }
   },
@@ -3647,9 +3696,10 @@
      11,
      12,
      1,
-     2
+     2,
+     3
     ],
-    "o_que": "raiz nua ou torrão"
+    "o_que": "bacelo enxertado"
    },
    "adubacao": "Adube segundo a análise do solo e o vigor. Evite excesso de azoto, sobretudo em cepas vigorosas.",
    "rega": "Regue videiras jovens na instalação e durante secas. Em produção, ajuste a rega ao solo e ao objetivo, evitando encharcamento.",
@@ -3667,8 +3717,11 @@
      "6": "Se houver excesso de produção, ajuste a monda ao vigor, à idade e ao vingamento. Desbaste bagos apenas quando necessário em cachos apertados, depois do vingamento; não imponha o mesmo número de cachos a todas as plantas."
     },
     "plantar": {
-     "1": "Bacelo enxertado, junto a ramada ou parede soalheira.",
-     "2": "Bacelo enxertado, junto a ramada ou parede soalheira."
+     "1": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira.",
+     "2": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira.",
+     "3": "Se ainda estiver em repouso, plante junto a uma ramada ou parede soalheira.",
+     "11": "Se estiver em repouso, plante junto a uma ramada ou parede soalheira.",
+     "12": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira."
     }
    },
    "metodo_recomendado": [
@@ -3742,6 +3795,18 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "Revistas as duas operações e notas de janeiro, fevereiro, maio e junho. Não se presume ramada/latada nem poda longa para todas as castas; retirada a quota fixa de cachos por vara. A monda depende do vingamento real. Não foi acrescentado março por cópia automática da videira de vinho."
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "por_rever": [
+       "meses",
+       "texto",
+       "tecnica"
+      ]
+     },
+     "nota": "Proposta do ChatGPT sem fonte registada para a uva de mesa: bacelo enxertado e março acrescentado. A técnica da videira (vinho) tem fonte; aqui fica provisória."
     }
    }
   },
@@ -3812,9 +3877,10 @@
      11,
      12,
      1,
-     2
+     2,
+     3
     ],
-    "o_que": "raiz nua ou torrão"
+    "o_que": "bacelo enxertado"
    },
    "adubacao": "Adube segundo a análise do solo e o vigor. Evite excesso de azoto, sobretudo em cepas vigorosas.",
    "rega": "Regue videiras jovens na instalação e durante secas. Em produção, ajuste a rega ao solo e ao objetivo, evitando encharcamento.",
@@ -3845,6 +3911,13 @@
      "4": "Ainda a tempo para enxertia de fenda no campo.",
      "8": "Enxertia de borbulha (lasca) na cepa, de meados de agosto a setembro.",
      "9": "Terminar a enxertia de borbulha até meados do mês."
+    },
+    "plantar": {
+     "1": "Mantenha as raízes húmidas e espalhe-as na cova.",
+     "2": "Mantenha as raízes húmidas e espalhe-as na cova.",
+     "3": "Plante enquanto estiver em repouso e mantenha as raízes húmidas.",
+     "11": "Plante com a videira em repouso e mantenha as raízes húmidas.",
+     "12": "Mantenha as raízes húmidas e espalhe-as na cova."
     }
    },
    "metodo_recomendado": [
@@ -3898,6 +3971,35 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Revistos poda de inverno, desladroamento e desponta. Retirada a indicação inespecífica de desfolha em junho; mantidos todos os meses, incluindo os das operações em verde. A época final depende do abrolhamento, não da designação Vinho Verde nem apenas de a casta ser tardia."
+    },
+    "plantacao": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Minnesota Extension — Growing grapes in the home garden",
+       "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-grapes-in-the-home-garden",
+       "seccao": "Preparing vines for planting",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "O calendário da fonte é de Minnesota e não valida os meses em Sardoura."
+     },
+     "nota": "A fonte sustenta os cuidados com bacelos dormentes de raiz nua; os meses e o texto completo carecem de revisão local. \"Bacelo enxertado\" (e não pé-franco) por causa da filoxera, como na nota de propagação."
     }
    }
   },

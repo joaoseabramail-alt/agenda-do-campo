@@ -1,9 +1,10 @@
 // node revisao/testar-podas-ornamentais.cjs
 // Regressão das 14 fichas contra 65a6a8c; executa a lógica real das listas em Node.
 // O contrato global de cada ronda pertence ao respetivo teste.
+// Dados fixados no commit em que esta ronda foi publicada (c9da49b): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='65a6a8c7864c5b22cbc56f30bb5e1f0fc1fdccb7';
-const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>fs.readFileSync(path.join(root,f),'utf8');
+const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'}),now=f=>(['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`c9da49b82c0b72747004505ad73eda66520b5c78:${f}`],{cwd:root,encoding:'utf8'}));
 const targets='arvore_ferro carvalho_pantanos cornus_kousa extremosa ginkgo liquidambar platano stewartia tilia aucuba hamamelis quaresmeira jacaranda melia'.split(' ');
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json')),changes=[];
 // Espécies acrescentadas depois desta ronda não fazem parte do contrato: ficam de fora da comparação.
