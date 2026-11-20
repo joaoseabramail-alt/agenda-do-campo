@@ -9531,6 +9531,358 @@
     "alp",
     "div"
    ]
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": false,
+   "toxicidade": null,
+   "id": "jacaranda",
+   "nome": "Jacarandá",
+   "nome_cientifico": "Jacaranda mimosifolia",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "geada": true,
+   "nota_sardoura": "Escolha um local muito abrigado e soalheiro, a meia-encosta e longe dos fundos de vale, e proteja-o nos primeiros invernos.",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "nota": "Sem estratificação; germina em poucas semanas com calor. As plantas de semente podem demorar muitos anos a florir."
+    },
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": "Estacas semi-lenhosas com hormona, em abrigo quente e húmido."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      2,
+      3
+     ],
+     "tipo": "Só poda de formação ligeira; podas fortes provocam rebentos verticais e reduzem a floração"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "em torrão"
+   },
+   "recolha_sementes": [
+    12,
+    1,
+    2
+   ],
+   "adubacao": "Use cobertura orgânica. Evite excesso de azoto, que favorece folhas em vez de flores.",
+   "rega": "Regue na instalação e nos primeiros verões. Árvores estabelecidas toleram alguma seca.",
+   "floracao": "Flores azul-violeta no fim da primavera, por vezes de novo no fim do verão.",
+   "solo": "Solo bem drenado, de preferência leve. Evite encharcamento.",
+   "resistencia_geada": "As plantas jovens sofrem com geada. Árvores adultas toleram geadas ligeiras e curtas.",
+   "exposicao": "Sol pleno, em local abrigado."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": false,
+   "toxicidade": "Frutos e sementes muito tóxicos para pessoas e animais.",
+   "id": "melia",
+   "nome": "Mélia (amargoseira)",
+   "nome_cientifico": "Melia azedarach",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "legal": "Escapa facilmente ao cultivo e é invasora noutras regiões. Confirme o estatuto na Lista Nacional de Espécies Invasoras (ICNF) antes de propagar, e não a plante junto a habitats naturais.",
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "estacas",
+    "alp"
+   ],
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Deixe os frutos de molho 1–2 dias e retire a polpa (com luvas). Germina sem estratificação."
+    },
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas lenhosas ou de raiz durante o repouso."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      1,
+      2
+     ],
+     "tipo": "Poda de formação nas árvores jovens; nas adultas, retire ramos partidos (a madeira é quebradiça)"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2,
+     3
+    ],
+    "o_que": "raiz nua ou torrão"
+   },
+   "recolha_sementes": [
+    11,
+    12,
+    1
+   ],
+   "adubacao": "Dispensa adubação regular; use cobertura orgânica na instalação.",
+   "rega": "Regue na instalação. Depois tolera bem a seca.",
+   "floracao": "Cachos lilás perfumados na primavera.",
+   "solo": "Tolera solos pobres; prefere solo bem drenado.",
+   "resistencia_geada": "Árvore adulta tolera geadas moderadas; plantas jovens são mais sensíveis.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": false,
+   "toxicidade": null,
+   "id": "magnolia_acuminata",
+   "nome": "Magnólia-pepino",
+   "nome_cientifico": "Magnolia acuminata",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "metodo_recomendado": [
+    "enxertia"
+   ],
+   "nota_variedade": "As cultivares e híbridos (por exemplo, de flor amarela) só se mantêm por enxertia ou alporquia.",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Limpe a polpa vermelha das sementes no outono e estratifique 90–120 dias no frio húmido.",
+     "fiel_variedade": false
+    },
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7
+     ],
+     "nota": "Estacas semi-lenhosas com hormona; enraízam com dificuldade."
+    },
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      2,
+      3
+     ],
+     "nota": "Enxertia de garfo em porta-enxerto de magnólia de semente."
+    },
+    "alporquia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Só poda mínima no verão; no fim do inverno as magnólias perdem muita seiva pelos cortes"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     2,
+     3
+    ],
+    "o_que": "em torrão de preferência (raízes carnudas e sensíveis)"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Use cobertura orgânica. Reforce só se o crescimento for fraco.",
+   "rega": "Mantenha humidade regular nos primeiros anos e em verões secos.",
+   "floracao": "Flores verde-amareladas, discretas, no fim da primavera, depois das folhas.",
+   "solo": "Solo profundo, fértil e fresco, de ácido a neutro, bem drenado.",
+   "resistencia_geada": "Muito rústica quando estabelecida.",
+   "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": false,
+   "toxicidade": null,
+   "id": "cipreste_macrocarpa",
+   "nome": "Cipreste-de-Monterey",
+   "nome_cientifico": "Cupressus macrocarpa",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "metodo_recomendado": [
+    "estacas"
+   ],
+   "nota_variedade": "Para cultivares (por exemplo, 'Goldcrest'), use estacas; a semente dá a forma da espécie.",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 1,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Sementes das pinhas maduras; estratificação fria curta (cerca de 1 mês) melhora a germinação.",
+     "fiel_variedade": false
+    },
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      9,
+      10,
+      11
+     ],
+     "nota": "Estacas semi-lenhosas com talão e hormona, em abrigo húmido; enraízam devagar."
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "tipo": "Aparo ligeiro de forma ou de sebe; não corte até à madeira velha sem folhas, que não volta a rebentar"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     10,
+     11,
+     3
+    ],
+    "o_que": "em torrão (melhor em outubro–novembro)"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Dispensa adubação regular; use cobertura orgânica na instalação.",
+   "rega": "Regue na instalação e nos primeiros verões. Depois tolera alguma seca.",
+   "floracao": "Não tem flores verdadeiras; forma pinhas que amadurecem no segundo ano.",
+   "solo": "Solo bem drenado, mesmo arenoso; tolera vento e ar marítimo.",
+   "resistencia_geada": "Tolera geadas moderadas; geadas fortes e vento frio podem queimar a folhagem.",
+   "exposicao": "Sol pleno."
+  },
+  {
+   "tipo_lua": "a",
+   "autoctone": false,
+   "toxicidade": null,
+   "id": "cladrastis",
+   "nome": "Madeira-amarela",
+   "nome_cientifico": "Cladrastis kentukea",
+   "categoria": "ornamental",
+   "folha": "caduca",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": "Sementes duras: escarifique ou deixe de molho em água quente e estratifique cerca de 90 dias no frio. As plantas de semente demoram anos a florir."
+    },
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      12,
+      1,
+      2
+     ],
+     "nota": "Estacas de raiz durante o repouso."
+    },
+    "alporquia": {
+     "dificuldade": 3,
+     "meses": [
+      4,
+      5,
+      6
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      7,
+      8
+     ],
+     "tipo": "Pode só no verão: no inverno e primavera perde muita seiva. Forme cedo um eixo único, porque as forquilhas partem com facilidade"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     11,
+     12,
+     1,
+     2,
+     3
+    ],
+    "o_que": "raiz nua (jovem) ou torrão"
+   },
+   "recolha_sementes": [
+    9,
+    10
+   ],
+   "adubacao": "Use cobertura orgânica; como leguminosa, dispensa azoto.",
+   "rega": "Regue na instalação e em verões secos nos primeiros anos.",
+   "floracao": "Cachos brancos perfumados no fim da primavera; floresce melhor em anos alternados.",
+   "solo": "Solo fértil e bem drenado; tolera solo ácido ou calcário.",
+   "resistencia_geada": "Muito rústica.",
+   "exposicao": "Sol pleno."
   }
  ]
 }

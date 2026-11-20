@@ -1919,6 +1919,48 @@
      "texto": "Em parcelas com histórico de ataque, proteja as plântulas com rede fina desde a sementeira, usando um canteiro em rotação."
     }
    ]
+  },
+  {
+   "grupo": "Cipreste-de-Monterey",
+   "especies": [
+    "cipreste_macrocarpa"
+   ],
+   "problemas": "Cancro do cipreste (Seiridium)",
+   "vigiar": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "intervencoes": [
+    {
+     "meses": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "tipo": "monitorizacao",
+     "texto": "Procure ramos que secam de repente, com a folhagem avermelhada, e lesões na casca com resina a escorrer."
+    },
+    {
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "tipo": "cultural",
+     "texto": "Corte os ramos doentes bem abaixo da lesão, em tempo seco, desinfete a ferramenta e destrua os restos fora da parcela."
+    }
+   ]
   }
  ]
 }
