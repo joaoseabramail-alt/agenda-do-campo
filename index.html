@@ -462,8 +462,8 @@ function mostrarResultados(){
     modoRes="procura";$("verMinhas").setAttribute("aria-expanded","false");
   }else if(modoRes==="minhas"){
     res=DB.plantas.filter(p=>minhas.has(p.id)).sort((a,b)=>a.nome.localeCompare(b.nome,"pt"));
-    info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":desconhecidas.size?"Nenhuma das plantas guardadas é reconhecida por esta versão da app.":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
-    if(desconhecidas.size)info+=" "+(desconhecidas.size===1?"Tem 1 planta guardada que esta versão da app não reconhece. Continua guardada e é incluída na exportação.":"Tem "+desconhecidas.size+" plantas guardadas que esta versão da app não reconhece. Continuam guardadas e são incluídas na exportação.");
+    info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":desconhecidas.size?"":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
+    if(desconhecidas.size)info+=(info?" ":"")+(desconhecidas.size===1?"Tem 1 planta guardada que esta versão da app não reconhece. Continua guardada e é incluída na exportação.":"Tem "+desconhecidas.size+" plantas guardadas que esta versão da app não reconhece. Continuam guardadas e são incluídas na exportação.");
   }else{box.hidden=true;box.innerHTML="";return}
   box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.map(linhaPlanta).join("")}</ul>`:""}`;
   box.hidden=false;
