@@ -349,7 +349,7 @@ function contar(k,m){const l=lista(k,m);return l.reduce((n,i)=>n+(i.grupo?i.nota
 /* ---------- Estado e desenho ---------- */
 let day=new Date(); day.setHours(12,0,0,0);
 let cur="podas";
-let minhas=new Set();try{minhas=new Set(JSON.parse(localStorage.getItem("minhas-plantas")||"[]"))}catch(e){}
+let minhas=new Set(),desconhecidas=new Set();try{const v=JSON.parse(localStorage.getItem("minhas-plantas")||"[]");if(Array.isArray(v))minhas=new Set(v.filter(x=>typeof x==="string"))}catch(e){}
 let soMinhas=false;try{soMinhas=localStorage.getItem("so-minhas")==="1"}catch(e){}
 try{const s=localStorage.getItem("agenda-cat"); if(s&&CAT[s]) cur=s}catch(e){}
 const $=id=>document.getElementById(id);
@@ -428,7 +428,8 @@ document.addEventListener("click",e=>{
 });
 /* ---------- As minhas plantas e pesquisa ---------- */
 const semAc=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
-function guardarMinhas(){try{localStorage.setItem("minhas-plantas",JSON.stringify([...minhas]))}catch(e){}}
+// As desconhecidas (ids que esta versão da app não conhece) são guardadas e exportadas na mesma, para não se perderem
+function guardarMinhas(){try{localStorage.setItem("minhas-plantas",JSON.stringify([...minhas,...desconhecidas]))}catch(e){}}
 function botaoMinha(p){const t=minhas.has(p.id);return `<button type="button" class="minha-btn" data-minha="${esc(p.id)}" aria-pressed="${t}">${t?"★ Nas minhas plantas":"☆ Adicionar às minhas plantas"}</button>`}
 function atualizarContagens(){if(!DB)return;const m=day.getMonth()+1;document.querySelectorAll(".cat").forEach(x=>x.querySelector(".cnt").textContent=cntTxt(x.dataset.k,contar(x.dataset.k,m)))}
 function atualizarMinhasUI(){
@@ -460,7 +461,7 @@ function mostrarResultados(){
     res=DB.plantas.filter(p=>minhas.has(p.id)).sort((a,b)=>a.nome.localeCompare(b.nome,"pt"));
     info=res.length?"As suas plantas. Toque em ★ para tirar uma da lista.":"Ainda não marcou nenhuma planta. Procure uma acima, ou abra a ficha de uma planta em qualquer botão, e toque em ☆.";
   }else{box.hidden=true;box.innerHTML="";return}
-  box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.slice(0,40).map(linhaPlanta).join("")}</ul>`:""}`;
+  box.innerHTML=`<div class="res-info">${info}</div>${res.length?`<ul class="resultados">${res.map(linhaPlanta).join("")}</ul>`:""}`;
   box.hidden=false;
 }
 $("procura").addEventListener("input",()=>{if(!$("procura").value.trim()&&modoRes==="procura")modoRes="";mostrarResultados()});
@@ -480,7 +481,7 @@ function msgCopia(texto,erro){const m=$("copiaMsg");m.textContent=texto;m.classL
 $("exportar").addEventListener("click",()=>{
   if(!minhas.size)return;
   const dados={formato:FORMATO,versao:VERSAO_FORMATO,exportado:new Date().toISOString(),
-    plantas:[...minhas].sort(),nomes:[...minhas].sort().map(id=>{const p=DB&&DB.plantas.find(x=>x.id===id);return p?p.nome:id})};
+    plantas:[...minhas,...desconhecidas].sort(),nomes:[...minhas,...desconhecidas].sort().map(id=>{const p=DB&&DB.plantas.find(x=>x.id===id);return p?p.nome:id})};
   const blob=new Blob([JSON.stringify(dados,null,1)],{type:"application/json"});
   const url=URL.createObjectURL(blob),a=document.createElement("a");
   a.href=url;a.download="minhas-plantas-"+iso(new Date())+".json";document.body.appendChild(a);a.click();a.remove();
@@ -526,7 +527,7 @@ $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)render()});
 render();
 Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()})))
-  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};minhas=new Set([...minhas].filter(id=>DB.plantas.some(p=>p.id===id)));atualizarMinhasUI();render();mostrarResultados()})
+  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};const ids=new Set(DB.plantas.map(p=>p.id));desconhecidas=new Set([...minhas].filter(id=>!ids.has(id)));minhas=new Set([...minhas].filter(id=>ids.has(id)));atualizarMinhasUI();render();mostrarResultados()})
   .catch(()=>{$("panel").innerHTML=`<div class="panel-head"><h2>Sem dados</h2><p>Não foi possível abrir a base de dados das plantas. Ligue-se à internet e abra a app outra vez.</p></div>`});
 </script>
 <div id="instalar" hidden><span id="instTxt">Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar" hidden>Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>
