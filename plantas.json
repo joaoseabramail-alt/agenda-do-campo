@@ -1510,7 +1510,8 @@
      "2": "Em repouso e antes do abrolhamento, faça desbaste ligeiro dos ramos mortos, cruzados ou fracos. Preserve madeira de um ano e as pontas produtivas; evite encurtar todos os ramos por igual."
     },
     "enx": {
-     "3": "Enxertia de fenda ou coroa no fim do mês, com garfos guardados no frio."
+     "3": "Inglesa em repouso, com garfos de dois gomos colhidos dormentes e guardados no frio.",
+     "4": "Borbulha em lasca desde o início do crescimento até cerca de um mês após surgirem folhas."
     },
     "plantar": {
      "1": "Evite desfazer o torrão e não plante com o solo encharcado.",
@@ -1567,6 +1568,36 @@
       ]
      },
      "nota": "Proposta do ChatGPT sem fonte registada: torrão/vaso em vez de raiz nua e março acrescentado. Texto e meses provisórios até haver fonte."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — HS1389: Japanese Persimmon Cultural Practices in Florida",
+       "url": "https://ask.ifas.ufl.edu/publication/HS1389",
+       "seccao": "Propagation; Grafting Methods",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Florida: março–abril mantidos como janela indicativa em Sardoura. A borbulha de outono (mais de seis semanas antes da primeira geada) fica por avaliar."
+     },
+     "nota": "A fonte: inglesa durante o repouso, com garfos de dois gomos colhidos dormentes e guardados no frio; borbulha em lasca de primavera do início do crescimento até um mês após as folhas; fenda no topo sobretudo para mudar a variedade em árvores velhas. Proposta do ChatGPT; o Claude juntou a conservação dos garfos à nota de março, em vez da nota geral."
     }
    }
   },
