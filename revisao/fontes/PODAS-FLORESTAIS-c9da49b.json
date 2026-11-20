@@ -1,0 +1,174 @@
+{
+ "ronda": "PODAS-FLORESTAIS",
+ "base": "c9da49b",
+ "consultado": "2026-11-20",
+ "fontes": {
+  "afg_meses_tecnica": {
+   "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+   "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+   "seccao": "Épocas de poda recomendables",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "tecnica"
+   ]
+  },
+  "afg_tecnica": {
+   "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+   "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+   "seccao": "Épocas de poda recomendables",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "tecnica"
+   ]
+  },
+  "braga": {
+   "titulo": "Diário da República — Regulamento n.º 379/2025 (Arvoredo em meio urbano, Município de Braga)",
+   "url": "https://diariodarepublica.pt/dr/detalhe/regulamento/379-2025-911689083",
+   "seccao": "Época de poda",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto"
+   ]
+  },
+  "gouveia": {
+   "titulo": "Diário da República — Regulamento n.º 112/2026 (Município de Gouveia)",
+   "url": "https://diariodarepublica.pt/dr/detalhe/regulamento/112-2026-1033399169",
+   "seccao": "Época de poda",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto"
+   ]
+  },
+  "plantref": {
+   "titulo": "Plant Reference — Alnus glutinosa",
+   "url": "https://www.plantref.org/plants/alnus-glutinosa",
+   "seccao": "Pruning",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "tecnica"
+   ]
+  },
+  "rhs_light": {
+   "titulo": "RHS — Trees and shrubs: light pruning",
+   "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+   "seccao": "When to prune",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "texto",
+    "tecnica"
+   ]
+  },
+  "rhs_trees": {
+   "titulo": "RHS — Pruning guide for trees",
+   "url": "https://www.rhs.org.uk/plants/types/trees/pruning-guide",
+   "seccao": "When to prune",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto",
+    "tecnica"
+   ]
+  },
+  "rhs_hawthorn": {
+   "titulo": "RHS — Hawthorn: growing guide",
+   "url": "https://www.rhs.org.uk/plants/hawthorn/growing-guide",
+   "seccao": "Pruning",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "texto",
+    "tecnica"
+   ]
+  },
+  "rhs_salix": {
+   "titulo": "RHS — Salix atrocinerea",
+   "url": "https://www.rhs.org.uk/plants/324269/salix-atrocinerea/details",
+   "seccao": "Pruning",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto",
+    "tecnica"
+   ]
+  },
+  "rhs_frangula": {
+   "titulo": "RHS — Frangula alnus",
+   "url": "https://www.rhs.org.uk/plants/158867/frangula-alnus/details",
+   "seccao": "Pruning",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "texto",
+    "tecnica"
+   ]
+  },
+  "utah": {
+   "titulo": "University of Utah — Tree Tour: European Mountain-ash",
+   "url": "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=european-mountain-ash",
+   "seccao": "Care",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "texto"
+   ]
+  },
+  "icnf_rubus": {
+   "titulo": "ICNF — Catálogo de serviços RUBUS (poda de sobreiro e azinheira)",
+   "url": "https://rubus.icnf.pt/RUBUSSA/CatalogoServicos.aspx",
+   "seccao": "Poda de azinheira",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "texto"
+   ]
+  },
+  "icnf_guia": {
+   "titulo": "ICNF — Guia de boas práticas para a gestão do arvoredo",
+   "url": "https://www.icnf.pt/api/file/doc/3144f15a3faec1cc",
+   "seccao": "Poda",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto"
+   ]
+  },
+  "cornell": {
+   "titulo": "Cornell University — Yew: toxicology in domestic and wild species",
+   "url": "https://poisonousplants.ansci.cornell.edu/yew.html",
+   "seccao": "Toxicidade",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto"
+   ]
+  },
+  "ucipm": {
+   "titulo": "University of California IPM — Dutch elm disease",
+   "url": "https://ipm.ucanr.edu/home-and-landscape/dutch-elm-disease/",
+   "seccao": "Management",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "meses",
+    "texto",
+    "tecnica"
+   ]
+  },
+  "uevora": {
+   "titulo": "ICNF / Universidade de Évora — Espécies de árvores e arbustos indígenas de Portugal (2016)",
+   "url": "https://gume.dbio.uevora.pt/ICNF_EspeciesIndgenas_Edicao2016-2.pdf",
+   "seccao": "Pyrus cordata",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto"
+   ]
+  },
+  "icnf_nem": {
+   "titulo": "ICNF — Controlo do nemátodo da madeira do pinheiro",
+   "url": "https://www.icnf.pt/florestas/fitossanidade/nematododamadeiradopinheiro",
+   "seccao": "Medidas de controlo",
+   "consultado": "2026-11-20",
+   "sustenta": [
+    "texto",
+    "tecnica"
+   ]
+  }
+ }
+}

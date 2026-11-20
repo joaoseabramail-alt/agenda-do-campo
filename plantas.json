@@ -4641,7 +4641,7 @@
       1,
       2
      ],
-     "tipo": "Em árvore jovem, corrija apenas ramos concorrentes ou cruzados para estabelecer a estrutura. Evite reduzir uma copa adulta por rotina"
+     "tipo": "Em árvores jovens, corrija apenas pequenos ramos concorrentes ou cruzados. Preserve a copa natural; ramos grandes exigem avaliação técnica"
     }
    ],
    "plantacao": {
@@ -4659,7 +4659,47 @@
    "solo": "Solo húmido a molhado, adequado a margens e terrenos frescos.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol ou meia-sombra.",
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Plant Reference — Alnus glutinosa",
+       "url": "https://www.plantref.org/plants/alnus-glutinosa",
+       "seccao": "Pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "Diário da República — Regulamento n.º 379/2025 (Arvoredo em meio urbano, Município de Braga)",
+       "url": "https://diariodarepublica.pt/dr/detalhe/regulamento/379-2025-911689083",
+       "seccao": "Época de poda",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "O ChatGPT propôs agosto–setembro (menos perda de seiva), com base numa única página genérica (plantref.org), que fala de «fim do verão ou outono» sem meses. Por não haver fonte institucional, mantêm-se dezembro–fevereiro; a mudança fica por rever."
+    }
+   }
   },
   {
    "id": "arvore_ferro",
@@ -4896,10 +4936,9 @@
     {
      "meses": [
       3,
-      4,
-      2
+      4
      ],
-     "tipo": "Em exemplares cultivados de origem legal, apare ligeiramente, se necessário, para conservar a forma e evitar danos nos ramos"
+     "tipo": "Em exemplares cultivados de origem legal, pode ligeiramente só se necessário, preservando a forma natural. Evite podar com geada prevista"
     }
    ],
    "plantacao": {
@@ -4937,7 +4976,38 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal, notas.podas.2, notas.podas.3, notas.sem, poda, propagacao.sementeira.nota, recolha_sementes. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "texto",
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Trees and shrubs: light pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+       "seccao": "When to prune",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Retira-se fevereiro: poda ligeira no fim do inverno ou início da primavera, ajustada às geadas locais. Mantém-se «origem legal»."
+    }
+   }
   },
   {
    "id": "bordo_japones",
@@ -5070,11 +5140,10 @@
    "poda": [
     {
      "meses": [
-      12,
-      1,
-      2
+      7,
+      8
      ],
-     "tipo": "Faça formação apenas se a árvore jovem tiver ramos que competem com o eixo ou se roçam. Em adultos, preserve a copa natural"
+     "tipo": "Em árvores jovens, corrija apenas pequenos ramos concorrentes ou cruzados. Preserve a copa natural; ramos grandes exigem avaliação técnica"
     }
    ],
    "plantacao": {
@@ -5096,7 +5165,36 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+       "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+       "seccao": "Épocas de poda recomendables",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Dezembro–fevereiro passa a julho–agosto. A tabela da Asociación Forestal de Galicia indica «entre julio y agosto» para Quercus robur (confirmado pelo Claude na página). Evitar dias de calor ou seca intensos."
+    }
+   }
   },
   {
    "id": "carvalho_pantanos",
@@ -5251,7 +5349,7 @@
       1,
       2
      ],
-     "tipo": "Selecione o eixo apenas em exemplares jovens conduzidos em fuste. Em exemplares livres, mantenha o porte e retire só ramos problemáticos"
+     "tipo": "Selecione o eixo apenas em árvores jovens conduzidas em fuste. Preserve o porte natural; ramos grandes exigem avaliação técnica"
     }
    ],
    "plantacao": {
@@ -5273,7 +5371,37 @@
    "recolha_sementes": [
     10,
     11
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Diário da República — Regulamento n.º 379/2025 (Arvoredo em meio urbano, Município de Braga)",
+       "url": "https://diariodarepublica.pt/dr/detalhe/regulamento/379-2025-911689083",
+       "seccao": "Época de poda",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantém-se o inverno, provisoriamente. O regulamento de Braga dá o outono–inverno como época adequada para a maioria das podas, mas não é específico de Quercus pyrenaica."
+    }
+   }
   },
   {
    "id": "cerejeira_brava",
@@ -5494,7 +5622,7 @@
       1,
       2
      ],
-     "tipo": "Em árvores jovens, preserve o eixo principal e retire pequenos ramos concorrentes ou cruzados. Intervenções em ramos grandes exigem avaliação"
+     "tipo": "Em árvores jovens, preserve o eixo principal e retire pequenos ramos concorrentes ou cruzados. Ramos grandes exigem avaliação técnica"
     }
    ],
    "plantacao": {
@@ -5520,7 +5648,37 @@
      "11": "Estacas lenhosas."
     }
    },
-   "foto": "Populus"
+   "foto": "Populus",
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+       "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+       "seccao": "Épocas de poda recomendables",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se os meses. A tabela galega indica para Populus «invierno y repaso de chupones en verano»; a RHS (fim do verão) não foi usada para mudar meses em Portugal."
+    }
+   }
   },
   {
    "id": "cornus_kousa",
@@ -5781,7 +5939,7 @@
       1,
       2
      ],
-     "tipo": "Em árvore jovem, conserve um eixo dominante e corrija forquilhas concorrentes cedo. Em árvores adultas, avalie danos antes de podar"
+     "tipo": "Em árvore jovem, conserve um eixo dominante e corrija cedo as forquilhas concorrentes. Em árvores adultas, peça avaliação técnica para ramos grandes"
     }
    ],
    "plantacao": {
@@ -5799,7 +5957,39 @@
    "solo": "Solo profundo e fresco. Tolera terrenos húmidos, mas a instalação depende da drenagem do local.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol pleno.",
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Pruning guide for trees",
+       "url": "https://www.rhs.org.uk/plants/types/trees/pruning-guide",
+       "seccao": "When to prune",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se os meses. Atenção: a tabela galega indica «entre junio y agosto» para Fraxinus sp.; a época fica por rever."
+    }
+   }
   },
   {
    "id": "ginkgo",
@@ -6289,11 +6479,10 @@
    "poda": [
     {
      "meses": [
-      12,
       1,
       2
      ],
-     "tipo": "Em exemplares livres, desbaste apenas ramos danificados ou cruzados. Conserve os ramos laterais que sustentam flores e frutos"
+     "tipo": "Em exemplares livres, retire apenas ramos danificados ou cruzados. Preserve a forma natural e os ramos que dão flores e frutos"
     }
    ],
    "plantacao": {
@@ -6311,7 +6500,38 @@
    "solo": "Tolera vários solos; evite extremos de seca ou saturação durante a instalação.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol ou meia-sombra.",
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "texto",
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Hawthorn: growing guide",
+       "url": "https://www.rhs.org.uk/plants/hawthorn/growing-guide",
+       "seccao": "Pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Retira-se dezembro; mantém-se o repouso de inverno."
+    }
+   }
   },
   {
    "id": "pinheiro_manso",
@@ -6358,7 +6578,7 @@
       1,
       2
      ],
-     "tipo": "Limpeza de ramos baixos e secos"
+     "tipo": "Desrame apenas se necessário, preservando o colar do ramo. Cumpra o MADC e elimine os sobrantes segundo as regras do nemátodo do pinheiro"
     }
    ],
    "plantacao": {
@@ -6377,10 +6597,6 @@
    "exposicao": "Sol pleno.",
    "toxicidade": null,
    "notas": {
-    "podas": {
-     "1": "Limpeza de ramos baixos e secos; corte rente ao tronco.",
-     "12": "Limpeza de ramos baixos e secos; corte rente ao tronco."
-    },
     "plantar": {
      "3": "Plante um exemplar jovem em vaso ou torrão, em local soalheiro e solo bem drenado. Adie se houver geada prevista.",
      "11": "Planta jovem em vaso ou torrão, em local soalheiro."
@@ -6398,7 +6614,39 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "ICNF — Controlo do nemátodo da madeira do pinheiro",
+       "url": "https://www.icnf.pt/florestas/fitossanidade/nematododamadeiradopinheiro",
+       "seccao": "Medidas de controlo",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Acrescentam-se as obrigações do MADC e do nemátodo, como no pinheiro-bravo. Retiram-se as notas de janeiro e dezembro, que mandavam «corte rente ao tronco» e se sobrepunham ao texto. A tabela galega sugere meses quentes e secos para Pinus pinaster; mantém-se o inverno por prudência com o nemátodo."
+    }
+   }
   },
   {
    "id": "platano",
@@ -6561,11 +6809,10 @@
    "poda": [
     {
      "meses": [
-      12,
-      1,
-      2
+      2,
+      3
      ],
-     "tipo": "Em exemplares livres, retire apenas ramos danificados ou que se rocem. Conserve a ramificação e as gemas florais"
+     "tipo": "Em exemplares livres, retire apenas ramos danificados ou que se rocem. Preserve a forma natural e as gemas florais; evite dias de geada"
     }
    ],
    "plantacao": {
@@ -6585,6 +6832,38 @@
    "toxicidade": null,
    "notas": {
     "sem": {}
+   },
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Salix atrocinerea",
+       "url": "https://www.rhs.org.uk/plants/324269/salix-atrocinerea/details",
+       "seccao": "Pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Dezembro–fevereiro passa a fevereiro–março (fim do inverno), com cautela nas geadas; compromisso com a floração por confirmar."
+    }
    }
   },
   {
@@ -6627,11 +6906,10 @@
    "poda": [
     {
      "meses": [
-      12,
-      1,
-      2
+      2,
+      3
      ],
-     "tipo": "Preserve o porte arbustivo. Desbaste só ramos danificados ou em conflito e deixe os restantes florescer e frutificar"
+     "tipo": "Preserve o porte arbustivo. Retire apenas ramos danificados ou em conflito e deixe os restantes florescer e frutificar; evite dias de geada"
     }
    ],
    "plantacao": {
@@ -6648,7 +6926,38 @@
    "floracao": "Flores pequenas do fim da primavera ao verão.",
    "solo": "Solo fresco a húmido, frequentemente ácido.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
-   "exposicao": "Sol ou meia-sombra."
+   "exposicao": "Sol ou meia-sombra.",
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "texto",
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Frangula alnus",
+       "url": "https://www.rhs.org.uk/plants/158867/frangula-alnus/details",
+       "seccao": "Pruning",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Dezembro–fevereiro passa a fevereiro–março."
+    }
+   }
   },
   {
    "id": "sobreiro",
@@ -12243,7 +12552,7 @@
       1,
       2
      ],
-     "tipo": "Em árvores jovens, conserve um eixo dominante e retire ramos baixos aos poucos. Nas adultas, retire ramos mortos ou partidos"
+     "tipo": "Poda mínima, fora de geadas: em jovem, conserve um eixo dominante; em adulta, retire ramos mortos ou partidos. Ramos grandes: consulte um técnico"
     }
    ],
    "plantacao": {
@@ -12268,7 +12577,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+       "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+       "seccao": "Épocas de poda recomendables",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se os meses; fontes ibéricas tratam Populus em exploração florestal, sem validar esta espécie no local."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12318,7 +12657,7 @@
       1,
       2
      ],
-     "tipo": "Na formação, conserve um eixo dominante. Corte os rebentos de raiz que não quer junto à base"
+     "tipo": "Poda mínima, fora de geadas: em jovem, conserve um eixo dominante e retire rebentos de raiz indesejados. Ramos grandes: consulte um técnico"
     }
    ],
    "plantacao": {
@@ -12343,7 +12682,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+       "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+       "seccao": "Épocas de poda recomendables",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se os meses; fontes ibéricas tratam Populus em exploração florestal, sem validar esta espécie no local."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12393,7 +12762,7 @@
       1,
       2
      ],
-     "tipo": "Dispensa poda regular. Retire ramos mortos e os rebentos de raiz que não quer"
+     "tipo": "Dispensa poda regular. Fora de geadas, retire apenas ramos mortos ou partidos e rebentos de raiz indesejados. Ramos grandes: consulte um técnico"
     }
    ],
    "plantacao": {
@@ -12418,7 +12787,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Asociación Forestal de Galicia — A poda (tabela «Épocas de poda recomendables»)",
+       "url": "https://asociacionforestal.gal/es/silvicultura/a-poda/",
+       "seccao": "Épocas de poda recomendables",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se os meses; fontes ibéricas tratam Populus em exploração florestal, sem validar esta espécie no local."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12456,7 +12855,7 @@
       1,
       2
      ],
-     "tipo": "Em árvore jovem, corrija só ramos concorrentes. Em adulta, preserve a copa natural"
+     "tipo": "Poda mínima, fora de geadas: em jovem, corrija ramos concorrentes; em adulta, preserve a copa natural. Ramos grandes: consulte um técnico"
     }
    ],
    "plantacao": {
@@ -12485,7 +12884,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Diário da República — Regulamento n.º 112/2026 (Município de Gouveia)",
+       "url": "https://diariodarepublica.pt/dr/detalhe/regulamento/112-2026-1033399169",
+       "seccao": "Época de poda",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se os meses. O regulamento de Gouveia põe a manutenção em novembro–março e a formação de jovens de meados de maio a meados de junho; não é específico de Quercus faginea."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12561,7 +12990,36 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "ICNF — Catálogo de serviços RUBUS (poda de sobreiro e azinheira)",
+       "url": "https://rubus.icnf.pt/RUBUSSA/CatalogoServicos.aspx",
+       "seccao": "Poda de azinheira",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Texto e meses mantidos sem alterações: poda só com autorização prévia do ICNF, 1/11 a 31/03, com finalidade produtiva."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12608,11 +13066,10 @@
    "poda": [
     {
      "meses": [
-      12,
-      1,
-      2
+      2,
+      3
      ],
-     "tipo": "Poda mínima: retire ramos mortos, cruzados ou mal colocados"
+     "tipo": "Poda mínima no fim do inverno, antes da rebentação e fora de geadas: retire ramos mortos ou em conflito. Ramos grandes: consulte um técnico"
     }
    ],
    "plantacao": {
@@ -12641,7 +13098,36 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Utah — Tree Tour: European Mountain-ash",
+       "url": "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=european-mountain-ash",
+       "seccao": "Care",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Dezembro–fevereiro passa a fevereiro–março, antes da rebentação."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12691,7 +13177,7 @@
       1,
       2
      ],
-     "tipo": "Poda mínima de formação; preserve a copa natural"
+     "tipo": "Poda mínima de formação, apenas se necessária; preserve a copa natural e evite períodos de geada"
     }
    ],
    "plantacao": {
@@ -12721,7 +13207,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "ICNF — Guia de boas práticas para a gestão do arvoredo",
+       "url": "https://www.icnf.pt/api/file/doc/3144f15a3faec1cc",
+       "seccao": "Poda",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantém-se o repouso como orientação prudente, sem fonte específica para os meses."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12758,12 +13274,10 @@
    "poda": [
     {
      "meses": [
-      3,
-      4,
       8,
       9
      ],
-     "tipo": "Em exemplares ornamentais plantados, poda apenas se necessária para formação ou sebe; use luvas e não deixe restos ao alcance de animais. Em exemplares silvestres, confirmar primeiro o regime de proteção"
+     "tipo": "Em ornamentais, pode apenas se necessário. É tóxico: use luvas e afaste os restos de pessoas e animais. Em exemplares silvestres, confirme primeiro o regime de proteção"
     }
    ],
    "plantacao": {
@@ -12788,7 +13302,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Cornell University — Yew: toxicology in domestic and wild species",
+       "url": "https://poisonousplants.ansci.cornell.edu/yew.html",
+       "seccao": "Toxicidade",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Retiram-se março e abril por precaução com as geadas tardias. Mantêm-se o aviso de toxicidade e a confirmação do regime de proteção nos silvestres. A fonte sustenta a toxicidade, não a época."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12836,7 +13380,7 @@
       1,
       2
      ],
-     "tipo": "Poda de formação mínima durante o repouso; desinfete as ferramentas. Suspeita de grafiose exige avaliação e saneamento atempados, sem esperar pelo calendário de poda"
+     "tipo": "Poda mínima em repouso; desinfete as ferramentas. Suspeita de grafiose exige avaliação e saneamento atempados, sem esperar pela época de poda"
     }
    ],
    "plantacao": {
@@ -12861,7 +13405,38 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "texto",
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of California IPM — Dutch elm disease",
+       "url": "https://ipm.ucanr.edu/home-and-landscape/dutch-elm-disease/",
+       "seccao": "Management",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "meses",
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantêm-se a poda de inverno, a desinfeção e o aviso da grafiose."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -12891,7 +13466,7 @@
       1,
       2
      ],
-     "tipo": "Poda mínima; preserve a forma natural de sebe ou de pequena árvore"
+     "tipo": "Poda mínima, apenas se necessária; preserve a forma natural e evite períodos de geada"
     }
    ],
    "plantacao": {
@@ -12934,7 +13509,37 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "ICNF / Universidade de Évora — Espécies de árvores e arbustos indígenas de Portugal (2016)",
+       "url": "https://gume.dbio.uevora.pt/ICNF_EspeciesIndgenas_Edicao2016-2.pdf",
+       "seccao": "Pyrus cordata",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Mantém-se o repouso; a fonte identifica a espécie mas não fixa meses de poda."
+    }
+   }
   },
   {
    "tipo_lua": "a",
@@ -13010,7 +13615,39 @@
      "documentacao": "no_repositorio",
      "ficheiro": "revisao/FLORESTAIS-e729811.md"
     }
-   ]
+   ],
+   "revisao": {
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-20",
+     "alcance": {
+      "verificado": [
+       "texto",
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "ICNF — Controlo do nemátodo da madeira do pinheiro",
+       "url": "https://www.icnf.pt/florestas/fitossanidade/nematododamadeiradopinheiro",
+       "seccao": "Medidas de controlo",
+       "consultado": "2026-11-20",
+       "sustenta": [
+        "texto",
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
+     },
+     "nota": "Texto e meses mantidos. A tabela galega indica para Pinus pinaster «con clima seco en los meses cálidos»; mantém-se o inverno por prudência com o nemátodo. Época de desramação por confirmar para o povoamento."
+    }
+   }
   }
  ]
 }
