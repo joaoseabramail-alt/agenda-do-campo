@@ -224,8 +224,8 @@
     },
     "enx": {
      "2": "Enxertia de fenda ou à inglesa.",
-     "7": "Borbulha de olho dormente.",
-     "8": "Borbulha de olho dormente."
+     "7": "Borbulha em T enquanto a casca do porta-enxerto descolar; o porta-enxerto habitual é o pessegueiro.",
+     "8": "Borbulha em T enquanto a casca do porta-enxerto descolar; o porta-enxerto habitual é o pessegueiro."
     }
    },
    "metodo_recomendado": [
@@ -278,6 +278,45 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "A intensidade depende do sistema cultural; não se transferiu a poda severa tradicional para todas as árvores. A alternativa de verão perante doença do chumbo é indicada no texto, sem criar uma janela mensal não validada. Não se selecionaram produtos."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC Davis Fruit & Nut Research and Information Center — Almond Orchard Development",
+       "url": "https://fruitsandnuts.ucdavis.edu/almond-orchard-development",
+       "seccao": "Field Budding",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "Utah State University Extension — Almonds in the Home Garden",
+       "url": "https://extension.usu.edu/yardandgarden/research/almonds-in-the-home-garden",
+       "seccao": "Almond Cultivar and Rootstock Selection",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Califórnia («início do verão», enquanto a casca descola): julho–agosto fica como janela indicativa em Sardoura."
+     },
+     "nota": "A UC Davis: a variedade é enxertada de borbulha no início do verão e pode continuar enquanto a casca do porta-enxerto descolar; a borbulha em T é a mais comum. A USU: propaga-se habitualmente sobre plântulas de pessegueiro. Retirado «olho dormente», que nenhuma fonte refere. O garfo de fevereiro–março fica por rever (sem fonte). O ChatGPT propunha retirar todos os meses; o Claude manteve-os por rever, porque nenhuma fonte os contradiz."
     }
    }
   },
@@ -768,8 +807,8 @@
    "toxicidade": null,
    "notas": {
     "enx": {
-     "2": "Enxertia de fenda ou à inglesa em porta-enxerto de Prunus avium.",
-     "3": "Enxertia de fenda em porta-enxerto de Prunus avium, até ao início da floração.",
+     "2": "Colha garfos dormentes do ano anterior, da grossura de um lápis; guarde-os no frio em saco fechado.",
+     "3": "Enxerte com o porta-enxerto ativo: inglesa em tronco fino, fenda a partir de 5 cm, casca se for grosso.",
      "8": "Borbulha em T ou de lasca."
     },
     "podas": {
@@ -785,7 +824,39 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: propagacao.enxertia.meses. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Oregon State University Extension — Cherry tree grafting, how and when?",
+       "url": "https://extension.oregonstate.edu/ask-extension/featured/cherry-tree-grafting-how-when",
+       "seccao": "Resposta (Steve Renquist, revista em 2024)",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte do Oregon («por volta do fim de março»): em Sardoura guie-se pelo porta-enxerto a ficar ativo, com o solo e o ar a aquecer."
+     },
+     "nota": "A fonte: enxerto de garfo por volta do fim de março; inglês em tronco da grossura de um lápis, fenda a partir de cerca de 5 cm, fenda ou casca a partir de 7–10 cm; garfos do ano anterior colhidos dormentes, guardados no frigorífico em saco fechado com papel húmido; pega melhor com o solo e o ar a aquecer e o porta-enxerto ativo. A borbulha de agosto não vem nesta fonte e fica por rever. Fevereiro passa a colheita dos garfos. Notas do ChatGPT com os critérios de diâmetro e de conservação repostos pelo Claude; o ChatGPT propunha retirar agosto, o que o Claude não aceitou sem fonte que o contradiga."
+    }
+   }
   },
   {
    "id": "laranjeira",
