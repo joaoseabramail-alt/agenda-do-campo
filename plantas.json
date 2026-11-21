@@ -476,10 +476,10 @@
     "enxertia": {
      "dificuldade": 3,
      "meses": [
-      2,
-      3
+      4,
+      5
      ],
-     "nota": null
+     "nota": "Garfos de dois gomos colhidos em dezembro e guardados a 0 °C em saco fechado; ate bem a união."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -546,6 +546,10 @@
      "1": "Raiz nua; plante pelo menos duas variedades para polinizar.",
      "2": "Raiz nua; plante pelo menos duas variedades para polinizar.",
      "11": "Raiz nua; plante pelo menos duas variedades para polinizar."
+    },
+    "enx": {
+     "4": "No campo, com folhas abertas no porta-enxerto e dias perto de 21 °C, para a seiva não encharcar a união.",
+     "5": "Até meados do mês: com dias quentes e sol forte, o garfo murcha antes de a união pegar."
     }
    },
    "metodo_recomendado": [
@@ -592,6 +596,38 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "Revistas as duas operações. Não se transpuseram os programas de renovação intensa por blocos de um pomar comercial do Oregon para uma aveleira de jardim. A renovação e o controlo de rebentos dependem da condução existente."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto",
+       "dificuldade"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Oregon State University Extension — Growing Hazelnuts in the Pacific Northwest: Plant Propagation (EM 9075)",
+       "url": "https://extension.oregonstate.edu/catalog/em-9075-growing-hazelnuts-pacific-northwest-plant-propagation",
+       "seccao": "Grafting; Considerations for Bench Grafting; Considerations for Field Grafting",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica",
+        "texto",
+        "dificuldade"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "No Oregon, meados de abril a meados de maio. Em Sardoura guie-se pelas folhas abertas no porta-enxerto e pelos dias perto de 21 °C."
+     },
+     "nota": "A fonte: no campo, esperar por temperaturas diurnas perto ou acima de 21 °C e por folhas abertas no porta-enxerto, para a seiva não encharcar a união; início do verão é arriscado; resultados muito variáveis. Garfos bem dormentes, colhidos em meados de dezembro, guardados a cerca de 0 °C em saco fechado; garfo de dois gomos. Enxertia de bancada (dezembro–fevereiro) só com aquecimento da união acima de 21 °C. Borbulha sem êxito na aveleira; a mergulhia é o método comum. Retirados fevereiro e março: no campo não há folhas nem calor, e a bancada exige equipamento de calogénese. O ChatGPT propunha manter fevereiro–março com nota de bancada; o Claude não aceitou."
     }
    }
   },
@@ -1700,12 +1736,12 @@
      "fiel_variedade": false
     },
     "enxertia": {
-     "dificuldade": 2,
+     "dificuldade": 3,
      "meses": [
       3,
       4
      ],
-     "nota": null
+     "nota": "Fenda ou inglês com lingueta; trabalhe com cuidado, pois a madeira dura racha facilmente."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -1753,9 +1789,6 @@
      "3": "Em torrão; dá-se bem no clima de Paiva.",
      "4": "Em torrão ou vaso, escolha um local soalheiro. Adie se houver geada prevista.",
      "10": "Em torrão, antes das chuvas fortes."
-    },
-    "enx": {
-     "4": "Enxertia de fenda."
     },
     "alp": {
      "4": "Alporque com hormona; enraízam devagar.",
@@ -1820,6 +1853,38 @@
       "nota": "Janela proposta passa de fevereiro–março para abril–maio para lembrar a avaliação depois do frio. É uma adaptação editorial provisória, não uma validação de meados de abril nem dos meses da RHS para Sardoura."
      },
      "nota": "A feijoa não exige poda anual para produzir. A fonte da Florida sustenta apenas a intervenção mínima, sem transpor as suas épocas de floração ou colheita."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto",
+       "dificuldade"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Growing Feijoa Fruit in Florida (HS1424)",
+       "url": "https://ask.ifas.ufl.edu/publication/HS1424",
+       "seccao": "Propagation",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica",
+        "texto",
+        "dificuldade"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não indica épocas: março–abril fica como janela indicativa em Sardoura."
+     },
+     "nota": "A fonte: a enxertia é difícil porque a madeira é dura e racha com facilidade; houve êxito com fenda e inglês com lingueta; aconselha enxertar várias cultivares num porta-enxerto comum; as plântulas de feijoa servem de porta-enxerto. Sem épocas. Dificuldade de moderada para difícil. A nota de abril («Enxertia de fenda.») passa à nota geral."
     }
    }
   },
@@ -2568,7 +2633,7 @@
       4,
       5
      ],
-     "nota": null
+     "nota": "Fenda, placa lateral ou inglês, ou borbulha; sobre plântula de nespereira ou marmeleiro (ananicante)."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -2617,9 +2682,6 @@
      "10": "Plante em torrão ou vaso, em solo bem drenado e local soalheiro, abrigado das geadas.",
      "11": "Plante em torrão ou vaso, em solo bem drenado e local soalheiro, abrigado das geadas."
     },
-    "enx": {
-     "4": "Enxertia de fenda."
-    },
     "alp": {
      "4": "Alporque com hormona; enraízam devagar."
     },
@@ -2630,7 +2692,40 @@
    },
    "metodo_recomendado": [
     "enxertia"
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — Loquat Growing in the Florida Home Landscape (HS5/MG050)",
+       "url": "https://ask.ifas.ufl.edu/publication/MG050",
+       "seccao": "Propagation",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não indica épocas: abril–maio fica como janela indicativa em Sardoura."
+     },
+     "nota": "A fonte: fenda, placa lateral (veneer) e inglês, ou borbulha de lasca, placa (patch) ou escudo; normalmente sobre plântulas de nespereira, às vezes marmeleiro, ananicante; árvores adultas podem ser cortadas e reenxertadas. Sem épocas. A nota de abril («Enxertia de fenda.») passa à nota geral."
+    }
+   }
   },
   {
    "id": "nogueira",
