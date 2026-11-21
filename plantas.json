@@ -7133,11 +7133,10 @@
     "enxertia": {
      "dificuldade": 3,
      "meses": [
-      3,
       4,
       5
      ],
-     "nota": null
+     "nota": "Fenda cheia terminal no lançamento do ano de um pinheiro com 2–3 anos de plantação, vigoroso e são."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -7174,6 +7173,10 @@
     "plantar": {
      "3": "Plante um exemplar jovem em vaso ou torrão, em local soalheiro e solo bem drenado. Adie se houver geada prevista.",
      "11": "Planta jovem em vaso ou torrão, em local soalheiro."
+    },
+    "enx": {
+     "4": "Enxerte na segunda quinzena, quando as agulhas do garfo começam a despontar sob as escamas.",
+     "5": "Até meados do mês. Garfo em bisel até 6 cm, fita PVC e, por cima, saco de papel com plástico furado."
     }
    },
    "legal": "Nemátodo da madeira do pinheiro: Decreto-Lei n.º 95/2011, na redação atual (alterado pelo DL n.º 123/2015, retificado pela Declaração n.º 38/2015 e alterado pelo DL n.º 9/2021), arts. 6.º–11.º e anexos. Na zona de restrição, abate e desramação exigem comunicação prévia pelo manifesto de abate, desramação e circulação (MADC); o transporte exige MADC, salvo exceções legais. As árvores com sintomas de declínio devem ser abatidas e os sobrantes eliminados segundo as regras aplicáveis, mesmo sem notificação. Os requisitos e prazos de remoção, tratamento e transporte dependem da zona, do material e da época (1 de novembro–1 de abril / 2 de abril–31 de outubro). Confirme o enquadramento da parcela com o ICNF; não guarde nem transporte material suspeito como lenha.",
@@ -7219,6 +7222,38 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
      },
      "nota": "Acrescentam-se as obrigações do MADC e do nemátodo, como no pinheiro-bravo. Retiram-se as notas de janeiro e dezembro, que mandavam «corte rente ao tronco» e se sobrepunham ao texto. A tabela galega sugere meses quentes e secos para Pinus pinaster; mantém-se o inverno por prudência com o nemátodo."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "INIAV / Estação Florestal Nacional — Manual Ilustrado de Enxertia do Pinheiro Manso (2007)",
+       "url": "https://www.iniav.pt/images/publicacoes/livros-manuais/manual_ilustrado_enxertia_pinheiro_manso.pdf",
+       "seccao": "Planeamento da Enxertia (pp. 15–19 do manual); A Técnica da Enxertia (pp. 21–24)",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "meses",
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "documentada",
+      "nota": "Manual nacional: «geralmente» da última quinzena de abril à primeira de maio, conforme o desenvolvimento dos garfos e dos porta-enxertos. Em Sardoura guie-se pelas agulhas do garfo a despontar."
+     },
+     "nota": "O manual: fenda cheia terminal; porta-enxerto no 2.º ou 3.º ano após a plantação, vigoroso, são, com o lançamento principal ligeiramente avermelhado; garfo do lançamento do ano, com as agulhas a começar a despontar sob as escamas; garfo em bisel até 6 cm; aperto com fita PVC; saco de papel kraft com plástico perfurado por dentro, o papel retirado 1–1,5 meses depois e o plástico antes do fim do verão; fita retirada pouco antes da primavera seguinte. Garfos conservados a 4 °C no máximo 2–3 dias. Retirado março, fora da época do manual. PDF descarregado com autorização do utilizador e lido pelo Claude; notas do ChatGPT, com a idade do porta-enxerto, as agulhas e o saco repostos pelo Claude."
     }
    }
   },
