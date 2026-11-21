@@ -1914,7 +1914,7 @@
       3,
       4
      ],
-     "nota": null
+     "nota": "Propague por estacas dormentes; raramente enxerte por borbulha de lasca ou placa, inglês ou fenda."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -2012,6 +2012,37 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Revista a orientação para árvores com copa formada. O INIAV distingue lampos/vindimos; a RHS sustenta apenas a prudência relativa às geadas. Mantêm-se março–abril provisórios, sem importar o calendário de maturação britânico nem a receita de formação de um pomar comercial."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UF/IFAS — The Fig (HS27/MG214)",
+       "url": "https://ask.ifas.ufl.edu/publication/MG214",
+       "seccao": "Culture and Management — Propagation",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não indica a época da enxertia: março–abril fica como janela indicativa em Sardoura."
+     },
+     "nota": "A fonte: as figueiras propagam-se normalmente por estacas dormentes (cerca de 15 cm, base em madeira de 2 anos); raramente por borbulha de lasca ou de placa, ou enxerto inglês, lateral, de incrustação ou de fenda. O método recomendado da ficha continua a ser a estaca. Nota do ChatGPT, sem alterações."
     }
    }
   },
@@ -2382,10 +2413,7 @@
     },
     "enxertia": {
      "dificuldade": 3,
-     "meses": [
-      2,
-      3
-     ],
+     "meses": [],
      "nota": null
     },
     "alporquia": {
@@ -2474,6 +2502,20 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "Orientação conservadora de manutenção do porte natural. Não corresponde a um programa de condução de um pomar intensivo de medronho nem certifica a época de produção da parcela."
+    },
+    "propagacao.enxertia": {
+     "estado": "suspenso",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [],
+     "nota": "Retirados fevereiro e março. Não se encontrou fonte fiável sobre a enxertia do medronheiro: a pesquisa (dossier técnico de 20-11-2026 e pesquisa do Claude em 21-11-2026) só encontrou trabalhos sobre estacas, semente e micropropagação, e um guia de jardinagem sem dados. Repor quando houver fonte com técnica, porta-enxerto e época."
     }
    }
   },
@@ -3480,7 +3522,7 @@
       3,
       4
      ],
-     "nota": null
+     "nota": "Propague de preferência por estacas lenhosas, colhidas no fim do outono ou início do inverno."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -3563,6 +3605,45 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "A renovação considera tanto a forma arbustiva como a árvore de tronco único; não se elimina indistintamente toda a rebentação de substituição nem se impõe um diâmetro fixo de copa."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-21",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Georgia Extension — Pomegranate Production (C 997)",
+       "url": "https://fieldreport.caes.uga.edu/publications/C997/pomegranate-production/",
+       "seccao": "Propagation",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "texto"
+       ]
+      },
+      {
+       "titulo": "UF/IFAS — The Pomegranate (HS44/MG056)",
+       "url": "https://ask.ifas.ufl.edu/publication/MG056",
+       "seccao": "Propagation",
+       "consultado": "2026-11-21",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Nenhuma das fontes fala de enxertia na romãzeira: março–abril fica como janela indicativa."
+     },
+     "nota": "A UGA: as estacas lenhosas são o meio preferido (madeira do ano, cerca de 25 cm, da grossura de um lápis, no fim do outono ou início do inverno). A UF/IFAS: propaga-se facilmente no inverno por estacas lenhosas; a mergulhia também resulta. Nenhuma fala de enxertia: a técnica e a época ficam por rever. O método recomendado da ficha continua a ser a estaca. Nota do ChatGPT; o Claude acrescentou a época das estacas, da UGA."
     }
    }
   },
