@@ -659,9 +659,11 @@
       3,
       4,
       5,
-      6
+      6,
+      8,
+      9
      ],
-     "nota": "Coroa em abril, flauta em maio–junho."
+     "nota": "Em plântulas, fenda ou lasca; em rebentos de talhadia com 4–5 cm, coroa."
     },
     "alporquia": {
      "dificuldade": 3,
@@ -711,9 +713,11 @@
    "notas": {
     "podas": {},
     "enx": {
-     "4": "Enxertia de coroa com garfos dormentes guardados no frio.",
-     "5": "Enxertia de flauta (canutilho), com borbulhas do ano.",
-     "6": "Enxertia de flauta com gomos do ano, quando a casca se separa com facilidade."
+     "4": "Fenda ou inglês, com o porta-enxerto mais adiantado que o garfo; garfos dormentes guardados no frio.",
+     "5": "Placa ou flauta (canutilho), com borbulhas do ano.",
+     "6": "Enxertia de flauta com gomos do ano, quando a casca se separa com facilidade.",
+     "8": "Borbulha em escudo (T): o gomo pega agora e só rebenta na primavera seguinte.",
+     "9": "Borbulha em escudo (T): o gomo pega agora e só rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -759,6 +763,57 @@
       "nota": "Janela proposta passa de dezembro–fevereiro para fevereiro–março, apoiada no manual regional; continua provisória para a parcela, a idade e o historial de cancro. Não foram acrescentados os meses de verão do manual."
      },
      "nota": "A fonte INIAV sustenta intervenção mínima nos primeiros anos. O manual dos soutos notáveis sustenta prudência, higiene e a preferência de fevereiro–março; não é uma autorização para poda drástica nem valida todos os soutos de Sardoura."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-23",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Diputación Foral de Bizkaia — Injertos en frutales",
+       "url": "https://servicios.educarm.es/templates/portal/ficheros/websDinamicas/20/injerto_en_frutales.pdf",
+       "seccao": "Cuadro «Época de realización del injertado» (p. 4); Práctica de injertado (p. 5)",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "FAO — Research projects on chestnut (Italy: Different grafting methods on chestnut)",
+       "url": "https://www.fao.org/4/ad235e/ad235e0n.htm",
+       "seccao": "Università degli Studi di Firenze — Different grafting methods on chestnut",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Instituto Politécnico de Bragança (ESA) — IV. Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: de gomo",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Quadro de Bizkaia (clima atlântico): fenda e inglês em abril, placa em abril–maio, borbulha em escudo em agosto–setembro. Março e junho ficam por rever."
+     },
+     "nota": "Bizkaia (linha CASTAÑO, colunas confirmadas pela posição do texto): fenda abril; inglês abril; escudo agosto–setembro; placa abril–maio. Há ainda «Agosto-Sept.» na coluna da coroa, que não se usou por a coroa no fim do verão ser pouco habitual e a posição ser a menos segura. Nos enxertos de primavera, o porta-enxerto deve estar mais adiantado que o garfo (p. 5). A FAO (projeto da Universidade de Florença): em plântulas, fenda e lasca são os melhores métodos; em rebentos de talhadia com 4–5 cm, coroa. O IPB: a flauta é tradicional no castanheiro; enxertias de gomo de agosto–setembro só rebentam na primavera seguinte. Acrescentados agosto e setembro (escudo). A nota geral «Coroa em abril, flauta em maio–junho» foi substituída: a coroa sai de abril. Notas do ChatGPT; o Claude passou o critério do porta-enxerto adiantado da nota geral para abril."
     }
    }
   },
@@ -3912,7 +3967,11 @@
      "dificuldade": 2,
      "meses": [
       2,
-      3
+      3,
+      4,
+      5,
+      8,
+      9
      ],
      "nota": null
     },
@@ -3978,6 +4037,13 @@
     },
     "estacas": {
      "1": "Estacas lenhosas de plantas sãs durante o repouso, antes de começar a subir a seiva."
+    },
+    "enx": {
+     "3": "Garfo lateral, com o porta-enxerto mais adiantado que o garfo.",
+     "4": "Garfo lateral ou borbulha em lasca, com o porta-enxerto mais adiantado que o garfo.",
+     "5": "Enxertia de coroa ou borbulha em lasca.",
+     "8": "Borbulha de placa ou em escudo: o gomo só rebenta na primavera seguinte.",
+     "9": "Borbulha de placa, em escudo ou em lasca: só rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -4035,6 +4101,46 @@
       "nota": "Meses conservados da base como janela indicativa. Confirmar fenologia, cultivar, condução e risco de geada na parcela de Sardoura; não há validação local das datas."
      },
      "nota": "Revistas poda de inverno e orientação da poda verde; sem impor carga fixa de gomos ou número de varas, dependentes da condução. Dezembro–fevereiro e junho–julho mantêm-se provisórios: não se deve esperar por fevereiro se a seiva já subiu."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-23",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Diputación Foral de Bizkaia — Injertos en frutales",
+       "url": "https://servicios.educarm.es/templates/portal/ficheros/websDinamicas/20/injerto_en_frutales.pdf",
+       "seccao": "Cuadro «Época de realización del injertado» (p. 4); Práctica de injertado (p. 5)",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Instituto Politécnico de Bragança (ESA) — IV. Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: de gomo",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Quadro de Bizkaia (clima atlântico): garfo lateral em março–abril, coroa em maio, borbulha em agosto–setembro, lasca em abril–maio e setembro. Fevereiro fica por rever."
+     },
+     "nota": "Bizkaia (linha KIWI): garfo lateral março–abril; coroa maio; borbulha agosto–setembro (na coluna da placa ou do escudo: a posição não permite separar); lasca abril–maio e setembro. Nos enxertos de primavera, o porta-enxerto deve estar mais adiantado que o garfo (p. 5). O IPB: enxertias de gomo de agosto–setembro só rebentam na primavera seguinte. Acrescentados abril, maio, agosto e setembro; fevereiro mantém-se sem nota, por rever (nenhuma fonte o refere nem o contradiz). O PDF da UC Davis sobre o kiwi não se descarregou. Notas do ChatGPT; o Claude passou o critério do porta-enxerto adiantado para março e abril."
     }
    }
   },
