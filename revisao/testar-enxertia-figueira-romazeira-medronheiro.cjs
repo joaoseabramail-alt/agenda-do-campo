@@ -1,10 +1,10 @@
 // node revisao/testar-enxertia-figueira-romazeira-medronheiro.cjs
 // Contrato da ronda de enxertia da figueira, da romãzeira e do medronheiro contra 28c1b14; não testa Chromium.
-// Numa ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
+// Dados fixados no commit em que esta ronda foi publicada (c774b0f): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
-const root=path.join(__dirname,'..'),base='28c1b14',ids=['figueira','romazeira','medronheiro'];
+const root=path.join(__dirname,'..'),base='28c1b14',ronda='c774b0f',ids=['figueira','romazeira','medronheiro'];
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 for(const f of ['tratamentos.json','calendario.json'])assert.equal(now(f),old(f),f+' fora do âmbito');
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
 const estado={figueira:'parcial',romazeira:'parcial',medronheiro:'suspenso'};

@@ -4282,9 +4282,11 @@
     "enxertia": {
      "dificuldade": 1,
      "meses": [
-      2,
       3,
-      4
+      4,
+      5,
+      8,
+      9
      ],
      "nota": null
     },
@@ -4347,6 +4349,13 @@
      "1": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira.",
      "2": "Mantenha as raízes húmidas e plante junto a uma ramada ou parede soalheira.",
      "3": "Se ainda estiver em repouso, plante junto a uma ramada ou parede soalheira."
+    },
+    "enx": {
+     "3": "Enxerte de garfo pouco antes do abrolhamento, com os gomos do porta-enxerto inchados.",
+     "4": "Fenda ou inglês com garfos de 2–3 gomos, antes de o porta-enxerto crescer ativamente.",
+     "5": "Fenda ou inglês com garfos de 2–3 gomos; se a casca descolar ao rachar, o garfo não pega.",
+     "8": "Borbulha em lasca, a mais usada na vinha; ate com fita plástica. Rebenta na primavera seguinte.",
+     "9": "Borbulha em lasca ou garfo lateral: o gomo pega agora e só rebenta na primavera seguinte."
     }
    },
    "metodo_recomendado": [
@@ -4449,6 +4458,48 @@
       "nota": "A CVRVV é a comissão da Região dos Vinhos Verdes, onde fica Castelo de Paiva (sub-região de Paiva): plantação normal de janeiro a março, mais cedo em locais quentes e secos e mais tarde nos frios e húmidos."
      },
      "nota": "A CVRVV refere-se à vinha (Vitis vinifera); aplicado à uva de mesa, que é a mesma espécie, só quanto aos meses. Retirados novembro e dezembro. Bacelo enxertado mantido (filoxera)."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-23",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Instituto Politécnico de Bragança (ESA) — IV. Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: de garfo; de gomo",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "meses",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "Diputación Foral de Bizkaia — Injertos en frutales",
+       "url": "https://servicios.educarm.es/templates/portal/ficheros/websDinamicas/20/injerto_en_frutales.pdf",
+       "seccao": "Cuadro «Época de realización del injertado» (p. 4); Injerto de hendidura (pp. 6–7); Injerto de chip o astilla (p. 19)",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "meses",
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Bizkaia tem clima atlântico parecido com o de Sardoura; o IPB dá o critério do abrolhamento. Guie-se pelos gomos inchados do porta-enxerto na primavera."
+     },
+     "nota": "O IPB: garfo «muito usado» na videira, no fim do inverno/início da primavera, pouco antes do abrolhamento; as enxertias de gomo de agosto–setembro pegam mas só abrolham na primavera seguinte (indicação geral). Bizkaia (quadro, linha VID): fenda e inglês abril–maio; lasca e garfo lateral agosto–setembro; a fenda faz-se com os gomos do porta-enxerto inchados, antes do crescimento ativo, senão a casca descola e o garfo não pega; garfos de 2–3 gomos; a lasca é a borbulha mais usada na videira porque os gomos são grossos; atar com fita plástica. Retirado fevereiro (enxertia de mesa, trabalho de viveiro); acrescentado maio. Videira e uva de mesa ficam com os mesmos meses e notas, por serem a mesma espécie. Fontes encontradas pelo ChatGPT na web; o Claude abriu a do IPB e leu o PDF de Bizkaia (descarregado com autorização do utilizador), confirmando as colunas do quadro pelas posições. Notas do ChatGPT com os critérios dos gomos inchados, da casca e do abrolhamento na primavera seguinte repostos pelo Claude."
     }
    }
   },
@@ -4472,13 +4523,13 @@
     "enxertia": {
      "dificuldade": 1,
      "meses": [
-      2,
       3,
       4,
+      5,
       8,
       9
      ],
-     "nota": "Enxertia de mesa no fim do inverno, de fenda na primavera ou de borbulha em lasca no fim do verão."
+     "nota": null
     },
     "alporquia": {
      "dificuldade": 1,
@@ -4547,10 +4598,11 @@
      "12": "Estacas lenhosas."
     },
     "enx": {
-     "3": "Enxertia de fenda no campo, no início da primavera, com material são e porta-enxerto compatível.",
-     "4": "Ainda a tempo para enxertia de fenda no campo.",
-     "8": "Enxertia de borbulha (lasca) na cepa, de meados de agosto a setembro.",
-     "9": "Terminar a enxertia de borbulha até meados do mês."
+     "3": "Enxerte de garfo pouco antes do abrolhamento, com os gomos do porta-enxerto inchados.",
+     "4": "Fenda ou inglês com garfos de 2–3 gomos, antes de o porta-enxerto crescer ativamente.",
+     "5": "Fenda ou inglês com garfos de 2–3 gomos; se a casca descolar ao rachar, o garfo não pega.",
+     "8": "Borbulha em lasca, a mais usada na vinha; ate com fita plástica. Rebenta na primavera seguinte.",
+     "9": "Borbulha em lasca ou garfo lateral: o gomo pega agora e só rebenta na primavera seguinte."
     },
     "plantar": {
      "1": "Mantenha as raízes húmidas e espalhe-as na cova.",
@@ -4648,6 +4700,48 @@
       "nota": "A CVRVV é a comissão da Região dos Vinhos Verdes, onde fica Castelo de Paiva (sub-região de Paiva): plantação normal de janeiro a março, mais cedo em locais quentes e secos e mais tarde nos frios e húmidos."
      },
      "nota": "A fonte sustenta os cuidados com bacelos dormentes de raiz nua; os meses e o texto completo carecem de revisão local. \"Bacelo enxertado\" (e não pé-franco) por causa da filoxera, como na nota de propagação. Meses corrigidos para janeiro–março segundo a CVRVV (2026-11-20); retirados novembro e dezembro."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-23",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Instituto Politécnico de Bragança (ESA) — IV. Biologia da reprodução das plantas com flor: 2. Tipos de reprodução assexuada",
+       "url": "https://esa.ipb.pt/livros/books/iv-biologia-da-reproducao-das-plantas-com-flor/page/2-tipos-de-reproducao-assexuada",
+       "seccao": "Tipos de enxertia: de garfo; de gomo",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "meses",
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "Diputación Foral de Bizkaia — Injertos en frutales",
+       "url": "https://servicios.educarm.es/templates/portal/ficheros/websDinamicas/20/injerto_en_frutales.pdf",
+       "seccao": "Cuadro «Época de realización del injertado» (p. 4); Injerto de hendidura (pp. 6–7); Injerto de chip o astilla (p. 19)",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "meses",
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Bizkaia tem clima atlântico parecido com o de Sardoura; o IPB dá o critério do abrolhamento. Guie-se pelos gomos inchados do porta-enxerto na primavera."
+     },
+     "nota": "O IPB: garfo «muito usado» na videira, no fim do inverno/início da primavera, pouco antes do abrolhamento; as enxertias de gomo de agosto–setembro pegam mas só abrolham na primavera seguinte (indicação geral). Bizkaia (quadro, linha VID): fenda e inglês abril–maio; lasca e garfo lateral agosto–setembro; a fenda faz-se com os gomos do porta-enxerto inchados, antes do crescimento ativo, senão a casca descola e o garfo não pega; garfos de 2–3 gomos; a lasca é a borbulha mais usada na videira porque os gomos são grossos; atar com fita plástica. Retirado fevereiro (enxertia de mesa, trabalho de viveiro); acrescentado maio. Videira e uva de mesa ficam com os mesmos meses e notas, por serem a mesma espécie. Fontes encontradas pelo ChatGPT na web; o Claude abriu a do IPB e leu o PDF de Bizkaia (descarregado com autorização do utilizador), confirmando as colunas do quadro pelas posições. Notas do ChatGPT com os critérios dos gomos inchados, da casca e do abrolhamento na primavera seguinte repostos pelo Claude."
     }
    }
   },
