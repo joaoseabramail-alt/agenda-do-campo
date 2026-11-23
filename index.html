@@ -388,7 +388,7 @@ function propagacaoHTML(p){
   const minus=s=>/^[A-ZÀ-Ú][a-zà-ú]/.test(s)?s[0].toLowerCase()+s.slice(1):s;
   if(p.poda&&p.poda.length)linhas.push(["Poda",p.poda.map(e=>mesesTxt(e.meses)?cap(mesesTxt(e.meses))+": "+minus(ponto(e.tipo)):ponto(e.tipo))]);
   else nao.push("poda");
-  if(nao.length)linhas.push(["Não se faz",cap(nao.join(", ").replace(/, ([^,]*)$/," nem $1"))+"."]);
+  if(nao.length)linhas.push(["Não é habitual",cap(nao.join(", ").replace(/, ([^,]*)$/," nem $1"))+"."]);
   return linhas.map(([t,v])=>`<dt>${t}</dt><dd>${Array.isArray(v)?v.map(esc).join("<br>"):esc(v)}</dd>`).join("");
 }
 function fichaHTML(p,avisosPresentes=[]){
