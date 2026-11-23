@@ -358,9 +358,42 @@ function render(){
 }
 /* ---------- Ficha da planta (ao tocar no nome) ---------- */
 const CAMPOS=[["exposicao","Exposição"],["solo","Solo"],["rega","Rega"],["adubacao","Adubação"],["floracao","Floração"],["resistencia_geada","Geada"]];
+// Meses em intervalos (circulares): [12,1,2] → "dezembro a fevereiro"; [3,5] → "março e maio"
+function mesesTxt(ms){
+  const s=new Set(ms);if(s.size>=12)return "todo o ano";if(!s.size)return "";
+  const runs=[];
+  for(let m=1;m<=12;m++){if(!s.has(m)||s.has(m===1?12:m-1))continue;let f=m;while(s.has(f%12+1))f=f%12+1;runs.push([m,f])}
+  if(!runs.length)return "";
+  const t=runs.map(([a,b])=>a===b?MESES[a-1]:"de "+MESES[a-1]+" a "+MESES[b-1]);
+  return t.length>1?t.slice(0,-1).join(", ")+" e "+t[t.length-1]:t[0];
+}
+const cap=s=>s?s[0].toUpperCase()+s.slice(1):s;
+const ponto=s=>s?s.trim().replace(/[.;:]?$/,"."):"";
+const METODOS=[["sementeira","Sementeira"],["estacas","Estaquia"],["enxertia","Enxertia"],["alporquia","Alporquia"]];
+function propagacaoHTML(p){
+  const linhas=[],nao=[];
+  for(const [k,t] of METODOS){
+    const e=p.propagacao&&p.propagacao[k]||(k==="sementeira"&&p.sementeira);
+    if(!e){nao.push(t.toLowerCase());continue}
+    if(e.dificuldade===4){linhas.push([t,"Não se faz: não pega."]);continue}
+    const rev=p.revisao&&p.revisao["propagacao."+k];
+    const quando=mesesTxt(e.meses||[]);
+    const partes=[quando?cap(quando)+(e.dificuldade?" · "+DIFN[e.dificuldade].toLowerCase():"")+".":rev&&rev.estado==="suspenso"?"Época em revisão.":"Época por confirmar."];
+    if(e.modo)partes.push(e.modo==="direta"?"Semear diretamente.":e.modo==="alfobre"?"Semear em alfobre.":"");
+    if(e.nota)partes.push(ponto(e.nota));
+    if(k==="sementeira"&&e.fiel_variedade===false)partes.push("Não mantém a variedade.");
+    if(p.metodo_recomendado&&p.metodo_recomendado.includes(k))partes.push("Recomendado para manter a variedade.");
+    linhas.push([t,junta(...partes)]);
+  }
+  const minus=s=>/^[A-ZÀ-Ú][a-zà-ú]/.test(s)?s[0].toLowerCase()+s.slice(1):s;
+  if(p.poda&&p.poda.length)linhas.push(["Poda",p.poda.map(e=>mesesTxt(e.meses)?cap(mesesTxt(e.meses))+": "+minus(ponto(e.tipo)):ponto(e.tipo))]);
+  else nao.push("poda");
+  if(nao.length)linhas.push(["Não se faz",cap(nao.join(", ").replace(/, ([^,]*)$/," nem $1"))+"."]);
+  return linhas.map(([t,v])=>`<dt>${t}</dt><dd>${Array.isArray(v)?v.map(esc).join("<br>"):esc(v)}</dd>`).join("");
+}
 function fichaHTML(p,avisosPresentes=[]){
   const av=[p.legal,p.toxicidade].filter(t=>t&&!avisosPresentes.includes(t)).map(t=>`<span class="warn">${esc(t)}</span>`).join("");
-  const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("");
+  const linhas=CAMPOS.filter(([k])=>p[k]).map(([k,t])=>`<dt>${t}</dt><dd>${esc(p[k])}</dd>`).join("")+propagacaoHTML(p);
   return `<div class="ficha" id="ficha-${esc(p.id)}">${av}<div class="foto" hidden></div>${linhas?`<dl>${linhas}</dl>`:`<span class="vazia">A ficha de cultivo desta planta ainda está a ser preenchida.</span>`}</div>`;
 }
 const fotoCache={};
