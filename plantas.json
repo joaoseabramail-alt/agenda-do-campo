@@ -3460,7 +3460,7 @@
       7,
       8
      ],
-     "nota": null
+     "nota": "Enxerte de borbulha em T no início do verão, enquanto a casca do porta-enxerto descolar."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -3500,10 +3500,6 @@
    "notas": {
     "plantar": {
      "2": "Precisa de verões quentes e de solo bem drenado; plante macho e fêmea (1 macho para 8–10 fêmeas). Em Sardoura, só numa leira bem soalheira virada a sul ou poente, longe da humidade do rio."
-    },
-    "enx": {
-     "5": "Enxertia de placa ou de borbulha em T.",
-     "6": "Enxertia de placa."
     }
    },
    "metodo_recomendado": [
@@ -3539,6 +3535,37 @@
       "nota": "Meses conservados como lembrete provisório. Confirmar cultivar, estado da planta, condução e condições da parcela em Sardoura; não foi validado o calendário local."
      },
      "nota": "As técnicas da Califórnia sustentam a distinção entre formação e manutenção. Não se transferiram alturas de corte, número de pernadas ou comprimentos fixos de varas; a fonte é técnica, não uma recomendação de adaptação da cultura a Sardoura."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-23",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC ANR, California Pistachio Research — Pruning & Training Resources",
+       "url": "https://ucanr.edu/site/california-pistachio-research/pruning-training-resources",
+       "seccao": "Field Budding",
+       "consultado": "2026-11-23",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Fonte da Califórnia («early summer», enquanto a casca descola): maio–agosto fica como janela indicativa em Sardoura."
+     },
+     "nota": "A fonte: a variedade enxerta-se de borbulha no porta-enxerto no início do verão, podendo continuar enquanto a casca do porta-enxerto descolar; a borbulha em T é a mais comum. Saem as notas de maio («placa ou borbulha em T») e junho («placa»): a placa não vem na fonte aberta. Fonte encontrada pelo ChatGPT na web e aberta pelo Claude; nota do ChatGPT, sem alterações."
     }
    }
   },
