@@ -458,9 +458,12 @@ let hojeVisto=iso(new Date());
 document.addEventListener("visibilitychange",()=>{if(document.hidden){hojeVisto=iso(new Date());return}
   const agora=iso(new Date());if(agora!==hojeVisto){if(iso(day)===hojeVisto){day=new Date();day.setHours(12,0,0,0)}hojeVisto=agora;render()}});
 render();
-Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()})))
-  .then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};render();mostrarResultados()})
-  .catch(()=>{$("panel").innerHTML=`<div class="panel-head"><h2>Sem dados</h2><p>Não foi possível abrir a base de dados das plantas. Ligue-se à internet e abra a app outra vez.</p></div>`});
+// Uma falha passageira (por exemplo, durante a atualização da app) tenta outra vez antes de dar «Sem dados».
+// Erros a desenhar a página não se confundem com falta de dados: ficam na consola.
+const carregarDados=(tent=0)=>Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f+": "+r.status);return r.json()})))
+  .catch(e=>{if(tent<2)return new Promise(ok=>setTimeout(ok,1500)).then(()=>carregarDados(tent+1));throw e});
+carregarDados().then(([a,b,c])=>{DB={plantas:a.plantas,tratamentos:b.tratamentos,tarefas:c.tarefas};render();mostrarResultados()},
+  e=>{console.error("Base de dados:",e);$("panel").innerHTML=`<div class="panel-head"><h2>Sem dados</h2><p>Não foi possível abrir a base de dados das plantas. Ligue-se à internet e abra a app outra vez.</p></div>`});
 </script>
 <div id="instalar" hidden><span id="instTxt">Instale a Agenda do Campo no telemóvel</span><button type="button" id="btnInstalar" hidden>Instalar app</button><button type="button" class="x" id="fecharInstalar" aria-label="Fechar">×</button></div>
 <script>
