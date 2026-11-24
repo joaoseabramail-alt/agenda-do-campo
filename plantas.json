@@ -5709,7 +5709,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a mergulhia ou a separação de rebentos; a enxertia sobre hamamélis pode dar plantas menos duradouras."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -5778,6 +5778,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Mantida a janela de inverno para avaliação. A fonte específica sustenta a pouca necessidade de poda e a possibilidade de vários troncos; não se propõe converter todos os exemplares em árvores de tronco único."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Parrotia persica",
+       "url": "https://www.treesandshrubsonline.org/articles/parrotia/parrotia-persica/",
+       "seccao": "Propagação (mergulhia, rebentos; enxertia sobre Hamamelis virginiana)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "Trees and Shrubs Online: a mergulhia foi muito tempo o método principal, a par da separação de rebentos; Bean refere enxertia sobre Hamamelis virginiana, mas as plantas podem ter sido menos longevas e nenhuma parece sobreviver. Nota do ChatGPT, completada pelo Claude."
     }
    }
   },
@@ -6943,9 +6973,11 @@
      "dificuldade": 2,
      "meses": [
       2,
-      3
+      3,
+      7,
+      8
      ],
-     "nota": null
+     "nota": "Só para híbridos e variedades: de semente leva mais de 10 anos a florir e as estacas pegam mal."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -7023,6 +7055,43 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Mantidos fevereiro–março para eventual limpeza e pequenos ajustes, não para reduzir anualmente a copa. Cornus kousa não recebe a talhadia usada em certos Cornus de caules decorativos."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Promesse de Fleurs — Cornus kousa, Japanese dogwood: choosing, planting, and care",
+       "url": "https://www.promessedefleurs.ie/gardening-tips/familysheet/cornus-kousa-japanese-dogwood-choosing-planting-and-caring-for/",
+       "seccao": "Propagation: by grafting",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Viveiro europeu: borbulha em escudo em julho–agosto. Julho e agosto acrescentados; fevereiro–março mantém-se, por rever."
+     },
+     "nota": "Promesse de Fleurs (viveiro): de semente leva mais de 10 anos a florir; estacas com resultados fracos; a enxertia é a única forma de propagar híbridos e certas variedades; borbulha em escudo (T) em julho–agosto é o método mais eficaz; porta-enxerto C. florida ou, melhor, C. kousa típico. Acrescentados julho e agosto com nota própria. Notas do ChatGPT, reescritas pelo Claude."
+    }
+   },
+   "notas": {
+    "enx": {
+     "7": "Borbulha em T, de preferência sobre corniso-japonês típico.",
+     "8": "Borbulha em T, de preferência sobre corniso-japonês típico."
     }
    }
   },
@@ -7256,9 +7325,11 @@
      "dificuldade": 2,
      "meses": [
       2,
-      3
+      3,
+      7,
+      8
      ],
-     "nota": null
+     "nota": "Para cultivares: garfo de 1 ano sobre ginkgo de 2 anos em vaso, câmbios coincidentes; em estufa fria."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -7326,6 +7397,44 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Confirmados pouca poda e eixo central na formação; não se impõe esse modelo às cultivares de porte especial. Meses mantidos como janela provisória de repouso."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "National Plant Collection of Ginkgo — Propagation",
+       "url": "https://www.npcginkgo.org/propagation",
+       "seccao": "Budding; Hard Tissue Grafting",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "meses",
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Coleção nacional do Reino Unido: garfo em fevereiro–março; borbulha em lasca em julho–agosto."
+     },
+     "nota": "National Plant Collection of Ginkgo: a enxertia de garfo em madeira é o método habitual para cultivares, em fevereiro e março, sobre porta-enxertos de 2 anos em vaso, com garfo de 1 ano; tipo de enxerto indiferente, câmbios coincidentes; atar, encerar, estufa fria. Borbulha em lasca em julho ou agosto, sobre porta-enxertos de 2–3 anos. Acrescentados julho e agosto. Notas do ChatGPT, reescritas pelo Claude."
+    }
+   },
+   "notas": {
+    "enx": {
+     "7": "Borbulha em lasca sobre ginkgo de 2 a 3 anos.",
+     "8": "Borbulha em lasca sobre ginkgo de 2 a 3 anos."
     }
    }
   },
@@ -7363,7 +7472,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Para conservar clones escolhidos, enxerte sobre porta-enxerto de semente; as estacas enraízam mal."
     },
     "alporquia": {
      "dificuldade": 3,
@@ -7447,6 +7556,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "A fonte sustenta eixo único e pouca poda para obter boa estrutura; dezembro–fevereiro não fica validado para a parcela."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "IPPS Proceedings vol. 33 — Tissue culture propagation of selected mature clones of Liquidambar styraciflua",
+       "url": "https://ipps.org/proceedings/volume-33/",
+       "seccao": "Resumo do artigo (Sutter & Barker)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "IPPS vol. 33 (Sutter & Barker): de semente as árvores variam muito em forma e cor; clones escolhidos enxertam-se ou borbulham-se sobre porta-enxerto de semente, porque as estacas enraízam mal; é um processo caro. Nota do ChatGPT."
     }
    }
   },
@@ -7711,7 +7850,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a semente, com tratamento adequado; a enxertia também é possível."
     },
     "alporquia": {
      "dificuldade": 3,
@@ -7748,7 +7887,39 @@
    "resistencia_geada": "Tolera o frio em repouso. Geadas tardias podem danificar rebentos ou flores.",
    "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Jardim Nacional de Atenas — Judas tree (Cercis siliquastrum)",
+       "url": "https://green-athens.gr/en/cercis-siliquastrum-f-alba/",
+       "seccao": "Uses",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "Jardim Nacional de Atenas: propaga-se sobretudo por semente com tratamento adequado; a enxertia também é possível. Nota do ChatGPT, reescrita pelo Claude."
+    }
+   }
   },
   {
    "id": "pilriteiro",
@@ -7782,7 +7953,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Propague por semente ou enxerte no inverno."
     },
     "alporquia": {
      "dificuldade": 3,
@@ -7848,6 +8019,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
      },
      "nota": "Retira-se dezembro; mantém-se o repouso de inverno."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Crataegus monogyna",
+       "url": "https://www.rhs.org.uk/plants/4775/crataegus-monogyna/details",
+       "seccao": "Propagation",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Reino Unido: enxertia no inverno. Fevereiro mantém-se; março fica por rever."
+     },
+     "nota": "RHS: propague por semente ou enxertia no inverno. A fonte não dá técnica nem porta-enxerto. Nota do ChatGPT, reescrita pelo Claude."
     }
    }
   },
@@ -8033,7 +8234,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira estacas lenhosas de 20–30 cm; enxerte só os clones que enraízam mal."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -8118,6 +8319,37 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Substituída a referência ambígua a rolagem por distinção entre porte livre e condução em cabeça (pollarding). Não é uma receita para iniciar essa condução nem para recuperar árvores com manutenção interrompida. A janela de inverno não valida um plano de poda específico."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Platanus × hispanica",
+       "url": "https://www.treesandshrubsonline.org/articles/platanus/platanus-x-hispanica/",
+       "seccao": "Propagação por estaca; 'Augustine Henry'; 'Alphen's Globe'",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época da enxertia; fevereiro–março fica por rever."
+     },
+     "nota": "Trees and Shrubs Online: a maioria dos clones do plátano enraíza facilmente por estaca lenhosa de 20–30 cm, no outono ou no início da primavera; clones difíceis de enraizar ('Augustine Henry', 'Alphen's Globe') vendem-se enxertados. Nota do ChatGPT, reescrita pelo Claude."
     }
    }
   },
@@ -8571,7 +8803,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a borbulha, comum em viveiro, sobre tília-de-folha-pequena, tília-de-folha-grande ou tília-comum."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -8675,6 +8907,37 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Separadas a formação invernal e a avaliação dos rebentos na primavera. A fonte específica é Tilia × europaea, usada como exemplo; a ficha mantém Tilia spp., e falta identificar a espécie/cultivar do utilizador. Não se extrapola igual intensidade de rebentação para todo o género."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Tilia",
+       "url": "https://www.treesandshrubsonline.org/articles/tilia/",
+       "seccao": "Propagação (semente, estacas, borbulha)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época da borbulha; fevereiro–março fica por rever."
+     },
+     "nota": "Trees and Shrubs Online (Tilia): a enxertia é possível, mas a borbulha é a prática comum de viveiro, com T. cordata, T. platyphyllos e T. × europaea como porta-enxertos habituais na Europa. Nota do ChatGPT, completada pelo Claude."
     }
    }
   },
@@ -9265,7 +9528,7 @@
       4,
       5
      ],
-     "nota": null
+     "nota": "Se a variedade enraizar mal, experimente a enxertia por aproximação, com as duas plantas lado a lado."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -9337,6 +9600,37 @@
       "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
      },
      "nota": "A fonte britânica trata sobretudo plantas em abrigo. Usaram-se a biologia e a manutenção; não se importaram temperaturas, épocas de floração ou necessidades de estufa para a parcela portuguesa."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UC ANR — Plant Propagation for Home Gardeners, Part 2: A Comprehensive Guide to Grafting Methods",
+       "url": "https://ucanr.edu/node/116166/printable/print",
+       "seccao": "4. Approach Grafting",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época; março–maio fica por rever."
+     },
+     "nota": "UC ANR: a buganvília está entre as ornamentais que beneficiam de enxertia por aproximação (plantas lado a lado, caules unidos sem destacar o garfo, corte abaixo da união depois de pegar), sobretudo quando a variedade enraíza mal. Nota do ChatGPT, completada pelo Claude."
     }
    }
   },
@@ -10298,7 +10592,7 @@
       4,
       5
      ],
-     "nota": null
+     "nota": "Enxertar cultivares dá planta florida para venda em menos de um ano; por estaca leva 2 a 3 vezes mais."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -10386,6 +10680,36 @@
       "nota": "Meses mantidos como lembrete provisório. Confirmar espécie ou cultivar, floração, retoma do crescimento e risco de geada na parcela de Sardoura; não se validou o calendário local."
      },
      "nota": "H. syriacus, arbusto caduco; não H. rosa-sinensis. A poda forte de arbustos de floração estival não foi imposta como rotina a todas as cultivares."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "IPPS Proceedings vol. 45 — Propagation of Hibiscus by Grafting",
+       "url": "https://ipps.org/proceedings/volume-45/",
+       "seccao": "Introdução do artigo (Anthony Marks)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem técnica; março–maio fica por rever."
+     },
+     "nota": "IPPS vol. 45 (Anthony Marks): enxertia de cultivares de H. syriacus; dá uma planta vendável em plena flor em menos de um ano, enquanto por estaca demora duas a três vezes mais. Nota do ChatGPT, reescrita pelo Claude."
     }
    }
   },
@@ -11239,7 +11563,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira estacas (O. fragrans enraíza bem); se enxertar, fenda ou inglês no início da primavera."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -11274,7 +11598,40 @@
    "resistencia_geada": "A tolerância varia entre espécies e cultivares. Confirme a rusticidade da planta identificada.",
    "exposicao": "Sol ou meia-sombra.",
    "autoctone": null,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "University of Georgia Extension — Propagating Sweet Tea Olive (Osmanthus fragrans)",
+       "url": "https://fieldreport.caes.uga.edu/publications/C1363/propagating-sweet-tea-olive-osmanthus-fragrans/",
+       "seccao": "Grafting",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Geórgia (EUA), só O. fragrans: fenda ou inglês no início da primavera, borbulha em T no fim do verão. Fevereiro–março mantém-se, por rever."
+     },
+     "nota": "University of Georgia Extension (só O. fragrans): a enxertia raramente se usa porque enraíza com relativa facilidade por estaca; fenda ou inglês no início da primavera, ou borbulha em T no fim do verão, sobre planta de semente ou porta-enxerto bem desenvolvido. Não generalizado às outras espécies. Nota do ChatGPT, reescrita pelo Claude."
+    }
+   }
   },
   {
    "id": "pitosporo",
