@@ -8575,7 +8575,9 @@
      "dificuldade": 3,
      "meses": [
       2,
-      3
+      3,
+      7,
+      8
      ],
      "nota": "Usada para manter cultivares (por exemplo, de flor dobrada), sobre porta-enxerto de semente."
     }
@@ -8620,9 +8622,45 @@
     "plantar": {
      "11": "Árvore muito grande (25–30 m): plante longe de casas, muros e canalizações.",
      "1": "Árvore muito grande (25–30 m): plante longe de casas, muros e canalizações."
+    },
+    "enx": {
+     "7": "Borbulha em lasca.",
+     "8": "Borbulha em lasca."
     }
    },
-   "foto": "Castanheiro-da-índia"
+   "foto": "Castanheiro-da-índia",
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Aesculus hippocastanum 'Baumannii'",
+       "url": "https://www.rhs.org.uk/plants/91606/aesculus-hippocastanum-baumannii-d/details",
+       "seccao": "Propagation",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "RHS (Reino Unido): borbulha em lasca de meados ao fim do verão. Acrescentados julho e agosto; fevereiro–março mantém-se, por rever."
+     },
+     "nota": "RHS ('Baumannii'): estacas lenhosas do início a meados do inverno ou borbulha em lasca de meados ao fim do verão. Acrescentados julho e agosto com a nota «Borbulha em lasca.». A nota geral (cultivares sobre porta-enxerto de semente) mantém-se sem fonte aberta: a revisão da Biological Flora (Wiley) pediu verificação anti-robô e não foi lida. Nota do ChatGPT."
+    }
+   }
   },
   {
    "id": "aucuba",
@@ -8755,11 +8793,10 @@
     "enxertia": {
      "dificuldade": 2,
      "meses": [
-      3,
-      4,
-      5
+      1,
+      2
      ],
-     "nota": null
+     "nota": "Nas azáleas, prefira estacas: as enxertadas deitam muitos rebentos do porta-enxerto."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -8799,11 +8836,49 @@
    "notas": {
     "alp": {
      "3": "Pode iniciar a alporquia no começo da primavera, em ramo são do ano anterior, depois do risco de geadas fortes."
+    },
+    "enx": {
+     "1": "Garfo lateral sobre rododendro novo da grossura de um lápis, logo acima do colo; em estufa aquecida.",
+     "2": "Garfo lateral sobre rododendro novo da grossura de um lápis, logo acima do colo; em estufa aquecida."
     }
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Rhododendron",
+       "url": "https://www.treesandshrubsonline.org/articles/rhododendron/",
+       "seccao": "Propagation: Grafting; suckers de Ponticum e azáleas de folha caduca",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "meses",
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Reino Unido, em estufa aquecida: janeiro–fevereiro. Como é feito sob abrigo aquecido, o clima exterior pesa pouco."
+     },
+     "nota": "Trees and Shrubs Online: os viveiristas ainda enxertam rododendros, sobretudo para multiplicar depressa uma seleção nova; garfo lateral em janeiro ou fevereiro, com um rebento do verão anterior, sobre R. ponticum novo da grossura de um lápis, logo acima do colo; cama de turfa em estufa aquecida e coberta; às camas frias em abril ou maio. As azáleas de folha caduca hoje raramente se enxertam e as enxertadas devem evitar-se (rebentos do porta-enxerto). Meses de março–maio substituídos por janeiro–fevereiro. Notas do ChatGPT, reescritas pelo Claude."
+    }
+   }
   },
   {
    "id": "budleia",
@@ -9142,7 +9217,7 @@
       3,
       4
      ],
-     "nota": null
+     "nota": "Fenda sobre camélia em vaso da grossura de um lápis; mantenha húmido debaixo de um frasco, à sombra."
     },
     "alporquia": {
      "dificuldade": 1,
@@ -9190,7 +9265,40 @@
    },
    "metodo_recomendado": [
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Southern California Camellia Society — Camellia Propagation",
+       "url": "https://socalcamelliasociety.org/Camellia%20Propagation.php",
+       "seccao": "Cleft grafting",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Sul da Califórnia: fevereiro ou início de março, conforme o tempo. Fevereiro–abril mantém-se, por rever."
+     },
+     "nota": "Southern California Camellia Society: fenda, em geral em fevereiro ou início de março; porta-enxerto: camélia em vaso da grossura de um lápis ou camélia velha cortada; garfo de madeira madura do ano anterior; câmbios alinhados; sempre húmido debaixo de um frasco, em sítio abrigado e à sombra. Nota do ChatGPT, reescrita pelo Claude."
+    }
+   }
   },
   {
    "id": "crisantemo",
@@ -9817,7 +9925,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Cultivares sobre H. virginiana ou H. vernalis; corte os rebentos que nasçam do porta-enxerto."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -9895,6 +10003,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Mantido março para os tipos de floração invernal já visados pela ficha; não se certifica esse mês para todo o género Hamamelis. A identificação e o calendário das formas outonais ficam por resolver."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "UMass Extension — Landscape Message: March 22, 2019",
+       "url": "https://www.umass.edu/agriculture-food-environment/landscape/landscape-message-march-22-2019",
+       "seccao": "Plant of the Week (Hamamelis × intermedia)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; janeiro–março fica por rever."
+     },
+     "nota": "UMass Extension: as cultivares de H. × intermedia enxertam-se muitas vezes sobre H. vernalis ou H. virginiana; os rebentos do porta-enxerto são comuns e devem ser cortados. Nota do ChatGPT, reescrita pelo Claude."
     }
    }
   },
