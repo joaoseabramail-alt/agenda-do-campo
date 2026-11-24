@@ -5897,7 +5897,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Variedades: não se mantêm por semente; use estaca ou enxerte na primavera sobre azevinho de semente."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -5983,6 +5983,37 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
      },
      "nota": "Retira-se fevereiro: poda ligeira no fim do inverno ou início da primavera, ajustada às geadas locais. Mantém-se «origem legal»."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Ilex aquifolium",
+       "url": "https://www.treesandshrubsonline.org/articles/ilex/ilex-aquifolium/",
+       "seccao": "Propagação (variedades por estaca ou enxertia)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Reino Unido: na primavera. Fevereiro–março mantém-se, por rever."
+     },
+     "nota": "Trees and Shrubs Online (Ilex aquifolium): as variedades não se mantêm por semente e propagam-se por estaca ou enxertia; a enxertia faz-se na primavera sobre plântulas da espécie. Nota do ChatGPT."
     }
    }
   },
@@ -6148,7 +6179,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a bolota: enxerte só cultivares ou clones escolhidos; a enxertia tende a encurtar a vida da árvore."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -6212,6 +6243,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
      },
      "nota": "Dezembro–fevereiro passa a julho–agosto. A tabela da Asociación Forestal de Galicia indica «entre julio y agosto» para Quercus robur (confirmado pelo Claude na página). Evitar dias de calor ou seca intensos."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Quercus",
+       "url": "https://www.treesandshrubsonline.org/articles/quercus/",
+       "seccao": "Propagação (bolotas; enxertia de variedades especiais, espécies raras e clones)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "Trees and Shrubs Online (Quercus): os carvalhos devem criar-se, sempre que possível, de bolota; a enxertia só para variedades especiais, espécies raras e clones, e só quando necessária, porque tende a encurtar a vida da árvore e a atrasar o crescimento. Nota do ChatGPT, completada pelo Claude com o motivo."
     }
    }
   },
@@ -6247,7 +6308,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a bolota: enxerte só cultivares ou clones escolhidos; a enxertia tende a encurtar a vida da árvore."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -6322,6 +6383,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, desenvolvimento da planta e risco de geada na parcela de Sardoura; os meses locais não foram validados."
      },
      "nota": "Confirmada a distinção entre formação e elevação da copa. Dezembro–fevereiro permanece indicativo. Não se reutilizam recomendações de tratamentos ou afirmações de segurança absoluta da ficha estrangeira."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Quercus",
+       "url": "https://www.treesandshrubsonline.org/articles/quercus/",
+       "seccao": "Propagação (bolotas; enxertia de variedades especiais, espécies raras e clones)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "Trees and Shrubs Online (Quercus): os carvalhos devem criar-se, sempre que possível, de bolota; a enxertia só para variedades especiais, espécies raras e clones, e só quando necessária, porque tende a encurtar a vida da árvore e a atrasar o crescimento. Nota do ChatGPT, completada pelo Claude com o motivo."
     }
    }
   },
@@ -6353,7 +6444,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a bolota: enxerte só cultivares ou clones escolhidos; a enxertia tende a encurtar a vida da árvore."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -6419,6 +6510,36 @@
       "nota": "Janela de avaliação, não obrigação de podar. Confirmar necessidade, estado da árvore e risco de geada na parcela de Sardoura."
      },
      "nota": "Mantém-se o inverno, provisoriamente. O regulamento de Braga dá o outono–inverno como época adequada para a maioria das podas, mas não é específico de Quercus pyrenaica."
+    },
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Trees and Shrubs Online — Quercus",
+       "url": "https://www.treesandshrubsonline.org/articles/quercus/",
+       "seccao": "Propagação (bolotas; enxertia de variedades especiais, espécies raras e clones)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "Trees and Shrubs Online (Quercus): os carvalhos devem criar-se, sempre que possível, de bolota; a enxertia só para variedades especiais, espécies raras e clones, e só quando necessária, porque tende a encurtar a vida da árvore e a atrasar o crescimento. Nota do ChatGPT, completada pelo Claude com o motivo."
     }
    }
   },
@@ -6453,7 +6574,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Garfo dormente de cerca de 15 cm e 3 gomos: lateral antes da rebentação; inglês em março ou início de abril."
     },
     "alporquia": {
      "dificuldade": 2,
@@ -6497,6 +6618,39 @@
     },
     "plantar": {
      "11": "Raiz nua; boa para bordaduras, sebes altas e madeira."
+    }
+   },
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "EFSA — Commodity risk assessment of Prunus avium plants from United Kingdom",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11221060/",
+       "seccao": "3.3.2 Source of planting material; 3.3.3 Production cycle (Grafting)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Viveiros do Reino Unido: garfo lateral no fim do inverno ou início da primavera; inglês em março ou início de abril. Fevereiro–março mantém-se, por rever."
+     },
+     "nota": "EFSA (viveiros do Reino Unido): a maioria não enxerta e usa semente e plântulas; quando enxertam, garfo dormente de cerca de 15 cm com pelo menos três gomos; garfo lateral (side-spliced) no fim do inverno ou início da primavera, antes da rebentação; inglês em março ou início de abril; enxertia feita em abrigo. Nota do ChatGPT."
     }
    }
   },
@@ -8187,7 +8341,7 @@
       2,
       3
      ],
-     "nota": null
+     "nota": "Prefira a bolota; a enxertia, de árvores escolhidas pela cortiça, exige garfo e porta-enxerto compatíveis."
     },
     "alporquia": {
      "dificuldade": 4,
@@ -8231,7 +8385,48 @@
      "ambito": "Auditoria documental de 23 fichas. O diff deste commit altera: legal. Isto regista alterações comprováveis no histórico; sem a documentação original, não certifica a fundamentação dessas alterações nem uma revisão integral dos meses, das podas ou dos tratamentos.",
      "documentacao": "nao_recuperada"
     }
-   ]
+   ],
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "iForest 16: 10-22 (2023) — Problems and solutions to cork oak (Quercus suber L.) regeneration: a review",
+       "url": "https://iforest.sisef.org//contents/?id=ifor3945-015",
+       "seccao": "Produção em viveiro e propagação vegetativa (enxertia)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Trees and Shrubs Online — Quercus",
+       "url": "https://www.treesandshrubsonline.org/articles/quercus/",
+       "seccao": "Propagação (bolotas; enxertia de variedades especiais, espécies raras e clones)",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "A fonte não dá época nem método; fevereiro–março fica por rever."
+     },
+     "nota": "iForest (revisão de 2023): a planta de bolota em viveiro é a técnica mais usada; a enxertia de árvores escolhidas pela cortiça tem dado bons resultados; o êxito depende sobretudo da compatibilidade entre garfo e porta-enxerto. Trees and Shrubs Online (Quercus): carvalhos de bolota sempre que possível. Nota do ChatGPT, reordenada pelo Claude."
+    }
+   }
   },
   {
    "id": "stewartia",
@@ -8513,10 +8708,10 @@
     "enxertia": {
      "dificuldade": 3,
      "meses": [
-      2,
-      3
+      1,
+      2
      ],
-     "nota": null
+     "nota": "A maioria dos viveiros não enxerta; quando o faz, usa garfo lateral ou inglês, de novembro a fevereiro."
     },
     "alporquia": {
      "dificuldade": 3,
@@ -8552,7 +8747,41 @@
    "solo": "Aceita solos ácidos e frescos a húmidos.",
    "resistencia_geada": "Em geral rústica no solo. Resguarde exemplares recém-plantados e vasos em períodos de geada forte.",
    "exposicao": "Sol pleno.",
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-24",
+     "alcance": {
+      "verificado": [
+       "meses",
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "EFSA — Commodity risk assessment of Betula pendula and Betula pubescens plants from the UK",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11532727/",
+       "seccao": "3.3.1 Source of planting material",
+       "consultado": "2026-11-24",
+       "sustenta": [
+        "meses",
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Viveiros do Reino Unido: novembro a fevereiro. Março sai por ficar fora do intervalo da fonte; janeiro acrescentado."
+     },
+     "nota": "EFSA (viveiros do Reino Unido, B. pendula e B. pubescens): a maioria dos viveiros não enxerta; quando enxertam, garfo lateral (side-spliced) ou inglês, em geral de novembro a fevereiro. Meses de fevereiro–março passam a janeiro–fevereiro. Nota do ChatGPT."
+    }
+   }
   },
   {
    "id": "castanheiro_india",

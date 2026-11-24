@@ -1,11 +1,11 @@
 // node revisao/testar-enxertia-ornamentais-2.cjs
 // Contrato da 2.ª ronda de enxertia das ornamentais (castanheiro-da-índia, camélia, azálea e hamamélis) contra 16dd1ff; não testa Chromium.
-// Numa ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
+// Dados fixados no commit em que esta ronda foi publicada (7413595): rondas seguintes não quebram o contrato. index.html e sw.js vêm da cópia de trabalho.
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
-const root=path.join(__dirname,'..'),base='16dd1ff';
+const root=path.join(__dirname,'..'),base='16dd1ff',ronda='7413595';
 const ids=['castanheiro_india','camelia','azalea','hamamelis'];
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 for(const f of ['tratamentos.json','calendario.json'])assert.equal(now(f),old(f),f+' fora do âmbito');
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
 const meses={castanheiro_india:[2,3,7,8],camelia:[2,3,4],azalea:[1,2],hamamelis:[1,2,3]};
