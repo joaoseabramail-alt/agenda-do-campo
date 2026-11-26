@@ -1,0 +1,189 @@
+{
+  "data_consulta": "2026-11-26",
+  "data_lista_dgav": "2026-05-06",
+  "fonte": "https://www.dgav.pt/wp-content/uploads/2026/04/Xf_Listaespeciesinfetadas_ZD-AMP_26_2.pdf",
+  "correspondencias": [
+    {
+      "id": "castanheiro",
+      "taxon_base": "Castanea sativa",
+      "taxon_lista": "Castanea sativa",
+      "correspondencia": "espécie",
+      "entrada": 11
+    },
+    {
+      "id": "laranjeira",
+      "taxon_base": "Citrus × sinensis",
+      "taxon_lista": "Citrus sinensis",
+      "correspondencia": "espécie; a base escreve ×",
+      "entrada": 18
+    },
+    {
+      "id": "limoeiro",
+      "taxon_base": "Citrus × limon",
+      "taxon_lista": "Citrus limon",
+      "correspondencia": "espécie; a base escreve ×",
+      "entrada": 15
+    },
+    {
+      "id": "tangerineira",
+      "taxon_base": "Citrus reticulata",
+      "taxon_lista": "Citrus reticulata",
+      "correspondencia": "espécie",
+      "entrada": 17
+    },
+    {
+      "id": "oliveira",
+      "taxon_base": "Olea europaea",
+      "taxon_lista": "Olea europaea",
+      "correspondencia": "espécie",
+      "entrada": 60
+    },
+    {
+      "id": "pessegueiro",
+      "taxon_base": "Prunus persica",
+      "taxon_lista": "Prunus persica",
+      "correspondencia": "espécie",
+      "entrada": 66
+    },
+    {
+      "id": "nectarina",
+      "taxon_base": "Prunus persica var. nucipersica",
+      "taxon_lista": "Prunus persica",
+      "correspondencia": "variedade da espécie da lista; não entrada independente",
+      "entrada": 66
+    },
+    {
+      "id": "framboeseira",
+      "taxon_base": "Rubus idaeus",
+      "taxon_lista": "Rubus idaeus",
+      "correspondencia": "espécie",
+      "entrada": 73
+    },
+    {
+      "id": "alecrim",
+      "taxon_base": "Salvia rosmarinus",
+      "taxon_lista": "Salvia rosmarinus",
+      "correspondencia": "espécie; sinónimo histórico Rosmarinus officinalis",
+      "entrada": 76
+    },
+    {
+      "id": "loureiro",
+      "taxon_base": "Laurus nobilis",
+      "taxon_lista": "Laurus nobilis",
+      "correspondencia": "espécie",
+      "entrada": 46
+    },
+    {
+      "id": "azevinho",
+      "taxon_base": "Ilex aquifolium",
+      "taxon_lista": "Ilex aquifolium",
+      "correspondencia": "espécie",
+      "entrada": 44
+    },
+    {
+      "id": "carvalho_alvarinho",
+      "taxon_base": "Quercus robur",
+      "taxon_lista": "Quercus robur",
+      "correspondencia": "espécie",
+      "entrada": 69
+    },
+    {
+      "id": "extremosa",
+      "taxon_base": "Lagerstroemia indica",
+      "taxon_lista": "Lagerstroemia indica",
+      "correspondencia": "espécie",
+      "entrada": 45
+    },
+    {
+      "id": "liquidambar",
+      "taxon_base": "Liquidambar styraciflua",
+      "taxon_lista": "Liquidambar styraciflua",
+      "correspondencia": "espécie",
+      "entrada": 51
+    },
+    {
+      "id": "magnolia_grandiflora",
+      "taxon_base": "Magnolia grandiflora",
+      "taxon_lista": "Magnolia grandiflora",
+      "correspondencia": "espécie",
+      "entrada": 54
+    },
+    {
+      "id": "platano",
+      "taxon_base": "Platanus × hispanica",
+      "taxon_lista": "Platanus × hispanica",
+      "correspondencia": "espécie híbrida",
+      "entrada": 63
+    },
+    {
+      "id": "sanguinho",
+      "taxon_base": "Frangula alnus",
+      "taxon_lista": "Frangula alnus",
+      "correspondencia": "espécie",
+      "entrada": 33
+    },
+    {
+      "id": "sobreiro",
+      "taxon_base": "Quercus suber",
+      "taxon_lista": "Quercus suber",
+      "correspondencia": "espécie",
+      "entrada": 71
+    },
+    {
+      "id": "hibisco",
+      "taxon_base": "Hibiscus syriacus",
+      "taxon_lista": "Hibiscus syriacus",
+      "correspondencia": "espécie",
+      "entrada": 41
+    },
+    {
+      "id": "loendro",
+      "taxon_base": "Nerium oleander",
+      "taxon_lista": "Nerium oleander",
+      "correspondencia": "espécie",
+      "entrada": 59
+    },
+    {
+      "id": "louro_cerejo",
+      "taxon_base": "Prunus laurocerasus",
+      "taxon_lista": "Prunus laurocerasus",
+      "correspondencia": "espécie",
+      "entrada": 65
+    },
+    {
+      "id": "roseira",
+      "taxon_base": "Rosa spp.",
+      "taxon_lista": "Rosa",
+      "correspondencia": "género; a lista não identifica espécies",
+      "entrada": 72
+    },
+    {
+      "id": "videira",
+      "taxon_base": "Vitis vinifera",
+      "taxon_lista": "Vitis sp.",
+      "correspondencia": "género; não demonstra infeção de todas as castas",
+      "entrada": 82
+    },
+    {
+      "id": "uva_mesa",
+      "taxon_base": "Vitis vinifera (uva de mesa)",
+      "taxon_lista": "Vitis sp.",
+      "correspondencia": "género; mesma entrada da videira",
+      "entrada": 82
+    },
+    {
+      "id": "lavanda",
+      "taxon_base": "Lavandula spp.",
+      "taxon_lista": "Lavandula angustifolia / L. dentata / L. stoechas",
+      "correspondencia": "sobreposição parcial com Lavandula spp.; não todo o género",
+      "entrada": 47
+    },
+    {
+      "id": "sardinheira",
+      "taxon_base": "Pelargonium spp.",
+      "taxon_lista": "Pelargonium graveolens",
+      "correspondencia": "sobreposição parcial com Pelargonium spp.; não todo o género",
+      "entrada": 61
+    }
+  ]
+}

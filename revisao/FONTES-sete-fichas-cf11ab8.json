@@ -1,0 +1,145 @@
+{
+  "consultado": "2026-11-26",
+  "fontes": [
+    {
+      "id": "horse",
+      "titulo": "RHS — Aesculus hippocastanum",
+      "url": "https://www.rhs.org.uk/plants/585/aesculus-hippocastanum/details",
+      "seccao": "Propagation; Pruning; Size"
+    },
+    {
+      "id": "horse_seed",
+      "titulo": "Forest Research — Aesculus hippocastanum",
+      "url": "https://www.forestresearch.gov.uk/tools-and-resources/seed-storage/aesculus-hippocastanum/",
+      "seccao": "Storage characteristics; Storage moisture content and temperature"
+    },
+    {
+      "id": "horse_cultivar",
+      "titulo": "RHS — Aesculus hippocastanum ‘Baumannii’",
+      "url": "https://www.rhs.org.uk/plants/91606/aesculus-hippocastanum-baumannii-d/details",
+      "seccao": "Propagation"
+    },
+    {
+      "id": "prune",
+      "titulo": "RHS — Shrubs and trees: light pruning",
+      "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+      "seccao": "When to lightly prune; How to lightly prune"
+    },
+    {
+      "id": "poison",
+      "titulo": "NIH/NCCIH — Horse Chestnut",
+      "url": "https://www.nccih.nih.gov/health/horse-chestnut",
+      "seccao": "What Do We Know About Safety?"
+    },
+    {
+      "id": "dl",
+      "titulo": "Diário da República — Decreto-Lei n.º 92/2019, texto consolidado",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2019-124568069",
+      "seccao": "Anexo II — Lista Nacional de Espécies Invasoras"
+    },
+    {
+      "id": "pepper",
+      "titulo": "RHS — How to grow sweet peppers",
+      "url": "https://www.rhs.org.uk/vegetables/peppers/grow-your-own",
+      "seccao": "Sowing; Planting; Plant Care"
+    },
+    {
+      "id": "padron",
+      "titulo": "Concello de Padrón — Os pementos",
+      "url": "https://www.padron.gal/padron/item/387-os-pementos-3",
+      "seccao": "Descrição dos ecótipos, colheita precoce e capsicinoides"
+    },
+    {
+      "id": "seed",
+      "titulo": "Seed Savers Exchange — Growing Guide: Peppers",
+      "url": "https://seedsavers.org/grow-pepper/",
+      "seccao": "Recommended Isolation Distance; Other Isolation Methods; Harvesting Seeds"
+    },
+    {
+      "id": "poly",
+      "titulo": "RHS — Polygala myrtifolia",
+      "url": "https://www.rhs.org.uk/plants/20908/polygala-myrtifolia/details",
+      "seccao": "Hardiness; Cultivation; Propagation; Pruning"
+    },
+    {
+      "id": "pitt",
+      "titulo": "RHS — Pittosporum tenuifolium",
+      "url": "https://www.rhs.org.uk/plants/13202/pittosporum-tenuifolium/details",
+      "seccao": "Cultivation; Propagation; Hardiness"
+    },
+    {
+      "id": "lime",
+      "titulo": "NSW Industry & Investment — Growing Australian native finger limes, Primefact 979 (2010)",
+      "url": "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0016/320272/growing-australian-native-finger-limes.pdf",
+      "seccao": "pp. 1–6: Climate; Varieties and rootstocks; Nutrition; Irrigation; Pruning"
+    },
+    {
+      "id": "thuja",
+      "titulo": "RHS — Thuja plicata",
+      "url": "https://www.rhs.org.uk/plants/18154/thuja-plicata/details",
+      "seccao": "Potentially harmful; Propagation; Pruning"
+    },
+    {
+      "id": "cupressus",
+      "titulo": "RHS — Cupressus sempervirens",
+      "url": "https://www.rhs.org.uk/plants/5079/cupressus-sempervirens/details",
+      "seccao": "Cultivation; Propagation; Pruning"
+    },
+    {
+      "id": "conifers",
+      "titulo": "RHS — How to grow conifers",
+      "url": "https://www.rhs.org.uk/plants/types/conifers/growing-guide",
+      "seccao": "Pruning and training; Propagating"
+    },
+    {
+      "id": "dgav",
+      "titulo": "DGAV — Xylella fastidiosa",
+      "url": "https://www.dgav.pt/plantas/conteudo/sanidade-vegetal/inspecao-fitossanitaria/informacao-fitossanitaria/xylella-fastidiosa/",
+      "seccao": "Zonas demarcadas; medidas fitossanitárias e circulação"
+    },
+    {
+      "id": "ue_xylella",
+      "titulo": "EUR-Lex — Regulamento de Execução (UE) 2020/1201, versão consolidada de 24/11/2025",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02020R1201-20251124",
+      "seccao": "Artigos 1 e 25; anexos I e II"
+    },
+    {
+      "id": "umn_seed",
+      "titulo": "University of Minnesota Extension — Saving vegetable seeds",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds",
+      "seccao": "Quick facts; Choosing plants for seed saving"
+    }
+  ],
+  "documentos_xylella": [
+    {
+      "id": "baiao",
+      "url": "https://www.dgav.pt/wp-content/uploads/2024/12/Despacho_79_G_2024_ZDXf_Baiao_dez24.pdf",
+      "sha256": "31b4338ba3df70c2aba257c97dc67ea7c4f747d3a9d908e549b5573cc293c502",
+      "bytes": 378050
+    },
+    {
+      "id": "amp",
+      "url": "https://www.dgav.pt/wp-content/uploads/2026/05/Despacho75_2026_AMP-Contencao.pdf",
+      "sha256": "c0d5a041c56a73a0de4c3bd6d2bbb0e0c8a87b2f8a4bbf14cf170227df983199",
+      "bytes": 339453
+    },
+    {
+      "id": "edital_baiao",
+      "url": "https://www.dgav.pt/wp-content/uploads/2025/01/ZD-BAIAO-EDITAL_2_2025_XF-N.pdf",
+      "sha256": "68dba634db67b731d57deae7061b9348652d08a68d35b9c110bb3120c0943e82",
+      "bytes": 254867
+    },
+    {
+      "id": "edital_amp",
+      "url": "https://www.dgav.pt/wp-content/uploads/2026/05/Edital19_2026.pdf",
+      "sha256": "2d3d6bf3675dc3576b5d6e1fbbd8925f36ab0a91eda3d7b977de9c53f46d6cbb",
+      "bytes": 330996
+    },
+    {
+      "id": "lista_amp",
+      "url": "https://www.dgav.pt/wp-content/uploads/2026/04/Xf_Listaespeciesinfetadas_ZD-AMP_26_2.pdf",
+      "sha256": "8d5d7c1f656395dc39f6a5bd0ba30b762acb4ad9c548d87e920ef1fed414b660",
+      "bytes": 236440
+    }
+  ]
+}

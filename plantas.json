@@ -8775,7 +8775,7 @@
   {
    "id": "tilia",
    "nome": "Tília",
-   "nome_cientifico": "Tilia spp.",
+   "nome_cientifico": "Tilia platyphyllos",
    "categoria": "ornamental",
    "folha": "caduca",
    "tipo_lua": "a",
@@ -9057,10 +9057,11 @@
     "sementeira": {
      "dificuldade": 1,
      "meses": [
+      9,
       10,
       11
      ],
-     "nota": "Semeie as castanhas frescas logo depois de caírem, sem as deixar secar; germinam na primavera.",
+     "nota": "Para obter a espécie comum, prefira a semente. Semeie logo após a queda; não deixe as sementes secar. Não conserva uma cultivar selecionada.",
      "fiel_variedade": false
     },
     "enxertia": {
@@ -9071,21 +9072,20 @@
       7,
       8
      ],
-     "nota": "Usada para manter cultivares (por exemplo, de flor dobrada), sobre porta-enxerto de semente."
+     "nota": "Para conservar cultivares identificadas; em julho–agosto, borbulha em lasca. A janela de garfo no fim do inverno fica por confirmar."
     }
    },
    "metodo_recomendado": [
     "enxertia"
    ],
-   "nota_variedade": "A semente dá a espécie comum; as cultivares só se mantêm por enxertia.",
+   "nota_variedade": "A semente serve para a espécie comum; para conservar uma cultivar, use material vegetativo da cultivar identificada.",
    "poda": [
     {
      "meses": [
-      12,
-      1,
-      2
+      2,
+      3
      ],
-     "tipo": "Precisa de pouca poda. Na árvore jovem, corrija só ramos concorrentes ou mal inseridos; na adulta, retire apenas ramos mortos, partidos ou perigosos. Cortes grandes ou em altura devem ser feitos por arborista"
+     "tipo": "Só se necessário, no fim do inverno ou início da primavera, sem geada: poucos cortes de formação nos jovens. Na árvore adulta, avaliação por arborista antes de cortes grandes ou em altura"
     }
    ],
    "plantacao": {
@@ -9109,11 +9109,11 @@
    "resistencia_geada": "Rústica no solo.",
    "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço.",
    "autoctone": false,
-   "toxicidade": "As castanhas-da-índia, a casca e as folhas são tóxicas se ingeridas. Não são comestíveis: não as confunda com as castanhas do castanheiro.",
+   "toxicidade": "Sementes, casca, flores e folhas são tóxicas por ingestão. As sementes não são as castanhas comestíveis de Castanea sativa; mantenha-as fora do alcance de crianças e animais.",
    "notas": {
     "plantar": {
-     "11": "Árvore muito grande (25–30 m): plante longe de casas, muros e canalizações.",
-     "1": "Árvore muito grande (25–30 m): plante longe de casas, muros e canalizações."
+     "11": "Árvore de grande porte: reserve espaço para a copa e as raízes adultas; avalie a proximidade de edifícios e infraestruturas.",
+     "1": "Árvore de grande porte: reserve espaço para a copa e as raízes adultas; avalie a proximidade de edifícios e infraestruturas."
     },
     "enx": {
      "7": "Borbulha em lasca.",
@@ -9124,7 +9124,7 @@
    "revisao": {
     "propagacao.enxertia": {
      "estado": "parcial",
-     "data_revisao": "2026-11-24",
+     "data_revisao": "2026-11-26",
      "alcance": {
       "verificado": [
        "tecnica"
@@ -9137,10 +9137,19 @@
      },
      "fontes": [
       {
-       "titulo": "RHS — Aesculus hippocastanum 'Baumannii'",
+       "titulo": "RHS — Aesculus hippocastanum",
+       "url": "https://www.rhs.org.uk/plants/585/aesculus-hippocastanum/details",
+       "seccao": "Propagation; Pruning; Size",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica"
+       ]
+      },
+      {
+       "titulo": "RHS — Aesculus hippocastanum ‘Baumannii’",
        "url": "https://www.rhs.org.uk/plants/91606/aesculus-hippocastanum-baumannii-d/details",
        "seccao": "Propagation",
-       "consultado": "2026-11-24",
+       "consultado": "2026-11-26",
        "sustenta": [
         "tecnica"
        ]
@@ -9148,11 +9157,194 @@
      ],
      "adaptacao_local": {
       "estado": "provisoria",
-      "nota": "RHS (Reino Unido): borbulha em lasca de meados ao fim do verão. Acrescentados julho e agosto; fevereiro–março mantém-se, por rever."
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
      },
-     "nota": "RHS ('Baumannii'): estacas lenhosas do início a meados do inverno ou borbulha em lasca de meados ao fim do verão. Acrescentados julho e agosto com a nota «Borbulha em lasca.». A nota geral (cultivares sobre porta-enxerto de semente) mantém-se sem fonte aberta: a revisão da Biological Flora (Wiley) pediu verificação anti-robô e não foi lida. Nota do ChatGPT."
+     "nota": "Mantém fevereiro–março por confirmar. A fonte de borbulha em lasca é específica de Baumannii; não prova um protocolo único para todas as cultivares. Substitui o registo parcial de 24/11 sem transformar a janela de inverno em validada."
+    },
+    "propagacao.sementeira": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Aesculus hippocastanum",
+       "url": "https://www.rhs.org.uk/plants/585/aesculus-hippocastanum/details",
+       "seccao": "Propagation; Pruning; Size",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Forest Research — Aesculus hippocastanum",
+       "url": "https://www.forestresearch.gov.uk/tools-and-resources/seed-storage/aesculus-hippocastanum/",
+       "seccao": "Storage characteristics; Storage moisture content and temperature",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Setembro acrescentado para coincidir com a recolha já indicada; semear pela queda efetiva, não guardar sementes secas até um mês fixo."
+    },
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Aesculus hippocastanum",
+       "url": "https://www.rhs.org.uk/plants/585/aesculus-hippocastanum/details",
+       "seccao": "Propagation; Pruning; Size",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "RHS — Shrubs and trees: light pruning",
+       "url": "https://www.rhs.org.uk/plants/types/trees/trees-shrubs-light-pruning",
+       "seccao": "When to lightly prune; How to lightly prune",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Fevereiro–março é tradução prudente do grupo 1; não é uma época local experimentalmente validada."
+    },
+    "toxicidade": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "NIH/NCCIH — Horse Chestnut",
+       "url": "https://www.nccih.nih.gov/health/horse-chestnut",
+       "seccao": "What Do We Know About Safety?",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "invasora": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "estatuto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "Diário da República — Decreto-Lei n.º 92/2019, texto consolidado",
+       "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2019-124568069",
+       "seccao": "Anexo II — Lista Nacional de Espécies Invasoras",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "estatuto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "A espécie não consta do anexo II consultado. Isto não equivale a risco ecológico nulo nem a autorização de introdução na natureza."
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém novembro–março: falta fonte para a janela local e para o modo de fornecimento concreto."
+    },
+    "recolha_sementes": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Setembro–outubro mantém-se como orientação, dependente da maturação e queda observadas."
+    },
+    "floracao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Época herdada mantida; falta confirmação fenológica para esta planta e local. Não foi convertida uma estação estrangeira num calendário local."
     }
-   }
+   },
+   "invasora": false
   },
   {
    "id": "aucuba",
@@ -13866,7 +14058,8 @@
      3,
      4
     ],
-    "modo": "alfobre"
+    "modo": "alfobre",
+    "nota": "Alfobre quente e luminoso (18–21 °C para germinar). Para guardar semente, deixe alguns frutos amadurecer completamente; para consumo, colha-os pequenos e verdes. Para conservar a variedade, isole flores antes de abrirem e use semente de polinização livre; um F1 pode dar descendência diferente."
    },
    "plantacao": {
     "meses": [
@@ -13882,24 +14075,258 @@
     9,
     10
    ],
-   "nota_variedade": "Cruza facilmente com outros pimentos: para guardar semente fiel, isole as plantas ou compre semente certificada.",
+   "nota_variedade": "Pode autopolinizar-se, mas os insetos podem cruzar variedades. Para guardar semente, isole flores antes de abrirem e use uma variedade de polinização livre; a descendência de um F1 pode variar.",
    "adubacao": "No solo, ajuste à fertilidade. Em vaso, reforce regularmente com adubo para hortícolas de fruto, conforme o rótulo.",
-   "rega": "Mantenha humidade regular e evite secar a terra entre regas: a falta de água aumenta os frutos picantes.",
+   "rega": "Mantenha humidade regular, sem encharcar. A rega não garante frutos sem picante: a pungência também depende da genética, da maturação e das condições de cultivo.",
    "floracao": "Floresce continuamente durante o verão.",
    "solo": "Solo fértil e bem drenado.",
    "resistencia_geada": "Sensível à geada. Instale no exterior quando tiver passado o risco.",
    "exposicao": "Sol pleno, em local abrigado.",
-   "autoctone": null,
-   "toxicidade": null,
+   "autoctone": false,
+   "toxicidade": "O fruto é comestível, mas pode ser picante. A capsaicina pode irritar olhos e mucosas; lave as mãos depois de manusear os frutos e evite tocar nos olhos.",
    "notas": {
     "plantar": {
-     "2": "Em estufa ou junto a uma parede abrigada, para transplantar em maio.",
-     "3": "Protegido do frio.",
-     "4": "Só no fim do mês e em local abrigado; aqui ainda pode gear até meados de abril. O normal é maio.",
-     "5": "Época principal de transplante em Castelo de Paiva."
+     "2": "Semear em alfobre aquecido e com boa luz; uma parede abrigada não substitui o calor necessário à germinação.",
+     "3": "Semear em alfobre quente e luminoso; ainda não transplantar para o frio.",
+     "4": "Manter protegido; endurecer gradualmente antes do transplante. Não decidir por uma data fixa do fim das geadas.",
+     "5": "Transplantar após aclimatação, sem risco de geada e com noites suficientemente quentes; adiar se continuar frio.",
+     "6": "Transplantar plantas aclimatadas; manter rega regular durante a instalação."
     }
    },
-   "foto": "Pimento-padrón"
+   "foto": "Pimento-padrón",
+   "revisao": {
+    "sementeira": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow sweet peppers",
+       "url": "https://www.rhs.org.uk/vegetables/peppers/grow-your-own",
+       "seccao": "Sowing; Planting; Plant Care",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Seed Savers Exchange — Growing Guide: Peppers",
+       "url": "https://seedsavers.org/grow-pepper/",
+       "seccao": "Recommended Isolation Distance; Other Isolation Methods; Harvesting Seeds",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Concello de Padrón — Os pementos",
+       "url": "https://www.padron.gal/padron/item/387-os-pementos-3",
+       "seccao": "Descrição dos ecótipos, colheita precoce e capsicinoides",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "University of Minnesota Extension — Saving vegetable seeds",
+       "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds",
+       "seccao": "Quick facts; Choosing plants for seed saving",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Os meses mantêm-se orientativos. A fonte RHS é de Capsicum annuum, não um ensaio de Padrón em Sardoura. A nota de variedade trata da geração seguinte; não atribui o picante dos frutos atuais a pólen de um pimento vizinho."
+    },
+    "plantacao": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow sweet peppers",
+       "url": "https://www.rhs.org.uk/vegetables/peppers/grow-your-own",
+       "seccao": "Sowing; Planting; Plant Care",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém maio–junho. Eliminada a garantia de que a geada termina em meados de abril."
+    },
+    "colheita": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Concello de Padrón — Os pementos",
+       "url": "https://www.padron.gal/padron/item/387-os-pementos-3",
+       "seccao": "Descrição dos ecótipos, colheita precoce e capsicinoides",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Colheita verde para consumo; maturação completa para semente. Junho–outubro não foi validado localmente."
+    },
+    "rega": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Concello de Padrón — Os pementos",
+       "url": "https://www.padron.gal/padron/item/387-os-pementos-3",
+       "seccao": "Descrição dos ecótipos, colheita precoce e capsicinoides",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      },
+      {
+       "titulo": "RHS — How to grow sweet peppers",
+       "url": "https://www.rhs.org.uk/vegetables/peppers/grow-your-own",
+       "seccao": "Sowing; Planting; Plant Care",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Não há uma rega que assegure ausência de picante."
+    },
+    "toxicidade": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "Concello de Padrón — Os pementos",
+       "url": "https://www.padron.gal/padron/item/387-os-pementos-3",
+       "seccao": "Descrição dos ecótipos, colheita precoce e capsicinoides",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      },
+      {
+       "titulo": "Seed Savers Exchange — Growing Guide: Peppers",
+       "url": "https://seedsavers.org/grow-pepper/",
+       "seccao": "Recommended Isolation Distance; Other Isolation Methods; Harvesting Seeds",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Aviso de irritação no manuseamento; não classifica o fruto alimentar como venenoso. A segurança de usos medicinais não foi avaliada."
+    },
+    "floracao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Época herdada mantida; falta confirmação fenológica para esta planta e local. Não foi convertida uma estação estrangeira num calendário local."
+    },
+    "autoctone": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "estatuto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "Concello de Padrón — Os pementos",
+       "url": "https://www.padron.gal/padron/item/387-os-pementos-3",
+       "seccao": "Origem americana e seleção dos ecótipos",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "estatuto"
+       ]
+      }
+     ],
+     "nota": "Capsicum annuum é de origem americana; Padrón é uma seleção cultivada, não uma planta autóctone portuguesa."
+    }
+   }
   },
   {
    "id": "rabanete",
@@ -15815,10 +16242,12 @@
     "estacas": {
      "dificuldade": 2,
      "meses": [
+      6,
+      7,
       8,
       9
      ],
-     "nota": "Estacas semi-lenhosas de 8–10 cm, em abrigo húmido."
+     "nota": "No início do verão, estacas herbáceas; a meio e no fim, semi-lenhosas. Manter em abrigo luminoso, sem sol direto forte, com humidade controlada."
     },
     "sementeira": {
      "dificuldade": 2,
@@ -15835,7 +16264,7 @@
       3,
       4
      ],
-     "tipo": "Depois do frio, apare ligeiramente as pontas para manter a planta compacta. Não corte para dentro da madeira velha sem folhas, que rebenta mal"
+     "tipo": "Depois do risco de geada, retire os rebentos danificados pelo inverno e apare ligeiramente para manter a forma; evite uma poda forte sem necessidade"
     }
    ],
    "plantacao": {
@@ -15851,10 +16280,218 @@
    "rega": "Regue com regularidade na instalação. Depois de estabelecida tolera alguma secura; evite o encharcamento.",
    "floracao": "Floração longa, da primavera ao outono.",
    "solo": "Solo bem drenado; não tolera encharcamento.",
-   "resistencia_geada": "Tolera geadas fracas. Proteja as plantas jovens e as de vaso nas geadas fortes.",
+   "resistencia_geada": "Sensível à geada. Em locais frios, prefira vaso que possa recolher a um abrigo luminoso sem geada; proteja também plantas adultas.",
    "exposicao": "Sol pleno, em local abrigado.",
    "autoctone": false,
-   "toxicidade": null
+   "toxicidade": null,
+   "geada": true,
+   "notas": {
+    "plantar": {
+     "3": "Plante apenas sem risco de geada, em solo drenado e local abrigado; em sítios frios, prefira vaso recolhido no inverno.",
+     "4": "Plante apenas sem risco de geada, em solo drenado e local abrigado; em sítios frios, prefira vaso recolhido no inverno.",
+     "5": "Plante apenas sem risco de geada, em solo drenado e local abrigado; em sítios frios, prefira vaso recolhido no inverno.",
+     "10": "Plante apenas sem risco de geada, em solo drenado e local abrigado; em sítios frios, prefira vaso recolhido no inverno."
+    }
+   },
+   "legal": "Xylella: hospedeira de risco. Use plantas de origem rastreável; antes de trazer ou trocar plantas e estacas de zonas demarcadas, confirme com a DGAV as restrições e a documentação aplicáveis.",
+   "legal_botoes": [
+    "plantar",
+    "estacas"
+   ],
+   "revisao": {
+    "resistencia_geada": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Polygala myrtifolia",
+       "url": "https://www.rhs.org.uk/plants/20908/polygala-myrtifolia/details",
+       "seccao": "Hardiness; Cultivation; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "RHS H2: não usar a antiga promessa de tolerância a geada como garantia em Sardoura."
+    },
+    "propagacao.estacas": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Polygala myrtifolia",
+       "url": "https://www.rhs.org.uk/plants/20908/polygala-myrtifolia/details",
+       "seccao": "Hardiness; Cultivation; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Junho–setembro traduz as fases indicadas pela RHS; escolher o estado do ramo, não apenas o mês."
+    },
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Polygala myrtifolia",
+       "url": "https://www.rhs.org.uk/plants/20908/polygala-myrtifolia/details",
+       "seccao": "Hardiness; Cultivation; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Meses herdados mantidos apenas com condição explícita de ausência de geada; outubro não é recomendado em sítios frios sem possibilidade de abrigo."
+    },
+    "propagacao.sementeira": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Não foi recuperado um protocolo primário de sementeira desta espécie; março–abril e dificuldade 2 continuam por confirmar."
+    },
+    "legal": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "estatuto",
+       "texto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "DGAV — Xylella fastidiosa",
+       "url": "https://www.dgav.pt/plantas/conteudo/sanidade-vegetal/inspecao-fitossanitaria/informacao-fitossanitaria/xylella-fastidiosa/",
+       "seccao": "Zonas demarcadas; medidas fitossanitárias e circulação",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "estatuto",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "EUR-Lex — Regulamento de Execução (UE) 2020/1201, versão consolidada de 24/11/2025",
+       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02020R1201-20251124",
+       "seccao": "Artigo 25 e anexos I e II (Polygala myrtifolia)",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "estatuto",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Aviso preventivo, não declaração de infeção em Sardoura ou na AMP. Ver revisao/XYLELLA-levantamento.md. Não se aplica a sem; a ficha continua a mostrar o aviso completo."
+    },
+    "toxicidade": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Campo null mantido: não equivale a ausência de toxicidade. Não foi recuperada avaliação primária suficiente da planta inteira e dos diferentes usos."
+    },
+    "floracao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Época herdada mantida; falta confirmação fenológica para esta planta e local. Não foi convertida uma estação estrangeira num calendário local."
+    }
+   }
   },
   {
    "id": "pitosporo_tenuifolium",
@@ -15865,13 +16502,13 @@
    "tipo_lua": "a",
    "propagacao": {
     "estacas": {
-     "dificuldade": 2,
+     "dificuldade": 3,
      "meses": [
       7,
       8,
       9
      ],
-     "nota": "Estacas semi-lenhosas, de preferência das variedades que quer manter."
+     "nota": "Estacas semi-lenhosas no verão, de planta-mãe identificada; controlar humidade e ventilação, sem encharcar o substrato."
     },
     "sementeira": {
      "dificuldade": 3,
@@ -15886,7 +16523,7 @@
    "metodo_recomendado": [
     "estacas"
    ],
-   "nota_variedade": "As variedades de folha variegada só se mantêm por estaca.",
+   "nota_variedade": "Para conservar uma cultivar, como as variegadas, prefira propagação vegetativa de uma planta-mãe identificada; a semente pode dar plantas diferentes.",
    "poda": [
     {
      "meses": [
@@ -15919,12 +16556,169 @@
    "exposicao": "Sol ou meia-sombra, abrigado de ventos frios.",
    "autoctone": false,
    "toxicidade": null,
-   "legal": "Não confundir com Pittosporum undulatum, espécie invasora em Portugal (DL 92/2019): confirme a identificação antes de propagar ou plantar.",
+   "legal": "Confirme a espécie: Pittosporum tenuifolium não consta do anexo II do DL 92/2019; Pittosporum undulatum consta e está sujeito às proibições legais.",
    "legal_botoes": [
     "plantar",
     "sem",
     "estacas"
-   ]
+   ],
+   "revisao": {
+    "propagacao.estacas": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Pittosporum tenuifolium",
+       "url": "https://www.rhs.org.uk/plants/13202/pittosporum-tenuifolium/details",
+       "seccao": "Cultivation; Propagation; Hardiness",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Julho–setembro mantém-se como janela provisória. A dificuldade 3 é uma estimativa conservadora para propagação doméstica sem controlo ambiental, não uma taxa de sucesso medida nem um valor fornecido pela RHS."
+    },
+    "legal": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "estatuto",
+       "texto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "Diário da República — Decreto-Lei n.º 92/2019, texto consolidado",
+       "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2019-124568069",
+       "seccao": "Anexo II — Lista Nacional de Espécies Invasoras",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "estatuto",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "propagacao.sementeira": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Março–abril e dificuldade 3 mantêm-se por confirmar; não certificar fidelidade varietal da descendência."
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém março–abril e outubro–novembro; o calendário local não foi validado."
+    },
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Pittosporum tenuifolium",
+       "url": "https://www.rhs.org.uk/plants/13202/pittosporum-tenuifolium/details",
+       "seccao": "Cultivation; Propagation; Hardiness",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "A ficha RHS remete para pouca ou nenhuma poda; não valida a frequência de aparo de sebe herdada."
+    },
+    "toxicidade": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Campo null mantido: não equivale a ausência de toxicidade. Não foi recuperada avaliação primária suficiente da planta inteira e dos diferentes usos."
+    },
+    "floracao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Época herdada mantida; falta confirmação fenológica para esta planta e local. Não foi convertida uma estação estrangeira num calendário local."
+    }
+   }
   },
   {
    "id": "lima_dedo",
@@ -15941,7 +16735,7 @@
       4,
       5
      ],
-     "nota": "Borbulha sobre porta-enxerto de citrinos, quando a casca descola."
+     "nota": "Para conservar a cultivar, prefira enxertia em porta-enxerto de citrinos compatível e material de origem sanitária conhecida."
     },
     "estacas": {
      "dificuldade": 3,
@@ -15958,15 +16752,14 @@
       4,
       5
      ],
-     "nota": null,
+     "nota": "A descendência pode diferir da cultivar e demorar muitos anos a frutificar; não é o método preferido para obter fruto de uma variedade escolhida.",
      "fiel_variedade": false
     }
    },
    "metodo_recomendado": [
-    "enxertia",
-    "estacas"
+    "enxertia"
    ],
-   "nota_variedade": "A semente não mantém a cor nem o sabor da variedade.",
+   "nota_variedade": "A semente não garante os caracteres da cultivar; a enxertia permite conservar uma seleção identificada.",
    "poda": [
     {
      "meses": [
@@ -15989,11 +16782,11 @@
     ],
     "o_que": "torrão ou vaso"
    },
-   "adubacao": "Na primavera e no verão, use adubo para citrinos conforme o rótulo; em vaso, reforce com mais regularidade.",
+   "adubacao": "Evite excessos: não copie automaticamente a adubação de outros citrinos. Ajuste pequenas aplicações ao crescimento, ao solo e ao rótulo do adubo.",
    "rega": "Mantenha a terra húmida sem encharcar, sobretudo em vaso e durante o crescimento dos frutos.",
    "floracao": "Flores brancas, sobretudo na primavera.",
    "solo": "Solo ligeiramente ácido a neutro, bem drenado.",
-   "resistencia_geada": "Tolera geadas ligeiras quando estabelecida; proteja as plantas jovens e as de vaso.",
+   "resistencia_geada": "Prefira local sem geadas e protegido do vento. Alguma tolerância a frio ligeiro não garante ausência de danos; proteja sobretudo plantas jovens e vasos.",
    "exposicao": "Sol ou meia-sombra, em local abrigado.",
    "autoctone": false,
    "toxicidade": null,
@@ -16001,6 +16794,236 @@
     "plantar": {
      "4": "Em vaso ou junto a uma parede virada a sul, depois das geadas.",
      "5": "Em vaso ou junto a uma parede virada a sul, depois das geadas."
+    }
+   },
+   "revisao": {
+    "propagacao.enxertia": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "NSW Industry & Investment — Growing Australian native finger limes, Primefact 979 (2010)",
+       "url": "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0016/320272/growing-australian-native-finger-limes.pdf",
+       "seccao": "pp. 1–6: Climate; Varieties and rootstocks; Nutrition; Irrigation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém abril–maio, sem validação local. Recomendar enxertia não significa que estacas sejam impossíveis."
+    },
+    "propagacao.sementeira": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "NSW Industry & Investment — Growing Australian native finger limes, Primefact 979 (2010)",
+       "url": "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0016/320272/growing-australian-native-finger-limes.pdf",
+       "seccao": "pp. 1–6: Climate; Varieties and rootstocks; Nutrition; Irrigation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "propagacao.estacas": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica",
+       "dificuldade",
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém junho–agosto e dificuldade 3; não foi confirmado aqui o protocolo de estacas nem a sua taxa de sucesso. Sai apenas a recomendação em igualdade com enxertia."
+    },
+    "adubacao": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": [
+       "tecnica"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "NSW Industry & Investment — Growing Australian native finger limes, Primefact 979 (2010)",
+       "url": "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0016/320272/growing-australian-native-finger-limes.pdf",
+       "seccao": "pp. 1–6: Climate; Varieties and rootstocks; Nutrition; Irrigation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Fonte baseada sobretudo em observações de produtores australianos; sem transportar doses ou épocas para Portugal."
+    },
+    "resistencia_geada": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "NSW Industry & Investment — Growing Australian native finger limes, Primefact 979 (2010)",
+       "url": "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0016/320272/growing-australian-native-finger-limes.pdf",
+       "seccao": "pp. 1–6: Climate; Varieties and rootstocks; Nutrition; Irrigation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "NSW Industry & Investment — Growing Australian native finger limes, Primefact 979 (2010)",
+       "url": "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0016/320272/growing-australian-native-finger-limes.pdf",
+       "seccao": "pp. 1–6: Climate; Varieties and rootstocks; Nutrition; Irrigation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "A fonte sustenta poda ligeira; a época australiana não valida março–maio em Sardoura."
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Abril–maio mantém-se condicionado ao fim do risco de geada; não há ensaio local que valide estes meses."
+    },
+    "colheita": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Outubro–dezembro e a época de floração herdada não foram confirmados para Portugal; não foram convertidos por seis meses a partir do calendário australiano."
+    },
+    "toxicidade": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Campo null mantido: não equivale a ausência de toxicidade. Não foi recuperada avaliação primária suficiente da planta inteira e dos diferentes usos."
+    },
+    "floracao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Época herdada mantida; falta confirmação fenológica para esta planta e local. Não foi convertida uma estação estrangeira num calendário local."
     }
    }
   },
@@ -16015,19 +17038,18 @@
     "estacas": {
      "dificuldade": 2,
      "meses": [
-      9,
-      10,
-      11
+      8,
+      9
      ],
-     "nota": "Estacas semi-lenhosas com talão, em abrigo frio."
+     "nota": "Estacas semi-lenhosas no fim do verão, em abrigo com humidade e ventilação controladas. As estacas lenhosas de inverno exigem outro protocolo."
     },
     "sementeira": {
      "dificuldade": 2,
      "meses": [
-      3,
-      4
+      2,
+      3
      ],
-     "nota": null,
+     "nota": "Semear no fim do inverno em recipientes, em abrigo frio; a semente não conserva uma cultivar selecionada.",
      "fiel_variedade": false
     }
    },
@@ -16041,7 +17063,7 @@
       5,
       8
      ],
-     "tipo": "Num exemplar isolado, quase não precisa de poda. Em sebe, apare na primavera e no fim do verão, só na parte com folhagem verde: a tuia não rebenta da madeira velha sem folhas"
+     "tipo": "Num exemplar isolado, quase não precisa de poda. Em sebe, apare na primavera e no fim do verão, deixando folhagem verde; a recuperação da madeira velha é irregular e não deve ser garantida"
     }
    ],
    "plantacao": {
@@ -16060,7 +17082,152 @@
    "resistencia_geada": "Rústica no solo.",
    "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço.",
    "autoctone": false,
-   "toxicidade": "A folhagem contém tujona e é tóxica se ingerida; o contacto pode irritar a pele sensível."
+   "toxicidade": "Nociva por ingestão; o contacto pode provocar alergia cutânea. Use luvas ao manusear e mantenha os restos fora do alcance de crianças e animais.",
+   "revisao": {
+    "propagacao.estacas": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Thuja plicata",
+       "url": "https://www.rhs.org.uk/plants/18154/thuja-plicata/details",
+       "seccao": "Potentially harmful; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "RHS — How to grow conifers",
+       "url": "https://www.rhs.org.uk/plants/types/conifers/growing-guide",
+       "seccao": "Pruning and training; Propagating",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Agosto–setembro aproxima o fim do verão da referência; retiram-se outubro–novembro deste calendário de semi-lenhosas. Isto não declara inviável um protocolo separado de lenhosas."
+    },
+    "propagacao.sementeira": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Thuja plicata",
+       "url": "https://www.rhs.org.uk/plants/18154/thuja-plicata/details",
+       "seccao": "Potentially harmful; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Fevereiro–março em vez de março–abril: tradução provisória do fim do inverno, não ensaio em Sardoura."
+    },
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — How to grow conifers",
+       "url": "https://www.rhs.org.uk/plants/types/conifers/growing-guide",
+       "seccao": "Pruning and training; Propagating",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "toxicidade": {
+     "estado": "confirmado",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "texto"
+      ],
+      "por_rever": []
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Thuja plicata",
+       "url": "https://www.rhs.org.uk/plants/18154/thuja-plicata/details",
+       "seccao": "Potentially harmful; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém março–abril e outubro–novembro, sem validação local."
+    }
+   }
   },
   {
    "id": "cipreste_comum",
@@ -16081,11 +17248,10 @@
     "estacas": {
      "dificuldade": 3,
      "meses": [
-      9,
-      10,
-      11
+      8,
+      9
      ],
-     "nota": "Estacas semi-lenhosas com talão, com hormona e em abrigo."
+     "nota": "Estacas semi-lenhosas no fim do verão ou início do outono, em abrigo com humidade controlada; não confundir com estacas lenhosas de inverno."
     }
    },
    "poda": [
@@ -16095,7 +17261,7 @@
       5,
       8
      ],
-     "tipo": "Precisa de pouca poda. Em sebe, apare só a folhagem verde, na primavera e no fim do verão; não corte para dentro da madeira sem folhas, que não rebenta. Retire os ramos secos com ferramenta desinfetada (cancro do cipreste)"
+     "tipo": "Num exemplar isolado, não faça poda de rotina. Em sebe, apare ligeiramente a folhagem verde, sem entrar na madeira sem folhas; se houver ramos secos ou lesões, avalie a causa e desinfete a ferramenta"
     }
    ],
    "plantacao": {
@@ -16114,7 +17280,152 @@
    "resistencia_geada": "Rústico no solo.",
    "exposicao": "Sol pleno.",
    "autoctone": false,
-   "toxicidade": null
+   "toxicidade": null,
+   "revisao": {
+    "propagacao.estacas": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Cupressus sempervirens",
+       "url": "https://www.rhs.org.uk/plants/5079/cupressus-sempervirens/details",
+       "seccao": "Cultivation; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "RHS — How to grow conifers",
+       "url": "https://www.rhs.org.uk/plants/types/conifers/growing-guide",
+       "seccao": "Pruning and training; Propagating",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Agosto–setembro substitui setembro–novembro para não prolongar a indicação de semi-lenhosas pelo inverno; correspondência mensal provisória."
+    },
+    "propagacao.sementeira": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica"
+      ],
+      "por_rever": [
+       "meses",
+       "dificuldade",
+       "texto"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Cupressus sempervirens",
+       "url": "https://www.rhs.org.uk/plants/5079/cupressus-sempervirens/details",
+       "seccao": "Cultivation; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "A fonte confirma semente como método; não confirma março–abril nem um pré-tratamento nesta ficha."
+    },
+    "poda": {
+     "estado": "parcial",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [
+       "tecnica",
+       "texto"
+      ],
+      "por_rever": [
+       "meses"
+      ]
+     },
+     "fontes": [
+      {
+       "titulo": "RHS — Cupressus sempervirens",
+       "url": "https://www.rhs.org.uk/plants/5079/cupressus-sempervirens/details",
+       "seccao": "Cultivation; Propagation; Pruning",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      },
+      {
+       "titulo": "RHS — How to grow conifers",
+       "url": "https://www.rhs.org.uk/plants/types/conifers/growing-guide",
+       "seccao": "Pruning and training; Propagating",
+       "consultado": "2026-11-26",
+       "sustenta": [
+        "tecnica",
+        "texto"
+       ]
+      }
+     ],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     }
+    },
+    "plantacao": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "meses",
+       "tecnica"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Referência técnica geral; não confirma os meses nem o comportamento desta planta em Sardoura."
+     },
+     "nota": "Mantém março–abril e outubro–novembro, sem validação local."
+    },
+    "toxicidade": {
+     "estado": "provisorio",
+     "data_revisao": "2026-11-26",
+     "alcance": {
+      "verificado": [],
+      "por_rever": [
+       "texto"
+      ]
+     },
+     "fontes": [],
+     "adaptacao_local": {
+      "estado": "provisoria",
+      "nota": "Não há validação local deste campo para Sardoura."
+     },
+     "nota": "Campo null mantido: não equivale a ausência de toxicidade. Não foi recuperada avaliação primária suficiente da planta inteira e dos diferentes usos."
+    }
+   }
   }
  ]
 }
