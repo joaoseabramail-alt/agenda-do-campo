@@ -1,11 +1,12 @@
 // node revisao/testar-enxertia-ornamentais-3.cjs
 // Contrato da 3.ª ronda de enxertia das ornamentais (11 plantas) contra 7f61d39; não testa Chromium.
-// Numa ronda seguinte, fixar os dados no commit desta ronda (como nos outros testes).
 const fs=require('fs'),path=require('path'),vm=require('vm'),cp=require('child_process'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),base='7f61d39';
 const ids=['arvore_ferro','cornus_kousa','ginkgo','liquidambar','olaia','pilriteiro','platano','tilia','buganvilia','hibisco','osmanto'];
 const old=f=>cp.execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
-const now=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
+// Dados fixados no commit desta ronda (62d7d66), como nos outros testes; a interface (index.html, sw.js) é lida do disco.
+const ronda='62d7d66';
+const now=f=>['index.html','sw.js'].includes(f)?fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'):cp.execFileSync('git',['show',`${ronda}:${f}`],{cwd:root,encoding:'utf8'});
 for(const f of ['tratamentos.json','calendario.json'])assert.equal(now(f),old(f),f+' fora do âmbito');
 const before=JSON.parse(old('plantas.json')),after=JSON.parse(now('plantas.json'));
 const comMes=['cornus_kousa','ginkgo'];

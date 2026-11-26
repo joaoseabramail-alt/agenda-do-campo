@@ -15803,6 +15803,318 @@
      "nota": "Texto e meses mantidos. A tabela galega indica para Pinus pinaster «con clima seco en los meses cálidos»; mantém-se o inverno por prudência com o nemátodo. Época de desramação por confirmar para o povoamento."
     }
    }
+  },
+  {
+   "id": "poligala",
+   "nome": "Polígala",
+   "nome_cientifico": "Polygala myrtifolia",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      8,
+      9
+     ],
+     "nota": "Estacas semi-lenhosas de 8–10 cm, em abrigo húmido."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      3,
+      4
+     ],
+     "tipo": "Depois do frio, apare ligeiramente as pontas para manter a planta compacta. Não corte para dentro da madeira velha sem folhas, que rebenta mal"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     5,
+     10
+    ],
+    "o_que": "torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue com regularidade na instalação. Depois de estabelecida tolera alguma secura; evite o encharcamento.",
+   "floracao": "Floração longa, da primavera ao outono.",
+   "solo": "Solo bem drenado; não tolera encharcamento.",
+   "resistencia_geada": "Tolera geadas fracas. Proteja as plantas jovens e as de vaso nas geadas fortes.",
+   "exposicao": "Sol pleno, em local abrigado.",
+   "autoctone": false,
+   "toxicidade": null
+  },
+  {
+   "id": "pitosporo_tenuifolium",
+   "nome": "Pitósporo-de-folha-fina (kohuhu)",
+   "nome_cientifico": "Pittosporum tenuifolium",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      7,
+      8,
+      9
+     ],
+     "nota": "Estacas semi-lenhosas, de preferência das variedades que quer manter."
+    },
+    "sementeira": {
+     "dificuldade": 3,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null,
+     "fiel_variedade": false
+    }
+   },
+   "metodo_recomendado": [
+    "estacas"
+   ],
+   "nota_variedade": "As variedades de folha variegada só se mantêm por estaca.",
+   "poda": [
+    {
+     "meses": [
+      4,
+      5
+     ],
+     "tipo": "Em sebe, apare ligeiramente na primavera; num exemplar isolado, corrija só a forma. Corte apenas na parte com folhas"
+    },
+    {
+     "meses": [
+      8
+     ],
+     "tipo": "Se a sebe precisar, faça um segundo aparo ligeiro, sem cortes tardios que façam rebentar antes do frio"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos durante a instalação. Depois, só em secas prolongadas.",
+   "floracao": "Flores pequenas, escuras e perfumadas na primavera.",
+   "solo": "Solo bem drenado.",
+   "resistencia_geada": "Resiste a geadas moderadas; ventos frios podem queimar a folhagem variegada.",
+   "exposicao": "Sol ou meia-sombra, abrigado de ventos frios.",
+   "autoctone": false,
+   "toxicidade": null,
+   "legal": "Não confundir com Pittosporum undulatum, espécie invasora em Portugal (DL 92/2019): confirme a identificação antes de propagar ou plantar.",
+   "legal_botoes": [
+    "plantar",
+    "sem",
+    "estacas"
+   ]
+  },
+  {
+   "id": "lima_dedo",
+   "nome": "Lima-dedo (caviar-cítrico)",
+   "nome_cientifico": "Citrus australasica",
+   "categoria": "fruteira",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "geada": true,
+   "propagacao": {
+    "enxertia": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5
+     ],
+     "nota": "Borbulha sobre porta-enxerto de citrinos, quando a casca descola."
+    },
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      6,
+      7,
+      8
+     ],
+     "nota": "Estacas semi-lenhosas com hormona, em abrigo quente e húmido."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      4,
+      5
+     ],
+     "nota": null,
+     "fiel_variedade": false
+    }
+   },
+   "metodo_recomendado": [
+    "enxertia",
+    "estacas"
+   ],
+   "nota_variedade": "A semente não mantém a cor nem o sabor da variedade.",
+   "poda": [
+    {
+     "meses": [
+      3,
+      4,
+      5
+     ],
+     "tipo": "Precisa de pouca poda: depois do risco de geada, retire ramos secos ou cruzados e os rebentos que saiam abaixo do enxerto. Use luvas, porque tem espinhos"
+    }
+   ],
+   "colheita": [
+    10,
+    11,
+    12
+   ],
+   "plantacao": {
+    "meses": [
+     4,
+     5
+    ],
+    "o_que": "torrão ou vaso"
+   },
+   "adubacao": "Na primavera e no verão, use adubo para citrinos conforme o rótulo; em vaso, reforce com mais regularidade.",
+   "rega": "Mantenha a terra húmida sem encharcar, sobretudo em vaso e durante o crescimento dos frutos.",
+   "floracao": "Flores brancas, sobretudo na primavera.",
+   "solo": "Solo ligeiramente ácido a neutro, bem drenado.",
+   "resistencia_geada": "Tolera geadas ligeiras quando estabelecida; proteja as plantas jovens e as de vaso.",
+   "exposicao": "Sol ou meia-sombra, em local abrigado.",
+   "autoctone": false,
+   "toxicidade": null,
+   "notas": {
+    "plantar": {
+     "4": "Em vaso ou junto a uma parede virada a sul, depois das geadas.",
+     "5": "Em vaso ou junto a uma parede virada a sul, depois das geadas."
+    }
+   }
+  },
+  {
+   "id": "tuia_gigante",
+   "nome": "Tuia-gigante",
+   "nome_cientifico": "Thuja plicata",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "estacas": {
+     "dificuldade": 2,
+     "meses": [
+      9,
+      10,
+      11
+     ],
+     "nota": "Estacas semi-lenhosas com talão, em abrigo frio."
+    },
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null,
+     "fiel_variedade": false
+    }
+   },
+   "metodo_recomendado": [
+    "estacas"
+   ],
+   "poda": [
+    {
+     "meses": [
+      4,
+      5,
+      8
+     ],
+     "tipo": "Num exemplar isolado, quase não precisa de poda. Em sebe, apare na primavera e no fim do verão, só na parte com folhagem verde: a tuia não rebenta da madeira velha sem folhas"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue em períodos secos, sobretudo nos primeiros anos; não tolera secura prolongada.",
+   "floracao": "Conífera, sem flores vistosas.",
+   "solo": "Solo fresco e profundo, húmido mas bem drenado.",
+   "resistencia_geada": "Rústica no solo.",
+   "exposicao": "Sol ou meia-sombra; árvore grande, precisa de espaço.",
+   "autoctone": false,
+   "toxicidade": "A folhagem contém tujona e é tóxica se ingerida; o contacto pode irritar a pele sensível."
+  },
+  {
+   "id": "cipreste_comum",
+   "nome": "Cipreste-comum (cipreste-italiano)",
+   "nome_cientifico": "Cupressus sempervirens",
+   "categoria": "ornamental",
+   "folha": "persistente",
+   "tipo_lua": "a",
+   "propagacao": {
+    "sementeira": {
+     "dificuldade": 2,
+     "meses": [
+      3,
+      4
+     ],
+     "nota": null
+    },
+    "estacas": {
+     "dificuldade": 3,
+     "meses": [
+      9,
+      10,
+      11
+     ],
+     "nota": "Estacas semi-lenhosas com talão, com hormona e em abrigo."
+    }
+   },
+   "poda": [
+    {
+     "meses": [
+      4,
+      5,
+      8
+     ],
+     "tipo": "Precisa de pouca poda. Em sebe, apare só a folhagem verde, na primavera e no fim do verão; não corte para dentro da madeira sem folhas, que não rebenta. Retire os ramos secos com ferramenta desinfetada (cancro do cipreste)"
+    }
+   ],
+   "plantacao": {
+    "meses": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "o_que": "torrão"
+   },
+   "adubacao": "Use cobertura orgânica afastada do tronco. Só reforce a adubação se o crescimento ou uma análise indicar necessidade.",
+   "rega": "Regue durante a instalação; depois de estabelecido tolera bem a secura.",
+   "floracao": "Conífera, sem flores vistosas.",
+   "solo": "Solo bem drenado; tolera solos pobres e secos.",
+   "resistencia_geada": "Rústico no solo.",
+   "exposicao": "Sol pleno.",
+   "autoctone": false,
+   "toxicidade": null
   }
  ]
 }
