@@ -52,6 +52,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-of
 .cat .cnt{font-size:12px;color:var(--muted)}
 .cat.wide{grid-column:1/-1;flex-direction:row;align-items:center;min-height:0;gap:14px}.cat.wide .cnt{margin-left:auto}
 .cat[aria-pressed="true"]{border-color:var(--leaf);background:var(--leaf-soft)}
+.cat.zero:not([aria-pressed="true"]){background:transparent;border-style:dashed}.cat.zero:not([aria-pressed="true"]) svg{color:var(--muted)}
 
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
 .panel-head{padding:18px 18px 14px;display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--line)}
@@ -188,8 +189,43 @@ ul.resultados li:last-child{border-bottom:0}
 const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
 let DB=null;
 /* ---------- Lua ---------- */
-const SYN=29.530588853, REF=Date.UTC(2000,0,6,18,14);
-function moonAge(d){const t=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate(),12);let a=((t-REF)/864e5)%SYN;return a<0?a+SYN:a}
+const SYN=29.530588853;
+// Instante real de cada fase (Meeus, «Astronomical Algorithms», cap. 49; erro de poucos minutos).
+// q: 0 lua nova, 1 quarto crescente, 2 lua cheia, 3 quarto minguante. Devolve milissegundos (UTC).
+function faseReal(n,q){
+  const k=n+q/4,T=k/1236.85,r=Math.PI/180,s=x=>Math.sin(x*r);
+  let jd=2451550.09766+29.530588861*k+0.00015437*T*T-0.00000015*T**3+0.00000000073*T**4;
+  const E=1-0.002516*T-0.0000074*T*T;
+  const M=2.5534+29.1053567*k-0.0000014*T*T-0.00000011*T**3;
+  const Mp=201.5643+385.81693528*k+0.0107582*T*T+0.00001238*T**3-0.000000058*T**4;
+  const F=160.7108+390.67050284*k-0.0016118*T*T-0.00000227*T**3+0.000000011*T**4;
+  const O=124.7746-1.56375588*k+0.0020672*T*T+0.00000215*T**3;
+  if(q===0||q===2){
+    const c=q===0?[-0.4072,0.17241,0.01608,0.01039,0.00739,-0.00514,0.00208]:[-0.40614,0.17302,0.01614,0.01043,0.00734,-0.00515,0.00209];
+    jd+=c[0]*s(Mp)+c[1]*E*s(M)+c[2]*s(2*Mp)+c[3]*s(2*F)+c[4]*E*s(Mp-M)+c[5]*E*s(Mp+M)+c[6]*E*E*s(2*M)
+      -0.00111*s(Mp-2*F)-0.00057*s(Mp+2*F)+0.00056*E*s(2*Mp+M)-0.00042*s(3*Mp)+0.00042*E*s(M+2*F)+0.00038*E*s(M-2*F)
+      -0.00024*E*s(2*Mp-M)-0.00017*s(O)-0.00007*s(Mp+2*M)+0.00004*s(2*Mp-2*F)+0.00004*s(3*M)+0.00003*s(Mp+M-2*F)
+      +0.00003*s(2*Mp+2*F)-0.00003*s(Mp+M+2*F)+0.00003*s(Mp-M+2*F)-0.00002*s(Mp-M-2*F)-0.00002*s(3*Mp+M)+0.00002*s(4*Mp);
+  }else{
+    const c=x=>Math.cos(x*r);
+    jd+=-0.62801*s(Mp)+0.17172*E*s(M)-0.01183*E*s(Mp+M)+0.00862*s(2*Mp)+0.00804*s(2*F)+0.00454*E*s(Mp-M)
+      +0.00204*E*E*s(2*M)-0.0018*s(Mp-2*F)-0.0007*s(Mp+2*F)-0.0004*s(3*Mp)-0.00034*E*s(2*Mp-M)+0.00032*E*s(M+2*F)
+      +0.00032*E*s(M-2*F)-0.00028*E*E*s(Mp+2*M)+0.00027*E*s(2*Mp+M)-0.00017*s(O)-0.00005*s(Mp-M-2*F)+0.00004*s(2*Mp+2*F)
+      -0.00004*s(Mp+M+2*F)+0.00004*s(Mp-2*M)+0.00003*s(Mp+M-2*F)+0.00003*s(3*M)+0.00002*s(2*Mp-2*F)+0.00002*s(Mp-M+2*F)-0.00002*s(3*Mp+M);
+    const W=0.00306-0.00038*E*c(M)+0.00026*c(Mp)-0.00002*c(Mp-M)+0.00002*c(Mp+M)+0.00002*c(2*F);
+    jd+=q===1?W:-W;
+  }
+  return (jd-2440587.5)*864e5;
+}
+// «Idade» da lua ao meio-dia: entre duas fases reais seguidas, reparte o tempo de forma igual,
+// para que a lua nova, os quartos e a lua cheia caiam no dia certo (0; 7,4; 14,8; 22,1 dias).
+function moonAge(d){
+  const t=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate(),12);
+  const n0=Math.floor((t-Date.UTC(2000,0,6,18,14))/(SYN*864e5));
+  let ant=null,seg=null;
+  for(let n=n0-1;n<=n0+1&&!seg;n++)for(let q=0;q<4;q++){const f=faseReal(n,q);if(f<=t)ant=[n,q,f];else{seg=[n,q,f];break}}
+  return (ant[1]+(t-ant[2])/(seg[2]-ant[2]))*SYN/4;
+}
 function phase(a){
   if(a<1.85||a>=27.68) return {k:"nova",n:"Lua nova"};
   if(a<13.77) return {k:"cresc",n:a<5.5?"Lua crescente":a<9.2?"Quarto crescente":"Crescente gibosa"};
@@ -333,11 +369,11 @@ function render(){
   const a=moonAge(day), p=phase(a), m=day.getMonth()+1;
   const isToday=iso(day)===iso(new Date());
   $("wd").textContent=(isToday?"Hoje · ":"")+day.toLocaleDateString("pt-PT",{weekday:"long"});
-  $("dt").textContent=day.getDate()+" de "+MESES[day.getMonth()]+" "+(day.getFullYear()!==new Date().getFullYear()?day.getFullYear():"");
+  $("dt").textContent=day.getDate()+" de "+MESES[day.getMonth()]+(day.getFullYear()!==new Date().getFullYear()?" "+day.getFullYear():"");
   $("pick").value=iso(day);
   $("moon").innerHTML=moonSVG(a)+`<div><b>${p.n}</b><span>${MOON_TXT[p.k]}</span></div>`;
   if(!DB){$("panel").innerHTML=`<div class="panel-head"><h2>A carregar…</h2><p>A abrir a base de dados das plantas.</p></div>`;return}
-  document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);b.querySelector(".cnt").textContent=cntTxt(k,contar(k,m))});
+  document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);const n=contar(k,m),tar=!n&&DB.tarefas.some(t=>t.categoria===k&&t.meses.includes(m));b.classList.toggle("zero",!n);b.querySelector(".cnt").textContent=n?cntTxt(k,n):tar?"Só tarefas":"Nada este mês"});
   const c=CAT[cur],items=lista(cur,m);
   const acompanhamento=cur==="alp"&&items.length>0&&items.every(i=>i.tarefa);
   const [vk,vt]=c.v(p);
@@ -471,12 +507,16 @@ if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");
 const bar=document.getElementById("instalar"),txt=document.getElementById("instTxt"),btn=document.getElementById("btnInstalar");
 const instalada=matchMedia("(display-mode: standalone)").matches||navigator.standalone;
 let fechada=false;try{fechada=localStorage.getItem("instalar-fechado")==="1"}catch(e){}
-const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+// O aviso só aparece no telemóvel/tablet e a partir da segunda visita (na primeira, a pessoa ainda está a conhecer a app).
+const movel=ios||/android/i.test(navigator.userAgent);
+let visitas=0;try{visitas=+(localStorage.getItem("visitas")||0)+1;localStorage.setItem("visitas",visitas)}catch(e){}
+const podeAvisar=movel&&visitas>=2&&!fechada;
 let pedido=null;
 function mostrar(){bar.hidden=false;document.body.style.paddingBottom="96px"}
 function esconder(){bar.hidden=true;document.body.style.paddingBottom=""}
-addEventListener("beforeinstallprompt",e=>{e.preventDefault();pedido=e;txt.textContent="Instale a Agenda do Campo no telemóvel";btn.hidden=false;mostrar()});
-setTimeout(()=>{if(!instalada&&!pedido&&!fechada){txt.innerHTML=ios?"Para instalar: toque em <b>Partilhar</b> (o quadrado com a seta) e depois em <b>Adicionar ao ecrã principal</b>.":"Para instalar: toque em <b>⋮</b> (canto superior direito do Chrome) e depois em <b>Adicionar ao ecrã principal</b> ou <b>Instalar app</b>.";mostrar()}},2500);
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();pedido=e;if(!podeAvisar)return;txt.textContent="Instale a Agenda do Campo no telemóvel";btn.hidden=false;mostrar()});
+setTimeout(()=>{if(!instalada&&!pedido&&podeAvisar){txt.innerHTML=ios?"Para instalar: toque em <b>Partilhar</b> (o quadrado com a seta) e depois em <b>Adicionar ao ecrã principal</b>.":"Para instalar: toque em <b>⋮</b> (canto superior direito do Chrome) e depois em <b>Adicionar ao ecrã principal</b> ou <b>Instalar app</b>.";mostrar()}},2500);
 btn.onclick=async()=>{if(!pedido)return;pedido.prompt();await pedido.userChoice;pedido=null;esconder()};
 document.getElementById("fecharInstalar").onclick=()=>{esconder();try{localStorage.setItem("instalar-fechado","1")}catch(e){}};
 addEventListener("appinstalled",esconder);
