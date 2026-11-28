@@ -8,15 +8,15 @@
 /* Layout: uma coluna de telemóvel — cabeçalho com o dia e a lua, grelha 2×2 de botões grandes, lista do dia por baixo */
 :root{
   --bg:#eef2ea; --surface:#ffffff; --ink:#1d2a1f; --muted:#5b6b5d; --line:#d3dccf;
-  --leaf:#2f6b3a; --leaf-soft:#dcebd9; --sun:#c98a14; --sun-soft:#f6e9c8; --warn:#8a5600; --moon:#f7e08a; --moon-dark:#3b4a3f; --moon-edge:#2a352c; --shadow:#c9d3c4;
+  --leaf:#2f6b3a; --leaf-soft:#dcebd9; --sun:#c98a14; --sun-soft:#f6e9c8; --warn:#8a5600; --moon:#f7e08a; --moon-dark:#3b4a3f; --moon-edge:#2a352c; --shadow:#c9d3c4; --frost:#2f6690; --frost-soft:#e1edf6;
   --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#121a14; --surface:#1b261d; --ink:#e6eee3; --muted:#9db0a0; --line:#2d3c30;
-  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --warn:#e5b34d; --moon:#f7e08a; --moon-dark:#0b100c; --moon-edge:#9db0a0; --shadow:#0b100c; color-scheme:dark}}
+  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --warn:#e5b34d; --moon:#f7e08a; --moon-dark:#0b100c; --moon-edge:#9db0a0; --shadow:#0b100c; --frost:#8cc3ea; --frost-soft:#1a2e3a; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#121a14; --surface:#1b261d; --ink:#e6eee3; --muted:#9db0a0; --line:#2d3c30;
-  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --warn:#e5b34d; --moon:#f7e08a; --moon-dark:#0b100c; --moon-edge:#9db0a0; --shadow:#0b100c; color-scheme:dark}
+  --leaf:#7fc48a; --leaf-soft:#22382a; --sun:#e5b34d; --sun-soft:#3a3020; --warn:#e5b34d; --moon:#f7e08a; --moon-dark:#0b100c; --moon-edge:#9db0a0; --shadow:#0b100c; --frost:#8cc3ea; --frost-soft:#1a2e3a; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{background:var(--bg)}
 body{color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
@@ -42,6 +42,10 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-of
 .moon svg{flex:none}
 .moon b{display:block;font-size:15px}
 .moon span{font-size:13px;color:var(--muted)}
+.geada{display:flex;gap:10px;align-items:flex-start;background:var(--frost-soft);border:1px solid var(--frost);border-radius:14px;padding:10px 14px;font-size:15px}
+.geada svg{flex:none;color:var(--frost);margin-top:2px}
+.geada p{margin:0}.geada b{color:var(--ink)}
+.geada small{display:block;font-size:12px;color:var(--muted);margin-top:4px}.geada small a{color:var(--muted)}
 
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .cat{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:12px 10px;border-radius:16px;border:2px solid var(--line);
@@ -127,6 +131,7 @@ ul.resultados li:last-child{border-bottom:0}
   </div>
 
   <div class="moon" id="moon"></div>
+  <div class="geada" id="geada" role="status" hidden></div>
 
   <section class="procura" aria-label="Procurar plantas">
     <input type="search" id="procura" placeholder="Procurar planta (nome ou nome científico)" autocomplete="off" aria-label="Procurar planta">
@@ -365,6 +370,38 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 
+/* ---------- Aviso de geada (previsão Open-Meteo para Sardoura) ---------- */
+// Mínima a 2 m prevista para a zona. Nos fundos de vale e leiras baixas pode estar 2 a 4 °C mais frio,
+// por isso até 3 °C já se avisa. A mínima de cada dia dá-se, quase sempre, de madrugada.
+const PREV_URL="https://api.open-meteo.com/v1/forecast?latitude=41.06&longitude=-8.27&daily=temperature_2m_min&timezone=Europe%2FLisbon&forecast_days=7";
+let PREV=null;try{PREV=JSON.parse(localStorage.getItem("previsao"))}catch(e){}
+const GEADA_CATS=["podas","plantar","estacas","enx","alp","div"];
+function carregarPrevisao(){
+  if(PREV&&Date.now()-PREV.quando<3*36e5)return;
+  fetch(PREV_URL).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(j=>{
+    const t={};j.daily.time.forEach((d,i)=>{const v=j.daily.temperature_2m_min[i];if(typeof v==="number")t[d]=v});
+    PREV={t,quando:Date.now()};try{localStorage.setItem("previsao",JSON.stringify(PREV))}catch(e){}
+    render();
+  }).catch(e=>console.warn("Previsão do tempo:",e));
+}
+// Sem internet, usa a última previsão guardada, se tiver menos de 2 dias.
+const minima=d=>PREV&&Date.now()-PREV.quando<48*36e5&&typeof PREV.t[iso(d)]==="number"?PREV.t[iso(d)]:null;
+const nivelGeada=v=>v===null?0:v<=0?2:v<=3?1:0;
+function geadaHTML(){
+  const hoje=iso(new Date()),amanha=new Date(day);amanha.setDate(amanha.getDate()+1);
+  const quando=d=>iso(d)===hoje?"hoje":(()=>{const o=new Date();o.setDate(o.getDate()+1);return iso(d)===iso(o)})()?"amanhã":d.toLocaleDateString("pt-PT",{weekday:"long"})+", "+d.getDate();
+  const frases=[];
+  for(const d of [day,amanha]){
+    const v=minima(d),n=nivelGeada(v);if(!n)continue;
+    const t=(Math.round(v*10)/10).toLocaleString("pt-PT").replace("-","−")+" °C";
+    frases.push(n===2?`<b>Geada prevista na madrugada de ${quando(d)}</b> (mínima de ${t}).`:`<b>Pode gear nos fundos de vale na madrugada de ${quando(d)}</b> (mínima de ${t}).`);
+  }
+  if(!frases.length)return "";
+  const hora=new Date(PREV.quando).toLocaleTimeString("pt-PT",{hour:"2-digit",minute:"2-digit"});
+  return `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M4.9 7l14.2 10M4.9 17 19.1 7M9 4l3 2 3-2M9 20l3-2 3 2"/></svg>
+<div><p>${frases.join(" ")} Adie plantações, podas e enxertos para depois da geada e proteja as plantas sensíveis ao frio com manta térmica.</p>
+<small>Previsão de <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, atualizada às ${hora}.</small></div>`;
+}
 function render(){
   const a=moonAge(day), p=phase(a), m=day.getMonth()+1;
   const isToday=iso(day)===iso(new Date());
@@ -372,11 +409,13 @@ function render(){
   $("dt").textContent=day.getDate()+" de "+MESES[day.getMonth()]+(day.getFullYear()!==new Date().getFullYear()?" "+day.getFullYear():"");
   $("pick").value=iso(day);
   $("moon").innerHTML=moonSVG(a)+`<div><b>${p.n}</b><span>${MOON_TXT[p.k]}</span></div>`;
+  const gh=geadaHTML();$("geada").innerHTML=gh;$("geada").hidden=!gh;
   if(!DB){$("panel").innerHTML=`<div class="panel-head"><h2>A carregar…</h2><p>A abrir a base de dados das plantas.</p></div>`;return}
   document.querySelectorAll(".cat").forEach(b=>{const k=b.dataset.k;b.setAttribute("aria-pressed",k===cur);const n=contar(k,m),tar=!n&&DB.tarefas.some(t=>t.categoria===k&&t.meses.includes(m));b.classList.toggle("zero",!n);b.querySelector(".cnt").textContent=n?cntTxt(k,n):tar?"Só tarefas":"Nada este mês"});
   const c=CAT[cur],items=lista(cur,m);
   const acompanhamento=cur==="alp"&&items.length>0&&items.every(i=>i.tarefa);
-  const [vk,vt]=c.v(p);
+  let [vk,vt]=c.v(p);
+  if(GEADA_CATS.includes(cur)&&gh){vk="meh";vt="<b>Há risco de geada:</b> se puder, espere que passe. "+vt}
   const li=items.map(i=>{
     let chip="";
     if(i.tag) chip=`<span class="chip${i.hot?" hot":""}">${i.tag}</span>`;
@@ -492,8 +531,8 @@ $("pick").addEventListener("change",e=>{if(!e.target.value)return;const [y,mo,d]
 // Ao voltar à app: se mostrava o dia de hoje e entretanto mudou o dia, passa para o novo dia; senão não redesenha (mantém as fichas abertas)
 let hojeVisto=iso(new Date());
 document.addEventListener("visibilitychange",()=>{if(document.hidden){hojeVisto=iso(new Date());return}
-  const agora=iso(new Date());if(agora!==hojeVisto){if(iso(day)===hojeVisto){day=new Date();day.setHours(12,0,0,0)}hojeVisto=agora;render()}});
-render();
+  const agora=iso(new Date());if(agora!==hojeVisto){if(iso(day)===hojeVisto){day=new Date();day.setHours(12,0,0,0)}hojeVisto=agora;render()}carregarPrevisao()});
+render();carregarPrevisao();
 // Uma falha passageira (por exemplo, durante a atualização da app) tenta outra vez antes de dar «Sem dados».
 // Erros a desenhar a página não se confundem com falta de dados: ficam na consola.
 const carregarDados=(tent=0)=>Promise.all(["plantas.json","tratamentos.json","calendario.json"].map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f+": "+r.status);return r.json()})))
